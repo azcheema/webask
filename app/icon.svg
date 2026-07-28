@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="WebAsk">
+  <title>WebAsk</title>
+  <rect width="64" height="64" rx="14" fill="#0F766E"/>
+  <g fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI Variable Display', 'Segoe UI', Roboto, system-ui, sans-serif" font-weight="700" font-size="40" text-anchor="middle" letter-spacing="-1.5">
+    <text x="32" y="46">W</text>
+  </g>
+</svg>
