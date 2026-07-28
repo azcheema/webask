@@ -1,62 +1,117 @@
 ---
 slug: aesthetic-clinics
-title: "Web Design & Marketing for Aesthetic Clinics & Med Spas"
-description: "Booking-first websites, GoHighLevel automation, missed-call AI, and local SEO for med spas and aesthetic clinics — built to fill consultation calendars, not win design awards."
-dateModified: "2026-06-18"
+title: "Compliant Websites for UK Aesthetic Clinics"
+description: "Websites and automation for UK aesthetic clinics, built around the advertising rules most agencies have never read. Fast, booking-led, and structured so your site does not breach the CAP Code."
+dateModified: "2026-07-28"
 ---
 
 {/* Body prose only. Catalog data (hero, FAQs, related services, audienceType) lives in data/industries.ts under the aesthetic-clinics entry and is read by the page template — do not duplicate those fields here. */}
 
-## The problem we solve for aesthetic clinics
+{/* WRITTEN FRESH for the UK — deliberately NOT a British-spelling pass over Naxdor's US med-spa page (docs/06 § Phase 2, "the trap to avoid"). Two reasons: a translated page is near-duplicate content against naxdor.com, and the US page can legally name the prescription-only medicine while this one cannot. Note that this entire page discusses POM advertising rules without naming a single medicine — that is the discipline the CAP Code requires, applied to our own marketing, and it is also the proof of the claim. Keep it that way. */}
 
-Most med-spa and aesthetic-clinic websites are beautiful and book almost nothing. They were built to look like the brand — soft photography, an elegant logo, a gallery — by someone who never asked the only question that matters: when a prospect lands here from their phone at 9pm, what makes them book a consultation tonight instead of scrolling to the next clinic?
+Most UK aesthetic clinics are sold a website by someone who has never read the CAP Code. It
+looks expensive, loads slowly on a phone, and — on nearly every site we audit — breaches the
+advertising rules on the first treatment page.
 
-In aesthetics, the gap between traffic and bookings is where the money leaks out, and it leaks in a few predictable places:
+That last part is not a design opinion. It is the reason this page exists.
 
-- **The site is slow and the booking path is buried.** Your traffic is overwhelmingly mobile and your pages are image-heavy. A gallery that takes five seconds to load on a phone loses the visitor before they ever find the "Book" button — which is often three taps deep behind a menu anyway.
-- **The phone goes to voicemail.** You're with a client, mid-treatment, hands occupied. The prospect who calls hits voicemail, hangs up, and books with whoever answers. That's not a staffing failure; it's a structural one, and it's the single biggest leak we see in this vertical.
-- **Leads die in an inbox.** A consultation request comes in, someone means to follow up, the day gets busy, and three days later the lead has cooled. There's no system catching it, reminding it, and nudging it toward a booked, deposit-secured appointment.
+## The rule almost every clinic site breaks
 
-We build the conversion path the pretty site forgot. The look still matters — credibility in aesthetics is visual — but it sits on top of an engine designed to turn a late-night phone search into a confirmed appointment.
+A prescription-only medicine cannot be advertised to the public in the United Kingdom. Not on
+a treatment page, not in a price list, not in an FAQ, not in a photo caption, and not in a
+social post linking back to any of them. The prohibition is blanket, the ASA enforces it, and
+rulings are published under the clinic's own name.
 
-## What we deliver
+Two things make this harder than it first sounds.
 
-For an aesthetic clinic, the work is usually a bundle rather than a single service, because the leak is rarely in just one place:
+**Euphemisms count.** Swapping the brand name for a softer phrase does not solve the problem —
+the ASA has repeatedly treated wrinkle-relaxing wording as implied promotion of the same
+medicine, and upheld complaints on exactly that basis. A great many clinics have made precisely
+this substitution and believe they are now compliant.
 
-- **A fast, booking-first website.** Custom design that earns trust on a phone, with treatment pages structured around how patients actually search and a booking path that's never more than a tap away. Built on a modern stack with a sub-2-second mobile load enforced in our build process — see [web development](/services/web-development).
-- **Conversion-grade design.** Before-and-after galleries, treatment menus, and consultation flows designed to convert, not just to look polished — our [UI/UX design](/services/ui-ux-design) work treats the booking journey as the product.
-- **CRM and booking automation.** Online booking, intake forms, automated reminders, deposit handling, and review requests wired into one system — we work heavily in GoHighLevel and HubSpot. See [CRM](/services/crm-automation).
-- **Missed-call and after-hours capture.** An [AI voice agent](/services/ai-integration) that answers every call, books into your calendar, handles common treatment and pricing questions, and texts a booking link to anyone it can't fully handle — so the calls you miss while treating clients stop becoming bookings for your competitor.
+**What is permitted is the consultation, not the treatment.** You may advertise a consultation
+for the concern a patient wants addressed. That is a genuinely workable commercial position —
+it is simply a different website to the one most clinics currently have.
 
-You don't have to take all of it. We scope the mix to where your calendar is actually leaking.
+> **Notice what this page does not do.** We have written several hundred words about the
+> advertising rules for injectable treatments without naming a single medicine. That is not
+> squeamishness — it is the discipline the rules require, applied to our own marketing. An
+> agency that names the medicine while selling you compliance has told you everything you need
+> to know about how carefully it reads.
 
-## Built around how clinics actually win patients
+## This is an architecture problem, not a copywriting one
 
-A few things are specific to aesthetics, and we build for them rather than against them.
+Here is the part almost nobody explains properly, and the reason a rewrite alone will not fix
+your site.
 
-Patient searches are intent-rich and local — "lip filler near me," "morpheus8 cost," "best med spa in [city]." Treatment pages are built to match that intent and the structure search engines reward, so the people already looking for what you offer can find you. Galleries are engineered to stay fast and credible on a small screen, because in this industry the before-and-after _is_ the sales pitch.
+A price list covering a prescription-only treatment **may** exist. The conditions are
+structural: it needs to sit at least two clicks from the homepage, be reached through
+consultation-led pages, stay purely informational with no promotional framing, and appear in
+neither the homepage nor the primary navigation.
 
-We're also candid about the compliance edges, because they're real here. Consent for patient images, the advertising rules around before-and-afters, and how injectable brand names can be used in marketing vary by state and by platform. We're a web and software firm, not your regulatory counsel — but we'll build so you can show results credibly and flag where you should check a rule before you publish, rather than leaving you to find out the hard way.
+Read that again as a specification rather than a warning, because that is what it is. It
+describes a navigation hierarchy, an internal linking pattern, a sitemap and a set of page
+templates. It is a build brief.
 
-## How an engagement works
+Which is why changing a few words on your existing site does not get you there. If your
+treatment pages sit in the main menu — and on most clinic sites they do — the structure itself
+is the problem, and no amount of careful phrasing fixes a menu.
 
-We don't start by talking about pixels. We start with where your bookings come from and where they're being lost. A typical engagement runs Discover → Design → Build → Grow:
+## Consultation-first architecture
 
-1. **Discover.** We map your real booking journey — how prospects find you, where they drop off, what your front desk is drowning in, and which treatments drive the revenue you want more of.
-2. **Design.** We design the site and the booking flow together, so the conversion path is decided before anything is built, not bolted on after.
-3. **Build.** We build the site fast and correct, wire in the booking and CRM automation, and set up the missed-call capture — testing against real appointment flows before launch.
-4. **Grow.** Once it's live, local SEO and ongoing improvement compound the result over the following months. You own every account from day one — the site, the domain, the CRM, the data.
+This is the pattern we build, and it is what lets a compliant clinic site still perform:
 
-## What we don't do
+- **Concern-led entry pages.** Visitors arrive searching for an outcome, not a product name.
+  Pages are organised around the concern and the consultation — which is both what the rules
+  permit and, conveniently, closer to how people actually search.
+- **A consultation-first path.** The route to any detailed treatment information runs through
+  consultation content, satisfying the structural condition rather than working around it.
+- **Clean primary navigation.** Nothing that must stay out of the main menu appears in it, and
+  the sitemap and internal links agree — a compliant menu with a contradicting XML sitemap is
+  not compliant.
+- **Enquiry capture that survives the restructure.** Booking, intake, reminders and follow-up
+  run through your CRM, so a more careful site does not become a quieter one.
 
-Honesty about scope is part of the service. A few things we won't sell you:
+## What we build
 
-- **We don't do injectables, treatments, or medical advice.** We're the digital side. Nothing here is clinical or regulatory guidance.
-- **We don't guarantee rankings or overnight bookings.** Local SEO compounds over months; anyone promising the top spot next month is best avoided. If you need patients faster while SEO matures, we'll tell you paid search is the honest lever and point you to it.
-- **We don't lock you in.** Every account lives in your name. If you ever leave, you keep the site, the automations, and the patient data intact.
+- **The website.** Fast, mobile-first, on Next.js. Sub-two-second largest contentful paint,
+  enforced in continuous integration rather than measured once at launch — which matters
+  disproportionately here, because clinic traffic is mobile and image-heavy.
+- **Booking and CRM automation.** Enquiry to booked, confirmed and reminded appointment without
+  your front desk retyping anything. We work extensively in GoHighLevel, and in HubSpot where
+  it is the better fit.
+- **Missed-call recovery.** The largest leak in most clinics: you are with a patient, the phone
+  rings, and the caller books elsewhere. A voice agent answers every call, books into your
+  calendar, and texts a link to anyone it cannot fully handle.
+- **Local SEO.** Technical foundations, concern and location pages mapped to real UK search
+  demand, and a review flow through your CRM. It compounds over months — anyone promising the
+  top position next month is best avoided.
+
+## The 2026 licensing scheme, stated accurately
+
+As at **July 2026** the England licensing scheme for non-surgical cosmetic procedures is **not
+yet in force**. The Government published its consultation response in **August 2025** — 11,848
+responses — proposing a **red, amber and green** risk categorisation, and signalled a further
+consultation on the highest-risk procedures in **spring 2026**. Since **October 2021** it has
+been a criminal offence in England to administer botulinum toxin or filler for a cosmetic
+purpose to anyone under 18.
+
+We date these claims because regulatory content that quietly goes stale is worse than none at
+all — it inverts the entire reason you would trust the agency that wrote it.
+
+## What we are not
+
+We are not solicitors, and the distinction matters. We are a web and automation studio that has
+read the rules properly and builds sites that respect them. Where copy sits genuinely close to
+the line we use CAP's Copy Advice service — free, non-binding, and considerably better than
+guessing on your behalf.
+
+We also will not tell you that a compliant site is a commercial disadvantage. Your competitors
+are one complaint away from a published ruling with their name on it. Being the clinic that
+built it properly is worth more than the handful of keywords it costs.
 
 ## Where to next
 
-If your clinic's calendar has gaps your traffic says it shouldn't, the fastest way to find the leak is a conversation. [Book a clinic strategy call](/contact) and we'll map where bookings are being lost and what it takes to fix it — with a written scope within three business days.
-
-Earlier in the decision? Request a [free 30-minute audit](/free-audit) of your current site, or see every service with real starting prices on the [pricing page](/pricing).
+Start with a **free audit**. We will look at your current site, tell you specifically where it
+sits relative to the rules, what the structural fix looks like, and what it would cost. No
+obligation, and the findings are yours either way.

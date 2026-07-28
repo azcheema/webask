@@ -1,11 +1,33 @@
 import { site, whatsappUrl } from "@/data/site";
 import type { CtaLink, FaqItem, Meta } from "@/data/types";
 
-// WhatsApp click-to-chat link with a prefilled opener. The number itself is
-// sourced from site.ts (single source of truth); this only appends the starter
-// message copy. Opens a WhatsApp chat — visitor can message or call from there.
+/*
+ * Contact page copy.
+ *
+ * ── D1: NO POSTAL ADDRESS ON THIS PAGE ────────────────────────────────────
+ * WebAsk is fully remote with no UK location, so `/contact` carries no address
+ * at all — the Oxford address on the old WordPress site does not carry forward
+ * (docs/04 § 3). The Swedish registered address is a STATUTORY disclosure and
+ * lives on /legal/company-information and in the footer legal row. Those are two
+ * different things and must not be conflated here: putting a postal address on a
+ * contact page is a geographic claim, and ours would be false.
+ *
+ * ── NO BORROWED SOCIAL PROFILES ───────────────────────────────────────────
+ * The inherited version listed Naxdor's LinkedIn and GitHub in the "other ways
+ * to reach us" panel. Those are the PARENT brand's accounts, not ours —
+ * `site.socials` is deliberately empty and `organizationNode()` omits `sameAs`
+ * for the same reason. Email, phone and WhatsApp are the real channels; add a
+ * social row here only when a real WebAsk profile exists.
+ *
+ * ── NO IMPLIED TEAM ───────────────────────────────────────────────────────
+ * "A senior engineer will reply" implies a bench. There is one person. The copy
+ * says so, which is also a better promise than the generic version.
+ */
+
+// WhatsApp click-to-chat with a prefilled opener. The number is sourced from
+// site.ts (single source of truth); this only appends the starter message.
 const WHATSAPP_HREF = `${whatsappUrl}?text=${encodeURIComponent(
-  "Hi Naxdor — I'd like to talk about a project.",
+  "Hi WebAsk — I'd like to talk about a project.",
 )}`;
 
 export type ContactContent = {
@@ -48,89 +70,82 @@ export type ContactContent = {
 
 export const contact: ContactContent = {
   meta: {
-    title: "Contact Naxdor — Book a free 30-minute discovery call",
+    title: "Contact WebAsk — Book a free 30-minute discovery call",
     description:
-      "Reach Naxdor for web, CRM, AI, and SEO work. Free 30-minute discovery call, written scope in three business days, response to every inbound within one business day.",
+      "Talk to WebAsk about websites, SEO, CRM and automation for your UK business. Free 30-minute discovery call, written scope in three working days, a reply within one.",
   },
   hero: {
     h1: "Tell us what you're working on.",
     subhead:
-      "Free 30-minute discovery call. Written scope within three business days. Honest pricing throughout — no “contact us for a quote” walls.",
+      "A free 30-minute discovery call, a written scope within three working days, and honest pricing throughout — no “request a quote” wall.",
   },
   form: {
     eyebrow: "Discovery call",
-    h2: "A short brief is all we need to schedule.",
+    h2: "A short brief is all we need to get started.",
     intro:
-      "Six fields and you're done. We use the budget and timeline to schedule you with the right engineer for your project — not to filter you out before the call.",
+      "Six fields and you're done. The budget and timeline questions are there so the first call is useful — not to filter you out before it happens.",
     responsePromise:
-      "We reply to every inbound within one business day. If your message lands on a weekend, you'll hear from us Monday morning your time.",
+      "We reply to every enquiry within one working day. If your message arrives at the weekend, you'll hear from us on Monday morning.",
     submitLabel: "Send message",
-    successHeading: "Got it — we'll be in touch within one business day.",
+    successHeading: "Got it — we'll be in touch within one working day.",
     successBody:
-      "An autoresponder with next steps just hit your inbox. If you'd rather skip the wait, you can book a call directly — the link is in that email.",
+      "A confirmation with next steps has just landed in your inbox. If anything is time-sensitive, reply to it directly and it comes straight back to us.",
   },
   sidebar: {
     eyebrow: "Other ways to reach us",
-    heading: "Email, social, or schedule yourself in.",
-    responseTime: "One business day for every inbound — including weekends, replied Monday.",
-    hours: "Mon–Fri · 9:00 AM – 6:00 PM (we schedule to your time zone, not ours).",
+    heading: "Email, phone, or WhatsApp.",
+    responseTime: "One working day for every enquiry — weekend messages answered Monday.",
+    hours: site.hours,
+    // Email, phone and WhatsApp only. No social links: site.socials is empty by
+    // design and Naxdor's profiles are not ours to list. See the file header.
     altChannels: [
-      // Email/WhatsApp/LinkedIn/GitHub mirror the Naxdor company channels in
-      // site.ts (company socials + phone, NOT the founder's personal profiles).
-      // WhatsApp number + href derive from site.phone/phoneE164 (single source).
-      { label: "Email", value: "contact@naxdor.com", href: "mailto:contact@naxdor.com" },
+      { label: "Email", value: site.email, href: `mailto:${site.email}` },
       // Phone dials directly (tel:, E.164); WhatsApp opens a chat on the SAME
-      // number — visitor can message or call from there. Both source site.ts.
+      // number, so a visitor can message or call from there. Both from site.ts.
       { label: "Phone", value: site.phone, href: `tel:${site.phoneE164}` },
       { label: "WhatsApp", value: site.phone, href: WHATSAPP_HREF },
-      {
-        label: "LinkedIn",
-        value: "linkedin.com/company/naxdor",
-        href: "https://www.linkedin.com/company/naxdor",
-      },
-      { label: "GitHub", value: "github.com/naxdor", href: "https://github.com/naxdor" },
     ],
   },
   trust: {
-    heading: "What you can count on after you hit send.",
+    heading: "What happens after you hit send.",
     bullets: [
-      "A real reply from a senior engineer — never a generic “thanks for your interest” template.",
-      "A scoping conversation, not a sales pitch. If we're not the right fit, we'll say so.",
-      "Written scope within three business days of the discovery call, including a fixed-fee number.",
-      "Your data stays with you. We never share inbound enquiries, and we don't sell or syndicate contact details.",
+      "A real reply from the person who would do the work — never a “thanks for your interest” template.",
+      "A scoping conversation, not a sales call. If we are not the right fit, we say so on that call.",
+      "A written scope within three working days of the call, with a fixed-fee number in it.",
+      "Your details stay with us. We do not share, sell or syndicate enquiries, and there is no lead-resale list.",
     ],
   },
   faqs: [
     {
-      question: "What happens after I submit?",
+      question: "What happens after I submit the form",
       answer:
-        "Your message lands in the founder's inbox and an autoresponder confirms receipt. A senior engineer replies within one business day with two or three suggested call times. The discovery call itself is free, 30 minutes, and ends with a clear next step — either a written scope coming your way or a referral to a better-fit partner.",
+        "Your message goes straight to the founder's inbox and a confirmation lands in yours. You will get a real reply within one working day with two or three suggested times. The discovery call is free, runs about thirty minutes, and ends with a clear next step — either a written scope on its way to you, or an honest pointer to someone better suited if that is the right answer.",
     },
     {
-      question: "Do you have a phone number I can call directly?",
+      question: "Where are you based, and does it matter",
       answer:
-        "Yes — the number's in the sidebar of this page: tap it to dial us directly, or reach us on WhatsApp (same number) to message or call from there. We still recommend the form for first contact, since the budget and timeline questions let us route you to the right engineer before we talk.",
+        "WebAsk works entirely remotely across the UK, on UK time. There is no office to visit, and we would rather tell you that than imply a local presence we do not have. In practice it changes nothing about the work: calls happen on video, the code lives in your repository, and you are not paying for city-centre floor space in your invoice. If meeting in person genuinely matters for your project, say so and we will arrange it.",
     },
     {
-      question: "What if I'm not sure what service I need?",
+      question: "Can I phone instead of using the form",
       answer:
-        "Choose “Not sure / multiple” in the service interest field and tell us what you're trying to solve in the message. We'll spend the discovery call mapping the problem to the right service — and if the problem doesn't map to one we offer, we'll point you somewhere better.",
+        "Yes — the number is in the panel on this page. Tap it to dial, or use WhatsApp on the same number to message or call from there. The form is still the better first move: the budget and timeline fields mean the first conversation starts with the actual problem rather than twenty minutes of context-gathering.",
     },
     {
-      question: "I want to keep this confidential. How do you handle that?",
+      question: "What if I'm not sure which service I need",
       answer:
-        "We sign a mutual NDA on request before any scoping conversation. Your enquiry stays in our inbox and CRM only — nothing flows to third parties, partners, or any kind of lead-resale list. Naxdor has never sold or syndicated contact data and never will.",
+        "Choose “Not sure / multiple” and describe what you are trying to fix rather than what you think you need to buy. Most engagements combine two or three services anyway, and working out the right mix is what the discovery call is for. If the problem does not map to anything we offer, we will tell you that too.",
     },
     {
-      question: "Can I just book a call directly without filling the form?",
+      question: "I need this kept confidential",
       answer:
-        "Soon — we're wiring a direct booking flow later this year. For now, the form takes about ninety seconds, and the budget and timeline fields let us match you to the right engineer for the first call. The brief context you give in the message also makes the call itself far more productive.",
+        "We will sign a mutual NDA on request before any scoping conversation — just say so in your message. Your enquiry stays in our inbox and CRM and goes nowhere else: no partners, no referral networks, no lead-resale lists. If you would rather not put details in a web form at all, email us and we will take it from there.",
     },
   ],
   ctaBand: {
     h2: "Prefer a written audit before a call?",
     subhead:
-      "Request a free 30-minute audit of your existing site — Loom walkthrough plus a one-page PDF.",
+      "Request a free 30-minute audit of your existing site — a recorded walkthrough plus a one-page summary of what we would change first.",
     primaryCta: { label: "Get a free site audit", href: "/free-audit" },
   },
 } as const;

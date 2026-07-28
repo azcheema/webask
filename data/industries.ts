@@ -55,56 +55,61 @@ export const industries: ReadonlyArray<Industry> = [
     slug: "aesthetic-clinics",
     name: "Aesthetic Clinics",
     audienceType:
-      "Med spas, aesthetic clinics, injectable and laser providers, and cosmetic dermatology practices",
+      "Aesthetic clinics, medical aesthetics practices, injectable and laser providers, and cosmetic dermatology clinics in the United Kingdom",
     meta: {
-      title: "Web Design & Marketing for Aesthetic Clinics & Med Spas",
+      title: "Compliant Websites for UK Aesthetic Clinics",
       description:
-        "Booking-first websites, GoHighLevel automation, missed-call AI, and local SEO for med spas and aesthetic clinics — built to fill consultation calendars, not win design awards.",
+        "Websites and automation for UK aesthetic clinics, built around the advertising rules most agencies have never read. Fast, booking-led, and structured so your site does not breach the CAP Code.",
     },
     hero: {
-      h1: "Websites and automation that keep your aesthetic clinic's calendar full.",
+      h1: "A clinic website that fills the diary without breaking the rules.",
       subhead:
-        "Most med-spa sites look good and book nothing. We build the conversion path — fast site, frictionless booking, and follow-up that catches the leads your front desk misses.",
+        "Nearly every UK aesthetic clinic website is quietly non-compliant — and the fix is structural, not a rewrite of a few sentences. We build sites that convert and stay inside the CAP Code.",
       primaryCta: { label: "Book a clinic strategy call", href: "/contact" },
     },
     cardSummary:
-      "Booking-first sites, CRM automation, and missed-call recovery for med spas, injectable and laser providers, and cosmetic dermatology.",
+      "Booking-led sites, CRM automation and missed-call recovery for UK aesthetic clinics — architected around the advertising rules that govern what you can say.",
     relatedServiceSlugs: ["web-development", "ui-ux-design", "crm-automation", "ai-integration"],
     faqs: [
       {
-        question: "How much does a med spa website cost?",
+        question: "How much does an aesthetic clinic website cost",
         answer:
-          "A custom aesthetic-clinic website starts at £3,500 for the build itself. Most clinics pair it with CRM and booking automation (from £2,500) so leads actually convert, and many add a monthly SEO retainer (from £750/month) to win local search. We scope the exact mix on a call — there's no point selling you a £12,000 site if a focused build plus automation is what fills your calendar. Every price on our site is a real starting figure, not a contact-for-quote game.",
+          "A custom clinic website starts at £3,500 for the build. Most clinics pair it with CRM and booking automation (from £2,500) so enquiries actually convert, and many add a monthly SEO retainer (from £750/month) to win local search. We scope the mix on a call — there is no sense selling you a £12,000 site when a focused build plus automation is what fills the diary. Every figure on this site is a real starting price, not a prompt to request a quote.",
       },
       {
-        question: "Can you connect the site to our booking and CRM tools?",
+        question: "Why is my current clinic website probably non-compliant",
         answer:
-          "Yes — that's usually the highest-leverage part of the work. We wire your site into the booking and CRM stack you already run, or set one up (we work extensively in GoHighLevel and HubSpot). Online booking, intake forms, automated appointment reminders, deposit handling, and review requests all flow through one system, so a consultation request becomes a booked, confirmed, reminded appointment without your front desk re-typing anything.",
+          "Because prescription-only medicines cannot be advertised to the public in the UK at all, and most clinic sites name them — on treatment pages, in price lists, in FAQs and in before-and-after captions. The ASA also treats common euphemisms as implied promotion of the same medicine, so swapping the brand name for a softer phrase does not fix it. What the rules do permit is advertising a consultation. Getting from one to the other is an information-architecture change, not a copy edit, which is why so few sites have made it.",
       },
       {
-        question: "We miss a lot of calls when we're with clients. Can AI help?",
+        question: "Can I still list prices for injectable treatments",
         answer:
-          "This is the single biggest leak we see in aesthetics. When you're mid-treatment you can't answer the phone, and a prospect who reaches voicemail books somewhere else. An AI voice agent answers every call, books straight into your calendar, answers common questions about treatments and pricing, and texts a booking link to anyone it can't fully handle — then logs it all in your CRM. It pays for itself on the appointments you're currently losing to voicemail.",
+          "Conditionally, yes — and this is the part almost nobody explains properly. A price list covering a prescription-only treatment may exist where it sits at least two clicks from the homepage, is reached through consultation-led pages, stays purely informational with no promotional framing, and appears in neither the homepage nor the primary navigation. That is a site-structure requirement, and it is exactly what we build: a consultation-first path that satisfies it without burying the page so deep that nobody finds it.",
       },
       {
-        question: "Do you handle before-and-after galleries and treatment pages properly?",
+        question: "Are before-and-after photos allowed",
         answer:
-          'Yes, and we treat them as the conversion engine they are. Treatment pages are built around how patients actually search ("lip filler near me," "morpheus8 cost") with the structure search engines reward, and galleries are built to load fast and look credible on a phone. We\'ll also flag the compliance edges — consent for patient images, and the advertising rules around before-and-afters and injectable brand names vary by state and platform — so you show results without inviting a problem.',
+          "It depends entirely on what the image demonstrates. Where it is evident that a prescription-only treatment was administered, the image can constitute implied advertising of that medicine even with no text alongside it. Photographs of treatments that do not involve a prescription-only medicine are on much safer ground. Separately, patient images need documented consent for marketing use under UK GDPR. We build galleries that are fast and credible, and we flag which images belong where.",
       },
       {
-        question: "Will the site actually be fast on a phone?",
+        question: "Do I need a licence to operate in 2026",
         answer:
-          "Yes — and for aesthetics it matters more than most verticals, because your traffic is overwhelmingly mobile and image-heavy. We enforce a sub-2-second mobile load in our build process and verify it in continuous integration, so your gallery-rich pages stay fast. A slow site doesn't just frustrate visitors; it ranks worse and quietly costs you the bookings that go to whoever loads first.",
+          "As at July 2026 the England licensing scheme for non-surgical cosmetic procedures is not yet in force. The Government published its consultation response in August 2025, proposing a red, amber and green risk categorisation, and signalled a further consultation on the highest-risk procedures in spring 2026. Since October 2021 it has already been a criminal offence in England to administer botulinum toxin or filler for cosmetic purposes to under-18s. We track this because a clinic site written to the wrong rules ages badly.",
       },
       {
-        question: "Can you help us rank for treatments in our city?",
+        question: "Are you lawyers",
         answer:
-          'Yes — local SEO is core to aesthetics, where almost every search has a "near me" intent. The work spans the technical foundation, treatment and location pages mapped to real search demand, your Google Business Profile, and a review-generation flow through your CRM. It compounds over months rather than weeks; anyone promising you the top spot next month is best avoided. If you need patients faster while SEO matures, we\'ll say so and point you at paid search.',
+          "No, and we will not pretend otherwise. We are a web and automation studio that has read the rules properly and builds sites that respect them, which puts us well ahead of most agencies in this sector but does not make us a substitute for professional advice. Where copy sits genuinely close to the line we use CAP's Copy Advice service, which is free and non-binding, rather than guessing on your behalf. Anything with real legal consequence should go past a solicitor.",
       },
       {
-        question: "Do you only work with aesthetic clinics?",
+        question: "Will the site be fast on a phone",
         answer:
-          "No — Naxdor builds for SMBs across many industries. Aesthetics is one of our focus verticals because the pattern is so consistent (mobile, booking-led, follow-up-driven), so we bring playbooks rather than starting from scratch. But the underlying craft — fast custom sites, CRM automation, AI integration, SEO — is the same work we do everywhere, applied to how your clinic actually wins patients.",
+          "Yes, and in aesthetics it matters more than in most sectors because the traffic is overwhelmingly mobile and the pages are image-heavy. We hold every build to a sub-two-second largest contentful paint and enforce it in continuous integration rather than checking once at launch. A slow gallery does not merely irritate people — it ranks worse, and it quietly hands the booking to whichever clinic loaded first.",
+      },
+      {
+        question: "Do you only work with aesthetic clinics",
+        answer:
+          "No — we build for UK small businesses across many sectors, and most of our work is not clinic work. Aesthetics is a focus vertical because the pattern is so consistent (mobile, enquiry-led, follow-up-driven) and because the regulatory layer rewards knowing it properly. The underlying craft is the same everywhere; what changes here is that the rules shape the architecture.",
       },
     ],
   },
