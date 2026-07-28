@@ -51,7 +51,7 @@ export function ContactNotification({
             New contact enquiry
           </Heading>
           <Text style={{ color: "#52525b", margin: "0 0 20px" }}>
-            A prospect just submitted the contact form on naxdor.com.
+            A prospect just submitted the contact form on webask.co.uk.
           </Text>
 
           <Section

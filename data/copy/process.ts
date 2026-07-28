@@ -9,8 +9,8 @@ export type ProcessStep = {
   readonly shortDescription: string;
   /** Long-form description for the /process page — 120–200 words. */
   readonly longDescription: string;
-  /** Concrete artifacts the client receives during this stage. */
-  readonly artifacts: ReadonlyArray<string>;
+  /** Concrete artefacts the client receives during this stage. */
+  readonly artefacts: ReadonlyArray<string>;
   /** What we ask the client to bring or do during this stage. */
   readonly clientInputs: ReadonlyArray<string>;
   /** Typical duration as a range — varies by service. */
@@ -45,7 +45,7 @@ export const process: ProcessContent = {
   meta: {
     title: "Our Process — Discover, Design, Build, Grow",
     description:
-      "How Naxdor delivers digital services for SMBs. Four stages, concrete artifacts, named timelines, and what we expect from you at each step.",
+      "How WebAsk delivers digital services for small businesses. Four stages, concrete artefacts, named timelines, and what we expect from you at each step.",
   },
   hero: {
     h1: "How we work — four stages, no surprises.",
@@ -54,7 +54,7 @@ export const process: ProcessContent = {
     primaryCta: { label: "Book a discovery call", href: "/contact" },
   },
   intro:
-    "The fastest way to lose months on a project is to skip the boring parts. We don't. Every Naxdor engagement runs the same four stages so you see the trade-offs early, the work as it happens, and the results in numbers — not just at the end.",
+    "The fastest way to lose months on a project is to skip the boring parts. We don't. Every WebAsk engagement runs the same four stages so you see the trade-offs early, the work as it happens, and the results in numbers — not just at the end.",
   steps: [
     {
       number: 1,
@@ -64,7 +64,7 @@ export const process: ProcessContent = {
         "We sit with you, your team, and your data to understand the real problem — not just the brief. You leave with a scoped plan, a budget, and a date.",
       longDescription:
         "Discovery is one to two working sessions plus a short async loop. We map your current stack, the user journeys that matter, and the metrics that decide success. We pressure-test the brief — sometimes the right project is smaller than the original ask; sometimes it's bigger. By the end you have a written scope, a phased delivery plan, a fixed-fee proposal (or T&M cap), and a target launch date. If we don't think we're the right partner, we say so on this call.",
-      artifacts: [
+      artefacts: [
         "Discovery write-up — problems, users, success metrics",
         "Scope document with in/out of scope, assumptions, and dependencies",
         "Fixed-fee proposal (or T&M cap) with milestones and payment schedule",
@@ -85,7 +85,7 @@ export const process: ProcessContent = {
         "Sitemap, wireframes, then visual design — reviewed in working sessions, not delivered over email. Engineering pairs in from day one so the design ships.",
       longDescription:
         "Design starts with sitemap and wireframes — the parts that matter for SEO, conversion, and information hierarchy. Then we layer on visual design in real working sessions where you see options and trade-offs side by side. Engineering pairs in throughout so the design lands as components, not as Figma frames that need re-interpretation. Two rounds of revisions are built in. By the end of Design you've signed off on every screen and flow, the component system is half-built, and engineering already has the green light to ship.",
-      artifacts: [
+      artefacts: [
         "Sitemap and IA",
         "Wireframes for every key screen and flow",
         "Visual design in Figma — every screen, mobile and desktop",
@@ -106,7 +106,7 @@ export const process: ProcessContent = {
         "Engineering in weekly sprints with a live preview link from day one. CI enforces performance, accessibility, and SEO budgets on every commit.",
       longDescription:
         "Build runs in weekly sprints with a preview URL you can open from your phone the moment commits land. Every page is performance-budgeted in CI — Lighthouse runs on every pull request, accessibility is audited end-to-end, and SEO foundations (schema, sitemap, robots, OG) are wired before the design layer. You see the work as it's built; we don't surprise you with a Big Reveal at the end. Pre-launch, we run a complete QA pass on mobile and desktop, validate JSON-LD in Rich Results Test, and submit the sitemap to Google Search Console.",
-      artifacts: [
+      artefacts: [
         "Preview URL updated on every commit",
         "Lighthouse, accessibility, and SEO budgets enforced in CI",
         "Pre-launch QA report and a launch checklist",
@@ -127,7 +127,7 @@ export const process: ProcessContent = {
         "Post-launch is when most agencies disappear. We monitor performance, SEO rankings, and lead flow — then iterate on what the data shows.",
       longDescription:
         "Launch is a milestone, not a finish line. For 30 days post-launch we're on hand for tweaks, training, and the small things that surface only in real traffic. Beyond that, optional retainers — Maintenance for the asset, SEO for the rankings, CRM for the funnel — keep the work compounding. Quarterly we run a health review: Core Web Vitals, search rankings, lead-flow metrics, conversion rate. We bring the numbers, you bring the questions. The point is to keep the thing we built earning — not to bill you for re-doing it in a year.",
-      artifacts: [
+      artefacts: [
         "30-day post-launch support — bug fixes, copy edits, training",
         "Quarterly health review — CWV, rankings, leads, conversion",
         "Maintenance, SEO, or CRM retainer if it earns its place",
@@ -163,7 +163,7 @@ export const process: ProcessContent = {
       },
       {
         title: "Your data, your accounts.",
-        body: "Domains, hosting, analytics, CRM, repos — all live in accounts you own from day one. Naxdor is a collaborator, not a hostage-taker.",
+        body: "Domains, hosting, analytics, CRM, repos — all live in accounts you own from day one. WebAsk is a collaborator, not a hostage-taker.",
       },
       {
         title: "Senior engineers do the work.",

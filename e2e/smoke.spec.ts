@@ -108,7 +108,9 @@ test.describe("smoke", () => {
     // MDX comparison table + prose, so match just the price-card display value).
     await expect(page.getByText("£3,500", { exact: true })).toBeVisible();
     // MDX long-form body rendered (first prose h2).
-    await expect(page.getByRole("heading", { name: /why most smb websites/i })).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: /why most small business websites/i }),
+    ).toBeVisible();
     // FAQs render as structured content (relocated out of MDX into data/services).
     await expect(page.getByRole("heading", { name: /frequently asked questions/i })).toBeVisible();
     // @graph emits Service + FAQPage + BreadcrumbList for this page.

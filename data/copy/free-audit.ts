@@ -43,12 +43,12 @@ export const freeAudit: FreeAuditContent = {
   meta: {
     title: "Free SEO + Core Web Vitals Audit",
     description:
-      "A free 30-minute audit of your SMB website — SEO foundations, Core Web Vitals, and five prioritized fixes. Loom walkthrough plus a one-page PDF. No sales pitch.",
+      "A free 30-minute audit of your small business website — SEO foundations, Core Web Vitals, and five prioritised fixes. Loom walkthrough plus a one-page PDF. No sales pitch.",
   },
   hero: {
-    h1: "A free 30-minute audit of your SMB website.",
+    h1: "A free 30-minute audit of your small business website.",
     subhead:
-      "Five prioritized findings on SEO, Core Web Vitals, and conversion — delivered as a Loom walkthrough plus a one-page PDF. No sales deck attached.",
+      "Five prioritised findings on SEO, Core Web Vitals, and conversion — delivered as a Loom walkthrough plus a one-page PDF. No sales deck attached.",
     primaryCta: { label: "Request your free audit", href: "/contact?topic=free-audit" },
     capacityNote: "Currently accepting 10 audits per month.",
   },
@@ -61,7 +61,7 @@ export const freeAudit: FreeAuditContent = {
         body: "10–15 minutes, screen-recorded, narrated. We walk through the audit findings on your actual pages so you see exactly what's wrong and what to do about it.",
       },
       {
-        title: "A one-page PDF with five prioritized fixes",
+        title: "A one-page PDF with five prioritised fixes",
         body: "Ranked by effort vs impact. Three you can do today, two that need an engineer. Each fix names the file, the page, or the configuration that needs to change.",
       },
       {
@@ -100,14 +100,14 @@ export const freeAudit: FreeAuditContent = {
     eyebrow: "Who this is for",
     h2: "An honest sense of fit, before you fill the form.",
     fit: [
-      "SMBs whose existing site has been live for at least six months",
+      "small businesses whose existing site has been live for at least six months",
       "Local businesses competing in search — clinics, agencies, retailers, service providers",
       "Operators ready to invest in SEO if the audit makes the case",
       "Founders who want a second set of eyes before commissioning a rebuild",
     ],
     notFit: [
       "Sites that aren't live yet — there's nothing to audit",
-      "Personal blogs or hobby projects — we limit free audits to SMB sites",
+      "Personal blogs or hobby projects — we limit free audits to small business sites",
       "Anyone hoping for a free deliverable they can resell — we'll know, and we'll politely decline",
     ],
   },

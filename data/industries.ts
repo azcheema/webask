@@ -1,5 +1,5 @@
 /**
- * Industry catalogue — the canonical source of truth for WebAsk's three launch
+ * Industry catalogueue — the canonical source of truth for WebAsk's three launch
  * verticals (aesthetic clinics, dental practices, beauty/wellness clinics).
  *
  * ⚠️ THE THREE PAGES MUST NOT READ AS CLONES. Each vertical is regulated
@@ -16,7 +16,7 @@
  * Structured fields (meta, hero, FAQs, related services, schema `audienceType`)
  * live here; the long-form vertical body lives in `content/industries/<slug>.mdx`
  * and is loaded by the server-only `lib/industries.ts` (so the `node:fs` MDX
- * loader never leaks into client bundles importing this catalog). This mirrors
+ * loader never leaks into client bundles importing this catalogue). This mirrors
  * the `data/services.ts` + `lib/services.ts` split.
  *
  * Voice + E-E-A-T: copy is AI-drafted for founder review. No fabricated
@@ -259,7 +259,7 @@ export function getIndustryBySlug(slug: string): Industry | undefined {
 
 /**
  * Industries relevant to a service — the inverse of `relatedServiceSlugs`, so
- * the catalog above stays the single source of truth (no parallel list to drift
+ * the catalogue above stays the single source of truth (no parallel list to drift
  * out of sync). A service that no launch vertical claims (e.g. e-commerce) maps
  * to an empty array, and its consumer renders services-only.
  */

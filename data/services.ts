@@ -1,5 +1,5 @@
 /**
- * Service catalog — the canonical source of truth for the 9 services Naxdor
+ * Service catalogue — the canonical source of truth for the 9 services WebAsk
  * sells. Consumed by:
  *  - `app/(marketing)/pricing/page.tsx` (pricing table)
  *  - `app/(marketing)/services/*` (per-service detail pages — Web Dev in
@@ -49,7 +49,7 @@ export type Service = {
    * The two sibling services most naturally engaged alongside this one, in
    * display order. Resolved by `getRelatedServices` and rendered in the service
    * page's "Keep exploring" cross-link grid (internal-linking discipline). Slugs
-   * must exist in this catalog; an unknown slug is silently dropped.
+   * must exist in this catalogue; an unknown slug is silently dropped.
    */
   readonly relatedServiceSlugs: ReadonlyArray<string>;
   /**
@@ -69,7 +69,7 @@ export const services: ReadonlyArray<Service> = [
     heroSubhead:
       "Fast, search-ranked websites built on a modern stack — designed to convert on mobile first and grow with your business.",
     whoItsFor:
-      "SMBs replacing a slow templated site, agencies that need an engineering-grade build partner, or founders shipping a marketing site for a new venture.",
+      "small businesses replacing a slow templated site, agencies that need an engineering-grade build partner, or founders shipping a marketing site for a new venture.",
     pricing: {
       startingAmount: 3500,
       currency: "GBP",
@@ -99,7 +99,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What's the difference between your £3,500 site and a £1,500 freelancer build?",
         answer:
-          "Scope and floor. A £1,500 freelancer site is usually 3–5 pages on a template with light SEO and no performance budget. A Naxdor site is 5–10 pages of custom design and build, with sub-2-second LCP enforced in CI, full schema.org structured data, accessibility audited to WCAG 2.2 AA, and a real component system underneath. The freelancer build is fine if your site is going to be a static brochure; the Naxdor floor exists because we treat the site as a long-term sales asset, not a one-time deliverable.",
+          "Scope and floor. A £1,500 freelancer site is usually 3–5 pages on a template with light SEO and no performance budget. A WebAsk site is 5–10 pages of custom design and build, with sub-2-second LCP enforced in CI, full schema.org structured data, accessibility audited to WCAG 2.2 AA, and a real component system underneath. The freelancer build is fine if your site is going to be a static brochure; the WebAsk floor exists because we treat the site as a long-term sales asset, not a one-time deliverable.",
       },
       {
         question: "Can you redesign my existing site without rebuilding from scratch?",
@@ -109,7 +109,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Do you host our site, or do we?",
         answer:
-          "You host it. The Vercel project lives in an account you own from day one. The same goes for your domain, your analytics, your Search Console property, and your CRM. Naxdor is a collaborator, not a hostage-taker — if you ever fire us, you keep the asset intact.",
+          "You host it. The Vercel project lives in an account you own from day one. The same goes for your domain, your analytics, your Search Console property, and your CRM. WebAsk is a collaborator, not a hostage-taker — if you ever fire us, you keep the asset intact.",
       },
       {
         question: "What if we want to edit copy ourselves after launch?",
@@ -140,7 +140,7 @@ export const services: ReadonlyArray<Service> = [
     heroSubhead:
       "Storefronts engineered to convert — from a focused Shopify build to a fully custom headless commerce stack.",
     whoItsFor:
-      "SMBs selling direct-to-consumer, brands outgrowing a templated theme, or operators migrating from WooCommerce/Etsy to a real platform.",
+      "small businesses selling direct-to-consumer, brands outgrowing a templated theme, or operators migrating from WooCommerce/Etsy to a real platform.",
     pricing: {
       startingAmount: 6500,
       currency: "GBP",
@@ -149,7 +149,7 @@ export const services: ReadonlyArray<Service> = [
         "Catalog size, custom theming depth, third-party integrations (ERP, fulfilment, subscriptions), and headless vs Shopify-native are the levers.",
     },
     includes: [
-      "Shopify or custom build with theme work, checkout customization, and product templates",
+      "Shopify or custom build with theme work, checkout customisation, and product templates",
       "Payment, shipping, and tax integrations configured and tested",
       "Performance budgets enforced — sub-2-second LCP on PDPs and PLPs",
       "Conversion-grade cart, checkout, and post-purchase flows",
@@ -165,12 +165,12 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Should I build on Shopify or go fully custom?",
         answer:
-          "For most SMBs, Shopify. Its checkout converts, its payment and fraud tooling is mature, and it stays patched without you thinking about it — we just do serious theme and template work on top. We reach for a headless front end on Shopify, or a fully custom stack, only when the brand experience or the integration requirements (unusual catalogs, complex pricing, deep ERP sync) genuinely outgrow what a themed store can do. We make the recommendation on the first call, and we will steer you to Shopify even though a custom build bills more — putting you on the wrong platform to win a bigger invoice is how stores end up rebuilt in two years.",
+          "For most small businesses, Shopify. Its checkout converts, its payment and fraud tooling is mature, and it stays patched without you thinking about it — we just do serious theme and template work on top. We reach for a headless front end on Shopify, or a fully custom stack, only when the brand experience or the integration requirements (unusual catalogues, complex pricing, deep ERP sync) genuinely outgrow what a themed store can do. We make the recommendation on the first call, and we will steer you to Shopify even though a custom build bills more — putting you on the wrong platform to win a bigger invoice is how stores end up rebuilt in two years.",
       },
       {
         question: "How long does an e-commerce build take?",
         answer:
-          "A focused Shopify storefront launches in 6–9 weeks from kickoff: Discover 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks overlapping the tail of Design, then a full QA pass and launch. Headless or fully custom builds, large catalogs, subscriptions, or multi-system integrations extend Build by 3–6 weeks. We commit to a target launch date in the written scope.",
+          "A focused Shopify storefront launches in 6–9 weeks from kickoff: Discover 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks overlapping the tail of Design, then a full QA pass and launch. Headless or fully custom builds, large catalogues, subscriptions, or multi-system integrations extend Build by 3–6 weeks. We commit to a target launch date in the written scope.",
       },
       {
         question: "Can you migrate my WooCommerce, Wix, or Etsy store without losing rankings?",
@@ -190,7 +190,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Who owns the store, the data, and the accounts after launch?",
         answer:
-          "You do, from day one. The Shopify (or hosting) account, the domain, the analytics, the Search Console property, and the customer data all live in accounts you own. Naxdor is a collaborator, not a hostage-taker — if you ever fire us, you keep the store and everything in it, intact and exportable.",
+          "You do, from day one. The Shopify (or hosting) account, the domain, the analytics, the Search Console property, and the customer data all live in accounts you own. WebAsk is a collaborator, not a hostage-taker — if you ever fire us, you keep the store and everything in it, intact and exportable.",
       },
       {
         question: "Do you offer support after the store launches?",
@@ -272,7 +272,7 @@ export const services: ReadonlyArray<Service> = [
     heroSubhead:
       "Research-led design systems and conversion-grade interfaces — built to ship into the same codebase that consumes them.",
     whoItsFor:
-      "Founders with a working product that looks dated, teams introducing a design system, or SMBs preparing for a rebuild and want the design done right first.",
+      "Founders with a working product that looks dated, teams introducing a design system, or small businesses preparing for a rebuild and want the design done right first.",
     pricing: {
       startingAmount: 3000,
       currency: "GBP",
@@ -338,7 +338,7 @@ export const services: ReadonlyArray<Service> = [
     heroSubhead:
       "Technical, on-page, and content SEO that earns rankings — engineered into the site, not bolted on after launch.",
     whoItsFor:
-      "SMBs invisible on Google despite a working site, multi-location practices that need local SEO, or operators ready to invest in a real organic channel.",
+      "small businesses invisible on Google despite a working site, multi-location practices that need local SEO, or operators ready to invest in a real organic channel.",
     pricing: {
       startingAmount: 750,
       currency: "GBP",
@@ -349,7 +349,7 @@ export const services: ReadonlyArray<Service> = [
     includes: [
       "Technical audit covering Core Web Vitals, crawl, schema, and indexation",
       "Keyword strategy mapped to your services, locations, and industries",
-      "On-page optimization across existing high-intent pages",
+      "On-page optimisation across existing high-intent pages",
       "Monthly content brief and publication of 2–4 long-form pieces",
       "Reporting that ties rankings and traffic to leads, not vanity metrics",
     ],
@@ -378,12 +378,12 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What makes an engineering firm's SEO different from a marketing agency's?",
         answer:
-          "Most of SEO's hardest wins are technical — Core Web Vitals, structured data, crawlability, indexation, site architecture — and a marketing agency typically emails those as recommendations and hopes your developer implements them. We are an engineering firm, so when the site is one we built or maintain, we fix them directly in the code. Content and strategy still matter and we do them too, but the technical floor is where a lot of SMB SEO silently fails, and that is our home turf.",
+          "Most of SEO's hardest wins are technical — Core Web Vitals, structured data, crawlability, indexation, site architecture — and a marketing agency typically emails those as recommendations and hopes your developer implements them. We are an engineering firm, so when the site is one we built or maintain, we fix them directly in the code. Content and strategy still matter and we do them too, but the technical floor is where a lot of small business SEO silently fails, and that is our home turf.",
       },
       {
         question: "Do I need to have my website built by you for SEO to work?",
         answer:
-          "No. We do technical, on-page, and content SEO on sites we did not build — the audit maps what is fixable on your current stack. The one caveat is honesty about the platform: if your site sits on something that fundamentally can't hit Core Web Vitals or support proper structured data, we will tell you that the highest-leverage SEO move is fixing or replacing the site, rather than charging you a retainer to optimize around a ceiling.",
+          "No. We do technical, on-page, and content SEO on sites we did not build — the audit maps what is fixable on your current stack. The one caveat is honesty about the platform: if your site sits on something that fundamentally can't hit Core Web Vitals or support proper structured data, we will tell you that the highest-leverage SEO move is fixing or replacing the site, rather than charging you a retainer to optimise around a ceiling.",
       },
       {
         question: "What do you actually report on each month?",
@@ -404,7 +404,7 @@ export const services: ReadonlyArray<Service> = [
     heroSubhead:
       "Native and cross-platform mobile apps — designed, built, and shipped to the App Store and Play Store with the same rigor as our web work.",
     whoItsFor:
-      "SMBs whose customers expect a mobile experience, operators bundling an app with services, or founders validating a mobile-first product.",
+      "small businesses whose customers expect a mobile experience, operators bundling an app with services, or founders validating a mobile-first product.",
     pricing: {
       startingAmount: 12000,
       currency: "GBP",
@@ -429,7 +429,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Should I build a native app or cross-platform (React Native / Flutter)?",
         answer:
-          "For most SMBs, cross-platform. One React Native or Flutter codebase ships to both iOS and Android, which roughly halves the cost and keeps the two versions in step. We reach for fully native (Swift/Kotlin) only when the app does something performance-critical or deeply platform-specific that cross-platform cannot do well — and we will tell you honestly which camp yours is in rather than push native to inflate the invoice.",
+          "For most small businesses, cross-platform. One React Native or Flutter codebase ships to both iOS and Android, which roughly halves the cost and keeps the two versions in step. We reach for fully native (Swift/Kotlin) only when the app does something performance-critical or deeply platform-specific that cross-platform cannot do well — and we will tell you honestly which camp yours is in rather than push native to inflate the invoice.",
       },
       {
         question: "What does the £12,000 starting price cover?",
@@ -454,7 +454,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Do I need separate apps for iOS and Android?",
         answer:
-          "You need to be present on both if your customers are on both, but you usually do not need two separate codebases. A cross-platform build produces a real app for each store from one codebase, which is why we recommend it for most SMBs — you get full iOS and Android presence without paying to build and maintain everything twice.",
+          "You need to be present on both if your customers are on both, but you usually do not need two separate codebases. A cross-platform build produces a real app for each store from one codebase, which is why we recommend it for most small businesses — you get full iOS and Android presence without paying to build and maintain everything twice.",
       },
       {
         question: "What about updates and maintenance after launch?",
@@ -470,7 +470,7 @@ export const services: ReadonlyArray<Service> = [
     heroSubhead:
       "GoHighLevel, HubSpot, and custom CRM setups — implemented, automated, and integrated with the rest of your stack so leads stop dying in your inbox.",
     whoItsFor:
-      "SMBs running their CRM on email and hope, agencies moving clients onto GoHighLevel, or operators migrating between HubSpot, Pipedrive, Salesforce, and GHL.",
+      "small businesses running their CRM on email and hope, agencies moving clients onto GoHighLevel, or operators migrating between HubSpot, Pipedrive, Salesforce, and GHL.",
     pricing: {
       startingAmount: 2500,
       currency: "GBP",
@@ -536,7 +536,7 @@ export const services: ReadonlyArray<Service> = [
     heroSubhead:
       "AI that earns its keep — voice agents that answer your phone, chatbots that book appointments, and n8n workflows that move data between your tools.",
     whoItsFor:
-      "SMBs losing leads to unanswered phones, operators drowning in repetitive admin, or teams that want AI woven into existing tools — not a separate experiment.",
+      "small businesses losing leads to unanswered phones, operators drowning in repetitive admin, or teams that want AI woven into existing tools — not a separate experiment.",
     pricing: {
       startingAmount: 4500,
       currency: "GBP",
@@ -576,12 +576,12 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Do you train a custom AI model for us?",
         answer:
-          "No, and almost no SMB actually needs one. We build on frontier models with retrieval (so they use your data) and tools (so they can take actions in your systems) — which covers the vast majority of real use cases far more cheaply and reliably than training a bespoke model. If your situation genuinely calls for custom training, we will tell you, but we will not sell it to you to pad the project.",
+          "No, and almost no small business actually needs one. We build on frontier models with retrieval (so they use your data) and tools (so they can take actions in your systems) — which covers the vast majority of real use cases far more cheaply and reliably than training a bespoke model. If your situation genuinely calls for custom training, we will tell you, but we will not sell it to you to pad the project.",
       },
       {
         question: "What are the ongoing costs after the build?",
         answer:
-          "Two things: the usage fees from the underlying AI providers, which are passed through at cost and billed to a usage account you own, and (optionally) a Maintenance plan to monitor, tune, and improve the integration over time. We are transparent about the expected usage costs during scoping so there are no surprises — for most SMB use cases they are modest relative to the time or leads the integration saves.",
+          "Two things: the usage fees from the underlying AI providers, which are passed through at cost and billed to a usage account you own, and (optionally) a Maintenance plan to monitor, tune, and improve the integration over time. We are transparent about the expected usage costs during scoping so there are no surprises — for most small business use cases they are modest relative to the time or leads the integration saves.",
       },
       {
         question: "Which should I start with — a voice agent, a chatbot, or workflow automation?",
@@ -602,7 +602,7 @@ export const services: ReadonlyArray<Service> = [
     heroSubhead:
       "Recurring care plans for sites, apps, and CRMs we built — security updates, monitoring, performance tuning, and a monthly improvement budget.",
     whoItsFor:
-      "Existing clients who want their site, app, or CRM kept current without an in-house engineer, or operators inheriting a Naxdor-built stack.",
+      "Existing clients who want their site, app, or CRM kept current without an in-house engineer, or operators inheriting a WebAsk-built stack.",
     pricing: {
       startingAmount: 250,
       currency: "GBP",

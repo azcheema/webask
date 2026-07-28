@@ -6,10 +6,10 @@
  * four levers — see `docs/phases/phase-1-mvp.md` § Cold-start trust
  * strategy / 4. Portfolio strip.
  *
- * **Every entry is founder prior work, NOT Naxdor work.** The cards must be
+ * **Every entry is founder prior work, NOT WebAsk work.** The cards must be
  * labeled as "Founder prior work" wherever they render so prospects aren't
- * misled. When real Naxdor case studies land in Phase 3, this data source
- * either retires or splits into "Naxdor" vs "Prior work" sections.
+ * misled. When real WebAsk case studies land in Phase 3, this data source
+ * either retires or splits into "WebAsk" vs "Prior work" sections.
  *
  * Entries below are scaffolds — founder supplies real projects, outcomes,
  * roles, and screenshots before this branch merges.

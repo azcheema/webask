@@ -12,7 +12,7 @@ type ProcessStepsProps = {
  * The reserved "4-step vertical process visual" (design-system.md). Each stage
  * is a bordered token card: a brand numeral badge + name + tagline + duration
  * pill, the long-form description, then two labelled sub-lists — what the client
- * receives (artifacts) and what we need from them (clientInputs).
+ * receives (artefacts) and what we need from them (clientInputs).
  *
  * Server component, fully static, token-driven. Reused by the /process page and
  * available to the about page's methodology section.
@@ -46,7 +46,7 @@ export function ProcessSteps({ steps }: ProcessStepsProps) {
           <Grid cols={1} colsMd={2} gap="lg">
             <StepList
               label="What you receive"
-              items={step.artifacts}
+              items={step.artefacts}
               icon={<Check className="text-brand-500 mt-0.5 size-4 shrink-0" aria-hidden />}
             />
             <StepList

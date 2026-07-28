@@ -67,7 +67,7 @@ export function ContactAutoresponder({ name, service, message }: ContactAutoresp
 
           <Section style={{ textAlign: "center", margin: "24px 0 0" }}>
             <Button
-              href="https://naxdor.com/free-audit"
+              href="https://webask.co.uk/free-audit"
               style={{
                 backgroundColor: "#5B4CDB",
                 color: "#ffffff",
@@ -83,7 +83,7 @@ export function ContactAutoresponder({ name, service, message }: ContactAutoresp
           </Section>
 
           <Text style={{ color: "#71717a", fontSize: "12px", margin: "24px 0 0" }}>
-            Naxdor · Digital services for SMBs · contact@naxdor.com
+            WebAsk · Digital services for small businesses · info@webask.co.uk
           </Text>
         </Container>
       </Body>

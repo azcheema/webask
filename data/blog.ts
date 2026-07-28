@@ -35,12 +35,12 @@ export const blogTopics: ReadonlyArray<BlogTopic> = [
     slug: "seo",
     label: "SEO",
     description:
-      "Local and technical SEO playbooks for SMBs — what actually moves rankings, and what just wastes budget.",
+      "Local and technical SEO playbooks for small businesses — what actually moves rankings, and what just wastes budget.",
     anchorServiceSlug: "seo",
   },
   {
     slug: "ai",
-    label: "AI for SMBs",
+    label: "AI for small businesses",
     description:
       "Voice agents, chatbots, and workflow automation for service businesses — ROI, pitfalls, and what's real today.",
     anchorServiceSlug: "ai-integration",

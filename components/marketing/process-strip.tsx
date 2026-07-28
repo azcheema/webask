@@ -24,7 +24,7 @@ type ProcessStripProps = {
  * The home page's compact 4-step process visual — the anatomy's "Process
  * (4-step visual)" section (uiux-guidelines.md), scaled for the home page.
  * Each stage shows a brand numeral badge + name + tagline + the short
- * `shortDescription` (authored for exactly this strip); the full artifacts /
+ * `shortDescription` (authored for exactly this strip); the full artefacts /
  * client-inputs detail lives on /process, linked by the closing CTA.
  *
  * Server component, fully static, token-driven — no client JS, so it stays
