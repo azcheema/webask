@@ -31,7 +31,7 @@ export function NavigationSection() {
             </p>
           </TabsContent>
           <TabsContent value="pricing">
-            <p className="text-fg-muted text-sm">Starting at $4,000.</p>
+            <p className="text-fg-muted text-sm">Starting at £3,000.</p>
           </TabsContent>
           <TabsContent value="faq">
             <p className="text-fg-muted text-sm">Common questions about engagements and scope.</p>

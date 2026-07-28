@@ -19,7 +19,7 @@ test.describe("smoke", () => {
       await expect(page.getByRole("heading", { level: 3, name: stage, exact: true })).toBeVisible();
     }
     // Pricing anchor surfaces a real "starting at" price on the home page itself.
-    await expect(page.getByText("USD $3,500", { exact: true })).toBeVisible();
+    await expect(page.getByText("£3,500", { exact: true })).toBeVisible();
     // Both retrofitted sections keep their "see full…" links to the deep pages.
     await expect(page.getByRole("link", { name: /see our process/i })).toBeVisible();
     await expect(page.getByRole("link", { name: /see full pricing/i })).toBeVisible();
@@ -103,10 +103,10 @@ test.describe("smoke", () => {
     // h1 is the service name (ServiceHero).
     await expect(page.getByRole("heading", { level: 1, name: /web development/i })).toBeVisible();
     // ServiceHero surfaces the anatomy's "Starting at $X" tag next to the H1.
-    await expect(page.getByText(/Starting at USD \$3,500/)).toBeVisible();
+    await expect(page.getByText(/Starting at £3,500/)).toBeVisible();
     // Price card anchor rendered from catalog data (exact: also appears in the
     // MDX comparison table + prose, so match just the price-card display value).
-    await expect(page.getByText("USD $3,500", { exact: true })).toBeVisible();
+    await expect(page.getByText("£3,500", { exact: true })).toBeVisible();
     // MDX long-form body rendered (first prose h2).
     await expect(page.getByRole("heading", { name: /why most smb websites/i })).toBeVisible();
     // FAQs render as structured content (relocated out of MDX into data/services).

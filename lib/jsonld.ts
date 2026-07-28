@@ -267,12 +267,15 @@ export type ServiceOptions = {
   name: string;
   description: string;
   /**
-   * "Starting at £X" — emitted as price + UnitPriceSpecification.
+   * "Starting at £X" — emitted as price + UnitPriceSpecification, in GBP.
    *
-   * ⚠️ The FIGURES are still the inherited USD amounts and are NOT yet adopted
-   * as GBP prices — decision gate D4 (final GBP price list) is open and blocks
-   * /pricing and every service page. The currency label is correct for the
-   * market; the numbers get replaced when D4 lands, before anything publishes.
+   * The figures are the **research-derived UK anchors** from
+   * docs/02-uk-market-research.md § 7, benchmarked against 2026 UK agency and
+   * freelancer pricing — not converted from the inherited USD list.
+   *
+   * ⚠️ Decision gate **D4** asks the founder to confirm them before publish,
+   * on the same principle naxdor.se used: a published price is a commitment.
+   * Change them in `data/services.ts` (the single source) if D4 moves them.
    */
   startingPrice: number;
 };

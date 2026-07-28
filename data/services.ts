@@ -11,13 +11,13 @@
  * Starting prices below are the **confirmed launch anchors** (founder-confirmed
  * 2026-06-02) — these are the figures every prospect quotes back, and every
  * downstream page derives them from this module. Display is **starting-price
- * only** ("Starting at USD $X"): no upper limit / typical range is shown, per
+ * only** ("Starting at £X"): no upper limit / typical range is shown, per
  * the founder's pricing-display decision. A custom-quote CTA carries the rest.
  */
 
 import type { CtaLink, FaqItem } from "@/data/types";
 
-export type Currency = "USD";
+export type Currency = "GBP";
 
 export type PriceCadence = "project" | "monthly";
 
@@ -72,7 +72,7 @@ export const services: ReadonlyArray<Service> = [
       "SMBs replacing a slow templated site, agencies that need an engineering-grade build partner, or founders shipping a marketing site for a new venture.",
     pricing: {
       startingAmount: 3500,
-      currency: "USD",
+      currency: "GBP",
       cadence: "project",
       priceNote:
         "Page count, custom illustrations, CMS depth, and the number of integrations are the biggest price levers.",
@@ -97,9 +97,9 @@ export const services: ReadonlyArray<Service> = [
           "A standard 5-to-10-page marketing site launches in 4–6 weeks from kickoff. Discover takes 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks (overlapping with the tail of Design), and launch happens at the end of Build. Larger sites with city pages, industry pages, or a blog framework extend Build by 2–4 weeks. We commit to a target launch date in the written scope.",
       },
       {
-        question: "What's the difference between your $3,500 site and a $1,500 freelancer build?",
+        question: "What's the difference between your £3,500 site and a £1,500 freelancer build?",
         answer:
-          "Scope and floor. A USD $1,500 freelancer site is usually 3–5 pages on a template with light SEO and no performance budget. A Naxdor site is 5–10 pages of custom design and build, with sub-2-second LCP enforced in CI, full schema.org structured data, accessibility audited to WCAG 2.2 AA, and a real component system underneath. The freelancer build is fine if your site is going to be a static brochure; the Naxdor floor exists because we treat the site as a long-term sales asset, not a one-time deliverable.",
+          "Scope and floor. A £1,500 freelancer site is usually 3–5 pages on a template with light SEO and no performance budget. A Naxdor site is 5–10 pages of custom design and build, with sub-2-second LCP enforced in CI, full schema.org structured data, accessibility audited to WCAG 2.2 AA, and a real component system underneath. The freelancer build is fine if your site is going to be a static brochure; the Naxdor floor exists because we treat the site as a long-term sales asset, not a one-time deliverable.",
       },
       {
         question: "Can you redesign my existing site without rebuilding from scratch?",
@@ -124,12 +124,12 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What if our brand assets aren't ready yet?",
         answer:
-          "We can build a temporary brand kit — logo wordmark, two colors, one typeface — for $1,500 as part of the engagement. It's enough to ship a site that looks intentional while a proper rebrand happens elsewhere. We're upfront that this is interim: the moment a full brand identity lands, we update the site in a small follow-up engagement.",
+          "We can build a temporary brand kit — logo wordmark, two colors, one typeface — for £1,500 as part of the engagement. It's enough to ship a site that looks intentional while a proper rebrand happens elsewhere. We're upfront that this is interim: the moment a full brand identity lands, we update the site in a small follow-up engagement.",
       },
       {
         question: "Do you offer maintenance after launch?",
         answer:
-          "Yes — a separate Maintenance care plan covers security patching, dependency updates, performance monitoring, and a monthly bucket of improvement hours. Starting at USD $750/month. We strongly recommend it for any site we build; an unmaintained site decays in months, not years.",
+          "Yes — a separate Maintenance care plan covers security patching, dependency updates, performance monitoring, and a monthly bucket of improvement hours. Starting at £250/month. We strongly recommend it for any site we build; an unmaintained site decays in months, not years.",
       },
     ],
   },
@@ -143,7 +143,7 @@ export const services: ReadonlyArray<Service> = [
       "SMBs selling direct-to-consumer, brands outgrowing a templated theme, or operators migrating from WooCommerce/Etsy to a real platform.",
     pricing: {
       startingAmount: 6500,
-      currency: "USD",
+      currency: "GBP",
       cadence: "project",
       priceNote:
         "Catalog size, custom theming depth, third-party integrations (ERP, fulfilment, subscriptions), and headless vs Shopify-native are the levers.",
@@ -195,7 +195,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Do you offer support after the store launches?",
         answer:
-          "Thirty days of post-launch support is included by default — bug fixes, small tweaks, and team training. After that, a Maintenance care plan covers platform and dependency updates, performance monitoring, and a monthly bucket of improvement hours, starting at USD $750/month. For a revenue-generating store we strongly recommend it; an unmaintained storefront accumulates broken apps and slow pages faster than you would expect.",
+          "Thirty days of post-launch support is included by default — bug fixes, small tweaks, and team training. After that, a Maintenance care plan covers platform and dependency updates, performance monitoring, and a monthly bucket of improvement hours, starting at £250/month. For a revenue-generating store we strongly recommend it; an unmaintained storefront accumulates broken apps and slow pages faster than you would expect.",
       },
     ],
   },
@@ -208,8 +208,8 @@ export const services: ReadonlyArray<Service> = [
     whoItsFor:
       "Operators replacing a tangle of spreadsheets, B2B founders shipping their first product surface, or teams that need a portal customers actually log into.",
     pricing: {
-      startingAmount: 15000,
-      currency: "USD",
+      startingAmount: 9500,
+      currency: "GBP",
       cadence: "project",
       priceNote:
         "Number of user roles, authentication complexity, third-party integrations, and whether real-time/multi-tenant features are required.",
@@ -234,7 +234,7 @@ export const services: ReadonlyArray<Service> = [
           "A website presents information — pages a visitor reads, with a contact form at the end. A web application is software people log into and do work in: internal tools, customer portals, dashboards, anything with user accounts, roles, and data that changes. The line is interactivity and state. If your users need to sign in, enter or manipulate data, and have different permissions, you are looking at an application, and it is engineered differently from a marketing site.",
       },
       {
-        question: "What does the USD $15,000 starting price actually get me?",
+        question: "What does the £9,500 starting price actually get me?",
         answer:
           "A production-deployed MVP — the core workflow built properly, not a clickable prototype. That includes discovery and design before any code, a typed Next.js implementation, authentication with role-based access, hosting and CI and monitoring stood up on accounts you own, and a documented handoff. It is a real first version you can put in front of real users. What it is not is every feature you can imagine in version one — we build the core, ship it, and grow it from there.",
       },
@@ -261,7 +261,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What happens after launch — support and new features?",
         answer:
-          "Thirty days of post-launch support is included. After that, most applications move to a Maintenance retainer (starting at USD $750/month) covering security patching, dependency upgrades, monitoring, and a monthly budget of improvement hours — because once people use an app daily, feature requests follow. Larger new capabilities are quoted as their own projects. An unmaintained application accumulates security and dependency debt quickly, so we recommend a plan for anything business-critical.",
+          "Thirty days of post-launch support is included. After that, most applications move to a Maintenance retainer (starting at £250/month) covering security patching, dependency upgrades, monitoring, and a monthly budget of improvement hours — because once people use an app daily, feature requests follow. Larger new capabilities are quoted as their own projects. An unmaintained application accumulates security and dependency debt quickly, so we recommend a plan for anything business-critical.",
       },
     ],
   },
@@ -274,8 +274,8 @@ export const services: ReadonlyArray<Service> = [
     whoItsFor:
       "Founders with a working product that looks dated, teams introducing a design system, or SMBs preparing for a rebuild and want the design done right first.",
     pricing: {
-      startingAmount: 4000,
-      currency: "USD",
+      startingAmount: 3000,
+      currency: "GBP",
       cadence: "project",
       priceNote:
         "Scope of the design system, number of key flows designed, and whether usability testing is included.",
@@ -310,7 +310,7 @@ export const services: ReadonlyArray<Service> = [
           "Buildable, by design. We deliver a tokenized component library in Figma — every color, type size, and spacing step is a named token that maps directly onto the design tokens engineering uses — and components are defined once and composed, exactly as they are in code. That closes the usual gap where an engineer rebuilds mockups by eye and the result drifts. If we build the product with you, the design ships into the same system that consumes it; if your team builds it, the system is structured and documented so they can.",
       },
       {
-        question: "What does the USD $4,000 starting price cover?",
+        question: "What does the £3,000 starting price cover?",
         answer:
           "Research and an information architecture, wireframes and then visual design across your core screens or flows, a tokenized Figma component library, two rounds of revisions with final assets exported and documented, and designer-engineer pairing during implementation if you build with us. It designs the core of the product properly and sets the system. A sprawling product with dozens of unique screens, or one that needs usability testing, is a larger engagement that we scope explicitly.",
       },
@@ -340,8 +340,8 @@ export const services: ReadonlyArray<Service> = [
     whoItsFor:
       "SMBs invisible on Google despite a working site, multi-location practices that need local SEO, or operators ready to invest in a real organic channel.",
     pricing: {
-      startingAmount: 1500,
-      currency: "USD",
+      startingAmount: 750,
+      currency: "GBP",
       cadence: "monthly",
       priceNote:
         "Market competitiveness, number of locations, content cadence, and link-building scope are the levers.",
@@ -406,8 +406,8 @@ export const services: ReadonlyArray<Service> = [
     whoItsFor:
       "SMBs whose customers expect a mobile experience, operators bundling an app with services, or founders validating a mobile-first product.",
     pricing: {
-      startingAmount: 20000,
-      currency: "USD",
+      startingAmount: 12000,
+      currency: "GBP",
       cadence: "project",
       priceNote:
         "Native vs React Native vs Flutter, number of platforms, offline support, push, and backend complexity move the price.",
@@ -432,7 +432,7 @@ export const services: ReadonlyArray<Service> = [
           "For most SMBs, cross-platform. One React Native or Flutter codebase ships to both iOS and Android, which roughly halves the cost and keeps the two versions in step. We reach for fully native (Swift/Kotlin) only when the app does something performance-critical or deeply platform-specific that cross-platform cannot do well — and we will tell you honestly which camp yours is in rather than push native to inflate the invoice.",
       },
       {
-        question: "What does the USD $20,000 starting price cover?",
+        question: "What does the £12,000 starting price cover?",
         answer:
           "A production first version live on both app stores — not a prototype. That includes discovery, a mobile design system, implementation in React Native, Flutter, or native code, integration with your backend (existing or one we build), App Store and Play Store submission and launch, and 30 days of post-launch support. It covers a focused MVP — the core experience built properly — not every feature you can imagine in version one. Mobile is our most variable service, so platform choice and feature complexity move the number a lot.",
       },
@@ -459,7 +459,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What about updates and maintenance after launch?",
         answer:
-          "Thirty days of post-launch support is included, then most apps move to a Maintenance care plan (starting at USD $750/month). Mobile especially needs ongoing care — Apple and Google ship OS updates and policy changes regularly, and an unmaintained app eventually breaks or gets pulled from the store. The plan covers updates, monitoring, and a budget of improvement hours; larger new features are quoted as their own projects.",
+          "Thirty days of post-launch support is included, then most apps move to a Maintenance care plan (starting at £250/month). Mobile especially needs ongoing care — Apple and Google ship OS updates and policy changes regularly, and an unmaintained app eventually breaks or gets pulled from the store. The plan covers updates, monitoring, and a budget of improvement hours; larger new features are quoted as their own projects.",
       },
     ],
   },
@@ -472,8 +472,8 @@ export const services: ReadonlyArray<Service> = [
     whoItsFor:
       "SMBs running their CRM on email and hope, agencies moving clients onto GoHighLevel, or operators migrating between HubSpot, Pipedrive, Salesforce, and GHL.",
     pricing: {
-      startingAmount: 4500,
-      currency: "USD",
+      startingAmount: 2500,
+      currency: "GBP",
       cadence: "project",
       priceNote:
         "Migration depth, number of pipelines and automations, integrations with calendar/SMS/voice/billing, and white-label SaaS configuration move the price.",
@@ -503,7 +503,7 @@ export const services: ReadonlyArray<Service> = [
           "Yes — migrations are a core part of what we do, including ActiveCampaign to GoHighLevel, HubSpot to GoHighLevel (or the reverse), and moves off Pipedrive, Salesforce, Mailchimp, or Keap. We inventory everything (contacts, custom fields, tags, pipelines, automations, templates), rebuild the data model and automations properly in the new platform, and run a staged cutover with the old system live until the new one is verified — so you are never without a working CRM and nothing quietly disappears.",
       },
       {
-        question: "What does the USD $4,500 starting price include?",
+        question: "What does the £2,500 starting price include?",
         answer:
           "A working system, not just a logged-in account: CRM platform setup (GoHighLevel, HubSpot, or a chosen alternative), lead-capture forms and intake automations, pipelines built around your funnel, calendar/SMS/email/voice integrations, reporting dashboards, and 30 days of post-launch tuning plus team training. What moves the price is scope — migration depth, the number of pipelines and automations, the integrations, and any white-label SaaS configuration.",
       },
@@ -538,8 +538,8 @@ export const services: ReadonlyArray<Service> = [
     whoItsFor:
       "SMBs losing leads to unanswered phones, operators drowning in repetitive admin, or teams that want AI woven into existing tools — not a separate experiment.",
     pricing: {
-      startingAmount: 6000,
-      currency: "USD",
+      startingAmount: 4500,
+      currency: "GBP",
       cadence: "project",
       priceNote:
         "Voice agent complexity, chatbot knowledge base depth, and number of workflows or integrations are the levers.",
@@ -564,7 +564,7 @@ export const services: ReadonlyArray<Service> = [
           "For well-scoped jobs, yes — and the scoping is the point. A voice agent or chatbot handling appointment booking, common questions, and lead qualification is well within what current models do reliably, especially when it answers from your own information and hands off to a human for anything outside its lane. We build an evaluation harness so quality is measured rather than assumed, and we are honest about the tasks where AI is not reliable enough yet and a human (or a plain form) is the better answer.",
       },
       {
-        question: "What does the USD $6,000 starting price cover?",
+        question: "What does the £4,500 starting price cover?",
         answer:
           "A working, integrated capability — not a chatbot bolted onto your homepage and forgotten. It includes discovery and a clear inventory of what AI should and should not do, implementation of one or more of a voice agent, a retrieval-grounded chatbot, or a workflow automation, integrations with your CRM/calendar/data, an evaluation harness, and 30 days of tuning. Voice-agent complexity, chatbot knowledge-base depth, and the number of workflows and integrations move the price.",
       },
@@ -604,8 +604,8 @@ export const services: ReadonlyArray<Service> = [
     whoItsFor:
       "Existing clients who want their site, app, or CRM kept current without an in-house engineer, or operators inheriting a Naxdor-built stack.",
     pricing: {
-      startingAmount: 750,
-      currency: "USD",
+      startingAmount: 250,
+      currency: "GBP",
       cadence: "monthly",
       priceNote:
         "Number of properties under care, response-time SLA, and monthly improvement hours included.",
@@ -632,7 +632,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "How much does a care plan cost?",
         answer:
-          "Three tiers, each a starting point in USD: Essential from $750/month (a single property — patching, monitoring with alerts, a small monthly improvement bucket, and a quarterly review), Growth from $1,500/month (a revenue-generating site or app — a faster response SLA and a larger improvement bucket), and Priority from $3,000/month (business-critical software or multiple properties — the fastest SLA, more improvement hours, and proactive performance work). The exact hours and SLA within a tier are scoped to your properties and the level of cover you want; additional properties or a custom SLA are quoted on top of the closest tier.",
+          "Three tiers, each a starting point: Essential from £250/month (a single property — patching, monitoring with alerts, a small monthly improvement bucket, and a quarterly review), Growth from £500/month (a revenue-generating site or app — a faster response SLA and a larger improvement bucket), and Priority from £1,000/month (business-critical software or multiple properties — the fastest SLA, more improvement hours, and proactive performance work). The exact hours and SLA within a tier are scoped to your properties and the level of cover you want; additional properties or a custom SLA are quoted on top of the closest tier.",
       },
       {
         question: "Do you maintain sites, apps, or CRMs you didn't build?",

@@ -74,7 +74,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "How much does a med spa website cost?",
         answer:
-          "A custom aesthetic-clinic website starts at USD $3,500 for the build itself. Most clinics pair it with CRM and booking automation (from USD $4,500) so leads actually convert, and many add a monthly SEO retainer (from USD $1,500/month) to win local search. We scope the exact mix on a call — there's no point selling you a $20,000 site if a focused build plus automation is what fills your calendar. Every price on our site is a real starting figure, not a contact-for-quote game.",
+          "A custom aesthetic-clinic website starts at £3,500 for the build itself. Most clinics pair it with CRM and booking automation (from £2,500) so leads actually convert, and many add a monthly SEO retainer (from £750/month) to win local search. We scope the exact mix on a call — there's no point selling you a £12,000 site if a focused build plus automation is what fills your calendar. Every price on our site is a real starting figure, not a contact-for-quote game.",
       },
       {
         question: "Can you connect the site to our booking and CRM tools?",
@@ -131,7 +131,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "How much does a dental practice website cost?",
         answer:
-          "A custom dental website starts at USD $3,500. Most practices add local SEO (from USD $1,500/month) because new patients come from search, and CRM automation (from USD $4,500) to handle recall, reminders, and reactivation. We scope the right combination to your goals on a call — a single-location general practice and a three-location ortho group need very different things, and we won't sell you the larger one to pad the invoice. Starting prices are published; the quote is built around your scope.",
+          "A custom dental website starts at £3,500. Most practices add local SEO (from £750/month) because new patients come from search, and CRM automation (from £2,500) to handle recall, reminders, and reactivation. We scope the right combination to your goals on a call — a single-location general practice and a three-location ortho group need very different things, and we won't sell you the larger one to pad the invoice. Starting prices are published; the quote is built around your scope.",
       },
       {
         question: "How do you help us get more new patients?",
@@ -188,7 +188,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "How much does a website for a spa or wellness clinic cost?",
         answer:
-          "A custom site starts at USD $3,500. Most clinics add CRM and booking automation (from USD $4,500) to handle bookings, memberships, packages, and follow-up, and many add local SEO (from USD $1,500/month) to win nearby searches. The right mix depends on whether you're a single studio or a multi-service clinic with memberships — we scope it on a call rather than quote blind, and every starting price is published up front.",
+          "A custom site starts at £3,500. Most clinics add CRM and booking automation (from £2,500) to handle bookings, memberships, packages, and follow-up, and many add local SEO (from £750/month) to win nearby searches. The right mix depends on whether you're a single studio or a multi-service clinic with memberships — we scope it on a call rather than quote blind, and every starting price is published up front.",
       },
       {
         question: "Can you handle memberships, packages, and gift cards?",

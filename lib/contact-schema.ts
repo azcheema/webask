@@ -20,11 +20,18 @@ export const SERVICE_OPTIONS: ReadonlyArray<SelectOption> = [
   { value: "not-sure", label: "Not sure / multiple" },
 ];
 
+/*
+ * GBP bands, rebuilt around the actual UK price list rather than converted from
+ * the inherited USD ones. The lowest band sits below our web-development
+ * starting price (£3,500) so a genuinely under-budget enquiry can say so
+ * honestly instead of overstating to look serious — that is a better qualifying
+ * signal for us and a fairer question to ask them.
+ */
 export const BUDGET_OPTIONS: ReadonlyArray<SelectOption> = [
-  { value: "under-5k", label: "Less than $5,000" },
-  { value: "5k-15k", label: "$5,000 – $15,000" },
-  { value: "15k-50k", label: "$15,000 – $50,000" },
-  { value: "50k-plus", label: "$50,000+" },
+  { value: "under-2500", label: "Less than £2,500" },
+  { value: "2500-10000", label: "£2,500 – £10,000" },
+  { value: "10000-25000", label: "£10,000 – £25,000" },
+  { value: "25000-plus", label: "£25,000+" },
   { value: "depends", label: "Not sure / depends on scope" },
 ];
 

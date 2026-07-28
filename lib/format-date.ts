@@ -5,7 +5,9 @@
  * date boundary).
  */
 
-const PUBLISHED_DATE_FORMATTER = new Intl.DateTimeFormat("en-US", {
+// en-GB: "28 July 2026", not "July 28, 2026". Day-first is what a UK reader
+// expects, and content-guidelines requires dates to be unambiguous.
+const PUBLISHED_DATE_FORMATTER = new Intl.DateTimeFormat("en-GB", {
   year: "numeric",
   month: "long",
   day: "numeric",

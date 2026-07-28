@@ -7,7 +7,7 @@ import { Section } from "@/components/layout/section";
 import { Button } from "@/components/ui/button";
 import type { PriceCadence } from "@/data/services";
 import type { CtaLink } from "@/data/types";
-import { cadenceLabel, formatUSD } from "@/lib/pricing";
+import { cadenceLabel, formatGBP, VAT_NOTE } from "@/lib/pricing";
 
 type ServiceHeroProps = {
   /** Root → current page, passed verbatim to `breadcrumbsNode` for matching JSON-LD. */
@@ -17,7 +17,7 @@ type ServiceHeroProps = {
   readonly subhead: string;
   /** "Who it's for" qualifier — helps prospects self-select. */
   readonly whoItsFor: string;
-  /** Starting price (USD) — surfaces the anatomy's "Starting at $X" hero tag. */
+  /** Starting price (GBP) — surfaces the anatomy's "Starting at $X" hero tag. */
   readonly startingAmount?: number;
   readonly cadence?: PriceCadence;
   readonly primaryCta: CtaLink;
@@ -66,9 +66,11 @@ export function ServiceHero({
           {startingAmount != null ? (
             <p className="text-body">
               <span className="text-fg font-semibold tabular-nums">
-                {`Starting at USD ${formatUSD(startingAmount)}`}
+                {`Starting at ${formatGBP(startingAmount)}`}
               </span>
               <span className="text-fg-muted">{` · ${cadenceLabel[cadence]}`}</span>
+              {/* Hedged until D2 resolves — see lib/pricing.ts VAT_NOTE. */}
+              <span className="text-fg-muted">{` · ${VAT_NOTE}`}</span>
             </p>
           ) : null}
           <div className="flex flex-col gap-3 sm:flex-row">

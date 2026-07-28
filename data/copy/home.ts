@@ -27,11 +27,13 @@ import type { CtaLink, FaqItem, HeroHeadlineSegment, Meta, Stat } from "@/data/t
  * A prospect can check every one of them against the page they are reading.
  *
  * ── PRICING ───────────────────────────────────────────────────────────────
- * ⚠️ The pricing SECTION states the posture (published starting prices, no
- * "contact for quote") but names no figure — decision gate D4 (the final GBP
- * price list) is open. The `PricingAnchor` component still renders amounts from
- * data/services.ts, which are the INHERITED USD figures relabelled as GBP.
- * Those must be replaced when D4 lands, before anything publishes.
+ * The pricing SECTION states the posture (published starting prices, no
+ * "contact for quote") and names no figure itself — the numbers live in
+ * data/services.ts and render through `PricingAnchor`, so there is one source
+ * of truth and the copy cannot drift from it.
+ *
+ * Those figures are now the research-derived GBP anchors from docs/02 § 7.
+ * ⚠️ D4 still asks the founder to confirm them before publish.
  */
 
 export type HomeProblemSolution = {

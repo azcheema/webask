@@ -3,7 +3,7 @@ import { ArrowRight, Check, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import type { Service } from "@/data/services";
-import { cadenceLabel, formatUSD } from "@/lib/pricing";
+import { cadenceLabel, formatGBP, VAT_NOTE } from "@/lib/pricing";
 
 type PricingCardProps = {
   /** The catalog entry to price. Reused on the service detail page and the pricing page. */
@@ -11,7 +11,7 @@ type PricingCardProps = {
 };
 
 /**
- * Single-service price card: "Starting at USD $X", what bends the price
+ * Single-service price card: "Starting at £X", what bends the price
  * (`priceNote`, shown in place of an upper limit), and the included /
  * not-included scope. Meaning is carried by the "What's included" / "Not
  * included" labels (not icon color alone), so the check / cross marks are
@@ -28,10 +28,12 @@ export function PricingCard({ service }: PricingCardProps) {
         </span>
         <div className="flex flex-wrap items-baseline gap-x-2">
           <span className="text-display text-fg font-semibold tracking-tight">
-            {`USD ${formatUSD(pricing.startingAmount)}`}
+            {formatGBP(pricing.startingAmount)}
           </span>
           <span className="text-body-sm text-fg-muted">{cadenceLabel[pricing.cadence]}</span>
         </div>
+        {/* Hedged until decision gate D2 resolves — see lib/pricing.ts VAT_NOTE. */}
+        <span className="text-caption text-fg-muted">{VAT_NOTE}</span>
       </div>
 
       {pricing.priceNote ? (

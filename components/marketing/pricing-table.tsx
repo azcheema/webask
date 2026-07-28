@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 import type { Service } from "@/data/services";
-import { cadenceLabel, formatUSD } from "@/lib/pricing";
+import { cadenceLabel, formatGBP, VAT_NOTE } from "@/lib/pricing";
 
 type PricingTableProps = {
   /** The full 9-service catalog, in canonical display order. */
@@ -38,6 +38,11 @@ export function PricingTable({ services, builtSlugs }: PricingTableProps) {
         <span>Service</span>
         <span>Starting price</span>
       </div>
+      {/* Stated once for the whole table rather than repeated on nine rows —
+       * hedged until decision gate D2 resolves (lib/pricing.ts VAT_NOTE). */}
+      <p className="text-fg-muted text-caption border-border border-b px-6 py-3">
+        All starting prices in GBP, {VAT_NOTE.toLowerCase()}.
+      </p>
       <ul>
         {services.map((service) => {
           const { slug, name, summary, pricing } = service;
@@ -67,7 +72,7 @@ export function PricingTable({ services, builtSlugs }: PricingTableProps) {
                   Starting price
                 </span>
                 <span className="text-fg text-body font-semibold">
-                  {`USD ${formatUSD(pricing.startingAmount)}`}
+                  {formatGBP(pricing.startingAmount)}
                 </span>
                 <span className="text-fg-muted text-body-sm">{cadenceLabel[pricing.cadence]}</span>
               </div>

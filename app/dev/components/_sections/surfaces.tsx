@@ -42,7 +42,7 @@ export function SurfacesSection() {
             </p>
           </CardContent>
           <CardFooter>
-            <span className="text-fg-muted text-sm">Starting at $4,000</span>
+            <span className="text-fg-muted text-sm">Starting at £3,000</span>
           </CardFooter>
         </Card>
       </Sample>

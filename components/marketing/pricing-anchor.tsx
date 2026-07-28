@@ -7,7 +7,7 @@ import { Section } from "@/components/layout/section";
 import { Button } from "@/components/ui/button";
 import type { PriceCadence } from "@/data/services";
 import type { CtaLink } from "@/data/types";
-import { cadenceLabel, formatUSD } from "@/lib/pricing";
+import { cadenceLabel, formatGBP } from "@/lib/pricing";
 
 export type PricingAnchorItem = {
   readonly name: string;
@@ -51,7 +51,7 @@ export function PricingAnchor({ eyebrow, title, intro, items, cta }: PricingAnch
                   {item.name}
                 </span>
                 <span className="text-h4 text-fg font-semibold tracking-tight tabular-nums">
-                  {`USD ${formatUSD(item.startingAmount)}`}
+                  {formatGBP(item.startingAmount)}
                 </span>
                 <span className="text-fg-muted text-body-sm">{cadenceLabel[item.cadence]}</span>
               </div>

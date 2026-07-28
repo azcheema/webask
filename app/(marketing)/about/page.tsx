@@ -78,7 +78,10 @@ function TeamCard({ member }: { readonly member: TeamMember }) {
   return (
     <li
       id={member.slug}
-      className="border-border bg-surface flex scroll-mt-24 flex-col gap-6 rounded-2xl border p-6 sm:flex-row sm:gap-8 sm:p-8"
+      // bg-bg, not bg-surface: the team section sits on `bg="surface"` since the
+      // group disclosure was inserted above it, and a surface card on a surface
+      // section reads as a flat block with a stray border. Mirrors the values cards.
+      className="border-border bg-bg flex scroll-mt-24 flex-col gap-6 rounded-2xl border p-6 sm:flex-row sm:gap-8 sm:p-8"
     >
       <div className="shrink-0">
         {showPhoto ? (
@@ -194,7 +197,34 @@ export default function AboutPage() {
         </Container>
       </Section>
 
+      {/* Group disclosure (docs/00 § three-site map). WebAsk is openly part of
+       * the Naxdor group — footer, /about and `parentOrganization` schema all
+       * say so. Google then sees two related entities rather than two thin
+       * clones, and cross-links between the properties are defensible. */}
       <Section padding="lg">
+        <Container>
+          <div className="flex flex-col gap-6">
+            <SectionHeading eyebrow={about.group.eyebrow} title={about.group.h2} />
+            <div className="flex max-w-2xl flex-col gap-4">
+              {about.group.paragraphs.map((paragraph) => (
+                <p key={paragraph} className="text-body-lg text-fg-muted text-pretty">
+                  {paragraph}
+                </p>
+              ))}
+              <Link
+                href={about.group.cta.href}
+                prefetch={false}
+                className="text-link text-body inline-flex items-center gap-1 font-medium"
+              >
+                {about.group.cta.label}
+                <ArrowUpRight className="size-4" />
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section padding="lg" bg="surface">
         <Container size="lg">
           <div className="flex flex-col gap-10">
             <SectionHeading
