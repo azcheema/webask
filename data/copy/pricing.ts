@@ -44,21 +44,21 @@ export type PricingContent = {
 
 export const pricing: PricingContent = {
   meta: {
-    title: "Pricing — Starting prices for all 9 services",
+    title: "Pricing — Starting prices for all nine services",
     description:
-      "Published starting prices for every Naxdor service. What changes the price, and how a fixed-fee quote gets built. No “contact us” walls.",
+      "Published GBP starting prices for every WebAsk service, what changes the number, and how a fixed-fee quote is built. No “request a quote” wall.",
   },
   hero: {
-    h1: "Pricing on the website. No “contact for quote” games.",
+    h1: "Prices on the website. No “request a quote” wall.",
     subhead:
-      "Every service has a published starting price. Here's the table — and what actually moves the number when we quote your project.",
+      "Every service carries a published starting price in pounds, so you can rule us in or out before you speak to anyone. Here is the table — and what actually moves the number.",
     primaryCta: { label: "Get a custom quote", href: "/contact" },
     secondaryCta: { label: "Get a free site audit", href: "/free-audit" },
   },
   tableIntro: {
-    eyebrow: "The catalog",
+    eyebrow: "The catalogue",
     h2: "Nine services. Nine published starting prices.",
-    body: "Starting prices below are real. They cover the scope we describe in the “What's included” column of each service page — not a stripped-down preview that triggers an upsell. Final cost depends on scope — we tell you exactly what moves the number on the call.",
+    body: "These are real starting points, not teaser figures. Each covers the scope described in the “What's included” section of that service page — not a stripped-back preview engineered to trigger an upsell. All prices are in GBP and exclude VAT where it applies; the final number depends on scope, and we tell you which parts move it on the call rather than after it.",
   },
   whatChangesPrice: {
     eyebrow: "What changes the price",

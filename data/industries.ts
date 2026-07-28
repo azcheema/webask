@@ -1,6 +1,14 @@
 /**
- * Industry catalog — the canonical source of truth for Naxdor's three launch
+ * Industry catalogue — the canonical source of truth for WebAsk's three launch
  * verticals (aesthetic clinics, dental practices, beauty/wellness clinics).
+ *
+ * ⚠️ THE THREE PAGES MUST NOT READ AS CLONES. Each vertical is regulated
+ * differently, and that difference IS the content:
+ *   - aesthetic clinics — POM advertising, solved by site ARCHITECTURE
+ *   - dental practices  — pricing transparency (live CMA study), reviews, "specialist"
+ *   - beauty & wellness — health-CLAIM substantiation, and retention economics
+ * Writing one and find-replacing the vertical name would produce near-duplicate
+ * content and, worse, advice that is wrong for two of the three.
  * Consumed by:
  *  - `app/(marketing)/industries/page.tsx` (index — cards)
  *  - `app/(marketing)/industries/[industry]/page.tsx` (per-vertical detail page)
@@ -117,56 +125,61 @@ export const industries: ReadonlyArray<Industry> = [
     slug: "dental-practices",
     name: "Dental Practices",
     audienceType:
-      "Dental practices, cosmetic dentistry clinics, orthodontists, and multi-location dental groups",
+      "Dental practices, private and cosmetic dentistry clinics, orthodontists, and multi-site dental groups in the United Kingdom",
     meta: {
-      title: "Dental Website Design & Marketing for Practices",
+      title: "Websites for UK Dental Practices — Built for the CMA Review",
       description:
-        "New-patient websites, local SEO, and CRM automation for dental and orthodontic practices — built to fill the schedule, cut no-shows, and keep recall patients coming back.",
+        "Websites, SEO and recall automation for UK dental practices — built around the GDC standards, CQC display duties and the CMA's live private-dentistry market study.",
     },
     hero: {
-      h1: "Digital growth for dental practices — more new patients, fewer no-shows.",
+      h1: "Your website is evidence in a live CMA market study.",
       subhead:
-        "Your next patient is searching on a phone right now. We build the site, the local-search presence, and the automated recall and reminders that turn that search into a booked, kept appointment.",
+        "The CMA is examining private dental pricing transparency until March 2027, and your site is the primary artefact. We build practice websites that answer that scrutiny instead of inviting it.",
       primaryCta: { label: "Book a practice strategy call", href: "/contact" },
     },
     cardSummary:
-      "New-patient websites, local SEO, and recall/reminder automation for general, cosmetic, and orthodontic practices.",
+      "New-patient websites, local SEO and recall automation for UK practices — built around GDC standards, CQC display duties and the CMA pricing review.",
     relatedServiceSlugs: ["web-development", "seo", "crm-automation", "ai-integration"],
     faqs: [
       {
-        question: "How much does a dental practice website cost?",
+        question: "How much does a dental practice website cost",
         answer:
-          "A custom dental website starts at £3,500. Most practices add local SEO (from £750/month) because new patients come from search, and CRM automation (from £2,500) to handle recall, reminders, and reactivation. We scope the right combination to your goals on a call — a single-location general practice and a three-location ortho group need very different things, and we won't sell you the larger one to pad the invoice. Starting prices are published; the quote is built around your scope.",
+          "A custom practice website starts at £3,500 for the build. Most practices add local SEO (from £750/month), because new patients overwhelmingly arrive through search, and CRM automation (from £2,500) to run recall, reminders and reactivation without the front desk chasing. We scope the combination on a call — a single-site general practice and a three-site orthodontic group need very different things, and we will not sell you the larger one to pad the invoice.",
       },
       {
-        question: "How do you help us get more new patients?",
+        question: "Why does the CMA market study matter for my website",
         answer:
-          'New-patient growth in dentistry is mostly a local-search problem. We make sure your site is technically sound and fast, build service and location pages mapped to what patients actually search ("emergency dentist near me," "invisalign cost," "dentist accepting new patients"), optimize your Google Business Profile, and run a steady review-generation flow through your CRM. Combined with a site that makes booking effortless, that\'s what turns local searches into booked first visits.',
+          "Because your website is the main place a patient encounters your pricing, and pricing transparency is explicitly in scope. The CMA opened its study into the £8.4bn private dentistry sector in March 2026 and will report by March 2027, examining whether patients can make informed choices and whether practices engage in misleading or unfair conduct. It has already noted that initial consultation prices rose more than 23% between 2022 and 2024. A site that hides prices behind “from” figures or a contact form is describing exactly the behaviour under examination.",
       },
       {
-        question: "Can you reduce our no-shows and reactivate lapsed patients?",
+        question: "Can I use the word specialist on my website",
         answer:
-          "Yes — this is where CRM automation earns its keep in a practice. Automated appointment reminders by text and email cut no-shows materially, and recall and reactivation campaigns bring back patients overdue for a cleaning or who fell off the schedule. We set up the sequences in your CRM (we work heavily in GoHighLevel and HubSpot) so they run quietly in the background instead of depending on someone at the desk remembering to call.",
+          "Only if you are on the GDC specialist list for that field. Using “specialist” — or implying specialist status through phrasing like “our specialists in implants” — when the registrant is not listed is a breach of GDC standards, and it is one of the most common errors we find on practice sites. It is also trivially checkable by anyone, including a complainant. We audit every instance of the word during a build and reword the ones that cannot be supported.",
       },
       {
-        question: "Is patient data handled safely? What about HIPAA?",
+        question: "What are the rules on patient reviews now",
         answer:
-          "We build with patient privacy front of mind: secure forms, sensible data handling, and care around what gets stored where. To be precise about scope — we're a web and software firm, not a HIPAA compliance certifier, and the platforms that store protected health information (your practice-management system, your CRM) are where a Business Associate Agreement and formal compliance live. We configure those tools to keep PHI out of places it shouldn't be, and we'll tell you plainly where a compliance specialist or a signed BAA is the right call.",
+          "Two regulators bind at once, and most practices are only aware of one. The GDC requires reviews to be genuine and not incentivised, so prize draws and discounts in exchange for reviews are a standards problem. Separately, since April 2025 the DMCC Act 2024 makes commissioning or publishing fake reviews illegal, with the CMA able to fine directly up to 10% of global turnover or £300,000. We build review flows that ask every patient, at the right moment, with no incentive attached — which satisfies both.",
       },
       {
-        question: "We have a phone that rings constantly. Can AI help with it?",
+        question: "Should we display our GDC numbers and CQC registration",
         answer:
-          "Yes. A front desk juggling checkouts, insurance questions, and a ringing phone drops calls — and a missed call from a patient in pain is a patient who calls the next practice. An AI voice agent can answer every call, book new-patient and routine appointments straight into your system, handle common questions about hours, insurance, and procedures, and route genuine emergencies to a human. It captures the after-hours and overflow calls you're losing today.",
+          "Yes, and it is worth doing properly rather than tucking it in a footer. CQC registration is a legal requirement for providers in England, and displaying registration details alongside named clinicians with their GDC numbers is both a transparency duty and one of the strongest trust signals available to you. It is also a genuine search-engine signal: verifiable credentials attached to named people are precisely what quality evaluation looks for.",
       },
       {
-        question: "How long until we see results from SEO?",
+        question: "Can we show before-and-after photographs",
         answer:
-          "Realistically, months, not weeks. The first month is technical fixes, keyword strategy, and on-page work; months two to four bring early gains on longer-tail terms; months five to twelve are where competitive local terms move and organic becomes a steady new-patient channel. We report against booked patients, not vanity metrics. If you need to fill chairs faster while SEO compounds, paid search is the honest short-term answer and we'll point you to it.",
+          "Yes, with documented consent for marketing use specifically — consent to treatment is not consent to publish. The images must be representative rather than the single best outcome, and any claim attached to them has to be substantiable under GDC standards and the ASA. Cosmetic dentistry results are legitimate to show; implying a typical result from an exceptional case is where practices get into difficulty.",
       },
       {
-        question: "Can you work with our existing practice-management software?",
+        question: "Will the site handle recall and reminders",
         answer:
-          "Usually, yes. We integrate the website and CRM layer with the practice-management and scheduling systems common in dentistry over their official interfaces, so booking and patient data flow between them rather than living in silos. The exact integration depends on which system you run and what it exposes — we map that during scoping so it's a planned part of the project, not a surprise mid-build.",
+          "That is usually where the fastest return sits. We wire the site into your practice management and CRM so recall, appointment reminders, reactivation of lapsed patients and post-treatment follow-up run automatically. Reducing failed appointments and reactivating dormant patients typically moves the number more than any amount of new-patient advertising, because you have already paid to acquire those people.",
+      },
+      {
+        question: "Do you only work with dental practices",
+        answer:
+          "No — we build for UK small businesses across many sectors, and most of our work is not dental. Dentistry is a focus vertical because it is unusually heavily regulated and the compliance layer is where agencies routinely fall short. The craft is the same everywhere; what changes here is that four regulators shape what the site can say.",
       },
     ],
   },
@@ -174,16 +187,16 @@ export const industries: ReadonlyArray<Industry> = [
     slug: "beauty-wellness-clinics",
     name: "Beauty & Wellness Clinics",
     audienceType:
-      "Day spas, beauty studios, IV therapy bars, and wellness, recovery, and self-care clinics",
+      "Beauty salons, day spas, IV therapy and vitamin drip clinics, and wellness, recovery and self-care studios in the United Kingdom",
     meta: {
-      title: "Beauty & Wellness Clinic Websites & Marketing",
+      title: "Websites for UK Beauty & Wellness Clinics",
       description:
-        "Appointment-driven websites, CRM automation, and local SEO for spas, IV bars, beauty studios, and wellness clinics — built around bookings, memberships, and repeat visits.",
+        "Booking-led websites, membership flows and automation for UK salons, spas and wellness studios — built around the calendar, and around claims you can actually substantiate.",
     },
     hero: {
-      h1: "Appointment-driven websites for beauty and wellness clinics.",
+      h1: "Booking-led websites for UK salons, spas and wellness studios.",
       subhead:
-        "Spas, IV bars, and wellness studios live and die by the calendar. We build the booking-first site, the membership and package flows, and the automation that turns first visits into regulars.",
+        "You live and die by the calendar. We build the booking-first site, the membership and package flows, and the automation that turns a first visit into a regular — without the health claims that get sites into trouble.",
       primaryCta: { label: "Book a clinic strategy call", href: "/contact" },
     },
     cardSummary:
@@ -221,9 +234,19 @@ export const industries: ReadonlyArray<Industry> = [
           "Yes — and in this industry the leaks are calls during treatments and messages after hours. An AI voice agent can answer every call and book straight into your calendar, and chat or messaging automation can capture and qualify the after-hours website and social traffic that would otherwise go cold. Everything lands in your CRM with context, so a missed call or a late-night DM becomes a booked appointment instead of a lost lead.",
       },
       {
+        question: "What can we actually claim about our treatments?",
+        answer:
+          "Less than most wellness websites assume, and this is where the sector gets caught rather than on advertising rules about medicines. Any health or wellbeing benefit you state has to be substantiable, and claims about nutrition or health — the kind that cluster around IV and vitamin therapy, immunity, energy and detox — are tightly controlled, with only authorised claims permitted. Describing what a treatment is and how it feels is safe ground; asserting what it cures, prevents or boosts usually is not. We write service pages that sell the experience without making claims you would struggle to defend.",
+      },
+      {
+        question: "Are the review rules different for us?",
+        answer:
+          "The DMCC Act 2024 applies to you exactly as it does to any other business: since April 2025 commissioning or publishing fake reviews is illegal, and the CMA can determine a breach and fine directly — up to 10% of global turnover or £300,000. Incentivised reviews are the specific risk in this sector, because prize draws and discount-for-review offers are so common in salon marketing. We build a review flow that asks every client at the right moment with nothing attached, which is both compliant and, in practice, more effective.",
+      },
+      {
         question: "Do you only work with beauty and wellness clinics?",
         answer:
-          "No — Naxdor serves SMBs across many industries. Beauty and wellness is a focus vertical because the model is so consistent (booking-led, membership-driven, retention-sensitive), so we arrive with proven patterns instead of guesses. The core craft, though — fast custom sites, CRM and booking automation, AI integration, and SEO — is the same work we deliver everywhere, tuned to how your clinic actually makes money.",
+          "No — we build for UK small businesses across many sectors, and most of our work is not in this one. Beauty and wellness is a focus vertical because the model is so consistent — booking-led, membership-driven, retention-sensitive — so we arrive with proven patterns rather than guesses. The underlying craft is the same everywhere; what changes here is that the money is in retention rather than acquisition, and the site has to be built for that.",
       },
     ],
   },
