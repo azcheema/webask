@@ -29,6 +29,7 @@ type Entry = {
 
 const ROUTES: ReadonlyArray<Entry> = [
   { path: "/", priority: 1.0, changeFrequency: "weekly" },
+  { path: "/services", priority: 0.9, changeFrequency: "monthly" },
   { path: "/services/web-development", priority: 0.9, changeFrequency: "monthly" },
   { path: "/services/ecommerce-development", priority: 0.9, changeFrequency: "monthly" },
   { path: "/services/web-app-development", priority: 0.9, changeFrequency: "monthly" },

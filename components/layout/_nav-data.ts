@@ -178,6 +178,7 @@ export const BUILT_ROUTES: ReadonlySet<string> = new Set([
   "/pricing",
   "/process",
   "/free-audit",
+  "/services",
   "/services/web-development",
   "/services/ecommerce-development",
   "/services/web-app-development",

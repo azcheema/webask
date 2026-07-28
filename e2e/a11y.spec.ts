@@ -13,6 +13,7 @@ import type { Result as AxeResult } from "axe-core";
 const ROUTES = [
   "/",
   "/dev/components",
+  "/services",
   "/services/web-development",
   "/services/ecommerce-development",
   "/services/web-app-development",
