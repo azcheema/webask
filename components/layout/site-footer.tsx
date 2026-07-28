@@ -69,11 +69,18 @@ export function SiteFooter({ className }: SiteFooterProps) {
               {site.email}
             </a>
           </p>
-          <p className="mt-1">
+          {/* `inline-block` + vertical padding so the hit area clears WCAG 2.2
+              target-size (24×24 CSS px). At 16px line-height the bare inline link
+              measured 138×16 with only 21.2px of safe clickable space, which is
+              what held Lighthouse's accessibility score at 0.96 sitewide — the
+              footer renders on every page. The `mailto:` above is exempt under the
+              "in a sentence or block of text" carve-out; this link is alone in its
+              own paragraph, so it is not. */}
+          <p className="mt-2">
             <Link
               href="/legal/company-information"
               prefetch={false}
-              className="hover:text-fg underline underline-offset-2 transition-colors"
+              className="hover:text-fg inline-block py-1.5 underline underline-offset-2 transition-colors"
             >
               Full company information
             </Link>

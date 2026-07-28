@@ -71,7 +71,14 @@ const LIGHTHOUSE_URLS = [
   "/contact",
   "/industries/aesthetic-clinics",
 ] as const;
-const MOBILE_VIEWPORT = { width: 360, height: 640 } as const;
+/*
+ * Must match Lighthouse's emulation EXACTLY, or this pass gives false comfort.
+ * Lighthouse's mobile form factor is 412×823 — an earlier 360×640 guess here
+ * passed while CI failed, because at 360px the footer's legal links wrap onto
+ * separate lines and gain the vertical spacing that `target-size` wants; at
+ * 412px they don't. Read from `lhr.configSettings.screenEmulation`.
+ */
+const MOBILE_VIEWPORT = { width: 412, height: 823 } as const;
 
 async function setTheme(page: Page, mode: "light" | "dark") {
   await page.emulateMedia({ colorScheme: mode });
@@ -99,7 +106,7 @@ for (const route of ROUTES) {
  * theme-dependent, and the desktop sweep above already covers both themes.
  */
 for (const route of LIGHTHOUSE_URLS) {
-  test(`${route} — axe-core (mobile 360px)`, async ({ page }) => {
+  test(`${route} — axe-core (mobile ${MOBILE_VIEWPORT.width}px)`, async ({ page }) => {
     await setTheme(page, "light");
     await page.setViewportSize(MOBILE_VIEWPORT);
     await page.goto(route);
