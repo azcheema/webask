@@ -40,6 +40,7 @@ E-E-A-T, genuine Information Gain, and almost unclaimed in the SERP.
 | **SEO, multi-site, citations**                | [`docs/05-seo-strategy-uk.md`](docs/05-seo-strategy-uk.md)                   |
 | **Phased build plan**                         | [`docs/06-build-plan.md`](docs/06-build-plan.md)                             |
 | **Changes wanted in `d:\naxdor`**             | [`docs/07-naxdor-change-requests.md`](docs/07-naxdor-change-requests.md)     |
+| **Silos, entities, competitor gap**           | [`docs/08-seo-architecture.md`](docs/08-seo-architecture.md)                 |
 | **Fork source**                               | `d:\naxdor` — **read-only. Do not modify it.**                               |
 
 The docs are the source of truth. If a doc is wrong, fix the doc.
@@ -95,7 +96,12 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
   anyway risks permanent loss of local visibility.
 - ❌ **Cross-canonical to `naxdor.com`**, or hreflang-pair the two sites. Self-canonical
   everything. Duplicate content is solved with _rewritten UK content_, not markup.
-- ❌ **Name a prescription-only medicine** in any clinic-facing copy — ours or a client's.
+- ❌ **Name a prescription-only medicine** in clinic-facing _sales_ copy, `<title>` or meta —
+  ours or a client's. Nor a euphemism: the ASA treats "anti-wrinkle injections",
+  "wrinkle-relaxing" and "beautox" as **implied** POM promotion and has upheld complaints on
+  exactly that. Clinics advertise the **consultation** ("consultations for lines and
+  wrinkles"). Our _editorial_ content may name a POM when discussing the regulation of its
+  advertising — that is commentary, not an ad. See [`docs/08-seo-architecture.md`](docs/08-seo-architecture.md) § 6.
 - ❌ Use Radix directly, or `llms.txt`, or AI-specific schema.
 - ❌ Auto-commit. **Always ask first.** Conventional messages, no AI attribution.
 

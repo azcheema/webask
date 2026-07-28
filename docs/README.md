@@ -27,16 +27,17 @@ carries fabricated staff and fake testimonials that became **illegal in the UK o
 
 Read in order. Each doc is self-contained but they build on each other.
 
-| #   | Doc                                                                | What it answers                                                                |
-| --- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| —   | [`00-overview.md`](00-overview.md)                                 | What WebAsk is, why, and what's still undecided. **Read first.**               |
-| 01  | [`01-inherited-from-naxdor.md`](01-inherited-from-naxdor.md)       | What transfers from `d:\naxdor` verbatim, what needs editing, what gets binned |
-| 02  | [`02-uk-market-research.md`](02-uk-market-research.md)             | UK market size, competitors, keywords, verticals, GBP pricing                  |
-| 03  | [`03-uk-compliance.md`](03-uk-compliance.md)                       | UK legal/regulatory — the biggest delta. Blocks several pages                  |
-| 04  | [`04-information-architecture.md`](04-information-architecture.md) | Current sitemap → target sitemap, and the full 301 map                         |
-| 05  | [`05-seo-strategy-uk.md`](05-seo-strategy-uk.md)                   | How the three sites relate, GBP, citations, indexation                         |
-| 06  | [`06-build-plan.md`](06-build-plan.md)                             | Phased build plan, acceptance gates, sizing                                    |
-| 07  | [`07-naxdor-change-requests.md`](07-naxdor-change-requests.md)     | Changes wanted in `d:\naxdor` — **logged, not applied**                        |
+| #   | Doc                                                                | What it answers                                                                 |
+| --- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| —   | [`00-overview.md`](00-overview.md)                                 | What WebAsk is, why, and what's still undecided. **Read first.**                |
+| 01  | [`01-inherited-from-naxdor.md`](01-inherited-from-naxdor.md)       | What transfers from `d:\naxdor` verbatim, what needs editing, what gets binned  |
+| 02  | [`02-uk-market-research.md`](02-uk-market-research.md)             | UK market size, competitors, keywords, verticals, GBP pricing                   |
+| 03  | [`03-uk-compliance.md`](03-uk-compliance.md)                       | UK legal/regulatory — the biggest delta. Blocks several pages                   |
+| 04  | [`04-information-architecture.md`](04-information-architecture.md) | Current sitemap → target sitemap, and the full 301 map                          |
+| 05  | [`05-seo-strategy-uk.md`](05-seo-strategy-uk.md)                   | How the three sites relate, GBP, citations, indexation                          |
+| 06  | [`06-build-plan.md`](06-build-plan.md)                             | Phased build plan, acceptance gates, sizing                                     |
+| 07  | [`07-naxdor-change-requests.md`](07-naxdor-change-requests.md)     | Changes wanted in `d:\naxdor` — **logged, not applied**                         |
+| 08  | [`08-seo-architecture.md`](08-seo-architecture.md)                 | Silos, entity model, live competitor gap, and the compliance-architecture wedge |
 
 When the repo is scaffolded (Phase 0), `docs/strategy/*` and `docs/phases/*` get copied
 across from `d:\naxdor` per doc 01, and this bundle sits alongside them as the UK layer.
@@ -99,5 +100,10 @@ violates this today, which makes it the first thing Phase 1 fixes.
 ## Sources
 
 Every statistic in this bundle carries its source and the date it was retrieved, per
-Naxdor's own content rule ("date every statistical claim"). All web research was
-conducted 2026-07-27.
+Naxdor's own content rule ("date every statistical claim"). Docs 00–07 were researched
+2026-07-27; [`08-seo-architecture.md`](08-seo-architecture.md) 2026-07-28.
+
+> ⚠️ **Doc 08 corrects doc 02 § 5.** The original advice to target "anti-wrinkle injections"
+> as a safe alternative to the POM brand name is unsafe — the ASA treats wrinkle-relaxing
+> euphemisms as implied POM promotion. Doc 02 now carries the correction inline; doc 08 § 6
+> is the authority.

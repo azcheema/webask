@@ -133,11 +133,17 @@ export function organizationNode(): Organization {
     },
     image: { "@id": LOGO_ID },
     description: SITE_DESCRIPTION,
+    // Two groups, deliberately. The technology terms are inherited and describe
+    // what we build. The REGULATORY terms are WebAsk's own and are the semantic
+    // core of the positioning: no UK clinic-web competitor associates itself
+    // with these entities at all (verified 2026-07-28, docs/08 § 3), so being
+    // the entity that reliably co-occurs with them in this context is close to
+    // unclaimed ground. Compliance articles reinforce it via `about`/`mentions`.
     knowsAbout: [
       "Web Development",
       "E-commerce",
       "UI/UX Design",
-      "Search Engine Optimization",
+      "Search Engine Optimisation",
       "Mobile Application Development",
       "GoHighLevel",
       "HubSpot",
@@ -148,6 +154,18 @@ export function organizationNode(): Organization {
       "Workflow Automation",
       "Next.js",
       "React",
+      "Core Web Vitals",
+      // UK regulatory literacy — the flagship differentiator (docs/00 § job 6).
+      "Advertising Standards Authority",
+      "CAP Code",
+      "Medicines and Healthcare products Regulatory Agency",
+      "General Dental Council",
+      "Care Quality Commission",
+      "Competition and Markets Authority",
+      "UK GDPR",
+      "Privacy and Electronic Communications Regulations",
+      "Digital Markets, Competition and Consumers Act 2024",
+      "Non-surgical cosmetic procedures licensing",
     ],
     areaServed: UK,
     // The group link. See PARENT_ORG_ID — cross-domain, and whitelisted in

@@ -422,9 +422,27 @@ This is where UK terms diverge most from Naxdor's, because the vocabulary is reg
 | AI                         | ai receptionist for clinics uk, ai booking assistant for aesthetic clinic                                                      |
 | **Compliance (the wedge)** | **asa compliant clinic website, advertising rules for aesthetic clinics uk, how to advertise anti-wrinkle injections legally** |
 
-> Note the vocabulary constraint: target **"anti-wrinkle injections"**, never the POM brand
-> name — both because the ASA prohibits it and because our own pages would breach the rule
-> by carrying it.
+> ### ⚠️ CORRECTED 2026-07-28 — the original guidance here was unsafe
+>
+> This note originally read: _"target **'anti-wrinkle injections'**, never the POM brand name."_
+> The second half is right; **the first half is not.** The ASA treats wrinkle-relaxing
+> euphemisms — "wrinkle-relaxing treatments", "beautox", "brotox" — as **implied promotion of
+> the POM**, and has upheld complaints on exactly that basis. Recommending "anti-wrinkle
+> injections" as the safe term would have handed clinics advice that gets them ruled against,
+> on the one subject our authority depends on.
+>
+> **Corrected guidance:**
+>
+> - **A clinic's public pages** advertise the **consultation**, not the treatment —
+>   _"consultations for lines and wrinkles"_. No POM name, no euphemism.
+> - **WebAsk's editorial content** may name a POM **when discussing the regulation of its
+>   advertising** ("clinics may not advertise Botox" is commentary on a rule, not an ad).
+>   Editorial context only — never in a service page's sales copy, `<title>` or meta.
+> - **Keyword targeting** goes after the _practitioner's_ question ("can i advertise botox on
+>   my website", "asa rules aesthetic clinic advertising"), never patient-facing treatment terms.
+>
+> Full reasoning, the named ASA rulings, and the two-click price-list rule that becomes our
+> flagship deliverable: [`08-seo-architecture.md`](08-seo-architecture.md) §§ 4 and 6.
 
 **Dental practices**
 
