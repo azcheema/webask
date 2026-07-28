@@ -1,8 +1,9 @@
 ---
 slug: custom-website-vs-wordpress-2026
-title: "Custom Website vs WordPress in 2026: The Real Trade-offs"
-description: "An honest, no-hype comparison of custom websites and WordPress for small businesses in 2026 — where each one wins, what they really cost over three years, and a simple test for choosing."
+title: "Custom Website vs WordPress in 2026: The Real UK Numbers"
+description: "Custom or WordPress? The published UK bands price a website by supplier, not by platform — so here is what a cheap build and an expensive one really cost over three years, and what we found when we crawled our own 2020-era WordPress site."
 datePublished: "2026-07-01"
+dateModified: "2026-07-28"
 authorSlug: ansar-cheema
 topic: web-development
 keywords:
@@ -15,128 +16,118 @@ keywords:
 draft: false
 ---
 
-You have two honest paths to a new website: stand up WordPress this week, or invest in a custom build. Most advice online picks a side because the writer sells one of them. This doesn't.
+{/* Rewritten for the UK 2026-07-28. Built around a first-person, verifiable asset nobody else has: the 2026-07-28 crawl of our own legacy WordPress install at webask.co.uk, recorded in docs/04 § 1 and § 5. Cost bands from docs/08 § 7 and docs/02 § 7 — note those bands are cut by supplier, not by platform, and the body now says so rather than letting freelance/agency stand in for WordPress/custom. The two docs disagree on the freelance floor (£800 uncited in docs/08, £1,500 cited to Valoron in docs/02); both are quoted rather than one being picked silently. Deliberately argues the opposite of the Naxdor original's three-year claim, because the arithmetic on a percentage-of-build running cost says the gap widens rather than narrows. No before/after performance figures are claimed anywhere — the replacement site is not live, the cutover has not happened, and the legacy site has near-zero authority. Complements /services/web-development rather than restating its four-routes table or its Equality Act section. */}
 
-<Callout variant="note" title="TL;DR">
-  WordPress wins on speed-to-launch and low upfront cost. A custom build wins on performance,
-  security, and total cost once the site becomes core to how you get customers. Choose WordPress for
-  a simple brochure site; choose custom when the site has a real job to do.
+We crawled `webask.co.uk` for this update. Not a client's site — this one. The WordPress install that has occupied this domain since 2020, and which the page you are reading is in the middle of replacing.
+
+That crawl is the most useful thing we can bring to this argument, because it is first-hand rather than hypothetical. It is also public — every URL below can be checked against the live site until we switch it off.
+
+<Callout variant="note" title="The short version">
+  Over three years, in sterling, the cheaper build stays cheaper — and the gap gets wider, not
+  narrower. The published UK bands price a build by supplier rather than by platform, so a
+  three-year table in which the expensive option wins on cash has almost certainly inflated a
+  column. The case for a custom build is real, but it is not an arithmetic case.
 </Callout>
 
-Both can produce a great website. Both can produce a slow, insecure mess. The stack you pick matters far less than the engineering behind it — so the real question isn't "which is better," it's "which fits the job your site has to do."
+## What six years of not maintaining a WordPress site looks like
 
-## What "WordPress" and "custom" actually mean
+The sitemap listed 13 URLs. Among them:
 
-These words get used loosely, so let's pin them down.
+- **`/sample-page/`** — WordPress's own placeholder page, last modified in August 2020, still live, still submitted to Google nearly six years later.
+- **`/privacy-policy-2/`** — the `-2` is the scar of a duplicate page created once and never tidied.
+- **`/uncategorized/`** — the default category, and the only one. No taxonomy was ever built.
+- Three of the six entries in the post sitemap carried a last-modified date of **October 2020**.
+- The footer linked to "Our Clients" and "Our Partners". Neither target appears anywhere in the sitemap.
+- **`/wp-login.php` returned 200** and `/xmlrpc.php` returned a 520 — two endpoints that sit at the same address on millions of sites and are probed continuously by credential-stuffing bots.
 
-**WordPress** is a content management system. You start with a theme, add plugins for the features you need (forms, booking, SEO, e-commerce), and edit pages in a visual editor. It powers a large share of the web because it's flexible and quick to start.
+Read that list again and notice what is missing: a WordPress defect. Every item is what happens when a website has no owner. Put the same neglect on a custom build and the symptoms change while the cause does not — dependencies years out of date, a deploy pipeline nobody can run, a contact form that stopped sending email and told no one. The platform decides the shape of the decay, not whether it happens.
 
-**A custom build** is a site coded for your business on a modern framework — in our case Next.js and React. There's no theme to fight and no plugin marketplace. Every feature is built to fit, and you own the code.
+Worth settling first, because a great deal of "WordPress is insecure" marketing is an argument about staffing wearing a technical costume.
 
-There's a middle ground, too: a page builder on top of WordPress (Elementor, Divi). It feels custom but ships a lot of extra code. Keep that in mind when someone calls a page-builder site "custom."
+## The three-year sum, in sterling
 
-## Where WordPress wins
-
-Give WordPress its due. For the right project, it's the smart choice.
-
-- **Speed to launch.** A straightforward site can be live in days.
-- **Low upfront cost.** A theme plus a few plugins is cheap to start.
-- **A huge ecosystem.** There's a plugin for almost anything, and a large pool of people who can edit the site later.
-- **Familiar editing.** Many teams already know the dashboard.
-
-If you need a brochure site, a simple blog, or a "we exist and here's how to reach us" presence — and you don't expect heavy traffic or custom features — WordPress will serve you well.
-
-## Where a custom build wins
-
-Custom pulls ahead when the website stops being a brochure and starts being part of how you win and serve customers.
-
-- **Performance.** Fewer moving parts means faster pages. Speed is a ranking factor and a conversion factor.
-- **Security.** Most WordPress incidents trace back to plugins and themes. A custom build has a much smaller attack surface — there's no plugin sprawl to keep patched.
-- **Exact fit.** Complex booking flows, portals, integrations, and unusual layouts get built the way you actually work, not bent around a plugin's limits.
-- **Ownership.** You own the code. You're not renting a stack of third-party licenses that can change price or disappear.
+Here is where a three-year comparison can quietly stop being honest. The UK market bands are published and easy to check.
 
 <StatGrid>
-  <Stat
-    value="< 2.5s"
-    label="Google's 'good' threshold for Largest Contentful Paint — we design every build to beat it on mobile"
-  />
-  <Stat
-    value="< 0.1"
-    label="Cumulative Layout Shift we target, so pages don't jump around as they load"
-  />
-  <Stat
-    value="< 200ms"
-    label="Interaction to Next Paint we target, so taps and clicks respond right away"
-  />
+  <Stat value="£240–£360" label="A year for a DIY site builder — the cheapest honest UK route" />
+  <Stat value="£1,500–£5,000" label="What most UK small businesses spend on a website build" />
+  <Stat value="15–20%" label="Of build cost, per year, to keep a UK site running afterwards" />
 </StatGrid>
 
-<Callout variant="warning">
-  Custom is not automatically faster. A bloated custom build can lose to a lean WordPress site. The
-  framework doesn't save you — the engineering does. Ask any agency for real page-speed scores on
-  sites they've shipped, not a promise.
+One thing to say plainly before the sum: those bands are cut by supplier, not by platform. No reliable UK figure exists for a "WordPress build" against a "custom build", because both sit across the whole range — a £3,500 agency site is very often WordPress. So the honest comparison is a cheap build against an expensive one, whatever is underneath either.
+
+Published UK freelance quotes run £800–£3,000 in one 2026 market summary and £1,500–£3,000 in another; a four- or five-page build is put at £1,200–£2,000. Agency work runs £2,500–£10,000. So take £1,500, which sits within both freelance bands, against a £3,500 agency build, and run each forward three years at the market's own running-cost rate.
+
+At the midpoint of that 15–20% band, the cheap route spends roughly £790 on upkeep across the three years (£675–£900 across the full band) and the expensive route roughly £1,840 (£1,575–£2,100). Midpoint totals: about **£2,290** against about **£5,340**.
+
+The build-price gap was £2,000. Three years later it is between £2,900 and £3,200 — wider at every point in the range.
+
+<Callout variant="warning" title="Why the percentage cannot rescue the expensive option">
+  Running cost is quoted as a proportion of build cost, so it scales with the build. At the same
+  rate on both, a percentage applied to a bigger number stays a bigger number: it cannot close the
+  gap, only widen it. Reversing that would take a materially lower maintenance rate on the expensive
+  build, and no UK source publishes one. Any three-year table showing the reverse has either
+  inflated the WordPress maintenance column, set the custom column to zero, or added a projected
+  revenue line that is a forecast wearing a cost label.
 </Callout>
 
-## WordPress vs custom, side by side
+Two caveats point the other way. The narrower £100–£300 a year quoted for a cheaper build covers domain and hosting only — the cost of existing, not of changing. And a site that cannot be edited, extended or moved gets bought twice, which puts the whole build price back on the table. Neither reverses the sum. Both belong in the spreadsheet.
+
+## So what actually decides it
+
+Not the money. Three questions do, and none of them is really about the platform.
+
+### Is the maintenance line optional?
+
+On WordPress it is not. Core, PHP, themes and plugin licences all move, whether or not anyone is being paid to follow them. That is the direct cost of the ecosystem's greatest strength: scale means a shared attack surface, which is why `/wp-login.php` sits at the same guessable address on our legacy install as on every other WordPress site. A custom build carries a smaller surface — but "smaller" is not "none", and an agency implying otherwise is selling the same neglect in a nicer wrapper.
+
+So the question for any supplier is not "is it secure" but "who applies the update on the Tuesday it ships, and what happens if they don't".
+
+### Does anyone actually edit?
+
+WordPress's genuine advantage is the editing dashboard and the size of the pool of people who can drive it. That is worth a great deal — if content changes. If it changes twice a year, you are carrying the cost and the update obligation of a publishing platform in order to run a brochure. Our own domain illustrates it: six years of dashboard access, and five of the twelve content URLs still carrying a last-modified date from 2020.
+
+So answer for the publishing cadence you will really sustain, not the one in the plan. That moves this decision further than any benchmark will.
+
+### Is the constraint structural or cosmetic?
+
+This is where a custom build earns its price properly, and it has nothing to do with speed scores. Some sites have a required shape rather than a preferred one. UK clinics are the clearest example: the CAP Code's restrictions on advertising prescription-only medicines to the public dictate where certain pages may sit, how they are reached and what may appear in navigation — an information-architecture specification, not a styling choice. Constraints like that are cheap to build in and expensive to retrofit, on any platform. The detail is on [websites for UK aesthetic clinics](/industries/aesthetic-clinics).
+
+If your constraints are cosmetic — the site works but looks a decade old — you are looking at a design project, not a replatform.
+
+## Switching later: what a redirect carries, and what it doesn't
+
+You can move. We are moving. But it helps to know precisely what survives the trip.
 
 <Comparison>
-<ComparisonColumn title="WordPress" tone="neutral">
+<ComparisonColumn title="A permanent redirect carries" tone="positive">
 
-- Live in days, low upfront cost
-- Big plugin and theme ecosystem
-- Easy to hand off to a non-developer
-- Plugin and theme updates to manage forever
-- Performance and security depend on plugin quality
+- The large majority of link equity from each mapped URL
+- Rankings — in reported migrations, after two to four weeks of fluctuation; some sources describe a one-to-three-month settling period instead. Nobody can promise the timing, us included
+- Your domain and its history — the domain isn't changing, only the platform
+- Any page you rewrite and republish, provided the old URL is mapped to it
 
 </ComparisonColumn>
-<ComparisonColumn title="Custom build" tone="positive">
+<ComparisonColumn title="It does not carry" tone="negative">
 
-- Faster pages and better Core Web Vitals
-- Smaller security surface — no plugin sprawl
-- Features built to fit, no workarounds
-- You own the code outright
-- Higher upfront cost and needs a developer to change
+- Quality. A redirect moves a URL, not a page worth reading
+- URLs you never found — author and date archives, feeds, tag pages, `/blog/page/2/`
+- Plugin functionality. Forms, booking and popups are rebuilt, not migrated
+- Years of not publishing. That arrives intact on the new stack
 
 </ComparisonColumn>
 </Comparison>
 
-Neither column is "the winner." The right choice is the one whose downsides you can live with.
+Three specifics we hit while preparing this cutover, each easy to get wrong. Crawl the live site and treat the export as the map, because WordPress exposes far more URLs than its sitemap admits. Send genuine junk to a **410 Gone** rather than redirecting it — `/sample-page/` never held content, so a redirect lies to the crawler and a 404 invites months of retries. And do not tidy those paths away in `robots.txt`: Googlebot must be able to fetch a URL to learn it is gone, so blocking it keeps it indexed indefinitely. Then hold every redirect for at least a year, which costs nothing.
 
-## The five-question test: custom or WordPress?
+## What we are deliberately not showing you
 
-This is the test we actually run when a business asks us which way to go. Answer honestly. Mostly "yes" points to custom; mostly "no" points to WordPress.
+There is no before-and-after graph in this post. The replacement site is not live yet, and the site it replaces carries close to no authority, so any chart drawn here would be decoration.
 
-1. **Is the website how you get most of your customers?** If leads or sales flow through the site, speed and reliability pay for themselves.
-2. **Do you need something a plugin can't cleanly do?** Custom booking, a client portal, deep integrations, or an unusual flow.
-3. **Will slow pages cost you money?** High traffic, paid ads pointing at the site, or a market where every second matters.
-4. **Do you have security or compliance pressure?** Handling sensitive data raises the cost of a plugin breach.
-5. **Do you plan to grow on this site for years?** The longer the horizon, the more a solid foundation beats a quick start.
+Apply the same scepticism elsewhere. When an agency shows you a WordPress-to-custom traffic curve, ask what else changed that quarter: the copy, the content budget, the link building, the person finally paying attention. The graph may well be real. The attribution is what is being sold.
 
-Three or more "yes" answers, and a custom build usually pays off. Mostly "no," and WordPress is the sensible, cheaper call. There's no shame in either answer — matching the tool to the job is the whole point.
+## Where this leaves you
 
-## What most quotes hide: the three-year cost
+If the site is a brochure that changes rarely, WordPress or a builder is both the correct answer and the cheaper one. If the site carries the load — leads arrive through it, paid traffic lands on it, or its structure is set by rules rather than taste — the more expensive build has to justify itself on that job, not on a spreadsheet.
 
-The build price is the number everyone compares. It's also the smallest part of the real cost. Look at three years instead:
-
-- **Build** — one-time, higher for custom.
-- **Hosting** — often lower and simpler for a custom static build.
-- **Plugins and licenses** — recurring on WordPress, and they add up.
-- **Maintenance and updates** — WordPress needs steady patching; custom needs less, but not zero.
-- **The cost of slow or broken pages** — lost leads and sales, the line nobody puts on an invoice.
-
-Our custom web development starts at £3,500, and a WordPress site can start well below that. Over three years, though, the gap narrows — and if the site drives revenue, the faster build often comes out ahead. Run the numbers on your own site before you decide on price alone.
-
-## Can you switch later?
-
-Yes. Plenty of our work is rebuilding a WordPress site that outgrew itself. Content, SEO rankings, and URLs can carry over with care. But a migration costs real time and money, so it's cheaper to pick the right path at the start than to switch under pressure a year in.
-
-## What to skip in 2026
-
-- **Calling a page-builder site "custom."** Thirty plugins and a premium theme is still WordPress — with the code weight to match.
-- **Buying custom you don't need.** A five-page brochure site rarely needs a bespoke build.
-- **Choosing on upfront price alone.** The cheapest build can be the most expensive site once maintenance and lost conversions land.
-
-## Where to start
-
-If the site is a simple presence, WordPress is likely your answer, and that's fine. If the site has to perform — drive leads, handle real traffic, do something specific — a custom build usually earns its cost.
-
-Not sure where you land? Our [web development service](/services/web-development) starts with a free audit: we'll measure your current [page speed and SEO](/services/seo), then give you a straight recommendation — even if that recommendation is "stay on WordPress." See [what a build costs](/pricing) before you commit to anyone.
+Our [web development service](/services/web-development) sets out the four routes and what each really buys. If you already have a site and are not certain it needs replacing, a [free audit](/free-audit) will tell you — and "keep what you have" is a legitimate conclusion for one to reach. Starting prices sit on the [pricing](/pricing) page. If search is the reason you are considering a rebuild, read [our SEO page](/services/seo) first; that can be the cheaper fix.
