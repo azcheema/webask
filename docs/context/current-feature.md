@@ -15,10 +15,12 @@
 
 ## Status
 
-**Content complete, all gates green, not yet committed — ask before committing.**
+**Content complete, all gates green, committed — not merged and not pushed.**
 
-15 commits on `main`; this feature is unmerged work on `feature/uk-service-pages`.
-`d:\naxdor` untouched at `e0e5885`.
+Committed as `13c97f5` on `feature/uk-service-pages` (25 files, +1103/−590), which
+sits one commit ahead of `main` at `e15147c`. **Not pushed** — `origin` is
+`github.com/azcheema/webask.git` and pushing was not authorised. `d:\naxdor`
+untouched at `e0e5885`.
 
 ### What this feature did
 
