@@ -165,13 +165,20 @@ type ComparisonColumnProps = {
  * One side of a `<Comparison>`. Author the points as a normal markdown list in
  * the body — a children + scalar-attr API, since `next-mdx-remote/rsc` does not
  * pass object-literal expression attributes through.
+ *
+ * The title is an `h3`, not an `h4`: every authored `<Comparison>` sits under an
+ * `##`, so `h4` skipped a level and failed axe's `heading-order` (a rule
+ * Lighthouse scores). `h3` is safe wherever this lands — `heading-order` only
+ * fails on skips going *deeper*, so an `h3` under an `h2` or another `h3` both
+ * pass. If a nested variant is ever needed, make the level a prop rather than
+ * reverting this.
  */
 export function ComparisonColumn({ title, tone = "neutral", children }: ComparisonColumnProps) {
   return (
     <div className="border-border bg-bg flex flex-col gap-3 rounded-2xl border p-5">
       <div className="flex items-center gap-2">
         <ComparisonMarker tone={tone} />
-        <h4 className="text-fg text-h4 font-semibold tracking-tight">{title}</h4>
+        <h3 className="text-fg text-h4 font-semibold tracking-tight">{title}</h3>
       </div>
       <div className="text-fg-muted text-body-sm [&_li]:marker:text-fg-muted [&_ul]:m-0 [&_ul]:flex [&_ul]:list-disc [&_ul]:flex-col [&_ul]:gap-2 [&_ul]:pl-5">
         {children}

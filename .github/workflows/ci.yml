@@ -92,11 +92,18 @@ jobs:
       - name: Lighthouse CI
         run: pnpm lhci
 
+      # `.lighthouseci` is a DOT-prefixed directory, and upload-artifact treats
+      # dotted paths as hidden — with the default `include-hidden-files: false`
+      # it matched nothing and logged "No files were found", silently, on every
+      # run. Combined with `if-no-files-found: ignore` that meant a failing
+      # Lighthouse assertion left no report to inspect: the a11y gate could fail
+      # without anyone being able to see which audit failed. Both are fixed here.
       - name: Upload Lighthouse results
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: lighthouse-results-${{ github.run_id }}
           path: .lighthouseci
+          include-hidden-files: true
           retention-days: 14
-          if-no-files-found: ignore
+          if-no-files-found: warn

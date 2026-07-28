@@ -447,7 +447,7 @@ export const companyInformation: LegalDocument = {
     {
       heading: "Part of the Naxdor group",
       body: [
-        `${site.name} is the United Kingdom brand of Naxdor, which also operates naxdor.com for international clients and naxdor.se in Sweden. Same founder, same delivery team, same standards — a UK brand, UK pricing and UK expertise.`,
+        `${site.name} is the United Kingdom brand of Naxdor, which also operates naxdor.com for international clients and naxdor.se in Sweden. Same founder, same standards, same way of working — a UK brand, UK pricing and UK expertise.`,
         "We disclose the relationship rather than presenting three unrelated agencies, because that is what it is.",
       ],
     },

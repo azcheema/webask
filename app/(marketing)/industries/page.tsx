@@ -16,7 +16,7 @@ const PATH = "/industries";
 const META = {
   title: "Industries We Serve",
   description:
-    "Naxdor is a service-led digital firm with deep specialization in aesthetic clinics, dental practices, and beauty & wellness clinics — booking-first websites, CRM automation, AI, and local SEO.",
+    "WebAsk is a service-led UK digital firm specialising in aesthetic clinics, dental practices and beauty & wellness clinics — booking-first websites, CRM automation, AI and local SEO, built to the UK advertising rules.",
 };
 
 const HERO = {

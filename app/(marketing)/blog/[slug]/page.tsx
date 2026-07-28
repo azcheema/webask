@@ -169,11 +169,15 @@ export default async function BlogPostPage({ params }: { params: Promise<RoutePa
       <Section padding="lg">
         <Container size="lg">
           <div className="grid gap-10 lg:grid-cols-3">
-            <aside className="lg:order-last lg:col-span-1">
+            {/* A plain div, not <aside>: TableOfContents already renders its own
+                <nav aria-label="Table of contents">, so an <aside> here nests a
+                nav landmark inside a complementary landmark inside <main> —
+                which axe flags as landmark-complementary-is-top-level. */}
+            <div className="lg:order-last lg:col-span-1">
               <div className="lg:sticky lg:top-24">
                 <TableOfContents items={post.toc} />
               </div>
-            </aside>
+            </div>
             <article className="prose prose-webask max-w-none lg:col-span-2">
               <MDXRemote
                 source={content}

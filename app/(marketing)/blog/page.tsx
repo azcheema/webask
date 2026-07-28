@@ -13,9 +13,9 @@ import { breadcrumbsNode, buildGraph, collectionPageNode, renderJsonLd } from "@
 import { buildMetadata } from "@/lib/seo";
 
 const PATH = "/blog";
-const TITLE = "The Naxdor blog";
+const TITLE = "The WebAsk blog";
 const DESCRIPTION =
-  "Playbooks on SEO, CRM automation, AI, and web development for SMBs — written by the people who build it, not a content farm.";
+  "Practical writing on SEO, CRM automation, AI and web development for UK small businesses — including the advertising and data rules most agencies never mention.";
 const PRIMARY_CTA: CtaLink = { label: "Book a discovery call", href: "/contact" };
 
 export function generateMetadata(): Metadata {
@@ -51,7 +51,7 @@ export default async function BlogIndexPage() {
       <PageHero
         breadcrumbs={breadcrumbs}
         title={TITLE}
-        subhead="Field-tested tactics from the work we do for clients — no fluff, no AI slop, just what moves the needle for SMBs."
+        subhead="How we build, and the UK rules that shape it — written in full, sourced, and dated. No fluff and no AI slop."
       />
 
       <Section padding="lg">

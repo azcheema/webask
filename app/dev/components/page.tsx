@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ...buildMetadata({
     title: "Component gallery",
     description:
-      "Internal-only visual surface for the Naxdor design system — every primitive with its key variants and states.",
+      "Internal-only visual surface for the WebAsk design system — every primitive with its key variants and states.",
     path: "/dev/components",
     noindex: true,
   }),

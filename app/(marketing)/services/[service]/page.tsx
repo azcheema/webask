@@ -138,11 +138,14 @@ export default async function ServicePage({ params }: { params: Promise<RoutePar
       <Section padding="lg">
         <Container size="lg">
           <div className="grid gap-10 lg:grid-cols-3 lg:gap-12">
-            <aside className="lg:order-last lg:col-span-1">
+            {/* Plain div, not <aside>: the price card is core content for a
+                service page, not a complementary region, and an <aside> inside
+                <main> trips axe's landmark-complementary-is-top-level. */}
+            <div className="lg:order-last lg:col-span-1">
               <div className="lg:sticky lg:top-24">
                 <PricingCard service={service} />
               </div>
-            </aside>
+            </div>
             <article className="prose prose-webask max-w-none lg:col-span-2">
               <MDXRemote
                 source={content}

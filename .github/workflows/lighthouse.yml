@@ -17,6 +17,11 @@ jobs:
     env:
       NEXT_TELEMETRY_DISABLED: "1"
       NEXT_PUBLIC_SITE_URL: "http://localhost:3000"
+      # Must match ci.yml. NEXT_PUBLIC_* is inlined at build time, so without
+      # this the consent banner does not render and this workflow audits a
+      # materially different page from the one ci.yml audits — two Lighthouse
+      # runs against the same commit, disagreeing for a reason nobody would spot.
+      NEXT_PUBLIC_GA_ID: "G-TEST0000000"
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -44,11 +49,15 @@ jobs:
       - name: Lighthouse CI (full)
         run: pnpm lhci
 
+      # See the same step in ci.yml: `.lighthouseci` is dot-prefixed, so
+      # upload-artifact's default `include-hidden-files: false` silently matched
+      # nothing and no report was ever uploaded.
       - name: Upload Lighthouse results
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: lighthouse-full-${{ github.run_id }}
           path: .lighthouseci
+          include-hidden-files: true
           retention-days: 30
-          if-no-files-found: ignore
+          if-no-files-found: warn

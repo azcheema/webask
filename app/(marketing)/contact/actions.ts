@@ -97,7 +97,7 @@ export async function submitContact(raw: ContactFormValues): Promise<ContactActi
       // Route prospect replies to the monitored inbox, independent of the
       // From address (the From may be a send-only/display sender).
       replyTo: serverEnv.CONTACT_NOTIFY_EMAIL,
-      subject: "Thanks for reaching out to Naxdor",
+      subject: "Thanks for reaching out to WebAsk",
       react: ContactAutoresponder({
         name: data.name,
         service: serviceLabel,

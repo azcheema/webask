@@ -11,8 +11,13 @@ type BlogCardProps = {
 
 /**
  * One post card for the blog index + topic-archive grids. The whole card is the
- * link (matching `CrossLinkGrid`'s card affordance); the heading stays a real
- * `h3` so the listing keeps a sane document outline.
+ * link (matching `CrossLinkGrid`'s card affordance).
+ *
+ * The heading is `h2`, not `h3`: both consumers (`/blog` and
+ * `/blog/topic/[topic]`) put the card list directly under the page `h1` with no
+ * intervening section heading, so `h3` skipped a level and tripped axe's
+ * `heading-order`. If a future surface nests these under an `h2`, this needs to
+ * become a prop rather than being flipped back.
  */
 export function BlogCard({ post }: BlogCardProps) {
   const { slug, frontmatter, readingTime } = post;
@@ -35,9 +40,9 @@ export function BlogCard({ post }: BlogCardProps) {
         </time>
       </div>
 
-      <h3 className="text-h4 text-fg font-semibold tracking-tight text-balance">
+      <h2 className="text-h4 text-fg font-semibold tracking-tight text-balance">
         {frontmatter.title}
-      </h3>
+      </h2>
 
       <p className="text-body-sm text-fg-muted text-pretty">{frontmatter.description}</p>
 

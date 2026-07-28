@@ -82,8 +82,10 @@ export default function ContactPage() {
               <ContactForm copy={contact.form} />
             </div>
 
-            {/* Sidebar */}
-            <aside className="flex flex-col gap-6">
+            {/* Sidebar. A plain div, not <aside>: it sits inside <main>, where a
+                complementary landmark trips axe's
+                landmark-complementary-is-top-level. */}
+            <div className="flex flex-col gap-6">
               <div className="border-border bg-surface flex flex-col gap-5 rounded-2xl border p-6">
                 <div className="flex flex-col gap-1">
                   <span className="text-fg-muted text-caption font-semibold tracking-wide uppercase">
@@ -155,7 +157,7 @@ export default function ContactPage() {
                   ))}
                 </ul>
               </div>
-            </aside>
+            </div>
           </div>
         </Container>
       </Section>

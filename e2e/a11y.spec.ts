@@ -47,7 +47,31 @@ const ROUTES = [
   "/legal/cookies",
   "/legal/company-information",
 ] as const;
-const TAGS = ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"];
+/*
+ * `best-practice` is deliberately included alongside the WCAG tags. Lighthouse's
+ * accessibility category scores several axe best-practice rules, so a WCAG-only
+ * tag list lets a Lighthouse-failing defect pass this suite — which is exactly
+ * what happened: an <aside> nested inside <main> on four templates tripped
+ * landmark-complementary-is-top-level while this spec stayed green.
+ */
+const TAGS = ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa", "best-practice"];
+
+/*
+ * The URL set Lighthouse CI audits, mirrored from `.lighthouserc.cjs`. Lighthouse
+ * runs MOBILE emulation (360px) and this suite otherwise scans at Playwright's
+ * desktop default, so width-dependent rules — `target-size` above all — were
+ * structurally invisible here. Keep in step with the lhci config.
+ */
+const LIGHTHOUSE_URLS = [
+  "/",
+  "/services/web-development",
+  "/pricing",
+  "/about",
+  "/process",
+  "/contact",
+  "/industries/aesthetic-clinics",
+] as const;
+const MOBILE_VIEWPORT = { width: 360, height: 640 } as const;
 
 async function setTheme(page: Page, mode: "light" | "dark") {
   await page.emulateMedia({ colorScheme: mode });
@@ -67,6 +91,22 @@ for (const route of ROUTES) {
       expect.soft(results.violations, formatViolations(results.violations)).toEqual([]);
     });
   }
+}
+
+/*
+ * Mobile-viewport sweep over the Lighthouse URL set. Light mode only — the rules
+ * this pass exists to catch (target-size and friends) are width-dependent, not
+ * theme-dependent, and the desktop sweep above already covers both themes.
+ */
+for (const route of LIGHTHOUSE_URLS) {
+  test(`${route} — axe-core (mobile 360px)`, async ({ page }) => {
+    await setTheme(page, "light");
+    await page.setViewportSize(MOBILE_VIEWPORT);
+    await page.goto(route);
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+    const results = await new AxeBuilder({ page }).withTags(TAGS).analyze();
+    expect.soft(results.violations, formatViolations(results.violations)).toEqual([]);
+  });
 }
 
 /*

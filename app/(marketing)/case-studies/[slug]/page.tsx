@@ -180,11 +180,12 @@ export default async function CaseStudyPage({ params }: { params: Promise<RouteP
       <Section padding="lg">
         <Container size="lg">
           <div className="grid gap-10 lg:grid-cols-3">
-            <aside className="lg:order-last lg:col-span-1">
+            {/* Plain div, not <aside> — see the same block in blog/[slug]. */}
+            <div className="lg:order-last lg:col-span-1">
               <div className="lg:sticky lg:top-24">
                 <TableOfContents items={study.toc} />
               </div>
-            </aside>
+            </div>
             <article className="prose prose-webask max-w-none lg:col-span-2">
               <MDXRemote
                 source={content}

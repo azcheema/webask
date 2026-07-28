@@ -70,7 +70,7 @@ export default function GlobalError({
             color: "#5C5F70",
           }}
         >
-          The team has been notified. Try again, or head back home and pick up where you left off.
+          The error has been logged. Try again, or head back home and pick up where you left off.
         </p>
         {error.digest ? (
           <p
