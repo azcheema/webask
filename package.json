@@ -18,6 +18,7 @@
     "check:keywords": "tsx scripts/check-keywords.ts",
     "check:redirects": "tsx scripts/check-redirects.ts",
     "check:uniqueness": "tsx scripts/check-programmatic-uniqueness.ts",
+    "check:blog-uniqueness": "tsx scripts/check-blog-uniqueness.ts",
     "build:brand-assets": "tsx scripts/build-brand-assets.ts",
     "prepare": "husky"
   },

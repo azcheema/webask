@@ -57,6 +57,12 @@ jobs:
       - name: Programmatic uniqueness audit
         run: pnpm check:uniqueness
 
+      # The fork source is not present on CI, so this runs the cross-page half
+      # only. The cross-site half (vs. the same-slug naxdor.com post) is a local
+      # check — see the note in the script.
+      - name: Blog uniqueness audit
+        run: pnpm check:blog-uniqueness
+
       # Pre-build so a redirect loop fails in milliseconds, not after a full
       # build + e2e cycle. e2e/redirects.spec.ts proves the same map over HTTP.
       - name: Redirect map audit
