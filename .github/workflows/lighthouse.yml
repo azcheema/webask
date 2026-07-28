@@ -1,0 +1,54 @@
+name: Lighthouse (full)
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: lighthouse-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  lighthouse:
+    name: full lighthouse on representative URLs
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_SITE_URL: "http://localhost:3000"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      # URL list lives in .lighthouserc.cjs (shared with the PR `ci.yml` run).
+      # Phase 1 covers the 6 indexable critical templates; add the programmatic
+      # template (Phase 2) and a sample blog post (Phase 3) there as they ship.
+      - name: Lighthouse CI (full)
+        run: pnpm lhci
+
+      - name: Upload Lighthouse results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: lighthouse-full-${{ github.run_id }}
+          path: .lighthouseci
+          retention-days: 30
+          if-no-files-found: ignore

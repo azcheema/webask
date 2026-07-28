@@ -1,0 +1,204 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+@plugin "@tailwindcss/typography";
+
+/* Drive the `dark:` variant from our `data-theme="dark"` attribute (set by
+ * next-themes) instead of Tailwind v4's default `prefers-color-scheme`
+ * media query. Lets the OS preference, the next-themes context, and
+ * Tailwind's dark utilities all agree. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Base layer — opinionated reset on top of Tailwind's preflight, plus
+ * application-wide defaults that read from design tokens. */
+@layer base {
+  html {
+    color-scheme: light dark;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Visible, branded focus ring (2px solid + 2px offset, per
+   * design-system.md § Visual language guidelines). */
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+  }
+}
+
+/* Token-mapped prose for MDX long-form content (service bodies now, blog +
+ * case studies in Phase 3). The `@tailwindcss/typography` plugin reads these
+ * `--tw-prose-*` vars; pointing them at our theme tokens means light/dark flip
+ * automatically (the tokens already switch on `[data-theme="dark"]`), so no
+ * `dark:prose-invert` toggle is needed. Apply as `prose prose-webask`. */
+.prose-webask {
+  --tw-prose-body: var(--color-fg);
+  --tw-prose-headings: var(--color-fg);
+  --tw-prose-lead: var(--color-fg-muted);
+  --tw-prose-links: var(--color-link);
+  --tw-prose-bold: var(--color-fg);
+  --tw-prose-counters: var(--color-fg-muted);
+  --tw-prose-bullets: var(--color-fg-muted);
+  --tw-prose-hr: var(--color-border);
+  --tw-prose-quotes: var(--color-fg);
+  --tw-prose-quote-borders: var(--color-border);
+  --tw-prose-captions: var(--color-fg-muted);
+  --tw-prose-code: var(--color-fg);
+  --tw-prose-pre-code: var(--color-fg);
+  --tw-prose-pre-bg: var(--color-muted);
+  --tw-prose-th-borders: var(--color-border);
+  --tw-prose-td-borders: var(--color-border);
+}
+
+/* ── Home hero animations ──────────────────────────────────────────────────
+ * Pure-CSS motion for the hero. Both honor reduced-motion explicitly: the repo
+ * zeroes the `--motion-duration-*` tokens under the media query, but these use
+ * their own keyframe durations, so they need their own guard. */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* The track renders the list 3×; -33.333% is exactly one copy, so the next
+     * copy lands where the first began — a seamless loop. */
+    transform: translateX(-33.3333%);
+  }
+}
+
+@keyframes caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-marquee-track {
+  /* Track is 3 copies wide; -33.333% (= 1 copy) over this duration keeps a calm,
+   * even scroll. */
+  animation: marquee 26s linear infinite;
+}
+
+/* Marquee item + icon — extracted from per-item Tailwind classes to keep the
+ * (3×-duplicated) inline markup small on the LCP-critical home page. */
+.hero-marquee-item {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  padding-inline: 1.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--color-fg-muted);
+}
+
+.hero-marquee-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  /* Stroke styling for the <use>'d sprite geometry (inherits across <use>). */
+  fill: none;
+  stroke: var(--color-brand-500);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.hero-caret {
+  animation: caret-blink 1.1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-marquee-track {
+    animation: none;
+  }
+
+  .hero-caret {
+    animation: none;
+  }
+}
+
+/* Hero aurora ribbon — an original soft glow (Vercel/Linear register) in the
+ * brand + accent tokens, bleeding off the top-right. Pure CSS, no image bytes,
+ * so it never competes with the LCP headline. Paint only; the component owns
+ * size/position. `color-mix` adds the alpha falloff from solid token colors. */
+.hero-ribbon {
+  background:
+    radial-gradient(
+      42% 55% at 78% 12%,
+      color-mix(in oklab, var(--color-brand-400) 70%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      36% 48% at 96% 30%,
+      color-mix(in oklab, var(--color-accent-400) 60%, transparent),
+      transparent 72%
+    ),
+    radial-gradient(
+      50% 62% at 66% 46%,
+      color-mix(in oklab, var(--color-brand-300) 55%, transparent),
+      transparent 74%
+    );
+  filter: blur(52px);
+  opacity: 0.5;
+}
+
+[data-theme="dark"] .hero-ribbon {
+  opacity: 0.42;
+  filter: blur(56px) saturate(125%);
+}
+
+/* Gentle float for the dot-wave graphic — one GPU-composited transform, so it
+ * lifts the "3D wave" feel at negligible cost. Disabled under reduced motion. */
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-dotwave {
+  animation: hero-float 8s ease-in-out infinite;
+}
+
+/* Dot-wave gradient stops, theme-aware. Light mode uses darker/more saturated
+ * tokens so the dots read on white; dark mode keeps the lighter tones. */
+.hero-dot-stop-1 {
+  stop-color: var(--color-brand-500);
+}
+.hero-dot-stop-2 {
+  stop-color: var(--color-brand-400);
+}
+.hero-dot-stop-3 {
+  stop-color: var(--color-accent-500);
+}
+[data-theme="dark"] .hero-dot-stop-1 {
+  stop-color: var(--color-brand-400);
+}
+[data-theme="dark"] .hero-dot-stop-2 {
+  stop-color: var(--color-brand-300);
+}
+[data-theme="dark"] .hero-dot-stop-3 {
+  stop-color: var(--color-accent-400);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-dotwave {
+    animation: none;
+  }
+}

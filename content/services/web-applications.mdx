@@ -1,0 +1,108 @@
+---
+slug: web-applications
+title: "Web Application Development for Small Business"
+description: "Internal tools, customer portals, and dashboards built on a typed, production-grade stack — auth, roles, and audit logging baked in. Starting at USD $15,000."
+dateModified: "2026-06-18"
+---
+
+{/* Body prose only. Catalog data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the web-applications entry and is read by the page template — do not duplicate those fields here. */}
+
+## When the spreadsheet stops being the system
+
+Almost every operations problem starts as a clever spreadsheet. It works, so it grows — more tabs, more formulas, a macro nobody understands, a copy emailed around that immediately goes stale. Then someone fat-fingers a cell, two people edit at once, and the thing your business runs on quietly breaks in a way nobody notices until a customer does.
+
+The same story plays out with stitched-together SaaS: a form tool feeding a sheet feeding a Zapier zap feeding an email. It limps along until the edge cases pile up and you are spending more time babysitting the duct tape than doing the work.
+
+A web application is what you build when a process has outgrown the spreadsheet and the no-code patchwork — when it needs real data integrity, real access control, and a real audit trail. That is what we build: internal tools, customer portals, and dashboards on the same production stack we use for SaaS products.
+
+## What a Naxdor web application does differently
+
+Before any feature work, an application we ship is engineered to a floor:
+
+1. **Typed end to end.** TypeScript from the database schema to the UI, so a change to your data model surfaces as a compile error instead of a 2am production bug. This is the single biggest reason custom apps rot — and the discipline that keeps ours from doing it.
+2. **Authentication, roles, and audit logging baked in from day one.** Who can see what, who did what, and when — not bolted on after a security scare.
+3. **Hosting, CI, and observability on accounts you own.** Every deploy runs automated checks; errors and performance are monitored with alerts. When something breaks, we see it before your users file a ticket.
+
+These are the floor. The product logic above them — the workflows, the integrations, the dashboards your team actually opens every morning — is where the engagement earns its keep.
+
+## What you get at the starting price
+
+Refer to the price card on this page for the included scope at USD $15,000 starting. In short: discovery and design before any code, a typed Next.js implementation with authentication and role-based access, hosting and CI and observability stood up on your accounts, and a documented handoff so your team can run it.
+
+Two things worth setting straight:
+
+- **The starting price buys a real MVP, not a prototype.** It is a focused, production-deployed first version of the application — the core workflow done properly — not a clickable demo we hand off and walk away from.
+- **Complexity is the price lever, and it is honest.** The number of user roles, how involved authentication is, the third-party systems you integrate, and whether you need real-time or multi-tenant features move the price. We tell you which of those you actually need now versus later on the first call.
+
+## Internal tool, customer portal, or dashboard
+
+Most engagements are one of three shapes, and naming yours up front sharpens the scope:
+
+- **Internal tools** replace the spreadsheet-and-email workflow your team runs on — intake, scheduling, inventory, approvals — with something that enforces the rules instead of trusting everyone to remember them.
+- **Customer portals** give your clients a place to log in: see their data, submit requests, track status, download documents. The kind of surface that makes a small business feel like a serious one.
+- **Dashboards** pull the numbers scattered across your tools into one view that updates itself, so decisions run on current data instead of a monthly export someone forgets to send.
+
+Plenty of projects blend them. The shape just tells us where to put the design effort.
+
+## How we build a Naxdor web application
+
+The four-stage process maps onto every project. For application work, here is what each stage produces.
+
+### Discover (1–2 weeks)
+
+We map the workflow as it actually runs today — including the undocumented steps people do from memory — and the systems the app has to talk to. We define the roles, the data model, and the MVP boundary, because the fastest way to sink an app project is to build everything at once. You leave with a scope document, a fixed-fee proposal, and a target launch date.
+
+### Design (2–3 weeks)
+
+Information architecture and the core flows first, then interface design in working sessions you attend live. Engineering pairs in throughout, so the design we hand off is already built against the component system and the typed data model we will ship.
+
+### Build (3–6 weeks, longer for complex apps)
+
+The application is in your hands from day one via preview URLs. Every commit runs type checks, tests, and budgets in CI; we do not merge work that breaks them. Authentication, roles, and audit logging land early, not last. The week before launch is a full QA pass against real data and real user accounts.
+
+### Grow (ongoing)
+
+Thirty days of post-launch support is included. Most applications then move to a retainer — Maintenance for security patching and dependency upgrades, plus a budget of hours for the feature requests that always follow once people start using the thing daily.
+
+## The stack we build on
+
+We build applications on one canonical, typed stack rather than reinventing it per project:
+
+| Layer     | Tool                   | Why                                                                              |
+| --------- | ---------------------- | -------------------------------------------------------------------------------- |
+| Framework | Next.js (App Router)   | Server and client in one typed codebase; production-grade and well-supported.    |
+| Language  | TypeScript (strict)    | Compile-time safety end to end — the discipline that keeps an app maintainable.  |
+| Database  | Postgres + Drizzle ORM | A real relational database with typed, migration-driven schema access.           |
+| Auth      | Auth.js                | Sessions, roles, and providers handled by a maintained library, not hand-rolled. |
+| Hosting   | Vercel (or your cloud) | Zero-config deploys and preview URLs; we can target your own cloud if required.  |
+
+It is the same stack we use for our own product surfaces. You are not a test bed for a framework we are trying out.
+
+## Build vs buy vs no-code — what you actually trade
+
+Before you commission a custom application, the honest comparison:
+
+|            | Custom app (Naxdor)                      | Off-the-shelf SaaS                  | No-code (Airtable, Retool, Bubble)           |
+| ---------- | ---------------------------------------- | ----------------------------------- | -------------------------------------------- |
+| Best for   | A process that is core and unique to you | A common need many businesses share | A quick internal tool or an early prototype  |
+| Fit        | Exactly your workflow                    | Their workflow; you adapt           | Close, until you hit the platform's ceiling  |
+| Cost shape | Higher upfront, then yours               | Per-seat forever                    | Cheap to start; pricing climbs with usage    |
+| Ownership  | Full — the code and data are yours       | Tied to the vendor                  | Tied to the platform; export is rarely clean |
+
+If an off-the-shelf SaaS does the job, use it — we will say so on the call rather than bill you for rebuilding something you can rent. No-code is genuinely great for prototypes and small internal tools. Custom earns its cost when the process is core to how you make money, when no tool fits without painful compromise, or when you have outgrown a no-code platform and keep hitting its walls.
+
+## What we don't build
+
+Honesty about scope is half the value of a service page. For Naxdor web applications, the most common asks we do not take at the starting price:
+
+- **Everything at once.** We build a focused MVP first and grow it. A project that tries to ship every feature in version one is the project that never ships.
+- **Ongoing end-user support and helpdesk.** We build and maintain the application; staffing a support desk for your users is a different business.
+- **Throwaway prototypes.** If you need a clickable demo for a pitch next week, a no-code tool is faster and cheaper, and we will point you to one.
+
+## Where to next
+
+If you are scoping a real application, the right next step is a 30-minute discovery call. We learn the workflow you are trying to fix and who uses it, you learn whether we are the right partner, and within three business days you get either a written scope or an honest referral.
+
+If you are earlier in the decision, request a free 30-minute audit — we will look at your current tooling and tell you candidly whether a custom build, an off-the-shelf tool, or a no-code patch is the right move. No pitch attached.
+
+Either way, see the rest of what we ship, with starting prices, on the [pricing page](/pricing).

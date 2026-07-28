@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+# pnpm may not be on the default PATH used by git's hook shell on Windows.
+# Fall back to the pnpm standalone installer location under the user's
+# AppData (we cannot rely on %LOCALAPPDATA% being exported in git bash).
+if ! command -v pnpm >/dev/null 2>&1; then
+  for candidate in \
+    "$LOCALAPPDATA/pnpm/bin" "$LOCALAPPDATA/pnpm" \
+    "$HOME/AppData/Local/pnpm/bin" "$HOME/AppData/Local/pnpm" \
+    "$APPDATA/npm"; do
+    if [ -n "$candidate" ] && [ -d "$candidate" ]; then
+      PATH="$candidate:$PATH"
+    fi
+  done
+  export PATH
+fi
+
+pnpm exec lint-staged
