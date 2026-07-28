@@ -206,7 +206,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<RouteP
       <CtaBand
         tone="brand"
         title="Ready to write your own case study?"
-        body="Book a 30-minute discovery call — we'll map the highest-leverage moves for your business and send a written scope within three business days."
+        body="Book a 30-minute discovery call — we'll map the highest-leverage moves for your business and send a written scope within three working days."
         cta={PRIMARY_CTA}
       />
     </>

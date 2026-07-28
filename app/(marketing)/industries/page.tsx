@@ -89,7 +89,7 @@ export default function IndustriesPage() {
       <CtaBand
         tone="brand"
         title="Not sure which playbook fits?"
-        body="Tell us about your business and we'll map where you're leaking bookings — with a written plan within three business days."
+        body="Tell us about your business and we'll map where you're leaking bookings — with a written plan within three working days."
         cta={HERO.primaryCta}
       />
     </>

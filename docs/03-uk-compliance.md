@@ -275,9 +275,28 @@ mostly for exactly this. The ASA now runs **AI-powered proactive monitoring** �
 non-compliant ads without waiting for a complaint. CAP offers a free **Copy Advice** service
 for pre-publication questions.
 
-**The 2026 licensing scheme.** Operational in 2026 under the Health and Care Act 2022. Local
-authorities enforce a **two-tier** system — **every individual** performing listed procedures
-needs a **personal licence**; a general business licence is no longer sufficient. Procedures
+**The 2026 licensing scheme.**
+
+> ### ⚠️ CORRECTED 2026-07-28 — "operational in 2026" overstated the position
+>
+> This paragraph originally opened _"Operational in 2026 under the Health and Care Act 2022"_ and
+> then described the scheme in the present tense. **The scheme is NOT yet in force.**
+> [`08-seo-architecture.md`](08-seo-architecture.md) § 4 states the position accurately and dates
+> it: as at **July 2026** the England licensing scheme for non-surgical cosmetic procedures has not
+> commenced. The Government published its **consultation response in August 2025** (11,848
+> responses) **proposing** the two-tier licensing and the red/amber/green categorisation; it stated
+> an intention to consult on the highest-risk procedures in spring 2026.
+>
+> **What IS in force:** since **1 October 2021** it is a criminal offence in England to administer
+> botulinum toxin or filler for a cosmetic purpose to under-18s.
+>
+> Everything below describes the **proposed** scheme. Write it as proposed, with the date attached —
+> doc 02 § 9 is right that stale regulatory content is worse than none, and on this subject it
+> inverts the entire E-E-A-T position. Doc 08 § 4 is the authority until this section is rewritten.
+
+Under the Health and Care Act 2022, local
+authorities would enforce a **two-tier** system — **every individual** performing listed procedures
+needs a **personal licence**; a general business licence would no longer be sufficient. Procedures
 are risk-categorised **red / amber / green** (Government consultation response, August 2025);
 **botulinum toxin and dermal fillers are amber** — a non-medical practitioner may perform
 them only under the supervision of a named regulated healthcare professional. Licence

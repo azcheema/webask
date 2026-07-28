@@ -101,7 +101,7 @@ export const pricing: PricingContent = {
         body: "We learn what you're solving, who it's for, and what success looks like. By the end of the call you know whether we're a fit. If we're not, we'll tell you who is.",
       },
       {
-        title: "2. Written scope (within 3 business days)",
+        title: "2. Written scope (within 3 working days)",
         body: "We send a one-to-two page scope document — what's in, what's out, assumptions, and dependencies. You read it, ask questions, and tell us what to change.",
       },
       {
@@ -149,7 +149,7 @@ export const pricing: PricingContent = {
   ctaBand: {
     h2: "Saw your service on the table?",
     subhead:
-      "Book a free 30-minute discovery call — we'll send the written scope within three business days.",
+      "Book a free 30-minute discovery call — we'll send the written scope within three working days.",
     primaryCta: { label: "Book a discovery call", href: "/contact" },
   },
 } as const;

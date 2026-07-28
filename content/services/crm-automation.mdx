@@ -1,71 +1,102 @@
 ---
 slug: crm-automation
-title: "CRM Implementation, Automation & Migration for Small Business"
-description: "GoHighLevel, HubSpot, and custom CRM setups — implemented, automated, and integrated so leads stop dying in your inbox. Includes platform migrations. Starting at £2,500."
-dateModified: "2026-06-18"
+title: "GoHighLevel Agency & CRM Implementation UK"
+description: "GoHighLevel and HubSpot implementation, automation and migration for UK businesses, built to PECR. Starting at £2,500 + VAT where applicable."
+dateModified: "2026-07-28"
 ---
 
-{/* Body prose only. Catalog data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the crm entry and is read by the page template — do not duplicate those fields here. */}
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the crm-automation entry and is read by the page template — do not duplicate those fields here. */}
 
-## When leads die in your inbox
+## The rule most UK CRM builds get wrong
 
-Most small businesses do not lose deals to a better competitor. They lose them to a lead that sat unanswered for three days, a follow-up nobody sent, and a "let me check and get back to you" that never happened. The CRM — if there is one — is a spreadsheet, a shared inbox, and a memory that the owner is too busy to trust.
+A CRM built to a US playbook assumes you can email any business address you have collected. In the UK that assumption is wrong often enough to matter — and a CRM is where a wrong assumption stops being an opinion and starts sending on a schedule.
 
-The symptoms are familiar:
+PECR — the Privacy and Electronic Communications Regulations — decides whether a marketing email needs prior consent, and it decides it by the **legal form of the recipient**, not by whether the address looks like a work address.
 
-- **Leads arrive and go cold.** A form fills out, an email lands at 9pm, and the first human response comes two days later — long after the prospect booked with someone who answered.
-- **Follow-up depends on someone remembering.** No sequence, no reminders, no pipeline — just good intentions that lose to a busy week.
-- **Nobody can see the funnel.** How many leads came in, where they stalled, what closed — all of it lives in heads and inboxes, so you cannot fix what you cannot see.
+| Recipient                                                    | Prior consent needed?              |
+| ------------------------------------------------------------ | ---------------------------------- |
+| Limited company, LLP or public body — a corporate subscriber | **No**                             |
+| Sole trader                                                  | **Yes** — treated as an individual |
+| Unincorporated partnership                                   | **Yes** — treated as an individual |
+| Any freemail address (`gmail.com` and the like)              | **Yes**, whoever uses it for work  |
 
-A CRM that is set up properly, automated to fit your funnel, and wired into the rest of your stack fixes all three. That is what we build — on GoHighLevel, HubSpot, or the platform that fits.
+There is one narrow exemption — **soft opt-in** — and it is narrower than most people assume. It applies only where the details came from a sale or negotiations for a sale, you are marketing your own similar services, and a clear opt-out was given at collection **and** in every message since. Bought lists and scraped addresses never qualify, whatever the vendor selling them says.
 
-## What a WebAsk CRM setup does differently
+Now hold that against the shape of the UK market. SMEs are **99.85%** of UK businesses, and that base skews heavily towards sole traders and micro-companies. "We can email any business" is a US-shaped assumption that quietly imports a compliance problem into a British pipeline, and once wired into an automation it runs at volume, unattended.
 
-Three things separate our work from a typical "we set up your CRM" engagement:
+PECR exposure runs to **£17.5m or 4% of global turnover**, though a six-person practice should not plan around the ceiling — the realistic cost is a complaint, an ICO letter and a wrecked sending reputation. The point is the asymmetry: at build time this costs a field and a filter; retrofitted later, considerably more.
 
-1. **The automation fits your funnel, not a generic template.** We map how you actually win business — the intake, the qualification, the follow-up cadence — and build the pipelines and automations around it, so the CRM enforces your process instead of imposing someone else's.
-2. **It is integrated, not an island.** Calendar booking, SMS, email, and voice connected, and the CRM wired to the rest of your tools so data flows instead of being re-keyed.
-3. **You own it.** The CRM account, the data, and the automations live in an account you control. If you ever change partners, you keep the system intact.
+## Segmenting by legal form is a build step, not a policy
 
-That is the floor. The ongoing optimisation — tightening the sequences, improving conversion at each stage — is where a relationship pays off.
+Policies get written down and forgotten; fields and filters keep working. So this belongs in the build as configuration, not in an induction pack as a paragraph:
 
-## What you get at the starting price
+- **A legal-form value on the contact record**, set at capture rather than guessed later — corporate subscribers on one side, sole traders, unincorporated partnerships and freemail addresses on the other.
+- **Freemail treated as an individual at the point of entry.** A `gmail.com` address typed into a field labelled "company email" is still an individual under PECR, and the form should decide that, not a human triaging a spreadsheet later.
+- **Consent provenance stored rather than implied** — where a record came from a sale or a live negotiation, with a date and a source. That is the only thing making a soft opt-in claim defensible afterwards.
+- **Sequences that check before they send.** Automations filter on lawful basis at entry, and anything without one lands in a manual queue rather than in a send.
 
-Refer to the price card on this page for the included scope at £2,500 starting. In short: CRM platform setup (GoHighLevel, HubSpot, or a chosen alternative); lead-capture forms, intake automations, and pipelines; calendar booking, SMS, email, and voice integrations; reporting dashboards that show real funnel performance; and 30 days of post-launch tuning and team enablement.
+That is the difference between a CRM that scales your outreach and one that scales your exposure.
 
-Two things worth setting straight:
+## GoHighLevel, and why consolidation is a compliance argument
 
-- **It buys a working system, not just a logged-in account.** The starting price covers a CRM configured to your funnel with the core automations live and your team trained — not an empty platform with the bill for figuring it out.
-- **Scope is the price lever.** Migration depth, the number of pipelines and automations, the integrations with calendar, SMS, voice, and billing, and any white-label SaaS configuration move the price. We map exactly what you need on the first call.
+We lead with GoHighLevel because of what it collapses: pipeline, booking, messaging and call handling behind one login, instead of five subscriptions held together by integrations that break quietly.
 
-## GoHighLevel, HubSpot, or something else
+In the UK that is not only a tidiness argument. Consent state is what fragments first: every extra tool holding a copy of the list is another place an opt-out has to be honoured, and another record whose provenance is now a guess. One system does not make you compliant. It makes the question answerable — one field and one audit trail, rather than four tools to reconcile first.
 
-The platform should follow your business, not the other way around. As a rough guide: GoHighLevel suits service businesses and agencies that want SMS, calls, booking, and pipelines in one place — and agencies that want to resell it white-labeled. HubSpot suits teams that want a polished, widely-integrated platform and room to scale into marketing and sales hubs. Other tools fit specific needs. We make the recommendation based on your funnel and budget, not on which platform we feel like configuring — and we are upfront that license fees are separate and passed through at cost.
+For agencies the same argument runs a level up. Reselling under your own brand means the consent obligations of every sub-account you open sit on infrastructure you configured, so the legal-form field and the lawful-basis filter belong in the snapshot you clone from, not in an onboarding checklist.
 
-## CRM migrations
+What we will not do is quote UK adoption figures at you. The count that circulates has no disclosed methodology, and white-labelling — the platform's defining feature — hides its main deployment model from any website scan. That undercount is biased, not random, so the case has to be what the platform does for your funnel.
 
-Moving CRMs is the riskiest, most-avoided project in this space, because a botched migration loses contacts, breaks automations, and takes the funnel offline. It is also one of the most common reasons small businesses come to us — they have outgrown a tool, inherited the wrong one, or want everything consolidated.
+## HubSpot: implementation, onboarding, and the migration out
 
-We handle migrations end to end: **ActiveCampaign to GoHighLevel**, **HubSpot to GoHighLevel** (or the reverse), and migrations off **Pipedrive**, **Salesforce**, **Mailchimp**, or **Keap**. The method is the same regardless of direction:
+HubSpot is the larger installed base, and the UK leads Europe on HubSpot adoption — concentrated in the agency, SaaS and professional-services businesses that later start asking whether they are paying for a platform or for seats nobody fills. Two jobs follow, pulling in opposite directions.
 
-- **Inventory everything** — contacts, custom fields, tags, pipelines, automations, templates, and the integrations that depend on them.
-- **Map and rebuild** the data model and automations in the new platform rather than dumping a messy export into a clean system.
-- **Migrate in a staged cutover** with the old system running until the new one is verified, so you are never without a working CRM.
-- **Validate and train** — confirm nothing was lost, the automations fire correctly, and your team knows how to run the new setup.
+**Implementation and onboarding.** Properties, lifecycle stages, forms, workflows and reporting shaped to how work genuinely reaches you rather than left in the out-of-the-box arrangement — with the legal-form and lawful-basis values above carried as custom properties, so every workflow can filter on them.
 
-Done carefully, a migration consolidates your stack and fixes the problems that made you move. Done as a raw export-import, it recreates the mess in a new tool.
+**HubSpot to GoHighLevel migration.** Commercially the sharpest work on this page, because the businesses best served by consolidating are usually already on HubSpot, paying per seat for a marketing hub they use a fraction of.
 
-## What we don't build
+And the counter-case, which applies more often than a GoHighLevel-first agency would like: where a sales function lives in HubSpot daily, migrating is disruption you pay for twice. We will say so on the first call, not after the invoice.
 
-Honesty about scope is half the value of a service page. For WebAsk CRM work, the most common asks we do not take at the starting price:
+## What a migration actually loses
 
-- **Paid platform license fees.** GoHighLevel and HubSpot subscription costs are separate and passed through at cost — we configure the platform; you own the subscription.
-- **Ongoing campaign execution.** Writing and sending your newsletters, managing your lists week to week, and running your content belong with the SEO or Maintenance services, not the setup.
+Not the contacts. The consent.
 
-## Where to next
+A CSV export carries the email address. It does not carry the lawful basis, the date an opt-out was offered, the source of the record, or which of your previous three tools that person already unsubscribed from. Import it clean and you have not moved a list, you have laundered one — and now it runs on automation.
 
-If you are scoping a real CRM build or migration, the right next step is a 30-minute discovery call. We learn your funnel and your current tools, you learn whether we are the right partner, and within three business days you get either a written scope or an honest referral.
+So the consent model is rebuilt before any sequence runs — legal form, lawful basis, opt-out history, source — and where the old system cannot answer, the record arrives unconsented rather than optimistically tagged.
 
-If you are earlier in the decision, request a free 30-minute audit — we will look at how leads currently flow through your business and tell you candidly where they are leaking. No pitch attached.
+Be ready for what that does to the number. A contact count and a mailable list are different figures, and an honest migration is where you learn by how much. That is not a loss — it is the first accurate view of the list, and far cheaper to reach in a scoped migration than in a complaint.
 
-Either way, see the rest of what we ship, with starting prices, on the [pricing page](/pricing).
+## Automations that touch regulated clients
+
+A CRM stops being neutral the moment your customers are patients. Four places the default configuration creates a problem:
+
+**Review requests.** Where a platform ships one, it is the easiest way to automate yourself into a legal problem. Since **6 April 2025** the DMCC Act 2024 has made publishing fake consumer reviews illegal in the UK, and incentivised reviews must be disclosed — an incentive being a discount or a freebie, not just cash. The CMA can determine a breach and fine directly, up to **10% of global annual turnover or £300,000, whichever is higher**; in **March 2026** it opened investigations into five named businesses. Dental practices carry a second layer: the GDC requires genuine reviews with no incentives at all. So the automation asks everyone, incentivises nobody, and does not quietly route the unhappy ones away from the request.
+
+**A clinic's nurture sequence is advertising.** The CAP Code applies to organic content, not only paid ads, so an automated email or SMS is an ad. Prescription-only medicines may not be advertised to the public, and the ASA treats euphemisms as implied promotion of the medicine — which rules out a rebooking reminder that names the product, and the softer wording a practice reaches for once it knows it cannot. The MHRA issued **47 enforcement notices to aesthetic businesses in 2024**, mostly on exactly this. The compliant sequence promotes the consultation, and that constraint belongs inside the automation: see [websites for UK aesthetic clinics](/industries/aesthetic-clinics).
+
+**Recall is not marketing, until somebody merges them.** In a dental practice the recall reminder and the promotional offer travel down the same pipeline unless the build separates them. PECR governs both recall and marketing communications, so they are built as two flows with their own consent state, not one list with a hopeful tag on it. See [websites for UK dental practices](/industries/dental-practices).
+
+**Anything that dials.** Outbound marketing calls placed by automated calling systems need the subscriber's prior explicit consent under PECR, and Ofcom's persistent-misuse rules add abandoned-call caps and permitted calling hours. Inbound automation — reception, booking, out-of-hours capture — is a far cleaner place to start. Whether an AI-voiced call counts as "live" or "automated" under PECR is a grey zone the regulator has not formally resolved, and an unresolved classification is a poor thing to discover once the dialler is already running.
+
+## The line item a US-shaped quote leaves out
+
+Starting at **£2,500 + VAT where applicable**, as a project rather than a retainer, with the scope listed alongside. What a scope list cannot tell you is which part of _your_ build is the expensive part.
+
+On a US-shaped project it is rarely the consent layer — opting out after the fact is the assumption baked into the tooling. Here it frequently is, and it is the one variable set by records made years before anyone thought about a CRM: the provenance questions above, answered for every contact you already hold.
+
+A list with that history intact is configuration. A list without it is archaeology, and that work exists whether or not a quote mentions it. Left off, it does not disappear; it gets done by you, later, after something has already gone out. So the first call establishes the state of your data before the feature set — because a CRM priced from a feature list alone has not asked the question that moves the number.
+
+We work remotely, with no UK office — the honest position rather than a hedge — so the configuration is written down as it is made rather than living in one head. [How a project runs](/process) sets out the sequence; the [full list of services](/services) and the [pricing page](/pricing) show where a CRM build sits.
+
+## Two limits, stated up front
+
+We do not buy, rent or supply lists, and we will not import one you were sold. Bought and scraped addresses never qualify for soft opt-in, so a list handed over by an agency is a liability dressed as an asset — and it is your sending domain that carries the consequence.
+
+Nor is any of the above legal advice. It describes how a system gets configured, not a compliance sign-off on what you then choose to send. Where a clinic sequence is genuinely borderline, CAP runs a free Copy Advice service before publication. Use it.
+
+## Start with the list you already have
+
+Before you choose a platform, answer one question about the contacts you hold today: for each of them, can you say where the record came from and on what basis you are allowed to email it? If the honest answer is no, the platform decision is premature — a better system only automates the same uncertainty faster, and at higher volume.
+
+If the question is uncomfortable, start where it costs nothing — a [free audit](/free-audit) of the website those capture forms sit on. If you can already answer it and you are scoping a build, or a move off HubSpot, [get in touch](/contact) with what you run now and what you want it to do. You will get a straight answer on whether moving is worth it, including when it is not.

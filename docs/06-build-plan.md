@@ -182,12 +182,24 @@ internal-linking mesh.
 
 ### Tasks
 
-- [ ] 7 remaining service pages — **batch them**, quality-check once at the end
-- [ ] `/services/crm-automation` written **GoHighLevel-first** (D6), with HubSpot as a named
+- [x] **All 9 service-page MDX bodies rewritten for the UK** (pulled forward, 2026-07-28,
+      `feature/uk-service-pages`). They had been forked verbatim from Naxdor and given only a
+      spelling pass — measured at **1–4 words** from their US originals. Now **0.0–0.1%** 5-gram
+      Jaccard against them, cross-page max 1.9%. Each carries a distinct UK argument; titles lead
+      with the UK head term (§ doc 02 § 4). Batched and quality-checked once at the end, per the
+      working method above — which is what made the two adversarial verification passes affordable
+- [x] `/services/crm-automation` written **GoHighLevel-first** (D6), with HubSpot as a named
       second section covering implementation, onboarding and **HubSpot-to-GHL migration**.
-      Much of Naxdor's GHL copy ports directly (doc 02 § 3)
-- [ ] `/services/ai-integration` — 3 H2 sub-sections; **position voice agents as inbound-led**
-      with the UK legal picture stated honestly (doc 03 § B3)
+      The page's sharpest UK material turned out not to be the platform choice but **PECR
+      segmentation by recipient legal form** (doc 03 § A5) — sole traders, unincorporated
+      partnerships and freemail addresses need consent, corporate subscribers don't, and UK SMBs
+      skew heavily to the first group. It also **declines to quote GHL adoption figures**, and
+      says why (doc 02 § 3 — undisclosed methodology, white-labelling biases any website scan)
+- [x] `/services/ai-integration` — **voice agents positioned inbound-led** with the UK legal
+      picture stated honestly (doc 03 § B3): PECR's live-vs-automated split described as a grey
+      zone the regulator has **not** resolved, plus Ofcom persistent-misuse, CLI authenticity and
+      the 2025 GC6 revision. It also refuses to print a per-minute voice figure, on the grounds
+      that an invented number is worse than none
 - [ ] `/locations` + 3 hubs: **Manchester, Cheshire, Leeds** (doc 02 § 6). Cheshire is the
       aesthetics-money hub — give it the strongest clinic-facing content
 - [ ] 3 industry pages, each run through the **copy-review checklist** (doc 03 § B4)
@@ -312,12 +324,12 @@ before Phase 1 cutover; D4 is a founder pricing decision needed before `/pricing
 
 Update this table as phases close, mirroring the Naxdor convention.
 
-| Phase                                 | Status          | Notes                                                                                                                                                                                                                                                                              |
-| ------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0 — Fork & Foundations                | **In progress** | Fork done; brand, schema, site config, UK locations and the full 301 map landed. `typecheck` · `lint` · `build` · `check:contrast` · `check:redirects` · `check:uniqueness` · all 130 e2e tests green. Outstanding: keyword reseed, Vercel/Resend/GSC setup, Cheshire verification |
-| 1 — Credible MVP + Cutover            | Not started     | Blocked on D2, D3, D4. The 301 map is already built                                                                                                                                                                                                                                |
-| 2 — Services / Locations / Industries | Not started     | Depends on 1                                                                                                                                                                                                                                                                       |
-| 3 — Content Engine + Proof            | Not started     | Depends on 2                                                                                                                                                                                                                                                                       |
-| 4 — Lead Capture + Scale              | Not started     | Depends on 3                                                                                                                                                                                                                                                                       |
-| 5 — CMS migration                     | Deferred        | —                                                                                                                                                                                                                                                                                  |
-| 6 — Auth + client dashboard           | Deferred        | —                                                                                                                                                                                                                                                                                  |
+| Phase                                 | Status          | Notes                                                                                                                                                                                                                                                        |
+| ------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 0 — Fork & Foundations                | **In progress** | Fork done; brand, schema, site config, UK locations, keywords and the full 301 map landed. All gates green, 149 e2e passing. Outstanding: **external only** — Vercel/Resend/GSC setup, real MSV/KD pull, Cheshire verification                               |
+| 1 — Credible MVP + Cutover            | Not started     | Blocked on D2, D3, D4. The 301 map is already built                                                                                                                                                                                                          |
+| 2 — Services / Locations / Industries | **Part done**   | **All 9 service pages written for the UK** (2026-07-28) — pulled forward ahead of Phase 1 because it was the largest unblocked work. Industries also done. Remaining: 3 location hubs, first programmatic batch, `CrossLinkGrid` mesh, nav/footer, citations |
+| 3 — Content Engine + Proof            | Not started     | Depends on 2                                                                                                                                                                                                                                                 |
+| 4 — Lead Capture + Scale              | Not started     | Depends on 3                                                                                                                                                                                                                                                 |
+| 5 — CMS migration                     | Deferred        | —                                                                                                                                                                                                                                                            |
+| 6 — Auth + client dashboard           | Deferred        | —                                                                                                                                                                                                                                                            |

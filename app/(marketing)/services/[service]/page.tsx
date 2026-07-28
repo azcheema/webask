@@ -172,7 +172,7 @@ export default async function ServicePage({ params }: { params: Promise<RoutePar
       <CtaBand
         tone="brand"
         title="Ready to get started?"
-        body="Book a 30-minute discovery call — no pitch, just a clear plan and a written scope within three business days."
+        body="Book a 30-minute discovery call — no pitch, just a clear plan and a written scope within three working days."
         cta={service.primaryCta}
       />
     </>

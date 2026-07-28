@@ -8,11 +8,18 @@
  *  - `_nav-data.ts` (will re-export a `SERVICE_NAV` derivation in the next
  *    feature; see the comment at the top of that file)
  *
- * Starting prices below are the **confirmed launch anchors** (founder-confirmed
- * 2026-06-02) — these are the figures every prospect quotes back, and every
- * downstream page derives them from this module. Display is **starting-price
- * only** ("Starting at £X"): no upper limit / typical range is shown, per
- * the founder's pricing-display decision. A custom-quote CTA carries the rest.
+ * ⚠️ Starting prices below are the **research-derived proposals** from
+ * `docs/02-uk-market-research.md` § 7 — they are NOT yet signed off. **Decision
+ * gate D4 (founder) is open**: a published price is a commitment, so these must
+ * be confirmed before `/pricing` or any service page goes live. Do not restate
+ * them as confirmed anywhere. (The USD figures they were converted from were
+ * founder-confirmed for Naxdor on 2026-06-02; that confirmation does not carry
+ * over to the UK market.)
+ *
+ * Every downstream page derives its figures from this module. Display is
+ * **starting-price only** ("Starting at £X"): no upper limit / typical range is
+ * shown, per the founder's pricing-display decision. A custom-quote CTA carries
+ * the rest. VAT wording is hedged pending gate D2 — see `lib/pricing.ts`.
  */
 
 import type { CtaLink, FaqItem } from "@/data/types";
@@ -22,7 +29,7 @@ export type Currency = "GBP";
 export type PriceCadence = "project" | "monthly";
 
 export type ServicePricing = {
-  /** Starting price as a whole number in the smallest practical unit (dollars). */
+  /** Starting price as a whole number in the smallest practical unit (pounds). */
   readonly startingAmount: number;
   readonly currency: Currency;
   readonly cadence: PriceCadence;
@@ -124,7 +131,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What if our brand assets aren't ready yet?",
         answer:
-          "We can build a temporary brand kit — logo wordmark, two colors, one typeface — for £1,500 as part of the engagement. It's enough to ship a site that looks intentional while a proper rebrand happens elsewhere. We're upfront that this is interim: the moment a full brand identity lands, we update the site in a small follow-up engagement.",
+          "We can build a temporary brand kit — logo wordmark, two colours, one typeface — for £1,500 as part of the engagement. It's enough to ship a site that looks intentional while a proper rebrand happens elsewhere. We're upfront that this is interim: the moment a full brand identity lands, we update the site in a small follow-up engagement.",
       },
       {
         question: "Do you offer maintenance after launch?",
@@ -146,7 +153,7 @@ export const services: ReadonlyArray<Service> = [
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "Catalog size, custom theming depth, third-party integrations (ERP, fulfilment, subscriptions), and headless vs Shopify-native are the levers.",
+        "Catalogue size, custom theming depth, third-party integrations (ERP, fulfilment, subscriptions), and headless vs Shopify-native are the levers.",
     },
     includes: [
       "Shopify or custom build with theme work, checkout customisation, and product templates",
@@ -283,7 +290,7 @@ export const services: ReadonlyArray<Service> = [
     includes: [
       "Stakeholder research, IA, and a sitemap or product map",
       "Wireframes, then visual design across 3–10 core screens or flows",
-      "Component library in Figma, tokenized so engineering can ship it",
+      "Component library in Figma, tokenised so engineering can ship it",
       "Two rounds of revisions; final assets exported and documented",
       "Designer-engineer pairing during implementation if you build with us",
     ],
@@ -297,27 +304,27 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What's the difference between UX and UI design?",
         answer:
-          "UX is how the product is structured and how people move through it — the information architecture, the flows, the decisions that determine whether it actually works. UI is the visual layer on top — typography, color, spacing, and components — the part that determines whether it feels considered and trustworthy. They are different disciplines that have to agree with each other, and we do both: we fix the structure and then design the surface, rather than treating one without the other.",
+          "UX is how the product is structured and how people move through it — the information architecture, the flows, the decisions that determine whether it actually works. UI is the visual layer on top — typography, colour, spacing, and components — the part that determines whether it feels considered and trustworthy. They are different disciplines that have to agree with each other, and we do both: we fix the structure and then design the surface, rather than treating one without the other.",
       },
       {
         question: "Do you design brand identities and logos too?",
         answer:
-          "No — we design UX and UI within an existing brand, not brand identities from scratch. Logo design and a full visual identity system belong with a dedicated brand studio, and we will recommend one we trust. If your brand assets are not ready, we can work to a minimal interim kit — a wordmark, a couple of colors, a typeface — so design is not blocked, then update once a proper identity lands.",
+          "No — we design UX and UI within an existing brand, not brand identities from scratch. Logo design and a full visual identity system belong with a dedicated brand studio, and we will recommend one we trust. If your brand assets are not ready, we can work to a minimal interim kit — a wordmark, a couple of colours, a typeface — so design is not blocked, then update once a proper identity lands.",
       },
       {
         question: "Will the design actually be buildable, or just pretty mockups?",
         answer:
-          "Buildable, by design. We deliver a tokenized component library in Figma — every color, type size, and spacing step is a named token that maps directly onto the design tokens engineering uses — and components are defined once and composed, exactly as they are in code. That closes the usual gap where an engineer rebuilds mockups by eye and the result drifts. If we build the product with you, the design ships into the same system that consumes it; if your team builds it, the system is structured and documented so they can.",
+          "Buildable, by design. We deliver a tokenised component library in Figma — every colour, type size, and spacing step is a named token that maps directly onto the design tokens engineering uses — and components are defined once and composed, exactly as they are in code. That closes the usual gap where an engineer rebuilds mockups by eye and the result drifts. If we build the product with you, the design ships into the same system that consumes it; if your team builds it, the system is structured and documented so they can.",
       },
       {
         question: "What does the £3,000 starting price cover?",
         answer:
-          "Research and an information architecture, wireframes and then visual design across your core screens or flows, a tokenized Figma component library, two rounds of revisions with final assets exported and documented, and designer-engineer pairing during implementation if you build with us. It designs the core of the product properly and sets the system. A sprawling product with dozens of unique screens, or one that needs usability testing, is a larger engagement that we scope explicitly.",
+          "Research and an information architecture, wireframes and then visual design across your core screens or flows, a tokenised Figma component library, two rounds of revisions with final assets exported and documented, and designer-engineer pairing during implementation if you build with us. It designs the core of the product properly and sets the system. A sprawling product with dozens of unique screens, or one that needs usability testing, is a larger engagement that we scope explicitly.",
       },
       {
         question: "Do I have to build the product with you to get the design?",
         answer:
-          "No. The design is a standalone deliverable — a documented, tokenized system and the designed flows — that any competent team can build. We structure and document it precisely so it does not depend on us. That said, when we also build it, design and engineering pair directly through implementation, which is the surest way to get a shipped product that matches the design rather than a near-miss.",
+          "No. The design is a standalone deliverable — a documented, tokenised system and the designed flows — that any competent team can build. We structure and document it precisely so it does not depend on us. That said, when we also build it, design and engineering pair directly through implementation, which is the surest way to get a shipped product that matches the design rather than a near-miss.",
       },
       {
         question: "How long does a design engagement take?",
@@ -363,7 +370,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "How long does SEO take to show results?",
         answer:
-          "Realistically, months — not weeks. Month one is technical fixes, keyword strategy, and on-page work, with little visible ranking movement. Months two to four bring early gains on longer-tail terms as new content indexes. Months five to twelve are where authority compounds and competitive terms start to move and produce a measurable flow of leads. Anyone promising page-one rankings next month is either misleading you or about to get your site penalized. If you need customers this week, paid search is the honest answer — SEO is the channel that pays off for years once it does.",
+          "Realistically, months — not weeks. Month one is technical fixes, keyword strategy, and on-page work, with little visible ranking movement. Months two to four bring early gains on longer-tail terms as new content indexes. Months five to twelve are where authority compounds and competitive terms start to move and produce a measurable flow of leads. Anyone promising page-one rankings next month is either misleading you or about to get your site penalised. If you need customers this week, paid search is the honest answer — SEO is the channel that pays off for years once it does.",
       },
       {
         question: "Why is SEO a monthly retainer instead of a one-time project?",
@@ -388,7 +395,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What do you actually report on each month?",
         answer:
-          "What we did, what moved, and why — tied to leads rather than vanity metrics. You see rankings and organic traffic for the keywords that matter, the content and technical work completed that month, and the connection to inquiries and conversions. You will not get a wall of impressions and 'domain authority' that always trends up and never explains whether the channel is making you money.",
+          "What we did, what moved, and why — tied to leads rather than vanity metrics. You see rankings and organic traffic for the keywords that matter, the content and technical work completed that month, and the connection to enquiries and conversions. You will not get a wall of impressions and 'domain authority' that always trends up and never explains whether the channel is making you money.",
       },
       {
         question: "Do you run Google Ads or paid social too?",
@@ -402,7 +409,7 @@ export const services: ReadonlyArray<Service> = [
     name: "Mobile Apps",
     summary: "Native and cross-platform apps that ship to the App Store.",
     heroSubhead:
-      "Native and cross-platform mobile apps — designed, built, and shipped to the App Store and Play Store with the same rigor as our web work.",
+      "Native and cross-platform mobile apps — designed, built, and shipped to the App Store and Play Store with the same rigour as our web work.",
     whoItsFor:
       "small businesses whose customers expect a mobile experience, operators bundling an app with services, or founders validating a mobile-first product.",
     pricing: {
@@ -420,7 +427,7 @@ export const services: ReadonlyArray<Service> = [
       "30 days of post-launch support and a maintenance plan offer",
     ],
     notIncluded: [
-      "App Store Optimization (ASO) or paid-install campaigns",
+      "App Store Optimisation (ASO) or paid-install campaigns",
       "Long-tail feature work beyond MVP — folds into a retainer",
     ],
     primaryCta: { label: "Get a mobile app quote", href: "/contact" },
@@ -486,7 +493,7 @@ export const services: ReadonlyArray<Service> = [
       "30 days of post-launch tuning and team enablement",
     ],
     notIncluded: [
-      "Paid GoHighLevel or HubSpot license fees (passed through at cost)",
+      "Paid GoHighLevel or HubSpot licence fees (passed through at cost)",
       "Ongoing list management or campaign execution — see SEO and Maintenance",
     ],
     primaryCta: { label: "Get a CRM quote", href: "/contact" },
@@ -495,7 +502,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "GoHighLevel or HubSpot — which should I choose?",
         answer:
-          "It depends on your business, not on which we prefer to configure. GoHighLevel suits service businesses and agencies that want SMS, calls, booking, and pipelines in one place — and agencies that want to resell it white-labeled. HubSpot suits teams that want a polished, widely-integrated platform with room to grow into fuller marketing and sales hubs. Other tools fit specific needs. We make the call based on your funnel and budget on the first call, and we are upfront that the platform's license fee is separate and passed through at cost.",
+          "It depends on your business, not on which we prefer to configure. GoHighLevel suits service businesses and agencies that want SMS, calls, booking, and pipelines in one place — and agencies that want to resell it white-labelled. HubSpot suits teams that want a polished, widely-integrated platform with room to grow into fuller marketing and sales hubs. Other tools fit specific needs. We make the call based on your funnel and budget on the first call, and we are upfront that the platform's licence fee is separate and passed through at cost.",
       },
       {
         question: "Can you migrate us from our current CRM without losing data?",
@@ -510,7 +517,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Do I pay you for the GoHighLevel or HubSpot subscription too?",
         answer:
-          "No — the platform's license or seat fees are separate and passed through at cost. You own the subscription in your own account; we configure and automate the platform on top of it. Keeping the subscription in your name is deliberate: you own the system and the data, and you are never locked into us to keep access to your own CRM.",
+          "No — the platform's licence or seat fees are separate and passed through at cost. You own the subscription in your own account; we configure and automate the platform on top of it. Keeping the subscription in your name is deliberate: you own the system and the data, and you are never locked into us to keep access to your own CRM.",
       },
       {
         question: "We're an agency — can you set up white-label GoHighLevel for us?",
@@ -619,7 +626,7 @@ export const services: ReadonlyArray<Service> = [
     ],
     notIncluded: [
       "Major new features or rebuilds — quoted separately as projects",
-      "Paid platform license fees (e.g. CRM seats, Vercel team plans)",
+      "Paid platform licence fees (e.g. CRM seats, Vercel team plans)",
     ],
     primaryCta: { label: "Discuss a care plan", href: "/contact" },
     relatedServiceSlugs: ["web-development", "seo"],

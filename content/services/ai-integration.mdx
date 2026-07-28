@@ -1,67 +1,86 @@
 ---
 slug: ai-integration
-title: "AI Integration for Small Business — Voice Agents, Chatbots & Automation"
-description: "Practical AI woven into your business — voice agents that answer the phone, chatbots that book appointments, and workflows that move data between your tools. Starting at £4,500."
-dateModified: "2026-06-18"
+title: "AI Automation Agency UK — Voice Agents, Chatbots & Workflows"
+description: "AI voice agents, chatbots and workflow automation for UK businesses, built inbound-first around PECR and Ofcom. Starting at £4,500 + VAT where applicable."
+dateModified: "2026-07-28"
 ---
 
-{/* Body prose only. Catalog data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ai-integration entry and is read by the page template — do not duplicate those fields here. */}
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ai-integration entry and is read by the page template — do not duplicate it, and in particular not the three price levers in priceNote, the two running costs in notIncluded, or the grounding and evaluation-harness FAQ answers. Structure follows the UK picture: AI calling under PECR/Ofcom (docs/03 § B3), what a generated answer is allowed to say under CAP and the GDC (docs/03 § B1, B2), and the widget consent gate (docs/03 § A4). The PECR legal-form segmentation argument belongs to /services/crm-automation — link to it, never restate it here. */}
 
-## AI that earns its keep, not a science project
+An AI voice agent answering your phone in the UK is not only a technology decision. It sits under **PECR** and **UK GDPR**, policed by the ICO, and under **Ofcom's** nuisance-call rules. That regulatory picture goes first on this page rather than last, because it changes what gets built — and because a well-advised buyer will raise it anyway.
 
-There are two kinds of AI projects. The first is the demo that impresses in a meeting and never touches the business again. The second is the unglamorous one that quietly answers the phone at 8pm, books the appointment, and saves an afternoon of copying data between two systems. We build the second kind.
+Starting at **£4,500 + VAT where applicable**. Voice agents first, since that is where the law bites, then chatbots and workflow automation, where it mostly does not.
 
-The difference is not the model — everyone has access to the same frontier models. The difference is integration and discipline: woven into the tools you already use, scoped to a job worth doing, and measured so you know it is actually working. AI that lives in a separate tab nobody opens is a cost; AI wired into your funnel is leverage.
+## The part of UK law that is genuinely unresolved
 
-## What WebAsk AI integration does differently
+PECR divides telephone calls into two kinds: **live** calls — a human, or something human-equivalent — and **automated** calls, meaning recorded or pre-recorded messages. Different rules attach to each. An AI voice agent is neither, cleanly.
 
-Three things separate our work from a flashy proof-of-concept:
+The regulator has not formally resolved that grey zone. Informal ICO guidance points one way: an AI capable of genuine two-way conversation, with a human handoff available, looks more like a live call than a recorded message. That is an indication, not a ruling.
 
-1. **It is woven into your existing tools.** AI that talks to your CRM, your calendar, and your data sources — not a standalone toy you have to babysit and copy-paste around.
-2. **It is scoped honestly.** We start by mapping what AI should and, just as importantly, should not do for you. Pointing it at the wrong job is how these projects waste money.
-3. **It is measured.** We build an evaluation harness so quality is something we test against, not something we assume. When the AI handles a customer, you can see how well — and tune it.
+So: unsettled, with a lean. Anyone telling you the classification is decided is either guessing or selling.
 
-That is the floor. We deliver three kinds of integration, often in combination.
+We build for the safer reading rather than the convenient one — genuine two-way conversation instead of a decision tree with a voice on top, a real route to a person, and identification at the start of the call rather than an agent that lets callers assume it is human. If the position hardens, a system built that way does not need rebuilding.
 
-## AI Voice Agents
+## Voice agents, built inbound-first
 
-A voice agent answers your phone when you cannot — after hours, during a rush, or on the fifth simultaneous call that would otherwise go to voicemail. It can greet callers, answer common questions, qualify the lead, book an appointment straight into your calendar, and hand off to a human when the conversation needs one. For a business that lives and dies by inbound calls — clinics, home services, practices — a missed call is a missed customer, and a voice agent is the difference between capturing that lead and losing it to whoever picked up.
+Inbound is the clean case, and the right place for a voice engagement to start: reception, booking, out-of-hours capture, the overflow when three lines ring at once. The caller rang you. Nothing is being marketed at them, so the consent question never arises.
 
-We build the agent around your actual call flows, connect it to your booking and CRM, and tune it on real conversations so it sounds like your business, not a robot reading a script.
+The agent's job is narrow on purpose, and the reason is testability rather than modesty: an agent permitted to hold any conversation is one nobody can evaluate, while an agent with a defined job can be run against a fixed set of cases before it ever picks up. Judge it on its failure mode rather than its success rate — one that handles two-thirds of calls and hands the rest cleanly to a person beats one that handles nine in ten and improvises through the last, because the improvised tenth is a wrong answer given to a real customer under your name.
 
-## AI Chatbots & Assistants
+Clinics and practices are the clearest inbound case: enquiries arrive by phone, often outside opening hours, and the caller wants a consultation booked rather than a voicemail beep.
 
-A chatbot on your site or in your messaging channels answers questions, captures leads, and books appointments around the clock — but only if it answers from _your_ information, not a generic guess. We build retrieval-grounded assistants: the bot answers from your documents, your services, and your policies, so it is accurate and on-brand instead of confidently wrong. It can qualify visitors, route them to the right place, and pass a warm lead into your CRM with the context already captured, so your team picks up a conversation that is already half-won.
+**Call recording is a decision to take before launch, not after.** Callers must be told, up front. RIPA permits recording without consent in some circumstances, but UK GDPR transparency pulls the other way, and the ICO's position is that informing callers supports the fairness principle even where consent is not strictly required. Silence is not consent. In practice that means the disclosure sits in the agent's opening line, the retention period is chosen deliberately, and the recordings land somewhere you own.
 
-## AI Workflow Automation
+## Outbound is a different regime, and it is scoped separately
 
-The least visible and often most valuable category: the repetitive admin that eats your team's hours. Pulling data between tools, generating documents, triaging inbound messages, updating records in three systems when one thing changes. We build these as reliable workflows — using automation platforms like n8n or Make, with AI in the steps that genuinely need judgment — so the busywork runs itself and your people do the work only they can do. The test is simple: if a task is repetitive, rule-based, and someone does it by hand every week, it is a candidate.
+This is where the answer stops being comfortable.
 
-## What you get at the starting price
+- **Consent.** Outbound marketing calls made using automated calling systems require the subscriber's **prior explicit consent** under PECR. Not soft opt-in, not a bought list, not "they are a business, so it is fine".
+- **Ofcom's persistent-misuse rules** govern the calling operation itself: caps on abandoned-call rates, permitted calling hours, and requirements for what an abandoned-call message has to say.
+- **CLI authenticity and number allocation.** The 2025 revision to **General Condition 6** hardened both, with carrier-level filtering where they are not met — so non-compliant traffic stops connecting, which is a commercial problem before it is a legal one.
 
-Refer to the price card on this page for the included scope at £4,500 starting. In short: discovery and a clear inventory of what AI should and should not do; implementation of one or more of a voice agent, a retrieval-grounded chatbot, or a workflow automation; integrations with your existing CRM, calendar, and data sources; an evaluation harness so quality is measured; and 30 days of post-launch tuning and prompt iteration.
+Two regulators reaching different parts of the same campaign, then. A PECR breach carries exposure of **£17.5m or 4% of global turnover** at the ICO; Ofcom can act on how the calling is conducted whether or not anyone consented to it.
 
-Two things worth setting straight:
+Our position: we will build outbound, but only against a consent record you can evidence, inside permitted hours, on authentic CLI, with abandoned-call behaviour configured rather than defaulted. Where that record does not exist, the project does not begin with a dialler — it begins with the inbound agent, which captures demand you already have and is not waiting on a legal question.
 
-- **It buys a working, integrated capability — not a chatbot bolted onto your homepage and forgotten.** The starting price delivers one or more of the three integrations, live and wired into your tools, with the evaluation and tuning to make it reliable.
-- **Complexity is the lever.** Voice-agent call complexity, how deep the chatbot's knowledge base goes, and the number of workflows and integrations move the price. We scope it on the first call.
+None of this is legal advice — it is our reading as at July 2026. Where a situation sits close to a line, we say so and cite the source.
 
-## How we build
+## What the model is allowed to say
 
-We start with discovery — a candid inventory of where AI helps and where it would just add risk. We implement against your real tools and data, build the evaluation harness alongside the feature, and spend the first 30 days tuning prompts and behaviour on real usage. AI integrations are never "done at launch"; they are launched and then tuned, which is exactly why the evaluation harness matters.
+Everything above concerns how a call is placed. This concerns what comes out of the model once it connects, and in a regulated sector that is the harder question.
 
-## What we don't build
+The CAP Code applies to organic content, not only to paid advertising, so an answer your agent gives a member of the public is your own marketing copy. It is also the only copy on your site that gets written after publication, by something that has never read your compliance notes.
 
-Honesty about scope is half the value of a service page. For WebAsk AI integration, the most common asks we do not take at the starting price:
+For an aesthetic clinic that is not theoretical. Prescription-only medicines may not be advertised to the public, and the ASA reads a euphemism as a reference to the product itself — so the model breaches precisely when it is being most helpful, by answering in the words the caller used. MHRA enforcement notices to aesthetic businesses ran to **47 in 2024**, mostly on this rule, and the ASA's proactive monitoring is itself AI-powered: it finds non-compliant material without waiting for a complaint. Dentistry has its own version. The GDC treats "specialist" as a protected description tied to its specialist list, so an assistant that helpfully agrees a practice specialises in something can create a standards breach in a single sentence.
 
-- **Custom models trained from scratch.** We build on frontier models with retrieval and tools — which is what almost every small business use case actually needs. Training a bespoke model is rarely the right spend, and we will tell you so.
-- **The underlying model API fees.** Usage costs from the AI providers are passed through at cost; we build and tune the integration, you own the usage account.
-- **AI for its own sake.** If a problem is better solved with a plain automation or a simple form, we will say so rather than sell you a model you do not need.
+The build answer is constraint rather than supervision after the fact. The retrieval corpus is copy that has already been through a compliance review, the agent declines rather than improvises on treatment questions, and anything that would need a product named is a handover to a person. The terminology rules a clinic site lives under are set out on [websites for UK aesthetic clinics](/industries/aesthetic-clinics), and the dental equivalents on [websites for UK dental practices](/industries/dental-practices).
 
-## Where to next
+## A chatbot's first UK problem is the widget, not the model
 
-If you are scoping a real AI integration, the right next step is a 30-minute discovery call. We learn where your time and leads are leaking, you learn whether we are the right partner, and within three business days you get either a written scope or an honest take on whether AI is even the right tool for the job.
+A chat widget that sets non-essential storage before the visitor has consented is a PECR problem however good the model behind it is, and "we set it on page load and asked a moment later" is not a defence. So nothing non-essential fires before consent, reject carries the same visual prominence as accept — the ICO's main enforcement focus, and the commonest failure on UK sites — and the widget waits behind the same gate as analytics instead of being quietly exempted from it as "functional".
 
-If you are earlier in the decision, request a free 30-minute audit — we will look at your phones, your inbound, and your repetitive admin and tell you candidly where AI would actually pay off. No pitch attached.
+Past the gate, the question is whether the answers hold up over time. Grounding settles day one; it does nothing about day ninety. Providers update their models on their own schedule and your prices and policies change on yours; either can move an answer with nobody touching the build. So the questions your business genuinely receives — the awkward ones, the price ones, the ones asked before anyone will book — become a fixed test set, run before launch and after every change, which makes a regression something you detect rather than something a customer reports. Where a conversation qualifies, it belongs in the pipeline rather than the chat log; [CRM automation](/services/crm-automation) is the receiving end.
 
-Either way, see the rest of what we ship, with starting prices, on the [pricing page](/pricing).
+## Workflow automation, and why its mistakes differ in kind
+
+The third category never demos well and is usually the first to pay for itself: the admin that never appears on an invoice. What makes a task a candidate is not how tedious it is but how decidable it is. If two competent people would produce the same output from the same inputs, a workflow can do it; where they would disagree, a model in the middle is guessing and you have automated the disagreement. We build these on n8n or Make, and that same test decides where a model belongs and where a plain rule is cheaper — a workflow calling an LLM to do arithmetic is a slower, dearer, less reliable spreadsheet.
+
+The failure mode worth designing for is scale. A person who emails the wrong list makes the mistake once and notices by lunchtime; an automation makes it several thousand times before anyone opens the bounce report. Where the messages are marketing email, PECR decides lawfulness by the legal form of each recipient — not something a workflow can infer from a domain name. That segmentation belongs upstream in the system holding the contact record, and how it gets built is set out on [CRM automation](/services/crm-automation). What belongs here is narrower: a workflow able to send checks the lawful basis on each record as it sends, and parks whatever cannot answer.
+
+## Why there is no per-minute price on this page
+
+The price card carries the starting figure and the scope it buys. What a card cannot carry is the running cost, and voice is where that question actually bites.
+
+We do not publish a per-minute rate. It turns on your telephony provider, your call mix and how long a booking conversation takes against your particular calendar — and a figure invented for a web page would not be harmless, it would be the figure you budgeted against. It gets modelled on your own call data during scoping, next to the cost of the calls currently going unanswered, because that comparison decides whether any of this is worth buying.
+
+## Start with the leak, not the technology
+
+The useful first question is not which of the three you want. It is where the business is losing something you could measure — calls that ring out, enquiries that arrive at 9pm and are cold by morning, an afternoon a week moving the same data between two systems. Name the leak and the right build is usually obvious; start from the technology and you get a demo.
+
+Often the leak closes with no model in it at all — a better booking page, a shorter form, a rule the workflow can follow on its own. Those cost less and break in fewer places, and where that is the true answer it is the one you will get.
+
+WebAsk is fully remote, with no UK office and none planned. The whole of the United Kingdom is in range, and for something delivered over an API and a phone number that keeps a building out of your quote.
+
+[Get in touch](/contact) with what your phones and your admin actually look like. Within three working days you have a written scope; where the honest scope is "do not build this", that is what arrives instead. How a project runs from there is set out in [our process](/process).
+
+If the website is the weaker link, the [free audit](/free-audit) is the cheaper place to begin — that page sets out what it covers and when it lands. Starting figures for this and everything else are on the [pricing](/pricing) page, alongside the rest of the [services](/services).

@@ -168,7 +168,7 @@ export default async function ServiceLocationPage({ params }: { params: Promise<
       <CtaBand
         tone="brand"
         title={`Ready to grow your ${location.name} business?`}
-        body="Book a 30-minute strategy call — no pitch, just a clear plan and a written scope within three business days."
+        body="Book a 30-minute strategy call — no pitch, just a clear plan and a written scope within three working days."
         cta={service.primaryCta}
       />
     </>

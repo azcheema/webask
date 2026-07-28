@@ -1,87 +1,181 @@
 ---
 slug: ui-ux-design
-title: "UI/UX Design Services for Small Business"
-description: "Research-led UX and conversion-grade UI, delivered as a tokenized design system that ships straight into your codebase. Starting at £3,000."
-dateModified: "2026-06-18"
+title: "UX and UI Design Agency for UK Businesses"
+description: "UX and UI design for UK businesses — consent banners, WCAG 2.2 AA and an information architecture that survives UK regulation. Starting at £3,000."
+dateModified: "2026-07-28"
 ---
 
-{/* Body prose only. Catalog data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ui-ux-design entry and is read by the page template — do not duplicate those fields here. */}
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ui-ux-design entry and is read by the page template — do not duplicate those fields here. */}
 
-## "Make it pretty" is the wrong brief
+{/* WRITTEN FRESH for the UK — deliberately not a British-spelling pass over Naxdor's US design page (docs/05 § 2, "ported pages get rewritten"). The spine is UK-only and cannot exist on a US site: PECR consent prominence (docs/03 § A4), the Equality Act 2010 framing of WCAG 2.2 AA (§ A7), CAP's two-click condition on a prescription-only price list as an IA deliverable (docs/08 § 4), and the DMCC Act 2024 review rules (docs/03 § A6). Note that this page describes the injectables advertising rule without naming a medicine or a euphemism — that discipline is the proof of the claim. Keep it that way. */}
 
-Most design engagements start with the wrong instruction. A founder looks at a dated product, feels the embarrassment, and asks for it to be made to look modern. But "looks dated" is rarely the real problem — it is the symptom people can see. Underneath it the navigation is confusing, the signup flow leaks users at step three, and the screen everyone actually lives in was never designed at all, just assembled.
+Most UX pages sell taste. This one starts somewhere less comfortable: in the UK, a handful of
+the decisions made in a design file are the ones a regulator eventually looks at.
 
-Good design is not decoration applied at the end. It is the structure of how people understand and move through your product, and the clarity of the moment you ask them to act. Make that right and "modern" comes almost for free. Make it pretty without fixing it and you have a beautiful product that still loses users where it always did.
+Not the typeface. The relative prominence of two buttons. The contrast of a link against the
+surface behind it. Whether a page sits one click from the homepage or two. Those get decided in
+the first fortnight, and by the time anyone checks them the site has been live a year and the
+fix is a rebuild.
 
-That is the brief we actually work to: design that makes the product clearer to use and more likely to convert — and that ships, instead of dying in a Figma file nobody can build.
+The conversion work is still the job — clearer structure, less friction, fewer people
+abandoning halfway through an enquiry. What is different here is that a few of those
+decisions are load-bearing, and get designed as if they are.
 
-## What WebAsk design does differently
+## The consent banner is a design problem, not a cookie plugin
 
-Three things separate the way we design from a typical agency or freelancer engagement:
+Under PECR, consent has to meet the UK GDPR Article 4(11) standard: freely given, specific,
+informed and unambiguous. Most UK sites treat that as something a plugin takes care of. A
+plugin ships a component; the standard is met or missed in how that component is designed.
 
-1. **It is research-led, not taste-led.** We start from your users, your goals, and your funnel — not a moodboard. Decisions are anchored to what the product needs to do, so we can defend them with reasons rather than opinions.
-2. **It is delivered as a system, not a pile of screens.** You get a tokenized component library in Figma — colors, type, spacing, and components defined once and reused — so the design is consistent by construction and cheap to extend later.
-3. **It is built to ship.** The design system is tokenized the same way engineering builds, so handoff is not a guessing game. If we build the product with you, design and engineering pair directly; if another team builds it, the system is structured so they can.
+The failure is prominence. **"Accept all" and "Reject all" need genuinely equal visual
+prominence.** A banner where accepting is a solid brand-coloured button and rejecting is grey
+text below it fails the freely-given test. That is the most common failure on UK sites and the
+ICO's main enforcement focus — it wrote to **53 of the UK's top 100 websites** about cookie
+banners, and PECR exposure runs to **£17.5m or 4% of global turnover**.
 
-These are the floor. The product thinking above them — which flows to prioritise, where to reduce friction, how to make the key action obvious — is where the engagement earns its keep.
+Equal prominence is not a legal question answered at the end of a build. It is contrast ratio,
+type scale, button weight, reading order and tap-target size — decided in Figma, in about ten
+minutes, usually by someone who has never been told it matters.
 
-## What you get at the starting price
+What we design to, and hand over documented:
 
-Refer to the price card on this page for the included scope at £3,000 starting. In short: stakeholder research and an information architecture, wireframes and then visual design across your core screens and flows, a tokenized Figma component library, two rounds of revisions with final assets exported and documented, and designer-engineer pairing during implementation if you build with us.
+- Two actions at the same visual weight — same size, same hierarchy, same hit area. If the
+  reject path is one tap harder, it is not equal.
+- Nothing non-essential fires before a choice is made — not "on load, we will ask in a
+  moment". No pre-ticked boxes, no "by continuing to browse you agree", no cookie wall
+  withholding the content until acceptance. None of the three is consent.
+- A designed way back in: a persistent cookie settings link in the footer, in the layout from
+  the start, because consent has to be re-obtainable.
+- A cookie policy that enumerates each cookie, its purpose, duration and provider — a
+  content-design job with a real table in it, not a boilerplate paste.
 
-Two things worth setting straight:
+## Accessibility is an Equality Act question before it is a Lighthouse score
 
-- **The starting price designs the core, done well.** It covers research, IA, and visual design across a focused set of key screens or flows — enough to set the system and the most important journeys. A sprawling product with dozens of unique screens is a larger engagement, and we scope it as one.
-- **Scope and testing are the price levers.** How large the design system is, how many key flows we design, and whether we run usability testing move the number. We tell you which of those your product actually needs now on the first call.
+We build to WCAG 2.2 AA. In the UK the framing that moves a budget is the **Equality Act
+2010**: service providers must make reasonable adjustments, and an inaccessible website is a
+recognised risk area. Risk reduction plus reach — not a nice-to-have, and not a badge.
 
-## The handoff problem we exist to solve
+Nearly all of it is settled in design rather than in code. Colour contrast. Visible focus
+states, the first thing removed when someone finds them ugly. Target size. The order in which
+things take keyboard focus, which is the order they were drawn in. An engineer can implement an
+inaccessible design perfectly, and frequently does.
 
-The single most expensive failure in design is the gap between the Figma file and the running product. A designer hands off pixel-perfect mockups, an engineer rebuilds them by eye, and the result is "close enough" — spacing that drifts, colors that are almost right, components that behave differently on every screen. Months later the design system exists in two places that disagree.
+So contrast gets measured when a colour is chosen, not assumed. The teal on this site
+clears white text at 5.47:1 — a number that arrived by measurement and came in lower than the
+estimate it replaced, which is the entire argument for measuring. A brand colour that fails is
+cheap to change in week one and expensive to unpick once it is in forty components.
 
-We close that gap by designing the way the code is built. The Figma library is tokenized — every color, type size, and spacing step is a named token that maps directly onto the design tokens engineering uses. Components are defined once and composed, exactly as they are in the codebase. When we also build the product, the design ships into the same system that consumes it, so there is no translation layer to lose meaning in. This is why our design holds up after launch instead of decaying into "the design we used to have."
+Underneath that sits a gate rather than a promise: our pipeline fails a build that scores below
+100 for accessibility in Lighthouse CI, with axe-core and a manual keyboard pass alongside it.
+That is a constraint we work under, not a result we are inviting you to admire.
 
-## How we work
+None of it survives on its own. Equal prominence agreed in a review and then rebuilt by
+eye stops being equal prominence; a contrast ratio that passes in a mockup and fails in the
+component library has passed nothing. So the rules that carry regulatory weight get written into
+the component definition — focus, error and disabled states, target sizes — where whoever adds a
+screen next year inherits them without having to be told they exist.
 
-A design engagement moves through four stages.
+## Information architecture as a compliance deliverable
 
-### Research (1 week)
+This is the argument nobody in UK UX seems to make, and it is the one that matters most if you
+run a clinic.
 
-We interview stakeholders, review your analytics and funnel, and map who uses the product and what they are trying to do. We define the information architecture — the structure underneath the screens — because getting that right is what makes everything above it feel obvious.
+CAP Code rule 12.12 prohibits advertising a prescription-only medicine to the public. Most
+practitioners half-know that. What almost nobody explains is the conditional permission
+underneath it: a price list covering such a treatment **may** exist — provided it sits at
+least two clicks from the homepage, is reached through a consultation-first path, stays
+purely informational with no promotional framing, and appears in neither the homepage nor the
+primary navigation. (Our reading of ASA/CAP guidance as at July 2026, not legal advice.)
 
-### Wireframe (1–2 weeks)
+Read that as a specification rather than a warning, because that is what it is. Navigation
+depth. A required linking path. An exclusion from the top-level menu. A sitemap that agrees
+with the menu. Every one is an information-architecture deliverable — what a UX engagement
+produces, and what a copywriting pass cannot give you. No phrasing rescues a menu that lists
+the wrong thing at the top level, and the softer substitutes clinics reach for instead of the
+brand name have themselves been ruled against as implied promotion — Venus Beauty Lounge in
+2015, Beauty Boutique Aesthetics in 2019 and Glowery Ltd in 2023 among the upheld rulings — so
+rewording is not the escape hatch either.
 
-Low-fidelity structure first, so we argue about flow and hierarchy before anyone debates a color. Wireframes make the cheap mistakes cheap — it is far less expensive to move a step in a wireframe than to rebuild a finished screen.
+We call the pattern **consultation-first architecture**: concern-led entry pages, the detailed
+material reached through consultation content, and the navigation, internal links and sitemap
+all built to the same rule instead of contradicting one another. More on how it is built on
+[websites for UK aesthetic clinics](/industries/aesthetic-clinics).
 
-### Visual design (2–3 weeks)
+Dentistry has its own version: the CMA opened a market study into the **£8.4bn private
+dentistry sector in March 2026**, pricing transparency squarely in scope — and a price list is
+an interface long before it is a policy. See
+[websites for UK dental practices](/industries/dental-practices).
 
-Then the visual layer, in working sessions you attend live — not email-only reviews. We design the core screens and build the tokenized component library as we go, so the system and the screens grow together. Two rounds of revisions are included.
+If nobody regulates your trade, none of this binds you. The discipline still transfers, because
+it is the discipline a silo runs on: every page with one obvious parent, one reason to exist,
+and links that point up to it, so relevance concentrates instead of scattering across a menu
+that grew by accretion.
 
-### Handoff and build (ongoing)
+## The testimonial slider is a regulated component now
 
-Final assets are exported and documented. If you build with us, design and engineering pair through implementation so the shipped product matches the design. If your team builds it, the system is structured and documented so they can do the same.
+Since **6 April 2025** the DMCC Act 2024 has made publishing fake consumer reviews illegal in
+the UK, along with concealing incentivised ones — and traders must not present reviews in a
+misleading way, aggregate scores included. The CMA can determine a breach and fine directly,
+without a court: up to **10% of global annual turnover or £300,000**, whichever is higher. In
+**March 2026** it opened investigations into five named businesses over review handling.
 
-## UX, UI, and brand — what we do and don't
+That turns ordinary interface choices into decisions with consequences. A five-star average
+needs its sample size beside it. An incentive needs a disclosure sitting with the review, not a
+note on another page. A slider that quietly shows only the flattering ones is a presentation
+problem with a statutory definition. On a clinic site the same component answers to a second
+rule as well — CAP 12.18 bars celebrity and health-professional endorsement of a
+prescription-only medicine — so what a testimonial is allowed to display there is narrower than
+the honesty test alone would suggest.
 
-These three get blurred constantly, so to be precise:
+The clearest example we can point at is this domain. The old site it replaces carried
+testimonials attributed to people who do not exist, next to a staff page listing colleagues who
+were never hired, for a one-person business. That was ours, and it is coming down as part of
+this launch — in that order, because the new site has to be answering on the domain before the
+old one goes, or every indexed URL dies into a 404 in between.
 
-- **UX** is how the product is structured and how people move through it — the part that decides whether it works.
-- **UI** is the visual layer on top — the part that decides whether it feels considered and trustworthy.
-- **Brand identity** — your logo, your full visual identity system, your name and voice — is a different discipline.
+This site carries no testimonials at all. WebAsk is new in the UK, and there is nobody yet who
+could give one honestly. That makes a weaker page than a carousel of five-star quotes would. It
+is also the only version of it anyone making the argument above can honestly publish.
 
-We do UX and UI within an existing brand. We do not create brand identities from scratch — that belongs with a dedicated brand studio, and we will recommend one. If your brand assets are not ready, we can work to a minimal interim kit so design is not blocked, and update once a real identity lands.
+## What a cheaper option genuinely buys you — and what we will not take on
 
-## What we don't build
+You can go cheaper, and the UK numbers are not close. A DIY builder runs **£240–£360 a year**.
+A freelance build sits around **£800–£3,000**, with a typical four-to-five-page site at
+**£1,200–£2,000**. Agency work starts around **£2,500**. If your site is five pages, takes no
+payments, holds no patient data and answers to no regulator, the cheap end may well be the
+right call, and we will say so rather than quote you.
 
-Honesty about scope is half the value of a service page. For WebAsk design, the most common asks we do not take at the starting price:
+The starting figure on the price card above earns its keep in one situation: when the interface
+itself is where the risk sits, or when the structure is what is broken. A nicer template fixes
+neither.
 
-- **Full brand identity.** Logo design and a complete visual identity system belong with a brand studio.
-- **Ongoing design-on-tap.** Continuous design support folds into a retainer rather than the project starting price.
-- **Pixel-pushing an existing design we can't question.** If the brief is "rebuild this exactly, do not change anything," we are the wrong fit — our value is in the thinking, not just the rendering.
+Three things this is not:
 
-## Where to next
+- **Legal advice.** We are not solicitors. Where clinic copy or a structure sits close to the
+  line, CAP runs a free Copy Advice service, and that is where the question goes rather than
+  into a guess.
+- **A boxed UX audit with a price tag.** The first pass is the [free audit](/free-audit) and it
+  costs nothing; a full UX review is the research stage of an engagement, not a product sold
+  separately. A report nobody acts on is the least useful thing in this trade.
+- **A pixel-for-pixel rebuild.** If the brief rules out changing the structure, it rules out
+  most of what this page describes: banner prominence, navigation depth and focus order all
+  _are_ structure. You would be paying for rendering, and rendering is cheaper elsewhere.
 
-If you are scoping a real design engagement, the right next step is a 30-minute discovery call. We learn what the product needs to do and where it is losing people, you learn whether we are the right partner, and within three business days you get either a written scope or an honest referral.
+One thing worth stating plainly on a page about what an interface claims: WebAsk is fully
+remote, with no UK office. There is no map pin, no Google Business Profile and no address in
+this site's structured data — only the areas it serves. A postcode we do not work from would
+open up local search. It would also be precisely the class of claim this page argues against.
 
-If you are earlier in the decision, request a free 30-minute audit — we will look at your current product or site and tell you candidly what is worth redesigning and what is fine as-is. No pitch attached.
+## The question worth asking before you scope anything
 
-Either way, see the rest of what we ship, with starting prices, on the [pricing page](/pricing).
+Which single screen would a regulator look at first? On most UK sites it is the consent banner.
+On a clinic site it is the navigation. On any site old enough to have a slider, it is the
+reviews. If the answer is obvious to you, your brief is nearly written. If it is not, that is
+the finding worth having, and it is what the [free audit](/free-audit) goes looking for.
+
+Design rarely arrives on its own either way — it sits next to a build, a rebuild, or a product
+that has outgrown its structure. The [full service list](/services) shows what it connects to,
+[our process](/process) sets out how an engagement runs, and [pricing](/pricing) collects every
+starting figure in one place. When you want to talk specifics, [get in touch](/contact): a
+reply comes within three working days, with a scope if the work fits and a name to try instead
+if it does not.

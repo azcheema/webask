@@ -197,7 +197,7 @@ export default async function LocationPage({ params }: { params: Promise<RoutePa
       <CtaBand
         tone="brand"
         title={`Ready to grow your ${location.name} business?`}
-        body="Book a 30-minute strategy call — no pitch, just a clear plan and a written scope within three business days."
+        body="Book a 30-minute strategy call — no pitch, just a clear plan and a written scope within three working days."
         cta={hero.primaryCta}
       />
     </>

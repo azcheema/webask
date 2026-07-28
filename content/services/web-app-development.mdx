@@ -1,108 +1,97 @@
 ---
 slug: web-app-development
-title: "Web Application Development for Small Business"
-description: "Internal tools, customer portals, and dashboards built on a typed, production-grade stack — auth, roles, and audit logging baked in. Starting at £9,500."
-dateModified: "2026-06-18"
+title: "Custom Software Development UK — Web Apps & Portals"
+description: "Bespoke web applications, customer portals and booking systems for UK businesses — UK GDPR, access control and audit logging built in. Starting at £9,500."
+dateModified: "2026-07-28"
 ---
 
-{/* Body prose only. Catalog data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the web-applications entry and is read by the page template — do not duplicate those fields here. */}
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the web-app-development entry and is read by the page template — do not duplicate those fields here. */}
 
-## When the spreadsheet stops being the system
+{/* Rewritten for the UK 2026-07-28. Angle: UK GDPR by design and who is accountable for it, plus the regulated-sector portal. This is sales copy, so no prescription-only medicine is named and no euphemism for one is used — docs/08 § 6. */}
 
-Almost every operations problem starts as a clever spreadsheet. It works, so it grows — more tabs, more formulas, a macro nobody understands, a copy emailed around that immediately goes stale. Then someone fat-fingers a cell, two people edit at once, and the thing your business runs on quietly breaks in a way nobody notices until a customer does.
+## The day your data policy stops being a document
 
-The same story plays out with stitched-together SaaS: a form tool feeding a sheet feeding a Zapier zap feeding an email. It limps along until the edge cases pile up and you are spending more time babysitting the duct tape than doing the work.
+Most UK businesses hold their data protection position in three files: a privacy notice, a retention schedule, and a record of processing activities. Nothing in the running system enforces any of them.
 
-A web application is what you build when a process has outgrown the spreadsheet and the no-code patchwork — when it needs real data integrity, real access control, and a real audit trail. That is what we build: internal tools, customer portals, and dashboards on the same production stack we use for SaaS products.
+Retention is a sentence in a document; the data sits in a spreadsheet until somebody deletes the spreadsheet. Access control is a promise; everybody with the shared login sees everything. Consent is a tick box whose answer was never stored anywhere you can query.
 
-## What a WebAsk web application does differently
+A bespoke application is where those documents become schema, code and scheduled jobs — or where it becomes obvious they never will. That is the real case for custom software development in the UK, and a sharper one than "the spreadsheet has got too big".
 
-Before any feature work, an application we ship is engineered to a floor:
+## The UK GDPR decisions that become database columns
 
-1. **Typed end to end.** TypeScript from the database schema to the UI, so a change to your data model surfaces as a compile error instead of a 2am production bug. This is the single biggest reason custom apps rot — and the discipline that keeps ours from doing it.
-2. **Authentication, roles, and audit logging baked in from day one.** Who can see what, who did what, and when — not bolted on after a security scare.
-3. **Hosting, CI, and observability on accounts you own.** Every deploy runs automated checks; errors and performance are monitored with alerts. When something breaks, we see it before your users file a ticket.
+Six things move from policy into the build, and all six are settled during Discover, not in the week before launch.
 
-These are the floor. The product logic above them — the workflows, the integrations, the dashboards your team actually opens every morning — is where the engagement earns its keep.
+| Policy decision        | What it becomes in the build                                                                                                      |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **Lawful basis**       | A stored value per record and per purpose. Where it is consent, the timestamp and the exact wording shown are stored with it      |
+| **Data minimisation**  | Fields you cannot justify never get created. The cheapest way to protect a column is not to have one                              |
+| **Retention**          | A scheduled job that genuinely deletes or anonymises on the schedule you published, and logs what it removed                      |
+| **Access control**     | Roles enforced server-side on the query, not by hiding a menu item. One place to check, so every route checks                     |
+| **Audit logging**      | An append-only record of who saw and changed what, and when — written from day one, because history cannot be reconstructed later |
+| **Access and erasure** | An export path and a deletion path one person can run in minutes, not a fortnight of manual work                                  |
 
-## What you get at the starting price
+None of that is exotic engineering. What makes it expensive is doing it second. Retention retrofitted has to run against records collected under a basis nobody wrote down, so the job cannot tell what it may delete. Erasure retrofitted means opening every table that mentions a person, by hand, against a deadline you did not set. Consent retrofitted is a column of nulls and an educated guess. Settled early, each of the six is a decision; settled late, each is a project.
 
-Refer to the price card on this page for the included scope at £9,500 starting. In short: discovery and design before any code, a typed Next.js implementation with authentication and role-based access, hosting and CI and observability stood up on your accounts, and a documented handoff so your team can run it.
+## Who is actually accountable, and why buying does not change it
 
-Two things worth setting straight:
+Buying software does not move the obligation; it only moves the code. Whoever decided to collect the data still answers for it, whether it sits in a bespoke application, a subscription product, or a no-code table somebody set up on a Tuesday.
 
-- **The starting price buys a real MVP, not a prototype.** It is a focused, production-deployed first version of the application — the core workflow done properly — not a clickable demo we hand off and walk away from.
-- **Complexity is the price lever, and it is honest.** The number of user roles, how involved authentication is, the third-party systems you integrate, and whether you need real-time or multi-tenant features move the price. We tell you which of those you actually need now versus later on the first call.
+That principle grows a sharp edge as soon as a business operates across a border. Article 27 of the UK GDPR requires an organisation with no UK office, branch or other establishment, which processes UK residents' personal data in connection with offering goods or services to them or monitoring their behaviour in the UK, to appoint a UK representative and to name that representative in its privacy notice. The test is establishment — not domain name, not where the servers sit — which is why it catches organisations that assume it cannot: an overseas parent selling in, a remote-first company with no branch here, a platform whose only UK footprint is its users.
 
-## Internal tool, customer portal, or dashboard
+WebAsk is the UK operation of a Swedish business and fully remote, so this is a rule we have had to work through about ourselves rather than read about. Where it lands for us belongs in our privacy notice.
 
-Most engagements are one of three shapes, and naming yours up front sharpens the scope:
+The same test probably cuts the other way on the ICO's data protection fee, which also turns on UK establishment: £52 at the micro tier, £78 for an SME, £3,763 above that, £5 less by direct debit, and up to £4,350 for not paying when you should. One fact, two obligations, opposite answers — precisely the pair a downloaded policy template gets wrong.
 
-- **Internal tools** replace the spreadsheet-and-email workflow your team runs on — intake, scheduling, inventory, approvals — with something that enforces the rules instead of trusting everyone to remember them.
-- **Customer portals** give your clients a place to log in: see their data, submit requests, track status, download documents. The kind of surface that makes a small business feel like a serious one.
-- **Dashboards** pull the numbers scattered across your tools into one view that updates itself, so decisions run on current data instead of a monthly export someone forgets to send.
+## Booking systems and patient portals carry the regulator into the build
 
-Plenty of projects blend them. The shape just tells us where to put the design effort.
+For most businesses the six rows above are the whole story. In regulated sectors they are the starting line.
 
-## How we build a WebAsk web application
+**Dental.** A private practice answers to four bodies at once: the GDC on professional conduct, the CQC on registration, the ASA on advertising claims, and the CMA, which opened a market study into the £8.4bn private dentistry sector in March 2026. Each has a build consequence, not just a copy consequence.
 
-The four-stage process maps onto every project. For application work, here is what each stage produces.
+- **Price lists rendered from one structured source**, so the published figure cannot drift from the charged figure while a market study runs.
+- **Image consent captured per patient, per image and per use, and revocable.** The GDC requires patient consent for before-and-after images, which makes consent a record the portal holds, not an email somebody remembers.
+- **A reviews mechanism that survives two regimes at once.** The GDC permits genuine reviews only, with no incentives. Since 6 April 2025 the DMCC Act 2024 has made publishing fake reviews, or concealing incentivised ones, illegal — with the CMA able to determine a breach and fine directly, up to 10% of global annual turnover or £300,000, whichever is higher.
+- **"Specialist" as a controlled term**, because using it without the GDC specialist list behind it is a standards breach, and a free-text field invites it.
+- **Recall messaging built to PECR's soft opt-in**, which only holds where the details came from a sale or its negotiation, where you are marketing your own similar services, and where a clear opt-out was offered at collection and appears in every message. PECR exposure runs to £17.5m or 4% of global turnover.
 
-### Discover (1–2 weeks)
+More on [dental practices](/industries/dental-practices).
 
-We map the workflow as it actually runs today — including the undocumented steps people do from memory — and the systems the app has to talk to. We define the roles, the data model, and the MVP boundary, because the fastest way to sink an app project is to build everything at once. You leave with a scope document, a fixed-fee proposal, and a target launch date.
+**Aesthetic clinics.** The constraint here is structural, not editorial. CAP Code rule 12.12 bans advertising prescription-only medicines to the public, and the ASA treats indirect and euphemistic references as promotion of the medicine just the same. What is permitted is advertising the consultation. A price list naming a prescription-only medicine is allowed only where it sits at least two clicks from the homepage, is reached through consultation pages, stays purely informational, and appears in neither the homepage nor the primary navigation.
 
-### Design (2–3 weeks)
+Read as an engineer, that stops being a copywriting rule. It is a routing rule, a navigation rule and a sitemap rule, and it belongs to whoever builds the booking flow — a system that helpfully surfaces "popular treatments" on its landing screen has undone the arrangement. Eligibility works the same way: in England it has been a criminal offence since 1 October 2021 to administer the relevant injectable procedures to under-18s for a cosmetic purpose, which puts age checking in form validation rather than in the small print.
 
-Information architecture and the core flows first, then interface design in working sessions you attend live. Engineering pairs in throughout, so the design we hand off is already built against the component system and the typed data model we will ship.
+The licensing scheme for non-surgical cosmetic procedures is **not yet in force as at July 2026** — the Government published its consultation response in August 2025, proposing a red / amber / green risk categorisation. Practitioner records that can already hold licence status, qualifications and indemnity will not need retrofitting under a deadline. More on [aesthetic clinics](/industries/aesthetic-clinics).
 
-### Build (3–6 weeks, longer for complex apps)
+## Accessibility is an Equality Act duty, and internal tools are where it bites
 
-The application is in your hands from day one via preview URLs. Every commit runs type checks, tests, and budgets in CI; we do not merge work that breaks them. Authentication, roles, and audit logging land early, not last. The week before launch is a full QA pass against real data and real user accounts.
+Every build is to WCAG 2.2 AA, with checks enforced in CI rather than audited once at the end. On a public website the argument is reach. On an internal tool it is the Equality Act 2010, which requires service providers to make reasonable adjustments.
 
-### Grow (ongoing)
+The difference is sharper than it looks. Someone who cannot use your marketing site goes elsewhere. Someone who cannot use the rota, the intake form or the approvals queue cannot do the job you hired them for. A keyboard trap in an internal tool is not a bug report; it is an employment problem with a paper trail. It is also where no-code hands you somebody else's liability: you inherit the platform's components, and you cannot fix what you cannot edit.
 
-Thirty days of post-launch support is included. Most applications then move to a retainer — Maintenance for security patching and dependency upgrades, plus a budget of hours for the feature requests that always follow once people start using the thing daily.
+## Bespoke, off-the-shelf or no-code — the comparison that matters here
 
-## The stack we build on
+|                        | Bespoke build                          | Off-the-shelf SaaS                   | No-code platform                     |
+| ---------------------- | -------------------------------------- | ------------------------------------ | ------------------------------------ |
+| Who answers to the ICO | You — and the system can show it       | You. The vendor processes for you    | You. The platform carries none of it |
+| Retention              | A job you can inspect                  | Whatever the vendor's settings allow | Usually manual, usually forgotten    |
+| Access control         | Roles you define, checked on the query | Their permission model, as sold      | Coarse, and often all-or-nothing     |
+| Audit trail            | Append-only, yours to query            | If your plan includes it             | Rarely available                     |
+| Regulated structure    | Built to the rule                      | Only if it happens to fit            | Fights you                           |
 
-We build applications on one canonical, typed stack rather than reinventing it per project:
+Read that as a due-diligence checklist rather than an argument for building: most of it can be settled from a vendor's documentation before you sign. Can you set the retention period, or only accept the default? Can you export the audit trail, or only look at it? Is there a published accessibility conformance statement, and what is its date? Who is named as the contact if the ICO writes about data held in that system? A product that answers all four has saved you the cost of a build.
 
-| Layer     | Tool                   | Why                                                                              |
-| --------- | ---------------------- | -------------------------------------------------------------------------------- |
-| Framework | Next.js (App Router)   | Server and client in one typed codebase; production-grade and well-supported.    |
-| Language  | TypeScript (strict)    | Compile-time safety end to end — the discipline that keeps an app maintainable.  |
-| Database  | Postgres + Drizzle ORM | A real relational database with typed, migration-driven schema access.           |
-| Auth      | Auth.js                | Sessions, roles, and providers handled by a maintained library, not hand-rolled. |
-| Hosting   | Vercel (or your cloud) | Zero-config deploys and preview URLs; we can target your own cloud if required.  |
+Where one cannot, bespoke is still not automatic; the question is whether the gap matters for the data you hold. A rota for six people in a shop needs no append-only audit table. A portal holding clinical images, consent records and a recall list does, and configuration will not conjure one.
 
-It is the same stack we use for our own product surfaces. You are not a test bed for a framework we are trying out.
+## Where a build decision stops and a legal one starts
 
-## Build vs buy vs no-code — what you actually trade
+**We are not your data protection officer, and none of this is legal advice.** Your solicitor or DPO decides the lawful basis, the retention periods and the wording of the notice. We build to that decision without softening it in implementation, and say so when it does not survive contact with the schema — a retention rule that cannot be written as a query is usually one nobody has finished writing.
 
-Before you commission a custom application, the honest comparison:
+**Regulated copy does not get an opinion, ours included.** Where clinic or practice wording sits close to the CAP line, it goes to CAP's free Copy Advice service before publication: slower than a confident answer, and far cheaper than an upheld ruling against the business whose name is on the page.
 
-|            | Custom app (WebAsk)                      | Off-the-shelf SaaS                  | No-code (Airtable, Retool, Bubble)           |
-| ---------- | ---------------------------------------- | ----------------------------------- | -------------------------------------------- |
-| Best for   | A process that is core and unique to you | A common need many businesses share | A quick internal tool or an early prototype  |
-| Fit        | Exactly your workflow                    | Their workflow; you adapt           | Close, until you hit the platform's ceiling  |
-| Cost shape | Higher upfront, then yours               | Per-seat forever                    | Cheap to start; pricing climbs with usage    |
-| Ownership  | Full — the code and data are yours       | Tied to the vendor                  | Tied to the platform; export is rarely clean |
+## What makes a first conversation useful
 
-If an off-the-shelf SaaS does the job, use it — we will say so on the call rather than bill you for rebuilding something you can rent. No-code is genuinely great for prototypes and small internal tools. Custom earns its cost when the process is core to how you make money, when no tool fits without painful compromise, or when you have outgrown a no-code platform and keep hitting its walls.
+An application scopes cleanly when somebody on your side can answer four questions: who logs in, and in how many different roles; which systems it must read from or write to; what personal data it will hold, and what you have published about keeping it; and which steps in the current process are a legal requirement rather than an inherited habit. Four out of four makes Discover short rather than exploratory; two is a normal starting point, and the other two are what Discover is for.
 
-## What we don't build
+If you have them, [get in touch](/contact) — thirty minutes on the workflow, then either a fixed-fee written scope or the name of somebody better placed to build it, within three working days. If you are not yet sure the answer is software, start with the [free audit](/free-audit).
 
-Honesty about scope is half the value of a service page. For WebAsk web applications, the most common asks we do not take at the starting price:
-
-- **Everything at once.** We build a focused MVP first and grow it. A project that tries to ship every feature in version one is the project that never ships.
-- **Ongoing end-user support and helpdesk.** We build and maintain the application; staffing a support desk for your users is a different business.
-- **Throwaway prototypes.** If you need a clickable demo for a pitch next week, a no-code tool is faster and cheaper, and we will point you to one.
-
-## Where to next
-
-If you are scoping a real application, the right next step is a 30-minute discovery call. We learn the workflow you are trying to fix and who uses it, you learn whether we are the right partner, and within three business days you get either a written scope or an honest referral.
-
-If you are earlier in the decision, request a free 30-minute audit — we will look at your current tooling and tell you candidly whether a custom build, an off-the-shelf tool, or a no-code patch is the right move. No pitch attached.
-
-Either way, see the rest of what we ship, with starting prices, on the [pricing page](/pricing).
+Starting prices for [every service we offer](/services) sit on the [pricing page](/pricing); the four stages of an engagement are on [our process](/process).

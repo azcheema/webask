@@ -195,7 +195,7 @@ export default async function BlogPostPage({ params }: { params: Promise<RoutePa
       <CtaBand
         tone="brand"
         title="Ready to put this into practice?"
-        body="Book a 30-minute discovery call — we'll map the highest-leverage moves for your business and send a written scope within three business days."
+        body="Book a 30-minute discovery call — we'll map the highest-leverage moves for your business and send a written scope within three working days."
         cta={PRIMARY_CTA}
       />
     </>

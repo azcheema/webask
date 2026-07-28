@@ -107,10 +107,14 @@ test.describe("smoke", () => {
     // Price card anchor rendered from catalog data (exact: also appears in the
     // MDX comparison table + prose, so match just the price-card display value).
     await expect(page.getByText("£3,500", { exact: true })).toBeVisible();
-    // MDX long-form body rendered (first prose h2).
-    await expect(
-      page.getByRole("heading", { name: /why most small business websites/i }),
-    ).toBeVisible();
+    // MDX long-form body rendered. Asserted structurally, not against a named
+    // heading: the body is marketing copy and gets rewritten (it was, wholesale,
+    // for the UK), so pinning the smoke test to one sentence breaks it on every
+    // copy edit. The h1 + price assertions above already prove the right service
+    // page loaded; this proves its long-form body came with it.
+    const proseHeadings = page.locator("article.prose h2");
+    await expect(proseHeadings.first()).toBeVisible();
+    expect(await proseHeadings.count()).toBeGreaterThan(3);
     // FAQs render as structured content (relocated out of MDX into data/services).
     await expect(page.getByRole("heading", { name: /frequently asked questions/i })).toBeVisible();
     // @graph emits Service + FAQPage + BreadcrumbList for this page.

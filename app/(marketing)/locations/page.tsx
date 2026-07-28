@@ -98,7 +98,7 @@ export default function LocationsPage() {
       <CtaBand
         tone="brand"
         title="Don't see your area?"
-        body="We work with small businesses across the UK remotely. Tell us where you are and what you're trying to grow — we'll map a plan within three business days."
+        body="We work with small businesses across the UK remotely. Tell us where you are and what you're trying to grow — we'll map a plan within three working days."
         cta={HERO.primaryCta}
       />
     </>

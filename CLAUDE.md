@@ -92,6 +92,15 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
 - ❌ **Publish anything fabricated** — no invented Companies House number, no claimed UK
   office, no placeholder team, no testimonials from clients who don't exist. Under the
   **DMCC Act 2024** fake testimonials are CMA-enforceable (up to 10% turnover / £300k).
+  **This extends to _implied_ proof, which is where it actually goes wrong.** There are
+  **no clients, no case studies, no rankings and no audit history** yet. So no "the pattern
+  we see", "most businesses that ask us", "our work for clinics", "we typically find" — and
+  watch the impersonal forms too ("usually", "a large share of", "how X normally ships"),
+  which assert a track record without a pronoun. The first draft of the nine UK service
+  pages carried **29** such claims and read perfectly well; a spell-check and a similarity
+  score both miss them entirely. Ask of every sentence: _does this imply a customer we
+  don't have?_ Statistics are subject to the same rule — every figure must trace to `docs/`,
+  and legal figures must keep their qualifiers ("whichever is higher").
 - ❌ **Create a Google Business Profile.** No UK location = no eligible profile. Doing it
   anyway risks permanent loss of local visibility.
 - ❌ **Cross-canonical to `naxdor.com`**, or hreflang-pair the two sites. Self-canonical
@@ -154,14 +163,14 @@ white-on-brand). Any translucent-on-brand treatment must be checked with
 
 ## Project state (update on every phase close)
 
-| Phase                                    | Status          | Notes                                                                                                                                                                                                               |
-| ---------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0 — Fork & Foundations                   | **In progress** | Fork done. Brand tokens, wordmark, schema, `data/site.ts`, UK locations and the **full 301 map** all landed; every gate green. Remaining: `data/keywords.json` reseed, Vercel + Resend + GSC, Cheshire verification |
-| 1 — Credible MVP + Cutover               | Not started     | Contains the urgent fake-content removal. The 301 map moved into Phase 0                                                                                                                                            |
-| 2 — Services / Locations / Industries    | Not started     | Depends on 1                                                                                                                                                                                                        |
-| 3 — Content Engine + Proof               | Not started     | Compliance cluster ships first                                                                                                                                                                                      |
-| 4 — Lead Capture + Scale                 | Not started     | Depends on 3                                                                                                                                                                                                        |
-| 5 — CMS migration · 6 — Client dashboard | Deferred        | Inherited triggers                                                                                                                                                                                                  |
+| Phase                                    | Status          | Notes                                                                                                                                                                                                                              |
+| ---------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0 — Fork & Foundations                   | **In progress** | Fork done. Brand tokens, wordmark, schema, `data/site.ts`, UK locations, keywords and the **full 301 map** all landed; every gate green. Remaining is **external only**: Vercel + Resend + GSC, real MSV/KD, Cheshire verification |
+| 1 — Credible MVP + Cutover               | Not started     | Contains the urgent fake-content removal. The 301 map moved into Phase 0                                                                                                                                                           |
+| 2 — Services / Locations / Industries    | **Part done**   | **All 9 service pages + all 3 industry pages written for the UK.** Remaining: 3 location hubs, first programmatic batch, link mesh, nav/footer, citations                                                                          |
+| 3 — Content Engine + Proof               | Not started     | Compliance cluster ships first                                                                                                                                                                                                     |
+| 4 — Lead Capture + Scale                 | Not started     | Depends on 3                                                                                                                                                                                                                       |
+| 5 — CMS migration · 6 — Client dashboard | Deferred        | Inherited triggers                                                                                                                                                                                                                 |
 
 ---
 

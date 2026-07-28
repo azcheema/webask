@@ -1,92 +1,96 @@
 ---
 slug: ecommerce-development
-title: "E-Commerce Development for Small Business"
-description: "Shopify, custom, and headless storefronts engineered to convert — sub-2-second product pages, checkout that closes, structured data that ranks. Starting at £6,500."
-dateModified: "2026-06-18"
+title: "Ecommerce Website Design UK — Shopify, WooCommerce & Headless"
+description: "UK ecommerce website design built to convert — and to stand up to the DMCC Act, PECR and CMA scrutiny. Shopify, WooCommerce or headless. Starting at £6,500."
+dateModified: "2026-07-28"
 ---
 
-{/* Body prose only. Catalog data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the e-commerce entry and is read by the page template — do not duplicate those fields here. */}
+{/* Body prose only. The hero, price card, includes/not-included lists, FAQs and closing CTA all come from data/services.ts via the page template — do not restate them here. */}
 
-## Where most small business storefronts quietly lose the sale
+## An online shop is a conversion problem and a consumer-law surface
 
-An online store has exactly one job, and most fall down on it at the last step. The traffic arrives, the product is good, the price is fair — and then the customer hits a product page that takes six seconds to paint, a cart that forgets what they added, or a checkout that asks for the same information twice. They leave. The analytics call it a "bounce." It was a sale.
+Every other page on a business website has one job: persuade. A shop has two. It has to move a visitor from a listing page to a confirmed order, and it has to do that inside UK rules that bite on the shop's _features_ — reviews, price display, basket-recovery email, tracking tags — rather than on its adjectives.
 
-The pattern we see on almost every storefront audit:
+A shop built with only the first job in mind has a recognisable shape. The reviews widget came with the theme, the basket sequence came with the email app, the cookie banner came from a free plugin, and the advertising pixel fires regardless of what the visitor clicked. That is what happens when a build stops at "it looks good and the checkout works" — and since April 2025 the second job has had teeth the regulator can use without going near a courtroom.
 
-- **Product and listing pages load in five to eight seconds on mobile.** Most commerce traffic is mobile, and most mobile shoppers will not wait. Google's Core Web Vitals penalize it; your conversion rate punishes it harder.
-- **Checkout has more steps than it needs.** Every extra field, every forced account creation, every surprise shipping cost on the final screen is a place the customer reconsiders.
-- **Products are invisible in search.** No `Product` schema, no review markup, no clean category structure — so the storefront never earns a rich result and competes on paid traffic alone.
-- **The theme was built for a different store.** A marketplace template stretched over a brand it was never designed for, with three abandoned apps slowing every page.
+## Reviews are the most exposed feature on a UK shop
 
-A storefront engineered for speed, conversion, and search fixes all four. That is what we build.
+Since **6 April 2025** the Digital Markets, Competition and Consumers Act 2024 has made it illegal in the UK to write, commission or publish fake consumer reviews, or to conceal that a review was incentivised. "Incentivised" is drawn broadly: cash, a discount, a freebie, an event invite, a financial interest. Traders must also not present reviews in a misleading way, and **aggregate scores are explicitly in scope**.
 
-## What a WebAsk storefront does differently
+The enforcement design is the part people miss. The **CMA can determine a breach and fine directly, without recourse to the courts** — up to **10% of global annual turnover or £300,000**, whichever is higher, and up to **£150,000** for an individual. Its opening posture was supportive, but in **March 2026 it opened investigations into five named businesses** over review handling.
 
-Before any visual polish, a store we ship is engineered to a measurable floor:
+Set that against the failure modes a storefront build has to guard against: demo reviews arriving with the theme and surviving launch, a review app offers a discount for a photo review and discloses it nowhere, and `AggregateRating` fires on every product whether or not a real review exists.
 
-1. **Sub-two-second Largest Contentful Paint** on product pages (PDPs) and listing pages (PLPs), on a real mobile device, enforced in CI on every commit.
-2. **A checkout designed to close** — minimal steps, guest checkout by default, shipping and tax shown early, and the payment, fulfilment, and tax integrations configured and tested against real orders.
-3. **Commerce structured data** — `Product`, `Offer`, `AggregateRating`, and `BreadcrumbList` markup validated in Google's Rich Results Test, so your products are eligible for rich results instead of fighting for paid clicks.
+So the review system is a named part of the build:
 
-These are the floor. The work above the floor — merchandising, post-purchase flows, subscription logic — is where the engagement earns its keep.
+- **Nothing seeded, imported or written by us.** A new shop launches with an empty review component and an honest "no reviews yet" state.
+- **Verified-purchase provenance stored against every review.** The question a regulator asks is not "is this review flattering" — it is "can you show it is real".
+- **Incentive disclosure built into the component**, shown on the review itself, not buried in a policy page nobody opens.
+- **`Product`, `Review` and `AggregateRating` markup that only fires where real reviews exist**, with the marked-up aggregate matching what the page displays.
+- **Moderation that does not quietly bury the negatives** — publishing only the four- and five-star reviews is a misleading presentation, and the easiest breach to prove from outside.
 
-## What you get at the starting price
+## Basket recovery email, and the rule that decides whether you may send it
 
-Refer to the price card on this page for the included scope at £6,500 starting. In short: a Shopify or custom build with real theme work, checkout customisation, product templates, the payment and shipping and tax integrations wired and tested, performance budgets enforced, and 30 days of post-launch support.
+Abandoned-basket and win-back email is the highest-return automation in ecommerce, and in the UK it stands on a narrow footing: the **PECR soft opt-in**. That applies only where all three of these hold.
 
-Two things worth setting straight about that scope:
+1. The details were obtained **during a sale, or during negotiations for a sale** — which is precisely what a started checkout is.
+2. You are marketing **your own similar goods or services**.
+3. A **clear opt-out was offered when the details were collected, and appears in every message you send**.
 
-- **It is not a theme with your logo dropped in.** We design and build the storefront around your catalogue and your brand. Where Shopify is the right platform, we do serious theme work on it — not a five-minute reskin.
-- **Catalog size and integration depth move the price.** A focused catalogue with standard payment and shipping is the starting point. ERP sync, subscriptions, multi-currency, or a headless front end are real engineering and priced accordingly — we tell you which bucket you are in on the first call.
+Two consequences change the build. **Any freemail address is treated as an individual**, whichever business the person uses it for — so a `gmail.com` customer gets the individual regime whatever your segmentation thinks. And **bought or scraped lists never qualify**: a list inherited with an acquisition is not automatically mailable.
 
-## Shopify, custom, or headless — what you actually choose
+Consent therefore belongs in the build, not in the email tool afterwards. The capture carries its opt-out and a purpose statement at the point of collection, and every record stores **which basis applies** — soft opt-in from a started checkout, or explicit consent from a signup — because a subscriber who never began a purchase isn't covered at all. Unsubscribes write back to the shop, not only to the email platform, and nothing is pre-ticked. Where the automation is the larger part of the job it belongs in [CRM automation](/services/crm-automation) rather than here.
 
-The biggest decision in an e-commerce build is the platform, and the honest framing is a trade between control and overhead:
+## Price display, VAT, and the screen where a basket dies
 
-| Approach         | Best for                                                                 | The trade                                                              |
-| ---------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
-| Shopify (themed) | Most small businesses — standard catalogue, fast launch, proven checkout | Platform fees and app limits; you live within Shopify's model          |
-| Headless Shopify | Brands wanting a custom front end on Shopify's commerce engine           | More upfront engineering; best-in-class performance and design freedom |
-| Fully custom     | Unusual catalogues, complex pricing, or deep ERP integration             | Highest cost and ownership; total control, no platform constraints     |
+Pricing transparency is the CMA's territory, and of the two things worth saying here only one is a rule. The rule: **prices shown to UK consumers are VAT-inclusive, or the exclusion is made unmistakably clear.** A shop showing an ex-VAT figure to a consumer because its theme was built for a trade catalogue has a real problem, and the fix is a template decision made once rather than a plugin bought at month six.
 
-Most small businesses should be on Shopify, and we will say so plainly even though a custom build bills more. Shopify's checkout converts, its payment and fraud tooling is mature, and it stays patched without you thinking about it. We reach for headless or fully custom only when the brand experience or the integration requirements genuinely outgrow what a themed store can do.
+The other is only a preference: a delivery charge that first appears at the payment step is the most reliable way to lose a basket you had already won, so the templates surface a figure or an honest estimate as early as the shop can calculate one. Worth knowing which of the two you are being told.
 
-## How we build a WebAsk storefront
+## Tags, pixels, and the cookie banner that does nothing
 
-The four-stage process maps onto every project. For commerce, here is what each stage produces.
+A shop runs more third-party code than any other kind of site — analytics, advertising pixels, review apps, chat, heatmaps. Under PECR, **"Accept all" and "Reject all" need equal visual prominence**, "by continuing to browse you agree" is not consent, and nothing non-essential may be set **before** consent. The ICO wrote to **53 of the UK's top 100 websites** about exactly this, and PECR exposure runs to **£17.5m or 4% of global turnover**.
 
-### Discover (1–2 weeks)
+The commonest failure is the banner itself — rejection made harder than acceptance, which is the ICO's stated main enforcement focus. The second, which survives a banner rebuild, is an honest banner sitting above a theme that hard-codes the pixel into the layout, so it fires either way: invisible in a code review, obvious in the network tab. Which is why the check belongs in the network tab and not in a compliance checklist.
 
-We map the catalogue, the customer journey from ad or search to confirmed order, and the systems the store has to talk to — inventory, fulfilment, accounting, email. We pressure-test the platform choice against your real requirements, not the platform we feel like building this month. You leave with a scope document, a fixed-fee proposal, and a target launch date.
+## The floor a shop gets built to
 
-### Design (2–3 weeks)
+Two sets of numbers sit underneath the build, and neither is a result being claimed on your behalf — they are the budgets this site is written against, checked in continuous integration on every commit rather than sampled once in launch week. **Speed:** Largest Contentful Paint at or under 2.0 seconds, Interaction to Next Paint at or under 200ms, Cumulative Layout Shift at or under 0.05. **Accessibility:** WCAG 2.2 AA, an automated score of 100, a manual keyboard pass.
 
-Information architecture and the key flows first — category structure, PDP layout, cart, and checkout — because those decide both conversion and SEO. Then visual design in working sessions you attend live. Engineering pairs in throughout, so the design we hand off is already built against the component system we will ship.
+Where you measure matters as much as the number. A homepage hero can be tuned until it reports beautifully while the listing and product templates — the two that actually take money — are never sampled. Google holds roughly **92.7% of UK search**, so treating Core Web Vitals as optional is an undiversified bet. The accessibility floor is the Equality Act 2010 in UK terms, and on a shop it bites hardest at a checkout that cannot be completed with a keyboard.
 
-### Build (3–6 weeks)
+## Shopify, WooCommerce or headless — and who carries the compliance surface
 
-The store is in your hands from day one via preview URLs. Every commit runs performance, accessibility, and SEO budgets in CI; we do not merge work that breaks them. The week before launch is a full QA pass — every product, every variant, real test orders through payment and shipping, structured data validated, sitemap submitted to Search Console.
+Platform choice is usually framed as control versus overhead. In the UK that is incomplete: the platform also decides how much of the consumer-law surface you personally own, and how much gets settled by an app someone installed in ten minutes.
 
-### Grow (ongoing)
+| Approach                      | The case for it                                                          | What the compliance surface looks like                                                                             |
+| ----------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **Shopify, seriously themed** | Payments, fraud tooling and patching stop being your problem             | Narrowed, not removed. Reviews, consent and tax display follow the apps you add, so app choice is a legal decision |
+| **WooCommerce on WordPress**  | An existing WordPress estate, unusual product logic, or owning the lot   | All yours — consent, reviews, VAT display, updates. Fine if someone owns it; quiet drift if nobody does            |
+| **Headless**                  | The storefront experience is the product, or speed is a competitive edge | The strongest position on consent: nothing fires unless you wrote the code that allows it                          |
 
-Thirty days of post-launch support is included. After that, optional retainers keep the store earning — Maintenance for the platform and dependencies, SEO for organic rankings, and conversion work on the flows that move the needle.
+No platform absolves the trader. When the CMA writes about a review, or the ICO about a tag, it writes to the shop rather than to the vendor whose widget produced it — which argues for the smallest platform that can genuinely carry your catalogue. Every extra layer is one more place a rule gets implemented by accident.
 
-## Migrating from WooCommerce, Wix, or Etsy
+## What £6,500 buys, and what it is being compared against
 
-If you are outgrowing a templated platform or moving off a marketplace, the migration is the riskiest part — and the part most worth doing carefully. We inventory every product, URL, and review that carries equity, map old URLs to new ones with 301 redirects, preserve the rankings you have already earned, and verify in Search Console before launch. Done well, a migration keeps your traffic and improves your conversion; done carelessly, it resets six months of ranking work to zero.
+UK agencies quote roughly **£2,500–£10,000** for a standard small-business website, with regional agencies averaging **£3,000–£6,000**. Set a shop against that band rather than a page count. A brochure site has one thing to get wrong; a shop has an order path, a tax and delivery display, a review system and a consent layer that all have to be right at once — and three of the four have a regulator attached. Our own [pricing](/pricing) follows the display convention argued above: "starting at £X", "+ VAT where applicable".
 
-## What we don't build
+Running costs afterwards are modest by comparison — domain and hosting basics sit around **£100–£300 a year**, plus a [care plan](/services/maintenance-support) if the platform is to be actively looked after.
 
-Honesty about scope is half the value of a service page. For WebAsk e-commerce, the most common asks we do not take at the starting price:
+## Moving off WooCommerce, Wix or a marketplace — and what not to bring
 
-- **Product photography and copywriting.** A great storefront needs both, and specialists do them better than we would — we will recommend people we trust.
-- **Paid-media setup and ongoing ads management.** We build the asset that paid traffic lands on; we are not your media buyer.
-- **Marketplace storefronts (Amazon, Etsy) as the primary channel.** We build your owned store. If a marketplace is your main channel, we will tell you that on the call.
+A migration is usually described as a URL problem. Since April 2025 it is a provenance problem too, and that is the half nobody plans for. Reviews that cannot be traced to a real customer are the one asset to leave behind deliberately: republishing them on a new shop is a fresh act of publication, so an unevidenced corpus stops being inherited social proof and becomes inherited liability. Have that conversation before the build, not during cutover week.
 
-## Where to next
+The search side is ordinary discipline, and two numbers are worth knowing in advance. Expect a **two-to-four-week ranking wobble** after cutover before things settle, and keep the redirects for **at least twelve months** — holding them longer costs nothing, and dropping them early is the one migration decision that cannot be walked back.
 
-If you are scoping a real store, the right next step is a 30-minute discovery call. We learn what you are selling and to whom, you learn whether we are the right partner, and within three business days you get either a written scope or an honest referral to someone better suited.
+## What we won't do
 
-If you are earlier in the decision and want to know what we would change about your current store, request a free 30-minute SEO and Core Web Vitals audit — a Loom walkthrough plus a one-page PDF of prioritised findings, no pitch attached.
+- **We will not seed, import or write reviews for your shop**, and we'll decline a build that depends on it. This is the one item here that isn't a preference.
+- **We won't add an app because it is popular.** Apps get checked for what they set and what they publish before they go on, and the ones that can't answer don't go on.
+- **We are not your solicitor.** We build to published ICO and CMA guidance and will say where we think the risk sits, but your returns policy, terms and consumer-rights wording need someone qualified to sign them off.
 
-Either way, see the rest of what we ship, with starting prices, on the [pricing page](/pricing).
+## If you already sell online, the order matters
+
+The temptation when fixing an existing shop is to work easiest-first rather than most-exposed-first. Ordered by exposure instead: reviews, as the one carrying direct fines with no court in the way. Then consent, because a pixel firing before the banner is trivial to verify from outside the business. Then price and delivery display, usually a template fix rather than a project. Speed last — it pays commercially and has no regulator attached, which is exactly why it tends to get done first. A [free audit](/free-audit) is the cheapest way to find out which of the four you are failing.
+
+Clinics selling retail skincare and aftercare online carry a stricter version of it, because the advertising rules for the treatments sit on top of the consumer ones — that groundwork is on [beauty and wellness clinics](/industries/beauty-wellness-clinics). [Our process](/process) sets out what each stage produces; the rest of what we build is on [services](/services).

@@ -105,8 +105,14 @@ obvious assumption:**
 
 **Two live regulatory events, right now:**
 
-1. **The licensing scheme for non-surgical cosmetic procedures is operational in 2026.**
-   Initiated by the Health and Care Act 2022. Local authorities enforce a **two-tier**
+1. **The licensing scheme for non-surgical cosmetic procedures is _not yet in force_.**
+   ⚠️ **Corrected 2026-07-28** — this originally read "is operational in 2026", which overstates
+   it. As at July 2026 the scheme has **not commenced**; the August 2025 consultation response
+   _proposed_ the shape below. See [`08-seo-architecture.md`](08-seo-architecture.md) § 4, which is
+   the authority, and [`03-uk-compliance.md`](03-uk-compliance.md) § B1. What **is** in force:
+   administering botulinum toxin or filler for a cosmetic purpose to under-18s in England has been
+   a criminal offence since 1 October 2021.
+   Initiated by the Health and Care Act 2022. Under the proposal local authorities enforce a **two-tier**
    system: every individual performing listed procedures needs a **personal licence** —
    practitioners can no longer operate under a general business licence. Procedures are
    categorised **red / amber / green** by risk (Government consultation response, August
