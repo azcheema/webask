@@ -99,14 +99,14 @@ export const services: ReadonlyArray<Service> = [
     relatedServiceSlugs: ["ui-ux-design", "seo"],
     faqs: [
       {
-        question: "How long does it take to build a custom website?",
-        answer:
-          "A standard 5-to-10-page marketing site launches in 4–6 weeks from kickoff. Discover takes 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks (overlapping with the tail of Design), and launch happens at the end of Build. Larger sites with city pages, industry pages, or a blog framework extend Build by 2–4 weeks. We commit to a target launch date in the written scope.",
-      },
-      {
         question: "What's the difference between your £3,500 site and a £1,500 freelancer build?",
         answer:
           "Scope and floor. A £1,500 freelancer site is usually 3–5 pages on a template with light SEO and no performance budget. A WebAsk site is 5–10 pages of custom design and build, with sub-2-second LCP enforced in CI, full schema.org structured data, accessibility audited to WCAG 2.2 AA, and a real component system underneath. The freelancer build is fine if your site is going to be a static brochure; the WebAsk floor exists because we treat the site as a long-term sales asset, not a one-time deliverable.",
+      },
+      {
+        question: "How long does it take to build a custom website?",
+        answer:
+          "A standard 5-to-10-page marketing site launches in 4–6 weeks from kickoff. Discover takes 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks (overlapping with the tail of Design), and launch happens at the end of Build. Larger sites with city pages, industry pages, or a blog framework extend Build by 2–4 weeks. We commit to a target launch date in the written scope.",
       },
       {
         question: "Can you redesign my existing site without rebuilding from scratch?",
@@ -169,6 +169,11 @@ export const services: ReadonlyArray<Service> = [
     primaryCta: { label: "Get an e-commerce quote", href: "/contact" },
     relatedServiceSlugs: ["web-development", "seo"],
     faqs: [
+      {
+        question: "How much does an e-commerce build cost?",
+        answer:
+          "Starting at £6,500, + VAT where applicable. The comparison worth making is against the £2,500–£10,000 UK agencies quote for a standard small-business website, with regional agencies averaging £3,000–£6,000 (Duport / GetYouOnline and dotitmedia, 2026). A shop sits at the upper end of that band rather than the middle, and the reason is not page count: it has an order path, a tax and delivery display, a review system and a consent layer that all have to be right at once, and three of those four have a regulator attached. What moves the price is catalogue size, how deep the custom theming goes, third-party integrations such as ERP, fulfilment and subscriptions, and whether you go headless or stay Shopify-native. Running costs afterwards are modest by comparison — domain and hosting basics sit around £100–£300 a year, plus a care plan if the shop is to be actively looked after.",
+      },
       {
         question: "Should I build on Shopify or go fully custom?",
         answer:
@@ -236,14 +241,14 @@ export const services: ReadonlyArray<Service> = [
     relatedServiceSlugs: ["ui-ux-design", "maintenance-support"],
     faqs: [
       {
-        question: "What's the difference between a website and a web application?",
-        answer:
-          "A website presents information — pages a visitor reads, with a contact form at the end. A web application is software people log into and do work in: internal tools, customer portals, dashboards, anything with user accounts, roles, and data that changes. The line is interactivity and state. If your users need to sign in, enter or manipulate data, and have different permissions, you are looking at an application, and it is engineered differently from a marketing site.",
-      },
-      {
         question: "What does the £9,500 starting price actually get me?",
         answer:
           "A production-deployed MVP — the core workflow built properly, not a clickable prototype. That includes discovery and design before any code, a typed Next.js implementation, authentication with role-based access, hosting and CI and monitoring stood up on accounts you own, and a documented handoff. It is a real first version you can put in front of real users. What it is not is every feature you can imagine in version one — we build the core, ship it, and grow it from there.",
+      },
+      {
+        question: "What's the difference between a website and a web application?",
+        answer:
+          "A website presents information — pages a visitor reads, with a contact form at the end. A web application is software people log into and do work in: internal tools, customer portals, dashboards, anything with user accounts, roles, and data that changes. The line is interactivity and state. If your users need to sign in, enter or manipulate data, and have different permissions, you are looking at an application, and it is engineered differently from a marketing site.",
       },
       {
         question: "How long does it take to build a web application?",
@@ -302,6 +307,11 @@ export const services: ReadonlyArray<Service> = [
     relatedServiceSlugs: ["web-development", "web-app-development"],
     faqs: [
       {
+        question: "What does the £3,000 starting price cover?",
+        answer:
+          "Research and an information architecture, wireframes and then visual design across your core screens or flows, a tokenised Figma component library, two rounds of revisions with final assets exported and documented, and designer-engineer pairing during implementation if you build with us. It designs the core of the product properly and sets the system. A sprawling product with dozens of unique screens, or one that needs usability testing, is a larger engagement that we scope explicitly.",
+      },
+      {
         question: "What's the difference between UX and UI design?",
         answer:
           "UX is how the product is structured and how people move through it — the information architecture, the flows, the decisions that determine whether it actually works. UI is the visual layer on top — typography, colour, spacing, and components — the part that determines whether it feels considered and trustworthy. They are different disciplines that have to agree with each other, and we do both: we fix the structure and then design the surface, rather than treating one without the other.",
@@ -315,11 +325,6 @@ export const services: ReadonlyArray<Service> = [
         question: "Will the design actually be buildable, or just pretty mockups?",
         answer:
           "Buildable, by design. We deliver a tokenised component library in Figma — every colour, type size, and spacing step is a named token that maps directly onto the design tokens engineering uses — and components are defined once and composed, exactly as they are in code. That closes the usual gap where an engineer rebuilds mockups by eye and the result drifts. If we build the product with you, the design ships into the same system that consumes it; if your team builds it, the system is structured and documented so they can.",
-      },
-      {
-        question: "What does the £3,000 starting price cover?",
-        answer:
-          "Research and an information architecture, wireframes and then visual design across your core screens or flows, a tokenised Figma component library, two rounds of revisions with final assets exported and documented, and designer-engineer pairing during implementation if you build with us. It designs the core of the product properly and sets the system. A sprawling product with dozens of unique screens, or one that needs usability testing, is a larger engagement that we scope explicitly.",
       },
       {
         question: "Do I have to build the product with you to get the design?",
@@ -367,6 +372,11 @@ export const services: ReadonlyArray<Service> = [
     primaryCta: { label: "Get an SEO quote", href: "/contact" },
     relatedServiceSlugs: ["web-development", "crm-automation"],
     faqs: [
+      {
+        question: "How much does SEO cost in the UK?",
+        answer:
+          "SEO starts at £750 a month, + VAT where applicable. Here is the market that number sits inside. UK retainers for small businesses run roughly £150–£800 a month — light upkeep from about £150, an active local campaign £250–£500, and a full campaign £500–£1,500 and upward (dotwall / RedEagle, 2026). Local SEO quoted on its own runs wider at £300–£4,000+, with most single-location businesses between £500 and £1,500 (wrise / NetTrackers, 2026). £750 lands in the lower half of the full-campaign range, and clear of the junk tier at around £99 a month, where the deliverable is automated link placements and a templated report. What moves the number is market competitiveness, how many locations you need to rank in, content cadence, and link-building scope. If your budget is £150 a month, that is a real budget — it buys upkeep rather than a campaign, and we would rather say so than take it and under-deliver for a year.",
+      },
       {
         question: "How long does SEO take to show results?",
         answer:
@@ -434,14 +444,14 @@ export const services: ReadonlyArray<Service> = [
     relatedServiceSlugs: ["web-app-development", "ui-ux-design"],
     faqs: [
       {
-        question: "Should I build a native app or cross-platform (React Native / Flutter)?",
-        answer:
-          "For most small businesses, cross-platform. One React Native or Flutter codebase ships to both iOS and Android, which roughly halves the cost and keeps the two versions in step. We reach for fully native (Swift/Kotlin) only when the app does something performance-critical or deeply platform-specific that cross-platform cannot do well — and we will tell you honestly which camp yours is in rather than push native to inflate the invoice.",
-      },
-      {
         question: "What does the £12,000 starting price cover?",
         answer:
           "A production first version live on both app stores — not a prototype. That includes discovery, a mobile design system, implementation in React Native, Flutter, or native code, integration with your backend (existing or one we build), App Store and Play Store submission and launch, and 30 days of post-launch support. It covers a focused MVP — the core experience built properly — not every feature you can imagine in version one. Mobile is our most variable service, so platform choice and feature complexity move the number a lot.",
+      },
+      {
+        question: "Should I build a native app or cross-platform (React Native / Flutter)?",
+        answer:
+          "For most small businesses, cross-platform. One React Native or Flutter codebase ships to both iOS and Android, which roughly halves the cost and keeps the two versions in step. We reach for fully native (Swift/Kotlin) only when the app does something performance-critical or deeply platform-specific that cross-platform cannot do well — and we will tell you honestly which camp yours is in rather than push native to inflate the invoice.",
       },
       {
         question: "How long does it take to build and launch a mobile app?",
@@ -500,6 +510,11 @@ export const services: ReadonlyArray<Service> = [
     relatedServiceSlugs: ["ai-integration", "seo"],
     faqs: [
       {
+        question: "What does the £2,500 starting price include?",
+        answer:
+          "A working system, not just a logged-in account: CRM platform setup (GoHighLevel, HubSpot, or a chosen alternative), lead-capture forms and intake automations, pipelines built around your funnel, calendar/SMS/email/voice integrations, reporting dashboards, and 30 days of post-launch tuning plus team training. What moves the price is scope — migration depth, the number of pipelines and automations, the integrations, and any white-label SaaS configuration.",
+      },
+      {
         question: "GoHighLevel or HubSpot — which should I choose?",
         answer:
           "It depends on your business, not on which we prefer to configure. GoHighLevel suits service businesses and agencies that want SMS, calls, booking, and pipelines in one place — and agencies that want to resell it white-labelled. HubSpot suits teams that want a polished, widely-integrated platform with room to grow into fuller marketing and sales hubs. Other tools fit specific needs. We make the call based on your funnel and budget on the first call, and we are upfront that the platform's licence fee is separate and passed through at cost.",
@@ -508,11 +523,6 @@ export const services: ReadonlyArray<Service> = [
         question: "Can you migrate us from our current CRM without losing data?",
         answer:
           "Yes — migrations are a core part of what we do, including ActiveCampaign to GoHighLevel, HubSpot to GoHighLevel (or the reverse), and moves off Pipedrive, Salesforce, Mailchimp, or Keap. We inventory everything (contacts, custom fields, tags, pipelines, automations, templates), rebuild the data model and automations properly in the new platform, and run a staged cutover with the old system live until the new one is verified — so you are never without a working CRM and nothing quietly disappears.",
-      },
-      {
-        question: "What does the £2,500 starting price include?",
-        answer:
-          "A working system, not just a logged-in account: CRM platform setup (GoHighLevel, HubSpot, or a chosen alternative), lead-capture forms and intake automations, pipelines built around your funnel, calendar/SMS/email/voice integrations, reporting dashboards, and 30 days of post-launch tuning plus team training. What moves the price is scope — migration depth, the number of pipelines and automations, the integrations, and any white-label SaaS configuration.",
       },
       {
         question: "Do I pay you for the GoHighLevel or HubSpot subscription too?",
@@ -566,14 +576,14 @@ export const services: ReadonlyArray<Service> = [
     relatedServiceSlugs: ["crm-automation", "web-app-development"],
     faqs: [
       {
-        question: "Is AI actually reliable enough to answer my phone or talk to my customers?",
-        answer:
-          "For well-scoped jobs, yes — and the scoping is the point. A voice agent or chatbot handling appointment booking, common questions, and lead qualification is well within what current models do reliably, especially when it answers from your own information and hands off to a human for anything outside its lane. We build an evaluation harness so quality is measured rather than assumed, and we are honest about the tasks where AI is not reliable enough yet and a human (or a plain form) is the better answer.",
-      },
-      {
         question: "What does the £4,500 starting price cover?",
         answer:
           "A working, integrated capability — not a chatbot bolted onto your homepage and forgotten. It includes discovery and a clear inventory of what AI should and should not do, implementation of one or more of a voice agent, a retrieval-grounded chatbot, or a workflow automation, integrations with your CRM/calendar/data, an evaluation harness, and 30 days of tuning. Voice-agent complexity, chatbot knowledge-base depth, and the number of workflows and integrations move the price.",
+      },
+      {
+        question: "Is AI actually reliable enough to answer my phone or talk to my customers?",
+        answer:
+          "For well-scoped jobs, yes — and the scoping is the point. A voice agent or chatbot handling appointment booking, common questions, and lead qualification is well within what current models do reliably, especially when it answers from your own information and hands off to a human for anything outside its lane. We build an evaluation harness so quality is measured rather than assumed, and we are honest about the tasks where AI is not reliable enough yet and a human (or a plain form) is the better answer.",
       },
       {
         question: "Will the chatbot make things up or give wrong answers?",
@@ -632,14 +642,14 @@ export const services: ReadonlyArray<Service> = [
     relatedServiceSlugs: ["web-development", "seo"],
     faqs: [
       {
-        question: "What's actually included in a care plan each month?",
-        answer:
-          "Security patching and dependency upgrades on a regular cadence, uptime/performance/error monitoring with alerts that come to us, a monthly bucket of improvement hours for copy edits and small features and fixes, a quarterly health review with recommendations, and priority response when something breaks. The aim is that the asset stays secure and current and keeps improving — and that we usually catch problems before you or a customer notices them.",
-      },
-      {
         question: "How much does a care plan cost?",
         answer:
           "Three tiers, each a starting point: Essential from £250/month (a single property — patching, monitoring with alerts, a small monthly improvement bucket, and a quarterly review), Growth from £500/month (a revenue-generating site or app — a faster response SLA and a larger improvement bucket), and Priority from £1,000/month (business-critical software or multiple properties — the fastest SLA, more improvement hours, and proactive performance work). The exact hours and SLA within a tier are scoped to your properties and the level of cover you want; additional properties or a custom SLA are quoted on top of the closest tier.",
+      },
+      {
+        question: "What's actually included in a care plan each month?",
+        answer:
+          "Security patching and dependency upgrades on a regular cadence, uptime/performance/error monitoring with alerts that come to us, a monthly bucket of improvement hours for copy edits and small features and fixes, a quarterly health review with recommendations, and priority response when something breaks. The aim is that the asset stays secure and current and keeps improving — and that we usually catch problems before you or a customer notices them.",
       },
       {
         question: "Do you maintain sites, apps, or CRMs you didn't build?",
