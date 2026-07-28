@@ -4,7 +4,7 @@ test.describe("smoke", () => {
   test("home page renders with title and an h1", async ({ page }) => {
     const response = await page.goto("/");
     expect(response?.ok(), "home page should respond 2xx").toBe(true);
-    await expect(page).toHaveTitle(/Naxdor/);
+    await expect(page).toHaveTitle(/WebAsk/);
     // Two-tone hero headline renders in full (both segments concatenate).
     await expect(page.getByRole("heading", { level: 1 })).toContainText("mean business");
     // Hero services marquee exposes the catalog to assistive tech / SEO via an
@@ -68,24 +68,32 @@ test.describe("smoke", () => {
     expect(res.ok()).toBe(true);
     expect(res.headers()["content-type"]).toContain("xml");
     const body = await res.text();
-    // Indexable Phase 1 routes are advertised. The three legal pages were
-    // promoted to `index` on 2026-06-01, so they now belong here too.
+    // Indexable Phase 1 routes are advertised.
     for (const path of [
       "/pricing",
       "/about",
       "/process",
       "/contact",
       "/free-audit",
-      "/legal/privacy",
-      "/legal/terms",
-      "/legal/cookies",
+      // Statutory entity disclosure — indexable, and deliberately so: being
+      // findable about who operates the site is an E-E-A-T signal, not just a
+      // legal box-tick.
+      "/legal/company-information",
     ]) {
       expect(body, `sitemap should list ${path}`).toContain(`${path}</loc>`);
     }
     expect(body, "sitemap should list the live service page").toContain(
       "/services/web-development</loc>",
     );
-    // noindex surfaces must never appear in the sitemap.
+
+    // noindex surfaces must NEVER appear in the sitemap. privacy/terms/cookies
+    // reverted to `draft` for WebAsk — they were approved for Naxdor under EU
+    // GDPR, not UK GDPR + PECR, and D3 (Art. 27 representative) is still open.
+    // Draft => noindex, so advertising them would contradict the robots tag.
+    // Move each into the list above in the same commit that flips its draft flag.
+    for (const path of ["/legal/privacy", "/legal/terms", "/legal/cookies"]) {
+      expect(body, `sitemap must not list draft/noindex ${path}`).not.toContain(`${path}</loc>`);
+    }
     expect(body).not.toContain("/dev/");
   });
 

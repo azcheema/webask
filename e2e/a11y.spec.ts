@@ -44,6 +44,7 @@ const ROUTES = [
   "/legal/privacy",
   "/legal/terms",
   "/legal/cookies",
+  "/legal/company-information",
 ] as const;
 const TAGS = ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"];
 

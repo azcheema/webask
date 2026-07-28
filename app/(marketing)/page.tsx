@@ -21,7 +21,18 @@ import { buildMetadata } from "@/lib/seo";
 // Four representative services anchor the home pricing section — they mirror the
 // four Problem→Solution teasers above. Prices stay sourced from data/services.ts
 // (single source of truth); the full table lives on /pricing.
-const PRICING_ANCHOR_SLUGS = ["web-development", "crm", "ai-integration", "seo"] as const;
+//
+// ⚠️ These MUST stay in sync with data/services.ts slugs. `getServiceBySlug`
+// returns undefined for an unknown slug and the flatMap below silently drops it,
+// so a stale slug here degrades the section from four cards to three with no
+// error anywhere — which is exactly what happened when `crm` became
+// `crm-automation`. The assertion below turns that into a build failure.
+const PRICING_ANCHOR_SLUGS = [
+  "web-development",
+  "seo",
+  "crm-automation",
+  "ai-integration",
+] as const;
 
 const pricingAnchorItems: ReadonlyArray<PricingAnchorItem> = PRICING_ANCHOR_SLUGS.flatMap(
   (slug) => {
@@ -38,6 +49,16 @@ const pricingAnchorItems: ReadonlyArray<PricingAnchorItem> = PRICING_ANCHOR_SLUG
   },
 );
 
+// Fail loudly rather than rendering a quietly incomplete pricing section.
+if (pricingAnchorItems.length !== PRICING_ANCHOR_SLUGS.length) {
+  const resolved = new Set(pricingAnchorItems.map((item) => item.name));
+  throw new Error(
+    `Home pricing anchor: ${PRICING_ANCHOR_SLUGS.length - pricingAnchorItems.length} slug(s) did ` +
+      `not resolve against data/services.ts. Check PRICING_ANCHOR_SLUGS. Resolved: ` +
+      `${[...resolved].join(", ") || "none"}`,
+  );
+}
+
 // Full catalog feeds the hero's services marquee (name + slug — slug picks the
 // icon; labels are plain text, not links, since most /services/* routes ship in
 // Phase 2). data/services.ts stays the single source of truth.
@@ -53,8 +74,8 @@ export const metadata: Metadata = {
     // one. Every other page auto-generates its card via /og?title=…
     image: "/opengraph-image",
   }),
-  // Absolute title so the root layout's "%s · Naxdor" template doesn't append a
-  // second "Naxdor" — home.meta.title already leads with the brand.
+  // Absolute title so the root layout's "%s · WebAsk" template doesn't append a
+  // second "WebAsk" — home.meta.title already leads with the brand.
   title: { absolute: home.meta.title },
 };
 

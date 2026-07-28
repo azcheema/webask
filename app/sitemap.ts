@@ -48,9 +48,11 @@ const ROUTES: ReadonlyArray<Entry> = [
   { path: "/about", priority: 0.7, changeFrequency: "monthly" },
   { path: "/process", priority: 0.7, changeFrequency: "monthly" },
   { path: "/contact", priority: 0.7, changeFrequency: "monthly" },
-  { path: "/legal/privacy", priority: 0.3, changeFrequency: "yearly" },
-  { path: "/legal/terms", priority: 0.3, changeFrequency: "yearly" },
-  { path: "/legal/cookies", priority: 0.3, changeFrequency: "yearly" },
+  // Only the entity disclosure is listed. privacy/terms/cookies are `draft` for
+  // WebAsk (approved for Naxdor under EU GDPR, not UK — see data/copy/legal.ts)
+  // so they render `noindex`, and a sitemap must never advertise a noindex URL.
+  // Add them here in the same commit that flips their draft flag.
+  { path: "/legal/company-information", priority: 0.3, changeFrequency: "yearly" },
 ];
 
 // Location hubs are DERIVED, not hardcoded: only areas with authored copy have a

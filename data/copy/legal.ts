@@ -1,19 +1,31 @@
 /**
- * Legal page copy — Privacy Policy, Terms of Service, Cookie Policy.
+ * Legal page copy — Company Information, Privacy Policy, Terms, Cookie Policy.
  *
- * STATUS: approved + published (draft:false) on 2026-06-01 after a founder
- * read-through; a professional legal skim remains a recommended fast-follow.
- * While `draft: true`, each page renders `noindex` + a "working draft" notice —
- * it stays out of the search index until the copy is approved.
+ * ⚠️ STATUS: privacy / terms / cookies are back to **`draft: true`** for WebAsk.
+ *
+ * They arrived from the fork marked approved — but they were approved on
+ * 2026-06-01 for **Naxdor, on naxdor.com, framed around EU GDPR and Swedish
+ * jurisdiction**. None of that is true for a UK-facing site trading as WebAsk:
+ * the controlling regime is **UK GDPR + PECR**, and decision gate **D3** (is an
+ * Article 27 UK representative required?) is still open and must be named in
+ * the privacy notice if it is. Presenting them as approved would be asserting a
+ * legal review that has not happened for this entity.
+ *
+ * Draft means `noindex` + a visible "working draft" notice, so nothing
+ * misleading is indexed while the UK rewrite is pending (Phase 1, docs/06).
+ *
+ * `company-information` is NOT a draft: it is a factual entity disclosure, and
+ * every fact in it is verifiable from `data/site.ts`.
  *
  * Promotion gate: when a document is approved, set `draft: false` and bump
  * `lastUpdated`. That single flip both indexes the page and drops the notice.
  *
  * GROUNDING (what this copy is written against — keep it accurate):
- *   - Entity: Naxdor, an enskild firma (Swedish sole proprietorship) operated
- *     by Ansar Cheema. Registered address + contact in `data/site.ts` (the SE
- *     address/phone are the confirmed launch NAP). Governing law: Sweden; GDPR
- *     applies.
+ *   - Entity: **WebAsk is a trading name of Naxdor**, an enskild firma (Swedish
+ *     sole proprietorship) operated by Ansar Cheema. There is no UK company and
+ *     no Companies House number. Registered address + contact in `data/site.ts`.
+ *   - Regime: **UK GDPR + PECR** for UK visitors. Governing law for the
+ *     contract sits with the Swedish entity — confirm with D3 before publishing.
  *   - Data collected: the contact form (name, email, company, service,
  *     budget, timeline, country, message) + a honeypot (`company_url`, not
  *     stored) + standard server logs.
@@ -28,6 +40,7 @@
  * etc.), update the affected sections here before flipping `draft: false`.
  */
 
+import { site } from "@/data/site";
 import type { Meta } from "@/data/types";
 
 export type LegalSection = {
@@ -39,7 +52,7 @@ export type LegalSection = {
 };
 
 export type LegalDocument = {
-  readonly slug: "privacy" | "terms" | "cookies";
+  readonly slug: "privacy" | "terms" | "cookies" | "company-information";
   readonly meta: Meta;
   /** The page h1. */
   readonly title: string;
@@ -56,23 +69,28 @@ export type LegalDocument = {
   readonly sections: ReadonlyArray<LegalSection>;
 };
 
-const CONTACT_EMAIL = "contact@naxdor.com";
+// Derived, not hardcoded — one change in data/site.ts propagates to every
+// legal page, the footer and the JSON-LD together.
+const CONTACT_EMAIL = site.email;
 const LAST_UPDATED = "2026-06-01";
+/** Date the WebAsk entity disclosure was written against `data/site.ts`. */
+const DISCLOSURE_UPDATED = "2026-07-28";
 
 export const privacy: LegalDocument = {
   slug: "privacy",
   meta: {
     title: "Privacy Policy",
     description:
-      "How Naxdor collects, uses, and protects your personal data when you visit naxdor.com or get in touch — written for GDPR.",
+      "How Naxdor collects, uses, and protects your personal data when you visit webask.co.uk or get in touch — written for GDPR.",
   },
   title: "Privacy Policy",
   subhead:
-    "How we collect, use, and protect your personal data when you visit naxdor.com or get in touch.",
+    "How we collect, use, and protect your personal data when you visit webask.co.uk or get in touch.",
   lastUpdated: LAST_UPDATED,
-  draft: false,
+  // Reverted to draft for WebAsk — approved for Naxdor/EU-GDPR, not UK. See header.
+  draft: true,
   intro: [
-    "This Privacy Policy explains what personal data Naxdor collects, why we collect it, how we protect it, and the rights you have over it. It applies to the website naxdor.com and to any enquiry you send us through it.",
+    "This Privacy Policy explains what personal data Naxdor collects, why we collect it, how we protect it, and the rights you have over it. It applies to the website webask.co.uk and to any enquiry you send us through it.",
     `We keep this short and concrete. If anything here is unclear, email us at ${CONTACT_EMAIL} and we will explain.`,
   ],
   sections: [
@@ -189,11 +207,12 @@ export const terms: LegalDocument = {
       "The terms that govern your use of the Naxdor website and your relationship with Naxdor.",
   },
   title: "Terms of Service",
-  subhead: "The terms that govern your use of naxdor.com and any engagement with Naxdor.",
+  subhead: "The terms that govern your use of webask.co.uk and any engagement with Naxdor.",
   lastUpdated: LAST_UPDATED,
-  draft: false,
+  // Reverted to draft for WebAsk — approved for Naxdor/EU-GDPR, not UK. See header.
+  draft: true,
   intro: [
-    "These Terms of Service govern your access to and use of the website naxdor.com. By using the site, you agree to these terms. If you do not agree, please do not use the site.",
+    "These Terms of Service govern your access to and use of the website webask.co.uk. By using the site, you agree to these terms. If you do not agree, please do not use the site.",
     "These terms cover your use of the website. They do not replace the separate written agreement that governs any project we take on for you — that agreement always controls where the two differ.",
   ],
   sections: [
@@ -286,11 +305,12 @@ export const cookies: LegalDocument = {
   },
   title: "Cookie Policy",
   subhead:
-    "What cookies and similar technologies we use on naxdor.com, why, and how to control them.",
+    "What cookies and similar technologies we use on webask.co.uk, why, and how to control them.",
   lastUpdated: LAST_UPDATED,
-  draft: false,
+  // Reverted to draft for WebAsk — approved for Naxdor/EU-GDPR, not UK. See header.
+  draft: true,
   intro: [
-    "This Cookie Policy explains how Naxdor uses cookies and similar technologies on naxdor.com. It should be read alongside our Privacy Policy, which explains how we handle personal data more generally.",
+    "This Cookie Policy explains how Naxdor uses cookies and similar technologies on webask.co.uk. It should be read alongside our Privacy Policy, which explains how we handle personal data more generally.",
     "We use as few cookies as we can. We set non-essential cookies — such as analytics — only after you have given your consent.",
   ],
   sections: [
@@ -352,5 +372,93 @@ export const cookies: LegalDocument = {
   ],
 } as const;
 
+/**
+ * Statutory entity disclosure.
+ *
+ * ── WHY THIS PAGE EXISTS ──────────────────────────────────────────────────
+ * The Electronic Commerce (EC Directive) Regulations 2002 and the Provision of
+ * Services Regulations 2009 require a service provider's real name, geographic
+ * address and contact details to be **easily, directly and permanently
+ * accessible**. WebAsk is a trading name, not a company, so a visitor cannot
+ * look us up at Companies House — which makes an explicit disclosure page the
+ * honest way to satisfy that, and it is a UK-specific addition to the inherited
+ * Naxdor sitemap (docs/04 § 3).
+ *
+ * ── WHAT IS DELIBERATELY ABSENT ───────────────────────────────────────────
+ *  - **No Companies House number.** None exists. Displaying one would be
+ *    fabricated, and it is the first thing a careful UK buyer checks.
+ *  - **No organisation or VAT number.** Held server-side only, never rendered
+ *    (founder instruction 2026-07-28; see `data/site.ts`). If decision gate D3
+ *    concludes the VAT number must be displayed, add a section here and read it
+ *    from `process.env.COMPANY_VAT_NUMBER` — the plumbing already exists.
+ *  - **No UK address.** D1: fully remote, no UK location. The address below is
+ *    the Swedish registered address of the operating entity — a statutory
+ *    disclosure, NOT a local-SEO signal, and it must never appear on /contact.
+ *
+ * `draft: false` because every statement here is a verifiable fact drawn from
+ * `data/site.ts`, not copy awaiting legal review.
+ */
+export const companyInformation: LegalDocument = {
+  slug: "company-information",
+  meta: {
+    title: "Company Information",
+    description:
+      "Who operates webask.co.uk: WebAsk is a trading name of Naxdor, an enskild firma registered in Sweden. Registered name, address and contact details.",
+  },
+  title: "Company Information",
+  subhead: "Who you are actually dealing with, and how to reach us.",
+  lastUpdated: DISCLOSURE_UPDATED,
+  draft: false,
+  intro: [
+    `${site.entityDisclosure} This page sets out the legal identity behind webask.co.uk in full, because "WebAsk" is a trading name rather than a registered company and you cannot look it up in a public register.`,
+    "We would rather state that plainly than let you assume otherwise.",
+  ],
+  sections: [
+    {
+      heading: "Trading name and legal entity",
+      body: [
+        `This website is operated under the trading name ${site.name}. The legal entity behind it is ${site.legalName}, an enskild firma — a Swedish sole proprietorship — operated by Ansar Cheema.`,
+        "WebAsk is not a separate company and is not registered at Companies House. There is no UK company number, and you will not find one anywhere on this site, because none exists. Your contract, invoices and any legal correspondence are with the Swedish entity.",
+      ],
+    },
+    {
+      heading: "Registered address",
+      body: ["The registered geographic address of the operating entity is:"],
+      list: [
+        site.address.street,
+        `${site.address.postalCode} ${site.address.city}`,
+        `${site.address.region}, ${site.address.country}`,
+      ],
+    },
+    {
+      heading: "We work remotely — there is no UK office",
+      body: [
+        "WebAsk serves clients across the United Kingdom and works entirely remotely. We do not operate a UK office, and the address above is a company registration detail rather than a place you can visit or send post expecting a quick reply.",
+        "We are explicit about this for two reasons. It is true; and a great many agencies imply a local presence they do not have. If you want to meet, we will arrange a call or travel to you.",
+      ],
+    },
+    {
+      heading: "How to contact us",
+      body: [
+        "The fastest and most reliable way to reach us is email — it reaches a monitored inbox and we reply to every enquiry within one business day.",
+      ],
+      list: [`Email: ${CONTACT_EMAIL}`, `Telephone: ${site.phone}`, `Hours: ${site.hours}`],
+    },
+    {
+      heading: "Part of the Naxdor group",
+      body: [
+        `${site.name} is the United Kingdom brand of Naxdor, which also operates naxdor.com for international clients and naxdor.se in Sweden. Same founder, same delivery team, same standards — a UK brand, UK pricing and UK expertise.`,
+        "We disclose the relationship rather than presenting three unrelated agencies, because that is what it is.",
+      ],
+    },
+    {
+      heading: "Complaints",
+      body: [
+        `If something has gone wrong, email ${CONTACT_EMAIL} with "Complaint" in the subject line and we will acknowledge it within one business day and respond substantively within five. If we cannot resolve it between us, you retain any rights you have under UK consumer or contract law.`,
+      ],
+    },
+  ],
+} as const;
+
 /** All legal documents, keyed by slug — handy for `generateStaticParams` later. */
-export const legalDocuments = { privacy, terms, cookies } as const;
+export const legalDocuments = { privacy, terms, cookies, companyInformation } as const;

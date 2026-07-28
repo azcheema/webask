@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { CookieSettingsButton } from "@/components/analytics/cookie-settings-button";
+import { site } from "@/data/site";
 import { cn } from "@/lib/utils";
 
 import { BrandMark } from "./brand-mark";
@@ -48,8 +49,41 @@ export function SiteFooter({ className }: SiteFooterProps) {
           </nav>
         </div>
 
-        <div className="border-border mt-12 flex flex-col gap-3 border-t pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-fg-muted text-xs">© {year} Naxdor. All rights reserved.</p>
+        {/* UK statutory disclosure row (docs/04 § 6).
+         * "WebAsk" is a trading name with no Companies House entry, so the real
+         * provider's name, geographic address and email must be permanently
+         * accessible — Electronic Commerce (EC Directive) Regulations 2002 and
+         * Provision of Services Regulations 2009. The footer is the "permanent"
+         * part; /legal/company-information carries the full version.
+         *
+         * The organisation and VAT numbers are deliberately NOT rendered
+         * (founder instruction 2026-07-28 — data/site.ts). The address here is
+         * the SWEDISH registered address: a legal disclosure, never a local-SEO
+         * signal, and it must not appear on /contact. */}
+        <div className="border-border text-fg-muted mt-12 border-t pt-6 text-xs text-pretty">
+          <p>{site.entityDisclosure}</p>
+          <p className="mt-1">
+            Registered address: {site.address.street}, {site.address.postalCode} {site.address.city}
+            , {site.address.country} ·{" "}
+            <a href={`mailto:${site.email}`} className="hover:text-fg transition-colors">
+              {site.email}
+            </a>
+          </p>
+          <p className="mt-1">
+            <Link
+              href="/legal/company-information"
+              prefetch={false}
+              className="hover:text-fg underline underline-offset-2 transition-colors"
+            >
+              Full company information
+            </Link>
+          </p>
+        </div>
+
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-fg-muted text-xs">
+            © {year} {site.name}. All rights reserved.
+          </p>
           <ul className="flex flex-wrap items-center gap-4 text-xs">
             {FOOTER_LEGAL_NAV.map((item) => (
               <li key={item.href}>

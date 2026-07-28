@@ -2,12 +2,20 @@ import type { Metadata } from "next";
 
 import { env } from "@/lib/env";
 
-const SITE_NAME = "Naxdor";
+const SITE_NAME = "WebAsk";
 
 const DEFAULT_DESCRIPTION =
-  "Naxdor builds high-performance websites, e-commerce, web apps, AI integrations, and SEO programs for SMBs — with deep specialization in aesthetic, dental, and beauty/wellness clinics.";
+  "WebAsk builds high-performance websites, e-commerce, web apps, AI integration and SEO for UK small businesses — with deep specialisation in aesthetic clinics, dental practices and beauty and wellness clinics.";
 
-const TWITTER_HANDLE = "@naxdor";
+/**
+ * No `twitter.site` is emitted.
+ *
+ * The inherited value was `@naxdor` — the parent brand's handle, not ours.
+ * Claiming it would attribute WebAsk's share cards to a different account.
+ * WebAsk has no live social profiles yet (`data/site.ts` `socials: []`), and the
+ * inherited rule is to leave a reference out rather than point it somewhere
+ * wrong. Add the handle here and to `socials` together, when one exists.
+ */
 
 export type BuildMetadataOptions = {
   /** Page-specific title. The root layout's `title.template` appends " · Naxdor". */
@@ -89,7 +97,7 @@ export function buildMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      site: TWITTER_HANDLE,
+      // `site` deliberately omitted — see the note above TWITTER_HANDLE's removal.
       title: renderedTitle,
       description,
       images: [ogImage],
@@ -103,5 +111,4 @@ export function buildMetadata({
 export const SITE = {
   name: SITE_NAME,
   description: DEFAULT_DESCRIPTION,
-  twitter: TWITTER_HANDLE,
 } as const;

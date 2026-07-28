@@ -1,5 +1,39 @@
 import type { CtaLink, FaqItem, HeroHeadlineSegment, Meta, Stat } from "@/data/types";
 
+/*
+ * Home page copy — UK, service-led, national.
+ *
+ * ── WHAT THIS PAGE IS AND IS NOT (decision D8) ────────────────────────────
+ * The home page speaks to ANY UK small business. It is not a Manchester
+ * agency page and it is not a clinic page. The vertical specialisation
+ * surfaces through /industries/*, the city focus through /locations/* — and
+ * neither shapes this page. Resist the pull to lead with clinics here: it is
+ * where the revenue is, but it narrows the brand to the wrong thing.
+ *
+ * ── CLAIMS DISCIPLINE ─────────────────────────────────────────────────────
+ * Nothing here asserts something we cannot evidence. Specifically absent, and
+ * deliberately so:
+ *   - No client counts, logos, testimonials or results. There are none yet,
+ *     and inventing them is CMA-enforceable under the DMCC Act 2024.
+ *   - No headcount or seniority claims ("a team of senior engineers",
+ *     "no junior handoffs"). The inherited Naxdor copy made them; we don't
+ *     know them to be true of this operation, so they are gone.
+ *   - No award or ranking claims. The whole vertical says "award-winning";
+ *     it is noise, and unverifiable superlatives are a documented anti-pattern.
+ *
+ * What IS claimed is verifiable: the performance and accessibility numbers are
+ * the budgets this very site is held to in CI (see .lighthouserc.cjs), the
+ * response promise is data/site.ts, and the service count is data/services.ts.
+ * A prospect can check every one of them against the page they are reading.
+ *
+ * ── PRICING ───────────────────────────────────────────────────────────────
+ * ⚠️ The pricing SECTION states the posture (published starting prices, no
+ * "contact for quote") but names no figure — decision gate D4 (the final GBP
+ * price list) is open. The `PricingAnchor` component still renders amounts from
+ * data/services.ts, which are the INHERITED USD figures relabelled as GBP.
+ * Those must be replaced when D4 lands, before anything publishes.
+ */
+
 export type HomeProblemSolution = {
   readonly eyebrow: string;
   readonly h2: string;
@@ -41,7 +75,7 @@ export type HomeContent = {
   readonly portfolio: {
     readonly eyebrow: string;
     readonly h2: string;
-    /** Honesty label — these are founder projects, not Naxdor case studies. */
+    /** Honesty label — these are founder projects, not WebAsk case studies. */
     readonly note: string;
   };
   readonly faq: {
@@ -58,109 +92,106 @@ export type HomeContent = {
 
 export const home: HomeContent = {
   meta: {
-    title: "Naxdor — Digital Services for SMBs: Web, CRM, AI",
+    title: "WebAsk — Websites, SEO & Automation for UK Businesses",
     description:
-      "Senior engineers building fast websites, automated CRM, and AI workflows for SMBs. Published pricing. Free site audit available. Book a discovery call.",
+      "Fast, well-built websites, SEO and automation for UK small businesses. Published starting prices, no quote wall, and a free site audit. Book a call.",
   },
   hero: {
     eyebrowPhrases: [
-      "Websites that convert.",
-      "CRM that catches every lead.",
-      "AI that does the busywork.",
+      "Websites that earn their keep.",
       "SEO that gets you found.",
+      "CRM that catches every enquiry.",
+      "Automation that buys back your week.",
     ],
     headline: [
-      { text: "The digital partner for SMBs that " },
+      { text: "The digital partner for UK businesses that " },
       { text: "mean business.", accent: true },
     ],
     subhead:
-      "We design, build, and run the websites, CRM systems, and AI workflows that grow small businesses — without the agency overhead or the six-month rebuild.",
+      "We design, build and run the websites, search visibility and automation that grow small businesses across the UK — without the agency overhead or the six-month rebuild.",
     primaryCta: { label: "Book a discovery call", href: "/contact" },
     secondaryCta: { label: "Get a free site audit", href: "/free-audit" },
-    trustStrip: "Senior engineers. Honest pricing. One team accountable end-to-end.",
+    trustStrip:
+      "Remote-first across the UK · Published pricing · One accountable owner, end to end",
   },
   sections: [
     {
-      eyebrow: "Web Development & SEO",
-      h2: "Your site is your strongest sales rep. Most SMB sites are silent.",
+      eyebrow: "Web development",
+      h2: "Your website is your hardest-working salesperson. Most sit silent.",
       problem:
-        "Templated sites built on dated stacks load in 5+ seconds, rank for nothing, and feel five years behind your brand. Visitors bounce before they read your first sentence.",
+        "Templated sites on ageing platforms take five seconds or more to load, rank for nothing, and look a few years behind the business they represent. On a phone, on mobile data, most visitors have gone before the first sentence renders.",
       solution:
-        "We design and deliver websites engineered for sub-2-second loads, structured for local search from the first commit, and built to convert on mobile first. Every site we own end-to-end — Next.js 16, Tailwind, deployed on Vercel.",
+        "We build sites engineered for sub-two-second loads, structured for search from the first commit, and designed mobile-first because that is where your customers are. Next.js and Vercel, owned end to end — and you own the code.",
       cta: { label: "See web development", href: "/services/web-development" },
     },
     {
-      eyebrow: "CRM Automation",
-      h2: "Leads die in your inbox. Your CRM should catch them before you do.",
+      eyebrow: "SEO & performance",
+      h2: "A beautiful site nobody finds is an expensive brochure.",
       problem:
-        "Every minute a lead waits is a percentage of conversion. Most SMBs run two tools — a website that captures leads and a CRM that ignores them — held together by Zapier and hope.",
+        "Most agencies launch and move on. Six months later you are invisible in Google, your Core Web Vitals are red, and the only people visiting are the ones you sent yourself.",
       solution:
-        "We implement and automate GoHighLevel and HubSpot end-to-end. Lead capture, auto-replies, SMS nurture, calendar booking, and reporting — wired so prospects book themselves while you sleep.",
-      // Until /services/crm-automation ships (Phase 2), this points at /pricing where CRM
-      // is listed with its starting price. Repoint to /services/crm-automation then.
-      cta: { label: "See CRM automation", href: "/pricing" },
+        "We engineer for search from day one — technical foundations, structured data on every page, and content mapped to what UK buyers actually type. Then we report on enquiries, not on impressions you cannot bank.",
+      cta: { label: "See SEO", href: "/services/seo" },
     },
     {
-      eyebrow: "AI Integration",
-      h2: "Your week shouldn't be 40% admin.",
+      eyebrow: "CRM automation",
+      h2: "Enquiries die in inboxes. Yours should be answered before you see them.",
       problem:
-        "Calling back missed leads. Answering the same five questions. Updating spreadsheets nobody reads. Routine work eats the days you should spend growing — and AI is finally ready to take it.",
+        "Every minute an enquiry waits costs you conversion. Most small businesses run a website that captures leads and a CRM that ignores them, held together by a Zapier subscription and optimism.",
       solution:
-        "We build voice agents that answer your phone in your voice, chatbots that book consultations 24/7, and n8n workflows that move data between your tools without you. Delivered, not pitched.",
-      // Until /services/ai-integration ships (Phase 2), this points at /pricing
-      // where AI Integration is listed. Repoint to /services/ai-integration then.
-      cta: { label: "See AI integration", href: "/pricing" },
+        "We implement and automate GoHighLevel end to end, and HubSpot where it is the better fit — including migrations between them. Capture, instant reply, SMS follow-up, calendar booking and reporting, wired so prospects book themselves while you work.",
+      cta: { label: "See CRM automation", href: "/services/crm-automation" },
     },
     {
-      eyebrow: "SEO & Performance",
-      h2: "A beautiful site that doesn't rank is a brochure.",
+      eyebrow: "AI integration",
+      h2: "Your week should not be forty percent admin.",
       problem:
-        "Most agencies launch and walk away. Six months in you're invisible on Google, your Core Web Vitals are red, and the only traffic you have is your own LinkedIn.",
+        "Returning missed calls. Answering the same five questions. Re-typing details between systems that will not talk to each other. Routine work eats the days you should spend growing the business.",
       solution:
-        "We engineer for search from day one — sub-2-second LCP, schema.org structured data on every page, local SEO tuned per city. Plus a free 30-minute audit of any existing site so you can see exactly what we'd change.",
-      cta: { label: "Get a free audit", href: "/free-audit" },
+        "We build voice agents that answer your phone, assistants that book consultations around the clock, and workflows that move data between your tools without you. Built and handed over — with the UK rules on automated calling and consent taken seriously, not glossed over.",
+      cta: { label: "See AI integration", href: "/services/ai-integration" },
     },
   ],
   proof: {
-    eyebrow: "What “built well” looks like",
-    h2: "We hold ourselves to numbers you can measure.",
+    eyebrow: "What good actually looks like",
+    h2: "Numbers you can check on this page, right now.",
     stats: [
       {
         value: "< 2.0s",
-        label: "Largest Contentful Paint on every page we ship",
+        label: "Largest Contentful Paint — the budget every page we ship is held to",
       },
       {
         value: "100",
-        label: "Lighthouse Accessibility score on every launch",
+        label: "Lighthouse accessibility score, enforced on every build",
       },
       {
-        value: "9 services",
-        label: "From websites to AI — one team, one accountable owner",
+        value: "9",
+        label: "Services, one accountable owner — no handing you between agencies",
       },
       {
-        value: "1 business day",
-        label: "Response time on every inbound lead",
+        value: "1 working day",
+        label: "Our reply time on every enquiry, without exception",
       },
     ],
   },
   process: {
-    eyebrow: "Our process",
+    eyebrow: "How we work",
     h2: "Discover. Design. Build. Grow.",
     intro:
-      "Every engagement runs the same four stages — different services, same accountability. You see what we're delivering, when, and why.",
+      "Every engagement runs the same four stages, whatever the service. You always know what is being delivered, when, and why it matters.",
     cta: { label: "See our process", href: "/process" },
   },
   pricing: {
     eyebrow: "Honest pricing",
-    h2: "Pricing on the website. No “contact for quote” games.",
+    h2: "Prices on the website. No “request a quote” wall.",
     intro:
-      "Every service has a published starting price. No “contact for quote” walls. What changes the price? Scope — pages, integrations, complexity. Not how desperate you sound on the call. See the full table on the pricing page.",
+      "Every service carries a published starting price, because making you book a call to learn whether you can afford us wastes your time and ours. What moves the number is scope — pages, integrations, complexity — and nothing else.",
     cta: { label: "See full pricing", href: "/pricing" },
   },
   portfolio: {
     eyebrow: "Founder prior work",
-    h2: "The work that earned the confidence to start Naxdor.",
-    note: "Honest about provenance: these are projects our founder led under other brands and independently — not Naxdor case studies. Naxdor's own results take their place here as they ship.",
+    h2: "The work behind the confidence to start WebAsk.",
+    note: "Honest about provenance: these are projects our founder led under other brands and independently — not WebAsk client work. WebAsk's own results replace them here as they ship.",
   },
   faq: {
     eyebrow: "FAQ",
@@ -168,49 +199,52 @@ export const home: HomeContent = {
   },
   faqs: [
     {
-      question: "What's a fair budget for an SMB website?",
+      // Inherited editorial rule: the pricing question always comes first. It is
+      // the most-searched intent and the one AI Overviews quote.
+      question: "What should a UK small business budget for a website",
       answer:
-        "For a custom 5–10 page marketing site, starting prices begin at USD $3,500. Templated platforms cost less upfront but lock you into monthly fees of $300–600 plus a generic design. We publish starting prices on every service page and stay transparent through the scoping call.",
+        "Most UK small businesses spend between £1,500 and £5,000 on a website. A DIY builder runs roughly £240–£360 a year once you add a domain and business email; a freelancer typically charges £800–£3,000; and UK agencies generally sit between £2,500 and £10,000, with London often higher for the same specification. Budget another 15–20% of the build cost each year for hosting, updates and security. We publish our own starting prices rather than hiding them behind a call, so you can rule us in or out in about a minute. (Market figures: UK web design cost surveys, 2026.)",
     },
     {
-      question: "How fast can you deliver?",
+      question: "Why would I pay more than a £950 template",
       answer:
-        "A standard 6–10 page marketing site launches in 4–6 weeks from kickoff. CRM implementations land in 2–4 weeks. AI integrations vary by scope but voice agents typically go live in 3–5 weeks. We commit to dates in writing during the Discover phase.",
+        "Two reasons, and if neither applies to you then a template is genuinely the right call. The first is performance and ownership: templated builds on shared platforms are slow on mobile, which costs you both rankings and conversions, and you rarely own what you have paid for. The second is that regulated sectors — clinics, dental practices — have structural requirements a template cannot satisfy, and getting those wrong is an advertising ruling rather than a design critique. If you are a straightforward local business with simple needs, we will tell you that on the call.",
     },
     {
-      question: "Do you only work with med spas and dental practices?",
+      question: "How quickly can you deliver",
       answer:
-        "No. We sell digital services to any SMB and have deep specialization in aesthetic, dental, and beauty/wellness clinics. The site you're reading was built by the same team that builds for those industries — the practices know us; the skills travel.",
+        "A standard six-to-ten page marketing site launches in four to six weeks from kickoff. CRM implementations land in two to four weeks. AI integrations vary with scope, but a voice agent is typically live in three to five weeks. The single biggest cause of delay is content — copy, photography and sign-off — so we agree who is producing what during the Discover stage and commit to dates in writing.",
     },
     {
-      question: "Can you work with our existing CRM and website?",
+      question: "Do you have a UK office",
       answer:
-        "Usually yes. We migrate and automate GoHighLevel and HubSpot, build connectors for WordPress, Shopify, and Wix sites, and rebuild from scratch when the existing stack costs more to keep than replace. The first call covers what stays and what goes.",
+        "No, and we would rather say so plainly than imply otherwise. WebAsk works entirely remotely across the UK, on UK time. That is why our pricing does not carry the cost of city-centre office space, and it is why we do not run a Google Business Profile — Google requires a genuine staffed location, and we do not have one. If you want to meet, we will arrange a call or travel to you. Full entity and contact details are on our company information page.",
     },
     {
-      question: "What do you mean by “senior engineers”?",
+      question: "Do you only work with clinics",
       answer:
-        "The people who write your code and configure your CRM have ten-plus years of production experience each — they've launched to real traffic, taken pages on call, and worked across SaaS, e-commerce, and agency contexts. No junior offshore handoffs, no “we'll get you a project manager.”",
+        "No. We sell websites, SEO, CRM and automation to any UK small business, and most of what we build is not clinic work. We do have unusually deep knowledge of aesthetic clinics, dental practices and beauty and wellness clinics, because those sectors carry advertising rules most agencies have never read. That expertise is available if you need it and invisible if you do not — the engineering standards are the same either way.",
     },
     {
-      question: "Do you offer a free audit?",
+      question: "Do you understand the advertising rules for clinics",
       answer:
-        "Yes. Any SMB can request a 30-minute SEO + Core Web Vitals audit of their existing site. You get a Loom walk-through plus a one-page PDF with five prioritized findings. We accept ten of these per month — no commitment beyond the call.",
+        "Yes, and it is the main reason clinics come to us. Botulinum toxin is a prescription-only medicine in the UK, so it cannot be advertised to the public at all — and the ASA treats euphemisms such as “wrinkle-relaxing treatments” as implied promotion of the same medicine. What the rules do permit is advertising a consultation, and a price list positioned correctly within the site's structure. That is an information-architecture problem as much as a copy problem, which is precisely what we build. We are not solicitors, and genuinely borderline copy goes to CAP's free Copy Advice service.",
     },
     {
-      question: "What countries do you serve?",
+      question: "Can you work with our existing website and CRM",
       answer:
-        "We're US-primary at launch — most clients are in North America — but we work with English-speaking SMBs worldwide. Time zones are arranged around your hours, not ours. Localized pricing in GBP, CAD, and AUD launches later in 2026.",
+        "Usually, yes. We migrate and automate GoHighLevel and HubSpot, connect WordPress, Shopify and Wix sites to the tools around them, and rebuild from scratch only where keeping the current setup costs more than replacing it. Plenty of engagements start as a fix rather than a rebuild. The first call establishes what stays, what goes, and what is simply not worth touching yet.",
     },
     {
-      question: "What's the catch with the pricing?",
+      question: "Where in the UK do you work",
       answer:
-        "No catch. Published prices are real starting points for scoped work. Custom quotes go up — sometimes well up — when the work requires complex integrations, white-label SaaS, or multi-vendor coordination. We tell you on the call. Nothing is bait.",
+        "Anywhere in the UK. We publish dedicated guides for Greater Manchester, Cheshire and West Yorkshire because those are the areas we know best, but remote-first delivery means your postcode does not change what we can build or what it costs. Clients elsewhere in the country get exactly the same service on the same timeline.",
     },
   ],
   ctaBand: {
-    h2: "Ready to grow?",
-    subhead: "Book a 30-minute call — no pitch, just a clear plan.",
+    h2: "Ready to get started",
+    subhead:
+      "Book a 30-minute call — no pitch, just a straight answer on what you need and what it costs.",
     primaryCta: { label: "Book a discovery call", href: "/contact" },
   },
 } as const;

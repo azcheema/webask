@@ -10,8 +10,16 @@ type LegalDocumentProps = {
   readonly breadcrumbs: ReadonlyArray<BreadcrumbsItem>;
 };
 
-/** Fixed locale + UTC so the rendered date is deterministic across server/client. */
-const DATE_FORMAT = new Intl.DateTimeFormat("en-US", {
+/**
+ * Fixed locale + UTC so the rendered date is deterministic across server/client.
+ *
+ * en-GB, not the inherited en-US: this renders "28 July 2026" rather than
+ * "July 28, 2026". Day-first is what a UK reader expects, and content-guidelines
+ * requires dates to be unambiguous — the numeric forms (7/28/26 vs 28/7/26) mean
+ * different things on either side of the Atlantic, which is exactly why the long
+ * form is used here.
+ */
+const DATE_FORMAT = new Intl.DateTimeFormat("en-GB", {
   year: "numeric",
   month: "long",
   day: "numeric",

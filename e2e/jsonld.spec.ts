@@ -131,6 +131,14 @@ const ROUTES: ReadonlyArray<Route> = [
     hasFaq: false,
   },
   {
+    // Entity disclosure — indexable (unlike the three draft legal pages) and a
+    // real E-E-A-T surface, so its graph is asserted like any other live page.
+    path: "/legal/company-information",
+    types: ["WebPage", "BreadcrumbList"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
     // Case-studies index — CollectionPage frame. Ships `noindex` until the first
     // published study, but still renders + emits its @graph.
     path: "/case-studies",

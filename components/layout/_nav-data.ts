@@ -152,9 +152,14 @@ export const FOOTER_LEGAL_NAV: readonly NavLink[] = [
   { label: "Privacy", href: "/legal/privacy" },
   { label: "Terms", href: "/legal/terms" },
   { label: "Cookies", href: "/legal/cookies" },
+  // UK-specific and required: "WebAsk" is a trading name with no Companies
+  // House entry, so the entity disclosure has to be permanently accessible
+  // (E-Commerce Regs 2002 / Provision of Services Regs 2009 — docs/03 § A1).
+  { label: "Company information", href: "/legal/company-information" },
 ] as const;
 
-export const BRAND_TAGLINE = "Digital services for SMBs that want to ship, not stall.";
+export const BRAND_TAGLINE =
+  "Digital services for UK small businesses that want to ship, not stall.";
 
 /**
  * Routes whose page exists at launch. Any nav entry pointing elsewhere renders
@@ -192,6 +197,7 @@ export const BUILT_ROUTES: ReadonlySet<string> = new Set([
   "/legal/privacy",
   "/legal/terms",
   "/legal/cookies",
+  "/legal/company-information",
 ]);
 
 /** True when `href`'s path (query + hash ignored) has a page today. */
