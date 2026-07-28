@@ -149,7 +149,7 @@ specific, informed and unambiguous.
   ask in a moment".
 
 **Enforcement.** The ICO wrote to **53 of the UK's top 100 websites** requiring cookie-banner
-compliance. PECR exposure runs to **£17.5m or 4% of global turnover**. Guidance has been
+compliance. PECR exposure runs to **£17.5m or 4% of global turnover, whichever is higher**. Guidance has been
 updated under the Data (Use and Access) Act.
 
 **Inherited implementation.** Naxdor already ships a consent gate with GA4 and Clarity held
