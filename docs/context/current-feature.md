@@ -15,12 +15,40 @@
 
 ## Status
 
-**Content complete, all gates green, committed — not merged and not pushed.**
+**Complete, merged to `main`, pushed. CI and Lighthouse both green on `adaf5ce` —
+the first green `main` of the day.**
 
-Committed as `13c97f5` on `feature/uk-service-pages` (25 files, +1103/−590), which
-sits one commit ahead of `main` at `e15147c`. **Not pushed** — `origin` is
-`github.com/azcheema/webask.git` and pushing was not authorised. `d:\naxdor`
-untouched at `e0e5885`.
+```
+adaf5ce  fix(a11y): give the footer company-information link a WCAG 2.2 tap target
+faf6655  fix(a11y): make the Lighthouse gate diagnosable, and fix what that exposed
+c1d7fec  docs: record the commit state of the UK service-page rewrite
+13c97f5  feat(content): rewrite the nine service pages for the UK market
+```
+
+`d:\naxdor` untouched at `e0e5885`.
+
+### The CI failure that turned out to predate this work
+
+`main` was **already red** before the rewrite (verified on `e15147c`): Lighthouse
+asserts `accessibility >= 1.0` and every audited URL scored **0.96**. Nobody could
+see why, and the reason is worth keeping:
+
+> **`.lighthouseci` is a dot-prefixed directory, and `actions/upload-artifact`
+> defaults `include-hidden-files: false`.** The path matched nothing, the step
+> logged "No files were found", and `if-no-files-found: ignore` swallowed it. The
+> Lighthouse report had **never once uploaded**. Fixed in both workflows, with the
+> flag now `warn`.
+
+With the report available the audit was named immediately: **`target-size`**
+(score 0, weight 7) on a single footer link — `/legal/company-information`, 138×16
+px against a 24×24 minimum — which is why all seven URLs scored identically. The
+neighbouring `mailto:` is exempt under WCAG 2.2's "in a sentence or block of text"
+carve-out; that one sits alone in a paragraph, so it is not.
+
+Also fixed while there: `lighthouse.yml` was missing `NEXT_PUBLIC_GA_ID`, which
+`ci.yml` sets so the consent banner renders. `NEXT_PUBLIC_*` is inlined at build
+time, so the two Lighthouse workflows were auditing **different pages** against the
+same commit.
 
 ### What this feature did
 
@@ -105,6 +133,25 @@ unreliable on Windows, trust CI only.
 body rendered — so the rewrite broke it. It now asserts `article.prose h2` count
 structurally. Don't re-couple a smoke test to a sentence that is expected to change.
 
+⚠️ **`e2e/a11y.spec.ts` was widened, and it must stay in step with Lighthouse.**
+It had two structural blind spots that let a Lighthouse-failing defect pass:
+
+1. It asserted **WCAG tags only**. Lighthouse's accessibility category also scores
+   axe `best-practice` rules. `best-practice` is now in `TAGS`.
+2. It scanned at the **desktop** default while Lighthouse audits mobile. There is
+   now a mobile sweep over the same URL set `.lighthouserc.cjs` audits.
+
+**The viewport must match Lighthouse exactly — 412×823.** A first attempt guessed
+360×823 and passed while CI failed on the very rule it was added to catch: at 360px
+the footer's legal links wrap onto separate lines and gain the spacing `target-size`
+wants. Read it from `lhr.configSettings.screenEmulation`, don't guess.
+
+Widening it immediately caught four real defects that had been invisible:
+`landmark-complementary-is-top-level` on four templates (an `<aside>` inside
+`<main>`; `TableOfContents` already renders its own `<nav>`), `empty-table-header`
+on a service page, and `heading-order` twice (`BlogCard` h3 under h1;
+`ComparisonColumn` h4 under h2).
+
 ## What exists now
 
 - **Fork + brand.** Deep Teal `#0f766e`, three token collisions resolved,
@@ -178,6 +225,14 @@ that is now the only surviving record of what the old site served.
 10. 🆕 **The aesthetics licensing scheme is NOT in force** (as at July 2026). Docs 02
     and 03 said "operational in 2026" and were wrong; both now carry a dated
     correction pointing at doc 08 § 4. Only the under-18s ban (1 Oct 2021) is law.
+11. 🆕 **`upload-artifact` hides dot-prefixed paths.** Any artifact path starting
+    with `.` needs `include-hidden-files: true`, and `if-no-files-found` should be
+    `warn`, not `ignore` — otherwise the step passes green while uploading nothing.
+12. 🆕 **Brand leaks survived the sweep in non-obvious places.** Found on the `/blog`
+    H1 ("The Naxdor blog"), the `/industries` meta description, the contact
+    autoresponder subject line, and the dev gallery. Grep `Naxdor` across
+    `app/`, `components/`, `data/` before cutover and check each hit is either the
+    deliberate group disclosure or a code comment.
 
 ## Next
 

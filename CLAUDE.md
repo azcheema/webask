@@ -182,3 +182,14 @@ white-on-brand). Any translucent-on-brand treatment must be checked with
 - Vercel Analytics fails Lighthouse BP off-platform → keep the `process.env.VERCEL` gate.
 - Base UI Select highlights via `data-highlighted`, not `:focus`.
 - `next-mdx-remote/rsc` silently drops object/array props on custom MDX components.
+- **`actions/upload-artifact` skips dot-prefixed paths.** `.lighthouseci` needs
+  `include-hidden-files: true`; with the default it matches nothing, and
+  `if-no-files-found: ignore` then passes green while uploading nothing. That combination
+  hid the cause of a red Lighthouse gate for an entire day. Use `warn`.
+- **`e2e/a11y.spec.ts` must mirror Lighthouse or it gives false comfort.** Lighthouse
+  scores axe `best-practice` rules (not just WCAG tags) and audits at **412×823 mobile**.
+  A sweep at 360px passed while CI failed on the same rule. Read the viewport from
+  `lhr.configSettings.screenEmulation`.
+- **PowerShell 5.1: never `2>&1` a native exe to test success.** It wraps stderr in an
+  ErrorRecord and forces `$?` to `$false` on exit code 0 — every gate reads FAIL while
+  passing. Use `$LASTEXITCODE`.
