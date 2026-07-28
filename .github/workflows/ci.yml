@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: lint · typecheck · build · e2e · lighthouse
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_SITE_URL: "http://localhost:3000"
+      # Fake GA4 ID so the build renders the consent banner (NEXT_PUBLIC_* is
+      # inlined at build time). Lets Playwright + axe exercise the banner and
+      # keeps Lighthouse validating its a11y/perf. No real property — and the
+      # GA/Clarity scripts only load *after* consent, which CI never grants, so
+      # no external requests fire. Production uses Vercel's real env value.
+      NEXT_PUBLIC_GA_ID: "G-TEST0000000"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Token contrast audit
+        run: pnpm check:contrast
+
+      - name: Keyword audit
+        run: pnpm check:keywords
+
+      - name: Programmatic uniqueness audit
+        run: pnpm check:uniqueness
+
+      # Pre-build so a redirect loop fails in milliseconds, not after a full
+      # build + e2e cycle. e2e/redirects.spec.ts proves the same map over HTTP.
+      - name: Redirect map audit
+        run: pnpm check:redirects
+
+      - name: Build
+        run: pnpm build
+
+      - name: Cache Next.js build
+        uses: actions/cache@v5
+        with:
+          path: |
+            .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('**/*.ts', '**/*.tsx', '**/*.css') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('pnpm-lock.yaml') }}-
+
+      - name: Install Playwright browsers
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Playwright smoke
+        run: pnpm test:e2e
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report-${{ github.run_id }}
+          path: playwright-report
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Lighthouse CI
+        run: pnpm lhci
+
+      - name: Upload Lighthouse results
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: lighthouse-results-${{ github.run_id }}
+          path: .lighthouseci
+          retention-days: 14
+          if-no-files-found: ignore
