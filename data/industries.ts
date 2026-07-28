@@ -69,7 +69,7 @@ export const industries: ReadonlyArray<Industry> = [
     },
     cardSummary:
       "Booking-first sites, CRM automation, and missed-call recovery for med spas, injectable and laser providers, and cosmetic dermatology.",
-    relatedServiceSlugs: ["web-development", "ui-ux-design", "crm", "ai-integration"],
+    relatedServiceSlugs: ["web-development", "ui-ux-design", "crm-automation", "ai-integration"],
     faqs: [
       {
         question: "How much does a med spa website cost?",
@@ -126,7 +126,7 @@ export const industries: ReadonlyArray<Industry> = [
     },
     cardSummary:
       "New-patient websites, local SEO, and recall/reminder automation for general, cosmetic, and orthodontic practices.",
-    relatedServiceSlugs: ["web-development", "seo", "crm", "ai-integration"],
+    relatedServiceSlugs: ["web-development", "seo", "crm-automation", "ai-integration"],
     faqs: [
       {
         question: "How much does a dental practice website cost?",
@@ -183,7 +183,7 @@ export const industries: ReadonlyArray<Industry> = [
     },
     cardSummary:
       "Booking-first sites, membership and package flows, and retention automation for spas, IV bars, beauty studios, and wellness clinics.",
-    relatedServiceSlugs: ["web-development", "crm", "seo", "ai-integration"],
+    relatedServiceSlugs: ["web-development", "crm-automation", "seo", "ai-integration"],
     faqs: [
       {
         question: "How much does a website for a spa or wellness clinic cost?",

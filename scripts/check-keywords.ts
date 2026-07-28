@@ -16,19 +16,21 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { z } from "zod";
 
+import { LOCATION_SLUGS } from "@/data/locations";
+
 // ── canonical catalogs (mirror components/layout/_nav-data.ts) ────────────────
 // Edit here when service/industry slugs change in nav-data.
 
 const SERVICE_SLUGS = [
   "web-development",
-  "e-commerce",
-  "web-applications",
+  "ecommerce-development",
+  "web-app-development",
   "ui-ux-design",
   "seo",
-  "mobile-apps",
-  "crm",
+  "mobile-app-development",
+  "crm-automation",
   "ai-integration",
-  "maintenance",
+  "maintenance-support",
 ] as const;
 
 const INDUSTRY_SLUGS = [
@@ -46,6 +48,9 @@ const STATIC_PAGES = [
   "/industries",
   "/locations",
   "/blog",
+  "/process",
+  "/free-audit",
+  "/case-studies",
 ] as const;
 
 const CLUSTER_ENUM = [
@@ -62,15 +67,17 @@ const CLUSTER_ENUM = [
   "ai-chatbots",
   "ai-automation",
   "maintenance",
+  // WebAsk's own — no Naxdor equivalent. The UK regulatory cluster is the
+  // flagship differentiator (docs/08 § 4) and needs its own bucket rather than
+  // being smuggled into "seo".
+  "clinic-compliance",
+  "uk-compliance",
 ] as const;
 
-const VERTICAL_ENUM = [
-  "aesthetic-clinics",
-  "dental-practices",
-  "beauty-wellness-clinics",
-  "real-estate",
-  "home-services",
-] as const;
+// The three locked WebAsk verticals (docs/00). Naxdor's "real-estate" and
+// "home-services" are deliberately NOT carried over — they are not WebAsk
+// verticals, and leaving them here invites drift into markets we don't serve.
+const VERTICAL_ENUM = ["aesthetic-clinics", "dental-practices", "beauty-wellness-clinics"] as const;
 
 const INTENT_ENUM = [
   "transactional",
@@ -131,8 +138,22 @@ const FileSchema = z.object({
 
 // ── URL pattern matching ─────────────────────────────────────────────────────
 
-const CITY_STATE_RE = /^[a-z0-9-]+-[a-z]{2}$/;
+/**
+ * Location slugs are validated by MEMBERSHIP, not by shape.
+ *
+ * The inherited check was `/^[a-z0-9-]+-[a-z]{2}$/` — the US `[city]-[state]`
+ * form (`austin-tx`). It rejects every UK slug we use (`manchester` has no
+ * two-letter suffix), and worse, it only ever checked the SHAPE: a keyword
+ * pointing at `/locations/austin-tx` passed happily long after that page ceased
+ * to exist. Importing the real catalogue makes a stale keyword row a build
+ * failure instead of a silent 404.
+ */
+const KNOWN_LOCATION_SLUGS: ReadonlySet<string> = new Set(LOCATION_SLUGS);
 const KEBAB_SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+
+function isKnownLocation(slug: string | undefined): boolean {
+  return slug !== undefined && KNOWN_LOCATION_SLUGS.has(slug);
+}
 
 function isValidUrl(url: string): { ok: true } | { ok: false; reason: string } {
   if ((STATIC_PAGES as readonly string[]).includes(url)) return { ok: true };
@@ -148,9 +169,9 @@ function isValidUrl(url: string): { ok: true } | { ok: false; reason: string } {
     if (parts.length === 3) {
       if (!(SERVICE_SLUGS as readonly string[]).includes(parts[1] ?? ""))
         return { ok: false, reason: `unknown service slug "${parts[1]}"` };
-      return CITY_STATE_RE.test(parts[2] ?? "")
+      return isKnownLocation(parts[2])
         ? { ok: true }
-        : { ok: false, reason: `bad city-state slug "${parts[2]}" (expect [city]-[st])` };
+        : { ok: false, reason: `unknown location slug "${parts[2]}" (see data/locations.ts)` };
     }
   }
 
@@ -163,22 +184,30 @@ function isValidUrl(url: string): { ok: true } | { ok: false; reason: string } {
     if (parts.length === 3) {
       if (!(INDUSTRY_SLUGS as readonly string[]).includes(parts[1] ?? ""))
         return { ok: false, reason: `unknown industry slug "${parts[1]}"` };
-      return CITY_STATE_RE.test(parts[2] ?? "")
+      return isKnownLocation(parts[2])
         ? { ok: true }
-        : { ok: false, reason: `bad city-state slug "${parts[2]}"` };
+        : { ok: false, reason: `unknown location slug "${parts[2]}" (see data/locations.ts)` };
     }
   }
 
   if (parts[0] === "locations" && parts.length === 2) {
-    return CITY_STATE_RE.test(parts[1] ?? "")
+    return isKnownLocation(parts[1])
       ? { ok: true }
-      : { ok: false, reason: `bad city-state slug "${parts[1]}"` };
+      : { ok: false, reason: `unknown location slug "${parts[1]}" (see data/locations.ts)` };
   }
 
   if (parts[0] === "blog" && parts.length === 2) {
     return KEBAB_SLUG_RE.test(parts[1] ?? "")
       ? { ok: true }
       : { ok: false, reason: `bad blog slug "${parts[1]}" (expect kebab-case)` };
+  }
+
+  // Topic archives — `/blog/topic/<topic>`. The compliance cluster's pillar is
+  // one of these (docs/08 § 1), so the pattern has to be valid here.
+  if (parts[0] === "blog" && parts[1] === "topic" && parts.length === 3) {
+    return KEBAB_SLUG_RE.test(parts[2] ?? "")
+      ? { ok: true }
+      : { ok: false, reason: `bad blog topic "${parts[2]}" (expect kebab-case)` };
   }
 
   return { ok: false, reason: "URL does not match any known pattern" };

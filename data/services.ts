@@ -134,7 +134,7 @@ export const services: ReadonlyArray<Service> = [
     ],
   },
   {
-    slug: "e-commerce",
+    slug: "ecommerce-development",
     name: "E-Commerce",
     summary: "Storefronts that convert — Shopify, custom, or headless.",
     heroSubhead:
@@ -200,7 +200,7 @@ export const services: ReadonlyArray<Service> = [
     ],
   },
   {
-    slug: "web-applications",
+    slug: "web-app-development",
     name: "Web Applications",
     summary: "Internal tools, dashboards, and customer portals.",
     heroSubhead:
@@ -226,7 +226,7 @@ export const services: ReadonlyArray<Service> = [
       "Ongoing user support — see Maintenance plans",
     ],
     primaryCta: { label: "Get a web app quote", href: "/contact" },
-    relatedServiceSlugs: ["ui-ux-design", "maintenance"],
+    relatedServiceSlugs: ["ui-ux-design", "maintenance-support"],
     faqs: [
       {
         question: "What's the difference between a website and a web application?",
@@ -292,7 +292,7 @@ export const services: ReadonlyArray<Service> = [
       "Ongoing design support — folds into a retainer if needed",
     ],
     primaryCta: { label: "Get a design quote", href: "/contact" },
-    relatedServiceSlugs: ["web-development", "web-applications"],
+    relatedServiceSlugs: ["web-development", "web-app-development"],
     faqs: [
       {
         question: "What's the difference between UX and UI design?",
@@ -358,7 +358,7 @@ export const services: ReadonlyArray<Service> = [
       "Reputation management or third-party review platforms",
     ],
     primaryCta: { label: "Get an SEO quote", href: "/contact" },
-    relatedServiceSlugs: ["web-development", "crm"],
+    relatedServiceSlugs: ["web-development", "crm-automation"],
     faqs: [
       {
         question: "How long does SEO take to show results?",
@@ -398,7 +398,7 @@ export const services: ReadonlyArray<Service> = [
     ],
   },
   {
-    slug: "mobile-apps",
+    slug: "mobile-app-development",
     name: "Mobile Apps",
     summary: "Native and cross-platform apps that ship to the App Store.",
     heroSubhead:
@@ -424,7 +424,7 @@ export const services: ReadonlyArray<Service> = [
       "Long-tail feature work beyond MVP — folds into a retainer",
     ],
     primaryCta: { label: "Get a mobile app quote", href: "/contact" },
-    relatedServiceSlugs: ["web-applications", "ui-ux-design"],
+    relatedServiceSlugs: ["web-app-development", "ui-ux-design"],
     faqs: [
       {
         question: "Should I build a native app or cross-platform (React Native / Flutter)?",
@@ -464,7 +464,7 @@ export const services: ReadonlyArray<Service> = [
     ],
   },
   {
-    slug: "crm",
+    slug: "crm-automation",
     name: "CRM",
     summary: "GoHighLevel, HubSpot, and custom CRM implementation, automation, and migration.",
     heroSubhead:
@@ -556,7 +556,7 @@ export const services: ReadonlyArray<Service> = [
       "Custom-model training from scratch — we use frontier models with retrieval and tools",
     ],
     primaryCta: { label: "Get an AI integration quote", href: "/contact" },
-    relatedServiceSlugs: ["crm", "web-applications"],
+    relatedServiceSlugs: ["crm-automation", "web-app-development"],
     faqs: [
       {
         question: "Is AI actually reliable enough to answer my phone or talk to my customers?",
@@ -596,7 +596,7 @@ export const services: ReadonlyArray<Service> = [
     ],
   },
   {
-    slug: "maintenance",
+    slug: "maintenance-support",
     name: "Maintenance",
     summary: "Ongoing site upkeep, monitoring, and incremental improvements.",
     heroSubhead:

@@ -100,10 +100,13 @@ and is kept.** What was missing is the promotion trigger, so it is defined here:
 
 ---
 
-## 2. ⚠️ Slug alignment must be resolved BEFORE the keyword file is seeded
+## 2. ✅ Slug alignment — RESOLVED 2026-07-28
 
-The code and doc 04 § 3 currently disagree on 5 of the 9 service slugs. The inherited
-(Naxdor) slugs are shorter; doc 04's are keyword-aligned.
+**Doc 04 § 3's slugs were adopted. All five renames are done**, along with the keyword seed
+that depended on them. This section is kept as the record of why.
+
+The code and doc 04 § 3 disagreed on 5 of the 9 service slugs. The inherited (Naxdor) slugs
+were shorter; doc 04's are keyword-aligned.
 
 | Code today (`content/services/*.mdx`) | Doc 04 § 3 target        | Verdict       |
 | ------------------------------------- | ------------------------ | ------------- |
@@ -127,16 +130,21 @@ The code and doc 04 § 3 currently disagree on 5 of the 9 service slugs. The inh
    keyword file references them yet.
    **Cost of doing it after launch: 5 more permanent redirects, forever.**
 
-> 🚩 **This is why `data/keywords.json` has NOT been reseeded in this pass.** Every entry
-> carries a `primaryUrl`, and 300+ of them would have to be rewritten the moment the slugs
-> change. Seeding first would be building on sand. The rename is the first implementation
-> step; the keyword seed follows immediately after.
+Files touched: `data/services.ts` (`slug` + `relatedServiceSlugs`), `data/industries.ts`
+(`relatedServiceSlugs`), `data/blog.ts` (`anchorServiceSlug`), `content/services/*.mdx`
+(5 filenames + frontmatter slugs), `components/layout/_nav-data.ts`,
+`scripts/check-keywords.ts` (`SERVICE_SLUGS`), `e2e/a11y.spec.ts`, `app/sitemap.ts`, and the
+industry/blog MDX bodies that link to service pages.
 
-Files affected by the rename: `data/services.ts`, `content/services/*.mdx` (5 filenames +
-frontmatter slugs), `components/layout/_nav-data.ts`, `scripts/check-keywords.ts`
-(`SERVICE_SLUGS`), `e2e/a11y.spec.ts`, `app/sitemap.ts`, `.lighthouserc.cjs`, and
-`lib/redirects.ts` `KNOWN_ROUTES` (only `/services/seo` is currently referenced, so no
-redirect target breaks).
+> **Two traps worth recording, because a blind find-and-replace would have hit both:**
+>
+> - `data/blog.ts` has a **topic** `slug: "crm"` next to an `anchorServiceSlug: "crm"`. Only
+>   the second is a service slug. Renaming the topic would have broken `/blog/topic/crm`.
+> - `scripts/check-keywords.ts` has `"maintenance"` in **`CLUSTER_ENUM`** as well as in
+>   `SERVICE_SLUGS`. The cluster name is unrelated to the URL and must not move.
+>
+> Both were renamed by matching on the _field_ (`slug:`, `relatedServiceSlugs:`,
+> `anchorServiceSlug:`, `/services/<x>`) rather than on the bare string.
 
 ---
 
@@ -336,14 +344,57 @@ Difficulty filter stays **KD ≤ 35**. Chasing "web design agency uk" at launch 
 
 ## 9. Implementation order
 
-1. **Lock the service slugs** (§ 2) — before anything references them.
-2. **Seed `data/keywords.json`** against the locked slugs; swap `check-keywords.ts`'s
-   `CITY_STATE_RE` for a membership check against `LOCATION_SLUGS`. _(Both in one commit —
-   the regex rejects `manchester` today, and the file's 30 stale US rows point at pages that
-   no longer exist.)_
-3. **Amend doc 02 § 5** with § 6 above.
-4. **Add the regulatory entities** to `knowsAbout` (§ 5).
-5. Phase 1 content, then Silo 4 first in Phase 3 (doc 06 already orders this correctly).
+1. ✅ **Lock the service slugs** (§ 2).
+2. ✅ **Seed `data/keywords.json`** — 332 UK keywords against the locked slugs.
+3. ✅ **Amend doc 02 § 5** with § 6 above.
+4. ✅ **Add the regulatory entities** to `knowsAbout` (§ 5).
+5. ⬜ **Pull real MSV/KD** — the gate on using this file to sequence work. See below.
+6. ⬜ Phase 1 content, then Silo 4 first in Phase 3 (doc 06 already orders this correctly).
+
+### ⚠️ `msv` and `kd` are `null` throughout — and that is deliberate
+
+All 332 rows carry `msv: null`, `kd: null`, and `meta.msvKdSource` is `null`.
+
+No Ahrefs/Semrush pull has been run. **Inventing plausible-looking search volumes would
+fabricate precisely the numbers that drive prioritisation** — a keyword file with made-up MSV
+is worse than one with none, because it looks authoritative and silently misallocates months
+of content effort. Same rule as "no invented testimonials", applied to data.
+
+The file is a **structurally validated targeting map, not a prioritised backlog.** Before it
+sequences any work: export UK-locale volume and difficulty, populate both fields, set
+`msvKdSource`, then apply the KD ≤ 35 filter (docs/02 § 5).
+
+### What the file contains
+
+| Cluster           | Count | Intent                   | Count |
+| ----------------- | ----- | ------------------------ | ----- |
+| web-development   | 115   | transactional            | 193   |
+| seo               | 42    | commercial-investigation | 75    |
+| gohighlevel       | 32    | informational-bottom     | 54    |
+| clinic-compliance | 22    | informational-top        | 5     |
+| ecommerce         | 16    | navigational             | 5     |
+| web-app           | 15    |                          |       |
+| ai-automation     | 15    |                          |       |
+| uk-compliance     | 15    |                          |       |
+| ui-ux             | 13    |                          |       |
+| mobile            | 11    |                          |       |
+| maintenance       | 10    |                          |       |
+| ai-voice-agents   | 9     |                          |       |
+| crm-migrations    | 7     |                          |       |
+| hubspot           | 6     |                          |       |
+| ai-chatbots       | 4     |                          |       |
+
+Two clusters are WebAsk's own with no Naxdor equivalent: **`clinic-compliance`** (22) and
+**`uk-compliance`** (15). Those 37 rows are the ground nobody else is contesting.
+
+`check-keywords.ts` changed in three ways beyond the slug list:
+
+- Location slugs are validated by **membership** against `LOCATION_SLUGS`, not by the US
+  `[city]-[st]` shape. The shape check would have gone on passing `/locations/austin-tx`
+  indefinitely after that page ceased to exist — it only ever checked the pattern.
+- `VERTICAL_ENUM` drops Naxdor's `real-estate` and `home-services`. They are not WebAsk
+  verticals, and leaving them invites drift into markets we don't serve.
+- `/blog/topic/<topic>` is now a recognised URL shape, because the compliance hub is one.
 
 ---
 

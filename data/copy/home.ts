@@ -96,8 +96,8 @@ export const home: HomeContent = {
         "Every minute a lead waits is a percentage of conversion. Most SMBs run two tools — a website that captures leads and a CRM that ignores them — held together by Zapier and hope.",
       solution:
         "We implement and automate GoHighLevel and HubSpot end-to-end. Lead capture, auto-replies, SMS nurture, calendar booking, and reporting — wired so prospects book themselves while you sleep.",
-      // Until /services/crm ships (Phase 2), this points at /pricing where CRM
-      // is listed with its starting price. Repoint to /services/crm then.
+      // Until /services/crm-automation ships (Phase 2), this points at /pricing where CRM
+      // is listed with its starting price. Repoint to /services/crm-automation then.
       cta: { label: "See CRM automation", href: "/pricing" },
     },
     {

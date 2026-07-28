@@ -40,12 +40,12 @@ export const SERVICE_NAV: NavSection = {
     },
     {
       label: "E-Commerce",
-      href: "/services/e-commerce",
+      href: "/services/ecommerce-development",
       description: "Storefronts that convert — Shopify, custom, or headless.",
     },
     {
       label: "Web Applications",
-      href: "/services/web-applications",
+      href: "/services/web-app-development",
       description: "Internal tools, dashboards, and customer portals.",
     },
     {
@@ -60,12 +60,12 @@ export const SERVICE_NAV: NavSection = {
     },
     {
       label: "Mobile Apps",
-      href: "/services/mobile-apps",
+      href: "/services/mobile-app-development",
       description: "Native and cross-platform apps that ship to the App Store.",
     },
     {
       label: "CRM",
-      href: "/services/crm",
+      href: "/services/crm-automation",
       description: "GoHighLevel, HubSpot, and custom CRM implementation and migration.",
     },
     {
@@ -75,7 +75,7 @@ export const SERVICE_NAV: NavSection = {
     },
     {
       label: "Maintenance",
-      href: "/services/maintenance",
+      href: "/services/maintenance-support",
       description: "Ongoing site upkeep, monitoring, and incremental improvements.",
     },
   ],
@@ -174,14 +174,14 @@ export const BUILT_ROUTES: ReadonlySet<string> = new Set([
   "/process",
   "/free-audit",
   "/services/web-development",
-  "/services/e-commerce",
-  "/services/web-applications",
+  "/services/ecommerce-development",
+  "/services/web-app-development",
   "/services/ui-ux-design",
   "/services/seo",
-  "/services/mobile-apps",
-  "/services/crm",
+  "/services/mobile-app-development",
+  "/services/crm-automation",
   "/services/ai-integration",
-  "/services/maintenance",
+  "/services/maintenance-support",
   "/industries",
   "/industries/aesthetic-clinics",
   "/industries/dental-practices",

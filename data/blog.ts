@@ -50,7 +50,7 @@ export const blogTopics: ReadonlyArray<BlogTopic> = [
     label: "CRM & Automation",
     description:
       "GoHighLevel, HubSpot, and the automation that keeps a pipeline full without adding headcount.",
-    anchorServiceSlug: "crm",
+    anchorServiceSlug: "crm-automation",
   },
   {
     slug: "web-development",

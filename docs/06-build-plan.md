@@ -86,7 +86,15 @@ Nothing public yet.
 - [x] **Full 301 map** (pulled forward from Phase 1): `lib/redirects.ts`, 410 route handlers,
       `pnpm check:redirects`, `e2e/redirects.spec.ts`. ⚠️ Doc 04's "Rule 0" would have taken
       the homepage down — see doc 04 § 5
-- [ ] `data/keywords.json` seeded from doc 02 § 5
+- [x] `data/keywords.json` seeded from doc 02 § 5 — **332 UK keywords**, including two
+      clusters with no Naxdor equivalent (`clinic-compliance` 22, `uk-compliance` 15).
+      ⚠️ `msv`/`kd` are **null** throughout: no Ahrefs/Semrush pull has been run, and invented
+      volumes would fabricate the numbers that drive prioritisation. Structurally validated
+      targeting map, **not** a prioritised backlog — see doc 08 § 9
+- [x] **Service slugs aligned to doc 04 § 3** — `e-commerce` → `ecommerce-development`,
+      `web-applications` → `web-app-development`, `mobile-apps` → `mobile-app-development`,
+      `crm` → `crm-automation`, `maintenance` → `maintenance-support`. Done before anything
+      referenced them; after launch each would have cost a permanent redirect
 - [ ] **CRM keyword targeting.** D6 is decided (GoHighLevel-first), but pull UK-locale
       volume + difficulty for `gohighlevel agency uk` / `ghl expert uk` /
       `gohighlevel setup` vs. `hubspot agency uk` / `hubspot implementation` anyway — the

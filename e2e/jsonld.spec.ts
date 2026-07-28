@@ -106,7 +106,7 @@ const ROUTES: ReadonlyArray<Route> = [
   // are NOT remapped to the UK slugs — a 404 emits the sitewide graph but no
   // WebPage frame, so this spec would fail on the frame count and the canonical
   // check rather than validating anything. Phase 2 restores both as
-  // /locations/manchester and /services/crm/manchester, which is also when the
+  // /locations/manchester and /services/crm-automation/manchester, which is also when the
   // areaServed City/AdministrativeArea shapes first get asserted.
   {
     // Blog index — CollectionPage frame (a listing, not a single content page).
