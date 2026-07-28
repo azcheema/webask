@@ -56,10 +56,23 @@ unreliable on Windows, trust CI only.
 | Vercel project · Resend domain + SPF/DKIM/DMARC · GSC + Bing | Founder    | Cutover                                                                                                                                                                                                       |
 | Real MSV/KD from Ahrefs/Semrush                              | Founder    | Using `data/keywords.json` to **sequence** work. It is a validated targeting map, not a prioritised backlog — volumes are `null` because inventing them would fabricate the numbers that drive prioritisation |
 
-⚠️ **Still live on the old WordPress site:** the fabricated team (8 people incl.
-"Alicia Keys") on `/about/` and two identical fake testimonials on `/portfolio/`.
-DMCC Act 2024 exposure, enforceable by the CMA. Deleting them is a 20-minute
-WordPress job and does **not** need the migration.
+✅ **The old WordPress site is being deleted entirely** (founder decision,
+2026-07-28). That closes the DMCC Act 2024 exposure from the fabricated team and
+the two identical fake testimonials — no code action needed, and do not raise it
+again as an outstanding task.
+
+🚩 **But the ORDER matters.** Deploy to Vercel and switch DNS **before** the
+WordPress install comes down. All 13 legacy URLs are indexed today, and the 301
+map only starts working once `webask.co.uk` resolves to this app. WordPress first
+means the domain serves nothing in between and every indexed URL dies into a 404
+until launch. Also: cancelling hosting must not take the domain registration or
+nameserver control with it.
+
+**The redirect map is NOT made redundant by the deletion.** It is what captures
+those indexed URLs when the new site goes live. `lib/redirects.ts` stays.
+The pre-deletion crawl (2026-07-28) is recorded in
+[`../04-information-architecture.md`](../04-information-architecture.md) § 5 —
+that is now the only surviving record of what the old site served.
 
 ## Traps — do not reintroduce
 
