@@ -10,13 +10,113 @@
 
 ## Feature Name
 
-`feature/uk-service-pages` — the nine service-page bodies rewritten for the UK
-(Phase 2 scope, pulled forward). Phase 0 remains code-side complete behind it.
+**`feature/uk-blog-and-faq-order`** — the four inherited blog posts rewritten for
+the UK, the `med-spa` draft deleted, and doc 08 § 7's pricing-first FAQ rule applied
+across all nine services. Phase 3 content pulled forward; Phase 2 rule enforced.
 
 ## Status
 
-**Complete, merged to `main`, pushed. CI and Lighthouse both green on `adaf5ce` —
-the first green `main` of the day.**
+🟡 **Working tree, uncommitted. Nothing pushed — commit not yet asked for.**
+All eight local gates green; e2e **156 passed, 3 skipped**. Never claim local
+Lighthouse green (unreliable on Windows) — trust CI.
+
+```
+typecheck · lint · format:check · build · check:contrast · check:keywords
+check:uniqueness · check:redirects · check:blog-uniqueness      156 e2e passing
+```
+
+### What this feature did
+
+**1. The four published posts were the service-page defect again — and worse,
+because they were `draft: false`.** `ai-voice-agents-roi-service-businesses`,
+`custom-website-vs-wordpress-2026`, `local-seo-checklist-2026` and
+`what-is-gohighlevel-2026-buyers-guide` each sat **8–44 diff lines** from its live
+`naxdor.com` twin across 800–1,300 words — a currency symbol, a city name, a
+`/services/crm` → `/services/crm-automation` link. At cutover they would have
+published as **same-slug near-duplicates of a live site**.
+
+Now **0.0–0.1%** 5-gram against those twins, 0.2% cross-page. Each carries a UK
+argument that cannot exist on the US original:
+
+| Post           | UK wedge                                                                                  |
+| -------------- | ----------------------------------------------------------------------------------------- |
+| `local-seo`    | DMCC review law (6 Apr 2025) as a **legal** checklist step; UK citations; GBP disclosure  |
+| `wordpress`    | The **real crawl of our own** 2020-era `webask.co.uk`; UK cost bands; migration mechanics |
+| `voice-agents` | Compliance as a **cost line in the ROI**, not a footnote; inbound-first follows from it   |
+| `gohighlevel`  | USD billing → FX exposure for a UK buyer; PECR; the refusal to print an adoption figure   |
+
+**2. `med-spa-marketing-playbook-2026` deleted** (founder decision, 2026-07-28).
+`draft: true`, but still a same-slug twin of a live post, and "med spa" is not what
+UK clinics call themselves — no UK rewrite could keep the slug, so it was a
+replacement, not an edit. Phase 3 Cluster A owns the UK version; doc 08 § 7 has the
+question list. `/blog/topic/industry` self-hides while empty (`noindex`).
+
+**3. FAQ ordering — the handoff said 1 of 9 led with pricing. It was 0 of 9.**
+Seven were reordered (transform round-tripped; zero-byte delta). `seo` and
+`ecommerce-development` had **no pricing FAQ at all** and needed one written from
+doc 02 § 7. All three industry pages already complied — the rule was applied when
+they were written and never back-fitted to the inherited service catalogue.
+
+**4. New gate: `pnpm check:blog-uniqueness`** (`scripts/check-blog-uniqueness.ts`),
+wired into `ci.yml`. Cross-site fail ≥ 5% / warn ≥ 2%; cross-page mirrors the
+inherited 85/70. **The fork source is absent on CI**, so the cross-site half is a
+local check and the script soft-skips rather than failing — read the script header
+before assuming CI covers it.
+
+### Method — and why the cheap check would have shipped four defective posts
+
+Same as the service pages: write → two adversarial lenses per post
+(fabricated-proof, UK-correctness) → fix. **51 findings across four posts, one
+blocker.** Every one survived a Jaccard score of ~0.1% and a clean British-English
+grep. The instructive ones:
+
+- 🔴 **blocker** — "The areas WebAsk covers sit on the [locations page](/locations)"
+  advertised an inventory that does not exist: `authoredLocations` is empty until
+  the Phase 2 hubs are written.
+- **"enforced in CI"** on LCP ≤ 2.0s / INP ≤ 200ms / CLS ≤ 0.05 was **false**.
+  `.lighthouserc.cjs` sets LCP to `warn` (the inherited framework-floor calibration
+  in CLAUDE.md) and INP cannot be measured in a lab at all. The replacement sentence
+  states exactly which of the three fail a build and why the others cannot.
+- **A hedge in the source silently hardened into a fact.** doc 04 § 1 says the dead
+  footer links "**appear** not to resolve"; the draft asserted "Neither resolved to a
+  page." A first-pass human check (mine) verified the URL against doc 04 and
+  **passed it** — the overclaim is in the modality, not the fact. Now: "Neither
+  target appears anywhere in the sitemap."
+- **`lastmod` ≠ publication date.** "published August 2020" was drawn from a sitemap
+  `lastmod` of `2020-08-14`; WordPress rewrites that value on any touch.
+- **A statistic band collapsed to its unstated midpoint.** A three-year cost was
+  computed at 17.5% while the source (doc 08 § 7) gives **15–20%**, with the band
+  printed in the StatGrid directly above.
+- **Docs 02 and 08 disagree** on the UK freelance band (£800–£3,000 vs £1,500–£3,000)
+  and the draft silently took the lower. It now cites both.
+- **PECR "£17.5m or 4% of global turnover"** had lost "whichever is higher" — the
+  same qualifier-drop the service-page pass caught on DMCC.
+
+⚠️ **The lesson is narrower than "verify".** Every one of these is a _modality_ or
+_provenance_ error, not a factual one: a hedge dropped, a band collapsed to a point,
+a `lastmod` read as a publication date, a warn-level budget described as enforced.
+Grep cannot see any of them, and neither can a reviewer who checks only whether the
+underlying fact exists in `docs/`. The question that catches them is **"does the
+source say it this strongly?"**
+
+### Files touched
+
+```
+content/blog/*.mdx                  4 rewritten, 1 deleted (med-spa)
+data/services.ts                    FAQ reorder ×7 + 2 pricing FAQs written
+scripts/check-blog-uniqueness.ts    new gate
+package.json / .github/workflows/ci.yml   gate registered + wired
+CLAUDE.md · docs/06-build-plan.md · docs/context/current-feature.md
+```
+
+`d:\naxdor` untouched — read-only, and only ever read for comparison.
+
+---
+
+# Previous feature — `feature/uk-service-pages` (merged)
+
+> Kept because its traps and its CI post-mortem are still live knowledge.
+> **Merged to `main` and pushed; CI + Lighthouse green on `adaf5ce`.**
 
 ```
 adaf5ce  fix(a11y): give the footer company-information link a WCAG 2.2 tap target
@@ -25,9 +125,7 @@ c1d7fec  docs: record the commit state of the UK service-page rewrite
 13c97f5  feat(content): rewrite the nine service pages for the UK market
 ```
 
-`d:\naxdor` untouched at `e0e5885`.
-
-### The CI failure that turned out to predate this work
+### The CI failure that turned out to predate that work
 
 `main` was **already red** before the rewrite (verified on `e15147c`): Lighthouse
 asserts `accessibility >= 1.0` and every audited URL scored **0.96**. Nobody could
@@ -50,7 +148,7 @@ Also fixed while there: `lighthouse.yml` was missing `NEXT_PUBLIC_GA_ID`, which
 time, so the two Lighthouse workflows were auditing **different pages** against the
 same commit.
 
-### What this feature did
+### What that feature did
 
 The nine `content/services/*.mdx` bodies were forked verbatim from Naxdor and had
 only had a British-spelling pass. Measured, every one sat within **1–4 words** of
@@ -118,15 +216,24 @@ Two factual errors were also caught, both on the compliance claim itself: `seo` 
 "full campaign" one; `mobile` quoted the DMCC penalty without "whichever is higher"
 (which inverts it) and added "prize draw" to a statutory list while dropping "cash".
 
+---
+
+# Project-wide — applies to both features and everything after
+
 ## Gate status — all green
 
 ```
 typecheck · lint · build · format:check · check:contrast · check:keywords
-check:uniqueness · check:redirects        149 e2e passing (0 failed, 3 skipped)
+check:uniqueness · check:redirects · check:blog-uniqueness
+                                          156 e2e passing (0 failed, 3 skipped)
 ```
 
 Run them with `corepack pnpm <script>`. Never claim local Lighthouse green —
 unreliable on Windows, trust CI only.
+
+⚠️ **Order matters after a content change: `format` _then_ `build`.** Prettier can
+escape a character inside an MDX expression and break a build that passed before it
+ran — that is trap 5 below, and it surfaces one commit later if you build first.
 
 ⚠️ **`e2e/smoke.spec.ts` was decoupled from marketing copy.** It asserted the H2
 "Why most small business websites are quietly bleeding leads" as its proof the MDX
@@ -167,9 +274,14 @@ on a service page, and `heading-order` twice (`BlogCard` h3 under h1;
   (`clinic-compliance` 22, `uk-compliance` 15). **`msv`/`kd` are null** — see below.
 - **Pages written for the UK.** Home · `/services` (was missing entirely) ·
   `/about` · `/contact` · `/pricing` · `/process` · `/free-audit` ·
-  `/legal/company-information` · all three `/industries/*` · **all nine
-  `/services/*` bodies** (this feature).
+  `/legal/company-information` · all three `/industries/*` · all nine
+  `/services/*` **MDX bodies** (⚠️ **not** the `data/services.ts` copy around them —
+  see Next § 1) · **all four blog posts**.
 - **GBP pricing** from the docs/02 § 7 research anchors, with a hedged VAT note.
+- **Blog.** 4 posts, all `draft: false`, all UK-rewritten. `med-spa` deleted, so the
+  `industry` topic cluster is empty and its archive `noindex`s itself until Phase 3
+  Cluster A fills it.
+- **FAQ ordering.** Pricing-first on all 9 services and all 3 industries (doc 08 § 7).
 
 ## Open questions / blockers
 
@@ -233,25 +345,63 @@ that is now the only surviving record of what the old site served.
     autoresponder subject line, and the dev gallery. Grep `Naxdor` across
     `app/`, `components/`, `data/` before cutover and check each hit is either the
     deliberate group disclosure or a code comment.
+13. 🆕 **Measure the whole _rendered page_, not the MDX file.** A page is its MDX body
+    **plus** whatever `data/*.ts` renders around it. The service-page rewrite scored
+    0.0–0.1% and was reported as done while 62% of the catalogue prose on the very
+    same URLs stayed byte-identical to the fork source. A per-file similarity number
+    is only as honest as its denominator.
+14. 🆕 **The residual defect is _modality_, not fact — and grep cannot see it.**
+    All 51 blog findings passed a 0.1% similarity score and a clean British-English
+    sweep. What they were: a source hedge ("appear not to resolve") hardened into an
+    assertion; a 15–20% band silently collapsed to its 17.5% midpoint; a sitemap
+    `lastmod` read as a publication date; a `warn`-level Lighthouse budget described
+    as "enforced in CI"; two docs disagreeing on a band and the draft quietly taking
+    the lower. Verifying that the underlying fact exists in `docs/` **passes all of
+    them**. The question that catches them is **"does the source say it this
+    strongly?"** — ask it of every hedge, band, date and enforcement claim.
 
 ## Next
 
-Two candidates, and the first is the same class of problem this feature just fixed:
+**1. 🆕 The service pages are only half rewritten — `data/services.ts` is the other
+half.** Found while sweeping for this same defect class elsewhere. The service-page
+feature measured only the **MDX bodies** (0.0–0.1%) and never looked at the
+catalogue rendering around them. Measured against the fork source:
 
-**1. The four inherited blog posts are same-slug near-duplicates of `naxdor.com`,
-and they are `draft: false`.** `ai-voice-agents-roi-service-businesses`,
-`custom-website-vs-wordpress-2026`, `local-seo-checklist-2026` and
-`what-is-gohighlevel-2026-buyers-guide` each have a twin in
-`d:\naxdor\content\blog\`. They will publish as duplicates at cutover. Cheaper to
-fix now than once the URLs are indexed. `med-spa-marketing-playbook-2026.mdx` is
-`draft: true` so it cannot publish, but it carries 12 POM/"med spa" hits — rewrite
-it for the UK or delete it rather than leave it sitting there.
+```
+4,200 of 6,812 words of catalogue prose (62%) are BYTE-IDENTICAL to naxdor.com
+worst: web-app-development 89% · maintenance-support 81% · ai-integration 76%
+       crm-automation 71% · web-development 62% · mobile-app 62%
+```
 
-**2. FAQ ordering.** Doc 08 § 7 states the first FAQ on a service/industry/location
-page is **always** the pricing question. In `data/services.ts` only 1 of 9 leads
-with pricing. Catalogue change, not MDX.
+This is not config. Those strings render as the **visible hero subhead**
+(`heroSubhead`), the who-it's-for line, `includes` / `notIncluded` and the FAQ
+accordion, and they feed `Service` **and `FAQPage` JSON-LD**
+(`app/(marketing)/services/[service]/page.tsx:101–137`). Each service page is
+therefore ~2,060 rewritten words wrapped in ~470 identical ones — roughly **17% of
+the rendered page**. Not a crisis; an 83%-unique page is not a duplicate page. But
+it is below the standard doc 05 § 2 sets, and it is the visible, above-the-fold copy.
 
-Then Phase 1 cutover, which is gated on D2/D3/D4 and the external setup above.
+⚠️ **Check the verdict before assuming it is a defect.** `data/copy/process.ts` sits
+at 75% **by decision** — docs/01 marks the service-delivery playbook "copy verbatim",
+and commit `6306fc1` says so explicitly. Nothing in `docs/` grants the service
+catalogue that same licence, which is what makes it a gap rather than a choice.
+`data/copy/pricing.ts` (73%) needs the same question asked of it.
+
+Not defects, checked: `data/types.ts` (100% — type definitions, correct),
+`data/portfolio.ts` (94% — all four entries are `TODO(content-copy)` and
+`PortfolioStrip` filters on `isReady`, so nothing renders),
+`content/case-studies/example-case-study-template.mdx` (97% — `draft: true`, and the
+index `noindex`s while empty), `emails/*` (transactional, never indexed),
+`data/copy/legal.ts` (85%, **and it still calls the entity "Naxdor … enskild firma"**
+— but privacy/terms/cookies are `draft: true` pending **D3**, so it is gated, not live).
+
+**2. `/locations` + the three hubs (Manchester, Cheshire, Leeds).** Now the largest
+unblocked Phase 2 item, and the blog rewrite added a reason to prioritise it: the
+local-SEO post had to be edited to say WebAsk's own area pages "are not published
+yet", because `authoredLocations` is empty. That sentence is honest today and stale
+the moment the hubs land.
+
+Then Phase 1 cutover, gated on D2/D3/D4 and the external setup above.
 
 🚩 **When D4 lands, grep the MDX for hard-coded prices.** Bodies quote figures as
 prose (`£3,500`, `£750 a month`) and in H2 headings; they do **not** derive from

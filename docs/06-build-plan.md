@@ -200,8 +200,30 @@ internal-linking mesh.
       zone the regulator has **not** resolved, plus Ofcom persistent-misuse, CLI authenticity and
       the 2025 GC6 revision. It also refuses to print a per-minute voice figure, on the grounds
       that an invented number is worse than none
+- [x] **FAQ ordering fixed across all nine services** (2026-07-28). Doc 08 § 7's inherited
+      rule — the first FAQ on any service / industry / location page is **always** the
+      pricing question — held on all three industry pages but on **0 of 9** services. Seven
+      had a pricing FAQ buried at index 1–3 and were reordered; `seo` and
+      `ecommerce-development` had **none at all** and needed one written, from the doc 02 § 7
+      bands. ⚠️ Note doc 02 § 7's rationale column places £750 in the "active local"
+      band (£250–£500) while its own evidence table puts it in "full campaign" (£500–£1,500+).
+      The evidence table is right; both `content/services/seo.mdx` and the new FAQ say
+      "lower half of the full-campaign range"
 - [ ] `/locations` + 3 hubs: **Manchester, Cheshire, Leeds** (doc 02 § 6). Cheshire is the
       aesthetics-money hub — give it the strongest clinic-facing content
+- [ ] 🆕 **Rewrite the service _catalogue_ prose in `data/services.ts`** — found 2026-07-28,
+      and it is the other half of the service-page rewrite. That feature measured only the
+      MDX bodies (0.0–0.1%) and never looked at the catalogue rendering around them.
+      Measured: **4,200 of 6,812 words of catalogue prose (62%) are byte-identical to
+      `naxdor.com`**, worst on `web-app-development` (89%), `maintenance-support` (81%) and
+      `ai-integration` (76%). It is not cosmetic — these strings render as the **visible hero
+      subhead** (`heroSubhead`), the who-it's-for line, `includes`/`notIncluded`, and the FAQ
+      accordion, and they feed `Service` and **`FAQPage` JSON-LD**. Each service page is
+      therefore ~2,060 unique words wrapped in ~470 identical ones — roughly **17% of the
+      rendered page is duplicate**. Not a crisis (the page is not a near-duplicate), but below
+      the standard doc 05 § 2 sets. **Unlike `/process`, no doc records this as deliberate** —
+      docs/01 marks the delivery playbook "copy verbatim", which is why `data/copy/process.ts`
+      sits at 75% by decision; nothing grants the service catalogue the same licence
 - [ ] 3 industry pages, each run through the **copy-review checklist** (doc 03 § B4)
 - [ ] **First programmatic batch: 6–9 pages**, `noindex` first, promoted only against the
       inherited quality gate
@@ -238,9 +260,20 @@ Blog cluster A (compliance) first · case studies when real work exists · FAQ c
 
 ### Tasks
 
+- [x] **The four inherited blog posts rewritten for the UK** (pulled forward, 2026-07-28).
+      They were forked verbatim and shipped `draft: false` — 8–44 diff lines from their
+      live `naxdor.com` twins across 800–1,300 words each, so they would have published as
+      same-slug near-duplicates at cutover. Now **0.0–0.1%** 5-gram against those twins,
+      0.2% cross-page. `pnpm check:blog-uniqueness` is the new gate that holds it
+- [x] ~~`med-spa-marketing-playbook-2026`~~ — **deleted** 2026-07-28 (founder decision).
+      It was `draft: true` but still a same-slug twin of a live `naxdor.com` post, and its
+      slug is US terminology no UK rewrite could keep ("med spa" is not what UK clinics call
+      themselves). Cluster A below owns the UK replacement; doc 08 § 7 has the question list.
+      The `/blog/topic/industry` archive self-hides while empty (`noindex`), so nothing broke
 - [ ] **Cluster A — UK clinic compliance** (doc 02 § 5). Ship this first. It's the
       differentiated content, the lowest-competition long-tail, and the material is already
-      researched in doc 03
+      researched in doc 03. **This cluster now also owns the deleted playbook's ground** —
+      the aesthetic-clinic marketing post, under a UK slug
 - [ ] Cluster B (UK SEO), C (CRM/PECR), D (web dev cost), E (AI/Ofcom) follow
 - [ ] Author bylines, `Person` schema, `dateModified` on every post
 - [ ] Extend `e2e/jsonld.spec.ts` to assert every `Article` has `author` + `dateModified`

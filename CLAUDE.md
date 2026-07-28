@@ -101,6 +101,13 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
   score both miss them entirely. Ask of every sentence: _does this imply a customer we
   don't have?_ Statistics are subject to the same rule — every figure must trace to `docs/`,
   and legal figures must keep their qualifiers ("whichever is higher").
+  **Then ask the second question: _does the source say it this strongly?_** The 51 findings
+  on the four blog posts were almost all **modality** errors, not factual ones, and every one
+  survived a 0.1% similarity score, a clean British-English sweep, and a check that the fact
+  existed in `docs/`: a hedge ("appear not to resolve") hardened into an assertion; a 15–20%
+  band collapsed to its unstated 17.5% midpoint; a sitemap `lastmod` reported as a publication
+  date; a `warn`-level Lighthouse budget described as "enforced in CI"; two docs disagreeing
+  on a price band and the draft quietly taking the lower. Grep cannot see any of these.
 - ❌ **Create a Google Business Profile.** No UK location = no eligible profile. Doing it
   anyway risks permanent loss of local visibility.
 - ❌ **Cross-canonical to `naxdor.com`**, or hreflang-pair the two sites. Self-canonical
@@ -120,7 +127,9 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
 
 `pnpm typecheck` (0 errors) · `pnpm lint` (0 warnings) · `pnpm build` · Playwright smoke ·
 Lighthouse CI (Mobile Perf ≥ 95, A11y = 100, BP = 100, SEO ≥ 95) · programmatic uniqueness
-(warn 70%, fail 85%).
+(warn 70%, fail 85%) · **blog uniqueness** (`check:blog-uniqueness` — cross-site vs. the
+same-slug `naxdor.com` post, fail 5% / warn 2%; cross-page 85/70. The fork source is absent
+on CI, so the **cross-site half is a local check** and soft-skips there).
 
 Budgets: LCP ≤ 2.0s · INP ≤ 200ms · CLS ≤ 0.05 · JS ≤ 170KB gz on home.
 
@@ -163,14 +172,14 @@ white-on-brand). Any translucent-on-brand treatment must be checked with
 
 ## Project state (update on every phase close)
 
-| Phase                                    | Status          | Notes                                                                                                                                                                                                                              |
-| ---------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 0 — Fork & Foundations                   | **In progress** | Fork done. Brand tokens, wordmark, schema, `data/site.ts`, UK locations, keywords and the **full 301 map** all landed; every gate green. Remaining is **external only**: Vercel + Resend + GSC, real MSV/KD, Cheshire verification |
-| 1 — Credible MVP + Cutover               | Not started     | Contains the urgent fake-content removal. The 301 map moved into Phase 0                                                                                                                                                           |
-| 2 — Services / Locations / Industries    | **Part done**   | **All 9 service pages + all 3 industry pages written for the UK.** Remaining: 3 location hubs, first programmatic batch, link mesh, nav/footer, citations                                                                          |
-| 3 — Content Engine + Proof               | Not started     | Compliance cluster ships first                                                                                                                                                                                                     |
-| 4 — Lead Capture + Scale                 | Not started     | Depends on 3                                                                                                                                                                                                                       |
-| 5 — CMS migration · 6 — Client dashboard | Deferred        | Inherited triggers                                                                                                                                                                                                                 |
+| Phase                                    | Status          | Notes                                                                                                                                                                                                                                                                                                                                          |
+| ---------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0 — Fork & Foundations                   | **In progress** | Fork done. Brand tokens, wordmark, schema, `data/site.ts`, UK locations, keywords and the **full 301 map** all landed; every gate green. Remaining is **external only**: Vercel + Resend + GSC, real MSV/KD, Cheshire verification                                                                                                             |
+| 1 — Credible MVP + Cutover               | Not started     | Contains the urgent fake-content removal. The 301 map moved into Phase 0                                                                                                                                                                                                                                                                       |
+| 2 — Services / Locations / Industries    | **Part done**   | 9 service pages + 3 industry pages written for the UK; FAQ ordering now pricing-first on all 9 (doc 08 § 7). ⚠️ **`data/services.ts` catalogue prose is still 62% byte-identical to the fork** — the MDX bodies were rewritten, the copy around them was not. Remaining: 3 location hubs, programmatic batch, link mesh, nav/footer, citations |
+| 3 — Content Engine + Proof               | **Started**     | The 4 inherited blog posts rewritten for the UK (0.0–0.1% vs. their `naxdor.com` twins) and the `med-spa` draft deleted — pulled forward because they shipped `draft: false`. Compliance cluster still ships first                                                                                                                             |
+| 4 — Lead Capture + Scale                 | Not started     | Depends on 3                                                                                                                                                                                                                                                                                                                                   |
+| 5 — CMS migration · 6 — Client dashboard | Deferred        | Inherited triggers                                                                                                                                                                                                                                                                                                                             |
 
 ---
 
