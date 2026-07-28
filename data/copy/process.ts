@@ -63,11 +63,11 @@ export const process: ProcessContent = {
       shortDescription:
         "We sit with you, your team, and your data to understand the real problem — not just the brief. You leave with a scoped plan, a budget, and a date.",
       longDescription:
-        "Discovery is one to two working sessions plus a short async loop. We map your current stack, the user journeys that matter, and the metrics that decide success. We pressure-test the brief — sometimes the right project is smaller than the original ask; sometimes it's bigger. By the end you have a written scope, a phased delivery plan, a fixed-fee proposal (or T&M cap), and a target launch date. If we don't think we're the right partner, we say so on this call.",
+        "Discovery is one to two working sessions plus a short async loop. We map your current stack, the user journeys that matter, and the metrics that decide success. We pressure-test the brief — sometimes the right project is smaller than the original ask; sometimes it's bigger. By the end you have a written scope, a phased delivery plan, a fixed-fee proposal (or a capped day rate), and a target launch date. If we don't think we're the right partner, we say so on this call.",
       artefacts: [
         "Discovery write-up — problems, users, success metrics",
         "Scope document with in/out of scope, assumptions, and dependencies",
-        "Fixed-fee proposal (or T&M cap) with milestones and payment schedule",
+        "Fixed-fee proposal (or a capped day rate) with milestones and payment schedule",
         "Target dates for Design, Build, and Grow phases",
       ],
       clientInputs: [
@@ -89,11 +89,11 @@ export const process: ProcessContent = {
         "Sitemap and IA",
         "Wireframes for every key screen and flow",
         "Visual design in Figma — every screen, mobile and desktop",
-        "Tokenized component system handed off to engineering",
+        "Tokenised component system handed off to engineering",
       ],
       clientInputs: [
         "Working-session attendance (no email-only reviews)",
-        "Clear feedback within 3 business days of each delivery",
+        "Clear feedback within 3 working days of each delivery",
         "Final copy approvals — voice and substance",
       ],
       typicalDuration: "2–4 weeks",
@@ -143,7 +143,7 @@ export const process: ProcessContent = {
   ],
   principles: {
     eyebrow: "How we work",
-    h2: "Six principles we don't compromise on.",
+    h2: "Seven principles we don't compromise on.",
     items: [
       {
         title: "Written scope before any code.",
@@ -155,7 +155,7 @@ export const process: ProcessContent = {
       },
       {
         title: "Designs reviewed in real time.",
-        body: "Email feedback loses 80% of the nuance. Every design review is a working session — screen-shared, decisions made on the call, captured in writing afterward.",
+        body: "Email feedback loses 80% of the nuance. Every design review is a working session — screen-shared, decisions made on the call, captured in writing afterwards.",
       },
       {
         title: "Honest trade-offs over silent assumptions.",
@@ -163,11 +163,18 @@ export const process: ProcessContent = {
       },
       {
         title: "Your data, your accounts.",
-        body: "Domains, hosting, analytics, CRM, repos — all live in accounts you own from day one. WebAsk is a collaborator, not a hostage-taker.",
+        body: "Domains, hosting, analytics, CRM, repositories — all live in accounts you own from day one. We are a collaborator, not a hostage-taker. If you ever leave, you take everything with you because it was never ours to hold.",
       },
       {
-        title: "Senior engineers do the work.",
-        body: "The people who scope the project are the same people who build it. No offshore handoff, no junior backfill, no project manager between you and the work.",
+        // Was "senior engineers do the work" with a ten-plus-years claim. There
+        // is one person here, and a headcount claim is exactly what a prospect
+        // checks. The true version is a stronger promise anyway.
+        title: "The person who scopes it, builds it.",
+        body: "There is no account-manager layer and no offshore handoff, because there is nobody to hand off to. Whoever you speak to in Discover is who commits the code, configures your CRM and answers when something breaks at eight on a Friday.",
+      },
+      {
+        title: "Regulated sectors get a compliance pass.",
+        body: "If you work in aesthetics, dentistry or anything else where what you may say is governed, the rules shape the build rather than getting bolted on at the end. That means the site structure, the navigation and the copy are checked against the relevant code before launch — and where something sits genuinely close to the line, it goes to the regulator's own free advice service rather than to a guess.",
       },
     ],
   },

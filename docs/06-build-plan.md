@@ -81,8 +81,10 @@ Nothing public yet.
 - [x] `data/locations.ts` reshaped for the UK (Manchester · Cheshire · Leeds; county not
       state, `Europe/London`). Hub copy deferred to Phase 2 via an optional `copy` block, so
       an unauthored hub is unrenderable by construction
-- [ ] British English sweep of every inherited string constant — site chrome, `data/site.ts`
-      and `lib/seo.ts` done; page copy waits for the Phase 1/2 rewrite
+- [x] British English sweep of every inherited string constant — 24 files including the
+      nine service MDX bodies, both catalogues and the two transactional email templates.
+      `color`/`center`/`gray`/`program` deliberately excluded (they collide with CSS class
+      names, design tokens and code identifiers)
 - [x] **Full 301 map** (pulled forward from Phase 1): `lib/redirects.ts`, 410 route handlers,
       `pnpm check:redirects`, `e2e/redirects.spec.ts`. ⚠️ Doc 04's "Rule 0" would have taken
       the homepage down — see doc 04 § 5

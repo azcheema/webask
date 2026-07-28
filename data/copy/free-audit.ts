@@ -43,36 +43,44 @@ export const freeAudit: FreeAuditContent = {
   meta: {
     title: "Free SEO + Core Web Vitals Audit",
     description:
-      "A free 30-minute audit of your small business website — SEO foundations, Core Web Vitals, and five prioritised fixes. Loom walkthrough plus a one-page PDF. No sales pitch.",
+      "A free audit of your UK business website — SEO foundations, Core Web Vitals, and five prioritised fixes. A recorded walkthrough plus a one-page summary. No sales pitch.",
   },
   hero: {
-    h1: "A free 30-minute audit of your small business website.",
+    h1: "A free audit of your business website.",
     subhead:
-      "Five prioritised findings on SEO, Core Web Vitals, and conversion — delivered as a Loom walkthrough plus a one-page PDF. No sales deck attached.",
+      "Five prioritised findings on search, speed and conversion — delivered as a recorded walkthrough plus a one-page summary. No sales deck attached.",
     primaryCta: { label: "Request your free audit", href: "/contact?topic=free-audit" },
-    capacityNote: "Currently accepting 10 audits per month.",
+    // Honest scarcity, without a number we cannot stand behind. The constraint
+    // is real (audits are done personally, alongside billable work); inventing a
+    // specific monthly quota to manufacture urgency would be the same class of
+    // unverifiable claim we strip everywhere else.
+    capacityNote: "Audits are done personally, so capacity is limited.",
   },
   whatYouGet: {
     eyebrow: "What you get",
-    h2: "Concrete findings, not a demo of our tooling.",
+    h2: "Concrete findings, not a demonstration of our tooling.",
     items: [
       {
-        title: "A Loom walkthrough of your site",
-        body: "10–15 minutes, screen-recorded, narrated. We walk through the audit findings on your actual pages so you see exactly what's wrong and what to do about it.",
+        title: "A recorded walkthrough of your site",
+        body: "Ten to fifteen minutes, screen-recorded and narrated. We go through the findings on your actual pages, so you see precisely what is wrong and what to do about it — not a generic report with your logo on the cover.",
       },
       {
-        title: "A one-page PDF with five prioritised fixes",
-        body: "Ranked by effort vs impact. Three you can do today, two that need an engineer. Each fix names the file, the page, or the configuration that needs to change.",
+        title: "A one-page summary with five prioritised fixes",
+        body: "Ranked by effort against impact. Three you could do this week, two that need an engineer. Each one names the page, the file or the setting that has to change, so it is actionable whether or not we ever speak again.",
+      },
+      {
+        title: "A compliance flag if your sector needs one",
+        body: "If you run a clinic or practice, we also flag anything on the site that sits awkwardly with the advertising rules for your sector — the ASA and CAP Code, GDC standards, or claim substantiation. Most agencies do not look at this at all, and it is frequently the most valuable thing in the audit.",
       },
       {
         title: "A 30-minute follow-up call (optional)",
-        body: "If you want to talk through the audit live, we'll book a half-hour. No sales pitch — just questions answered. Plenty of audit recipients never book this call. That's fine.",
+        body: "If you would rather talk it through, we will book half an hour. No pitch — just your questions answered. Plenty of people never book it, and that is a perfectly good outcome.",
       },
     ],
   },
   process: {
     eyebrow: "How it works",
-    h2: "Four steps. About three business days end to end.",
+    h2: "Four steps. About three working days end to end.",
     steps: [
       {
         number: 1,
@@ -87,7 +95,7 @@ export const freeAudit: FreeAuditContent = {
       {
         number: 3,
         name: "Deliver",
-        body: "Loom walkthrough plus the one-page PDF lands in your inbox within three business days. Watch in your own time — or schedule the optional follow-up call.",
+        body: "The recorded walkthrough plus the one-page summary lands in your inbox within three working days. Watch in your own time — or schedule the optional follow-up call.",
       },
       {
         number: 4,
@@ -100,8 +108,8 @@ export const freeAudit: FreeAuditContent = {
     eyebrow: "Who this is for",
     h2: "An honest sense of fit, before you fill the form.",
     fit: [
-      "small businesses whose existing site has been live for at least six months",
-      "Local businesses competing in search — clinics, agencies, retailers, service providers",
+      "UK small businesses whose site has been live for at least six months",
+      "Local businesses competing in UK search — clinics, practices, retailers, service providers",
       "Operators ready to invest in SEO if the audit makes the case",
       "Founders who want a second set of eyes before commissioning a rebuild",
     ],
@@ -115,7 +123,7 @@ export const freeAudit: FreeAuditContent = {
     {
       question: "Is the audit really free, or is this a trojan horse for a sales pitch?",
       answer:
-        "Really free. We accept ten audits per month because that's the number our senior engineers can deliver well alongside billable work. The audit itself is the deliverable — the follow-up call is optional and we never bolt a sales pitch onto the Loom walkthrough.",
+        "Really free. Capacity is limited because each audit is done personally alongside billable work, not generated by a tool and rebadged. The audit itself is the deliverable — the follow-up call is optional and we never bolt a sales pitch onto the recorded walkthrough.",
     },
     {
       question: "What does the audit cover, technically?",
@@ -125,12 +133,12 @@ export const freeAudit: FreeAuditContent = {
     {
       question: "How long does the audit take to come back?",
       answer:
-        "Three business days from the time you submit the form. We hold the slot the moment your request lands; you'll get a confirmation email naming the engineer running the audit and the expected delivery window.",
+        "Three working days from the time you submit the form. We hold the slot the moment your request lands; you'll get a confirmation email with the expected delivery window.",
     },
     {
-      question: "Can I get a written report instead of the Loom video?",
+      question: "Can I get a written report instead of the video?",
       answer:
-        "The Loom video is the deliverable — narrated on your actual site, with annotations on what to fix. The one-page PDF accompanies it as a written summary. We don't produce 30-page reports; they sit in inboxes unread.",
+        "The video is the deliverable — narrated on your actual site, with annotations on what to fix. The one-page summary accompanies it as a written summary. We don't produce 30-page reports; they sit in inboxes unread.",
     },
     {
       question: "What if I'm a fit for ongoing work after the audit?",
@@ -144,9 +152,9 @@ export const freeAudit: FreeAuditContent = {
     },
   ],
   ctaBand: {
-    h2: "Ten slots per month. First come, first audited.",
+    h2: "Limited capacity. First come, first audited.",
     subhead:
-      "Request your free 30-minute audit. We'll confirm within one business day and name the engineer running it.",
+      "Request your free audit. We'll confirm within one working day and tell you when it will land.",
     primaryCta: { label: "Request your free audit", href: "/contact?topic=free-audit" },
   },
 } as const;
