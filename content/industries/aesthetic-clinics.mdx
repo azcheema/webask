@@ -74,8 +74,10 @@ This is the pattern we build, and it is what lets a compliant clinic site still 
 
 ## What we build
 
-- **The website.** Fast, mobile-first, on Next.js. Sub-two-second largest contentful paint,
-  enforced in continuous integration rather than measured once at launch — which matters
+- **The website.** Fast, mobile-first, on Next.js. Layout shift, main-thread blocking and total
+  page weight are hard gates in continuous integration — a commit that regresses one of them
+  fails — while load time is written against a two-second target and judged on field data, since
+  a throttled build server is not the phone your patient is holding. That distinction matters
   disproportionately here, because clinic traffic is mobile and image-heavy.
 - **Booking and CRM automation.** Enquiry to booked, confirmed and reminded appointment without
   your front desk retyping anything. We work extensively in GoHighLevel, and in HubSpot where

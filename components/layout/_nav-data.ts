@@ -106,24 +106,32 @@ export const INDUSTRY_NAV: NavSection = {
 export const LOCATION_NAV: NavSection = {
   label: "Locations",
   href: "/locations",
-  // Listed but NOT in BUILT_ROUTES — these render as non-interactive labels
-  // until Phase 2 authors each hub (see data/locations.ts § PHASE 0). That is
-  // exactly what the isBuiltRoute mechanism below is for.
+  // All three are authored and in BUILT_ROUTES as of Phase 2, so they render as
+  // real links rather than the non-interactive labels the isBuiltRoute
+  // mechanism produced while they were unwritten.
+  //
+  // Descriptions carry each hub's actual argument rather than three variations
+  // on "remote-first, on UK time" — that line was identical on all three and
+  // renders in the mega-menu and the footer, where the repetition is visible at
+  // a glance. Keep them in step with `copy.cardSummary` in data/locations.ts.
   items: [
     {
       label: "Manchester",
       href: "/locations/manchester",
-      description: "Web, CRM, AI and SEO for Greater Manchester — remote-first, on UK time.",
+      description:
+        "The UK's second most competitive major city for local search — and what to target instead of the head term.",
     },
     {
       label: "Cheshire",
       href: "/locations/cheshire",
-      description: "Digital growth across Cheshire — remote-first, on UK time.",
+      description:
+        "A county hub, not a city one: where the county line actually runs, and the clinic corridor that markets under the name.",
     },
     {
       label: "Leeds",
       href: "/locations/leeds",
-      description: "Websites and automation across West Yorkshire — remote-first, on UK time.",
+      description:
+        "West Yorkshire's regulated professions, where the website is a published statement before it is a brochure.",
     },
   ],
 } as const;
@@ -193,8 +201,9 @@ export const BUILT_ROUTES: ReadonlySet<string> = new Set([
   "/industries/dental-practices",
   "/industries/beauty-wellness-clinics",
   "/locations",
-  // The three UK hubs are deliberately absent: no area has authored copy yet, so
-  // /locations/<slug> prerenders nothing. Promote each here when Phase 2 ships it.
+  "/locations/manchester",
+  "/locations/cheshire",
+  "/locations/leeds",
   "/legal/privacy",
   "/legal/terms",
   "/legal/cookies",

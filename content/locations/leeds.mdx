@@ -1,0 +1,134 @@
+---
+slug: leeds
+title: "Web Design Agency for Leeds — Regulated Sectors"
+description: "Web design, SEO and automation for Leeds and West Yorkshire firms in regulated sectors — dentistry, finance, law and healthcare. Remote, on UK time."
+dateModified: "2026-07-29"
+---
+
+{/* Body prose only. Structured fields for this hub — meta, hero, cardSummary and the FAQs that also feed FAQPage JSON-LD — live in data/locations.ts under the leeds entry, alongside the population basis, districts, sector mix and nearby places; the template renders the nine-service grid, the nearby-areas line and the FAQ accordion, so none of that is repeated here. The distinct argument this hub carries, and which the Manchester and Cheshire hubs deliberately do not, is that West Yorkshire's SMB economy skews to regulated professions — dentistry, financial and legal services, healthcare — where the website is not marketing collateral but a published statement that a regulator, a competitor or a complainant can read without telling you. Dentistry belongs to /industries/dental-practices and regulatory decay belongs to /services/maintenance-support: this page states the local hook and hands off, rather than restating either argument. Keep this comment on a single line: a blank line inside an MDX expression terminates it and breaks the build a commit later. */}
+
+## Leeds sells advice, and advice is regulated
+
+The sector mix we hold for this area runs, most prominent first: financial and legal services,
+healthcare and digital health, retail and e-commerce, higher education, manufacturing. The first
+two are regulated professions; the third answers to consumer law.
+
+Scale, stated precisely. West Yorkshire — the metropolitan county Leeds anchors, and the area we
+serve — had about **2,320,200** residents at the **2021 Census**. The Leeds local-authority
+district is a far smaller number on a different basis, which is why the basis has to be named
+before figures get compared. Ours is the county, plus the commuter towns just beyond it.
+
+Within it, Chapel Allerton, Headingley, Horsforth, Roundhay and the city centre are separate
+places to be found in, and a page written to reach all five at once tends to name none of them —
+which is a question about how the site is structured, not about how often the city's name appears
+on it.
+
+For an unregulated business a website is marketing collateral. A line lands badly, you change it,
+nothing follows.
+
+For a dental practice, a law firm, a financial adviser or a healthcare provider, the same page is
+a published statement: of what you charge, what you claim, who you say you are, and which
+qualification is attached to which name. It is dated, publicly addressable, and archived by third
+parties who never asked permission. It is also readable by people who are not customers — a
+regulator, a competitor, a complainant — and none of the three is obliged to tell you it has read
+it. Where the page carries an advertising claim, the reading is not always manual: as at
+**July 2026** the ASA runs AI-powered proactive monitoring that finds non-compliant advertising
+without waiting for a complaint.
+
+None of that makes a good website impossible. It makes it a build with a specification.
+
+## Dentistry, where the scrutiny already has a date
+
+Dentistry is the clearest case here, because the scrutiny is already dated. The Competition and
+Markets Authority opened a market study into the **£8.4bn** UK private dentistry sector in
+**March 2026**. The CMA's remit here is consumer protection and pricing transparency. As at
+**29 July 2026** the study has not reported, and we will not guess at what it will say. What is
+not in question is that a practice's published prices are now read by more than patients.
+
+How a practice site holds up under that, and the other three regulators with an opinion about the
+same pages, is set out on [websites for UK dental practices](/industries/dental-practices).
+
+## Financial and legal services: settle the question before design starts
+
+We are not going to print an FCA or SRA rule number on a marketing page. Regulation quoted from
+memory is worse than regulation not quoted at all, and your compliance officer knows the specifics
+better than any agency does.
+
+What we will say is structural, and it holds across every regulated profession: your promotional
+material sits inside your regulator's rules, your website is the largest piece of promotional
+material you own, and which rules apply has to be settled before the first layout is drawn — not
+at sign-off, when the answer costs a rebuild. So the question to put to any agency, this one
+included, is short: _which rules does my website have to satisfy, and can you name them?_
+Ask for the answer in the written scope rather than in a meeting, because that is the version you
+can hold someone to.
+
+One rule reaches everybody with a testimonials page, whatever the profession. Since **6 April
+2025** the DMCC Act 2024 has made writing, commissioning or publishing fake consumer reviews
+illegal in the UK, along with concealing that a review was incentivised — cash, a discount, a
+freebie, an event invite and a financial interest all count. The CMA can determine a breach and
+fine directly: up to **10% of global annual turnover or £300,000, whichever is higher**, and
+**£150,000** for an individual. It lands on the website first, because that is where reviews are
+displayed.
+
+## A regulatory statement has a shelf life
+
+A page that was correct on launch day does not stay correct. The rule moves underneath it while
+the file sits untouched: nothing breaks, no error reaches a log, and the page quietly stops being
+true — which, for a firm whose offer is that it follows rules, is worse than having said nothing.
+So a regulatory statement that turns on a current position gets a date on the page, as the ones
+above do, and the date is what makes it re-readable rather than merely old. The dentistry study
+above is open now and will not stay open. What the
+re-reading covers, and how often, is on
+[a maintenance and support plan](/services/maintenance-support).
+
+## What is different here, without the boasting
+
+The UK market already has agencies specialising in regulated sectors, and at least one dental
+specialist is based in Leeds. We will not claim to be bigger or better known: WebAsk is new and
+has no published client work to point at. Three things we will be specific about instead.
+
+**The compliance layer.** The rulebook that applies to your profession is read before the
+information architecture is drawn, and that order goes in the scope so you can hold us to it. For
+some professions the rules are structural rather than editorial — they describe a navigation
+hierarchy, not a paragraph — and a rewrite cannot retrofit that to a finished layout. Where copy
+sits close to a line, CAP runs a free Copy Advice service for pre-publication questions. We are
+not solicitors; anything with real regulatory consequence should go past someone who is.
+
+**The engineering floor.** This site is gated in continuous integration on a perfect Lighthouse
+accessibility score (WCAG 2.2 AA, which in the UK reads onto the Equality Act 2010 duty to make
+reasonable adjustments), a perfect best-practices score, a search score of at least 95, cumulative
+layout shift of no more than 0.05, total blocking time, and stylesheet, script and total
+page-weight budgets. Those are hard failures, not warnings, and the configuration is a file in
+the repository, not a claim on a page.
+
+Two budgets are deliberately softer, for two reasons that are not interchangeable. Largest
+contentful paint only warns because a local server under mobile throttling reports roughly 2.5 to
+3.3 seconds against an edge network that does not, so the real figure has to come from field data
+once a site is live. The performance score only warns because a small number of pages sit just
+under the 0.95 target, inside run-to-run variance, where a hard gate would flake rather than
+inform. Interaction to next paint is not audited at all: no lab test can measure it. Which is why
+"Core Web Vitals enforced in CI" is a phrase worth pushing on — of those three metrics, one is
+gated here, one cannot fairly be gated from a lab, and one cannot be measured in a lab at all.
+
+**Remote, and specific about what that costs.** No Leeds office, no West Yorkshire desk, and no
+Google Business Profile: we trade as part of the Naxdor group with no UK premises, so there is no
+eligible profile to create. We work UK hours, and the person who scopes the project builds it.
+For regulated work the useful part is that the constraint we live under is one you might be
+buying advice about: local search here is organic or nothing, no map pin and no Google reviews,
+as [the 2026 local SEO checklist](/blog/local-seo-checklist-2026) sets out. The
+[other areas we cover](/locations) are approached the same way.
+
+## The first question to settle
+
+Start where this page keeps returning to: which rules your site has to satisfy, and who has
+written that down. If you already have a site, the [free audit](/free-audit) is the least
+committing way to find out where it stands — five prioritised findings on search, speed and
+conversion, recorded as a walkthrough with a one-page summary, plus, if you run a clinic or
+practice, a flag on anything sitting awkwardly with the advertising rules for your sector. It
+stops short of an FCA or SRA opinion, for the reason above. The findings are yours whether or not
+you hire us.
+
+For a rebuild, [web development](/services/web-development) starts at **£3,500**,
+[SEO](/services/seo) at **£750 a month** and [CRM automation](/services/crm-automation) at
+**£2,500**, each **+ VAT where applicable**, with every starting price on the
+[pricing page](/pricing). Or [get in touch](/contact) with the question that actually worries you.
