@@ -14,10 +14,16 @@
  * pages hold the strict bar, while `/contact` (which ships the form's JS) gets
  * a higher ceiling so the gate catches regressions without flapping on noise.
  *
- * Two budgets stay `warn`, by design:
- *   - `categories:performance` (≥ 0.95): 4 of 6 pages pass; `/services` (0.94)
- *     and `/contact` (0.90) sit just under, within run-to-run score variance, so
- *     a hard gate would flake. Revisit if/when a further JS cut adds margin.
+ * Two budgets stay `warn`, by design — and for two DIFFERENT reasons, which must
+ * not be merged when either is described in copy:
+ *   - `categories:performance` (≥ 0.95): a minority of audited pages sit just
+ *     under, within run-to-run score variance, so a hard gate would flake.
+ *     Revisit if/when a further JS cut adds margin.
+ *     ⚠️ The original note here read "4 of 6 pages pass; `/services` (0.94) and
+ *     `/contact` (0.90) sit just under". That measurement is stale and was being
+ *     quoted as current fact in page copy: the list below is now EIGHT URLs, and
+ *     bare `/services` was never one of them (`/services/web-development` is).
+ *     Re-measure before printing a count anywhere.
  *   - `largest-contentful-paint` (≤ 2000ms): localhost `next start` under mobile
  *     throttling (no CDN, no HTTP/2, no edge cache) reports ~2.5–3.3s, which is
  *     pessimistic versus the Vercel edge. Production LCP is verified via Vercel
@@ -70,10 +76,11 @@ module.exports = {
         `${BASE_URL}/about`,
         `${BASE_URL}/process`,
         `${BASE_URL}/contact`,
-        // Phase 2 templates — one representative per new render path. All three
-        // are lean prose/MDX pages (PageHero + prose + CrossLinkGrid + FAQ + CTA)
+        // Phase 2 templates — one representative per new render path. Both are
+        // lean prose/MDX pages (PageHero + prose + CrossLinkGrid + FAQ + CTA)
         // and fall under the catch-all lean-interior budget below.
         `${BASE_URL}/industries/aesthetic-clinics`,
+        `${BASE_URL}/locations/manchester`,
       ],
       numberOfRuns: 3,
       settings: {

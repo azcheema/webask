@@ -28,12 +28,17 @@ const ROUTES = [
   "/industries/dental-practices",
   "/industries/beauty-wellness-clinics",
   "/locations",
-  // The `/locations/<slug>` hubs and the programmatic `/services/<svc>/<area>`
-  // pages are deliberately absent: no area has authored copy yet, so those
-  // routes prerender nothing and 404. They are NOT remapped to the UK slugs —
-  // page.goto doesn't throw on a 404, so axe would happily scan Next's 404 page
-  // and report a silent false green. Phase 2 re-adds them (including one
-  // `kind: "county"` hub — Cheshire is a distinct render path).
+  // All three hubs, not one representative: the template is shared but the BODY
+  // is hand-written per area, and the rules this suite exists to catch
+  // (`heading-order`, `empty-table-header`, link contrast) live in the body, not
+  // the template. Cheshire is also the only `kind: "county"` render path.
+  "/locations/manchester",
+  "/locations/cheshire",
+  "/locations/leeds",
+  // The programmatic `/services/<svc>/<area>` pages stay absent: the Phase 2
+  // batch is empty, so those routes prerender nothing and 404. They are NOT
+  // remapped to the UK slugs — page.goto doesn't throw on a 404, so axe would
+  // happily scan Next's 404 page and report a silent false green.
   "/blog",
   "/blog/local-seo-checklist-2026",
   "/blog/topic/seo",
@@ -58,9 +63,9 @@ const TAGS = ["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa", "best-practice"];
 
 /*
  * The URL set Lighthouse CI audits, mirrored from `.lighthouserc.cjs`. Lighthouse
- * runs MOBILE emulation (360px) and this suite otherwise scans at Playwright's
- * desktop default, so width-dependent rules — `target-size` above all — were
- * structurally invisible here. Keep in step with the lhci config.
+ * runs MOBILE emulation at the viewport below and this suite otherwise scans at
+ * Playwright's desktop default, so width-dependent rules — `target-size` above
+ * all — were structurally invisible here. Keep in step with the lhci config.
  */
 const LIGHTHOUSE_URLS = [
   "/",
@@ -70,6 +75,7 @@ const LIGHTHOUSE_URLS = [
   "/process",
   "/contact",
   "/industries/aesthetic-clinics",
+  "/locations/manchester",
 ] as const;
 /*
  * Must match Lighthouse's emulation EXACTLY, or this pass gives false comfort.

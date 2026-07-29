@@ -22,7 +22,7 @@ const META = {
 const HERO = {
   h1: "Remote-first, working on UK time.",
   subhead:
-    "We work with small businesses the length of the UK without a local-office tax. Our hand-built area guides go deep on the market, the competition and the sectors that win there.",
+    "We work with small businesses the length of the UK without a local-office tax. Each area guide below is written rather than generated — what the local search market there actually looks like, which sectors cluster in it, and what both of those change about the build.",
   primaryCta: { label: "Book a strategy call", href: "/contact" } satisfies CtaLink,
   secondaryCta: { label: "Get a free site audit", href: "/free-audit" } satisfies CtaLink,
 };

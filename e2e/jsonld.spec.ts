@@ -101,13 +101,29 @@ const ROUTES: ReadonlyArray<Route> = [
     hasBreadcrumbs: true,
     hasFaq: false,
   },
-  // The location hub and programmatic service × location routes are deliberately
-  // absent in Phase 0: no area has authored copy yet, so neither prerenders. They
-  // are NOT remapped to the UK slugs — a 404 emits the sitewide graph but no
-  // WebPage frame, so this spec would fail on the frame count and the canonical
-  // check rather than validating anything. Phase 2 restores both as
-  // /locations/manchester and /services/crm-automation/manchester, which is also when the
-  // areaServed City/AdministrativeArea shapes first get asserted.
+  // Both hub render paths, because `kind` changes the schema: a city emits
+  // `areaServed: City → containedInPlace AdministrativeArea → Country`, a county
+  // emits `AdministrativeArea → Country` directly. The shapes themselves are
+  // asserted in the dedicated test below, which is the Phase 2 half of this
+  // spec's original Phase 0 note.
+  {
+    path: "/locations/manchester",
+    types: ["WebPage", "ProfessionalService", "BreadcrumbList", "FAQPage"],
+    hasBreadcrumbs: true,
+    hasFaq: true,
+  },
+  {
+    path: "/locations/cheshire",
+    types: ["WebPage", "ProfessionalService", "BreadcrumbList", "FAQPage"],
+    hasBreadcrumbs: true,
+    hasFaq: true,
+  },
+  // The programmatic service × location routes stay absent: the Phase 2 batch is
+  // empty, so `/services/<svc>/<area>` prerenders nothing. They are NOT remapped
+  // to the UK slugs — a 404 emits the sitewide graph but no WebPage frame, so
+  // this spec would fail on the frame count and the canonical check rather than
+  // validating anything. Restore `/services/crm-automation/manchester` in the
+  // commit that populates PROGRAMMATIC_COMBOS.
   {
     // Blog index — CollectionPage frame (a listing, not a single content page).
     path: "/blog",
@@ -303,6 +319,63 @@ for (const route of ROUTES) {
     ).toBeGreaterThan(0);
   });
 }
+
+/*
+ * D1 is the reason this test exists: WebAsk is fully remote with NO UK location,
+ * so a location hub expresses reach through `areaServed` ONLY. A fabricated
+ * `address` or `geo` on these pages is the single anti-pattern the whole
+ * locations silo is built to avoid, and it is invisible in the rendered copy —
+ * only the graph shows it.
+ *
+ * It also pins the UK shape. schema.org's `State` means a state or province and
+ * has no English equivalent; a ceremonial or metropolitan county is an
+ * `AdministrativeArea`. The fork emits `State` because its metros are American,
+ * where that is correct — carrying it over would have been wrong here, and a
+ * type-level mistake in JSON-LD reads as clean HTML.
+ */
+test("location hubs express reach via areaServed only, in the UK shape", async ({ page }) => {
+  const cases = [
+    {
+      path: "/locations/manchester",
+      area: "City",
+      name: "Manchester",
+      within: "Greater Manchester",
+    },
+    { path: "/locations/cheshire", area: "AdministrativeArea", name: "Cheshire", within: null },
+  ] as const;
+
+  for (const { path, area, name, within } of cases) {
+    await page.goto(path);
+    const nodes = await readGraphNodes(page);
+
+    // The hub's own provider node — not the sitewide Organization, which is also
+    // typed ProfessionalService.
+    const hub = findByType(nodes, "ProfessionalService").find((node) =>
+      String(node["@id"] ?? "").endsWith(`/locations/${name.toLowerCase()}#provider`),
+    );
+    expect(hub, `${path} must emit a hub ProfessionalService node`).toBeTruthy();
+
+    expect(hub!["address"], `${path} must not claim a postal address (D1)`).toBeUndefined();
+    expect(hub!["geo"], `${path} must not claim coordinates (D1)`).toBeUndefined();
+
+    const served = hub!["areaServed"] as Record<string, unknown>;
+    expect(served?.["@type"], `${path} areaServed type`).toBe(area);
+    expect(served?.["name"], `${path} areaServed name`).toBe(name);
+
+    // A city sits inside its county; a county hub IS the administrative area and
+    // goes straight to the country.
+    const parent = served["containedInPlace"] as Record<string, unknown>;
+    if (within === null) {
+      expect(parent?.["@type"], `${path} county sits directly in the country`).toBe("Country");
+    } else {
+      expect(parent?.["@type"], `${path} city sits in an AdministrativeArea`).toBe(
+        "AdministrativeArea",
+      );
+      expect(parent?.["name"]).toBe(within);
+      expect((parent["containedInPlace"] as Record<string, unknown>)?.["@type"]).toBe("Country");
+    }
+  }
+});
 
 /*
  * Rule 1 + 4 across the whole site: one canonical Organization @id everywhere,
