@@ -222,3 +222,18 @@ white-on-brand). Any translucent-on-brand treatment must be checked with
 - **PowerShell 5.1: never `2>&1` a native exe to test success.** It wraps stderr in an
   ErrorRecord and forces `$?` to `$false` on exit code 0 — every gate reads FAIL while
   passing. Use `$LASTEXITCODE`.
+- **A red Lighthouse job is not always a red score.** `lhci autorun` has a server-startup
+  race: it logs `Started a web server with "corepack pnpm start --port 3000"` and
+  `Running Lighthouse 3 time(s)` in the **same second**, and if Next has not finished
+  booting Chrome navigates to nothing and the run dies with
+  **`CHROME_INTERSTITIAL_ERROR`** — "Chrome prevented page load with an interstitial",
+  with the target URL redirected to `chrome-error://chromewebdata/`.
+  **Tells: it dies at ~3.5m instead of ~6m, and it fails on the FIRST URL.** No assertion
+  is reported because no audit ran. Seen on `3785020`, whose diff was two docs, CLAUDE.md,
+  one `package.json` script entry and a script not wired into CI — nothing that ships —
+  and which re-ran green with zero changes.
+  **Before investigating a red Lighthouse: check whether the diff touches `app/`,
+  `components/`, `lib/`, `styles/`, `public/`, `next.config.ts` or `.lighthouserc.cjs`.
+  If it does not, re-run the job first.** This is the opposite of the `upload-artifact`
+  trap below it — that one was green while broken; this one is red while fine. Both cost
+  time by being believed too quickly.
