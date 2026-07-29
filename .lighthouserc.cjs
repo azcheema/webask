@@ -16,14 +16,24 @@
  *
  * Two budgets stay `warn`, by design — and for two DIFFERENT reasons, which must
  * not be merged when either is described in copy:
- *   - `categories:performance` (≥ 0.95): a minority of audited pages sit just
- *     under, within run-to-run score variance, so a hard gate would flake.
- *     Revisit if/when a further JS cut adds margin.
- *     ⚠️ The original note here read "4 of 6 pages pass; `/services` (0.94) and
- *     `/contact` (0.90) sit just under". That measurement is stale and was being
- *     quoted as current fact in page copy: the list below is now EIGHT URLs, and
- *     bare `/services` was never one of them (`/services/web-development` is).
- *     Re-measure before printing a count anywhere.
+ *   - `categories:performance` (≥ 0.95): some audited pages sit just under,
+ *     within run-to-run score variance, so a hard gate would flake. Revisit
+ *     if/when a further JS cut adds margin.
+ *
+ *     Measured on run 30460082299 (`5b26d1c`, 2026-07-29), 8 URLs × 3 runs:
+ *     **4 of 8 warn**, at median 0.91 / 0.93 / 0.93 / 0.94. The other four
+ *     cleared 0.95. One warning page returned `0.61, 0.92, 0.93` — a lone
+ *     outlier in an otherwise tight set, almost certainly runner noise rather
+ *     than a page defect, but the reason the gate reads the median and the
+ *     reason it is `warn`. **If a single run ever decides something, look at
+ *     all three values before believing it.**
+ *
+ *     ⚠️ This block replaces a note reading "4 of 6 pages pass; `/services`
+ *     (0.94) and `/contact` (0.90) sit just under" — stale on both counts (the
+ *     list is EIGHT URLs, and bare `/services` was never in it;
+ *     `/services/web-development` is), and it had been quoted as current fact
+ *     in page copy. **Re-measure before printing a count anywhere**, and date
+ *     the measurement here when you do, as above.
  *   - `largest-contentful-paint` (≤ 2000ms): localhost `next start` under mobile
  *     throttling (no CDN, no HTTP/2, no edge cache) reports ~2.5–3.3s, which is
  *     pessimistic versus the Vercel edge. Production LCP is verified via Vercel
