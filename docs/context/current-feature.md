@@ -10,15 +10,227 @@
 
 ## Feature Name
 
+**`feature/uk-location-hubs`** — `/locations` and the three UK area hubs
+(Manchester, Cheshire, Leeds). The largest unblocked Phase 2 item, and the one
+two earlier features had to write around: the local-SEO blog post had to say
+WebAsk's own area pages "are not published yet", and a verify agent found
+catalogue copy advertising a locations inventory that did not exist. Both were
+true only because `authoredLocations` was empty.
+
+## Status
+
+⚠️ **NOT COMMITTED — ask before the first commit on this branch.** Branch cut
+from `main` at `12eda52`; working tree holds the whole feature.
+
+All local gates green:
+
+```
+typecheck · lint · build · format:check · check:contrast · check:keywords
+check:uniqueness · check:redirects · check:content-uniqueness · check:copy-uniqueness
+                              e2e 166 passed, 3 skipped (was 156 — 10 new tests)
+```
+
+Never claim local Lighthouse green — unreliable on Windows, trust CI only.
+`d:\naxdor` untouched; only ever read for comparison.
+
+### What this feature did
+
+**1. Three hubs, written not translated.** `copy` blocks in `data/locations.ts`
+plus the MDX bodies in `content/locations/`. **0.0% 5-gram Jaccard against all
+three US fork hubs** (`austin-tx`, `dallas-tx`, `miami-fl`), 1.1% cross-page,
+1,425–1,443 words each. The two halves landed in one commit because that is the
+only order that works: the route `notFound()`s without `copy`,
+`generateStaticParams` reads the MDX directory, and the hubs link to each other
+in body prose.
+
+| Hub            | The argument, and why no other hub could carry it                                                                                                                                                                         |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Manchester** | The head term is the one a new site loses. #2 among major UK cities on SERPTool's 2026 ranking of 25 — but that ranks head terms, and doc 08 § 8 puts them last. Plus the no-GBP cost stated **before** the justification |
+| **Cheshire**   | A county is not a city. Hale/Altrincham/Bramhall sit in Trafford and Stockport; a county query and a town query are different searches; the clinic corridor at doc 02 § 6's **medium** confidence, not a count            |
+| **Leeds**      | The local economy skews to regulated professions, where the website is the artefact a regulator, a competitor or a complainant reads — and none of the three is obliged to tell you                                       |
+
+**2. `check:blog-uniqueness` → `check:content-uniqueness`, widened from
+`content/blog` to every content collection.** The old gate's denominator was
+wrong twice over. The industry and service MDX bodies had **nothing watching
+them** — and the industry slugs _are_ same-slug twins of live `naxdor.com`
+pages. They measure clean (0.0–0.4%), but nothing was holding them there. And
+the location bodies have **no same-slug twin at all**, because the fork's hubs
+are US metros: a same-slug-only check would have printed "no twin", passed, and
+let a straight translation of `austin-tx` into `manchester` ship. Every file is
+now also scored against **every** fork file in its collection, and the worst
+match is what the gate reads.
+
+**3. `data/locations.ts` joined `check:copy-uniqueness`** (0%). Same rule that
+caught `data/services.ts` at 57% while its MDX scored 0.1%: the hub copy is not
+config, it renders as the H1, the index card and the FAQ accordion, and it feeds
+`FAQPage` JSON-LD.
+
+**4. Route wiring, in the same commit.** `BUILT_ROUTES` (the hubs were rendering
+as non-interactive labels), sitemap (derived, so it followed automatically),
+`e2e/a11y.spec.ts` (all three hubs × light/dark, plus Manchester at the 412×823
+Lighthouse viewport), `.lighthouserc.cjs` (+`/locations/manchester`), and
+`e2e/jsonld.spec.ts` — both hub render paths **and a new dedicated D1 test**
+asserting the hub `ProfessionalService` carries no `address` and no `geo`, with
+`areaServed` in the UK shape (`City → AdministrativeArea → Country` for a city,
+`AdministrativeArea → Country` for a county). That assertion was owed by a
+Phase 0 comment in the spec and is the only place a fabricated local storefront
+would show up — it is invisible in the rendered copy.
+
+### 🔴 The LCP overclaim: `e157e89` said "swept repo-wide" and it was not
+
+That sweep fixed four files and **never looked at `content/industries/` at
+all**. Seven more live instances were found here:
+
+```
+content/industries/aesthetic-clinics.mdx        "enforced in continuous integration"
+content/industries/beauty-wellness-clinics.mdx  "enforce it in continuous integration"
+content/industries/dental-practices.mdx         "enforced in continuous integration"
+data/industries.ts  ×2                          FAQ answers — also FAQPage JSON-LD
+content/services/ecommerce-development.mdx      LCP **and INP** "checked in CI on every commit"
+data/copy/process.ts ×2                         contradicted the corrected sentence 40 lines below
+```
+
+**The grep that finds them is not "LCP".** It is
+`enforced|checked in CI|continuous integration|under two seconds|sub-two-second|verified in our build`.
+CLAUDE.md now carries it.
+
+### The findings worth remembering
+
+🔴 **A false claim about a regulator's reach, on the page selling regulatory
+literacy.** The Cheshire draft said a life-sciences firm "has no CAP Code
+exposure at all", and its FAQ said "only the clinics have the CAP Code" — in
+`FAQPage` JSON-LD, where it can surface stripped of the page. The CAP Code
+governs **all** UK non-broadcast marketing; what is clinic-specific is the
+prescription-only-medicine rule under it. Then the **correction over-swung
+twice**: to "Every UK advertiser sits inside the CAP Code" (the Code is
+non-broadcast only, BCAP covers the rest), and to an example that was still
+wrong — a life-sciences firm is exactly the kind that _does_ have a POM. It is
+now "every UK advertiser's non-broadcast marketing", contrasted with
+professional services.
+
+🔴 **The mirror-image overcorrection.** A draft, correctly avoiding "Core Web
+Vitals enforced in CI", asserted that none of them can be gated from a lab.
+**CLS is a Core Web Vital and it is a hard `error` gate.** The accurate
+statement is per-metric: CLS is gated, LCP can be measured but not fairly gated
+from localhost, INP cannot be lab-measured at all. Over-correcting into a
+different false claim is the same defect wearing the opposite sign.
+
+🔴 **Two results-promises published as structured data.** FAQ "Do you work with
+Manchester businesses…" answered "Yes" — a present-tense trading claim from a
+firm with no customers. FAQ "Can **we** rank in Manchester…" answered
+"Organically, yes" — where the "we" is the prospect, making it a ranking
+guarantee, transposed from a doc 05 § 4 sentence about **our** reachable
+surface. Both are now reframed as questions about capability and constraint.
+
+🔴 **A competitor cited as a pricing authority.** Three FAQ 1s credited
+"dotitmedia, 2026" for the £3,000–£6,000 regional band. Dot it Media is in
+doc 02 § 3 Bucket 3, "the ones to beat", and doc 02 § 6 names it as _the Leeds
+competition_ — so the Leeds hub anonymised it in the body ("at least one dental
+specialist based in Leeds") and then handed the reader its name in the FAQ, in
+JSON-LD, on its home-turf URL. It was also live in `data/services.ts` and is
+now gone from both.
+
+⚠️ **The page accusing others of not checking the map, not checking the map.**
+Cheshire asserted "its principal towns are Wilmslow, Alderley Edge, Knutsford,
+Macclesfield, Chester and Warrington" — which is `notableAreas`, a targeting
+selection, hardened into a definitive claim. Cheshire East's own local plan
+designates **Crewe** and Macclesfield as principal towns, and the list omits
+Crewe, Northwich, Ellesmere Port, Runcorn and Widnes. `notableAreas` now carries
+a comment saying copy must never make that claim.
+
+⚠️ **The template contradicted the body on the same URL.** Cheshire's
+`nearbyPlaces` listed Warrington and Chester, which the template renders as
+"Nearby areas we serve" — directly under a body claiming both as towns of the
+county this hub covers. **Fixed in the data, not the prose**: `nearbyPlaces` is
+now Manchester, Stockport, Liverpool, Stoke-on-Trent. A hub's rendered page is
+its MDX **plus** its catalogue entry **plus** what the template draws from the
+enrichment fields — trap 13 again, one layer further out.
+
+⚠️ **A stale config comment being quoted as current fact.** Leeds printed "two
+pages of this site sit just under 0.95", sourced from `.lighthouserc.cjs`'s
+header, which says "4 of 6 pages pass" and names a URL (`/services`) **that is
+not in the list** — and the list is now eight URLs, not six. The count is gone
+from the copy and the config header now says it is stale.
+
+⚠️ **A page's own link target undermining it.** Cheshire promised
+`/industries/aesthetic-clinics` "carries the rule set, the enforcement figures
+and the architecture in full". That page carries no enforcement figures at all.
+Two words cut, rather than a promise left hanging on another page's content.
+
+⚠️ **Four implied-client claims in `data/copy/free-audit.ts`**, found only
+because a hub links to `/free-audit` twice and a reviewer followed the link:
+"each audit is done personally **alongside billable work**", "**Most people** fix
+two or three things and never come back. **Some hire us** to implement the rest",
+"**Plenty of people** never book it", and "it is **frequently** the most valuable
+thing in the audit". That file is the one CLAUDE.md flags as **39% forked with no
+verdict recorded** — the verdict is still owed, but these four are fixed.
+
+### Method — and the numbers
+
+Write → **three adversarial lenses per hub** (fabricated-proof · modality/
+provenance · UK-correctness, compliance, SEO mechanics and convergence) → fix →
+**two lenses per hub again**.
+
+```
+round 1   165 findings   24 blocker · 64 major · 77 minor
+applied   156 (50 / 47 / 59)   9 rejected with a cited source
+round 2    29 findings    1 blocker · 13 major · 15 minor  (many duplicated across lenses)
+```
+
+Two things about the shape of it. **Round 2 caught defects the corrections
+introduced** — the "in Manchester" H1 that located the agency in a city it has
+no office in, the CAP Code over-swing, the FAQ that moved the implied history
+from the question into the answer. A single fix pass would have shipped all
+three. And **the rejections mattered**: one reviewer's proposed fix pointed at a
+passage on `/services/web-development` that does not exist, and another wanted a
+"checked in CI" claim about keyword mapping that `scripts/check-keywords.ts`
+only warns on. A proposed fix is a finding too, and needs the same check.
+
+### Files touched
+
+```
+data/locations.ts                  3 copy blocks + the nearbyPlaces + notableAreas fixes
+content/locations/*.mdx            3 new
+scripts/check-content-uniqueness.ts   replaces check-blog-uniqueness.ts (widened)
+scripts/check-copy-uniqueness.ts   + data/locations
+package.json · .github/workflows/ci.yml   gate renamed + rewired
+e2e/{a11y,jsonld}.spec.ts · .lighthouserc.cjs   routes + the D1 areaServed test
+components/layout/_nav-data.ts     BUILT_ROUTES + descriptions that differ
+app/(marketing)/locations/page.tsx index subhead (the guides now exist)
+content/industries/*.mdx · data/industries.ts · content/services/ecommerce-development.mdx
+data/copy/process.ts · data/copy/free-audit.ts · data/services.ts
+content/blog/local-seo-checklist-2026.mdx   "not published yet" → the rule, and a link
+CLAUDE.md · docs/06-build-plan.md · docs/context/current-feature.md
+```
+
+### Next
+
+**1. The industry-page copy-review checklist** (doc 06 § Phase 2, still
+unticked). The LCP sweep found live defects on all three industry pages without
+looking for them; nobody has run doc 03 § B4 over those pages. Start there.
+
+**2. `data/copy/free-audit.ts` (39%) still has no verdict**, and
+`data/copy/legal.ts` (69%) still names the entity "Naxdor … enskild firma" —
+rewrite it in the pass that D3 unblocks, not after.
+
+**3. Then the first programmatic batch** (6–9 `[service] × [area]` pages,
+`noindex` first). The hubs are the parents it needs, and `data/service-locations.ts`
+is empty and documented for exactly this.
+
+---
+
+# Previous feature — `feature/uk-service-catalogue` (merged, pushed, CI green)
+
 **`feature/uk-service-catalogue`** — `data/services.ts` and `data/copy/pricing.ts`
 rewritten for the UK. This is the **other half** of the service-page rewrite: that
 feature did the MDX bodies and reported the pages done, while the catalogue
 rendering around them stayed forked.
 
-## Status
+### Status
 
 ✅ **Merged to `main` at `ad32565` and pushed. CI and Lighthouse (full) both green
-on that commit** — every step, including the new `check:blog-uniqueness` audit.
+on that commit** — every step, including the then-new blog uniqueness audit
+(since widened and renamed `check:content-uniqueness`).
 All nine local gates green; e2e **156 passed, 3 skipped**.
 
 ```
@@ -77,7 +289,7 @@ staffed disciplines in the FAQ that feeds `FAQPage` JSON-LD. There is one person
 
 ---
 
-# Previous feature — `feature/uk-blog-and-faq-order` (merged, pushed, CI green)
+# Two features back — `feature/uk-blog-and-faq-order` (merged, pushed, CI green)
 
 Merged to `main` at `911af1d`; CI and Lighthouse both green on the push.
 
@@ -177,7 +389,7 @@ CLAUDE.md · docs/06-build-plan.md · docs/context/current-feature.md
 
 ---
 
-# Two features back — `feature/uk-service-pages` (merged)
+# Three features back — `feature/uk-service-pages` (merged)
 
 > Kept because its traps and its CI post-mortem are still live knowledge.
 > **Merged to `main` and pushed; CI + Lighthouse green on `adaf5ce`.**
@@ -288,8 +500,8 @@ Two factual errors were also caught, both on the compliance claim itself: `seo` 
 
 ```
 typecheck · lint · build · format:check · check:contrast · check:keywords
-check:uniqueness · check:redirects · check:blog-uniqueness
-                                          156 e2e passing (0 failed, 3 skipped)
+check:uniqueness · check:redirects · check:content-uniqueness · check:copy-uniqueness
+                                          166 e2e passing (0 failed, 3 skipped)
 ```
 
 Run them with `corepack pnpm <script>`. Never claim local Lighthouse green —
@@ -332,15 +544,16 @@ on a service page, and `heading-order` twice (`BlogCard` h3 under h1;
   `State`. Regulatory bodies in `knowsAbout`.
 - **301 map.** `lib/redirects.ts`, 410 route handlers, `check:redirects`,
   `e2e/redirects.spec.ts`. 18 rules, max 2 hops, 55 assertions.
-- **UK locations.** Manchester · Cheshire · Leeds, facts only; hub copy is an
-  optional `copy` block so an unauthored hub is unrenderable by construction.
+- **UK locations.** Manchester · Cheshire · Leeds — facts **and** authored copy,
+  so all three hubs render, enter `/locations` and enter the sitemap. `copy` stays
+  optional, so a future area is unrenderable until it is written.
 - **Keywords.** 332 UK terms, incl. two clusters no competitor contests
   (`clinic-compliance` 22, `uk-compliance` 15). **`msv`/`kd` are null** — see below.
 - **Pages written for the UK.** Home · `/services` (was missing entirely) ·
   `/about` · `/contact` · `/pricing` · `/process` · `/free-audit` ·
   `/legal/company-information` · all three `/industries/*` · all nine
-  `/services/*` **MDX bodies** (⚠️ **not** the `data/services.ts` copy around them —
-  see Next § 1) · **all four blog posts**.
+  `/services/*` **MDX bodies and their catalogue copy** · **all four blog posts** ·
+  `/locations` and all three area hubs.
 - **GBP pricing** from the docs/02 § 7 research anchors, with a hedged VAT note.
 - **Blog.** 4 posts, all `draft: false`, all UK-rewritten. `med-spa` deleted, so the
   `industry` topic cluster is empty and its archive `noindex`s itself until Phase 3
@@ -430,33 +643,63 @@ that is now the only surviving record of what the old site served.
     the lower. Verifying that the underlying fact exists in `docs/` **passes all of
     them**. The question that catches them is **"does the source say it this
     strongly?"** — ask it of every hedge, band, date and enforcement claim.
+15. 🆕 **Trap 13 goes one layer further out: the rendered page also includes what
+    the TEMPLATE draws from the data file.** The Cheshire body claimed Warrington
+    and Chester as towns of the county it covers; four lines below it the template
+    rendered `nearbyPlaces` as "Nearby areas we serve: … Warrington · Chester". Both
+    strings were individually defensible and the URL contradicted itself. Read the
+    route template before writing a body, and fix this class **in the data**, not in
+    the prose.
+16. 🆕 **An over-correction is a defect with the opposite sign.** Correcting the
+    "Core Web Vitals enforced in CI" overclaim, a draft asserted that no Core Web
+    Vital can be gated from a lab. **CLS is one and it is a hard `error` gate.**
+    Same shape on the CAP Code: "only clinics have the CAP Code" (false) was fixed
+    to "every UK advertiser sits inside the CAP Code" — also false, because the
+    Code is **non-broadcast** only. When you correct a scope claim, check the new
+    boundary as hard as you checked the old one.
+17. 🆕 **A proposed fix is a finding too, and needs the same check.** Of 165
+    review findings, 9 were rejected with a cited source — and two of the _proposed
+    replacements_ were themselves wrong: one pointed the reader at a passage on
+    `/services/web-development` that does not exist, and one wanted a
+    "checked in CI" claim about keyword mapping that `scripts/check-keywords.ts`
+    only **warns** on. Never paste a proposed fix in unread.
+18. 🆕 **A second fix pass is not optional on this kind of work.** The re-check
+    found 29 findings, and the ones that mattered were **introduced by the first
+    round of corrections**: an H1 rewritten to "Web design agency **in**
+    Manchester" (a UK-presence claim, on a firm with no UK office), the CAP Code
+    over-swing above, and an FAQ that moved its implied client history out of the
+    question and into the answer. Write → verify → fix → verify.
 
 ## Next
 
-**1. `/locations` + the three hubs (Manchester, Cheshire, Leeds).** The largest
-unblocked Phase 2 item, and two things now point at it: the local-SEO blog post had
-to be written to say WebAsk's own area pages "are not published yet", and a verify
-agent found catalogue copy advertising a locations inventory that does not exist —
-both because `authoredLocations` is empty. Those sentences are honest today and
-stale the moment the hubs land. Cheshire gets the strongest clinic-facing content
-(doc 02 § 6).
+**1. The industry-page copy-review checklist** (doc 06 § Phase 2, still unticked;
+doc 03 § B4 is the checklist). The three industry pages were written and reported
+done, but nobody has run the checklist over them — and the LCP sweep found live
+false-enforcement claims on all three **without looking for them**. That is the
+same shape as every previous defect on this project: a page reported complete
+against a check that was never actually run.
 
-**2. `data/copy/free-audit.ts` (43%) and `data/copy/process.ts` (64%).** Ask the
+**2. `data/copy/free-audit.ts` (39%) and `data/copy/process.ts` (61%).** Ask the
 verdict question of each before treating either as a defect. `process.ts` is
 duplicate **by decision** — docs/01 marks the service-delivery playbook "copy
 verbatim" and commit `6306fc1` says so explicitly; only its false LCP-enforcement
 sentence was changed. `free-audit.ts` was partly rewritten by that same commit and
-no verdict is recorded for the remainder.
+**no verdict is recorded for the remainder** — four implied-client claims in it were
+fixed on 2026-07-29 (found only because a location hub links to `/free-audit`), but
+that is a defect fix, not the verdict.
 
 Current state of every module measured against the fork, same method (import both,
 walk the parsed objects — **not** regex over the source, see trap 13):
 
 ```
-data/services.ts     8128 words,    0 identical ( 0%)   <- rewritten this feature
-data/copy/pricing     1591 words,    0 identical ( 0%)   <- rewritten this feature
-data/copy/process     1201 words,  767 identical (64%)   <- DELIBERATE (docs/01, 6306fc1)
-data/copy/free-audit   841 words,  359 identical (43%)   <- no verdict recorded
-data/copy/home        1356 words,   45 identical ( 3%)   <- properly rewritten
+data/services.ts     8128 words,    0 identical ( 0%)
+data/copy/pricing     1663 words,    0 identical ( 0%)
+data/locations.ts    4872 words,    6 identical ( 0%)   <- hub copy, this feature
+data/industries      2582 words,  424 identical (16%)
+data/copy/home        1355 words,   45 identical ( 3%)
+data/copy/process     1203 words,  737 identical (61%)   <- DELIBERATE (docs/01, 6306fc1)
+data/copy/free-audit   849 words,  332 identical (39%)   <- no verdict recorded
+data/copy/legal       5144 words, 3530 identical (69%)   <- wrong entity; gated on D3
 ```
 
 Not defects, checked — do not re-investigate: `data/types.ts` (100%, type
@@ -470,11 +713,11 @@ which is wrong for WebAsk. It is gated, not live — privacy/terms/cookies are
 `draft: true` pending **D3** — but D3 landing is what unblocks publishing it, so the
 rewrite has to happen in the same pass, not after.
 
-**2. `/locations` + the three hubs (Manchester, Cheshire, Leeds).** Now the largest
-unblocked Phase 2 item, and the blog rewrite added a reason to prioritise it: the
-local-SEO post had to be edited to say WebAsk's own area pages "are not published
-yet", because `authoredLocations` is empty. That sentence is honest today and stale
-the moment the hubs land.
+**3. The first programmatic batch** (6–9 `[service] × [area]` pages, `noindex`
+first). The three hubs are the parents it needs, and `data/service-locations.ts` is
+empty and heavily documented for exactly this — read its header before adding a
+combo, particularly the note that a missing opening scores two empty shingle sets
+as 100% similar and fails the gate with a confusing message.
 
 Then Phase 1 cutover, gated on D2/D3/D4 and the external setup above.
 

@@ -209,8 +209,19 @@ internal-linking mesh.
       band (£250–£500) while its own evidence table puts it in "full campaign" (£500–£1,500+).
       The evidence table is right; both `content/services/seo.mdx` and the new FAQ say
       "lower half of the full-campaign range"
-- [ ] `/locations` + 3 hubs: **Manchester, Cheshire, Leeds** (doc 02 § 6). Cheshire is the
-      aesthetics-money hub — give it the strongest clinic-facing content
+- [x] `/locations` + 3 hubs: **Manchester, Cheshire, Leeds** (2026-07-29, `feature/uk-location-hubs`).
+      Written fresh, **0.0% 5-gram against all three US fork hubs** and 1.1% cross-page. The
+      `copy` blocks and the MDX bodies landed in one commit, which is the only order that works —
+      the route `notFound()`s without `copy`, and the hubs link to each other in body prose.
+      Each carries a disjoint argument: **Manchester** that the head term is the one a new site
+      loses and the qualified queries are what gets built for (plus the no-GBP cost, stated
+      before the justification, with `web design agency Manchester` as doc 05 § 4's own worked
+      example); **Cheshire** that a county is not a city — the Hale/Altrincham/Bramhall boundary,
+      why a county term and a town term are different searches, and the clinic corridor held at
+      doc 02 § 6's **medium confidence** rather than the count nobody publishes; **Leeds** that
+      the local economy skews to regulated professions, where the site is the artefact a
+      regulator reads. 165 findings from three adversarial lenses per hub, then 29 more from a
+      re-check — see `docs/context/current-feature.md` for what they were
 - [x] 🆕 **Service _catalogue_ prose rewritten** (2026-07-28) — the other half of the
       service-page rewrite, which measured only the MDX bodies (0.0–0.1%) and never looked
       at the catalogue rendering around them. `data/services.ts` went **57% → 0%** (0 of
@@ -268,7 +279,8 @@ Blog cluster A (compliance) first · case studies when real work exists · FAQ c
       They were forked verbatim and shipped `draft: false` — 8–44 diff lines from their
       live `naxdor.com` twins across 800–1,300 words each, so they would have published as
       same-slug near-duplicates at cutover. Now **0.0–0.1%** 5-gram against those twins,
-      0.2% cross-page. `pnpm check:blog-uniqueness` is the new gate that holds it
+      0.2% cross-page. `pnpm check:content-uniqueness` is the gate that holds it (widened
+      2026-07-29 from blog-only to every `content/**` collection)
 - [x] ~~`med-spa-marketing-playbook-2026`~~ — **deleted** 2026-07-28 (founder decision).
       It was `draft: true` but still a same-slug twin of a live `naxdor.com` post, and its
       slug is US terminology no UK rewrite could keep ("med spa" is not what UK clinics call
@@ -361,12 +373,12 @@ before Phase 1 cutover; D4 is a founder pricing decision needed before `/pricing
 
 Update this table as phases close, mirroring the Naxdor convention.
 
-| Phase                                 | Status          | Notes                                                                                                                                                                                                                                                        |
-| ------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 0 — Fork & Foundations                | **In progress** | Fork done; brand, schema, site config, UK locations, keywords and the full 301 map landed. All gates green, 149 e2e passing. Outstanding: **external only** — Vercel/Resend/GSC setup, real MSV/KD pull, Cheshire verification                               |
-| 1 — Credible MVP + Cutover            | Not started     | Blocked on D2, D3, D4. The 301 map is already built                                                                                                                                                                                                          |
-| 2 — Services / Locations / Industries | **Part done**   | **All 9 service pages written for the UK** (2026-07-28) — pulled forward ahead of Phase 1 because it was the largest unblocked work. Industries also done. Remaining: 3 location hubs, first programmatic batch, `CrossLinkGrid` mesh, nav/footer, citations |
-| 3 — Content Engine + Proof            | Not started     | Depends on 2                                                                                                                                                                                                                                                 |
-| 4 — Lead Capture + Scale              | Not started     | Depends on 3                                                                                                                                                                                                                                                 |
-| 5 — CMS migration                     | Deferred        | —                                                                                                                                                                                                                                                            |
-| 6 — Auth + client dashboard           | Deferred        | —                                                                                                                                                                                                                                                            |
+| Phase                                 | Status          | Notes                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0 — Fork & Foundations                | **In progress** | Fork done; brand, schema, site config, UK locations, keywords and the full 301 map landed. All gates green, 149 e2e passing. Outstanding: **external only** — Vercel/Resend/GSC setup, real MSV/KD pull, Cheshire verification                                                                                                                                                |
+| 1 — Credible MVP + Cutover            | Not started     | Blocked on D2, D3, D4. The 301 map is already built                                                                                                                                                                                                                                                                                                                           |
+| 2 — Services / Locations / Industries | **Part done**   | 9 service pages + 3 industry pages + the service catalogue (2026-07-28), and **all 3 location hubs** (2026-07-29). Nav and footer now link the hubs. Remaining: first programmatic batch, `CrossLinkGrid` mesh beyond the hubs, citations, and the **industry-page copy-review checklist** — still unticked, and the LCP sweep found live defects on all three industry pages |
+| 3 — Content Engine + Proof            | Not started     | Depends on 2                                                                                                                                                                                                                                                                                                                                                                  |
+| 4 — Lead Capture + Scale              | Not started     | Depends on 3                                                                                                                                                                                                                                                                                                                                                                  |
+| 5 — CMS migration                     | Deferred        | —                                                                                                                                                                                                                                                                                                                                                                             |
+| 6 — Auth + client dashboard           | Deferred        | —                                                                                                                                                                                                                                                                                                                                                                             |
