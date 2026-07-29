@@ -44,112 +44,112 @@ export type PricingContent = {
 
 export const pricing: PricingContent = {
   meta: {
-    title: "Pricing — Starting prices for all nine services",
+    title: "Pricing — nine published starting prices in GBP",
     description:
-      "Published GBP starting prices for every WebAsk service, what changes the number, and how a fixed-fee quote is built. No “request a quote” wall.",
+      "Every WebAsk service carries a published GBP starting price — the UK bands they sit inside, what moves the number, and how a fixed-fee quote is built.",
   },
   hero: {
-    h1: "Prices on the website. No “request a quote” wall.",
+    h1: "The prices are on the page, not behind a form.",
     subhead:
-      "Every service carries a published starting price in pounds, so you can rule us in or out before you speak to anyone. Here is the table — and what actually moves the number.",
-    primaryCta: { label: "Get a custom quote", href: "/contact" },
-    secondaryCta: { label: "Get a free site audit", href: "/free-audit" },
+      "There is no standard UK price for a website, a retainer or an app — the published bands are wide, and the products inside them are not the same product. Every service here starts at a number you can read before you speak to anyone, with the band it sits in and the things that move it.",
+    primaryCta: { label: "Get a written quote", href: "/contact" },
+    secondaryCta: { label: "Start with a free audit", href: "/free-audit" },
   },
   tableIntro: {
-    eyebrow: "The catalogue",
-    h2: "Nine services. Nine published starting prices.",
-    body: "These are real starting points, not teaser figures. Each covers the scope described in the “What's included” section of that service page — not a stripped-back preview engineered to trigger an upsell. All prices are in GBP and exclude VAT where it applies; the final number depends on scope, and we tell you which parts move it on the call rather than after it.",
+    eyebrow: "Starting prices",
+    h2: "Nine services, and the number each one starts at.",
+    body: "Project work starts between GBP £2,500 and £12,000 depending on the service; the two ongoing engagements start at £250 and £750 a month. Each figure covers the scope set out in the “What's included” list on that service's page, not a stripped-back version that makes an upsell inevitable. Every row links straight through to it, and to the levers that move that particular number.",
   },
   whatChangesPrice: {
-    eyebrow: "What changes the price",
-    h2: "Scope drives price. Nothing else does.",
+    eyebrow: "What moves the number",
+    h2: "Scope moves the price. Your postcode doesn't.",
     intro:
-      "We don't price-discriminate based on how desperate you sound, what industry you're in, or how big your logo looks. The number we quote is a function of scope. Here's the list of things that bend it.",
+      "The UK agency band runs dearer in London than elsewhere in the country for the same specification — a location premium rather than a scope premium. WebAsk has no office anywhere to price into a quote, so where you are in the UK never enters the number. Six things do.",
     factors: [
       {
-        title: "Pages, screens, or flows",
-        body: "A 5-page marketing site is a different project from a 30-page services site with city pages and a blog. A 3-flow MVP is a different project from a 12-flow internal tool. The headcount of pages or screens is the single biggest lever.",
+        title: "How much of it there is",
+        body: "The clearest lever, and the first thing worth pinning down in any quote you are comparing. Regional UK agencies average £3,000–£6,000 for 5–15 pages with design, a responsive build, basic SEO and a CMS. A thirty-page site carrying location pages, an industry section and a blog framework is a different brief — as is a twelve-screen internal tool beside a three-screen prototype.",
       },
       {
-        title: "Integrations",
-        body: "Connecting your site to one CRM and a calendar is cheap. Connecting it to a CRM, an ERP, a fulfilment provider, a subscription billing system, and a custom data warehouse is not.",
+        title: "What it has to connect to",
+        body: "One CRM and a calendar is a different job from a CRM, a booking system, a payment provider, an accounting package and a fulfilment feed. GoHighLevel is the platform we lead with and HubSpot the second, and another CRM entirely is scoped on its merits rather than ruled out. Anything with documented, stable APIs can be scoped honestly; anything without them can only be guessed at, which is why that part gets named in the scope rather than assumed.",
       },
       {
-        title: "Design depth",
-        body: "Working from a strong existing brand is faster than building one from scratch. Custom illustrations, motion design, and a full design system add scope.",
+        title: "Whether the words and pictures exist",
+        body: "A build can only run as far as the material it has: the page of text only you can write, the photography nobody has taken. Where that exists, the fee holds and so does the date. Where it has to be commissioned, that is a line of its own. Where it is still to come, the date moves before the price does — which is why this is the part worth beginning first.",
       },
       {
-        title: "Content volume",
-        body: "We can build a blog framework cheaply. Producing the first 20 long-form posts at quality is a different line item entirely.",
+        title: "What has to survive from the old site",
+        body: "A site with nothing to lose is cheaper to build than a replacement that already ranks. Crawling the live site, mapping every legacy URL to an explicit destination, and holding those redirects for at least twelve months is scope, not a formality — a WordPress sitemap commonly under-reports what the site actually exposes. WebAsk is doing this to itself: webask.co.uk is a 2020-era WordPress site, and every one of its legacy URLs has an explicit destination.",
       },
       {
-        title: "Migration complexity",
-        body: "Moving from a clean Webflow site is cheap. Migrating from a 200-page WordPress install with custom plugins and legacy redirects is not.",
+        title: "Rules that dictate the structure",
+        body: "In regulated sectors the regulator shapes the information architecture and not merely the wording — a UK clinic's consultation-first structure is the clearest case, and it is a specification with a cost attached rather than a styling choice that can be retrofitted after launch. Where none of that applies it costs nothing. Where it does, it belongs in the scope and not in month two.",
       },
       {
-        title: "SLA and retainer expectations",
-        body: "Standard 30-day post-launch support is included. 24/7 monitoring, same-day SLAs, or a permanent on-call rotation lives in a retainer with a different number on it.",
+        title: "What happens after launch",
+        body: "Thirty days of post-launch support sits inside the build price. Beyond that, the UK market puts the annual cost of running a site at 15–20% of what it cost to build, and domain, hosting and upkeep alone run £100–£300 a year at the basic end. A care plan is priced on what it covers rather than as a fraction of the build — properties, response time, improvement hours — and starts at £250 a month, cancelling on 30 days' notice. Monitoring and a guaranteed response are a retainer question, not a build one.",
       },
     ],
   },
   howWeQuote: {
-    eyebrow: "How we quote",
-    h2: "From the published price to a fixed-fee proposal — in four steps.",
+    eyebrow: "How a quote is built",
+    h2: "From a published starting price to a number you can sign.",
     steps: [
       {
-        title: "1. Discovery call (free, 30 minutes)",
-        body: "We learn what you're solving, who it's for, and what success looks like. By the end of the call you know whether we're a fit. If we're not, we'll tell you who is.",
+        title: "1. A call, free, thirty minutes",
+        body: "You describe the problem, who it is for, and what a good outcome would look like. You leave the call knowing whether this is a fit — and where it isn't, with the name of someone better placed to do it.",
       },
       {
-        title: "2. Written scope (within 3 working days)",
-        body: "We send a one-to-two page scope document — what's in, what's out, assumptions, and dependencies. You read it, ask questions, and tell us what to change.",
+        title: "2. A written scope, within three working days",
+        body: "One to two pages: what is in, what is out, the assumptions it rests on, and what it needs from your side. You mark it up and send it back. Nothing is priced until that document is agreed.",
       },
       {
-        title: "3. Fixed-fee proposal (or T&M cap)",
-        body: "We attach a number and a payment schedule. Most projects are fixed fee. Ambiguous scopes (R&D, AI prototyping) go T&M with a not-to-exceed cap.",
+        title: "3. A fixed fee, or a capped day rate",
+        body: "A number and a payment schedule against the agreed scope. Fixed fee is the default. Where the shape of the work is genuinely unknown at the point of quoting — research-led design, an AI prototype, a migration into an undocumented system — it runs on a day rate with a not-to-exceed cap, so there is no open-ended invoice.",
       },
       {
         title: "4. Kickoff",
-        body: "You sign, we send a kickoff brief and a working-session schedule, and Discover formally begins. The clock starts the day the deposit lands.",
+        body: "You sign, the deposit clears, and Discover begins with a kickoff brief and a schedule of working sessions. The target launch date in the scope is measured from the day the deposit lands, not from the day you first got in touch.",
       },
     ],
   },
   faqs: [
     {
-      question: "Why publish prices when most agencies don't?",
+      question: "How much does a website cost for a UK small business?",
       answer:
-        "Because hiding them wastes everyone's time. Prospects whose budget is half our minimum self-select out before a sales call. Prospects whose budget is in range arrive ready to discuss scope — not extract a number. We close more business with the prices visible, and the calls we have are better.",
+        "There is no single answer, which is exactly why the bands are worth holding in your head before anyone quotes you. A DIY site builder runs £240–£360 a year, all in. A freelance build is put at £800–£3,000 in one 2026 market summary and £1,500–£3,000 in another, with a typical four- or five-page site landing at £1,200–£2,000. UK agencies quote £2,500–£10,000 for a standard small-business site, London dearer than the rest of the country for the same specification, and regional agencies average £3,000–£6,000. Most UK small businesses spend £1,500–£5,000 on a build. The lowest website build here starts at £3,500 — above both freelance bands and at the low end of the regional agency band, which is a positioning decision and is stated as one.",
     },
     {
-      question: "Are these prices negotiable?",
+      question: "Why more than a £950 template site?",
       answer:
-        "The published numbers are real starting points for the scope we describe. We don't run discounts, but we will scope down if your budget is firm — a smaller project at the same quality is almost always possible. We will also scope up if the work genuinely needs it; you'll see that in the proposal, not as a surprise mid-build.",
+        "It is a fair question: one UK clinic specialist publishes a £950–£4,950+ range. The answer is not “we are premium”. Below the floor the product changes rather than the margin: custom design and build instead of a theme, a performance budget that is measured rather than asserted in a proposal, accessibility audited to WCAG 2.2 AA, structured data, and the hosting account, the domain and the Search Console property in your name from day one. In regulated sectors it also buys an information architecture the rules dictate, which is not a thing that can be added afterwards. If a £950 quote genuinely includes all of that, take it.",
     },
     {
-      question: "Do you bill hourly or fixed fee?",
+      question: "Is VAT included in these prices?",
       answer:
-        "Fixed fee by default. We give a number, you give an approval, we both hold to scope. Ambiguous engagements (research-led design, AI prototyping, mid-migration archaeology) go T&M with a not-to-exceed cap so you never get an open-ended invoice.",
+        "No. Every figure on this site is shown + VAT where applicable. WebAsk is the UK brand of Naxdor, a Swedish sole proprietorship, so how VAT applies depends on the supply and on your own VAT position; the proposal states the treatment for your engagement in writing and the invoice matches it. Every price here is an indicative starting point for guidance, not a binding offer — the written proposal is the document that commits either of us to a number.",
     },
     {
-      question: "What's the payment schedule?",
+      question: "Do you bill by the day or by the project?",
       answer:
-        "Project work: 40% on signature, 30% at design sign-off, 30% on launch. Retainers (SEO, Maintenance, ongoing CRM): monthly in advance. Larger engagements split into milestone-based invoices we agree at scope.",
+        "Fixed fee by default: one number against a written scope, agreed before anything starts and held on both sides. A day rate is the exception rather than an alternative on offer: it applies only where the shape of the work genuinely cannot be known at the point of quoting, and it never appears without a not-to-exceed cap written into the scope beside it. The cap is the whole point. An uncapped hourly arrangement moves all of the estimating risk onto the side that has no way of estimating it, which is the wrong way round.",
     },
     {
-      question: "Do you accept equity in lieu of fees?",
+      question: "What is the payment schedule?",
       answer:
-        "Not for the standard engagement. We're a services firm, not an investor. Once or twice a year we make exceptions for early-stage founders we believe in — those conversations go differently and start with “let's talk equity,” not “we can't afford the price.”",
+        "Project work: 40% on signature, 30% at design sign-off, 30% at launch. Ongoing engagements — SEO, care plans, continuing CRM work — are billed monthly in advance and cancel on 30 days' notice, with no minimum term to sign away. Larger builds split into milestone invoices agreed in the scope, so what you pay tracks what has been delivered rather than the calendar.",
     },
     {
-      question: "What if my project is below the published starting price?",
+      question: "What if my budget is under the starting price?",
       answer:
-        "We'll either scope down to fit (it's often possible — a 3-page landing site, a single automation, a one-week prototype) or we'll recommend a freelancer better suited to the budget. The published starting price is the floor for the standard scope; smaller engagements are common but require us to scope them as their own thing.",
+        "Say so on the call and one of two things happens. Either the scope comes down to fit — a three-page launch site, a single automation, a one-week prototype are all real projects — or you get pointed somewhere better matched. Published UK freelance bands start at £800 in one 2026 market summary and £1,500 in another, and a four- or five-page build inside them lands at £1,200–£2,000; if you are still testing whether the idea works at all, a subscription builder at £240–£360 a year answers the cheaper question first. A starting price is a floor for a standard scope. It is not a filter on who gets a straight answer.",
     },
   ],
   ctaBand: {
-    h2: "Saw your service on the table?",
+    h2: "Know which row is yours?",
     subhead:
-      "Book a free 30-minute discovery call — we'll send the written scope within three working days.",
-    primaryCta: { label: "Book a discovery call", href: "/contact" },
+      "Thirty minutes on what you are trying to build, then a written scope within three working days — with a fixed fee against it, or an honest reason it should be built elsewhere.",
+    primaryCta: { label: "Book a 30-minute call", href: "/contact" },
   },
 } as const;
