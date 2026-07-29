@@ -223,9 +223,9 @@ internal-linking mesh.
       a bare currency-symbol swap of the fork's `$1,500`, with **D4 open** and doc 02 § 7
       the only sanctioned list; and `web-development` promised "four to six weeks" over a
       stage breakdown that sums to 6–9 (the delivery playbook says **4–8**).
-      ⚠️ Verdicts still to ask of the remaining copy modules: `data/copy/process.ts` (67%)
+      ⚠️ Verdicts still to ask of the remaining copy modules: `data/copy/process.ts` (64%)
       is duplicate **by decision** (docs/01 "copy verbatim", commit `6306fc1`);
-      `data/copy/free-audit.ts` (43%) has no recorded verdict. `data/copy/legal.ts` (85%)
+      `data/copy/free-audit.ts` (43%) has no recorded verdict. `data/copy/legal.ts` (69%)
       still names the entity "Naxdor … enskild firma" and must be rewritten in the same
       pass that D3 unblocks, not after it.
 - [ ] 3 industry pages, each run through the **copy-review checklist** (doc 03 § B4)

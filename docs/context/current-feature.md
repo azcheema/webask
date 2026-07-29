@@ -418,8 +418,8 @@ that is now the only surviving record of what the old site served.
     successive regex extractors over `data/services.ts` gave three different answers:
     one matched across string boundaries and returned fragments of code as "prose";
     one silently under-counted `includes`; one double-counted `answer` strings as
-    bare array items. The parsed-object walk in `scratchpad/field-exact.ts` is the
-    only one that reconciles. If two measurements of the same thing disagree, stop
+    bare array items. The parsed-object walk in `scripts/check-copy-uniqueness.ts`
+    is the only one that reconciles, and it is now a gate rather than a one-off. If two measurements of the same thing disagree, stop
     and find out why before reporting either.
 14. 🆕 **The residual defect is _modality_, not fact — and grep cannot see it.**
     All 51 blog findings passed a 0.1% similarity score and a clean British-English
@@ -441,7 +441,7 @@ both because `authoredLocations` is empty. Those sentences are honest today and
 stale the moment the hubs land. Cheshire gets the strongest clinic-facing content
 (doc 02 § 6).
 
-**2. `data/copy/free-audit.ts` (43%) and `data/copy/process.ts` (67%).** Ask the
+**2. `data/copy/free-audit.ts` (43%) and `data/copy/process.ts` (64%).** Ask the
 verdict question of each before treating either as a defect. `process.ts` is
 duplicate **by decision** — docs/01 marks the service-delivery playbook "copy
 verbatim" and commit `6306fc1` says so explicitly; only its false LCP-enforcement
@@ -454,7 +454,7 @@ walk the parsed objects — **not** regex over the source, see trap 13):
 ```
 data/services.ts     8128 words,    0 identical ( 0%)   <- rewritten this feature
 data/copy/pricing     1591 words,    0 identical ( 0%)   <- rewritten this feature
-data/copy/process     1175 words,  790 identical (67%)   <- DELIBERATE (docs/01, 6306fc1)
+data/copy/process     1201 words,  767 identical (64%)   <- DELIBERATE (docs/01, 6306fc1)
 data/copy/free-audit   841 words,  359 identical (43%)   <- no verdict recorded
 data/copy/home        1356 words,   45 identical ( 3%)   <- properly rewritten
 ```
@@ -465,7 +465,7 @@ and `PortfolioStrip` filters on `isReady`, so nothing renders),
 `content/case-studies/example-case-study-template.mdx` (97%, `draft: true` and the
 index `noindex`s while empty), `emails/*` (transactional, never indexed).
 
-⚠️ **`data/copy/legal.ts` (85%) still calls the entity "Naxdor … enskild firma"**,
+⚠️ **`data/copy/legal.ts` (69%) still calls the entity "Naxdor … enskild firma"**,
 which is wrong for WebAsk. It is gated, not live — privacy/terms/cookies are
 `draft: true` pending **D3** — but D3 landing is what unblocks publishing it, so the
 rewrite has to happen in the same pass, not after.

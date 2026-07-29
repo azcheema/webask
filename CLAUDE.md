@@ -131,6 +131,15 @@ Lighthouse CI (Mobile Perf ≥ 95, A11y = 100, BP = 100, SEO ≥ 95) · programm
 same-slug `naxdor.com` post, fail 5% / warn 2%; cross-page 85/70. The fork source is absent
 on CI, so the **cross-site half is a local check** and soft-skips there).
 
+**`pnpm check:copy-uniqueness` — LOCAL ONLY, deliberately not in CI.** It measures the
+`data/*.ts` copy modules against the fork and **cannot run without `d:\naxdor`**, so on a
+runner it would be a step that is always green while checking nothing — the exact
+`upload-artifact` failure mode below. Run it when you touch copy, and before cutover.
+It also carries the **verdict** for each module: `data/copy/process.ts` (64%) is duplicate
+**by decision** (docs/01 "copy verbatim"); `data/copy/free-audit.ts` (43%) and
+`data/copy/legal.ts` (69%) have **no verdict recorded** and are open questions. That
+distinction — "identical on purpose" vs. "nobody looked" — is the whole point of the file.
+
 Budgets: LCP ≤ 2.0s · INP ≤ 200ms · CLS ≤ 0.05 · JS ≤ 170KB gz on home.
 
 > Inherit Naxdor's calibration: perf-score/LCP are set to `warn` (framework floor).

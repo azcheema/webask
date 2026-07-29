@@ -19,6 +19,7 @@
     "check:redirects": "tsx scripts/check-redirects.ts",
     "check:uniqueness": "tsx scripts/check-programmatic-uniqueness.ts",
     "check:blog-uniqueness": "tsx scripts/check-blog-uniqueness.ts",
+    "check:copy-uniqueness": "tsx scripts/check-copy-uniqueness.ts",
     "build:brand-assets": "tsx scripts/build-brand-assets.ts",
     "prepare": "husky"
   },
