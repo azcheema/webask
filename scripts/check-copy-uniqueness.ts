@@ -11,10 +11,11 @@
  *     and FAQ accordion that render on the SAME URL, and feed `FAQPage` JSON-LD
  *     — stayed 57% identical;
  *   - the four blog posts shipped `draft: false` at 8–44 diff lines from their
- *     live same-slug twins (now covered by `check:blog-uniqueness`);
+ *     live same-slug twins (now covered by `check:content-uniqueness`);
  *   - `data/copy/pricing.ts` sat at 82%, the highest in the repo.
  *
- * `check:blog-uniqueness` closes this for `content/blog`. This script closes it
+ * `check:content-uniqueness` closes this for every `content/**` collection.
+ * This script closes it
  * for the `data/*.ts` modules, which had nothing watching them at all.
  *
  * ── MEASUREMENT METHOD — this part matters ────────────────────────────────
@@ -111,6 +112,12 @@ const MODULES: ReadonlyArray<ModuleSpec> = [
     path: "data/industries",
     budget: 0.3,
     verdict: "Written fresh for the UK (d4475fd, 74430cf) — the CAP Code forbids a translation.",
+  },
+  {
+    path: "data/locations",
+    budget: 0.1,
+    verdict:
+      "Hub copy (meta, hero, cardSummary, FAQs) written for the three UK areas in Phase 2. Renders as the hero + index card + FAQ accordion, and feeds FAQPage JSON-LD — the same 'measure the rendered page, not the MDX file' rule that caught data/services at 57%. The MDX bodies alongside it are covered by check:content-uniqueness.",
   },
 ];
 
