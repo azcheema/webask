@@ -112,7 +112,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Will the site be fast on a phone",
         answer:
-          "Yes, and in aesthetics it matters more than in most sectors because the traffic is overwhelmingly mobile and the pages are image-heavy. We hold every build to a sub-two-second largest contentful paint and enforce it in continuous integration rather than checking once at launch. A slow gallery does not merely irritate people — it ranks worse, and it quietly hands the booking to whichever clinic loaded first.",
+          "Yes, and in aesthetics it matters more than in most sectors because the traffic is overwhelmingly mobile and the pages are image-heavy. Total page weight, layout shift and main-thread blocking are hard budgets in continuous integration — a build that regresses one of them fails and does not ship. Load time itself is written against a two-second target and settled on field data after launch, because a throttled build server reports a slower number than the phone in your patient's hand. A slow gallery does not merely irritate people — it ranks worse, and it quietly hands the booking to whichever clinic loaded first.",
       },
       {
         question: "Do you only work with aesthetic clinics",
@@ -221,7 +221,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Will the site be fast and look good on a phone?",
         answer:
-          "Yes — and it has to be, because nearly all of your traffic is mobile and your brand is visual. We build image-rich pages that still load in under two seconds on a phone (verified in our build process), so your space and services look as good on a small screen as they do in person. A beautiful site that loads slowly loses bookings to whoever opens first; we don't trade speed for polish, we engineer both.",
+          "Yes — and it has to be, because nearly all of your traffic is mobile and your brand is visual. We build image-rich pages against a two-second load target, with page weight, layout shift and blocking time enforced as build-failing budgets so a gallery cannot get heavier release by release. Your space and services should look as good on a small screen as they do in person. A beautiful site that loads slowly loses bookings to whoever opens first; we don't trade speed for polish, we engineer both.",
       },
       {
         question: "Can you help us show up in local searches?",

@@ -68,10 +68,12 @@ that reality, however good it looks. What we build instead:
 Nearly all of your traffic is mobile, and your brand is visual — which is an awkward
 combination, because images are what make sites slow.
 
-We hold every build to a sub-two-second largest contentful paint and enforce it in continuous
-integration rather than checking once at launch. Your space and your work should look as good
-on a small screen as they do in person, and still load before someone gives up. That is an
-engineering problem with a known solution, not a trade-off you have to accept.
+Total page weight, layout shift and blocking time are budgets a build has to pass before it
+ships, so a gallery cannot quietly get heavier release by release. Load time itself we write
+against a two-second target and then watch in real visitor data, which is the only place it can
+be judged honestly. Your space and your work should look as good on a small screen as they do
+in person, and still load before someone gives up. That is an engineering problem with a known
+solution, not a trade-off you have to accept.
 
 ## Local search
 

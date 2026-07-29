@@ -103,12 +103,12 @@ export const process: ProcessContent = {
       name: "Build",
       tagline: "Ship the thing, performance-budgeted from line one.",
       shortDescription:
-        "Engineering in weekly sprints with a live preview link from day one. CI enforces performance, accessibility, and SEO budgets on every commit.",
+        "Engineering in weekly sprints with a live preview link from day one. CI enforces accessibility, SEO and page-weight budgets on every commit.",
       longDescription:
         "Build runs in weekly sprints with a preview URL you can open from your phone the moment commits land. Every page is performance-budgeted in CI — Lighthouse runs on every pull request, accessibility is audited end-to-end, and SEO foundations (schema, sitemap, robots, OG) are wired before the design layer. You see the work as it's built; we don't surprise you with a Big Reveal at the end. Pre-launch, we run a complete QA pass on mobile and desktop, validate JSON-LD in Rich Results Test, and submit the sitemap to Google Search Console.",
       artefacts: [
         "Preview URL updated on every commit",
-        "Lighthouse, accessibility, and SEO budgets enforced in CI",
+        "Accessibility, SEO and page-weight budgets enforced in CI",
         "Pre-launch QA report and a launch checklist",
         "Production launch with smoke-test verification",
       ],
