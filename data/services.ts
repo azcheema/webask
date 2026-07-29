@@ -72,9 +72,9 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "web-development",
     name: "Web Development",
-    summary: "Custom marketing sites and product surfaces engineered for performance.",
+    summary: "Custom website design and build for UK small businesses that need to be found.",
     heroSubhead:
-      "Fast, search-ranked websites built on a modern stack — designed to convert on mobile first and grow with your business.",
+      "Fixed-fee website design and build — fast on mobile, accessible to WCAG 2.2 AA, and hosted in accounts you own.",
     whoItsFor:
       "small businesses replacing a slow templated site, agencies that need an engineering-grade build partner, or founders shipping a marketing site for a new venture.",
     pricing: {
@@ -82,18 +82,18 @@ export const services: ReadonlyArray<Service> = [
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "Page count, custom illustrations, CMS depth, and the number of integrations are the biggest price levers.",
+        "What moves it: page count, how much of the design is bespoke, whether you need a CMS, and how many systems it must talk to.",
     },
     includes: [
-      "5–10 page custom design and build on Next.js + Tailwind",
-      "Sub-2-second Largest Contentful Paint on mobile, verified in CI",
-      "SEO foundation — title/meta, schema.org JSON-LD, sitemap, robots, OG images",
-      "Mobile-first responsive design with accessibility audited to WCAG 2.2 AA",
-      "30 days of post-launch support — bugs, tweaks, training",
+      "Five to ten pages, custom-designed and built on Next.js and Tailwind",
+      "A two-second mobile LCP budget, with page weight and layout shift gated on every deploy",
+      "Search foundations — structured data, sitemap, canonicals, social preview cards",
+      "WCAG 2.2 AA accessibility, plus a cookie banner where Reject is as easy as Accept",
+      "Thirty days after launch for fixes, small changes and training your team",
     ],
     notIncluded: [
-      "Logo design or full brand identity (UI/UX Design or a brand studio handles that)",
-      "Ongoing SEO content or link-building — see SEO and Maintenance plans",
+      "Brand identity — a logo and full visual system belong with a brand studio",
+      "Ongoing SEO content or link-building, and upkeep past day 30 — separate plans",
     ],
     primaryCta: { label: "Get a web development quote", href: "/contact" },
     relatedServiceSlugs: ["ui-ux-design", "seo"],
@@ -101,53 +101,53 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What's the difference between your £3,500 site and a £1,500 freelancer build?",
         answer:
-          "Scope and floor. A £1,500 freelancer site is usually 3–5 pages on a template with light SEO and no performance budget. A WebAsk site is 5–10 pages of custom design and build, with sub-2-second LCP enforced in CI, full schema.org structured data, accessibility audited to WCAG 2.2 AA, and a real component system underneath. The freelancer build is fine if your site is going to be a static brochure; the WebAsk floor exists because we treat the site as a long-term sales asset, not a one-time deliverable.",
+          "Scope and floor. At £1,500 you are in the UK freelance band, where market data puts a typical build at four or five pages. A WebAsk site is 5–10 pages of custom design and build, with a sub-2-second mobile LCP budget measured on every build, full schema.org structured data, WCAG 2.2 AA accessibility gated in CI, and a real component system underneath. The freelancer build is fine if your site is going to be a static brochure; the WebAsk floor exists because we treat the site as a long-term sales asset, not a one-off deliverable.",
       },
       {
-        question: "How long does it take to build a custom website?",
+        question: "How long does a website take to build, and what sets the date?",
         answer:
-          "A standard 5-to-10-page marketing site launches in 4–6 weeks from kickoff. Discover takes 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks (overlapping with the tail of Design), and launch happens at the end of Build. Larger sites with city pages, industry pages, or a blog framework extend Build by 2–4 weeks. We commit to a target launch date in the written scope.",
+          "Four to eight weeks for a five-to-ten-page site, with the target date written into the scope rather than left open. Roughly a week or two to agree scope and structure, one or two on design, two to six on the build with the tail of design still running, then launch. Location pages, industry pages or a blog framework add two to four weeks. Each stage assumes the copy, photographs and approvals it needs are ready — where they are not, the schedule waits on those rather than on engineering.",
       },
       {
-        question: "Can you redesign my existing site without rebuilding from scratch?",
+        question: "Can my current site be redesigned rather than rebuilt?",
         answer:
-          "Sometimes. If your existing stack is sound — modern framework, clean codebase, no plugin sprawl — a redesign is faster and cheaper than a full rebuild. We do a short paid audit (3–5 hours) first to map what's salvageable and what isn't. The audit cost folds into the engagement if you proceed.",
+          "It depends what is underneath. Where the stack is modern, the codebase is clean and there is no plugin sprawl, redesigning the visual layer costs less than starting again. Where the site is WordPress, we do not work in it, so a redesign in place is not something we can offer — a rebuild elsewhere or a WordPress specialist are the honest options. Start with the free audit either way — it reads the codebase before anyone argues about the design.",
       },
       {
-        question: "Do you host our site, or do we?",
+        question: "Does the site live on your hosting account or ours?",
         answer:
           "You host it. The Vercel project lives in an account you own from day one. The same goes for your domain, your analytics, your Search Console property, and your CRM. WebAsk is a collaborator, not a hostage-taker — if you ever fire us, you keep the asset intact.",
       },
       {
-        question: "What if we want to edit copy ourselves after launch?",
+        question: "Can we edit our own copy after the site is live?",
         answer:
-          "At launch we ship copy in MDX files in the repo, which means engineering handles edits during the early life of the site. The moment your editor velocity outpaces what that allows — typically when you start a blog or want non-engineers publishing weekly — we migrate you to Payload CMS: self-hosted, free, with a custom editor we tune to your team. The migration is usually a 1–2 week project quoted separately.",
+          "At launch the copy sits in MDX files in the repository, so edits come through us. That suits a site whose pages change a few times a year, and it stops suiting you the moment someone in-house wants to publish without asking — a blog, a news page, seasonal offers. At that point we move you to Payload CMS: self-hosted, no licence fee, with an editor set up around how your team actually writes. It is a one-to-two-week piece of work, quoted on its own rather than folded into the build price.",
       },
       {
-        question: "How do you handle a redesign of a search-ranking site without losing traffic?",
+        question: "We already rank for things. How do you move the site without losing that?",
         answer:
-          "Carefully. The plan: a complete inventory of every URL that ranks, every backlink that matters, and every redirect we need to preserve. We map old URLs to new ones, set up 301s, regenerate the sitemap, and verify in Search Console before launch. Post-launch we monitor rankings daily for two weeks and address any drops within 48 hours. Done well, a redesign maintains or improves search performance; done poorly, it kills six months of ranking work.",
+          "By treating the redirect map as a deliverable rather than a launch-day chore. Every URL that ranks, every inbound link worth keeping and every page carrying equity is inventoried, mapped to its replacement with a 301, and verified against a preview deployment before the switch rather than after it. Rankings are then watched closely through the first month, so a drop is caught in days. We are doing exactly this to ourselves: webask.co.uk is a 2020-era WordPress site, and all twelve of its legacy URLs were mapped to replacements before any of the new site went live.",
       },
       {
-        question: "What if our brand assets aren't ready yet?",
+        question: "We have no logo and no brand guidelines. Can we still start?",
         answer:
-          "We can build a temporary brand kit — logo wordmark, two colours, one typeface — for £1,500 as part of the engagement. It's enough to ship a site that looks intentional while a proper rebrand happens elsewhere. We're upfront that this is interim: the moment a full brand identity lands, we update the site in a small follow-up engagement.",
+          "We can build a temporary brand kit — logo wordmark, two colours, one typeface — quoted as a small add-on to the engagement. It's enough to ship a site that looks intentional while a proper rebrand happens elsewhere. We're upfront that this is interim: the moment a full brand identity lands, we update the site in a small follow-up engagement.",
       },
       {
-        question: "Do you offer maintenance after launch?",
+        question: "Is there cover once the 30 days of post-launch support run out?",
         answer:
-          "Yes — a separate Maintenance care plan covers security patching, dependency updates, performance monitoring, and a monthly bucket of improvement hours. Starting at £250/month. We strongly recommend it for any site we build; an unmaintained site decays in months, not years.",
+          "Yes — a separate Maintenance care plan covers security patching, dependency updates, performance monitoring, and a monthly bucket of improvement hours. Starting at £250/month. We strongly recommend it for any site we build; an unmaintained site accumulates unpatched dependencies fast.",
       },
     ],
   },
   {
     slug: "ecommerce-development",
     name: "E-Commerce",
-    summary: "Storefronts that convert — Shopify, custom, or headless.",
+    summary: "Shopify, headless and custom shops built to UK consumer rules.",
     heroSubhead:
-      "Storefronts engineered to convert — from a focused Shopify build to a fully custom headless commerce stack.",
+      "Design, build and launch on Shopify, headless or custom — checkout, price display, reviews and consent wired to UK rules from day one.",
     whoItsFor:
-      "small businesses selling direct-to-consumer, brands outgrowing a templated theme, or operators migrating from WooCommerce/Etsy to a real platform.",
+      "small businesses selling direct-to-consumer, brands outgrowing a templated theme, or operators moving off Wix, Etsy or an ageing WooCommerce install.",
     pricing: {
       startingAmount: 6500,
       currency: "GBP",
@@ -157,14 +157,14 @@ export const services: ReadonlyArray<Service> = [
     },
     includes: [
       "Shopify or custom build with theme work, checkout customisation, and product templates",
-      "Payment, shipping, and tax integrations configured and tested",
-      "Performance budgets enforced — sub-2-second LCP on PDPs and PLPs",
-      "Conversion-grade cart, checkout, and post-purchase flows",
-      "30 days of post-launch support",
+      "Payments, delivery rules and VAT-inclusive consumer price display, tested on real orders",
+      "LCP, layout stability and WCAG 2.2 AA checked on listing, product and checkout templates",
+      "Basket, checkout and post-purchase flows, with review provenance and consent recorded",
+      "30 days of post-launch cover, through the first weeks of live trading",
     ],
     notIncluded: [
-      "Product photography or copywriting (we recommend specialists)",
-      "Paid-media setup or ongoing ads management",
+      "Product photography and product-description writing — we point you to a specialist",
+      "Ad accounts and paid-media management — the shop, not the campaigns",
     ],
     primaryCta: { label: "Get an e-commerce quote", href: "/contact" },
     relatedServiceSlugs: ["web-development", "seo"],
@@ -172,40 +172,40 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "How much does an e-commerce build cost?",
         answer:
-          "Starting at £6,500, + VAT where applicable. The comparison worth making is against the £2,500–£10,000 UK agencies quote for a standard small-business website, with regional agencies averaging £3,000–£6,000 (Duport / GetYouOnline and dotitmedia, 2026). A shop sits at the upper end of that band rather than the middle, and the reason is not page count: it has an order path, a tax and delivery display, a review system and a consent layer that all have to be right at once, and three of those four have a regulator attached. What moves the price is catalogue size, how deep the custom theming goes, third-party integrations such as ERP, fulfilment and subscriptions, and whether you go headless or stay Shopify-native. Running costs afterwards are modest by comparison — domain and hosting basics sit around £100–£300 a year, plus a care plan if the shop is to be actively looked after.",
+          "Starting at £6,500, + VAT where applicable. The comparison worth making is against the £2,500–£10,000 UK agencies quote for a standard small-business website, with regional agencies averaging £3,000–£6,000 (Duport / GetYouOnline and dotitmedia, 2026). £6,500 sits above the regional-agency average and mid-way up the wider band, and the reason is not page count: it has an order path, a tax and delivery display, a review system and a consent layer that all have to be right at once, and three of those four have a regulator attached. What moves the price is catalogue size, how deep the custom theming goes, third-party integrations such as ERP, fulfilment and subscriptions, and whether you go headless or stay Shopify-native. Running costs afterwards are not only hosting: a shop carries a platform subscription, the apps you run and payment fees, all in your own accounts, plus a care plan if you want one.",
       },
       {
-        question: "Should I build on Shopify or go fully custom?",
+        question: "Is Shopify enough, or do we need something custom?",
         answer:
-          "For most small businesses, Shopify. Its checkout converts, its payment and fraud tooling is mature, and it stays patched without you thinking about it — we just do serious theme and template work on top. We reach for a headless front end on Shopify, or a fully custom stack, only when the brand experience or the integration requirements (unusual catalogues, complex pricing, deep ERP sync) genuinely outgrow what a themed store can do. We make the recommendation on the first call, and we will steer you to Shopify even though a custom build bills more — putting you on the wrong platform to win a bigger invoice is how stores end up rebuilt in two years.",
+          "For most small businesses, Shopify. Its checkout converts, its payment and fraud tooling is mature, and it stays patched without you thinking about it — we just do serious theme and template work on top. We reach for a headless front end on Shopify, or a fully custom stack, only when the brand experience or the integration requirements (unusual catalogues, complex pricing, deep ERP sync) genuinely outgrow what a themed store can do. We make the recommendation on the first call, and we will steer you to Shopify even though a custom build bills more — billing more by putting you on the wrong platform is not a trade we are willing to make.",
       },
       {
-        question: "How long does an e-commerce build take?",
+        question: "How long before the shop is taking orders?",
         answer:
-          "A focused Shopify storefront launches in 6–9 weeks from kickoff: Discover 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks overlapping the tail of Design, then a full QA pass and launch. Headless or fully custom builds, large catalogues, subscriptions, or multi-system integrations extend Build by 3–6 weeks. We commit to a target launch date in the written scope.",
+          "Plan for 6–12 weeks from kickoff, with a focused Shopify storefront at the near end of that: Discover 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks overlapping the tail of Design, then a full QA pass and launch. Headless or fully custom builds, large catalogues, subscriptions, or multi-system integrations sit at the far end of the band or past it. We commit to a target launch date in the written scope.",
       },
       {
-        question: "Can you migrate my WooCommerce, Wix, or Etsy store without losing rankings?",
+        question: "Moving off WooCommerce, Wix or Etsy — what happens to our rankings?",
         answer:
-          "Yes, and the migration is the part we treat most carefully. We inventory every product, URL, and review that carries SEO equity, map old URLs to new ones with 301 redirects, regenerate the sitemap, and verify in Search Console before launch. Post-launch we monitor rankings for two weeks and address drops within 48 hours. Done well, a migration keeps your traffic and improves your conversion; done carelessly, it resets the ranking work you have already paid for.",
+          "It starts with a crawl of the shop you have, before anything is designed. Every product, category and content URL that carries traffic or links is mapped to a destination, redirected with a 301, and checked against the new sitemap in Search Console before cutover. A shop makes that harder than a brochure site does: discontinued lines and sold-out variants still hold links, and category URLs multiply once filters are involved — so the map decides what each of those becomes, rather than letting them all land on the home page. Marketplaces are the exception: you never owned the Etsy or eBay URL, so there is nothing to redirect, and what moves across is the brand and the catalogue rather than the ranking.",
       },
       {
-        question: "Do you set up payment, shipping, and tax?",
+        question: "Who wires up payments, delivery and VAT?",
         answer:
-          "Yes — payment gateways, shipping rules and carrier rates, and tax calculation are configured and tested against real orders before launch as part of the starting scope. We do not hand you a store with checkout half-wired. Platform transaction fees and any third-party app subscriptions are passed through at cost; we are upfront about those line items in the proposal.",
+          "We do. Payment gateway, delivery rules and carrier rates, and tax calculation are all in the starting scope, and each is tested against real orders before launch rather than left half-wired. The specifically UK part is the display rather than the maths: prices shown to consumers must be VAT-inclusive, or the exclusion made very clear, so the tax setting and the template that renders the price have to agree. Platform transaction fees and third-party app subscriptions stay in your name and are passed through at cost, named in the proposal rather than turning up later.",
       },
       {
-        question: "What about subscriptions, multi-currency, or selling internationally?",
+        question: "Do you handle subscriptions, multi-currency and selling abroad?",
         answer:
-          "All of those are real engineering rather than a checkbox, so they sit above the starting price and we scope them explicitly. Subscriptions, multi-currency, multi-region tax, and B2B pricing are well-trodden on Shopify and entirely doable; we tell you on the first call which of them you actually need now versus which are better added once the store has traction.",
+          "Each is real engineering rather than a switch, so all three sit above the starting price and get scoped explicitly. Subscriptions bring their own billing states — pause, skip, failed payment, cancellation — and each of those is a screen and an email, not a setting. Selling into other markets carries a second question: every market has its own tax treatment and its own consumer-protection expectations, so adding a currency is rarely where the work ends. None of it is exotic. What is worth settling at scoping is which of them the shop needs at launch, and which are better added once it has traction.",
       },
       {
-        question: "Who owns the store, the data, and the accounts after launch?",
+        question: "Do we own the shop, the customer data and the accounts outright?",
         answer:
           "You do, from day one. The Shopify (or hosting) account, the domain, the analytics, the Search Console property, and the customer data all live in accounts you own. WebAsk is a collaborator, not a hostage-taker — if you ever fire us, you keep the store and everything in it, intact and exportable.",
       },
       {
-        question: "Do you offer support after the store launches?",
+        question: "Who looks after the shop once it is live?",
         answer:
           "Thirty days of post-launch support is included by default — bug fixes, small tweaks, and team training. After that, a Maintenance care plan covers platform and dependency updates, performance monitoring, and a monthly bucket of improvement hours, starting at £250/month. For a revenue-generating store we strongly recommend it; an unmaintained storefront accumulates broken apps and slow pages faster than you would expect.",
       },
@@ -214,28 +214,28 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "web-app-development",
     name: "Web Applications",
-    summary: "Internal tools, dashboards, and customer portals.",
+    summary: "Bespoke staff tools, booking systems, and customer portals.",
     heroSubhead:
-      "Internal tools, customer portals, and dashboards built on the same stack we use for production SaaS — typed end-to-end, easy to extend.",
+      "Staff tools, customer portals, and booking systems where access control, retention, and the audit trail are code you can inspect — not promises in a policy.",
     whoItsFor:
-      "Operators replacing a tangle of spreadsheets, B2B founders shipping their first product surface, or teams that need a portal customers actually log into.",
+      "Operators outgrowing a shared spreadsheet, practices that need clients to log in and book, or teams holding personal data their privacy notice already makes promises about.",
     pricing: {
       startingAmount: 9500,
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "Number of user roles, authentication complexity, third-party integrations, and whether real-time/multi-tenant features are required.",
+        "Roles and sign-in complexity, what it reads from and writes to, whether it holds health or other sensitive data, and any real-time or multi-tenant requirement.",
     },
     includes: [
-      "Discovery, IA, and component design before any code is written",
-      "TypeScript + Next.js implementation with typed end-to-end data flow",
-      "Authentication, role-based access, and audit logging baked in",
-      "Hosting, CI, and observability set up on your accounts",
-      "Handoff documentation and code walkthrough for your team",
+      "Discovery and screen mapping that record roles, your lawful basis, and retention",
+      "A typed TypeScript and Next.js build, checked against WCAG 2.2 AA in CI",
+      "Sign-in, roles enforced server-side, and an append-only audit trail",
+      "Deployment pipeline, staging, and error alerting — handed over at launch",
+      "Export and erasure paths, plus a runbook and a walkthrough for your team",
     ],
     notIncluded: [
-      "Long-tail feature development beyond the agreed MVP scope (rolls into a retainer)",
-      "Ongoing user support — see Maintenance plans",
+      "Legal or DPO advice — you set the lawful basis and retention periods",
+      "Feature work past the agreed first version, and day-to-day user support",
     ],
     primaryCta: { label: "Get a web app quote", href: "/contact" },
     relatedServiceSlugs: ["ui-ux-design", "maintenance-support"],
@@ -243,65 +243,66 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does the £9,500 starting price actually get me?",
         answer:
-          "A production-deployed MVP — the core workflow built properly, not a clickable prototype. That includes discovery and design before any code, a typed Next.js implementation, authentication with role-based access, hosting and CI and monitoring stood up on accounts you own, and a documented handoff. It is a real first version you can put in front of real users. What it is not is every feature you can imagine in version one — we build the core, ship it, and grow it from there.",
+          "A production-deployed MVP — the core workflow built properly, not a clickable prototype. That includes discovery and design before any code, a typed Next.js implementation, authentication with role-based access, hosting and CI and monitoring stood up on accounts you own, and a documented handover. It is a real first version you can put in front of real users. What it is not is every feature you can imagine in version one — we build the core, ship it, and grow it from there.",
       },
       {
-        question: "What's the difference between a website and a web application?",
+        question: "How do I know we need an application rather than a better website?",
         answer:
-          "A website presents information — pages a visitor reads, with a contact form at the end. A web application is software people log into and do work in: internal tools, customer portals, dashboards, anything with user accounts, roles, and data that changes. The line is interactivity and state. If your users need to sign in, enter or manipulate data, and have different permissions, you are looking at an application, and it is engineered differently from a marketing site.",
+          "The test is whether anybody signs in. A site presents information and takes an enquiry; an application holds state — accounts, permissions, records that change, and a history of who changed them. Once people sign in, obligations a brochure site could meet by hand stop scaling: being able to say who saw a record, hand a copy to the person it describes, and delete it where erasure applies. Asked the other way round — if your process runs on a shared spreadsheet, a shared login, or an inbox nobody can audit, you already have an application, and nobody has written it down. If nothing changes and nobody signs in, a marketing site with a form is cheaper and will serve you better.",
       },
       {
-        question: "How long does it take to build a web application?",
+        question: "How long from first call to people actually using it?",
         answer:
-          "A focused MVP launches in roughly 8–12 weeks: Discover 1–2 weeks, Design 2–3 weeks, Build 3–6 weeks overlapping the tail of Design, then a full QA pass against real accounts and data. Applications with many user roles, complex authentication, real-time features, multi-tenancy, or several third-party integrations extend Build meaningfully — we scope that explicitly rather than discover it mid-project, and commit to a target launch date in writing.",
+          "Roughly 8–20 weeks for a first version: one to two weeks of Discover, two to four of Design, three to eight or more of Build overlapping the tail of Design, then QA run against real accounts and real records rather than fixtures. What stretches the timeline is not the interface: it is the number of roles, the integrations, multi-tenancy, real-time behaviour, and the data decisions that have to be settled before the schema is right. Those get scoped in writing at the start, with a target launch date, rather than surfacing halfway through Build.",
       },
       {
-        question: "Should I build custom, or use off-the-shelf SaaS or a no-code tool?",
+        question: "Do you need access to our live customer data to build it?",
         answer:
-          "Use off-the-shelf SaaS if a tool already does the job — we will tell you so on the call rather than bill you to rebuild something you can rent. No-code platforms like Airtable, Retool, or Bubble are genuinely good for prototypes and small internal tools. A custom build earns its cost when the process is core to how you make money, when no existing tool fits without painful compromise, or when you have outgrown a no-code platform and keep hitting its ceiling. We make that recommendation honestly, even when it means a smaller engagement.",
+          "Not by default, and it is worth agreeing that explicitly rather than assuming it. Most of the build can run against seeded records that match the shape of yours, which keeps real personal data out of development environments, out of screenshots and out of anything shared for review. Where live records genuinely have to be touched — a migration, or a defect that only reproduces against real data — it should happen under a written agreement setting out what may be accessed, on named accounts, with access logged and then removed. If the system will hold health records or anything else sensitive, that boundary belongs in the scope, not in an email at the point somebody needs a password.",
       },
       {
-        question: "Who owns the code, the data, and the accounts?",
+        question: "If we bring development in-house later, what do we take with us?",
         answer:
-          "You do, from day one. The source code, the database, and the hosting, CI, and monitoring accounts all live in your ownership — we build inside accounts you control, or hand everything over cleanly at launch. There is no lock-in: if you ever bring development in-house or switch partners, you keep the application, the data, and the ability to keep building on it.",
+          "All of it. The repository, the database, and the deployment, CI and monitoring accounts either sit in accounts you control throughout or transfer cleanly at handover, with a runbook written for somebody who did not build the thing. The part worth asking about specifically is the data-protection layer: the audit trail, the retention job, and the export and erasure paths come with it, because they are code in your repository rather than a setting in somebody else's dashboard. Nothing needs unpicking from us first.",
       },
       {
-        question: "Can you integrate with our existing systems and tools?",
+        question: "What can it plug into — our CRM, our diary, our accounts software?",
         answer:
-          "Usually, yes — integrations are a core part of most application work. We connect to CRMs, payment and billing systems, calendars, email, and internal APIs over their official interfaces. The number and complexity of integrations is one of the main price levers, so we map exactly which systems the app must talk to during Discover and scope them into the proposal rather than treating them as surprises.",
+          "Anything with a documented API, which covers the common UK small-business stack: GoHighLevel or HubSpot, calendars and booking, payment and billing, email and SMS, and internal APIs of your own. The caveat worth raising early is that sector-specific software — practice management systems among them — may publish a thin API or none at all. Where that happens the options are a supported export, a manual step kept deliberately visible, or a different plan. Which systems it must read from and write to is established in Discover and named in the written scope, because integrations are one of the larger price levers.",
       },
       {
-        question: "What happens after launch — support and new features?",
+        question: "Once it is live, who patches it and who pays for new features?",
         answer:
-          "Thirty days of post-launch support is included. After that, most applications move to a Maintenance retainer (starting at £250/month) covering security patching, dependency upgrades, monitoring, and a monthly budget of improvement hours — because once people use an app daily, feature requests follow. Larger new capabilities are quoted as their own projects. An unmaintained application accumulates security and dependency debt quickly, so we recommend a plan for anything business-critical.",
+          "Thirty days of post-launch support is included. After that, a Maintenance retainer (starting at £250/month) is the sensible next step, covering security patching, dependency upgrades, monitoring, and a monthly budget of improvement hours — because once people use an app daily, feature requests follow. Larger new capabilities are quoted as their own projects. An unmaintained application accumulates security and dependency debt quickly, so we recommend a plan for anything business-critical.",
       },
     ],
   },
   {
     slug: "ui-ux-design",
     name: "UI / UX Design",
-    summary: "Research-led design systems and conversion-grade interfaces.",
+    summary:
+      "Conversion-focused interface design and information architecture, built to WCAG 2.2 AA.",
     heroSubhead:
-      "Research-led design systems and conversion-grade interfaces — built to ship into the same codebase that consumes them.",
+      "Research, wireframes and a tokenised interface system — designed to WCAG 2.2 AA and documented well enough for any team to build it.",
     whoItsFor:
-      "Founders with a working product that looks dated, teams introducing a design system, or small businesses preparing for a rebuild and want the design done right first.",
+      "Founders with a working product that looks dated, teams introducing a design system, or small businesses preparing for a rebuild who want the design done right first.",
     pricing: {
       startingAmount: 3000,
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "Scope of the design system, number of key flows designed, and whether usability testing is included.",
+        "How many flows are designed, how much of your current structure survives, and whether usability testing is added.",
     },
     includes: [
-      "Stakeholder research, IA, and a sitemap or product map",
-      "Wireframes, then visual design across 3–10 core screens or flows",
+      "Discovery interviews, an information architecture, and a sitemap",
+      "Wireframes signed off first, then finished design across 3–10 screens or flows",
       "Component library in Figma, tokenised so engineering can ship it",
-      "Two rounds of revisions; final assets exported and documented",
-      "Designer-engineer pairing during implementation if you build with us",
+      "Two revision rounds, then exported assets and written documentation",
+      "Design carried into the build by the same person, if we build it too",
     ],
     notIncluded: [
-      "Brand identity (logo, full visual identity system)",
-      "Ongoing design support — folds into a retainer if needed",
+      "Logo design, naming, or a brand identity from scratch",
+      "Continuing design work after handover — quoted as a retainer",
     ],
     primaryCta: { label: "Get a design quote", href: "/contact" },
     relatedServiceSlugs: ["web-development", "web-app-development"],
@@ -309,46 +310,46 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does the £3,000 starting price cover?",
         answer:
-          "Research and an information architecture, wireframes and then visual design across your core screens or flows, a tokenised Figma component library, two rounds of revisions with final assets exported and documented, and designer-engineer pairing during implementation if you build with us. It designs the core of the product properly and sets the system. A sprawling product with dozens of unique screens, or one that needs usability testing, is a larger engagement that we scope explicitly.",
+          "Research and an information architecture, wireframes and then visual design across your core screens or flows, a tokenised Figma component library, two rounds of revisions with final assets exported and documented, and the same person carrying the design into the code if you build with us. It designs the core of the product properly and sets the system. A sprawling product with dozens of unique screens, or one that needs usability testing, is a larger engagement that we scope explicitly.",
       },
       {
-        question: "What's the difference between UX and UI design?",
+        question: "Do we need UX design as well as UI design?",
         answer:
           "UX is how the product is structured and how people move through it — the information architecture, the flows, the decisions that determine whether it actually works. UI is the visual layer on top — typography, colour, spacing, and components — the part that determines whether it feels considered and trustworthy. They are different disciplines that have to agree with each other, and we do both: we fix the structure and then design the surface, rather than treating one without the other.",
       },
       {
-        question: "Do you design brand identities and logos too?",
+        question: "Does this cover a logo and a full brand identity?",
         answer:
-          "No — we design UX and UI within an existing brand, not brand identities from scratch. Logo design and a full visual identity system belong with a dedicated brand studio, and we will recommend one we trust. If your brand assets are not ready, we can work to a minimal interim kit — a wordmark, a couple of colours, a typeface — so design is not blocked, then update once a proper identity lands.",
+          "No — we design UX and UI within an existing brand, not brand identities from scratch. Logo design and a full visual identity system belong with a dedicated brand studio, and we can point you at a name to try. If your brand assets are not ready, we can work to a minimal interim kit — a wordmark, a couple of colours, a typeface — so design is not blocked, then update once a proper identity lands.",
       },
       {
-        question: "Will the design actually be buildable, or just pretty mockups?",
+        question: "Will our developers actually be able to build what you hand over?",
         answer:
           "Buildable, by design. We deliver a tokenised component library in Figma — every colour, type size, and spacing step is a named token that maps directly onto the design tokens engineering uses — and components are defined once and composed, exactly as they are in code. That closes the usual gap where an engineer rebuilds mockups by eye and the result drifts. If we build the product with you, the design ships into the same system that consumes it; if your team builds it, the system is structured and documented so they can.",
       },
       {
-        question: "Do I have to build the product with you to get the design?",
+        question: "Do we have to commission the build from you as well?",
         answer:
-          "No. The design is a standalone deliverable — a documented, tokenised system and the designed flows — that any competent team can build. We structure and document it precisely so it does not depend on us. That said, when we also build it, design and engineering pair directly through implementation, which is the surest way to get a shipped product that matches the design rather than a near-miss.",
+          "No. The design is a standalone deliverable — a documented, tokenised system and the designed flows — that any competent team can build. We structure and document it precisely so it does not depend on us. That said, when we also build it, the person who designed it is the person who writes the code, which removes the handover step where a build quietly drifts from the design it was meant to match.",
       },
       {
-        question: "How long does a design engagement take?",
+        question: "How long before we have something to build from?",
         answer:
-          "A focused engagement runs roughly 4–6 weeks: Research about a week, Wireframes 1–2 weeks, Visual design 2–3 weeks, then handoff. Larger products, bigger design systems, or added usability testing extend that, and we put a target timeline in the written scope. We deliberately spend the early time on structure and wireframes — moving a step in a wireframe is cheap, rebuilding a finished screen is not.",
+          "A focused engagement is scoped at roughly 4–6 weeks: research and information architecture first, then wireframes, then the interface, then handover. The written scope carries target dates for each stage rather than only the end. More flows, a larger design system, or usability testing added on will extend it, and we would rather say so at the quote than at the handover. The order is deliberate — a step is easy to move while it is still a box on a wireframe, and expensive to move once it is a finished screen.",
       },
       {
-        question: "Can you redesign our existing product without starting from zero?",
+        question: "Can we keep what works and only redesign what doesn't?",
         answer:
-          "Usually, and often that is the right call. If your product has a sound underlying structure, we can redesign the visual layer and fix the few flows that are actually hurting you without rebuilding everything — which is faster and cheaper. We start with a short audit to separate what genuinely needs to change from what is fine as-is, so you are not paying to redesign screens that already work.",
+          "If the underlying structure holds up, yes — and it is the cheaper route when it does. The visual layer and the specific flows that are actually costing you can be reworked without touching screens that already do their job. The free audit sorts one from the other first, with a cost put against each fix. Where a restyle cannot reach the problem — because what is wrong is the order of the pages, not their appearance — we say so before you pay to make the wrong thing prettier.",
       },
     ],
   },
   {
     slug: "seo",
     name: "SEO",
-    summary: "Technical, on-page, and content SEO built for measurable rankings.",
+    summary: "Organic search for UK businesses — technical fixes, keyword work, and writing.",
     heroSubhead:
-      "Technical, on-page, and content SEO that earns rankings — engineered into the site, not bolted on after launch.",
+      "Organic search run for the UK market — crawl and Core Web Vitals, keywords researched on UK volumes, and writing published every month.",
     whoItsFor:
       "small businesses invisible on Google despite a working site, multi-location practices that need local SEO, or operators ready to invest in a real organic channel.",
     pricing: {
@@ -356,18 +357,18 @@ export const services: ReadonlyArray<Service> = [
       currency: "GBP",
       cadence: "monthly",
       priceNote:
-        "Market competitiveness, number of locations, content cadence, and link-building scope are the levers.",
+        "Competition on your terms, how many places must rank, how often you publish, and how much link work is needed are what move it.",
     },
     includes: [
-      "Technical audit covering Core Web Vitals, crawl, schema, and indexation",
-      "Keyword strategy mapped to your services, locations, and industries",
+      "Crawl, Core Web Vitals, schema and indexation audited in Bing as well as Google",
+      "Keyword research pulled on a UK locale filter, one target per page",
       "On-page optimisation across existing high-intent pages",
-      "Monthly content brief and publication of 2–4 long-form pieces",
-      "Reporting that ties rankings and traffic to leads, not vanity metrics",
+      "Two to four long-form pieces a month, briefed and published",
+      "Monthly reporting from Search Console as well as analytics, tied to enquiries",
     ],
     notIncluded: [
-      "Paid search or paid social — we focus on organic; ads partners on request",
-      "Reputation management or third-party review platforms",
+      "Google Ads, Meta or LinkedIn ads — this retainer is organic only",
+      "Review generation, incentivised reviews, or reputation management",
     ],
     primaryCta: { label: "Get an SEO quote", href: "/contact" },
     relatedServiceSlugs: ["web-development", "crm-automation"],
@@ -375,70 +376,70 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "How much does SEO cost in the UK?",
         answer:
-          "SEO starts at £750 a month, + VAT where applicable. Here is the market that number sits inside. UK retainers for small businesses run roughly £150–£800 a month — light upkeep from about £150, an active local campaign £250–£500, and a full campaign £500–£1,500 and upward (dotwall / RedEagle, 2026). Local SEO quoted on its own runs wider at £300–£4,000+, with most single-location businesses between £500 and £1,500 (wrise / NetTrackers, 2026). £750 lands in the lower half of the full-campaign range, and clear of the junk tier at around £99 a month, where the deliverable is automated link placements and a templated report. What moves the number is market competitiveness, how many locations you need to rank in, content cadence, and link-building scope. If your budget is £150 a month, that is a real budget — it buys upkeep rather than a campaign, and we would rather say so than take it and under-deliver for a year.",
+          "SEO starts at £750 a month, + VAT where applicable. The UK bands that figure sits inside, and the sources behind them, are set out on this page above; what no band can tell you is which one your site needs, so the number that matters is the one quoted against your own terms. Two questions make any retainer comparable, ours included. First, what does a month actually contain: how many hours, how much gets published, and whether links are placed or earned. Second, who keeps the accounts, the content and the reporting if the engagement ends. A quote that answers both can be judged; a headline figure on its own cannot. If you want a number for your own site rather than a band, start with the free audit — five prioritised findings on search, speed and conversion, recorded, with no retainer attached. It is the least committing way to find out whether a monthly engagement is the right purchase at all.",
       },
       {
-        question: "How long does SEO take to show results?",
+        question: "When should I expect rankings and enquiries to move?",
         answer:
-          "Realistically, months — not weeks. Month one is technical fixes, keyword strategy, and on-page work, with little visible ranking movement. Months two to four bring early gains on longer-tail terms as new content indexes. Months five to twelve are where authority compounds and competitive terms start to move and produce a measurable flow of leads. Anyone promising page-one rankings next month is either misleading you or about to get your site penalised. If you need customers this week, paid search is the honest answer — SEO is the channel that pays off for years once it does.",
+          "Realistically, months — not weeks. Month one is technical fixes, keyword strategy, and on-page work, with little visible ranking movement. Months two to four bring early gains on longer-tail terms as new content indexes. Months five to twelve are where authority compounds and competitive terms can start to move — the horizon at which organic enquiries become realistic. Anyone promising page-one rankings next month is either misleading you or about to get your site penalised. If you need customers this week, paid search is the honest answer — SEO is the channel that pays off for years once it does.",
       },
       {
-        question: "Why is SEO a monthly retainer instead of a one-time project?",
+        question: "Could I just buy a one-off audit instead of a retainer?",
         answer:
-          "Because rankings are won and defended over time, not set once. A one-off project can fix the technical floor — Core Web Vitals, schema, crawlability — but rankings then decay as competitors publish, your content ages, and search algorithms change. The monthly engagement is what compounds: ongoing content, on-page work, authority building, and responses to what the data shows. We do offer one-time technical SEO audits if a fixed-scope assessment is what you actually need.",
+          "You can, and sometimes that is the right purchase. A fixed-scope technical audit tells you what is wrong with crawl, schema, Core Web Vitals and indexation, and on a recently built site that may be the whole job. What an audit cannot do is hold a position. Search results are contested continuously — competitors publish, pages age, and the ranking systems change underneath a site nobody is touching — so the technical floor is a project, and keeping a position is a monthly one: writing, on-page work, links, and reacting to what Search Console shows.",
       },
       {
-        question: "Can you guarantee I'll rank #1 on Google?",
+        question: "Will you promise us a number-one position on Google?",
         answer:
-          "No, and you should be wary of anyone who does. Nobody controls a search result they do not own, so a guaranteed position is a promise no honest firm can keep. What we commit to is the work — fixing the technical foundation, targeting keywords that convert, publishing real content — and to reporting that ties rankings and traffic to leads so you can see whether the channel is paying for itself.",
+          "No. Nobody owns the ranking systems, so nobody can commit to a position inside them. A guarantee is only safe to offer on terms that are already easy to win — your own brand name, or a phrase with no real UK search volume behind it — so ask which terms any guarantee actually covers and what happens if it is missed. What can be committed to is the work and the evidence for it: the fixes made, the terms targeted, the writing published, and reporting honest enough to show when it is not working.",
       },
       {
-        question: "What makes an engineering firm's SEO different from a marketing agency's?",
+        question: "You build websites — why are you also selling SEO?",
         answer:
-          "Most of SEO's hardest wins are technical — Core Web Vitals, structured data, crawlability, indexation, site architecture — and a marketing agency typically emails those as recommendations and hopes your developer implements them. We are an engineering firm, so when the site is one we built or maintain, we fix them directly in the code. Content and strategy still matter and we do them too, but the technical floor is where a lot of small business SEO silently fails, and that is our home turf.",
+          "Most of SEO's hardest wins are technical — Core Web Vitals, structured data, crawlability, indexation, site architecture — and a marketing agency without access to the code can only pass those on as recommendations and hope your developer acts on them. We are an engineering firm, so when the site is one we built or maintain, we fix them directly in the code. Content and strategy still matter and we do them too, but the technical floor is the part that cannot be fixed without access to the code, and that is where we start.",
       },
       {
-        question: "Do I need to have my website built by you for SEO to work?",
+        question: "Do I have to rebuild the site with you first?",
         answer:
           "No. We do technical, on-page, and content SEO on sites we did not build — the audit maps what is fixable on your current stack. The one caveat is honesty about the platform: if your site sits on something that fundamentally can't hit Core Web Vitals or support proper structured data, we will tell you that the highest-leverage SEO move is fixing or replacing the site, rather than charging you a retainer to optimise around a ceiling.",
       },
       {
-        question: "What do you actually report on each month?",
+        question: "What will I actually see at the end of each month?",
         answer:
           "What we did, what moved, and why — tied to leads rather than vanity metrics. You see rankings and organic traffic for the keywords that matter, the content and technical work completed that month, and the connection to enquiries and conversions. You will not get a wall of impressions and 'domain authority' that always trends up and never explains whether the channel is making you money.",
       },
       {
-        question: "Do you run Google Ads or paid social too?",
+        question: "Will you manage our ad accounts as well?",
         answer:
-          "Not under this service — we focus on organic. We will happily tell you when paid search or paid social is the right move (early on, or when you need leads faster than SEO can deliver) and can point you to partners, but we do not bill an SEO retainer to manage your ad accounts. Keeping the two separate keeps the reporting honest about what organic is actually contributing.",
+          "No — this is an organic retainer, and nothing in it touches Google Ads, Meta or LinkedIn. There is a reason beyond focus: once one supplier reports on both channels, brand search and retargeting can quietly land on the organic side of the report, and you lose the ability to tell which channel is paying for itself. Keeping them apart keeps the reporting answerable. If paid is the right move for where you are, we will say so plainly rather than stretch this retainer to cover it.",
       },
     ],
   },
   {
     slug: "mobile-app-development",
     name: "Mobile Apps",
-    summary: "Native and cross-platform apps that ship to the App Store.",
+    summary: "iOS and Android apps for what people open weekly, not once a year.",
     heroSubhead:
-      "Native and cross-platform mobile apps — designed, built, and shipped to the App Store and Play Store with the same rigour as our web work.",
+      "Native and cross-platform mobile apps — designed, built, and shipped to the App Store and Play Store with the same rigour as a website build.",
     whoItsFor:
-      "small businesses whose customers expect a mobile experience, operators bundling an app with services, or founders validating a mobile-first product.",
+      "small businesses whose customers would open an app weekly, operators bundling an app with services, or founders validating a mobile-first product.",
     pricing: {
       startingAmount: 12000,
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "Native vs React Native vs Flutter, number of platforms, offline support, push, and backend complexity move the price.",
+        "Screen count, offline and notification behaviour, how many systems it integrates with, and whether one codebase can serve both stores.",
     },
     includes: [
-      "Discovery, IA, and design system for mobile screens and flows",
-      "Implementation in React Native, Flutter, or native Swift/Kotlin",
-      "Backend integration with your existing APIs (or a new one we build)",
-      "App Store and Play Store submission, review, and launch",
-      "30 days of post-launch support and a maintenance plan offer",
+      "Discover, agreed user flows, and a design system sized for one-handed use",
+      "One codebase in React Native or Flutter, or native Swift/Kotlin where it earns it",
+      "A typed API layer onto your existing systems, or a new backend built for it",
+      "Store listings, privacy declarations, review rounds, and both launches",
+      "30 days of post-launch fixes, then a care plan quote if you want one",
     ],
     notIncluded: [
       "App Store Optimisation (ASO) or paid-install campaigns",
-      "Long-tail feature work beyond MVP — folds into a retainer",
+      "Version-two features after launch — quoted as their own project",
     ],
     primaryCta: { label: "Get a mobile app quote", href: "/contact" },
     relatedServiceSlugs: ["web-app-development", "ui-ux-design"],
@@ -446,65 +447,66 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does the £12,000 starting price cover?",
         answer:
-          "A production first version live on both app stores — not a prototype. That includes discovery, a mobile design system, implementation in React Native, Flutter, or native code, integration with your backend (existing or one we build), App Store and Play Store submission and launch, and 30 days of post-launch support. It covers a focused MVP — the core experience built properly — not every feature you can imagine in version one. Mobile is our most variable service, so platform choice and feature complexity move the number a lot.",
+          "A production first version live on both app stores — not a prototype. That includes discovery, a mobile design system, implementation in React Native, Flutter, or native code, integration with your backend (existing or one we build), App Store and Play Store submission and launch, and 30 days of post-launch support. It covers a focused MVP — the core experience built properly — not every feature you can imagine in version one. Mobile is our most variable service, so scope and store requirements move the number a lot.",
       },
       {
-        question: "Should I build a native app or cross-platform (React Native / Flutter)?",
+        question: "Do we need fully native Swift/Kotlin, or will React Native or Flutter do?",
         answer:
-          "For most small businesses, cross-platform. One React Native or Flutter codebase ships to both iOS and Android, which roughly halves the cost and keeps the two versions in step. We reach for fully native (Swift/Kotlin) only when the app does something performance-critical or deeply platform-specific that cross-platform cannot do well — and we will tell you honestly which camp yours is in rather than push native to inflate the invoice.",
+          "For most small businesses, cross-platform. One React Native or Flutter codebase ships to both iOS and Android, which takes real cost out of the build and keeps the two versions in step. We reach for fully native (Swift/Kotlin) only when the app does something performance-critical or deeply platform-specific that cross-platform cannot do well — and we will tell you honestly which camp yours is in rather than push native to inflate the invoice.",
       },
       {
-        question: "How long does it take to build and launch a mobile app?",
+        question: "How long does an app take to build and get through store review?",
         answer:
-          "Roughly 10–16 weeks for a focused MVP: Discover 1–2 weeks, Design 2–3 weeks, Build 6–10 weeks, then 1–2 weeks for store submission and launch. Offline support, push, complex backends, or building fully native for both platforms extend it. Store review itself can add days per round, which is part of why we handle it — we commit to a target launch date in the written scope.",
+          "Plan for 12–24 weeks from signed scope to both listings live — the longest band on our service list, because offline behaviour, notifications and two separate store reviews all sit inside it. Two of the things that push it out are not engineering time: your content and assets, since screens cannot be finished against placeholder copy, and store review itself, which runs on Apple's and Google's clock and can add days per round. The written scope carries a target launch date, and resubmissions are ours to chase.",
       },
       {
-        question: "Do you handle getting the app approved in the App Store and Play Store?",
+        question: "Who deals with store approval, and whose developer accounts is the app in?",
         answer:
-          "Yes — submission, review, and launch are part of the engagement, not your problem after handoff. We prepare the store listings, handle the privacy disclosures, respond to Apple's and Google's review feedback, and manage resubmissions until the app is live. Store review is a discipline of its own where DIY projects routinely stall for weeks, so we treat launch as a date we own.",
+          "We submit it; you own it. Writing the listings, completing the privacy declarations both stores require, answering review feedback and resubmitting until the app is live all sit inside the project rather than landing on you at handover. The Apple and Google developer accounts are registered in your name from the start, the same rule we apply to your domain, hosting and analytics — and it matters more here than anywhere else, because an app published under someone else's account cannot be updated or moved without them.",
       },
       {
-        question: "Can the app work with our existing systems and backend?",
+        question: "Can it connect to the booking system and CRM we already use?",
         answer:
-          "Usually, yes. The app talks to a properly engineered backend — your existing APIs, or a new one we build — with the same end-to-end typing discipline we bring to web apps. We map exactly which systems it needs to integrate with during Discover, since backend and integration complexity are among the bigger price levers.",
+          "An app is a front end onto something — a booking diary, a practice-management system, a CRM such as GoHighLevel or HubSpot, or an API you already run — so integration is scoped as engineering work, not as a finishing touch. Two questions get answered before we price it: whether the system exposes an API, and on which plan; and where the data is allowed to sit once it moves between systems. Where there is no API, we say so and scope a different route rather than promise a connection that does not exist.",
       },
       {
-        question: "Do I need separate apps for iOS and Android?",
+        question: "Does covering both iOS and Android mean paying for two builds?",
         answer:
-          "You need to be present on both if your customers are on both, but you usually do not need two separate codebases. A cross-platform build produces a real app for each store from one codebase, which is why we recommend it for most small businesses — you get full iOS and Android presence without paying to build and maintain everything twice.",
+          "Not two builds — but two store relationships. One codebase produces a real app for each store, so the engineering is not paid for twice. What genuinely doubles sits after the code: two sets of listings and privacy declarations, two review queues that can each send the app back, and two OS release calendars to keep current with. So the saving is in the build, not in the running of it.",
       },
       {
-        question: "What about updates and maintenance after launch?",
+        question: "What does keeping the app maintained cost after the first 30 days?",
         answer:
-          "Thirty days of post-launch support is included, then most apps move to a Maintenance care plan (starting at £250/month). Mobile especially needs ongoing care — Apple and Google ship OS updates and policy changes regularly, and an unmaintained app eventually breaks or gets pulled from the store. The plan covers updates, monitoring, and a budget of improvement hours; larger new features are quoted as their own projects.",
+          "Thirty days of post-launch support is included, then the app moves onto a Maintenance care plan (starting at £250/month). Mobile especially needs ongoing care — Apple and Google ship OS updates and policy changes regularly, and an unmaintained app eventually breaks or gets pulled from the store. The plan covers updates, monitoring, and a budget of improvement hours; larger new features are quoted as their own projects.",
       },
     ],
   },
   {
     slug: "crm-automation",
     name: "CRM",
-    summary: "GoHighLevel, HubSpot, and custom CRM implementation, automation, and migration.",
+    summary:
+      "GoHighLevel-first CRM builds, HubSpot migrations, and automations wired to UK consent rules.",
     heroSubhead:
-      "GoHighLevel, HubSpot, and custom CRM setups — implemented, automated, and integrated with the rest of your stack so leads stop dying in your inbox.",
+      "One system for pipeline, booking and messaging — GoHighLevel first, HubSpot where it fits, in accounts you own, with every sequence filtered by who you may lawfully email.",
     whoItsFor:
-      "small businesses running their CRM on email and hope, agencies moving clients onto GoHighLevel, or operators migrating between HubSpot, Pipedrive, Salesforce, and GHL.",
+      "small businesses running their CRM on email and hope, agencies moving clients onto GoHighLevel, or operators migrating between HubSpot, Pipedrive, Salesforce and GoHighLevel.",
     pricing: {
       startingAmount: 2500,
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "Migration depth, number of pipelines and automations, integrations with calendar/SMS/voice/billing, and white-label SaaS configuration move the price.",
+        "What moves the price: the state of the contact data you already hold, pipeline and sequence count, booking and messaging integrations, and white-label sub-accounts.",
     },
     includes: [
-      "CRM platform setup (GoHighLevel, HubSpot, or chosen alternative)",
-      "Lead capture forms, intake automations, and CRM pipelines wired",
-      "Calendar booking, SMS, email, and voice integrations",
-      "Reporting dashboards that show real funnel performance",
-      "30 days of post-launch tuning and team enablement",
+      "GoHighLevel, HubSpot or another platform, set up in an account you own",
+      "Capture forms, pipelines and intake sequences, consent recorded at entry",
+      "Booking calendar, SMS, email and inbound calling, tested end to end",
+      "Dashboards reporting pipeline stages and lead source, not open rates",
+      "30 days of tuning after launch, and training for whoever runs it",
     ],
     notIncluded: [
       "Paid GoHighLevel or HubSpot licence fees (passed through at cost)",
-      "Ongoing list management or campaign execution — see SEO and Maintenance",
+      "Week-to-week campaign writing, sending and list upkeep — you or your marketing team",
     ],
     primaryCta: { label: "Get a CRM quote", href: "/contact" },
     relatedServiceSlugs: ["ai-integration", "seo"],
@@ -512,46 +514,47 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does the £2,500 starting price include?",
         answer:
-          "A working system, not just a logged-in account: CRM platform setup (GoHighLevel, HubSpot, or a chosen alternative), lead-capture forms and intake automations, pipelines built around your funnel, calendar/SMS/email/voice integrations, reporting dashboards, and 30 days of post-launch tuning plus team training. What moves the price is scope — migration depth, the number of pipelines and automations, the integrations, and any white-label SaaS configuration.",
+          "A working system, not just a logged-in account: CRM platform setup (GoHighLevel, HubSpot, or a chosen alternative), lead-capture forms and intake automations, pipelines built around your funnel, calendar/SMS/email/voice integrations, reporting dashboards, and 30 days of post-launch tuning plus team training. What moves the price hardest is not the feature list but the state of the contacts you already hold — whether a source and a lawful basis can still be established for each one.",
       },
       {
-        question: "GoHighLevel or HubSpot — which should I choose?",
+        question: "Is GoHighLevel or HubSpot the better fit for a UK service business?",
         answer:
-          "It depends on your business, not on which we prefer to configure. GoHighLevel suits service businesses and agencies that want SMS, calls, booking, and pipelines in one place — and agencies that want to resell it white-labelled. HubSpot suits teams that want a polished, widely-integrated platform with room to grow into fuller marketing and sales hubs. Other tools fit specific needs. We make the call based on your funnel and budget on the first call, and we are upfront that the platform's licence fee is separate and passed through at cost.",
+          "It depends on your business, not on which we prefer to configure. GoHighLevel suits service businesses and agencies that want SMS, calls, booking, and pipelines in one place — and agencies that want to resell it white-labelled. HubSpot suits teams that want a polished, widely-integrated platform with room to grow into fuller marketing and sales hubs. Other tools fit specific needs. We make the call based on your funnel and your budget on the first call — and the same consent fields go in either way, so the platform choice never decides what you may lawfully send.",
       },
       {
-        question: "Can you migrate us from our current CRM without losing data?",
+        question: "What happens to our data if we move off HubSpot or another CRM?",
         answer:
-          "Yes — migrations are a core part of what we do, including ActiveCampaign to GoHighLevel, HubSpot to GoHighLevel (or the reverse), and moves off Pipedrive, Salesforce, Mailchimp, or Keap. We inventory everything (contacts, custom fields, tags, pipelines, automations, templates), rebuild the data model and automations properly in the new platform, and run a staged cutover with the old system live until the new one is verified — so you are never without a working CRM and nothing quietly disappears.",
+          "It is inventoried before anything moves — contacts, custom fields, tags, pipelines, automations, templates, and the lawful basis behind each record — then rebuilt in the new platform rather than dropped in as a flat export, because an export moves rows and not what makes each one lawful to email. The same shape of work applies whether you are leaving HubSpot, ActiveCampaign, Pipedrive, Salesforce, Mailchimp or Keap. The cutover is staged, with the old system live until the new one has been checked against real records, so there is no day on which nobody can find a customer.",
       },
       {
-        question: "Do I pay you for the GoHighLevel or HubSpot subscription too?",
+        question: "Is the platform licence included in what you charge?",
         answer:
           "No — the platform's licence or seat fees are separate and passed through at cost. You own the subscription in your own account; we configure and automate the platform on top of it. Keeping the subscription in your name is deliberate: you own the system and the data, and you are never locked into us to keep access to your own CRM.",
       },
       {
-        question: "We're an agency — can you set up white-label GoHighLevel for us?",
+        question: "Can you configure white-label GoHighLevel across our agency's sub-accounts?",
         answer:
-          "Yes. White-label GoHighLevel configuration — your branding, sub-accounts, snapshots, and the automations you resell to your own clients — is squarely in scope, and it is one of the bigger price levers. We will scope the setup to how you package and sell it, so you get a platform you can hand to clients under your own brand.",
+          "Yes — your branding on the platform, a sub-account per client, and a snapshot holding the pipelines and automations you clone into each one, so onboarding a client starts from a configured template rather than a blank account. It is one of the larger price levers, because the work scales with how many packages you resell and how far apart they are. We scope it against the way you actually sell rather than a generic build.",
       },
       {
-        question: "How long does a CRM setup or migration take?",
+        question: "How long before the new system is actually running?",
         answer:
-          "A focused setup typically lands in 2–4 weeks; a migration depends on how much data and how many automations are involved, usually 3–6 weeks including a staged cutover and validation. We scope it on the first call rather than guess, and we keep your existing system running until the new one is verified so there is no gap in coverage.",
+          "A focused build is scoped at two to four weeks, a migration at three to six, and the difference is almost entirely the data — how many automations have to be rebuilt, and how much of what the old system holds stands up on inspection. The date goes into the written scope rather than being estimated on a call, and the staged cutover above sits inside that window rather than after it.",
       },
       {
-        question: "Will you also run our email campaigns and manage our lists?",
+        question: "Do you write and send the campaigns once the CRM is live?",
         answer:
-          "That is a separate engagement. We set up and automate the CRM and wire the integrations; the ongoing work of writing and sending campaigns and managing lists week to week belongs with our SEO or Maintenance services, or your own marketing team. We are clear about that line so the setup price covers the build, not an open-ended marketing retainer.",
+          "No — this service builds the system and wires the integrations, and that is where it stops. Writing campaigns, sending them and keeping the list in order week after week is ongoing marketing work: it belongs with your marketing team, or an agency retained to do exactly that. Drawing the line there keeps the build a fixed piece of work with an end, and leaves you free to hand the running of it to anyone without unpicking what was built.",
       },
     ],
   },
   {
     slug: "ai-integration",
     name: "AI Integration",
-    summary: "Voice agents, chatbots, and workflow automation that actually ship.",
+    summary:
+      "Inbound voice agents, chatbots that answer from your own material, and workflow automation.",
     heroSubhead:
-      "AI that earns its keep — voice agents that answer your phone, chatbots that book appointments, and n8n workflows that move data between your tools.",
+      "Voice agents for the calls that ring out, chatbots grounded in copy you have approved, and n8n workflows for the repetitive admin — built to the stricter reading of UK rules.",
     whoItsFor:
       "small businesses losing leads to unanswered phones, operators drowning in repetitive admin, or teams that want AI woven into existing tools — not a separate experiment.",
     pricing: {
@@ -559,18 +562,18 @@ export const services: ReadonlyArray<Service> = [
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "Voice agent complexity, chatbot knowledge base depth, and number of workflows or integrations are the levers.",
+        "Voice is the expensive part; after that, how much material a chatbot has to answer from and how many systems the workflows write into.",
     },
     includes: [
-      "Discovery and a clear inventory of what AI should and shouldn't do",
-      "Implementation of one or more — voice agent, RAG chatbot, n8n/Make workflow",
-      "Integrations with your existing CRM, calendar, and data sources",
-      "Evaluation harness so quality is measured, not assumed",
-      "30 days of post-launch tuning and prompt iteration",
+      "Discovery that fixes the job in scope and what gets handed to a person",
+      "Build of one or more: inbound voice agent, grounded chatbot, n8n/Make workflow",
+      "Wiring into your CRM, calendar and phone line — and the material it answers from",
+      "Evaluation set built from your own enquiries, re-runnable after changes",
+      "30 days of tuning after go-live — prompts, handover rules, retrieval gaps",
     ],
     notIncluded: [
-      "Underlying LLM API fees (passed through at cost)",
-      "Custom-model training from scratch — we use frontier models with retrieval and tools",
+      "Model and telephony usage — passed through at cost, on accounts you own",
+      "Outbound calling campaigns — scoped separately, on an evidenced consent record",
     ],
     primaryCta: { label: "Get an AI integration quote", href: "/contact" },
     relatedServiceSlugs: ["crm-automation", "web-app-development"],
@@ -578,103 +581,103 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does the £4,500 starting price cover?",
         answer:
-          "A working, integrated capability — not a chatbot bolted onto your homepage and forgotten. It includes discovery and a clear inventory of what AI should and should not do, implementation of one or more of a voice agent, a retrieval-grounded chatbot, or a workflow automation, integrations with your CRM/calendar/data, an evaluation harness, and 30 days of tuning. Voice-agent complexity, chatbot knowledge-base depth, and the number of workflows and integrations move the price.",
+          "A working, integrated capability — not a chatbot bolted onto your homepage and forgotten. It is a fixed fee against a written scope — one of voice, chat or workflow built and integrated end to end, rather than three things half-finished — agreed before anything starts rather than estimated hourly. £4,500 + VAT where applicable is a floor, not an average: the scope names which one, on which systems, and by when.",
       },
       {
-        question: "Is AI actually reliable enough to answer my phone or talk to my customers?",
+        question: "Can we hear it before it takes a real call?",
         answer:
-          "For well-scoped jobs, yes — and the scoping is the point. A voice agent or chatbot handling appointment booking, common questions, and lead qualification is well within what current models do reliably, especially when it answers from your own information and hands off to a human for anything outside its lane. We build an evaluation harness so quality is measured rather than assumed, and we are honest about the tasks where AI is not reliable enough yet and a human (or a plain form) is the better answer.",
+          "Yes — nothing speaks to a customer until you have listened to it. The agent runs on a test number you can ring as often as you like, and against the evaluation set built from your own enquiries, so you hear the awkward questions handled as well as the easy ones. Anything it gets wrong at that stage is a change to the material it answers from or to the rules it works under, not an argument about whether the model is clever enough. Go-live is your call, not a milestone in our plan.",
       },
       {
-        question: "Will the chatbot make things up or give wrong answers?",
+        question: "What happens when it does not know the answer?",
         answer:
-          "We build retrieval-grounded assistants, which means the bot answers from your documents, services, and policies rather than guessing from general knowledge — that is what keeps it accurate and on-brand instead of confidently wrong. The evaluation harness we build lets us test its answers against real questions before it goes live and tune it on real usage after, so reliability is something we measure and improve, not hope for.",
+          "It says so and hands over. Out-of-scope questions route to a person — a transfer during opening hours, a callback request outside them — with the conversation so far attached, so nobody has to start again. The subjects it must never attempt are agreed in discovery and written into the build rather than left to the model's judgement, which matters most in regulated work, where a helpful improvised answer is the expensive kind of wrong.",
       },
       {
-        question: "Do you train a custom AI model for us?",
+        question: "Do we need a model trained on our own data?",
         answer:
           "No, and almost no small business actually needs one. We build on frontier models with retrieval (so they use your data) and tools (so they can take actions in your systems) — which covers the vast majority of real use cases far more cheaply and reliably than training a bespoke model. If your situation genuinely calls for custom training, we will tell you, but we will not sell it to you to pad the project.",
       },
       {
-        question: "What are the ongoing costs after the build?",
+        question: "What does it cost to run once it is live?",
         answer:
-          "Two things: the usage fees from the underlying AI providers, which are passed through at cost and billed to a usage account you own, and (optionally) a Maintenance plan to monitor, tune, and improve the integration over time. We are transparent about the expected usage costs during scoping so there are no surprises — for most small business use cases they are modest relative to the time or leads the integration saves.",
+          "Two things, and only one of them is optional. The usage the providers meter moves with call volume, so no fixed figure can cover it — what it comes to for you is modelled from your own numbers during scoping rather than estimated on a web page. The optional part is a Maintenance care plan from £250/month, which picks up monitoring and tuning once the 30 days of post-launch tuning run out.",
       },
       {
-        question: "Which should I start with — a voice agent, a chatbot, or workflow automation?",
+        question: "Do we have to change our phone number or our booking system?",
         answer:
-          "Whichever maps to where you are actually leaking time or leads. If you miss calls, the voice agent pays for itself fastest. If your site gets after-hours traffic with questions, a chatbot captures it. If your team burns hours moving data between tools, workflow automation is the quiet winner. We figure that out in discovery rather than assuming — and the three combine well, so many engagements start with one and add the others.",
+          "No. The agent sits behind a divert from the line you already publish — out-of-hours only, overflow when every line is busy, or every call, whichever you choose — so the number on your signage and your listings does not move. It books into your existing calendar rather than a second one, and the chat widget is a component on the site you have now. Removing the divert or switching that component off puts everything back where it was: none of this should be hard to reverse.",
       },
       {
-        question: "Can the AI work with our existing CRM and tools?",
+        question: "Which of our systems can it actually write into?",
         answer:
-          "Yes — integration is the whole point. The voice agent books into your calendar and logs to your CRM, the chatbot passes qualified leads in with context attached, and the workflows move data between the tools you already run. AI that lives in a separate tab nobody opens is a cost; AI wired into your existing stack is leverage, and that wiring is exactly what we build.",
+          "Anything with a documented interface. GoHighLevel and HubSpot are both first-class, as are Google and Microsoft calendars; past those, the test is whether a tool exposes an API rather than how well known it is. What matters is that an enquiry lands in the record your team already works from — the booking on the calendar, the qualified lead on the pipeline — not in a second inbox nobody opens. Each system is confirmed in discovery: a tool with no API is the one thing that changes the shape of the build.",
       },
     ],
   },
   {
     slug: "maintenance-support",
     name: "Maintenance",
-    summary: "Ongoing site upkeep, monitoring, and incremental improvements.",
+    summary: "Monthly care plans — patching, monitoring, and a quarterly re-read of your pages.",
     heroSubhead:
-      "Recurring care plans for sites, apps, and CRMs we built — security updates, monitoring, performance tuning, and a monthly improvement budget.",
+      "Monthly cover for a live site, app or CRM — patching, monitoring and improvement hours on a fixed cadence, plus a quarterly re-read of the claims your pages still make.",
     whoItsFor:
-      "Existing clients who want their site, app, or CRM kept current without an in-house engineer, or operators inheriting a WebAsk-built stack.",
+      "Operators keeping a live site, app or CRM current without an in-house engineer, teams who have inherited a stack nobody has patched in a year, or practices that need the claims on their pages re-read as the rules move.",
     pricing: {
       startingAmount: 250,
       currency: "GBP",
       cadence: "monthly",
       priceNote:
-        "Number of properties under care, response-time SLA, and monthly improvement hours included.",
+        "How many properties are covered, how fast a response is guaranteed, and how much improvement time the month carries.",
     },
     includes: [
-      "Security patching and dependency upgrades on a regular cadence",
-      "Uptime, performance, and error monitoring with alerts to us",
-      "Monthly bucket of improvement hours — copy edits, small features, fixes",
-      "Quarterly health review with recommendations",
-      "Priority response on inbound issues",
+      "Scheduled dependency, framework and security updates — applied, not flagged",
+      "Uptime, error and Core Web Vitals alerts routed to us, not to your inbox",
+      "A set number of improvement hours each month — copy, fixes, small changes",
+      "Quarterly review that re-reads claims, consent and prices, not just code",
+      "Priority handling on anything you report, at your tier's response time",
     ],
     notIncluded: [
-      "Major new features or rebuilds — quoted separately as projects",
+      "Redesigns, rebuilds and substantial new features — scoped as separate projects",
       "Paid platform licence fees (e.g. CRM seats, Vercel team plans)",
     ],
     primaryCta: { label: "Discuss a care plan", href: "/contact" },
     relatedServiceSlugs: ["web-development", "seo"],
     faqs: [
       {
-        question: "How much does a care plan cost?",
+        question: "What do the care plan tiers cost, and what separates them?",
         answer:
           "Three tiers, each a starting point: Essential from £250/month (a single property — patching, monitoring with alerts, a small monthly improvement bucket, and a quarterly review), Growth from £500/month (a revenue-generating site or app — a faster response SLA and a larger improvement bucket), and Priority from £1,000/month (business-critical software or multiple properties — the fastest SLA, more improvement hours, and proactive performance work). The exact hours and SLA within a tier are scoped to your properties and the level of cover you want; additional properties or a custom SLA are quoted on top of the closest tier.",
       },
       {
-        question: "What's actually included in a care plan each month?",
+        question: "What does a plan actually do month to month?",
         answer:
-          "Security patching and dependency upgrades on a regular cadence, uptime/performance/error monitoring with alerts that come to us, a monthly bucket of improvement hours for copy edits and small features and fixes, a quarterly health review with recommendations, and priority response when something breaks. The aim is that the asset stays secure and current and keeps improving — and that we usually catch problems before you or a customer notices them.",
+          "Most of it is routine and runs on a schedule rather than on request — the panel on this page lists it, and the point of listing it is that it happens whether or not anything has gone wrong. What that list cannot show is who starts the work: patching is diarised, the alerts route to us, and the improvement hours exist so the small jobs get done in the month they come up instead of accumulating. Once a quarter the review steps back and re-reads the site itself: the claims, the consent behaviour, the published prices, and whether it still clears the accessibility gate and the layout-shift and main-thread budgets it launched on. Anything you raise in between is handled at your tier's response time.",
       },
       {
-        question: "Do you maintain sites, apps, or CRMs you didn't build?",
+        question: "Can you take over a site somebody else built?",
         answer:
-          "Yes — we take on inherited stacks, not just our own builds. For something another team built, we start with a short audit to understand what we are taking responsibility for, then bring it onto a plan. We are honest if a property is in poor enough shape that maintaining it is throwing good money after bad — sometimes a focused fix or a rebuild is the right call rather than a care plan over a cracked foundation.",
+          "Yes. Inherited stacks are in scope, and they begin with a short audit rather than a start date — agreeing to look after code you did not write means first finding out what is in it. On WordPress that means upkeep and review rather than development inside the platform: which plugins are still maintained, what the theme is doing, and which third-party embeds are setting cookies nobody signed off. The audit reads the content as well as the code: a price list, a policy page or a testimonial can sit wrong for years without producing a single error. If what we find means a plan would only prop up a cracked foundation, we say so and quote the fix or the rebuild instead.",
       },
       {
-        question: "Why do I need maintenance — my site works fine right now?",
+        question: "My site works — why pay for upkeep at all?",
         answer:
-          "Because software decays quietly when nobody is looking after it. Dependencies fall behind and open security holes, a browser or OS update breaks something that worked yesterday, performance drifts as content piles up, and a form can stop delivering leads without any visible sign. A care plan is the unglamorous insurance that prevents the hacked site, the emergency fix, and the month of leads lost to a silently broken form — usually for far less than any one of those costs.",
+          "Because the failures that cost money do not always announce themselves. A contact form can go on submitting while nothing arrives at the other end. A plugin update can change what fires before the consent banner. An image can go up without alternative text and quietly undo a page that met WCAG 2.2 AA the week before. A price or a policy can carry on describing something you stopped doing last year. None of that raises an error, and none of it shows on a page you have no reason to open. What a plan buys is somebody whose job is to look, on a schedule. If what you run is a handful of static pages with nothing to book, buy or claim, tell us — the honest answer may be that you do not need one.",
       },
       {
-        question: "What's the difference between the monthly improvement hours and a new project?",
+        question: "Where do the monthly hours stop and a project start?",
         answer:
-          "The monthly hours are for tweaks, small features, copy edits, and fixes — the steady stream of small improvements every live asset needs. A significant new capability, a redesign, or a second version is a project, quoted separately on its own scope. We keep that line clear so the monthly fee stays predictable and you are not surprised by a big build hiding inside a maintenance invoice.",
+          "The hours cover changes that fit inside a month without needing a plan of their own: copy edits, a new page, a form field, a fix, a small feature. The line is scope rather than goodwill — a redesign, a second version, a new integration, or anything that needs its own discovery is quoted as a project on its own scope. Keeping that line visible is what makes the monthly fee predictable, and it is why nothing large can hide inside a maintenance invoice. Where a request is genuinely borderline, we tell you which side it falls on before starting it rather than afterwards.",
       },
       {
-        question: "How fast will you respond if something breaks?",
+        question: "What happens when something goes down?",
         answer:
-          "Every plan includes priority response, and the specific response-time SLA is one of the things that scales with the tier — the entry plan covers prompt attention to issues, while Growth and Priority commit to progressively faster guaranteed response times for business-critical software. Because monitoring alerts come to us, we often start on an outage before you have even noticed it.",
+          "Alerts for uptime, errors and performance are routed to us rather than to you, so the first move on an outage does not wait on somebody noticing and sending an email. Response time is a property of the tier rather than a slogan: Essential carries a guaranteed response window on what you raise, and the two tiers above it shorten it, Priority the shortest — that one exists for software a business genuinely runs on. Whichever tier you are on, the number is written into the plan rather than left to be argued about at the worst possible moment.",
       },
       {
-        question: "Can I change or cancel my plan?",
+        question: "Am I tied into a contract?",
         answer:
-          "Yes. Plans are month to month — you can move up a tier as the asset grows or becomes more business-critical, scale down if your needs change, or cancel. The work we do (patching, monitoring, improvements) lives in accounts you own, so changing or ending a plan never costs you access to your own software.",
+          "No — plans run month to month, and ending one costs a notice period and nothing else. Move up a tier when the asset becomes more business-critical, move down if it does not, or stop. That is only meaningful because of where the work lives: hosting, domain, analytics, Search Console and CRM stay in accounts in your name, and the code and content changes land in a repository you own. Nothing done on a plan creates a dependency on us to keep using it. A plan that would be painful to leave is a lock-in with a monthly invoice attached, not a service.",
       },
     ],
   },
