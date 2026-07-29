@@ -151,7 +151,7 @@ export const process: ProcessContent = {
       },
       {
         title: "Performance is a budget, not a goal.",
-        body: "Core Web Vitals are enforced in CI. A pull request that breaks LCP or CLS budgets doesn't merge until it's fixed.",
+        body: "A pull request that pushes layout shift, main-thread blocking or script weight past budget doesn't merge until it's fixed. LCP is tracked alongside them as a warning — a localhost run under mobile throttling isn't the number that decides anything, so the field data governs it.",
       },
       {
         title: "Designs reviewed in real time.",

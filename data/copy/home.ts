@@ -21,10 +21,20 @@ import type { CtaLink, FaqItem, HeroHeadlineSegment, Meta, Stat } from "@/data/t
  *   - No award or ranking claims. The whole vertical says "award-winning";
  *     it is noise, and unverifiable superlatives are a documented anti-pattern.
  *
- * What IS claimed is verifiable: the performance and accessibility numbers are
- * the budgets this very site is held to in CI (see .lighthouserc.cjs), the
- * response promise is data/site.ts, and the service count is data/services.ts.
- * A prospect can check every one of them against the page they are reading.
+ * What IS claimed is verifiable: the performance and accessibility numbers come
+ * from the budgets in .lighthouserc.cjs, the response promise is data/site.ts,
+ * and the service count is data/services.ts. A prospect can check every one of
+ * them against the page they are reading.
+ *
+ * ⚠️ Be precise about WHICH budgets are enforced, because the copy says so.
+ * a11y = 100, best-practices = 100, SEO >= 95, CLS, TBT and the size budgets are
+ * hard `error` gates — "enforced on every build" is literally true of the
+ * accessibility stat. `categories:performance` and `largest-contentful-paint` are
+ * `warn` (the framework-floor calibration; a localhost run under mobile throttling
+ * is not the number that decides anything), and INP is not audited in a lab at
+ * all. So LCP is a **target**, not something the build is held to — the stat label
+ * said "the budget every page we ship is held to" and was wrong twice over, since
+ * it also presupposed a body of shipped work. Same defect the blog pass caught.
  *
  * ── PRICING ───────────────────────────────────────────────────────────────
  * The pricing SECTION states the posture (published starting prices, no
@@ -160,7 +170,7 @@ export const home: HomeContent = {
     stats: [
       {
         value: "< 2.0s",
-        label: "Largest Contentful Paint — the budget every page we ship is held to",
+        label: "Largest Contentful Paint — the mobile target this page is built to",
       },
       {
         value: "100",
