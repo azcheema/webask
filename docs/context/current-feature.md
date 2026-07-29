@@ -17,8 +17,18 @@ rendering around them stayed forked.
 
 ## Status
 
-🟡 **Working tree, uncommitted. Nothing pushed — commit not yet asked for.**
+✅ **Merged to `main` at `ad32565` and pushed. CI and Lighthouse (full) both green
+on that commit** — every step, including the new `check:blog-uniqueness` audit.
 All nine local gates green; e2e **156 passed, 3 skipped**.
+
+```
+ad32565  docs: record the catalogue rewrite, and correct the figures in 911af1d
+e157e89  fix(copy): stop claiming LCP is enforced in CI, because it is not
+15ffcba  feat(content): rewrite the /pricing narrative for the UK
+4987087  feat(content): rewrite the service catalogue prose for the UK
+```
+
+`d:\naxdor` untouched at `e0e5885`.
 
 ### What this feature did
 
