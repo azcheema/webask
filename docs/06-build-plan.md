@@ -211,19 +211,23 @@ internal-linking mesh.
       "lower half of the full-campaign range"
 - [ ] `/locations` + 3 hubs: **Manchester, Cheshire, Leeds** (doc 02 § 6). Cheshire is the
       aesthetics-money hub — give it the strongest clinic-facing content
-- [ ] 🆕 **Rewrite the service _catalogue_ prose in `data/services.ts`** — found 2026-07-28,
-      and it is the other half of the service-page rewrite. That feature measured only the
-      MDX bodies (0.0–0.1%) and never looked at the catalogue rendering around them.
-      Measured: **4,200 of 6,812 words of catalogue prose (62%) are byte-identical to
-      `naxdor.com`**, worst on `web-app-development` (89%), `maintenance-support` (81%) and
-      `ai-integration` (76%). It is not cosmetic — these strings render as the **visible hero
-      subhead** (`heroSubhead`), the who-it's-for line, `includes`/`notIncluded`, and the FAQ
-      accordion, and they feed `Service` and **`FAQPage` JSON-LD**. Each service page is
-      therefore ~2,060 unique words wrapped in ~470 identical ones — roughly **17% of the
-      rendered page is duplicate**. Not a crisis (the page is not a near-duplicate), but below
-      the standard doc 05 § 2 sets. **Unlike `/process`, no doc records this as deliberate** —
-      docs/01 marks the delivery playbook "copy verbatim", which is why `data/copy/process.ts`
-      sits at 75% by decision; nothing grants the service catalogue the same licence
+- [x] 🆕 **Service _catalogue_ prose rewritten** (2026-07-28) — the other half of the
+      service-page rewrite, which measured only the MDX bodies (0.0–0.1%) and never looked
+      at the catalogue rendering around them. `data/services.ts` went **57% → 0%** (0 of
+      8,128 rendering words now match the fork; was 3,875 of 6,802) and
+      `data/copy/pricing.ts` **82% → 0%**. These are not config strings: they render as the
+      visible hero subhead, the who-it's-for line, `includes`/`notIncluded` and the FAQ
+      accordion, and feed `Service` **and `FAQPage` JSON-LD**.
+      174 rewrites, then **69 findings from an adversarial verify pass** (8 blockers).
+      Two worth knowing: an **unsanctioned £1,500** was published for an interim brand kit —
+      a bare currency-symbol swap of the fork's `$1,500`, with **D4 open** and doc 02 § 7
+      the only sanctioned list; and `web-development` promised "four to six weeks" over a
+      stage breakdown that sums to 6–9 (the delivery playbook says **4–8**).
+      ⚠️ Verdicts still to ask of the remaining copy modules: `data/copy/process.ts` (67%)
+      is duplicate **by decision** (docs/01 "copy verbatim", commit `6306fc1`);
+      `data/copy/free-audit.ts` (43%) has no recorded verdict. `data/copy/legal.ts` (85%)
+      still names the entity "Naxdor … enskild firma" and must be rewritten in the same
+      pass that D3 unblocks, not after it.
 - [ ] 3 industry pages, each run through the **copy-review checklist** (doc 03 § B4)
 - [ ] **First programmatic batch: 6–9 pages**, `noindex` first, promoted only against the
       inherited quality gate

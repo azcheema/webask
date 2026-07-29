@@ -10,22 +10,76 @@
 
 ## Feature Name
 
-**`feature/uk-blog-and-faq-order`** — the four inherited blog posts rewritten for
-the UK, the `med-spa` draft deleted, and doc 08 § 7's pricing-first FAQ rule applied
-across all nine services. Phase 3 content pulled forward; Phase 2 rule enforced.
+**`feature/uk-service-catalogue`** — `data/services.ts` and `data/copy/pricing.ts`
+rewritten for the UK. This is the **other half** of the service-page rewrite: that
+feature did the MDX bodies and reported the pages done, while the catalogue
+rendering around them stayed forked.
 
 ## Status
 
 🟡 **Working tree, uncommitted. Nothing pushed — commit not yet asked for.**
-All eight local gates green; e2e **156 passed, 3 skipped**. Never claim local
-Lighthouse green (unreliable on Windows) — trust CI.
-
-```
-typecheck · lint · format:check · build · check:contrast · check:keywords
-check:uniqueness · check:redirects · check:blog-uniqueness      156 e2e passing
-```
+All nine local gates green; e2e **156 passed, 3 skipped**.
 
 ### What this feature did
+
+**1. `data/services.ts` — 57% → 0%.** 0 of 8,128 rendering words now match the fork
+(was 3,875 of 6,802). 174 rewrites across nine services, then **59 more from an
+adversarial verify pass**.
+
+**2. `data/copy/pricing.ts` — 82% → 0%**, and 906 → 1,591 words, because the page
+was barely using the doc 02 § 7 market evidence that is its strongest material.
+
+**3. The LCP overclaim, swept repo-wide.** `.lighthouserc.cjs` sets
+`largest-contentful-paint` to **`warn`**, yet four separate files claimed it was
+enforced. The blog pass caught one instance; it was never generalised. Now fixed in
+`data/services.ts`, `data/copy/process.ts`, `data/copy/home.ts` and
+`content/services/maintenance-support.mdx`, and CLAUDE.md carries the
+`error`-vs-`warn` list so the next writer does not have to rediscover it.
+
+### The two findings worth remembering
+
+🔴 **A price that does not exist was published.** `web-development` FAQ 6 offered an
+interim brand kit "for **£1,500**" — a bare currency-symbol swap of the fork's
+`$1,500`. **D4 is open**, docs/02 § 7 is the only sanctioned price list, and
+`data/services.ts`'s own header says the USD founder confirmation "does not carry
+over to the UK market". It was also internally inconsistent: `ui-ux-design` offers
+the same kit with no price. Now "quoted as a small add-on".
+**A currency-symbol swap is not a price decision, and nothing was checking.**
+
+🔴 **Stage timings that could not sum to their own total.** `web-development` FAQ 1
+promised "four to six weeks", then broke it down as 1–2 + 2–3 + 3–6 — which is 6–9
+weeks even allowing the stated overlap, and is in fact the _e-commerce_ answer's
+arithmetic. The delivery playbook gives Web Dev **4–8 weeks**, Design 1–2, Build
+2–6. The copy had silently promised a faster build than the playbook supports.
+
+### Method note — where the defects actually were
+
+69 findings from the verify pass: 8 blockers, 32 major, 29 minor. By lens:
+**consistency 31 · modality 22 · fabricated-proof 12 · uk-correctness 4.**
+
+The two biggest categories are both _relational_: consistency defects are only
+visible if you read the catalogue **against the MDX rendered on the same page**, and
+modality defects only if you read a claim **against its source**. Neither is
+detectable in the string itself. The fabricated-proof forms this time were
+"most applications move to a Maintenance retainer" and "most apps move to" — the
+impersonal register, again — plus `designer-engineer pairing`, which asserts two
+staffed disciplines in the FAQ that feeds `FAQPage` JSON-LD. There is one person.
+
+---
+
+# Previous feature — `feature/uk-blog-and-faq-order` (merged, pushed, CI green)
+
+Merged to `main` at `911af1d`; CI and Lighthouse both green on the push.
+
+```
+911af1d  docs: record the blog rewrite, the FAQ rule, and the catalogue gap it exposed
+06164fd  fix(docs): restore the statutory qualifier on the PECR penalty ceiling
+3b70d5f  ci: gate the blog against duplication with the fork source
+37e125a  feat(seo): lead every service FAQ with the pricing question
+fd25824  feat(content): rewrite the four inherited blog posts for the UK
+```
+
+### What that feature did
 
 **1. The four published posts were the service-page defect again — and worse,
 because they were `draft: false`.** `ai-voice-agents-roi-service-businesses`,
@@ -113,7 +167,7 @@ CLAUDE.md · docs/06-build-plan.md · docs/context/current-feature.md
 
 ---
 
-# Previous feature — `feature/uk-service-pages` (merged)
+# Two features back — `feature/uk-service-pages` (merged)
 
 > Kept because its traps and its CI post-mortem are still live knowledge.
 > **Merged to `main` and pushed; CI + Lighthouse green on `adaf5ce`.**
@@ -218,7 +272,7 @@ Two factual errors were also caught, both on the compliance claim itself: `seo` 
 
 ---
 
-# Project-wide — applies to both features and everything after
+# Project-wide — applies to all of the above and everything after
 
 ## Gate status — all green
 
@@ -347,9 +401,16 @@ that is now the only surviving record of what the old site served.
     deliberate group disclosure or a code comment.
 13. 🆕 **Measure the whole _rendered page_, not the MDX file.** A page is its MDX body
     **plus** whatever `data/*.ts` renders around it. The service-page rewrite scored
-    0.0–0.1% and was reported as done while 62% of the catalogue prose on the very
+    0.0–0.1% and was reported as done while 57% of the catalogue prose on the very
     same URLs stayed byte-identical to the fork source. A per-file similarity number
     is only as honest as its denominator.
+    **And measure by importing the module, not by regex over the source.** Three
+    successive regex extractors over `data/services.ts` gave three different answers:
+    one matched across string boundaries and returned fragments of code as "prose";
+    one silently under-counted `includes`; one double-counted `answer` strings as
+    bare array items. The parsed-object walk in `scratchpad/field-exact.ts` is the
+    only one that reconciles. If two measurements of the same thing disagree, stop
+    and find out why before reporting either.
 14. 🆕 **The residual defect is _modality_, not fact — and grep cannot see it.**
     All 51 blog findings passed a 0.1% similarity score and a clean British-English
     sweep. What they were: a source hedge ("appear not to resolve") hardened into an
@@ -362,38 +423,42 @@ that is now the only surviving record of what the old site served.
 
 ## Next
 
-**1. 🆕 The service pages are only half rewritten — `data/services.ts` is the other
-half.** Found while sweeping for this same defect class elsewhere. The service-page
-feature measured only the **MDX bodies** (0.0–0.1%) and never looked at the
-catalogue rendering around them. Measured against the fork source:
+**1. `/locations` + the three hubs (Manchester, Cheshire, Leeds).** The largest
+unblocked Phase 2 item, and two things now point at it: the local-SEO blog post had
+to be written to say WebAsk's own area pages "are not published yet", and a verify
+agent found catalogue copy advertising a locations inventory that does not exist —
+both because `authoredLocations` is empty. Those sentences are honest today and
+stale the moment the hubs land. Cheshire gets the strongest clinic-facing content
+(doc 02 § 6).
+
+**2. `data/copy/free-audit.ts` (43%) and `data/copy/process.ts` (67%).** Ask the
+verdict question of each before treating either as a defect. `process.ts` is
+duplicate **by decision** — docs/01 marks the service-delivery playbook "copy
+verbatim" and commit `6306fc1` says so explicitly; only its false LCP-enforcement
+sentence was changed. `free-audit.ts` was partly rewritten by that same commit and
+no verdict is recorded for the remainder.
+
+Current state of every module measured against the fork, same method (import both,
+walk the parsed objects — **not** regex over the source, see trap 13):
 
 ```
-4,200 of 6,812 words of catalogue prose (62%) are BYTE-IDENTICAL to naxdor.com
-worst: web-app-development 89% · maintenance-support 81% · ai-integration 76%
-       crm-automation 71% · web-development 62% · mobile-app 62%
+data/services.ts     8128 words,    0 identical ( 0%)   <- rewritten this feature
+data/copy/pricing     1591 words,    0 identical ( 0%)   <- rewritten this feature
+data/copy/process     1175 words,  790 identical (67%)   <- DELIBERATE (docs/01, 6306fc1)
+data/copy/free-audit   841 words,  359 identical (43%)   <- no verdict recorded
+data/copy/home        1356 words,   45 identical ( 3%)   <- properly rewritten
 ```
 
-This is not config. Those strings render as the **visible hero subhead**
-(`heroSubhead`), the who-it's-for line, `includes` / `notIncluded` and the FAQ
-accordion, and they feed `Service` **and `FAQPage` JSON-LD**
-(`app/(marketing)/services/[service]/page.tsx:101–137`). Each service page is
-therefore ~2,060 rewritten words wrapped in ~470 identical ones — roughly **17% of
-the rendered page**. Not a crisis; an 83%-unique page is not a duplicate page. But
-it is below the standard doc 05 § 2 sets, and it is the visible, above-the-fold copy.
+Not defects, checked — do not re-investigate: `data/types.ts` (100%, type
+definitions), `data/portfolio.ts` (94%, all four entries are `TODO(content-copy)`
+and `PortfolioStrip` filters on `isReady`, so nothing renders),
+`content/case-studies/example-case-study-template.mdx` (97%, `draft: true` and the
+index `noindex`s while empty), `emails/*` (transactional, never indexed).
 
-⚠️ **Check the verdict before assuming it is a defect.** `data/copy/process.ts` sits
-at 75% **by decision** — docs/01 marks the service-delivery playbook "copy verbatim",
-and commit `6306fc1` says so explicitly. Nothing in `docs/` grants the service
-catalogue that same licence, which is what makes it a gap rather than a choice.
-`data/copy/pricing.ts` (73%) needs the same question asked of it.
-
-Not defects, checked: `data/types.ts` (100% — type definitions, correct),
-`data/portfolio.ts` (94% — all four entries are `TODO(content-copy)` and
-`PortfolioStrip` filters on `isReady`, so nothing renders),
-`content/case-studies/example-case-study-template.mdx` (97% — `draft: true`, and the
-index `noindex`s while empty), `emails/*` (transactional, never indexed),
-`data/copy/legal.ts` (85%, **and it still calls the entity "Naxdor … enskild firma"**
-— but privacy/terms/cookies are `draft: true` pending **D3**, so it is gated, not live).
+⚠️ **`data/copy/legal.ts` (85%) still calls the entity "Naxdor … enskild firma"**,
+which is wrong for WebAsk. It is gated, not live — privacy/terms/cookies are
+`draft: true` pending **D3** — but D3 landing is what unblocks publishing it, so the
+rewrite has to happen in the same pass, not after.
 
 **2. `/locations` + the three hubs (Manchester, Cheshire, Leeds).** Now the largest
 unblocked Phase 2 item, and the blog rewrite added a reason to prioritise it: the
