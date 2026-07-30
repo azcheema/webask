@@ -64,7 +64,7 @@ export const about: AboutContent = {
       "A templated site on a platform you do not own. A half-configured CRM nobody finished. An AI demo that never made it past the sales call. Then a handoff to a project manager, and six months of waiting for a result that does not move the number you actually care about.",
       "WebAsk does the opposite. Pricing is published on this website, so you can rule us in or out before you speak to anyone. Every project has a written scope, a target date and a budget we hold ourselves to. And when we do not think we are the right fit — which happens — we say so on the first call rather than taking the work.",
       "There is one person behind WebAsk, and that is deliberate rather than a stage we are trying to grow out of. The person who scopes your project is the person who builds it and the person who answers when something breaks. Nothing is subcontracted to an agency you never meet.",
-      "We work with any UK business, and we know the regulated corners unusually well — aesthetic clinics, dental practices and beauty and wellness clinics operate under advertising rules most agencies have never read, and getting those wrong is a ruling rather than a design critique.",
+      "We build for any UK business, and the regulated corners are where the work is most specific — aesthetic clinics, dental practices and beauty and wellness clinics operate under advertising rules that decide what a site may say, and getting those wrong is a ruling rather than a design critique.",
     ],
   },
   values: {

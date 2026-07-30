@@ -16,13 +16,13 @@ const PATH = "/industries";
 const META = {
   title: "Industries We Serve",
   description:
-    "WebAsk is a service-led UK digital firm specialising in aesthetic clinics, dental practices and beauty & wellness clinics — booking-first websites, CRM automation, AI and local SEO, built to the UK advertising rules.",
+    "WebAsk builds for UK small businesses, with a specialisation in aesthetic clinics, dental practices and beauty & wellness clinics — booking-first websites, CRM automation, AI and local SEO, built to the UK advertising rules.",
 };
 
 const HERO = {
-  h1: "Built for the businesses we know best.",
+  h1: "Three verticals where the rules shape the build.",
   subhead:
-    "We build for SMBs everywhere — and we go deep in three appointment-driven verticals where we know exactly where the bookings leak and how to fix it.",
+    "Every service here is built for UK small businesses generally. In these three, regulation shapes what a site is allowed to say — which changes the architecture, not just the wording.",
   primaryCta: { label: "Book a strategy call", href: "/contact" } satisfies CtaLink,
   secondaryCta: { label: "Get a free site audit", href: "/free-audit" } satisfies CtaLink,
 };
@@ -88,8 +88,8 @@ export default function IndustriesPage() {
 
       <CtaBand
         tone="brand"
-        title="Not sure which playbook fits?"
-        body="Tell us about your business and we'll map where you're leaking bookings — with a written plan within three working days."
+        title="Not sure which of these fits?"
+        body="Tell us about your business and we'll map where the bookings are leaking — with a written plan within three working days."
         cta={HERO.primaryCta}
       />
     </>

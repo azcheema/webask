@@ -126,8 +126,13 @@ obvious assumption:**
    Botulinum toxin is a POM. **The word "Botox" cannot appear on a clinic website, in
    organic social posts, in Google Ads, or on a flyer** — this covers organic content, not
    just paid. The ASA also treats _implied_ references as breaches (it has ruled the word
-   "relaxing" an implied reference to Botox). Compliant phrasing describes the effect, not
-   the product: "anti-wrinkle injections", "anti-wrinkle treatment". **The MHRA issued 47
+   "relaxing" an implied reference to Botox). Compliant phrasing advertises the
+   **consultation**, not the treatment: _"consultations for lines and wrinkles"_.
+   ⚠️ **CORRECTED 2026-07-29.** This sentence used to recommend _"anti-wrinkle injections",
+   "anti-wrinkle treatment"_ — contradicting the sentence before it, since the ASA treats
+   those as **implied** promotion of the POM. The same correction was made at § 5 and in
+   [`08-seo-architecture.md`](08-seo-architecture.md) § 6 on 2026-07-28 but never reached
+   here or doc 03 § B1. **The MHRA issued 47
    enforcement notices to aesthetic businesses in 2024 alone**, mostly for exactly this.
    The ASA now runs AI-powered proactive monitoring that finds non-compliant ads without
    waiting for a complaint. CAP offers a free **Copy Advice** service for pre-publication

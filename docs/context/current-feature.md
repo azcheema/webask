@@ -10,216 +10,235 @@
 
 ## Feature Name
 
-**`feature/uk-location-hubs`** — `/locations` and the three UK area hubs
-(Manchester, Cheshire, Leeds). The largest unblocked Phase 2 item, and the one
-two earlier features had to write around: the local-SEO blog post had to say
-WebAsk's own area pages "are not published yet", and a verify agent found
-catalogue copy advertising a locations inventory that did not exist. Both were
-true only because `authoredLocations` was empty.
+**`feature/industry-copy-review`** — running **doc 03 § B4, the copy-review
+checklist**, over the three industry pages. The last unticked Phase 2 item that
+is not the programmatic batch, and the one every previous handoff pointed at:
+the pages were written, reported done, and then had live defects found **twice**
+by passes that were looking for something else entirely.
 
 ## Status
 
-⚠️ **NOT COMMITTED — ask before the first commit on this branch.** Branch cut
-from `main` at `12eda52`; working tree holds the whole feature.
+✅ **Committed on the branch (2026-07-30, founder-authorised), NOT yet merged or
+pushed.** Branch cut from `main` at `3a899bc`; four commits:
+
+```
+d7b5c00  docs: record the § B4 run, its introduced defects, and four new traps
+7bf484d  fix(copy): restore the PECR statutory qualifier on six service pages
+8ab3d42  fix(content): run the doc 03 § B4 checklist over the three industry pages
+5dda892  fix(docs): correct the anti-wrinkle advice and source the missing compliance research
+```
+
+Next session: merge to `main`, push, and **watch CI + Lighthouse on the push**
+before calling it done (remember the interstitial flake in CLAUDE.md — this
+diff touches `content/` and `data/`, so a red Lighthouse IS meaningful here).
 
 All local gates green:
 
 ```
 typecheck · lint · build · format:check · check:contrast · check:keywords
 check:uniqueness · check:redirects · check:content-uniqueness · check:copy-uniqueness
-                              e2e 166 passed, 3 skipped (was 156 — 10 new tests)
+                              e2e 166 passed, 3 skipped
 ```
 
 Never claim local Lighthouse green — unreliable on Windows, trust CI only.
 `d:\naxdor` untouched; only ever read for comparison.
 
-### What this feature did
-
-**1. Three hubs, written not translated.** `copy` blocks in `data/locations.ts`
-plus the MDX bodies in `content/locations/`. **0.0% 5-gram Jaccard against all
-three US fork hubs** (`austin-tx`, `dallas-tx`, `miami-fl`), 1.1% cross-page,
-1,425–1,443 words each. The two halves landed in one commit because that is the
-only order that works: the route `notFound()`s without `copy`,
-`generateStaticParams` reads the MDX directory, and the hubs link to each other
-in body prose.
-
-| Hub            | The argument, and why no other hub could carry it                                                                                                                                                                         |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Manchester** | The head term is the one a new site loses. #2 among major UK cities on SERPTool's 2026 ranking of 25 — but that ranks head terms, and doc 08 § 8 puts them last. Plus the no-GBP cost stated **before** the justification |
-| **Cheshire**   | A county is not a city. Hale/Altrincham/Bramhall sit in Trafford and Stockport; a county query and a town query are different searches; the clinic corridor at doc 02 § 6's **medium** confidence, not a count            |
-| **Leeds**      | The local economy skews to regulated professions, where the website is the artefact a regulator, a competitor or a complainant reads — and none of the three is obliged to tell you                                       |
-
-**2. `check:blog-uniqueness` → `check:content-uniqueness`, widened from
-`content/blog` to every content collection.** The old gate's denominator was
-wrong twice over. The industry and service MDX bodies had **nothing watching
-them** — and the industry slugs _are_ same-slug twins of live `naxdor.com`
-pages. They measure clean (0.0–0.4%), but nothing was holding them there. And
-the location bodies have **no same-slug twin at all**, because the fork's hubs
-are US metros: a same-slug-only check would have printed "no twin", passed, and
-let a straight translation of `austin-tx` into `manchester` ship. Every file is
-now also scored against **every** fork file in its collection, and the worst
-match is what the gate reads.
-
-**3. `data/locations.ts` joined `check:copy-uniqueness`** (0%). Same rule that
-caught `data/services.ts` at 57% while its MDX scored 0.1%: the hub copy is not
-config, it renders as the H1, the index card and the FAQ accordion, and it feeds
-`FAQPage` JSON-LD.
-
-**4. Route wiring, in the same commit.** `BUILT_ROUTES` (the hubs were rendering
-as non-interactive labels), sitemap (derived, so it followed automatically),
-`e2e/a11y.spec.ts` (all three hubs × light/dark, plus Manchester at the 412×823
-Lighthouse viewport), `.lighthouserc.cjs` (+`/locations/manchester`), and
-`e2e/jsonld.spec.ts` — both hub render paths **and a new dedicated D1 test**
-asserting the hub `ProfessionalService` carries no `address` and no `geo`, with
-`areaServed` in the UK shape (`City → AdministrativeArea → Country` for a city,
-`AdministrativeArea → Country` for a county). That assertion was owed by a
-Phase 0 comment in the spec and is the only place a fabricated local storefront
-would show up — it is invisible in the rendered copy.
-
-### 🔴 The LCP overclaim: `e157e89` said "swept repo-wide" and it was not
-
-That sweep fixed four files and **never looked at `content/industries/` at
-all**. Seven more live instances were found here:
+### The numbers
 
 ```
-content/industries/aesthetic-clinics.mdx        "enforced in continuous integration"
-content/industries/beauty-wellness-clinics.mdx  "enforce it in continuous integration"
-content/industries/dental-practices.mdx         "enforced in continuous integration"
-data/industries.ts  ×2                          FAQ answers — also FAQPage JSON-LD
-content/services/ecommerce-development.mdx      LCP **and INP** "checked in CI on every commit"
-data/copy/process.ts ×2                         contradicted the corrected sentence 40 lines below
+round 1   157 raw → 104 unique   13 blocker · 57 major · 34 minor
+          (46 of the verify pass's own corrections to proposed fixes — trap 17)
+round 2    61 findings            7 blocker · 20 major · 34 minor
+          ⚠️ 42 of the 61 were INTRODUCED BY ROUND 1'S CORRECTIONS
 ```
 
-**The grep that finds them is not "LCP".** It is
-`enforced|checked in CI|continuous integration|under two seconds|sub-two-second|verified in our build`.
-CLAUDE.md now carries it.
+`data/industries.ts` 16% → **11%** forked. Cross-page worst 2.6% → 1.8%.
 
-### The findings worth remembering
+**Round 2 is the headline.** Trap 18 says a second fix pass is not optional; this
+run is the strongest evidence yet, because **69% of what round 2 found, round 1
+created.** A single fix pass would have shipped a POM fix that over-broadened a
+criminal offence, a competitor claim stronger than its evidence, and a lead
+paragraph that disclaimed a rule for an audience the same page puts inside it.
 
-🔴 **A false claim about a regulator's reach, on the page selling regulatory
-literacy.** The Cheshire draft said a life-sciences firm "has no CAP Code
-exposure at all", and its FAQ said "only the clinics have the CAP Code" — in
-`FAQPage` JSON-LD, where it can surface stripped of the page. The CAP Code
-governs **all** UK non-broadcast marketing; what is clinic-specific is the
-prescription-only-medicine rule under it. Then the **correction over-swung
-twice**: to "Every UK advertiser sits inside the CAP Code" (the Code is
-non-broadcast only, BCAP covers the rest), and to an example that was still
-wrong — a life-sciences firm is exactly the kind that _does_ have a POM. It is
-now "every UK advertiser's non-broadcast marketing", contrasted with
-professional services.
+### The blockers
 
-🔴 **The mirror-image overcorrection.** A draft, correctly avoiding "Core Web
-Vitals enforced in CI", asserted that none of them can be gated from a lab.
-**CLS is a Core Web Vital and it is a hard `error` gate.** The accurate
-statement is per-metric: CLS is gated, LCP can be measured but not fairly gated
-from localhost, INP cannot be lab-measured at all. Over-correcting into a
-different false claim is the same defect wearing the opposite sign.
+🔴 **A prescription-only medicine named in sales copy — and in `FAQPage`
+JSON-LD.** `content/industries/aesthetic-clinics.mdx` and `data/industries.ts`
+both named the medicine in the under-18s passage, on the page whose own
+blockquote says it has "written several hundred words … without naming a single
+medicine". The boast was false, and the MDX comment saying "keep it that way"
+sat ten lines above the violation. Two things this exposed:
 
-🔴 **Two results-promises published as structured data.** FAQ "Do you work with
-Manchester businesses…" answered "Yes" — a present-tense trading claim from a
-firm with no customers. FAQ "Can **we** rank in Manchester…" answered
-"Organically, yes" — where the "we" is the prospect, making it a ranking
-guarantee, transposed from a doc 05 § 4 sentence about **our** reachable
-surface. Both are now reframed as questions about capability and constraint.
+- **`data/*.ts` is sales copy, all of it.** The ban had been read as an MDX rule.
+  `data/copy/home.ts` still named the medicine after the three industry pages
+  were clean — so the fix was **not** repo-wide until it was checked repo-wide.
+- **The editorial carve-out does not cover this passage.** docs/08 § 6 permits
+  naming a POM when discussing the regulation of its **advertising**. The
+  under-18s offence is about **administering** it — a different thing, on a
+  commercial page.
 
-🔴 **A competitor cited as a pricing authority.** Three FAQ 1s credited
-"dotitmedia, 2026" for the £3,000–£6,000 regional band. Dot it Media is in
-doc 02 § 3 Bucket 3, "the ones to beat", and doc 02 § 6 names it as _the Leeds
-competition_ — so the Leeds hub anonymised it in the body ("at least one dental
-specialist based in Leeds") and then handed the reader its name in the FAQ, in
-JSON-LD, on its home-turf URL. It was also live in `data/services.ts` and is
-now gone from both.
+🔴 **"remotely across the US. These metros are…" live on 12 pages.**
+`CrossLinkGrid` returns `null` when its list is empty, so the `intro` on the
+industry template and the service template rendered nothing while
+`authoredLocations` was empty. **The location-hubs commit filled that list and
+published both strings without touching either file.** No diff review catches
+this. The service-page sibling (`the metros we focus on`, 9 pages) was found
+only by sweeping for the pattern after finding the first.
 
-⚠️ **The page accusing others of not checking the map, not checking the map.**
-Cheshire asserted "its principal towns are Wilmslow, Alderley Edge, Knutsford,
-Macclesfield, Chester and Warrington" — which is `notableAreas`, a targeting
-selection, hardened into a definitive claim. Cheshire East's own local plan
-designates **Crewe** and Macclesfield as principal towns, and the list omits
-Crewe, Northwich, Ellesmere Port, Runcorn and Widnes. `notableAreas` now carries
-a comment saying copy must never make that claim.
+🔴 **Claims that require clients, on a firm with none.** Portfolio composition
+("most of our work is not clinic work") ×3, attach rates ("Most clinics pair it
+with…") ×3, "proven patterns", "the most common errors we find on practice
+sites", "the largest leak in most clinics". All three "Do you only work with X?"
+questions **presupposed a client base in the question**, which the bare "No."
+then confirmed.
 
-⚠️ **The template contradicted the body on the same URL.** Cheshire's
-`nearbyPlaces` listed Warrington and Chester, which the template renders as
-"Nearby areas we serve" — directly under a body claiming both as towns of the
-county this hub covers. **Fixed in the data, not the prose**: `nearbyPlaces` is
-now Manchester, Stockport, Liverpool, Stoke-on-Trent. A hub's rendered page is
-its MDX **plus** its catalogue entry **plus** what the template draws from the
-enrichment fields — trap 13 again, one layer further out.
+🔴 **Review-gating advice, on the page selling review compliance.** The beauty
+FAQ said "ask happy customers for reviews at the right moment" while the body of
+the same URL twice said the opposite. Fixed in the data, not the prose — trap 15.
 
-⚠️ **A stale config comment being quoted as current fact.** Leeds printed "two
-pages of this site sit just under 0.95", sourced from `.lighthouserc.cjs`'s
-header, which says "4 of 6 pages pass" and names a URL (`/services`) **that is
-not in the list** — and the list is now eight URLs, not six. The count is gone
-from the copy and the config header now says it is stale.
+🔴 **An invented statutory duty.** "CQC display duties" in a meta description.
+The legal requirement is **registration**; display is a trust asset. Both source
+docs split them deliberately.
 
-⚠️ **A page's own link target undermining it.** Cheshire promised
-`/industries/aesthetic-clinics` "carries the rule set, the enforcement figures
-and the architecture in full". That page carries no enforcement figures at all.
-Two words cut, rather than a promise left hanging on another page's content.
+🔴 **A vertical with no compliance research at all.** The beauty & wellness
+page's entire regulatory argument ("only authorised claims may be made") traced
+to **no line in the bundle** — doc 03 had B1 aesthetics, B2 dental, B3 AI voice,
+B4 checklist and **nothing** for the third launch vertical. Doc 02 gives it
+keywords only. Now [`../03-uk-compliance.md`](../03-uk-compliance.md) **§ B2a**,
+researched and sourced.
 
-⚠️ **Four implied-client claims in `data/copy/free-audit.ts`**, found only
-because a hub links to `/free-audit` twice and a reviewer followed the link:
-"each audit is done personally **alongside billable work**", "**Most people** fix
-two or three things and never come back. **Some hire us** to implement the rest",
-"**Plenty of people** never book it", and "it is **frequently** the most valuable
-thing in the audit". That file is the one CLAUDE.md flags as **39% forked with no
-verdict recorded** — the verdict is still owed, but these four are fixed.
+### The finding that changed the page
 
-### Method — and the numbers
+The beauty page opened by telling the reader that the advertising rules binding
+aesthetics "mostly do not apply to you". Its own `audienceType` names **"IV
+therapy and vitamin drip clinics"** — and anything injected or infused sits under
+**medicines law**, which is stricter than the CAP rules the page was waving off.
+The ASA has upheld against IV clinics on exactly this. So the page was not
+over-claiming a rule, the usual failure; it was **under-claiming one**, and
+telling the riskiest part of its audience it was safe.
 
-Write → **three adversarial lenses per hub** (fabricated-proof · modality/
-provenance · UK-correctness, compliance, SEO mechanics and convergence) → fix →
-**two lenses per hub again**.
+§ B2a now carries the three-way split, and the page carries it too:
 
-```
-round 1   165 findings   24 blocker · 64 major · 77 minor
-applied   156 (50 / 47 / 59)   9 rejected with a cited source
-round 2    29 findings    1 blocker · 13 major · 15 minor  (many duplicated across lenses)
-```
+| What is sold                    | Regime                                                      |
+| ------------------------------- | ----------------------------------------------------------- |
+| Treatments, spaces, experiences | CAP substantiation                                          |
+| Food and supplements            | CAP § 15 + the **GB NHC Register** (only authorised claims) |
+| Anything injected or infused    | **Medicines law** — HMR 2012, a criminal offence            |
 
-Two things about the shape of it. **Round 2 caught defects the corrections
-introduced** — the "in Manchester" H1 that located the agency in a city it has
-no office in, the CAP Code over-swing, the FAQ that moved the implied history
-from the question into the answer. A single fix pass would have shipped all
-three. And **the rejections mattered**: one reviewer's proposed fix pointed at a
-passage on `/services/web-development` that does not exist, and another wanted a
-"checked in CI" claim about keyword mapping that `scripts/check-keywords.ts`
-only warns on. A proposed fix is a finding too, and needs the same check.
+That turned the weakest of the three pages into the best-sourced one.
+
+### Three fixes that went wider than the pages
+
+Stopping at the page boundary is what produced these defects in the first place,
+so each was swept where it actually lived:
+
+1. **`data/copy/home.ts`** — named the POM, plus "clinics come to us", "most of
+   what we build is not clinic work", "Plenty of engagements start as a fix".
+2. **The PECR ceiling in six service MDX files** — `£17.5m or 4% of global
+turnover` with **"whichever is higher" dropped**, which inverts it. Commit
+   `06164fd` fixed the docs and both blog posts and never touched the service
+   pages. **Third instance of a "swept repo-wide" claim that was not.**
+3. 🔴 **doc 03 § B1 and doc 02 § 2 recommended the euphemism the ASA rules
+   against.** The ✅ _compliant alternative_ column offered **"anti-wrinkle
+   injections"** — contradicting the row directly beneath it. doc 08 § 6
+   corrected this on 2026-07-28 and reached doc 02 § 5 but **neither of these**.
+   The compliance bundle, on the flagship differentiator, was handing clinics
+   advice that gets them ruled against. Both now carry dated corrections.
+
+### The defects round 1 introduced — read this before the next fix pass
+
+🔴 **De-naming over-broadened a criminal offence.** Replacing the medicine with
+"the injectable prescription-only **treatments**" invented a statutory category
+and told clinics that any injectable POM to a minor is criminal. The 2021 Act
+covers fillers plus **one** named medicine. Now singular and Act-bounded. Trap 16
+wearing a new costume — and note round 1's verify pass had already rejected a
+_different_ fix for exactly this, then let this one through.
+
+🔴 **One unsupported claim swapped for a stronger one.** "on nearly every site we
+audit" (implied client history) became "**Every** specialist UK clinic web agency
+we could check mentions the CAP Code nowhere on its **own service pages**". doc 08
+§ 3 is six agencies, **one URL each**, one of them "blocked our fetch", and its
+evidence cell reads "on any page checked". Now: "We checked six UK agencies … On
+the pages we could reach, not one mentioned the CAP Code, the ASA or the MHRA."
+
+⚠️ **A correction deleted its own referent.** "That is not a design opinion" was
+left pointing at a sentence that no longer existed.
+
+⚠️ **An unsourced claim inverted into its opposite, still unsourced.** "Visitors
+arrive searching for an outcome, not a product name" → "Patients search the
+product name". Neither direction had a source. Now framed as a rule about what is
+_permitted_, which is sourced.
+
+⚠️ **A date attached to the wrong object.** "CAP Code section 15, in force since
+January 2021" — § 15 long predates 2021; what changed then is that the **GB
+register** replaced the EU list.
+
+⚠️ **"pages" → "guides" broke a link description.** `/services/[service]/[location]`
+pages are not guides. A cosmetic word swap made a true sentence false.
+
+### Method
+
+Write-up → **4 lenses × 3 pages** (doc 03 § B4 formally, fabricated-proof,
+modality/provenance, plus one cross-cutting template/convergence lens) →
+adversarial verify of every finding **and every proposed fix** → fix →
+**3 re-verify lenses over the diff** → fix again.
+
+Two things worth keeping. **Verifying proposed fixes caught 46 bad ones** before
+they were applied — including one that reintroduced "usually", the first word on
+CLAUDE.md's own watch-list. And **the checklist was the least productive lens**:
+it cleared most items quickly, and the defects came from the modality,
+fabricated-proof and template lenses. The checklist is necessary but it is not a
+review.
 
 ### Files touched
 
 ```
-data/locations.ts                  3 copy blocks + the nearbyPlaces + notableAreas fixes
-content/locations/*.mdx            3 new
-scripts/check-content-uniqueness.ts   replaces check-blog-uniqueness.ts (widened)
-scripts/check-copy-uniqueness.ts   + data/locations
-package.json · .github/workflows/ci.yml   gate renamed + rewired
-e2e/{a11y,jsonld}.spec.ts · .lighthouserc.cjs   routes + the D1 areaServed test
-components/layout/_nav-data.ts     BUILT_ROUTES + descriptions that differ
-app/(marketing)/locations/page.tsx index subhead (the guides now exist)
-content/industries/*.mdx · data/industries.ts · content/services/ecommerce-development.mdx
-data/copy/process.ts · data/copy/free-audit.ts · data/services.ts
-content/blog/local-seo-checklist-2026.mdx   "not published yet" → the rule, and a link
+content/industries/*.mdx           3 — all rewritten in parts
+data/industries.ts                 hero/meta/cardSummary/FAQ ×25, + a header rule
+app/(marketing)/industries/{page,[industry]/page}.tsx   US leak, hero, CtaBand, meta
+app/(marketing)/services/[service]/page.tsx             US leak ("metros")
+data/copy/{home,about}.ts          POM + implied-client + competitor claims
+content/services/*.mdx             6 — PECR "whichever is higher"
+docs/03-uk-compliance.md           NEW § B2a; CMA block in § B2; § B1 correction
+docs/02-uk-market-research.md      § 2 anti-wrinkle correction
 CLAUDE.md · docs/06-build-plan.md · docs/context/current-feature.md
 ```
 
 ### Next
 
-**1. The industry-page copy-review checklist** (doc 06 § Phase 2, still
-unticked). The LCP sweep found live defects on all three industry pages without
-looking for them; nobody has run doc 03 § B4 over those pages. Start there.
-
-**2. `data/copy/free-audit.ts` (39%) still has no verdict**, and
+**1. `data/copy/free-audit.ts` (39%) — verdict recorded 2026-07-30: NEEDS A UK
+REWRITE** (founder decision). Queued as its own feature; the 39% remainder is
+not deliberate. The gate's verdict string and CLAUDE.md both carry it. And
 `data/copy/legal.ts` (69%) still names the entity "Naxdor … enskild firma" —
 rewrite it in the pass that D3 unblocks, not after.
 
-**3. Then the first programmatic batch** (6–9 `[service] × [area]` pages,
-`noindex` first). The hubs are the parents it needs, and `data/service-locations.ts`
+**2. The first programmatic batch** (6–9 `[service] × [area]` pages, `noindex`
+first). The three hubs are the parents it needs, and `data/service-locations.ts`
 is empty and documented for exactly this.
+
+**3. Two things this pass deliberately left.** `/locations` still opens "We work
+with small businesses the length of the UK" — the same present-tense trading
+register, out of scope here. And doc 03 § B2 has no record of the **GDC
+specialist list titles**, so "our specialists in implants" as the worked example
+is unverified against the actual register.
 
 ---
 
-# Previous feature — `feature/uk-service-catalogue` (merged, pushed, CI green)
+# Previous feature — `feature/uk-location-hubs` (merged at 5b26d1c)
+
+The three UK location hubs (Manchester, Cheshire, Leeds), written not translated
+— 0.0% against all three US fork hubs. Also widened `check:blog-uniqueness` into
+`check:content-uniqueness` across every content collection, and added
+`data/locations.ts` to `check:copy-uniqueness`. 165 findings over three
+adversarial lenses per hub, then 29 more on a re-check.
+
+⚠️ **It also made two dormant US template strings render on 12 pages** — see the
+current feature above. Filling an empty collection publishes whatever the
+templates around it say.
+
+---
+
+# Two features back — `feature/uk-service-catalogue` (merged, pushed, CI green)
 
 **`feature/uk-service-catalogue`** — `data/services.ts` and `data/copy/pricing.ts`
 rewritten for the UK. This is the **other half** of the service-page rewrite: that
@@ -289,7 +308,7 @@ staffed disciplines in the FAQ that feeds `FAQPage` JSON-LD. There is one person
 
 ---
 
-# Two features back — `feature/uk-blog-and-faq-order` (merged, pushed, CI green)
+# Three features back — `feature/uk-blog-and-faq-order` (merged, pushed, CI green)
 
 Merged to `main` at `911af1d`; CI and Lighthouse both green on the push.
 
@@ -389,7 +408,7 @@ CLAUDE.md · docs/06-build-plan.md · docs/context/current-feature.md
 
 ---
 
-# Three features back — `feature/uk-service-pages` (merged)
+# Four features back — `feature/uk-service-pages` (merged)
 
 > Kept because its traps and its CI post-mortem are still live knowledge.
 > **Merged to `main` and pushed; CI + Lighthouse green on `adaf5ce`.**
@@ -669,36 +688,53 @@ that is now the only surviving record of what the old site served.
     Manchester" (a UK-presence claim, on a firm with no UK office), the CAP Code
     over-swing above, and an FAQ that moved its implied client history out of the
     question and into the answer. Write → verify → fix → verify.
+    **Restated 2026-07-29 with harder evidence: on the § B4 run, 42 of the 61
+    round-2 findings — 69% — were created by round 1's own corrections.**
+19. 🆕 **`data/*.ts` is sales copy, all of it, and it reaches JSON-LD.** The POM
+    ban was being applied as if it were an MDX rule. The medicine was named in a
+    `data/industries.ts` FAQ that ships as `FAQPage` structured data, and was
+    still live in `data/copy/home.ts` after the three industry pages were clean.
+    A rule declared in one file's header is not a rule until it is grepped.
+20. 🆕 **Removing a named thing can broaden a legal claim.** De-naming the POM
+    produced "the injectable prescription-only **treatments**" — a category that
+    does not exist in the statute, asserting a criminal prohibition wider than
+    the law. When you generalise away a specific, check the new scope as hard as
+    the old one. This is trap 16 in a costume, and it got past a verify pass that
+    had already rejected a different fix for the identical reason.
+21. 🆕 **A dormant template string goes live when its collection fills.**
+    `CrossLinkGrid` renders nothing on an empty list. When the location hubs
+    populated `authoredLocations`, two untouched US strings began rendering on 12
+    pages. **Populating an empty collection is a content change to every template
+    that consumes it** — read them, because no diff will show you.
+22. 🆕 **The docs can carry the defect they warn about.** doc 03 § B1 offered
+    "anti-wrinkle injections" as the ✅ compliant alternative, contradicting the
+    row beneath it and the correction doc 08 § 6 had already made. When a
+    correction is recorded in one doc, grep the bundle for the original wording —
+    "amended accordingly" is a to-do, not a fact.
 
 ## Next
 
-**1. The industry-page copy-review checklist** (doc 06 § Phase 2, still unticked;
-doc 03 § B4 is the checklist). The three industry pages were written and reported
-done, but nobody has run the checklist over them — and the LCP sweep found live
-false-enforcement claims on all three **without looking for them**. That is the
-same shape as every previous defect on this project: a page reported complete
-against a check that was never actually run.
+**1. ~~The industry-page copy-review checklist~~ — DONE 2026-07-29.** See the
+current feature at the top of this file. Ticked in doc 06 § Phase 2.
 
-**2. `data/copy/free-audit.ts` (39%) and `data/copy/process.ts` (61%).** Ask the
-verdict question of each before treating either as a defect. `process.ts` is
-duplicate **by decision** — docs/01 marks the service-delivery playbook "copy
-verbatim" and commit `6306fc1` says so explicitly; only its false LCP-enforcement
-sentence was changed. `free-audit.ts` was partly rewritten by that same commit and
-**no verdict is recorded for the remainder** — four implied-client claims in it were
-fixed on 2026-07-29 (found only because a location hub links to `/free-audit`), but
-that is a defect fix, not the verdict.
+**2. `data/copy/free-audit.ts` (39%) and `data/copy/process.ts` (61%) — both
+verdicts now recorded.** `process.ts` is duplicate **by decision** — docs/01
+marks the service-delivery playbook "copy verbatim" and commit `6306fc1` says so
+explicitly. `free-audit.ts` **needs a UK rewrite** (founder, 2026-07-30) —
+queued as its own feature, not yet done. The four implied-client claims fixed
+2026-07-29 were a defect fix, not the rewrite.
 
 Current state of every module measured against the fork, same method (import both,
 walk the parsed objects — **not** regex over the source, see trap 13):
 
 ```
-data/services.ts     8128 words,    0 identical ( 0%)
+data/services.ts     8135 words,    0 identical ( 0%)
 data/copy/pricing     1663 words,    0 identical ( 0%)
-data/locations.ts    4872 words,    6 identical ( 0%)   <- hub copy, this feature
-data/industries      2582 words,  424 identical (16%)
-data/copy/home        1355 words,   45 identical ( 3%)
+data/locations.ts    4872 words,    6 identical ( 0%)
+data/industries      2758 words,  310 identical (11%)   <- was 16%, § B4 pass
+data/copy/home        1342 words,   45 identical ( 3%)
 data/copy/process     1203 words,  737 identical (61%)   <- DELIBERATE (docs/01, 6306fc1)
-data/copy/free-audit   849 words,  332 identical (39%)   <- no verdict recorded
+data/copy/free-audit   849 words,  332 identical (39%)   <- VERDICT 2026-07-30: rewrite, queued
 data/copy/legal       5144 words, 3530 identical (69%)   <- wrong entity; gated on D3
 ```
 
