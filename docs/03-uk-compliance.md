@@ -266,9 +266,28 @@ legislation. **This applies to organic content, not just paid ads.**
 
 | ❌ Not allowed                                                                                                      | ✅ Compliant alternative                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| The brand name of a botulinum toxin product anywhere the public can see it — website, Instagram, Google Ads, flyers | "anti-wrinkle injections", "anti-wrinkle treatment"                                                         |
-| Implied references — the ASA has treated "relaxing" as an implied reference to the POM                              | Describe **what the treatment does**, not the product                                                       |
+| The brand name of a botulinum toxin product anywhere the public can see it — website, Instagram, Google Ads, flyers | Advertise the **consultation**: _"consultations for lines and wrinkles"_                                    |
+| Implied references — the ASA has treated "relaxing" as an implied reference to the POM                              | Describe the **concern the patient wants addressed**, not the product and not its effect                    |
+| **Euphemisms** — "anti-wrinkle injections", "anti-wrinkle treatment", "wrinkle-relaxing", "beautox", "brotox"       | See the correction immediately below — these are **not** safe alternatives                                  |
 | Before/after imagery used to promote the POM                                                                        | Educational content about consultations, qualifications, safety standards, duty of care, patient experience |
+
+> ### ⚠️ CORRECTED 2026-07-29 — this table used to recommend the euphemism it now forbids
+>
+> The ✅ column originally offered **"anti-wrinkle injections", "anti-wrinkle treatment"** as the
+> compliant alternative — which contradicted the row directly beneath it, and would have handed a
+> clinic the exact phrasing the ASA treats as **implied promotion of the POM**, with upheld
+> complaints on that basis. [`08-seo-architecture.md`](08-seo-architecture.md) § 6 is the
+> authority and corrected this on 2026-07-28; the correction reached doc 02 § 5 but **never
+> reached this table or doc 02 § 2**. Found on 2026-07-29 during the first run of § B4 over the
+> three industry pages. What is permitted is advertising the **consultation**.
+>
+> **Price lists are the one narrow carve-out**, and it is structural, not lexical: a POM may
+> appear in a price list **only** where it sits at least two clicks from the homepage, is reached
+> via consultation-led pages, stays purely informational with no promotional framing, and appears
+> in neither the homepage nor the primary navigation (doc 08 §§ 0.2 and 4). That is the
+> "consultation-first architecture" deliverable. Doc 08's own caveat applies: these are our
+> summaries of ASA/CAP guidance as at 2026-07-28, and § B4 requires **CAP Copy Advice** before
+> publication where copy sits close to the line.
 
 **Enforcement.** The **MHRA issued 47 enforcement notices to aesthetic businesses in 2024**,
 mostly for exactly this. The ASA now runs **AI-powered proactive monitoring** — it finds
@@ -327,9 +346,84 @@ Four regulators at once:
 Plus UK GDPR (patient data), PECR (recall/marketing communications), and the Consumer
 Protection from Unfair Trading Regulations.
 
+**The CMA market study, in detail** (added 2026-07-29 — `/industries/dental-practices` was
+already publishing all three of these figures, in body copy, in an H2 and in `FAQPage`
+JSON-LD, and **none of them traced to any line in this bundle**):
+
+- Opened **5 March 2026**; statutory reporting deadline **4 March 2027** — a 12-month
+  ceiling, so "reports **by** March 2027", never "runs **until** March 2027"
+- Sector size **£8.4bn**
+- The price movements the CMA cited on opening: an initial consultation rose **more than 23%**
+  between 2022 and 2024 (to ~£80), a routine check-up for an existing patient **more than 14%**
+  (to ~£55). These are **CMA-cited figures drawn from independent sources**, not CMA findings —
+  the study has not reported, and copy must not present them as its conclusions
+- Scope: whether patients can make informed choices, and whether providers engage in
+  misleading or unfair conduct. **Pricing transparency is explicitly in scope**
+
+⚠️ The study is **sector-level**. It does not follow that any individual practice's website
+"is evidence in" it — that overclaim shipped in the dental page's H1 and was corrected in the
+same pass. What is defensible: the website is where a patient encounters the practice's
+pricing, and pricing transparency is what is being examined.
+
+**Sources.** Retrieved 2026-07-29. GOV.UK, _CMA launches review of private dentistry_;
+CMS Law-Now and Pinsent Masons (Out-Law) briefings, March 2026; CMA calls for views
+(consumers / dental professionals).
+
 **Site-design implications:** transparent price lists (CMA), GDC numbers and CQC registration
 visible, careful claim language, a consent workflow for imagery, and a reviews mechanism that
 survives both GDC "no incentives" and DMCC scrutiny.
+
+### B2a. Beauty & wellness — health claims and the medicines line
+
+> Added 2026-07-29, during the first run of § B4 over the three industry pages. Until then
+> this vertical — one of the three launch verticals — had **no section in this document at
+> all**, while `/industries/beauty-wellness-clinics` was already making regulatory assertions
+> on the strength of it. Doc 02 § 5 covers only its keywords.
+
+The page's own framing was that this sector escapes the advertising rules that bind aesthetics
+and dentistry. **That is wrong for part of its stated audience**, and the error is worth
+recording because it is the opposite of the usual failure: not over-claiming a rule, but
+under-claiming one.
+
+There are **three regimes**, and which one applies turns on what the thing _is_, not on how
+the clinic describes itself.
+
+| What is sold                                                    | Regime                                                                          | The test                                                                                                                                                                                                                                                      |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Treatments, spaces, experiences**                             | CAP Code general substantiation (rule 3.7)                                      | Hold evidence for any objective claim. Describing what a treatment is and how it feels is safe ground                                                                                                                                                         |
+| **Food and food supplements** (oral)                            | **CAP Code section 15** + the **GB nutrition and health claims (NHC) Register** | Since **1 January 2021** only claims **authorised on the GB NHC Register**, or claims with the same meaning to the consumer, may be used (rule 15.1.1). The advertiser must hold documentary evidence that the product meets the register's conditions of use |
+| **Anything injected or infused** — IV drips, vitamin injections | **Medicines law.** CAP rules 12.1 and 12.11; Human Medicines Regulations 2012   | **Medicinal claims are not permitted unless that specific product is licensed as a medicine for that purpose.** Advertising an unauthorised medicinal product in GB is a **criminal offence** under the HMR 2012                                              |
+
+**The IV point is the one that matters commercially**, because `audienceType` for this vertical
+explicitly names "IV therapy and vitamin drip clinics". The ASA has upheld against IV clinics
+on exactly this: rulings against **Cosmetic Medical Advice UK**, **The Private Harley Street
+Clinic** and **Reviv UK** (all 22 April 2020), over claims that drips could prevent or treat
+COVID-19 when the products were not licensed as medicines for it (CAP rules 12.1 and 12.11).
+The ASA consulted the **MHRA**, whose position was that any mention of that condition brought
+the product within medicines regulation. There is standing ASA guidance,
+_Healthcare: Intravenous Nutritional Therapy_.
+
+**The substantiation limb bites separately**, and it is worth keeping both examples because
+they fail on different grounds: **GMG Pharmacy Ltd t/a The IV Clinic** fell on **evidence**
+(rules 3.1, 3.7 and 12.1) rather than on licensing. A claim can therefore be unlawful either
+because the product is not licensed to make it **or** because it is simply not substantiated.
+
+So an IV bar is **closer to the aesthetic-clinic problem than to the salon one** — it is
+selling something whose advertising is governed by medicines law. A wellness page that treats
+"immunity", "energy" and "detox" as marketing words is making medicinal claims for an
+unlicensed product.
+
+**Site-design implications:** service pages that sell the experience and the process rather
+than the outcome; no "boosts", "cures", "prevents" or named conditions against an infused
+product; the supplement side checked against the GB NHC Register wording rather than
+paraphrased; and — as with aesthetics — the honest position that this constrains the copy and
+is still the commercially better site, because the claim is doing less work than the operator
+expects.
+
+**Sources.** Retrieved 2026-07-29. ASA/CAP, _Food: Health claims_ and CAP Code section 15;
+ASA/CAP, _Healthcare: Intravenous Nutritional Therapy_; ASA/CAP, _Advertising Vitamin Drips_;
+ASA Enforcement Notice, _Advertising Claims for IV Drips (Coronavirus/COVID-19)_; ASA ruling,
+_GMG Pharmacy Ltd t/a The IV Clinic_; Human Medicines Regulations 2012.
 
 ### B3. AI voice agents — the UK legal picture
 
