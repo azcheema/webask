@@ -18,19 +18,19 @@ by passes that were looking for something else entirely.
 
 ## Status
 
-✅ **Committed on the branch (2026-07-30, founder-authorised), NOT yet merged or
-pushed.** Branch cut from `main` at `3a899bc`; four commits:
+✅ **MERGED to `main` at `fdbeaf9` and pushed 2026-07-30. CI green (9m55s) and
+Lighthouse full green (6m17s) on that commit — watched, not assumed.** Branch
+deleted. The feature commits:
 
 ```
+fdbeaf9  Merge branch 'feature/industry-copy-review'
+acdaa59  docs: record the free-audit verdict — needs a UK rewrite, queued
+35e54a1  docs: mark the branch committed in the handoff
 d7b5c00  docs: record the § B4 run, its introduced defects, and four new traps
 7bf484d  fix(copy): restore the PECR statutory qualifier on six service pages
 8ab3d42  fix(content): run the doc 03 § B4 checklist over the three industry pages
 5dda892  fix(docs): correct the anti-wrinkle advice and source the missing compliance research
 ```
-
-Next session: merge to `main`, push, and **watch CI + Lighthouse on the push**
-before calling it done (remember the interstitial flake in CLAUDE.md — this
-diff touches `content/` and `data/`, so a red Lighthouse IS meaningful here).
 
 All local gates green:
 
