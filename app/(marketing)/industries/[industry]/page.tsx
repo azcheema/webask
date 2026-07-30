@@ -82,9 +82,11 @@ export default async function IndustryPage({ params }: { params: Promise<RoutePa
     title: service.name,
     subtitle: service.summary,
   }));
-  // We serve every vertical remotely; the authored hubs are the areas where we
-  // run a dedicated local page (internal-linking discipline — industry →
-  // location). Empty until Phase 2, and CrossLinkGrid self-hides when empty.
+  // We serve every vertical remotely; the authored hubs are the areas with a
+  // written local guide (internal-linking discipline — industry → location).
+  // Populated since the Phase 2 hubs landed, so this grid now renders — any
+  // string below is live on all three industry pages. CrossLinkGrid still
+  // self-hides when the list is empty.
   const locationLinks: CrossLink[] = authoredLocations.map((location) => ({
     href: `/locations/${location.slug}`,
     title: location.name,
@@ -149,7 +151,7 @@ export default async function IndustryPage({ params }: { params: Promise<RoutePa
       <CrossLinkGrid
         eyebrow="Locations"
         title={`Where we serve ${industry.name.toLowerCase()}`}
-        intro={`We work with ${industry.name.toLowerCase()} remotely across the US. These metros are where we run a dedicated local hub.`}
+        intro="Every engagement is remote, the length of the UK. These areas also have a written local guide."
         links={locationLinks}
         bg="default"
       />

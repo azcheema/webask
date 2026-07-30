@@ -235,17 +235,17 @@ export const home: HomeContent = {
     {
       question: "Do you only work with clinics",
       answer:
-        "No. We sell websites, SEO, CRM and automation to any UK small business, and most of what we build is not clinic work. We do have unusually deep knowledge of aesthetic clinics, dental practices and beauty and wellness clinics, because those sectors carry advertising rules most agencies have never read. That expertise is available if you need it and invisible if you do not — the engineering standards are the same either way.",
+        "No. The nine services are built for any UK small business. Aesthetic clinics, dental practices and beauty and wellness clinics are focus verticals because those sectors carry advertising rules that shape what a site is allowed to say, and that is a layer worth knowing properly. It is available if you need it and invisible if you do not — the engineering standards are the same either way.",
     },
     {
       question: "Do you understand the advertising rules for clinics",
       answer:
-        "Yes, and it is the main reason clinics come to us. Botulinum toxin is a prescription-only medicine in the UK, so it cannot be advertised to the public at all — and the ASA treats euphemisms such as “wrinkle-relaxing treatments” as implied promotion of the same medicine. What the rules do permit is advertising a consultation, and a price list positioned correctly within the site's structure. That is an information-architecture problem as much as a copy problem, which is precisely what we build. We are not solicitors, and genuinely borderline copy goes to CAP's free Copy Advice service.",
+        "Yes — it is the reason the clinic pages exist. A prescription-only medicine cannot be advertised to the public in the UK, and the ASA treats softer substitutions such as “wrinkle-relaxing treatments” as implied promotion of the same medicine. What the rules do permit is advertising a consultation, and a price list positioned correctly within the site's structure. That is an information-architecture problem as much as a copy problem, which is precisely what we build. We are not solicitors, and genuinely borderline copy goes to CAP's free Copy Advice service.",
     },
     {
       question: "Can you work with our existing website and CRM",
       answer:
-        "Usually, yes. We migrate and automate GoHighLevel and HubSpot, connect WordPress, Shopify and Wix sites to the tools around them, and rebuild from scratch only where keeping the current setup costs more than replacing it. Plenty of engagements start as a fix rather than a rebuild. The first call establishes what stays, what goes, and what is simply not worth touching yet.",
+        "Usually, yes. We migrate and automate GoHighLevel and HubSpot, connect WordPress, Shopify and Wix sites to the tools around them, and rebuild from scratch only where keeping the current setup costs more than replacing it. An engagement can start as a fix rather than a rebuild. The first call establishes what stays, what goes, and what is simply not worth touching yet.",
     },
     {
       question: "Where in the UK do you work",

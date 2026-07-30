@@ -159,7 +159,7 @@ export default async function ServicePage({ params }: { params: Promise<RoutePar
       <CrossLinkGrid
         eyebrow="Locations"
         title={`Where we serve ${service.name}`}
-        intro={`Local ${service.name.toLowerCase()} pages for the metros we focus on — the same engagement, tuned to each market.`}
+        intro={`Local ${service.name.toLowerCase()} pages for the areas we focus on — the same engagement, tuned to each market.`}
         links={locationLinks}
         bg="surface"
       />
