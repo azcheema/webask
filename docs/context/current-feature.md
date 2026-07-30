@@ -206,7 +206,9 @@ CLAUDE.md · docs/06-build-plan.md · docs/context/current-feature.md
 
 ### Next
 
-**1. `data/copy/free-audit.ts` (39%) still has no verdict**, and
+**1. `data/copy/free-audit.ts` (39%) — verdict recorded 2026-07-30: NEEDS A UK
+REWRITE** (founder decision). Queued as its own feature; the 39% remainder is
+not deliberate. The gate's verdict string and CLAUDE.md both carry it. And
 `data/copy/legal.ts` (69%) still names the entity "Naxdor … enskild firma" —
 rewrite it in the pass that D3 unblocks, not after.
 
@@ -715,14 +717,12 @@ that is now the only surviving record of what the old site served.
 **1. ~~The industry-page copy-review checklist~~ — DONE 2026-07-29.** See the
 current feature at the top of this file. Ticked in doc 06 § Phase 2.
 
-**2. `data/copy/free-audit.ts` (39%) and `data/copy/process.ts` (61%).** Ask the
-verdict question of each before treating either as a defect. `process.ts` is
-duplicate **by decision** — docs/01 marks the service-delivery playbook "copy
-verbatim" and commit `6306fc1` says so explicitly; only its false LCP-enforcement
-sentence was changed. `free-audit.ts` was partly rewritten by that same commit and
-**no verdict is recorded for the remainder** — four implied-client claims in it were
-fixed on 2026-07-29 (found only because a location hub links to `/free-audit`), but
-that is a defect fix, not the verdict.
+**2. `data/copy/free-audit.ts` (39%) and `data/copy/process.ts` (61%) — both
+verdicts now recorded.** `process.ts` is duplicate **by decision** — docs/01
+marks the service-delivery playbook "copy verbatim" and commit `6306fc1` says so
+explicitly. `free-audit.ts` **needs a UK rewrite** (founder, 2026-07-30) —
+queued as its own feature, not yet done. The four implied-client claims fixed
+2026-07-29 were a defect fix, not the rewrite.
 
 Current state of every module measured against the fork, same method (import both,
 walk the parsed objects — **not** regex over the source, see trap 13):
@@ -734,7 +734,7 @@ data/locations.ts    4872 words,    6 identical ( 0%)
 data/industries      2758 words,  310 identical (11%)   <- was 16%, § B4 pass
 data/copy/home        1342 words,   45 identical ( 3%)
 data/copy/process     1203 words,  737 identical (61%)   <- DELIBERATE (docs/01, 6306fc1)
-data/copy/free-audit   849 words,  332 identical (39%)   <- no verdict recorded
+data/copy/free-audit   849 words,  332 identical (39%)   <- VERDICT 2026-07-30: rewrite, queued
 data/copy/legal       5144 words, 3530 identical (69%)   <- wrong entity; gated on D3
 ```
 

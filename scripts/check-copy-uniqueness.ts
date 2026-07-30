@@ -94,7 +94,7 @@ const MODULES: ReadonlyArray<ModuleSpec> = [
     path: "data/copy/free-audit",
     budget: 0.5,
     verdict:
-      "⚠️ 43% and NO VERDICT RECORDED. Partly rewritten by 6306fc1. Budget is a holding line, not an endorsement — decide whether the remainder is deliberate.",
+      "VERDICT (founder, 2026-07-30): NEEDS A UK REWRITE — queued as its own feature. The 39% remainder is not deliberate. Budget stays a holding line until the rewrite lands; tighten it to match the others afterwards.",
   },
   {
     path: "data/copy/process",

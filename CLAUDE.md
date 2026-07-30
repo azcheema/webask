@@ -151,7 +151,8 @@ and soft-skips there).
 runner it would be a step that is always green while checking nothing — the exact
 `upload-artifact` failure mode below. Run it when you touch copy, and before cutover.
 It also carries the **verdict** for each module: `data/copy/process.ts` (61%) is duplicate
-**by decision** (docs/01 "copy verbatim"); `data/copy/free-audit.ts` (39%) and
+**by decision** (docs/01 "copy verbatim"); `data/copy/free-audit.ts` (39%) has its
+verdict: **needs a UK rewrite** (founder, 2026-07-30) — queued, not yet done; and
 `data/copy/legal.ts` (69%) have **no verdict recorded** and are open questions. That
 distinction — "identical on purpose" vs. "nobody looked" — is the whole point of the file.
 `data/locations.ts` joined the gate on 2026-07-29 when its hub copy landed (0%).
