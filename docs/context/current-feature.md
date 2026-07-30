@@ -18,8 +18,19 @@ by passes that were looking for something else entirely.
 
 ## Status
 
-⚠️ **NOT COMMITTED — ask before the first commit on this branch.** Branch cut
-from `main` at `3a899bc`; working tree holds the whole feature.
+✅ **Committed on the branch (2026-07-30, founder-authorised), NOT yet merged or
+pushed.** Branch cut from `main` at `3a899bc`; four commits:
+
+```
+d7b5c00  docs: record the § B4 run, its introduced defects, and four new traps
+7bf484d  fix(copy): restore the PECR statutory qualifier on six service pages
+8ab3d42  fix(content): run the doc 03 § B4 checklist over the three industry pages
+5dda892  fix(docs): correct the anti-wrinkle advice and source the missing compliance research
+```
+
+Next session: merge to `main`, push, and **watch CI + Lighthouse on the push**
+before calling it done (remember the interstitial flake in CLAUDE.md — this
+diff touches `content/` and `data/`, so a red Lighthouse IS meaningful here).
 
 All local gates green:
 
