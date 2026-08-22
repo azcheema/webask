@@ -277,3 +277,15 @@ white-on-brand). Any translucent-on-brand treatment must be checked with
   If it does not, re-run the job first.** This is the opposite of the `upload-artifact`
   trap below it — that one was green while broken; this one is red while fine. Both cost
   time by being believed too quickly.
+- 🆕 **A job with `steps: 0` never ran — read the job annotation, not the diff.** Third
+  instance of the same shape as the two entries above. On 2026-08-22 a push to `main` and
+  8 Dependabot PRs all went red in **2–4 seconds**, carrying only a job-level annotation:
+  "The job was not started because recent account payments have failed or your spending
+  limit needs to be increased." GitHub had parsed the workflow and queued the job, then the
+  billing gate refused to allocate a runner. **Tell:** the run's `jobs` API returns
+  `.jobs[0].steps` as an empty array, with a sub-5s duration. No step failed because no
+  step existed. An unparseable workflow, by contrast, produces **no job record at
+  all** — so a queued-but-stepless job rules out YAML syntax as the cause.
+  Actions minutes are billed **account-wide**, so this blocks every private repo at once
+  and is invisible from inside any one of them. **Never report a stepless red as a code
+  failure, and never call a change "CI-verified" on the back of one — nothing executed.**
