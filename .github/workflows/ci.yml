@@ -39,6 +39,28 @@ jobs:
           node-version-file: .nvmrc
           cache: pnpm
 
+      # MUST stay above `Build` — and above `Install`. Two separate reasons,
+      # both of which make a correctly-placed cache step look misplaced, so it
+      # gets "tidied" back down next to the build it serves. Do not move it.
+      #
+      # 1. actions/cache RESTORES at its own step position and only SAVES in
+      #    the post-job hook. Below `Build` the restore lands after the build
+      #    has already run: run 31361902907 logged `Cache not found` at
+      #    06:26:56, 28s AFTER `Compiled successfully` at 06:26:28 — then
+      #    dutifully saved at 06:35:59. Every build ran cold while faithfully
+      #    writing a cache nothing ever read.
+      # 2. hashFiles globs the workspace at the moment it is evaluated. Below
+      #    `Install`, `**/*.ts` walks the whole dependency tree to compute a
+      #    key meant to describe source — 14s of the old placement's cost.
+      - name: Cache Next.js build
+        uses: actions/cache@v6
+        with:
+          path: |
+            .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('**/*.ts', '**/*.tsx', '**/*.css') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('pnpm-lock.yaml') }}-
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -71,15 +93,6 @@ jobs:
 
       - name: Build
         run: pnpm build
-
-      - name: Cache Next.js build
-        uses: actions/cache@v5
-        with:
-          path: |
-            .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('**/*.ts', '**/*.tsx', '**/*.css') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('pnpm-lock.yaml') }}-
 
       - name: Install Playwright browsers
         run: pnpm exec playwright install --with-deps chromium

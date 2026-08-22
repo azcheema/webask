@@ -1,4 +1,27 @@
 version: 2
+
+# Grouping rules, and why they are shaped the way they are.
+#
+# Every Dependabot PR costs CI TWICE — once on the PR, once on the merge commit
+# (~21 min a pair here). 27 of this repo's 54 npm dependencies matched no group
+# and so opened a PR each, and the github-actions ecosystem had no groups at all
+# (actions/cache, actions/checkout and actions/setup-node were three PRs that
+# should have been one).
+#
+# ORDER IS LOAD-BEARING: Dependabot assigns a dependency to the FIRST group whose
+# `patterns` AND `update-types` both match. Any catch-all `patterns: ["*"]` must
+# therefore be defined LAST, or it swallows everything above it.
+#
+# Two kinds of group live below, and they are gated differently ON PURPOSE:
+#
+#   COHESION groups (next, react, tailwind, mdx, forms) have NO `update-types`
+#   gate. These packages must move together or the install breaks — a React 19→20
+#   PR that bumps `react` but leaves `@types/react` behind does not typecheck, and
+#   is not a bisectable data point, it is just red. A major here is already
+#   isolated to one coherent PR, which is the right granularity to bisect at.
+#
+#   CONVENIENCE groups (types, lint-format) and the catch-all ARE gated to
+#   minor/patch, so a breaking change arrives alone and bisectable.
 updates:
   - package-ecosystem: npm
     directory: "/"
@@ -13,6 +36,7 @@ updates:
       prefix: "chore(deps)"
       include: scope
     groups:
+      # --- cohesion groups: peers that must bump together, majors included ---
       next:
         patterns:
           - "next"
@@ -24,19 +48,6 @@ updates:
           - "react-dom"
           - "@types/react"
           - "@types/react-dom"
-      types:
-        patterns:
-          - "@types/*"
-        exclude-patterns:
-          - "@types/react"
-          - "@types/react-dom"
-      lint-format:
-        patterns:
-          - "eslint"
-          - "eslint-*"
-          - "@eslint/*"
-          - "prettier"
-          - "prettier-*"
       tailwind:
         patterns:
           - "tailwindcss"
@@ -58,6 +69,38 @@ updates:
           - "@hookform/*"
           - "zod"
 
+      # --- convenience groups: minor/patch batched, majors arrive alone ---
+      types:
+        patterns:
+          - "@types/*"
+        exclude-patterns:
+          - "@types/react"
+          - "@types/react-dom"
+        update-types:
+          - "minor"
+          - "patch"
+      lint-format:
+        patterns:
+          - "eslint"
+          - "eslint-*"
+          - "@eslint/*"
+          - "prettier"
+          - "prettier-*"
+        update-types:
+          - "minor"
+          - "patch"
+
+      # --- CATCH-ALL. Must stay LAST. Do not add a group below this one. ---
+      # Covers the 27 previously-ungrouped dependencies (@base-ui/react, sharp,
+      # tsx, typescript, lucide-react, resend, husky, framer-motion, the axe/
+      # playwright/lhci test toolchain, …), which were opening a PR each.
+      everything-else:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
@@ -68,3 +111,12 @@ updates:
     commit-message:
       prefix: "chore(actions)"
       include: scope
+    groups:
+      # Same reasoning as the npm catch-all: minor/patch batched into one PR,
+      # majors (checkout v6 → v7 and the like) left to arrive isolated.
+      actions:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"

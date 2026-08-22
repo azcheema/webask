@@ -1,8 +1,19 @@
 name: Lighthouse (full)
 
+# ON-DEMAND ONLY — deliberately NOT `push: [main]`. This is not a coverage cut.
+#
+# `.lighthouserc.cjs` is a single shared config, so `pnpm lhci` here and
+# `pnpm lhci` in ci.yml were byte-identical: the same 8 URLs, the same
+# numberOfRuns: 3, the same assertMatrix. ci.yml already runs on `push: [main]`,
+# so every merge audited the same commit twice — 335s inside CI and 333s again
+# here, 97 min/30d for a second opinion that could not differ from the first.
+# The merge commit is still fully audited, by ci.yml, in the same push event.
+#
+# Kept as workflow_dispatch because an on-demand audit costs nothing until
+# someone clicks it, and is useful for checking a perf change without a push.
+# If you ever make this run automatically again, first make it audit something
+# ci.yml does not — otherwise you are just buying the same number twice.
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 concurrency:
