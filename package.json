@@ -61,7 +61,7 @@
     "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.60.0",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^24.12.4",
+    "@types/node": "^26.4.1",
     "@types/react": "^19.2.16",
     "@types/react-dom": "^19.2.3",
     "axe-core": "^4.12.0",
