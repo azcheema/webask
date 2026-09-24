@@ -862,6 +862,16 @@
       "supportingUrls": ["/blog/topic/seo"],
       "cluster": "seo",
       "vertical": null
+    },
+    {
+      "term": "where can i get free text reminders for appointments",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/appointment-reminder-texts-pecr",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "email-sms",
+      "vertical": null
     }
   ]
 }
