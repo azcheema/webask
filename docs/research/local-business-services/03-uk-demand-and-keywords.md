@@ -473,7 +473,7 @@ and no `organic` array, never retried with a solved CAPTCHA.
 
 ## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-**Coverage.** 87 `google.co.uk` records (`serp-0001`–`serp-0087`: 84 captures and three block records), 32 Bing
+**Coverage.** 92 `google.co.uk` records (`serp-0001`–`serp-0092`: 89 captures and three block records), 32 Bing
 `cc=GB` captures (`bing-0001`–`bing-0032`; the last two are the trades heads, added in S4) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
 in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
 the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
@@ -486,21 +486,22 @@ third block, captured the five page heads without refusal and stopped at five by
 window an hour later did the same for the two fold tests and the three vertical heads, and a sixth for
 the profile long-tail, the two remaining landing-page terms and WhatsApp, and a seventh for the
 bundle and GoHighLevel tail and the local-SEO agency wording, and an eighth for the rest of the profile
-tail, and a ninth for the rest of the bundle and GoHighLevel tail. The pages
+tail, and a ninth for the rest of the bundle and GoHighLevel tail, and a tenth for the local-SEO services
+and vertical SEO terms. The pages
 captured on Google are text-back, reviews, the receptionist, email/SMS, landing pages, the heads of
 the profile service, the bundle and local SEO, the booking and reminder fold tests and the three
-vertical heads; the remaining local-SEO and vertical long tail, the near-me and comparison shapes and the
-web-chat and inbox tests are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
+vertical heads; the remaining vertical terms, the near-me and comparison shapes and the booking, chat and
+inbox tails are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
 provisional until the Google capture lands.
 
-**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 75 of the 84
+**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 80 of the 89
 successful Google captures** — on every text-back, receptionist and email-agency term — so the
 answer-first opening paragraph in `12` is not optional on this line. (2) **A local pack appeared on four
-terms in 84**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
+terms in 89**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
 (`serp-0065`), `local business marketing services` (`serp-0074`) and `local seo agency uk`
 (`serp-0077`) — always on a "services" or "agency" wording, never on a product or question — so local
 intent exists on the agency-shaped heads and nowhere else in the set; D1's no-profile ruling costs this
-line those four terms, not a category, and the four pages concerned enter on their long tail. (3) **Ads sat on 62 of 84** captures, four
+line those four terms, not a category, and the four pages concerned enter on their long tail. (3) **Ads sat on 65 of 89** captures, four
 at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
 and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
 the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
@@ -843,7 +844,7 @@ consultant uk` (`serp-0085`) is 7/9 UK, A0/B8 Soft, one feed ad (Fiverr), an AI 
   YouTube, GetApp UK, two listicles, Salesforce, EmailToolTester and Trustpilot — a software SERP;
   by § 1 step 4 the "platform" wording never heads the bundle page and carries no row.
 
-### 6.8 Local SEO (`serp-0062`, `serp-0077`; Bing `bing-0024`; the services, vertical and maps terms queued)
+### 6.8 Local SEO (`serp-0062`, `serp-0077`, `serp-0088`–`serp-0092`; Bing `bing-0024`, `bing-0031`; complete)
 
 `local seo packages uk` (`serp-0062`) is **9/9 UK**, A2/B7 Soft, one feed ad, an AI Overview and
 **High** (E1 + E3 + E4): seoworks.co.uk, rapidseo.london, localseoservicesuk.co.uk, wrise.co.uk (also
@@ -862,9 +863,32 @@ localseoservicesuk.co.uk, phoenixwebservices.co.uk, localseouk.co.uk, Semrush's 
 primeliondigital.co.uk, an appearonline.co.uk listicle, firstplaceseo.co.uk, Sortlist and
 direwolfseo.co.uk; PAA "How much does SEO cost in the UK?", "Which SEO agency is the best in the
 UK?"; related "Local SEO agency London", "SEO agency Manchester" — the city pages on `/services/seo`
-already own that tail, and the local pack on the "agency" wording is the D1 cost. The vertical terms
-(`seo for plumbers uk`, `seo for dentists uk`), the services wording and `google maps ranking
-service uk` are § 6.11 batch 4.
+already own that tail, and the local pack on the "agency" wording is the D1 cost. **The tenth window settles the rest.** `local seo services for small business uk` (`serp-0088`) is
+8/9 UK, A2/B7 Soft, two feed ads (Fiverr, Proxify), an AI Overview and **Medium** (E3 + E4):
+phoenixwebservices.co.uk, digitalnext.co.uk, redeagle.tech, studiohawk.co.uk, localseouk.co.uk,
+wrise.co.uk sixth, Semrush's directory, a listicle and primeliondigital.co.uk; PAA "How much does SEO
+cost for small business in the UK?", "How much does local SEO cost for a small business?" — the
+packages section's FAQ pair in two more wordings. `google maps ranking service uk` (`serp-0091`)
+is 7/9 UK, A4/B5 Soft, no ads and **Low** (E3): support.google.com first, two listicles, three
+agencies, an Instagram result and jcadworks.com; PAA "How to check Google Maps ranking?" — the profile
+page answers it with the no-guarantee line and a checker, not a service. **The two vertical SEO
+terms are agency SERPs, one of them High.** `seo for plumbers uk` (`serp-0089`) is 8/9 UK, A2/B7
+Soft, no ads and **Low** (E3) — on Google an agency SERP (outrank.co.uk, webdesignandseocompany.co.uk,
+plumberseo.co.uk, consultico.co.uk, Checkatrade, klarai.uk, seodons.co.uk seventh, a listicle,
+tradepixels.co.uk) where Bing (`bing-0031`) had shown guides; PAA "What is the best advertising for
+plumbers?", "Are plumbers in demand in the UK?". `local seo services for plumbers` (`serp-0092`)
+is 8/9 UK, A1/B8 Soft, one feed ad, an AI Overview and **High** (E1 + E3 + E4):
+webdesignandseocompany.co.uk, outrank.co.uk, tradepixels.co.uk, outsourceyourmarketing.co.uk,
+ctodigital.co.uk, a listicle, infoserve.com, digital-scientists.co.uk and kiaora.digital; PAA "How
+much do local SEO services cost?", "How much does a plumbing website cost?". `seo for dentists uk`
+(`serp-0090`) is **9/9 UK**, A0/B9 Soft, two feed ads (dentalsem.co.uk, signifydigital.com), an AI
+Overview and **Medium** (E3 + E4): amstraddigital.co.uk, nexushealthcare.co.uk, seoworks.co.uk,
+whitehat-seo.co.uk, kaizen.co.uk, gomungoseo.co.uk, two exact-match domains
+(seoservicesfordentists.co.uk, theseofordentists.co.uk) and leapfrogim.co.uk — a named niche with
+its own specialists. **Reading:** the vertical SEO terms belong to the industry pages' SEO sections
+(trades in S6, dental on the existing `dental-practices` head), never to `/services/seo` as heads;
+`local seo services for plumbers` is the first High vertical × service term in the set and goes into
+the S6 vertical rows with `serp-0092` as its record.
 
 ### 6.9 The fold-or-page tests (`serp-0063`–`serp-0064`; Bing `bing-0025`–`bing-0027`; the WhatsApp, web-chat and inbox terms queued)
 
@@ -932,34 +956,34 @@ service uk` are § 6.11 batch 4.
   plumbersmarketingco.co.uk, vistoplex.com, primename.co.uk, bubyli.co.uk, m4plumbersnearme.com,
   dandymarketing.co.uk, ad-tivity.co.uk, peacomarketing.com, puremarketing.uk — a crowded, named
   vertical the industry page enters on the compliance angle (registration display, the CCRs) rather
-  than on "marketing agency". The three read in `04` § 5 are plumbersmarketingco.co.uk, bird.co.uk and
-  seodons.co.uk. Google captures for both terms are queued (§ 6.11, batches 7 and 8).
+  than on "marketing agency". The three read in `06` L.3.1 are plumbersmarketingco.co.uk, bird.co.uk and
+  seodons.co.uk. On Google (tenth window) `seo for plumbers uk` is an agency SERP, Low (`serp-0089`),
+  and `local seo services for plumbers` is **High** (`serp-0092`) — § 6.8; the trades page's SEO
+  section takes both (S6 rows).
 
-### 6.11 Queued — the 23 Google captures still pending
+### 6.11 Queued — the 18 Google captures still pending
 
 **Block history, all on 24 September 2026, all from the same address.** HTTP 429 after 45 captures at
 4–8 s; HTTP 403 after five more at 12–18 s forty minutes later; HTTP 403 after five more at 25–30 s
 from a fresh browser context two and a half hours after that (`serp-0045`, `serp-0051`,
 `serp-0057`); then, forty minutes after the third block, **five captures with no refusal**, stopped
 at five by design (`serp-0058`–`serp-0062`), and an hour after that five more (`serp-0063`–`serp-0067`), and an hour after that another five
-(`serp-0068`–`serp-0072`), then five more (`serp-0073`–`serp-0077`) and five more (`serp-0078`–`serp-0082`), then five more (`serp-0083`–`serp-0087`). The pattern is a reputation-based allowance of about
+(`serp-0068`–`serp-0072`), then five more (`serp-0073`–`serp-0077`) and five more (`serp-0078`–`serp-0082`), then five more (`serp-0083`–`serp-0087`) and five more (`serp-0088`–`serp-0092`). The pattern is a reputation-based allowance of about
 five requests per window from this address, so the queue runs five to a batch, page-head terms first,
 one window an hour or more apart; the tail groups stay Bing-only until captured:
 
-1. local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
-   ranking service uk · local seo services for plumbers
-2. how much does an online booking system cost · sms appointment reminder service · automated
+1. how much does an online booking system cost · sms appointment reminder service · automated
    appointment reminder service uk · whatsapp business api pricing uk · web chat for small business uk
-3. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
+2. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
    price list website · veterinary services market investigation order 2026
-4. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
+3. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
    receptionist near me · google business profile management near me (near-me terms are evidence
    only, D1)
-5. email marketing agency near me · best missed call text back software uk · best email marketing
+4. email marketing agency near me · best missed call text back software uk · best email marketing
    agency uk
 
 > ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): every page head and every fold test
-> is now on Google; the five remaining batches are long-tail and evidence rows. Take them one
+> is now on Google; the four remaining batches are long-tail and evidence rows. Take them one
 > window an hour while a session is open, and accept Bing-only, provisional tiers for whatever is
 > left when it closes; never through a CAPTCHA. The
 > founder decides whether the tail groups are worth further windows.
@@ -1065,9 +1089,14 @@ the day real volumes arrive.
 | gohighlevel consultant uk                       | serp-0085 | 7/9   | 0/1 · AIO                 | A0/B8 Soft   | E1 E3 E4       | **High**                          | julianmills.co.uk, gohighlevel.com, softomatesolutions.com                                   |
 | gohighlevel sub account transfer                | serp-0086 | 0/7   | 0/0 · AIO                 | A0/B3 Soft   | E1             | Low                               | help.gohighlevel.com, help.gohighlevel.com, reddit.com                                       |
 | all in one marketing platform small business uk | serp-0087 | 6/9   | 4/2 · AIO                 | A7/B2 Hard   | E3 E4          | Medium                            | aiom.co.uk, capterra.co.uk, youtube.com                                                      |
+| local seo services for small business uk        | serp-0088 | 8/9   | 0/2 · AIO                 | A2/B7 Soft   | E3 E4          | Medium                            | phoenixwebservices.co.uk, digitalnext.co.uk, redeagle.tech                                   |
+| seo for plumbers uk                             | serp-0089 | 8/9   | 0/0 · AIO                 | A2/B7 Soft   | E3             | Low                               | outrank.co.uk, webdesignandseocompany.co.uk, plumberseo.co.uk                                |
+| seo for dentists uk                             | serp-0090 | 9/9   | 0/2 · AIO                 | A0/B9 Soft   | E3 E4          | Medium                            | amstraddigital.co.uk, nexushealthcare.co.uk, seoworks.co.uk                                  |
+| google maps ranking service uk                  | serp-0091 | 7/9   | 0/0 · AIO                 | A4/B5 Soft   | E3             | Low                               | support.google.com, levelupleads.co.uk, gbpmanager.co.uk                                     |
+| local seo services for plumbers                 | serp-0092 | 8/9   | 0/1 · AIO                 | A1/B8 Soft   | E1 E3 E4       | **High**                          | webdesignandseocompany.co.uk, outrank.co.uk, tradepixels.co.uk                               |
 
-**Reading across the pages.** 23 terms are High, 41 Medium, 20 Low, none Constructed among
-the 84 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
+**Reading across the pages.** 24 terms are High, 43 Medium, 22 Low, none Constructed among
+the 89 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
 the email-agency heads are High on Soft SERPs, which is the combination a zero-authority `.co.uk` can
 act on first; the reviews page has no High service head and earns its High only on the compliance
 long-tail, which sets its cluster order. Terms not yet captured on Google carry no tier. E5 is set by
@@ -1179,8 +1208,10 @@ target is reached with the remaining captures.
   the money? (`serp-0061`) · What happens to my data if I leave? (constructed; the exit clause, D11) ·
   What is included in each tier? (constructed).
 - **`/services/seo` packages section (if D13 opens it):** How much should I pay for local SEO?
-  (`serp-0062`) · How much does SEO cost in the UK? (`serp-0077`; `serp-0062` "typically") · Which SEO
-  agency is the best in the UK? (`serp-0077` — answered without a claim) · Is SEO still worth it
+  (`serp-0062`) · How much does SEO cost in the UK? (`serp-0077`; `serp-0062` "typically"; `serp-0088` "for small
+  business") · How much does local SEO cost for a small business? (`serp-0088`) · Which SEO agency is
+  the best in the UK? (`serp-0077` — answered without a claim) · How do I check my Google Maps ranking?
+  (`serp-0091` — a checker and the no-guarantee line) · Is SEO still worth it
   in 2026? (`serp-0062`).
 - **Calendar item 11 (WhatsApp):** Does it cost money to use WhatsApp Business? (`serp-0072`) · What
   is the 24 hour rule for WhatsApp Business? (`serp-0072`) · Is it worth getting WhatsApp Business?
@@ -1193,6 +1224,11 @@ target is reached with the remaining captures.
   appointments? (`serp-0064`) · What is the best free appointment reminder app? (`serp-0064`) · What
   is the cheapest online booking system? (`serp-0063`) · Can I make my own booking system?
   (`serp-0063`) — all answered without a product recommendation.
+- **Trades industry page (S6 rows):** How much do local SEO services cost? (`serp-0092`) · How much
+  does a plumbing website cost? (`serp-0092`) · What is the best advertising for plumbers? (`serp-0089`,
+  `-0092`) · Are plumbers in demand in the UK? (`serp-0089` — answered with a sourced figure or not at
+  all). **Dental practices (existing head):** What are some effective SEO keywords for dentists?
+  (`serp-0090`) · How much does SEO cost in the UK? (`serp-0090`).
 - **Garages industry page (S6 rows):** How much should an AI receptionist cost? (`serp-0066`) · Is
   there a free AI receptionist? (`serp-0066`) · Will I be reminded when my MOT is due? (`serp-0067` —
   gov.uk's free service first) · How can I get MOT and road tax reminders? (`serp-0067`) · Can I book
