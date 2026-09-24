@@ -949,10 +949,20 @@ the S6 vertical rows with `serp-0092` as its record.
   Overview and **Medium** (E3 + E4): Click4Assistance, mtechcomms.co.uk, Capterra UK, a gov.uk page,
   Moneypenny, whito.co.uk, saasinfinity.co.uk, Three Business and yourbot.uk; the PAA set is off-topic
   ("How can I get paid to chat online in the UK?"). Web chat stays a feature line inside the bundle's
-  Answer tier and the CRM page's widget; no page. `live chat for small business uk` and `unified
-inbox small business` are § 6.11 batch 1.
+  Answer tier and the CRM page's widget; no page. `live chat for small business uk` (`serp-0098`,
+  twelfth window) is 8/9 UK, A5/B4 Soft, four ads above and two in the feed (CloudTalk, Tidio,
+  LiveChat, Connecteam) and **Medium** (E3 + E4): Three Business, Click4Assistance, Moneypenny,
+  whito.co.uk, livechat.com, a gov.uk page, HSBC Business, Zendesk UK and unitelcontactcentres.com —
+  the same product shape. **The unified inbox is the set's one Constructed term.** `unified inbox
+small business` (`serp-0099`) is 2/9 UK, A2/B7 Soft, no ads, no evidence surface at all: Reddit,
+  a listicle, LiveAgent, Microsoft support, corynet.co.uk, Zoho, ubico.io, omnilo.io and
+  rogerroger.io, with a PAA set about Outlook and Gmail ("Can you have a unified inbox in Outlook?",
+  "How can I create a unified inbox for multiple Gmail accounts?") — the searcher means an email
+  client, not a CRM conversation inbox. It is kept as a record and carries no row; the bundle
+  describes the conversation inbox in its own words. **Fold** on both; the fold-or-page tests are
+  complete.
 
-### 6.10 Vertical terms (`serp-0065`–`serp-0067`; Bing `bing-0028`–`bing-0032`; the remaining vertical terms queued; rows in S6)
+### 6.10 Vertical terms (`serp-0065`–`serp-0067`, `serp-0089`–`serp-0090`, `serp-0092`, `serp-0100`–`serp-0102`; Bing `bing-0028`–`bing-0032`; the gym term queued; rows in S6)
 
 - **Vets: a Soft agency SERP with a local pack, led by the one agency that sells compliance.**
   `vet clinic marketing agency` (`serp-0065`) is 4/10 UK, A1/B9 Soft, one feed ad (heedly.co), **no AI
