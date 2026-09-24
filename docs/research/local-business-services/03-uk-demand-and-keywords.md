@@ -465,7 +465,7 @@ successful Google captures** — on every text-back, receptionist and email-agen
 answer-first opening paragraph in `12` is not optional on this line. (2) **No local pack appeared on any
 service term** except `email marketing services uk` (`serp-0040`), which carried a map and a "More
 businesses" link: local intent exists for the "services" wording and nowhere else in the set — D1's
-no-profile ruling costs this line one term, not a category. (3) **Ads sat on 28 of 44** captures, four
+no-profile ruling costs this line one term, not a category. (3) **Ads sat on 37 of 49** captures, four
 at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
 and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
 the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
@@ -584,11 +584,20 @@ small business` (`-0042`) are 7–9/9 UK, **High** (E1 + E3 + E4), A3–A5. The 
   Shopify, Mailchimp and cost guides. The page owns no SMS head; its SMS-cost FAQ answers the PAA
   ("How much does it cost to do SMS marketing?", "Is SMS marketing legal?") and the GBP-cost post
   carries the figures.
-- **Database reactivation is UK agency jargon with UK supply (Bing-only).** `database reactivation
-uk` (`bing-0011`) returns ampliflow.ai, pbaventures.co.uk, fixerhq.co.uk, oncueai.net, aiwills.co.uk,
-  elwynnai.com and databasereactivation.co.uk — a UK GHL-agency vocabulary confirmed; the bare
-  `database reactivation campaign` (`bing-0010`) is US (cometly, stakd, levityleads, closebot).
-  Google capture pending.
+- **Database reactivation is UK agency jargon with UK supply.** `database reactivation uk`
+  (`serp-0047`) is 8/9 UK with three ads above and four below — databasereactivation.co.uk,
+  vantagegrowthptnrs.com, invinciblemedia.co.uk, bigfootdigital.co.uk, ampliflow.ai, oncueai.net,
+  asnactivate.uk — A0/B9 Soft, **Medium** (E3 + E4): a UK GHL-agency vocabulary with a UK supply side
+  and no product or listicle in the top ten; Bing (`bing-0011`) adds pbaventures.co.uk, fixerhq.co.uk,
+  aiwills.co.uk and elwynnai.com. The bare `database reactivation campaign` (`serp-0046`) is US how-to
+  content (yaystarter, revsquared, refreshagent, flexxable, leadsnow) with a related search
+  "Gohighlevel database reactivation campaign" — Low, and the post owns it as drafted.
+- **`sms marketing uk`** (`serp-0048`) is **High** on paper (E1 + E2 + E3 + E4 + E5) and **Hard** in
+  shape (A9/B0: VoodooSMS, FireText, Salesforce, Klaviyo, Capterra, Text Marketer, TextAnywhere) — a
+  platform head the page does not own. **`email marketing management uk`** (`serp-0049`) is 7/9 UK and
+  mixed — an agency first (zestydigital), then platform listicles, Capterra, a Reddit thread and a CIM
+  course — Medium (E3 + E4); its PAA "What is the typical cost of email marketing per month in the
+  UK?" is the page's pricing FAQ in the searcher's words.
 - **`customer follow up automation` is software intent** (`bing-0012`: Zapier ×2, monday.com,
   HubSpot, Zendesk, Sobot) — row 37 is dropped (§ 8).
 - **PAA worth a FAQ:** "How much does an email marketing agency cost?" (`serp-0039`, `-0042`), "How
@@ -715,53 +724,59 @@ an order of magnitude in searches. The tiers are used for one decision only — 
 survive into `keywords-draft.json` and which pages carry a head term — and that decision is re-run on
 the day real volumes arrive.
 
-| Term                                            | Record    | UK/10 | Ads top/bottom · features | Proxy        | Evidence       | Tier         | Ranks 1–3                                                       |
-| ----------------------------------------------- | --------- | ----- | ------------------------- | ------------ | -------------- | ------------ | --------------------------------------------------------------- |
-| missed call text back uk                        | serp-0001 | 9/9   | 0/2 · AIO                 | A2/B7 Soft   | E1 E3 E4 E5    | **High**     | call2sms.co.uk, digitaltoolbag.co.uk, mctb.1nexus.co.uk         |
-| missed call text back service uk                | serp-0002 | 8/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E3 E4 E5    | **High**     | marketing-4-results.co.uk, digitaltoolbag.co.uk, 1nexus         |
-| missed call text back service                   | serp-0003 | 3/8   | 0/1 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, everycatch.com            |
-| text back missed calls                          | serp-0004 | 4/8   | 4/2 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com            |
-| missed call text back software                  | serp-0005 | 2/8   | 0/0 · AIO                 | A7/B0 Hard   | E1 E5          | Medium       | help.gohighlevel.com, upfirst.ai, call2sms.co.uk                |
-| is missed call text back legal uk               | serp-0006 | 7/9   | 0/0 · AIO                 | A0/B9 Soft   | E3             | Low          | digitaltoolbag.co.uk, smbbooster.co.uk, justanswer.co.uk        |
-| why do i get a text message after a missed call | serp-0007 | 4/9   | 0/0 · AIO                 | A2/B7 Soft   | E1 E2          | Medium       | reddit.com, community.ee.co.uk, community.idmobile.co.uk        |
-| auto reply text missed call                     | serp-0008 | 1/7   | 0/0 · AIO                 | A5/B2 Soft   | E5             | Low          | reddit.com, contactfusion.co.uk, support.callrail.com           |
-| missed call text back for plumbers              | serp-0009 | 1/8   | 4/2 · AIO                 | A1/B6 Soft   | E1 E4          | Medium       | reddit.com, tagmktg.com, leadtruffle.co                         |
-| missed call text back                           | serp-0010 | 4/8   | 0/0 · AIO                 | A4/B3 Soft   | E1 E2 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com            |
-| missed call sms service uk                      | serp-0011 | 9/9   | 4/0 · AIO                 | A6/B3 Hard   | E3 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, callcatchers.co.uk        |
-| missed call text message service                | serp-0012 | 4/8   | 0/0 · AIO                 | A3/B5 Soft   | E5             | Low          | community.ee.co.uk, reddit.com, digitaltoolbag.co.uk            |
-| google review management services uk            | serp-0013 | 7/8   | 4/0 · AIO                 | A2/B5 Soft   | E3 E4          | Medium       | artemis.marketing, localexposure.co.uk, reviewmanagement.org.uk |
-| google review management company                | serp-0014 | 0/8   | 4/0 · AIO                 | A6/B1 Hard   | E1 E4          | Medium       | artemis.marketing, wiremo.co, thecmo.com                        |
-| google review management agency                 | serp-0015 | 1/8   | 0/0 · AIO                 | A6/B2 Hard   | E1             | Low          | artemis.marketing, gmbapi.com, sproutsocial.com                 |
-| review management service uk                    | serp-0016 | 9/9   | 4/0 · AIO                 | A4/B5 Soft   | E3 E4 E5       | Medium       | reviewmanagement.org.uk, purereputation.co.uk, localexposure    |
-| google review request automation                | serp-0017 | 0/8   | 1/1                       | A7/B1 Hard   | E1 E4          | Medium       | reddit.com, roapp.io, repairdesk.co                             |
-| service to get more google reviews              | serp-0018 | 0/4   | 0/0 · AIO                 | A2/B2 Soft   | E1             | Low          | reddit.com, asknicely.com, goqdos.com                           |
-| how to get more google reviews from customers   | serp-0019 | 1/6   | 0/1 · AIO                 | A4/B2 Soft   | E1 E4          | Medium       | reddit.com, asknicely.com, reputation.com                       |
-| how to ask for google reviews legally uk        | serp-0020 | 6/7   | 0/0 · AIO                 | A3/B2 Soft   | E3 E5          | Medium       | (untitled result), gov.uk, axiomai.uk                           |
-| review gating uk                                | serp-0021 | 6/9   | 0/0 · AIO                 | A4/B4 Soft   | E3             | Low          | reddit.com, brightlocal.com, helphound.info                     |
-| incentivised reviews uk                         | serp-0022 | 6/9   | 0/1                       | A5/B0 Medium | E1 E3 E4       | **High**     | lcf.co.uk, gov.uk, assets.publishing.service.gov.uk             |
-| reputation management for dentists              | serp-0023 | 2/9   | 0/0 · AIO                 | A6/B3 Hard   | E1             | Low          | inmoment.com, doctible.com, dentalmarketingexpert.co.uk         |
-| google review management                        | serp-0024 | 0/8   | 0/1 · AIO                 | A5/B3 Soft   | E1 E4          | Medium       | wiremo.co, youtube.com, sproutsocial.com                        |
-| online reputation management small business uk  | serp-0025 | 6/9   | 4/0 · AIO                 | A3/B6 Soft   | E3 E4          | Medium       | xero.com, igniyte.co.uk, birdeye.com                            |
-| review management software uk                   | serp-0026 | 8/9   | 4/2 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | capterra.co.uk, birdeye.com, ehubt.io                           |
-| ai phone receptionist uk                        | serp-0027 | 8/9   | 4/0 · AIO                 | A9/B0 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, thevoipshop.co.uk                 |
-| ai voice receptionist uk                        | serp-0028 | 7/9   | 3/0 · AIO                 | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                    |
-| ai receptionist for small business uk           | serp-0029 | 6/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, bookedsolid.health                |
-| ai call answering service uk                    | serp-0030 | 8/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, norango.ai                |
-| ai receptionist cost uk                         | serp-0031 | 8/9   | 3/0 · AIO                 | A7/B2 Hard   | E3 E4 E5       | Medium       | aiphonecalls.co.uk, fasthosts.co.uk, bookedsolid.health         |
-| free ai receptionist uk                         | serp-0032 | 8/9   | 4/0                       | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, sophiie.ai                        |
-| ai dental receptionist uk                       | serp-0033 | 8/9   | 3/0 · AIO                 | A5/B2 Soft   | E1 E3 E4 E5    | **High**     | roboreception.co.uk, dentistry.co.uk, viveoai.com               |
-| is an ai receptionist legal uk                  | serp-0034 | 9/9   | 4/2                       | A6/B3 Hard   | E3 E4 E5       | Medium       | softomatesolutions.com, reddit.com, fortayconnect.com           |
-| ai receptionist uk                              | serp-0035 | 8/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                    |
-| ai phone answering service uk                   | serp-0036 | 7/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, aiphonecalls.co.uk        |
-| virtual receptionist ai uk                      | serp-0037 | 8/9   | 3/0 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, answer.co.uk, thevoipshop.co.uk                |
-| best ai receptionist uk                         | serp-0038 | 8/9   | 4/0 · AIO                 | A7/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, sophiie.ai, bookedsolid.health                 |
-| email marketing agency uk                       | serp-0039 | 9/9   | 4/0 · AIO                 | A3/B6 Soft   | E1 E3 E4       | **High**     | email-postman.co.uk, zestydigital.co.uk, agencies.semrush.com   |
-| email marketing services uk                     | serp-0040 | 9/10  | 4/0 · local pack          | A3/B5 Soft   | E1 E3 E4       | **High**     | bluefrontier.co.uk, email-postman.co.uk, agencies.semrush.com   |
-| email marketing companies uk                    | serp-0041 | 8/9   | 4/0 · AIO                 | A5/B4 Soft   | E1 E2 E3 E4    | **High**     | email-postman.co.uk, emailoctopus.com, clutch.co                |
-| email marketing agency for small business       | serp-0042 | 7/9   | 4/0                       | A5/B4 Soft   | E1 E3 E4       | **High**     | thegoodmarketer.co.uk, growth-by-design.co.uk, salesforce.com   |
-| sms marketing services uk                       | serp-0043 | 9/9   | 4/0 · AIO                 | A9/B0 Hard   | E3 E4 E5       | Medium       | voodoosms.com, clicksend.com, klaviyo.com                       |
-| sms marketing cost                              | serp-0044 | 2/9   | 4/2                       | A8/B1 Hard   | E1 E4 E5       | Medium       | textmarketer.co.uk, help.shopify.com, thesmsworks.co.uk         |
-| database reactivation campaign                  | serp-0045 | —     | —                         | —            | —              | not captured | blocked (HTTP 429) — re-run                                     |
+| Term                                            | Record    | UK/10 | Ads top/bottom · features | Proxy        | Evidence       | Tier         | Ranks 1–3                                                          |
+| ----------------------------------------------- | --------- | ----- | ------------------------- | ------------ | -------------- | ------------ | ------------------------------------------------------------------ |
+| missed call text back uk                        | serp-0001 | 9/9   | 0/2 · AIO                 | A2/B7 Soft   | E1 E3 E4 E5    | **High**     | call2sms.co.uk, digitaltoolbag.co.uk, mctb.1nexus.co.uk            |
+| missed call text back service uk                | serp-0002 | 8/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E3 E4 E5    | **High**     | marketing-4-results.co.uk, digitaltoolbag.co.uk, 1nexus            |
+| missed call text back service                   | serp-0003 | 3/8   | 0/1 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, everycatch.com               |
+| text back missed calls                          | serp-0004 | 4/8   | 4/2 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com               |
+| missed call text back software                  | serp-0005 | 2/8   | 0/0 · AIO                 | A7/B0 Hard   | E1 E5          | Medium       | help.gohighlevel.com, upfirst.ai, call2sms.co.uk                   |
+| is missed call text back legal uk               | serp-0006 | 7/9   | 0/0 · AIO                 | A0/B9 Soft   | E3             | Low          | digitaltoolbag.co.uk, smbbooster.co.uk, justanswer.co.uk           |
+| why do i get a text message after a missed call | serp-0007 | 4/9   | 0/0 · AIO                 | A2/B7 Soft   | E1 E2          | Medium       | reddit.com, community.ee.co.uk, community.idmobile.co.uk           |
+| auto reply text missed call                     | serp-0008 | 1/7   | 0/0 · AIO                 | A5/B2 Soft   | E5             | Low          | reddit.com, contactfusion.co.uk, support.callrail.com              |
+| missed call text back for plumbers              | serp-0009 | 1/8   | 4/2 · AIO                 | A1/B6 Soft   | E1 E4          | Medium       | reddit.com, tagmktg.com, leadtruffle.co                            |
+| missed call text back                           | serp-0010 | 4/8   | 0/0 · AIO                 | A4/B3 Soft   | E1 E2 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com               |
+| missed call sms service uk                      | serp-0011 | 9/9   | 4/0 · AIO                 | A6/B3 Hard   | E3 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, callcatchers.co.uk           |
+| missed call text message service                | serp-0012 | 4/8   | 0/0 · AIO                 | A3/B5 Soft   | E5             | Low          | community.ee.co.uk, reddit.com, digitaltoolbag.co.uk               |
+| google review management services uk            | serp-0013 | 7/8   | 4/0 · AIO                 | A2/B5 Soft   | E3 E4          | Medium       | artemis.marketing, localexposure.co.uk, reviewmanagement.org.uk    |
+| google review management company                | serp-0014 | 0/8   | 4/0 · AIO                 | A6/B1 Hard   | E1 E4          | Medium       | artemis.marketing, wiremo.co, thecmo.com                           |
+| google review management agency                 | serp-0015 | 1/8   | 0/0 · AIO                 | A6/B2 Hard   | E1             | Low          | artemis.marketing, gmbapi.com, sproutsocial.com                    |
+| review management service uk                    | serp-0016 | 9/9   | 4/0 · AIO                 | A4/B5 Soft   | E3 E4 E5       | Medium       | reviewmanagement.org.uk, purereputation.co.uk, localexposure       |
+| google review request automation                | serp-0017 | 0/8   | 1/1                       | A7/B1 Hard   | E1 E4          | Medium       | reddit.com, roapp.io, repairdesk.co                                |
+| service to get more google reviews              | serp-0018 | 0/4   | 0/0 · AIO                 | A2/B2 Soft   | E1             | Low          | reddit.com, asknicely.com, goqdos.com                              |
+| how to get more google reviews from customers   | serp-0019 | 1/6   | 0/1 · AIO                 | A4/B2 Soft   | E1 E4          | Medium       | reddit.com, asknicely.com, reputation.com                          |
+| how to ask for google reviews legally uk        | serp-0020 | 6/7   | 0/0 · AIO                 | A3/B2 Soft   | E3 E5          | Medium       | (untitled result), gov.uk, axiomai.uk                              |
+| review gating uk                                | serp-0021 | 6/9   | 0/0 · AIO                 | A4/B4 Soft   | E3             | Low          | reddit.com, brightlocal.com, helphound.info                        |
+| incentivised reviews uk                         | serp-0022 | 6/9   | 0/1                       | A5/B0 Medium | E1 E3 E4       | **High**     | lcf.co.uk, gov.uk, assets.publishing.service.gov.uk                |
+| reputation management for dentists              | serp-0023 | 2/9   | 0/0 · AIO                 | A6/B3 Hard   | E1             | Low          | inmoment.com, doctible.com, dentalmarketingexpert.co.uk            |
+| google review management                        | serp-0024 | 0/8   | 0/1 · AIO                 | A5/B3 Soft   | E1 E4          | Medium       | wiremo.co, youtube.com, sproutsocial.com                           |
+| online reputation management small business uk  | serp-0025 | 6/9   | 4/0 · AIO                 | A3/B6 Soft   | E3 E4          | Medium       | xero.com, igniyte.co.uk, birdeye.com                               |
+| review management software uk                   | serp-0026 | 8/9   | 4/2 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | capterra.co.uk, birdeye.com, ehubt.io                              |
+| ai phone receptionist uk                        | serp-0027 | 8/9   | 4/0 · AIO                 | A9/B0 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, thevoipshop.co.uk                    |
+| ai voice receptionist uk                        | serp-0028 | 7/9   | 3/0 · AIO                 | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                       |
+| ai receptionist for small business uk           | serp-0029 | 6/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, bookedsolid.health                   |
+| ai call answering service uk                    | serp-0030 | 8/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, norango.ai                   |
+| ai receptionist cost uk                         | serp-0031 | 8/9   | 3/0 · AIO                 | A7/B2 Hard   | E3 E4 E5       | Medium       | aiphonecalls.co.uk, fasthosts.co.uk, bookedsolid.health            |
+| free ai receptionist uk                         | serp-0032 | 8/9   | 4/0                       | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, sophiie.ai                           |
+| ai dental receptionist uk                       | serp-0033 | 8/9   | 3/0 · AIO                 | A5/B2 Soft   | E1 E3 E4 E5    | **High**     | roboreception.co.uk, dentistry.co.uk, viveoai.com                  |
+| is an ai receptionist legal uk                  | serp-0034 | 9/9   | 4/2                       | A6/B3 Hard   | E3 E4 E5       | Medium       | softomatesolutions.com, reddit.com, fortayconnect.com              |
+| ai receptionist uk                              | serp-0035 | 8/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                       |
+| ai phone answering service uk                   | serp-0036 | 7/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, aiphonecalls.co.uk           |
+| virtual receptionist ai uk                      | serp-0037 | 8/9   | 3/0 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, answer.co.uk, thevoipshop.co.uk                   |
+| best ai receptionist uk                         | serp-0038 | 8/9   | 4/0 · AIO                 | A7/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, sophiie.ai, bookedsolid.health                    |
+| email marketing agency uk                       | serp-0039 | 9/9   | 4/0 · AIO                 | A3/B6 Soft   | E1 E3 E4       | **High**     | email-postman.co.uk, zestydigital.co.uk, agencies.semrush.com      |
+| email marketing services uk                     | serp-0040 | 9/10  | 4/0 · local pack          | A3/B5 Soft   | E1 E3 E4       | **High**     | bluefrontier.co.uk, email-postman.co.uk, agencies.semrush.com      |
+| email marketing companies uk                    | serp-0041 | 8/9   | 4/0 · AIO                 | A5/B4 Soft   | E1 E2 E3 E4    | **High**     | email-postman.co.uk, emailoctopus.com, clutch.co                   |
+| email marketing agency for small business       | serp-0042 | 7/9   | 4/0                       | A5/B4 Soft   | E1 E3 E4       | **High**     | thegoodmarketer.co.uk, growth-by-design.co.uk, salesforce.com      |
+| sms marketing services uk                       | serp-0043 | 9/9   | 4/0 · AIO                 | A9/B0 Hard   | E3 E4 E5       | Medium       | voodoosms.com, clicksend.com, klaviyo.com                          |
+| sms marketing cost                              | serp-0044 | 2/9   | 4/2                       | A8/B1 Hard   | E1 E4 E5       | Medium       | textmarketer.co.uk, help.shopify.com, thesmsworks.co.uk            |
+| database reactivation campaign                  | serp-0045 | —     | —                         | —            | —              | block record | HTTP 429 after 45 captures                                         |
+| database reactivation campaign                  | serp-0046 | 0/8   | 0/0 · AIO                 | A0/B8 Soft   | E1             | Low          | yaystarter.com, revsquared.ai, refreshagent.com                    |
+| database reactivation uk                        | serp-0047 | 8/9   | 3/2 · AIO                 | A0/B9 Soft   | E3 E4          | Medium       | databasereactivation.co.uk, vantagegrowthptnrs.com, yaystarter.com |
+| sms marketing uk                                | serp-0048 | 8/9   | 3/0 · AIO                 | A9/B0 Hard   | E1 E2 E3 E4 E5 | **High**     | voodoosms.com, firetext.co.uk, salesforce.com                      |
+| email marketing management uk                   | serp-0049 | 7/9   | 4/0 · AIO                 | A5/B4 Soft   | E3 E4          | Medium       | zestydigital.co.uk, constantcontact.com, salesforce.com            |
+| landing page design uk                          | serp-0050 | 7/9   | 3/0 · AIO                 | A2/B7 Soft   | E3 E4          | Medium       | mylandingpage.co.uk, converted.co.uk, sortlist.co.uk               |
+| landing page design agency uk                   | serp-0051 | —     | —                         | —            | —              | block record | HTTP 403 after 5 more captures                                     |
 
 **Reading across the pages.** 16 terms are High, 25 Medium, 8 Low, none Constructed among
 the 49 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
