@@ -42,10 +42,10 @@ by updating this table and the **Next** line below it; together they are the han
 
 Status values: 🔲 not started · 🟡 draft · 🟢 done · 🔴 blocked (name the blocker in the cell).
 
-**Next:** S2 — `01` product study on the vendor pages — and S3 — the `google.co.uk` SERP capture,
-as early as possible, because it is the only evidence that can change the plan (planning § 0 item 10).
-S2 waits on the LC Phone UK rate file, which the founder exports from inside the GoHighLevel account
-into `private/` (decision of 24 September 2026, `00` § 6).
+**Next:** S2 — `01` product study on the vendor pages — and S3 — the `google.co.uk` SERP capture, as
+early as possible, because it is the only evidence that can change the plan (planning § 0 item 10).
+The LC Phone UK rate file is deferred: the founder exports it into `private/` before S5 closes; until
+then `01` marks UK rates 🔴 unverified and nothing waits on it.
 
 ### 2.1 What the planning file already holds for each bundle file
 
