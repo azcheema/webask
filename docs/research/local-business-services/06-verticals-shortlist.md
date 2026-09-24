@@ -22,8 +22,15 @@ are quoted in Appendix L: a price list one click from the homepage on a "prices"
 36 Schedule 1 items, the group name in the homepage banner and page metadata, practice information,
 the parasiticide list with the VMD link, pet-care-plan standard information, the RCVS prescription
 literature within two clicks, a complaints process, and a booking confirmation carrying the
-consultation price — due **22 March 2027** for practices with fewer than 15 sites (22 December 2026
-for large groups on the price list and practice information). The CMA's own release says "Less than 40% of practices have prices
+consultation price. The dates split by item (Art. 3 table, confirmed on the PDF on 24 September
+2026): for a practice with fewer than 15 sites the Part 2 items (ownership and practice information,
+the price list, the parasiticide list, pet care plans), the end-of-life options page (Art. 20) and the
+complaints process (Art. 21) are due **22 March 2027**; the RCVS prescription literature and the
+"Written prescriptions are available" message in booking communications (Art. 14) are due **22
+September 2027**. For groups with 15 or more sites: 22 December 2026 for practice information, the
+price list, the parasiticide list, pet care plans and end-of-life options; 22 March 2027 for ownership
+information and the complaints process; 22 June 2027 for Art. 14. Compliance runs "from the next
+Working Day after the dates stipulated" (Art. 3(1)). The CMA's own release says "Less than 40% of practices have prices
 on their websites" (24 March 2026). Trades carry registration-display and claims-of-approval rules
 (L.3); garages carry almost nothing online (L.4) and stay wave 1 on fit, not regulation. Wave 2: gyms/fitness studios,
 timed to the DMCC subscription-contract regime (DBT government response published 2 April 2026, PDF on
@@ -39,17 +46,17 @@ Weights: GHL fit 20 · UK demand evidence 20 · ownable regulatory angle 20 · c
 size 10 · remote serviceability 5 · clinic overlap 5 · founder affinity 10. Scores 1–5; the weighted
 total is out of 100 before the founder's column. Every score cites its evidence or says "assumption".
 
-| Vertical                 | GHL fit | Demand evidence | Regulatory angle | Competition | Ticket | Remote | Overlap | Founder | Weighted (of 90) | Evidence in brief                                                                                                                                                                                                                                                                       |
-| ------------------------ | ------- | --------------- | ---------------- | ----------- | ------ | ------ | ------- | ------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Veterinary practices     | 4       | 3               | 5                | 4           | 4      | 5      | 4       | —       | 75               | Order made 22 Sep 2026 with website Articles and dates (App. L); "vet clinic marketing agency" surfaced (App. G); CMA "less than 40%" statistic; a practice's client data is owners' contact data (assumption on hosting, Q10)                                                          |
-| Trades / home services   | 5       | 4               | 3                | 3           | 3      | 5      | 3       | —       | 70               | Text-back and reviews built for them (App. Q: three UK text-back products target trades); registration display and claims-of-approval rules (App. L.3); "seo for plumbers" family (App. G); busy SERPs (Set A agencies name tradesmen); CCRs to source                                  |
-| Garages / MOT centres    | 5       | 2               | 2                | 3           | 3      | 5      | 3       | —       | 61               | Missed-call and MOT-reminder fit (service messages, R08); DVSA rules are physical signage only (App. L.4); no UK autocomplete signal beyond "ai receptionist for garages" itself (App. G)                                                                                               |
-| Gyms / fitness studios   | 4       | 2               | 3                | 3           | 3      | 5      | 3       | —       | 60               | DMCC subscription regime expected spring 2027 (App. A, DBT response 2 Apr 2026); "gym membership marketing" thin (App. G); CMA gym-contract enforcement 2011–2016 now sourced and the DBT response read in full (App. AP: "we anticipate that the regime will commence in spring 2027") |
-| Solicitors / accountants | 3       | 3               | 4                | 3           | 4      | 5      | 2       | —       | 64               | SRA 8.9 limits outbound marketing; Transparency Rules put prices on the website (§ 10 row 7); Leeds hub already argues the price-publication point; email/SMS plan constrained (R41)                                                                                                    |
-| Estate / letting agents  | 3       | 3               | 4                | 2           | 3      | 5      | 2       | —       | 59               | Material-information rules on DMCC footing (§ 10 row 8; NTS withdrawal secondary); portal-feed work not the monthly plans; `check-keywords.ts` dropped real-estate deliberately                                                                                                         |
-| Hospitality              | 3       | 2               | 3                | 2           | 2      | 4      | 2       | —       | 48               | FHRS display by nation, allergens, drip pricing to source; entrenched booking platforms (App. Q: "online booking system for restaurant uk" is product intent)                                                                                                                           |
-| Salons / barbers         | 4       | 3               | 2                | 3           | 2      | 5      | 5       | —       | —                | Already inside `beauty-wellness-clinics` (`audienceType` names beauty salons) — no new page; add "barbers" to that line if wanted                                                                                                                                                       |
-| Tutors                   | 3       | 1               | 2                | 3           | 1      | 5      | 1       | —       | 42               | Low budget, seasonal; DBS position to source; no autocomplete signal captured                                                                                                                                                                                                           |
+| Vertical                 | GHL fit | Demand evidence | Regulatory angle | Competition | Ticket | Remote | Overlap | Founder | Weighted (of 90) | Evidence in brief                                                                                                                                                                                                                                                                                                                  |
+| ------------------------ | ------- | --------------- | ---------------- | ----------- | ------ | ------ | ------- | ------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Veterinary practices     | 4       | 3               | 5                | 4           | 4      | 5      | 4       | —       | 75               | Order made 22 Sep 2026 with website Articles and dates (App. L); "vet clinic marketing agency" surfaced (App. G); CMA "less than 40%" statistic; a practice's client data is owners' contact data (assumption on hosting, Q10)                                                                                                     |
+| Trades / home services   | 5       | 4               | 3                | 3           | 3      | 5      | 3       | —       | 70               | Text-back and reviews built for them (App. Q: three UK text-back products target trades); registration display and claims-of-approval rules (App. L.3); "seo for plumbers" family (App. G); busy SERPs (Set A agencies name tradesmen); CCRs to source                                                                             |
+| Garages / MOT centres    | 5       | 2               | 2                | 3           | 3      | 5      | 3       | —       | 61               | Missed-call and MOT-reminder fit (service messages, R08); DVSA rules are physical signage only (App. L.4); no UK autocomplete signal beyond "ai receptionist for garages" itself (App. G)                                                                                                                                          |
+| Gyms / fitness studios   | 4       | 2               | 3                | 3           | 3      | 5      | 3       | —       | 60               | DMCC subscription regime — the DBT response (2 Apr 2026) says "we anticipate that the regime will commence in spring 2027"; "gym membership marketing" thin (App. G); CMA gym-contract enforcement 2011–2016 now sourced and the DBT response read in full (App. AP: "we anticipate that the regime will commence in spring 2027") |
+| Solicitors / accountants | 3       | 3               | 4                | 3           | 4      | 5      | 2       | —       | 64               | SRA 8.9 limits outbound marketing; Transparency Rules put prices on the website (§ 10 row 7); Leeds hub already argues the price-publication point; email/SMS plan constrained (R41)                                                                                                                                               |
+| Estate / letting agents  | 3       | 3               | 4                | 2           | 3      | 5      | 2       | —       | 59               | Material-information rules on DMCC footing (§ 10 row 8; NTS withdrawal secondary); portal-feed work not the monthly plans; `check-keywords.ts` dropped real-estate deliberately                                                                                                                                                    |
+| Hospitality              | 3       | 2               | 3                | 2           | 2      | 4      | 2       | —       | 48               | FHRS display by nation, allergens, drip pricing to source; entrenched booking platforms (App. Q: "online booking system for restaurant uk" is product intent)                                                                                                                                                                      |
+| Salons / barbers         | 4       | 3               | 2                | 3           | 2      | 5      | 5       | —       | —                | Already inside `beauty-wellness-clinics` (`audienceType` names beauty salons) — no new page; add "barbers" to that line if wanted                                                                                                                                                                                                  |
+| Tutors                   | 3       | 1               | 2                | 3           | 1      | 5      | 1       | —       | 42               | Low budget, seasonal; DBS position to source; no autocomplete signal captured                                                                                                                                                                                                                                                      |
 
 Recommendation carried from § 4.6: wave 1 vets, trades, garages (garages on fit, not regulation);
 wave 2 gyms; wave 3 solicitors, agents; deferred hospitality; no page for salons and tutors.
@@ -123,6 +130,14 @@ the compliance table on the PDF page itself, because `pdftotext -layout` jumbles
 
 ### L.2 Veterinary practices — the Veterinary Services Market Investigation Order 2026
 
+> **Corrected 24 September 2026 (S4).** The Order PDF, the Schedule 1 PDF, the Notice of making and
+> the gov.uk page were re-read with `pdftotext` (80 claims checked: 49 verbatim, 27 accurate
+> paraphrases, 4 wrong). The four corrections are applied below and marked; the earlier text had put
+> the Art. 14 prescription items on the 22 March 2027 date (they are 22 September 2027 for small
+> practices), cited cremation as "Part 7" (Part 6, Art. 20) and complaint logs as Art. 21 (Art. 22).
+> The Notice of making, not the Order body, carries the 22 September 2026 date. § L.2.1 lists the
+> website and CRM obligations the first read had left out.
+
 **Status.** Made 22 September 2026 (gov.uk publication page, "Published 22 September 2026", thirteen
 documents); Art. 1(2) "This Order shall come into force on the day after the Order is made"; extends
 to the whole UK (Art. 1(3)). The CMA says an "updated explainer on what veterinary businesses need
@@ -133,18 +148,18 @@ guide and five remedy guides — fetch in S4.
 FOPs and/or OOH Centres"; "'Small Veterinary Business' means a Veterinary Business with fewer than
 15 FOPs and/or OOH Centres". Nearly every independent practice is "Small".
 
-**Compliance dates (Art. 3 table, as read from the extracted text — confirm on the PDF):**
+**Compliance dates (Art. 3 table; confirmed row by row on PDF pages 18 and 20 with `pdftotext -table`, 24 September 2026):**
 
-| Obligation                                                                       | Large (≥ 15 sites)                                                                               | Small (< 15 sites) |
-| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------ |
-| Ownership Information (Part 2)                                                   | 22 March 2027                                                                                    | 22 March 2027      |
-| Practice Information · Price List · Parasiticide Price List · Pet Care Plans     | 22 December 2026                                                                                 | 22 March 2027      |
-| Written estimates for higher-cost treatments · Itemised bills                    | 22 June 2027                                                                                     | 22 September 2027  |
-| Pet-owner awareness of written prescriptions; provision; standard flyer (Part 4) | 22 June 2027                                                                                     | 22 September 2027  |
-| Prescription fees (Art. 18)                                                      | 22 March 2027                                                                                    | 22 September 2027  |
-| Cremation options and prices (Part 7)                                            | 22 December 2026                                                                                 | 22 March 2027      |
-| In-house complaint process · complaint logs (Art. 21)                            | 22 March 2027                                                                                    | 22 March 2027      |
-| Submission of information to the RCVS Find a Vet platform                        | 3 months after the RCVS complies with its Undertakings, or 22 September 2027, whichever is later | same               |
+| Obligation                                                                       | Large (≥ 15 sites)                                                                                                                  | Small (< 15 sites) |
+| -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| Ownership Information (Part 2)                                                   | 22 March 2027                                                                                                                       | 22 March 2027      |
+| Practice Information · Price List · Parasiticide Price List · Pet Care Plans     | 22 December 2026                                                                                                                    | 22 March 2027      |
+| Written estimates for higher-cost treatments · Itemised bills                    | 22 June 2027                                                                                                                        | 22 September 2027  |
+| Pet-owner awareness of written prescriptions; provision; standard flyer (Part 4) | 22 June 2027                                                                                                                        | 22 September 2027  |
+| Prescription fees (Art. 18)                                                      | 22 March 2027                                                                                                                       | 22 September 2027  |
+| Cremation options and prices (Part 6, Art. 20)                                   | 22 December 2026                                                                                                                    | 22 March 2027      |
+| In-house complaint process (Art. 21) · complaint logs (Art. 22)                  | 22 March 2027                                                                                                                       | 22 March 2027      |
+| Submission of information to the RCVS Find a Vet platform                        | 3 months from the date the RCVS has fully complied with paragraph 4.1 of its Undertakings, or 22 September 2027, whichever is later | same               |
 
 **The website obligations, quoted:**
 
@@ -166,7 +181,7 @@ FOPs and/or OOH Centres"; "'Small Veterinary Business' means a Veterinary Busine
   storefront signage.
 - **Art. 6(1), Practice Information** — "publish the Practice Information on the website relating to
   each FOP, OOH Centre or Referral Centre", display it at the premises, and update it "as soon as
-  reasonably" practicable when it changes.
+  reasonably practicable and in any event within one week of any change" (6(1)(c)).
 - **Art. 7(3)–(5), Price List** — "(a) publish a Price List on the website relating to each FOP, OOH
   Centre, Referral Centre and Crematorium that it operates"; "(c) when sending the first of any digital
   communications to a Pet Owner to confirm a consultation booking, include in that communication: (i)
@@ -195,7 +210,8 @@ FOPs and/or OOH Centres"; "'Small Veterinary Business' means a Veterinary Busine
   the Invoice and Receipt Notification text in the footer of every invoice or receipt for medication.
 - **Art. 21, in-house complaint process** — a written process that tells owners "that Pet Owners have
   a right to complain and how they can complain", the ten-working-day informal stage, written
-  acknowledgement, and the eight-week resolution window; complaint logs (Schedule 4).
+  acknowledgement, and the eight-week resolution window; complaint logs are Art. 22 (Schedule 4 is
+  the submission format under Art. 22(3)(a)).
 
 **Also in force for vets:** RCVS supporting guidance ch. 23 (page updated 8 Oct 2025) — 23.15 "All
 advertising should be accurate, truthful, and not of a character likely to bring the profession into
@@ -209,14 +225,100 @@ scientific principles or … a recognised evidence base".
 states "Less than 40% of practices have prices on their websites".
 
 **What WebAsk can sell to a practice (all deliverable remotely, all dated):** a price page one click
-from the homepage, on a URL and in navigation and metadata that use "prices" or "fees", carrying the
-36 Schedule 1 items with appointment durations and VAT stated (reg 6(2) above); the group or trading
-name in the homepage banner and in every page's metadata; a Practice Information page; the
+from the homepage, with "price", "prices", "pricing" or "fees" in the page navigation and page
+metadata (Art. 7(4)(b) — the URL itself is not prescribed), carrying the 36 Schedule 1 items with
+appointment durations and VAT-inclusive prices (Art. 7(2)(f); reg 6(2) above also applies); for a group
+or network business only (Art. 5(1)(a)) the group or trading name in the homepage banner and in every
+page's metadata; a Practice Information page; the
 parasiticide list with the VMD link; the pet-care-plan page carrying the Standard Information with
 savings claims written to Art. 9; the RCVS prescription literature within two clicks; a complaints
 page written to Art. 21; and — **a CRM item that belongs in the bundle** — the first booking
 confirmation email or text carrying the consultation price and the price-list link (Art. 7(3)(c)).
-Wave-1 confirmed; the compliance clock for small practices runs to 22 March 2027 on the website items.
+Wave-1 confirmed; the compliance clock for small practices runs to 22 March 2027 on the Part 2
+website items, the end-of-life options page and the complaints page, and to 22 September 2027 on the
+RCVS prescription literature and the Standard Electronic Message.
+
+#### L.2.1 Further website and CRM obligations in the Order (S4 re-read, 24 September 2026)
+
+Quoted from the Order PDF; none of these was in the first read, and each changes what a compliant
+practice website or booking flow must contain. Articles as printed.
+
+- **The price page's content is prescribed, not just its position.** Art. 7(2)(a): items "are
+  described using the names for each that are specified in the Price List Schedule, and the list does
+  not use free text to describe those treatments and services"; 7(2)(c) where price varies by animal,
+  the bands "(i) cat; (ii) small dog (<10kg); (iii) medium dog (10 to <25kg); (iv) large dog (25 to
+  <40kg); (v) extra-large dog (40 to <60kg); and (vi) giant dog (60kg and over)"; 7(2)(e)(ii)
+  checkboxes on the dental, castration and spay rows that "clearly indicate which of the components
+  … are included in the price for the treatment and which are not"; 7(2)(f)–(g) "prices displayed on
+  the Price List include VAT" and "are up to date"; 7(2)(h)–(k) out-of-hours prices alongside, or a
+  link to the OOH provider's price list, and cremation "provided communally and individually" with a
+  link where a third party supplies it; 7(2)(l) a "clear statement informing Pet Owners that the prices
+  displayed … relate to the typical case and that prices may increase in more complex or complicated
+  cases".
+- **Pet-care-plan pages carry substantiation.** Art. 9(4): a plan containing parasiticides must "(a)
+  provide a link to the Parasiticide Price List", "(b) identify which Parasiticides are included",
+  "(c) include a statement advising Pet Owners to speak to their Veterinary Professional or a Suitably
+  Qualified Person" and "(d) provide an indicative standalone price for 12 months of Parasiticides"
+  that "does not name any specific medicinal product" and "includes any dispensing fees". 9(5)–(8): a
+  Quantified Savings Claim carries the Art. 9(7) information "in the same place as it makes such
+  claim"; a General Savings Claim needs "a link to a webpage … that displays the information specified
+  in Article 9(7)". 9(12): "Where a Pet Owner has an annual Pet Care Plan which automatically renews,
+  the Veterinary Business must send a reminder to the Pet Owner before the renewal takes effect" — a
+  CRM item.
+- **The page URLs are registered with the RCVS.** Art. 10(1)(f): each practice supplies "the public
+  URL for each of the webpages on which the Veterinary Business has published the information referred
+  to in Article 10(1)(b) to (e)" through "the Find a Vet Web Form"; 10(5)–(6) price changes are
+  notified "before the revised price is charged to Pet Owners". A rebuild that moves the price,
+  parasiticide, practice-information or pet-care-plan pages must keep or re-register those URLs.
+- **The Standard Electronic Message has a trigger.** Art. 14(10): it is "included in any email, text
+  message or other electronic communication sent by or on behalf of the Veterinary Business to a Pet
+  Owner in respect of an upcoming consultation at a FOP" — every confirmation and reminder the CRM
+  sends, from 22 September 2027 for small practices.
+- **An end-of-life options page.** Art. 20(3)(a): "publish the End-of-Life Care Options, which must
+  include a Basic Communal Cremation Service offered by the Veterinary Business, on the Veterinary
+  Business's website for that FOP or OOH Centre"; 20(4): each option "must be set out with equal
+  prominence on the Veterinary Business's website(s)". The options (20(1)) are communal or individual
+  cremation from the practice, to "make separate arrangements with a Crematorium", and to "take their
+  deceased Pet away for burial at home". Small practices: 22 March 2027.
+- **Complaints reach beyond the page.** Art. 21(3): reception signage "stating that the Complaint
+  Process is available on the relevant website and in hard copy on request"; at registration "a link
+  to an online version of the process"; "(e) include on invoices to the Pet Owner information on where
+  the Complaint Process can be found"; "(i) display the Decision Tree in prominently placed signage in
+  the FOP's or OOH Centre's reception and on the website relating to that FOP or OOH Centre"; the
+  process names "the approved ADR provider" (21(2)(i)).
+- **Group name, everywhere and at equal prominence (groups and networks only).** Art. 4(6)–(8): "Pet
+  Owner Communications" include "advertising and marketing materials", social media, "appointment
+  confirmations" and "newsletters", with "a physical paper copy available upon request"; Art. 5(7):
+  "The Ownership Information must be displayed in a Clear and Prominent manner in Pet Owner
+  Communications"; Art. 5(8): the name must be "at least equal in prominence to any other names
+  published or displayed with it", judged on "the size and legibility of the respective names, their
+  proximity to one another, the hierarchy of the text used to denote them, their positioning, the
+  colour schemes, the typography and any other stylistic elements", and "unambiguously clear … that
+  the name … is the name of that Main Entity … and not a mere description of a business". Art. 2,
+  "Clear and Prominent": "not obscured by … pop-up text and images; or … trademarks, Branding or
+  marketing straplines".
+- **Definitions that fix page content (Art. 2).** Practice Information includes the qualifications of
+  long-term Veterinary Professionals, PSS accreditations "including a web link to supporting
+  information for Pet Owners about the PSS on the RCVS website" and, for outsourced out-of-hours, the
+  provider's "Trading Name … telephone number(s) … website address … address(es) … opening times … and
+  … details of the OOH Services"; the Parasiticide Price List gives per product "the full authorised
+  product name; the brand name; whether or not the Parasiticide is an Own Brand Medicine; the active
+  ingredient(s); the amount …; the strength and dosage size", additional charges and "the amount payable
+  in VAT".
+- **Dated duties that are not website items but sit on every practice.** Art. 26(1): supply the RCVS
+  "by 30 November 2026" the registered or company name, Trading Name, head-office address, a named
+  compliance contact and "the name, and postal and email addresses, of each FOP, OOH Centre,
+  Crematorium and Referral Centre it operates"; Art. 3(2): 30 days to bring an acquired practice into
+  compliance; Art. 24: multi-site businesses file Initial Attestations "within 30 days of the applicable
+  Compliance Date" and Annual Attestations "no later than 30 September 2027"; Art. 25(4): self-report
+  non-compliance "within 14 days of becoming so aware".
+
+> 💡 Proposal (executor) — three things this changes for the drafts: the vets industry page and the
+> calendar's item 8 add the end-of-life page, the invoice complaints line and the 30 November 2026
+> RCVS return; the bundle's CRM playbook for vets gains two dated templates (the renewal reminder,
+> Art. 9(12); the Standard Electronic Message on every confirmation and reminder, Art. 14(10)); and the
+> price-page brief becomes the Schedule 1 names with bands and checkboxes, not a designed table. S7
+> applies them; `08` § B10 records the rules.
 
 ### L.3 Trades and home services
 

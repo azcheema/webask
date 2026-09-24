@@ -162,6 +162,17 @@ Re-reads on 2026-09-24 for the blog drafts: S39 (Google guidelines — name rule
 
 Re-read for `01` on 2026-09-24, with the "Modified on" date each help-centre page prints: S01 (pricing page; add-on list and billing terms as quoted in `01` § 3; footer "© 2026 HighLevel LLC"), S48 (LC Phone guide, modified 24 Sep 2026: three CSV attachments, S140–S142; "Inbound calls have two legs … Both are billed"; "Calls are billed in full minutes, any partial minute rounds up"; FAQ: discounts "US/Canada to US/Canada only"; "A fixed 5% markup is applied to these charges at the location (sub-account) level, regardless of whether your agency has re-billing enabled" on the pass-through categories), S49 (modified 23 Jul 2026), S50 (modified 22 Aug 2026: wallet and auto-recharge; "Rebilling without markup is available on $297/mo Unlimited plan and $497/mo Agency Pro plan"; "Rebilling with agency markup is available on $497/mo Agency Pro plan"; "$0.675 per 1,000 emails across all plans"; "All prices are in USD"), S51 (modified 22 Sep 2026: UK row "Updated Jul 2026 | $US | $0.0667 | $0.0231 | FREE"; from 1 Oct 2026 service messages charged per message with "the first 1,000 service messages per phone number" free each month), S52 (modified 7 Aug 2026; the two asset lists are images; Agency Admins may be granted transfer permission; the LC Phone and LC Email rules as quoted in `01` § 6), S53 (modified 22 Apr 2026: "All automation will be transferred over. Note: They will all be set to Draft."; "$97/month plan"; "40% affiliate commission on all of their future renewals"; the branded domain does not transfer), S54 (modified 14 Sep 2026: "includes unlimited Voice AI for inbound calls, outbound calls, and the Voice AI widget, subject to fair use"; "$497/month agency plan to rebill"), S55 (modified 11 Aug 2026), S45 (modified 4 Sep 2026), S46 (modified 18 Jul 2024), S40 ("Last Updated JULY 2026"; UK address "Rickert Services Ltd U - HighLevel LLC - PO Box 1487 Peterborough PE1 9XX"), S41 ("Last Updated July 2026"; HighLevel, Inc.; the sub-processor clause that fits M2), S42 ("Last Modified: September 2025"), S43 (modified 16 Jun 2026), S56–S58 (certification: proctored exam, two-year badge, directory listing lapses with the subscription), S64 (Twilio UK SMS, "Pricing current as of July 2026": $0.056 long code and alphanumeric, $0.0524 short code, $0.0075 inbound, local $1.15 and mobile $2.5 per month). S44 (the DPF list) is a browser application; the S2 check is recorded in `01` § 11.
 
+### Note on the S4 re-reads (24 September 2026)
+
+Re-read for `06` § 3 L.2 and § 4 AP.1 on 2026-09-24 with `pdftotext` 4.00: S31 (the Order PDF, 58 pages; the
+body carries no made-on date), S32 (the Schedule 1 PDF, a separate two-page document), the Notice of making
+an Order (signed "MARTIN COLEMAN Group Chair 22 September 2026"), the gov.uk publication page (raw HTML: 13
+attachments, "Published 22 September 2026"), S29 ("Published: 24 March 2026") and S37 (21 pages, "Published:
+02/04/2026"; the only commencement statement is "we anticipate that the regime will commence in spring 2027",
+under the heading "CONCLUSION"). Eighty claims were checked: 49 verbatim, 27 accurate paraphrases, four wrong
+(applied and marked in `06` L.2). The Art. 3 table was confirmed row by row with `pdftotext -table` on PDF
+pages 18 and 20; the `-layout` run jumbles the Art. 17–20 rows.
+
 ## 2. Stale-by dates
 
 | Source                                                  | Re-check by                          | Why                                  |

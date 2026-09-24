@@ -101,7 +101,7 @@ Regulations on the advertising of prescription veterinary medicines.
   | Written estimates for higher-cost treatments · itemised bills                | 22 Jun 2027 | 22 Sep 2027 |
   | Written-prescription awareness, provision, standard notices (Part 4)         | 22 Jun 2027 | 22 Sep 2027 |
   | Prescription fees (Art. 18)                                                  | 22 Mar 2027 | 22 Sep 2027 |
-  | Cremation options and prices (Part 7)                                        | 22 Dec 2026 | 22 Mar 2027 |
+  | Cremation options and prices (Part 6, Art. 20)                               | 22 Dec 2026 | 22 Mar 2027 |
 
 - **Website placement, Art. 4(2):** information an Article puts on a website "must be: (a) easily
   accessible on or via the homepage, with any links to the relevant page labelled in a Clear and
