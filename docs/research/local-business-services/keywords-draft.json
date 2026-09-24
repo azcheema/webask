@@ -425,11 +425,11 @@
     },
     {
       "term": "landing page building service",
-      "intent": "transactional",
+      "intent": "commercial-investigation",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/services/landing-pages",
-      "supportingUrls": [],
+      "primaryUrl": "/blog/landing-page-or-website-small-business",
+      "supportingUrls": ["/services/landing-pages"],
       "cluster": "landing-pages",
       "vertical": null
     },
@@ -812,6 +812,16 @@
       "supportingUrls": [],
       "cluster": "lead-recovery",
       "vertical": "garages-mot-centres"
+    },
+    {
+      "term": "how much does it cost to design a landing page",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/landing-page-or-website-small-business",
+      "supportingUrls": ["/services/landing-pages"],
+      "cluster": "landing-pages",
+      "vertical": null
     }
   ]
 }

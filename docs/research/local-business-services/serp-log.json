@@ -5077,14 +5077,14 @@
           "domain": "dribbble.com",
           "url": "https://dribbble.com/search/landing-page",
           "title": "landing page",
-          "type": "agency",
+          "type": "saas-vendor",
           "uk": false
         }
       ],
       "ukSpecific": 7,
       "difficultyProxy": {
-        "a": 2,
-        "b": 7,
+        "a": 3,
+        "b": 6,
         "label": "Soft"
       },
       "evidence": ["E3", "E4"],
@@ -5096,6 +5096,554 @@
       "source": "google.co.uk",
       "retrieved": "2026-09-24T13:14:00.875Z",
       "notes": "blocked — HTTP 403 Forbidden on the 51st capture of the session (pacing 12–18 s after the earlier 429); the run continued for six more terms before the empty pages were noticed, and those six are not recorded; not retried"
+    },
+    {
+      "id": "serp-0052",
+      "term": "landing page design agency uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T13:55:23.156Z",
+      "adsTop": 4,
+      "adsBottom": 2,
+      "adsDomains": [
+        "landingpage-designs.co.uk",
+        "frontify.com",
+        "theyardcreative.com",
+        "studioahremark.com",
+        "webflow.com"
+      ],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How much does it cost to design a landing page?",
+        "What are the top 10 design agencies in the UK?",
+        "Which is the best landing page builder?",
+        "What are some good web design agencies in the UK?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Landing page design agency uk reviews",
+        "TEAM King Kong Agency",
+        "Convert agency",
+        "Converted UK",
+        "King kong landing pages",
+        "Quantum Growth Agency"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "landingpage-designs.co.uk",
+          "url": "https://landingpage-designs.co.uk",
+          "title": "Landing Page Design Agency",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "converted.co.uk",
+          "url": "https://converted.co.uk/landing-page-design",
+          "title": "Landing Page Design Agency | UK's #1 Conversion Agency",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "sortlist.co.uk",
+          "url": "https://www.sortlist.co.uk/landing-page-design/united...",
+          "title": "Top Landing Page Design Agencies in The United Kingdom",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "digitalagencynetwork.com",
+          "url": "https://digitalagencynetwork.com/agencies/web-desi...",
+          "title": "Top Web Design Agencies in UK (2026)",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "kingkong.co",
+          "url": "https://kingkong.co/uk/landing-page-agency",
+          "title": "Landing Page Design Agency & Optimisation Services",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "thewebsitedesignagency.co.uk",
+          "url": "https://www.thewebsitedesignagency.co.uk",
+          "title": "The Website Design Agency London | Your Digital Partner",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "paramountdigital.co.uk",
+          "url": "https://paramountdigital.co.uk/Creative Agency",
+          "title": "Landing Page Design Services",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "popi.co.uk",
+          "url": "https://www.popi.co.uk/landing-page-design",
+          "title": "Landing Page Design - Popi Creative Design Agency",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "cbwebsitedesign.co.uk",
+          "url": "https://www.cbwebsitedesign.co.uk/News",
+          "title": "Top 9 Web Design Agencies in the UK in 2026",
+          "type": "listicle",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 9,
+      "difficultyProxy": {
+        "a": 3,
+        "b": 6,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E3", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0053",
+      "term": "landing page design cost",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T13:55:45.346Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How much does it cost to design a landing page?",
+        "How much is for a landing page?",
+        "How much does a 20 page website cost in India?",
+        "How much does a 1 page website cost?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Landing page design cost per month",
+        "Landing page design cost freelance",
+        "Landing page design cost reddit",
+        "Free landing page design cost",
+        "Landing page design cost 2022",
+        "How much does a landing page cost",
+        "Landing page examples",
+        "Free landing page"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "reddit.com",
+          "url": "https://reddit.com",
+          "title": "How much would you charge a client for a single basic ...",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "convertri.com",
+          "url": "https://www.convertri.com/landing-page-cost-breakdown",
+          "title": "Landing Page Cost in 2026: A Complete Breakdown",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "landingi.com",
+          "url": "https://landingi.com/Blog",
+          "title": "How Much Does a Landing Page Cost",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "twine.net",
+          "url": "https://www.twine.net/blog/how-much-does-a-custo...",
+          "title": "How Much Does a Custom Landing Page Cost?",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "bennettsdesign.co.uk",
+          "url": "https://bennettsdesign.co.uk/Blog",
+          "title": "Landing Page Costs in the UK: A Comprehensive Guide",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "unbounce.com",
+          "url": "https://unbounce.com/Blog",
+          "title": "How much does a landing page cost",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "involve.me",
+          "url": "https://www.involve.me/Blog/Marketing",
+          "title": "How Much Does a Landing Page Really Cost in 2026?",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "youtube.com",
+          "url": "https://youtube.com",
+          "title": "How Much Do Landing Pages That Convert Over 25% Cost To ...",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "cheapwebsitedesigner.co.uk",
+          "url": "https://cheapwebsitedesigner.co.uk/cheap-landing-pag...",
+          "title": "Cheap Landing Page Design Services | Cost-effective In Just ...",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 2,
+      "difficultyProxy": {
+        "a": 5,
+        "b": 4,
+        "label": "Soft"
+      },
+      "evidence": ["E1"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0054",
+      "term": "landing page or website small business",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T13:56:09.611Z",
+      "adsTop": 0,
+      "adsBottom": 2,
+      "adsDomains": ["lovable.dev", "squarespace.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "Do I need a website or just a landing page?",
+        "Can ChatGPT build a landing page?",
+        "Can I have a landing page without a website?",
+        "How much should I pay for a landing page?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Landing page or website small business reddit",
+        "Landing page examples",
+        "Landing page templates",
+        "Google landing page",
+        "How to create a free landing page without a website",
+        "Landing page vs website",
+        "What is a landing page",
+        "Google Sites free landing page"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "sandstonecastles.co.uk",
+          "url": "https://www.sandstonecastles.co.uk/Latest posts",
+          "title": "A Simple Guide to Landing Pages for Small Business",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "unbounce.com",
+          "url": "https://unbounce.com/Landing Page Articles",
+          "title": "What Is a Landing Page? Landing Pages Explained",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "sites.google.com",
+          "url": "https://sites.google.com/site/horstwebdesign/landin...",
+          "title": "Create Free Landing Page Websites with Google",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "reddit.com",
+          "url": "https://reddit.com",
+          "title": "Need your opinion re full websites vs landing page",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "canva.com",
+          "url": "https://www.canva.com/create/landing-pages",
+          "title": "Free Website Landing Page Builder & Creator",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "dribbble.com",
+          "url": "https://dribbble.com/tags/business-landing-page",
+          "title": "Business Landing Page designs, themes, templates ...",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "swipepages.com",
+          "url": "https://swipepages.com/Blog",
+          "title": "Landing Page vs Website: What's the Difference and Which ...",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "crearewebsolutions.com",
+          "url": "https://www.crearewebsolutions.com/blog/landing-p...",
+          "title": "Landing Page vs Website for Small Business: 5 Questions ...",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "bestversionmedia.com",
+          "url": "https://www.bestversionmedia.com/Articles",
+          "title": "Landing Pages vs. Full Websites: What Should a Small ...",
+          "type": "listicle",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 1,
+      "difficultyProxy": {
+        "a": 7,
+        "b": 2,
+        "label": "Hard"
+      },
+      "evidence": ["E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0055",
+      "term": "landing page building service",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T13:56:34.435Z",
+      "adsTop": 4,
+      "adsBottom": 2,
+      "adsDomains": ["landingpage-designs.co.uk", "optimizely.com", "sculpt.digital", "fiverr.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How much does it cost to get a landing page built?",
+        "Can ChatGPT build a landing page?",
+        "How can I build my own landing page?",
+        "How much does it cost to pay someone to build you a website?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Free landing page building service",
+        "Landing page building service template",
+        "Best landing page building service",
+        "Best landing page builders",
+        "Best free landing page builder",
+        "Landing page building service reviews",
+        "Landing page builder free",
+        "Carrd landing page"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "zapier.com",
+          "url": "https://zapier.com/App picks/Best apps",
+          "title": "The 7 best landing page builders in 2026",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "wix.com",
+          "url": "https://www.wix.com/landing-page-builder",
+          "title": "Free Landing Page Builder | Create a ...",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "mailerlite.com",
+          "url": "https://www.mailerlite.com/Features",
+          "title": "Free Landing Page Builder",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "emailtooltester.com",
+          "url": "https://www.emailtooltester.com/Home/Blog",
+          "title": "Best Free Landing Page Builder in 2026: 17 Top Options",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "canva.com",
+          "url": "https://www.canva.com/create/landing-pages",
+          "title": "Free Website Landing Page Builder & Creator",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "emailvendorselection.com",
+          "url": "https://www.emailvendorselection.com/best-landing-p...",
+          "title": "13 Best Landing Page Builders in 2026 (Free & Paid)",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "unbounce.com",
+          "url": "https://unbounce.com",
+          "title": "Unbounce: The Best Landing Page Builder and CRO platform",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "leadpages.com",
+          "url": "https://leadpages.com",
+          "title": "Leadpages: AI Landing Page Builder with A/B Testing ...",
+          "type": "saas-vendor",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 0,
+      "difficultyProxy": {
+        "a": 8,
+        "b": 0,
+        "label": "Hard"
+      },
+      "evidence": ["E1", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0056",
+      "term": "sales funnel design uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T13:56:56.806Z",
+      "adsTop": 4,
+      "adsBottom": 2,
+      "adsDomains": ["hubspot.com", "fiverr.com", "upwork.com", "productdock.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What are the 5 stages of a sales funnel?",
+        "Is a sales funnel still relevant today?",
+        "How much does a sales funnel cost?",
+        "What is the best sales funnel builder?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Sales funnel design uk template",
+        "Best sales funnel design uk",
+        "Free sales funnel design uk",
+        "Sales funnel services",
+        "Funnel agency meaning",
+        "Funnel building agency"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "wearemarketable.co.uk",
+          "url": "https://wearemarketable.co.uk/digital-marketing-agency",
+          "title": "Sales Funnel Services & Lead Generation",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "adobe.com",
+          "url": "https://www.adobe.com/uk/express/discover/sal...",
+          "title": "Sales funnel examples | Adobe Express",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "xero.com",
+          "url": "https://www.xero.com/uk/guides/how-the-sales-fu...",
+          "title": "What is a sales funnel? Stages and how to build it",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "marketinggeeks.co.uk",
+          "url": "https://marketinggeeks.co.uk/sales-funnels",
+          "title": "Sales Funnel Marketing Strategy | Marketing Geeks UK",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "milesmarketing.co.uk",
+          "url": "https://www.milesmarketing.co.uk/Marketing",
+          "title": "Unleashing the Power of a Simple Sales Funnel",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "bubblegummarketing.com",
+          "url": "https://bubblegummarketing.com/sales-funnels-agency",
+          "title": "High-Converting Sales Funnel Agency",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "shopify.com",
+          "url": "https://www.shopify.com/uk/blog/sales-funnel",
+          "title": "Sales Funnel Guide: Build + Optimize for 2026",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "crazyegg.com",
+          "url": "https://www.crazyegg.com/Blog/Conversion",
+          "title": "How To Build Your First Sales Funnel In Under 1 Hour",
+          "type": "saas-vendor",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 3,
+      "difficultyProxy": {
+        "a": 4,
+        "b": 4,
+        "label": "Soft"
+      },
+      "evidence": ["E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0057",
+      "term": "landing page agency uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T13:57:22.457Z",
+      "notes": "blocked — HTTP 403 (\"Error 403 (Forbidden)!!1\") at https://www.google.co.uk/search?q=landing%20page%20agency%20uk&gl=uk&hl=en-GB&pws=0&num=10"
     },
     {
       "id": "bing-0001",
@@ -6202,7 +6750,7 @@
           "domain": "zapier.com",
           "url": "https://zapier.com/automation/customer-automation/customer-follow-up",
           "title": "Customer Follow-Up Automation - Zapier",
-          "type": "agency",
+          "type": "saas-vendor",
           "uk": false
         },
         {
@@ -6210,7 +6758,7 @@
           "domain": "zapier.com",
           "url": "https://zapier.com/automation/customer-automation/ai-customer-follow-up",
           "title": "AI Customer Follow-Up Automation - Zapier",
-          "type": "agency",
+          "type": "saas-vendor",
           "uk": false
         },
         {
@@ -6272,8 +6820,8 @@
       ],
       "ukSpecific": 1,
       "difficultyProxy": {
-        "a": 3,
-        "b": 7,
+        "a": 5,
+        "b": 5,
         "label": "Soft"
       },
       "evidence": [],
@@ -6734,7 +7282,7 @@
           "domain": "landingi.com",
           "url": "https://landingi.com/landing-page/cost",
           "title": "How Much Does a Landing Page Cost: Landing Page Price in 2025",
-          "type": "agency",
+          "type": "saas-vendor",
           "uk": false
         },
         {
@@ -6788,8 +7336,8 @@
       ],
       "ukSpecific": 3,
       "difficultyProxy": {
-        "a": 2,
-        "b": 8,
+        "a": 3,
+        "b": 7,
         "label": "Soft"
       },
       "evidence": [],

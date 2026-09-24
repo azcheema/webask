@@ -48,7 +48,8 @@ you|managed|setup` → service page. Questions → blog/FAQ. **Near-me** terms a
 > its label. (b) Ads are counted as distinct display-URL lines inside the top and bottom ad containers;
 > the advertisers rotate between captures of the same term, so the count is "as served". (c) PAA
 > questions are read from the `data-q` attributes; "revealed" questions were not expanded. (d) The
-> related-searches block was empty on every Google capture of this session. (e) A result is `uk: true`
+> related-searches block was empty on the first 44 Google captures and populated ("People also search
+> for") from `serp-0046` on. (e) A result is `uk: true`
 > when its domain ends in `.uk` or its title or snippet names the UK, the pound or the NHS — a rule, so
 > a reader can recompute it. (f) The 1280×900 viewport was set once; consent was rejected once. (g) The
 > suggest endpoint was queried by `curl` for 154 heads (the App. G heads plus every capture term) and
@@ -56,12 +57,20 @@ you|managed|setup` → service page. Questions → blog/FAQ. **Near-me** terms a
 > interstitial on the 45th capture; a probe forty minutes later was clear, five more terms were captured
 > at 12–18 s, and the 51st request returned HTTP 403 (a plain error page, which the block check did not
 > recognise, so six further empty responses were discarded rather than recorded); the session stopped
-> there and the remaining 56 terms are listed in § 6.11. (i) Bing `cc=GB&setlang=en-GB` was captured for 30
+> there. The afternoon re-run of the same day, from a fresh browser context at 16–22 s of pacing plus
+> a 5–10 s dwell on each page (25–30 s between requests), captured five landing-page terms and was
+> refused with HTTP 403 on its sixth request (`serp-0057`); the remaining 53 terms are listed in
+> § 6.11. (i) Bing `cc=GB&setlang=en-GB` was captured for 30
 > heads with the same cite-based method; Bing's ads and "People also ask" selectors returned little,
 > so Bing records carry organic, related and answer-box fields only. (j) Type classification is a
 > domain map plus a title rule (a "best / top N / compared / guide" title is `listicle` whoever
 > publishes it); the map lives with the scratch tools and every result's type is stored in the log so
-> the labels can be disputed row by row.
+> the labels can be disputed row by row. (k) On the afternoon captures Google rendered its generated
+> answer as an "AI Mode reply" block under a "Thinking" progress heading that resolved to an "AI
+> Overview" heading after a few seconds; the extractor waits for it and sets `aiOverview` from the
+> heading, so the flag is comparable with the morning's records, and the pseudo-result the block injects
+> into the result list is dropped. Reddit and YouTube cards that carry no `cite` are typed from their
+> label, as in the morning.
 
 ## 2. Seeds per service (App. E.2 — starting points, not findings)
 
@@ -344,7 +353,7 @@ One row, as JSON:
 | 39  | landing page design agency uk                   | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | same, 1st                                                                              |
 | 40  | landing page design cost                        | informational-bottom     | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | same list, 2nd                                                                         |
 | 41  | landing page or website small business          | informational-bottom     | /blog/landing-page-or-website-small-business | —                                            | landing-pages ◆   | —                      | constructed (calendar #7 target)                                                       |
-| 42  | landing page building service                   | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | "landing page builder service" → 1st                                                   |
+| 42  | landing page building service                   | commercial-investigation | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | re-pointed 2026-09-24: builder SERP (serp-0055)                                        |
 | 43  | sales funnel design uk                          | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | "sales funnel design" list — uk constructed                                            |
 | 44  | google business profile management uk           | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | constructed (empty list) — the page's head term                                        |
 | 45  | google business profile management services     | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | head → "… services", 2nd                                                               |
@@ -361,6 +370,7 @@ One row, as JSON:
 | 56  | gohighlevel consultant uk                       | transactional            | /services/crm-automation                     | —                                            | gohighlevel       | —                      | same list, 3rd (check dupes against the agency/expert rows)                            |
 | 57  | gohighlevel sub account transfer                | informational-bottom     | /blog/hosted-crm-vs-own-account-leaving      | /services/local-business-plans               | gohighlevel       | —                      | constructed (calendar #10 target)                                                      |
 | 58  | whatsapp business uk cost                       | informational-bottom     | /blog/whatsapp-uk-small-business-rules-2026  | /services/missed-call-text-back              | email-sms ◆       | —                      | "whatsapp business uk" list, 3rd; "… api pricing uk", 10th                             |
+| 59  | how much does it cost to design a landing page  | informational-bottom     | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | PAA on serp-0052 and serp-0053 (added 2026-09-24)                                      |
 
 Vertical rows for the wave-1 industry pages (added in S6 after 06): `vet clinic marketing agency`,
 `vet practice marketing`, `cma vet price list website` (→ calendar #8; `uk-compliance`;
@@ -448,24 +458,26 @@ and no `organic` array, never retried with a solved CAPTCHA.
 
 ## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-**Coverage.** 51 `google.co.uk` records (`serp-0001`–`serp-0051`: 49 captures and two block records), 30 Bing
+**Coverage.** 57 `google.co.uk` records (`serp-0001`–`serp-0057`: 54 captures and three block records), 30 Bing
 `cc=GB` captures (`bing-0001`–`bing-0030`) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
 in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
 the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
-12–18 s, and the 51st request returned HTTP 403. Per § 1 step 3 the capture stopped there, nothing was
-retried through a CAPTCHA, and both blocks are records in the log (`serp-0045`, `serp-0051`). The
-pages captured on Google are text-back, reviews, the receptionist, email/SMS and the landing-page
-head; the remaining landing-page terms, the profile service, the bundle, local SEO, the fold tests and
-the vertical terms are **Bing-only** in this set and are re-run on Google at the start of the next session
-(README "Next"). Every verdict below names its record; a Bing-only verdict is marked as such and is
+12–18 s, and the 51st request returned HTTP 403. An afternoon re-run from a fresh browser context at
+25–30 s between requests captured five more landing-page terms and was refused with HTTP 403 on its
+sixth (`serp-0057`): the block sits on the address's reputation, not on the pace. Per § 1 step 3 each
+run stopped where it was refused, nothing was retried through a CAPTCHA, and all three blocks are
+records in the log (`serp-0045`, `serp-0051`, `serp-0057`). The pages captured on Google are
+text-back, reviews, the receptionist, email/SMS and landing pages; the profile service, the bundle,
+local SEO, the fold tests and the vertical terms are **Bing-only** in this set and are queued for Google
+in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
 provisional until the Google capture lands.
 
-**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 42 of the 49
+**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 47 of the 54
 successful Google captures** — on every text-back, receptionist and email-agency term — so the
 answer-first opening paragraph in `12` is not optional on this line. (2) **No local pack appeared on any
 service term** except `email marketing services uk` (`serp-0040`), which carried a map and a "More
 businesses" link: local intent exists for the "services" wording and nowhere else in the set — D1's
-no-profile ruling costs this line one term, not a category. (3) **Ads sat on 37 of 49** captures, four
+no-profile ruling costs this line one term, not a category. (3) **Ads sat on 41 of 54** captures, four
 at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
 and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
 the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
@@ -604,20 +616,46 @@ small business` (`-0042`) are 7–9/9 UK, **High** (E1 + E3 + E4), A3–A5. The 
   much does it cost to send 1000 emails?" (`-0042`), "Is email marketing still worth it in 2026?"
   (`-0039`).
 
-### 6.5 Landing pages (`serp-0050`; Bing `bing-0015`–`bing-0017`; the agency and cost terms pending on Google)
+### 6.5 Landing pages (`serp-0050`, `serp-0052`–`serp-0056`; Bing `bing-0015`–`bing-0017`; two terms still queued)
 
-On Google, `landing page design uk` (`serp-0050`) is 7/9 UK, **Soft** (A2/B7) and **Medium** (E3 +
-E4; the suggest list for the term starts at "… agency uk", so no E1): mylandingpage.co.uk "from £750",
-converted.co.uk, Sortlist, an Adobe examples page, an IONOS guide, ellicode.co.uk, a UK cost guide
-(bennettsdesign.co.uk) and webpro-it.co.uk, with landingpage-designs.co.uk and Fiverr advertising. On
-Bing, `landing page design uk` and `landing page design agency uk` are UK agency SERPs with prices in the
-titles — converted.co.uk ("UK's #1 Conversion…"), astrofy.uk "from £900", luxbranding.co.uk "From
-£199", iines.co.uk "from £149", landingpage-designs.co.uk, launchdigital.agency, pricemediagroup.co.uk,
-berkstechnologies.co.uk — 6/7 and 6/10 UK, with Sortlist as the directory. `landing page design cost`
-is global cost guides (Apexure, Landingi, involve.me) plus three UK ones (luxbranding, matmad.co.uk,
-bennettsdesign.co.uk), and Bing's own answer box gives a dollar range: the calendar's item 7 competes
-on the UK figure and the builder-versus-code trade-off. Page confirmed with a Medium head; the cost question goes to the post; the agency-suffix and
-cost terms wait for Google.
+- **The agency head is High on a Soft, all-UK SERP.** `landing page design agency uk` (`serp-0052`) is
+  **9/9 UK**, A3/B6 Soft, four ads above and two in the feed, an AI Overview, and **High** (E1 + E3 +
+  E4): landingpage-designs.co.uk (also the top advertiser), converted.co.uk ("UK's #1 Conversion
+  Agency"), Sortlist and Digital Agency Network as the directories, kingkong.co's UK page,
+  thewebsitedesignagency.co.uk, paramountdigital.co.uk, popi.co.uk and a "Top 9 Web Design Agencies"
+  listicle. `landing page design uk` (`serp-0050`) is 7/9 UK, A3/B6 Soft and **Medium** (E3 + E4; its
+  suggest list starts at "… agency uk", so no E1): mylandingpage.co.uk "from £750", converted.co.uk,
+  Sortlist, an Adobe examples page, an IONOS guide, ellicode.co.uk, a UK cost guide
+  (bennettsdesign.co.uk), a Dribbble gallery and webpro-it.co.uk, with landingpage-designs.co.uk and
+  Fiverr advertising. Two agencies rank on both heads (converted.co.uk, landingpage-designs.co.uk);
+  both are `04` Set C candidates. On Bing (`bing-0015`–`bing-0016`) the same two heads are UK agency
+  SERPs with prices in the titles — converted.co.uk, astrofy.uk "from £900", luxbranding.co.uk "From
+  £199", iines.co.uk "from £149", landingpage-designs.co.uk, launchdigital.agency,
+  pricemediagroup.co.uk, berkstechnologies.co.uk — 6/7 and 6/10 UK. **Page confirmed**, head term
+  `landing page design agency uk`, with `landing page design uk` as the second H1 candidate.
+- **The cost and either-or questions belong to the post, and the SERPs are global.** `landing page
+design cost` (`serp-0053`) is 2/9 UK, no ads, A5/B4 Soft, **Low** (E1 only): a Reddit thread first,
+  then Convertri, Landingi, Twine, bennettsdesign.co.uk, Unbounce, involve.me, a YouTube result and
+  cheapwebsitedesigner.co.uk; Bing (`bing-0017`) adds luxbranding, matmad.co.uk and a dollar range in
+  its answer box. `landing page or website small business` (`serp-0054`) is 1/9 UK, two feed ads
+  (lovable.dev, Squarespace), A7/B2 Hard, **Low** (E4 only): sandstonecastles.co.uk's small-business
+  guide first, then Unbounce, Google Sites, Reddit, Canva, Dribbble and three either-or explainers.
+  The calendar's item 7 competes on the UK figure in pounds and the builder-versus-code trade-off; its
+  PAA set is the post's H2 list (§ 9).
+- **"Building service" is a builder SERP, not a service SERP — row re-pointed.** `landing page
+building service` (`serp-0055`) is **0/8 UK**, A8/B0 Hard, **Medium** on paper (E1 + E4) and
+  entirely software and listicles: Zapier's "7 best landing page builders", Wix, MailerLite,
+  EmailToolTester, Canva, EmailVendorSelection, Unbounce, Leadpages, with landingpage-designs.co.uk,
+  Optimizely, sculpt.digital and Fiverr advertising. By § 1 step 4 the term cannot be a service-page
+  head; draft row 42 moves to the post with the service page as support (§ 8).
+- **Funnels are a Low, mixed head with a Set A agency at the top.** `sales funnel design uk`
+  (`serp-0056`) is 3/8 UK, four ads above and two in the feed (HubSpot, Fiverr, Upwork, ProductDock),
+  A4/B4 Soft, **Low** (E4): wearemarketable.co.uk first — a Set A GoHighLevel agency — then Adobe
+  Express, Xero's explainer, marketinggeeks.co.uk, milesmarketing.co.uk, bubblegummarketing.com,
+  Shopify and Crazy Egg. The row stays as a secondary term on the service page; "funnel" is not the
+  page's H1.
+- **Still queued on Google:** `landing page agency uk` (the 403 landed on it, `serp-0057`),
+  `landing page cost uk` and `lead generation page design uk`.
 
 ### 6.6 Google Business Profile (Bing-only: `bing-0018`–`bing-0020`; Google pending)
 
@@ -685,32 +723,44 @@ shows agencies with a GHL-style productised tier ranking (Q17).
   The garages draft's "the government offers a free one" line is the right first sentence; a paid
   reminder is sold as service-plus-MOT, never as the MOT reminder alone.
 
-### 6.11 Queued for the next session — the Google captures the blocks prevented
+### 6.11 Queued — the 53 Google captures the blocks prevented
 
-Re-run at 15 s pacing or slower from a fresh browser context, in this order, with a checkpoint after
-each group: **landing pages** — landing page design agency uk · landing page design cost · landing page
-or website small business · landing page building service · sales funnel design uk · landing page
-agency uk · lead generation page design uk · landing page cost uk; **profile** — google business
-profile management uk · google business profile management services · google business profile
-optimisation service · google business profile management agency · google business profile management
-cost · google business profile suspended help · how to reinstate google business account · google maps
-listing management uk · gbp management service uk; **bundle and GBP-cost cluster** — marketing packages
-for small business uk · small business marketing packages · local business marketing services · digital
-marketing packages for small business · gohighlevel sms pricing uk · gohighlevel uk number ·
-gohighlevel consultant uk · gohighlevel sub account transfer · gohighlevel pricing uk · all in one
-marketing platform small business uk · gohighlevel agency uk; **local SEO** — local seo packages uk ·
-local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
-ranking service uk · local seo agency uk · local seo services for plumbers; **fold tests** — online
-booking system small business uk · how much does an online booking system cost · appointment reminder
-service uk · sms appointment reminder service · automated appointment reminder service uk · whatsapp
-business uk cost · whatsapp business api pricing uk · web chat for small business uk · live chat for
-small business uk · unified inbox small business; **verticals** — vet clinic marketing agency · vet
-practice marketing uk · cma vet price list website · veterinary services market investigation order
-2026 · ai receptionist for garages · mot reminder text service · gym membership marketing uk;
-**near-me (evidence only, D1)** — missed call text back near me · ai receptionist near me · google
-business profile management near me · email marketing agency near me; **comparison shapes** — best
-missed call text back software uk · best email marketing agency uk. Fifty-six terms; with the 49
-captured, the session total lands inside the protocol's 120–160.
+**Block history, all on 24 September 2026, all from the same address.** HTTP 429 after 45 captures at
+4–8 s; HTTP 403 after five more at 12–18 s forty minutes later; HTTP 403 after five more at 25–30 s
+from a fresh browser context two and a half hours after that (`serp-0045`, `serp-0051`,
+`serp-0057`). The third block shows the refusal is on the address's reputation rather than the pace,
+so each further window from this address is worth about five captures. The queue is therefore
+re-ordered so that every window takes page-head terms first, five to a batch, and the tail groups stay
+Bing-only until captured:
+
+1. google business profile management uk · google business profile management services · marketing
+   packages for small business uk · gohighlevel pricing uk · local seo packages uk
+2. online booking system small business uk · appointment reminder service uk · vet clinic marketing
+   agency · ai receptionist for garages · mot reminder text service
+3. google business profile management cost · google business profile suspended help · landing page
+   agency uk · landing page cost uk · whatsapp business uk cost
+4. small business marketing packages · local business marketing services · gohighlevel sms pricing
+   uk · gohighlevel agency uk · local seo agency uk
+5. google business profile optimisation service · google business profile management agency · google
+   maps listing management uk · gbp management service uk · how to reinstate google business account
+6. digital marketing packages for small business · gohighlevel uk number · gohighlevel consultant uk ·
+   gohighlevel sub account transfer · all in one marketing platform small business uk
+7. local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
+   ranking service uk · local seo services for plumbers
+8. how much does an online booking system cost · sms appointment reminder service · automated
+   appointment reminder service uk · whatsapp business api pricing uk · web chat for small business uk
+9. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
+   price list website · veterinary services market investigation order 2026
+10. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
+    receptionist near me · google business profile management near me (near-me terms are evidence
+    only, D1)
+11. email marketing agency near me · best missed call text back software uk · best email marketing
+    agency uk
+
+> ❓ **Q30 — how to finish the Google captures.** 💡 Proposal (executor): take the first three batches
+> (the fifteen page-head and vertical terms) in separate windows at least an hour apart from this
+> address, and accept Bing-only, provisional tiers for batches 4–11 unless a later session has capacity;
+> never through a CAPTCHA. The founder decides whether the tail groups are worth further windows.
 
 ## 7. Demand tiers
 
@@ -775,11 +825,17 @@ the day real volumes arrive.
 | database reactivation uk                        | serp-0047 | 8/9   | 3/2 · AIO                 | A0/B9 Soft   | E3 E4          | Medium       | databasereactivation.co.uk, vantagegrowthptnrs.com, yaystarter.com |
 | sms marketing uk                                | serp-0048 | 8/9   | 3/0 · AIO                 | A9/B0 Hard   | E1 E2 E3 E4 E5 | **High**     | voodoosms.com, firetext.co.uk, salesforce.com                      |
 | email marketing management uk                   | serp-0049 | 7/9   | 4/0 · AIO                 | A5/B4 Soft   | E3 E4          | Medium       | zestydigital.co.uk, constantcontact.com, salesforce.com            |
-| landing page design uk                          | serp-0050 | 7/9   | 3/0 · AIO                 | A2/B7 Soft   | E3 E4          | Medium       | mylandingpage.co.uk, converted.co.uk, sortlist.co.uk               |
+| landing page design uk                          | serp-0050 | 7/9   | 3/0 · AIO                 | A3/B6 Soft   | E3 E4          | Medium       | mylandingpage.co.uk, converted.co.uk, sortlist.co.uk               |
 | landing page design agency uk                   | serp-0051 | —     | —                         | —            | —              | block record | HTTP 403 after 5 more captures                                     |
+| landing page design agency uk                   | serp-0052 | 9/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E3 E4       | **High**     | landingpage-designs.co.uk, converted.co.uk, sortlist.co.uk         |
+| landing page design cost                        | serp-0053 | 2/9   | 0/0 · AIO                 | A5/B4 Soft   | E1             | Low          | reddit.com, convertri.com, landingi.com                            |
+| landing page or website small business          | serp-0054 | 1/9   | 0/2 · AIO                 | A7/B2 Hard   | E4             | Low          | sandstonecastles.co.uk, unbounce.com, sites.google.com             |
+| landing page building service                   | serp-0055 | 0/8   | 4/2 · AIO                 | A8/B0 Hard   | E1 E4          | Medium       | zapier.com, wix.com, mailerlite.com                                |
+| sales funnel design uk                          | serp-0056 | 3/8   | 4/2 · AIO                 | A4/B4 Soft   | E4             | Low          | wearemarketable.co.uk, adobe.com, xero.com                         |
+| landing page agency uk                          | serp-0057 | —     | —                         | —            | —              | block record | HTTP 403 after 5 more captures (afternoon, fresh context)          |
 
-**Reading across the pages.** 16 terms are High, 25 Medium, 8 Low, none Constructed among
-the 49 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
+**Reading across the pages.** 17 terms are High, 26 Medium, 11 Low, none Constructed among
+the 54 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
 the email-agency heads are High on Soft SERPs, which is the combination a zero-authority `.co.uk` can
 act on first; the reviews page has no High service head and earns its High only on the compliance
 long-tail, which sets its cluster order. Terms not yet captured on Google carry no tier. E5 is set by
@@ -803,6 +859,7 @@ match unrelated rows. Re-run after the 23 additions below: **79 rows · 0 exact 
 | `ai receptionist cost uk` ~ `ai receptionist vs answering service uk` (`/services/ai-integration`)                                                                                                                                                                                                                                                                                                                                      | the existing comparison row **moves with the family** to `/services/ai-receptionist`; the cost row stays on the post                                                                                                                                                                                                                                                                                                    |
 | `gohighlevel pricing uk` (existing, `/services/crm-automation`)                                                                                                                                                                                                                                                                                                                                                                         | **re-point amended**: `05` § 3 proposed the bundle; the Bing SERP (`bing-0022`) is gohighlevel.com plus five GBP explainers, so the row moves to `/blog/gohighlevel-uk-local-business-gbp-cost` with `/services/local-business-plans` as the supporting URL — dated 2026-09-24, pending the Google capture                                                                                                              |
 | `customer follow up automation` (draft row 37)                                                                                                                                                                                                                                                                                                                                                                                          | **dropped** — software SERP (`bing-0012`), no post planned                                                                                                                                                                                                                                                                                                                                                              |
+| `landing page building service` (draft row 42)                                                                                                                                                                                                                                                                                                                                                                                          | **re-pointed** 2026-09-24 — the Google SERP (`serp-0055`, A8/B0, 0/8 UK) is builders and listicles, not agencies, so by § 1 step 4 the row moves to `/blog/landing-page-or-website-small-business` as commercial-investigation with `/services/landing-pages` as support                                                                                                                                                |
 
 The `> 5 transactional terms on a non-head URL` warning in `scripts/check-keywords.ts` cannot fire on
 the draft rows once the seven new slugs are service heads (`AE.1`, `AE.8`); until then the file is not
@@ -818,8 +875,9 @@ marketing agency cost`, `is sms marketing legal uk`, `how much does it cost to s
 `database reactivation service`, `digital marketing packages for small business`, `landing page cost
 uk`, `local seo packages uk`, `whatsapp business api pricing uk`, `vet clinic marketing agency`, `ai
 receptionist for garages`, `mot reminder text service`, `ai receptionist cost` (bare; post) and `ai
-receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 79
-rows; the 150–250 target is reached with the remaining captures.
+receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 80
+rows after the afternoon captures added `how much does it cost to design a landing page` (PAA on
+`serp-0052` and `serp-0053`; to the post); the 150–250 target is reached with the remaining captures.
 
 ## 9. PAA → FAQ candidates (pricing first; the SERP term in brackets)
 
@@ -848,9 +906,15 @@ rows; the 150–250 target is reached with the remaining captures.
   can we legally email or text in the UK? (draft H2; constructed) · Is email marketing still worth it?
   (`serp-0039` — replies and bookings, not open rates) · What is database reactivation? (`sug-0058`
   list; `bing-0011`).
-- **`landing-pages`, `google-business-profile`, `local-business-plans`:** no Google PAA captured yet
-  (Bing returned none); the pricing-first questions stand as constructed from the drafts and are
-  replaced from the pending captures.
+- **`landing-pages`:** How much does it cost to design a landing page? (`serp-0052`, `-0053`) · How much
+  should I pay for a landing page? (`serp-0054`) · Do I need a website or just a landing page?
+  (`serp-0054`) · Can I have a landing page without a website? (`serp-0054`) · How much does a sales
+  funnel cost? (`serp-0056`) · What is included, and who owns the page and the files? (constructed;
+  `04` Set C shows what the market states) · Can ChatGPT build a landing page? (`serp-0054`, `-0055` —
+  answered without disparaging the tools).
+- **`google-business-profile`, `local-business-plans`:** no Google PAA captured yet (Bing returned
+  none); the pricing-first questions stand as constructed from the drafts and are replaced from the
+  pending captures (§ 6.11 batches 1, 3 and 5).
 
 ## Sources
 

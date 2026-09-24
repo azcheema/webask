@@ -78,7 +78,9 @@ Copy and sequencing — Q24 boundary rewrites and the "nine" copy · Q25 sentenc
 services with no delivery history · Q26 support caps (email/SMS ≈ 6 clients; receptionist ≈ 5) and the
 receptionist fallback · Q27 sequencing against cutover (Phase 1 vs Phase 2b) · Q28 regulatory-watch
 owners and dates (DUA commencement, CMA veterinary Order, GHL pricing) · Q29 paid media, social and
-portal stay out.
+portal stay out · Q30 how to finish the Google captures (`03` § 6.11: three blocks on 24 September
+2026 from one address; proposal — the fifteen page-head and vertical terms in separate windows an hour
+apart, Bing-only provisional tiers for the tail; never through a CAPTCHA).
 
 Each Q gets: the file that informs it, the owner, and a one-line proposal where one exists.
 
