@@ -368,7 +368,8 @@ England range. No `= £` appears anywhere in this folder.
   re-connected — never a seamless move. Two facts feed the clause: add-on subscriptions are cancelled
   before an eject, so the client's WhatsApp and listings lapse and restart; and an eject earns WebAsk a
   40% recurring commission on the client's new $97 account, which the client is told in the contract
-  and on the page (D11; `08` R30–R35).
+  (founder decision, 24 September 2026: the contract only, not the public page, with the transfer
+  route offered as the commission-free alternative; D11; `08` R30–R35).
 
 ## 7. UK number provisioning: the Regulatory Compliance bundle, sender types and the messaging policy
 
