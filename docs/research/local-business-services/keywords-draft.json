@@ -942,6 +942,26 @@
       "supportingUrls": ["/pricing"],
       "cluster": "local-plans",
       "vertical": null
+    },
+    {
+      "term": "how much does an online booking system cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "can i send an automated text message to confirm an appointment",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/appointment-reminder-texts-pecr",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "email-sms",
+      "vertical": null
     }
   ]
 }

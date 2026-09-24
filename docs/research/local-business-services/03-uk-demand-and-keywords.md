@@ -313,79 +313,81 @@ One row, as JSON:
 }
 ```
 
-| #   | term                                                        | intent                   | primaryUrl                                   | supportingUrls                               | cluster           | vertical               | App. G evidence (position is ordinal)                                                  |
-| --- | ----------------------------------------------------------- | ------------------------ | -------------------------------------------- | -------------------------------------------- | ----------------- | ---------------------- | -------------------------------------------------------------------------------------- |
-| 1   | missed call text back uk                                    | transactional            | /services/missed-call-text-back              | /blog/missed-call-text-back-uk-rules         | lead-recovery ◆   | —                      | head "missed call text back uk" → itself, 1st                                          |
-| 2   | missed call text back service uk                            | transactional            | /services/missed-call-text-back              | —                                            | lead-recovery ◆   | —                      | same list, 2nd                                                                         |
-| 3   | missed call text back service                               | transactional            | /services/missed-call-text-back              | —                                            | lead-recovery ◆   | —                      | head "missed call text back" → "… service", 6th                                        |
-| 4   | text back missed calls                                      | commercial-investigation | /services/missed-call-text-back              | /blog/missed-call-text-back-uk-rules         | lead-recovery ◆   | —                      | head → itself, 1st; "auto text back missed call", 2nd                                  |
-| 5   | missed call text back software                              | commercial-investigation | /blog/missed-call-text-back-uk-rules         | /services/missed-call-text-back              | lead-recovery ◆   | —                      | "software" 2nd, "software free" 8th — product intent → post                            |
-| 6   | is missed call text back legal uk                           | informational-bottom     | /blog/missed-call-text-back-uk-rules         | /services/missed-call-text-back              | uk-compliance     | —                      | constructed (calendar #1 target); no list returned                                     |
-| 7   | why do i get a text message after a missed call             | informational-top        | /blog/missed-call-text-back-uk-rules         | —                                            | lead-recovery ◆   | —                      | two heads returned it (5th and 5th)                                                    |
-| 8   | auto reply text missed call                                 | informational-bottom     | /blog/missed-call-text-back-uk-rules         | —                                            | lead-recovery ◆   | —                      | head → android/iphone variants (consumer intent — weak)                                |
-| 9   | missed call text back for plumbers                          | transactional            | /industries/trades-home-services             | /services/missed-call-text-back              | lead-recovery ◆   | trades-home-services ◇ | head → itself, 1st                                                                     |
-| 10  | google review management services uk                        | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | "google review management" → "… services", 5th (no uk list)                            |
-| 11  | google review management company                            | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | same list, 4th                                                                         |
-| 12  | google review management agency                             | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | same list, 6th                                                                         |
-| 13  | review management service uk                                | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | "review management uk" → itself, 1st (drifts to jobs after)                            |
-| 14  | google review request automation                            | commercial-investigation | /services/review-management                  | /blog/google-reviews-dmcc-act-uk             | reviews ◆         | —                      | "review request automation" → "google …", 3rd                                          |
-| 15  | service to get more google reviews                          | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | "get more google reviews service" → 1st                                                |
-| 16  | how to get more google reviews from customers               | informational-bottom     | /blog/google-reviews-dmcc-act-uk             | /services/review-management                  | reviews ◆         | —                      | same list, 2nd                                                                         |
-| 17  | how to ask for google reviews legally uk                    | informational-bottom     | /blog/google-reviews-dmcc-act-uk             | —                                            | uk-compliance     | —                      | constructed (calendar #2 target)                                                       |
-| 18  | review gating uk                                            | informational-bottom     | /blog/google-reviews-dmcc-act-uk             | —                                            | uk-compliance     | —                      | constructed                                                                            |
-| 19  | incentivised reviews uk                                     | informational-bottom     | /blog/google-reviews-dmcc-act-uk             | —                                            | uk-compliance     | —                      | constructed                                                                            |
-| 20  | reputation management for dentists                          | transactional            | /industries/dental-practices                 | /services/review-management                  | reviews ◆         | dental-practices       | "review management for dentists" → 1st                                                 |
-| 21  | ai phone receptionist uk                                    | transactional            | /services/ai-receptionist                    | —                                            | ai-receptionist ◆ | —                      | "ai receptionist uk" list, 5th                                                         |
-| 22  | ai voice receptionist uk                                    | transactional            | /services/ai-receptionist                    | —                                            | ai-receptionist ◆ | —                      | same list, 7th                                                                         |
-| 23  | ai receptionist for small business uk                       | transactional            | /services/ai-receptionist                    | —                                            | ai-receptionist ◆ | —                      | same list, 8th                                                                         |
-| 24  | ai call answering service uk                                | transactional            | /services/ai-receptionist                    | —                                            | ai-receptionist ◆ | —                      | "ai call answering service" → "… uk", 2nd                                              |
-| 25  | ai receptionist cost uk                                     | commercial-investigation | /blog/ai-receptionist-uk-rules-costs         | /services/ai-receptionist                    | ai-receptionist ◆ | —                      | "ai receptionist" → "… cost", 4th; uk constructed                                      |
-| 26  | free ai receptionist uk                                     | commercial-investigation | /blog/ai-receptionist-uk-rules-costs         | —                                            | ai-receptionist ◆ | —                      | "ai receptionist uk" list, 6th — software intent → post                                |
-| 27  | ai dental receptionist uk                                   | transactional            | /industries/dental-practices                 | /services/ai-integration                     | ai-voice-agents   | dental-practices       | same list, 3rd — clinics stay on the bespoke build                                     |
-| 28  | is an ai receptionist legal uk                              | informational-bottom     | /blog/ai-receptionist-uk-rules-costs         | —                                            | uk-compliance     | —                      | constructed (existing row "are ai receptionists legal uk" — check dupes)               |
-| 29  | email marketing agency uk                                   | transactional            | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | head → itself, 1st                                                                     |
-| 30  | email marketing services uk                                 | transactional            | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | same list, 5th                                                                         |
-| 31  | email marketing companies uk                                | commercial-investigation | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | same list, 4th                                                                         |
-| 32  | email marketing agency for small business                   | transactional            | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | "email marketing agency small business" list, 3rd                                      |
-| 33  | sms marketing services uk                                   | transactional            | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | "sms marketing uk" list (platform-heavy) — service form constructed                    |
-| 34  | sms marketing cost                                          | informational-bottom     | /services/email-sms-marketing                | /blog/gohighlevel-uk-local-business-gbp-cost | email-sms ◆       | —                      | same list, 7th — answered by the page's SMS-cost FAQ                                   |
-| 35  | database reactivation campaign                              | informational-bottom     | /blog/database-reactivation-uk-lawfully      | /services/email-sms-marketing                | email-sms ◆       | —                      | "database reactivation" → "… campaign", 2nd                                            |
-| 36  | database reactivation uk                                    | informational-bottom     | /blog/database-reactivation-uk-lawfully      | —                                            | email-sms ◆       | —                      | constructed (no list)                                                                  |
-| 37  | customer follow up automation                               | commercial-investigation | /services/email-sms-marketing                | /services/crm-automation                     | email-sms ◆       | —                      | constructed (no list)                                                                  |
-| 38  | landing page design uk                                      | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | head → "… agency uk", 1st                                                              |
-| 39  | landing page design agency uk                               | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | same, 1st                                                                              |
-| 40  | landing page design cost                                    | informational-bottom     | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | same list, 2nd                                                                         |
-| 41  | landing page or website small business                      | informational-bottom     | /blog/landing-page-or-website-small-business | —                                            | landing-pages ◆   | —                      | constructed (calendar #7 target)                                                       |
-| 42  | landing page building service                               | commercial-investigation | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | re-pointed 2026-09-24: builder SERP (serp-0055)                                        |
-| 43  | sales funnel design uk                                      | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | "sales funnel design" list — uk constructed                                            |
-| 44  | google business profile management uk                       | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | constructed (empty list) — the page's head term                                        |
-| 45  | google business profile management services                 | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | head → "… services", 2nd                                                               |
-| 46  | google business profile optimisation service                | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | "… optimisation" → "… optimisation service", 2nd (British spelling surfaced)           |
-| 47  | google business profile management agency                   | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | head list, 7th                                                                         |
-| 48  | google business profile management cost                     | informational-bottom     | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | head list, 9th — answered by the page's pricing FAQ                                    |
-| 49  | google business profile suspended help                      | informational-bottom     | /blog/google-business-profile-suspended-uk   | /services/google-business-profile            | local-listings ◆  | —                      | head → itself, 1st                                                                     |
-| 50  | how to reinstate google business account                    | informational-bottom     | /blog/google-business-profile-suspended-uk   | —                                            | local-listings ◆  | —                      | same list, 9th                                                                         |
-| 51  | marketing packages for small business uk                    | transactional            | /services/local-business-plans               | —                                            | local-plans ◆     | —                      | constructed (empty list); "marketing packages for small business" 2nd on the bare head |
-| 52  | small business marketing packages                           | transactional            | /services/local-business-plans               | —                                            | local-plans ◆     | —                      | "local business marketing packages" → 1st                                              |
-| 53  | local business marketing services                           | transactional            | /services/local-business-plans               | —                                            | local-plans ◆     | —                      | same list, 2nd                                                                         |
-| 54  | gohighlevel sms pricing uk                                  | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | "gohighlevel uk" list, 8th; "gohighlevel pricing uk" list, 2nd                         |
-| 55  | gohighlevel uk number                                       | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | —                                            | gohighlevel       | —                      | "gohighlevel uk" list, 2nd                                                             |
-| 56  | gohighlevel consultant uk                                   | transactional            | /services/crm-automation                     | —                                            | gohighlevel       | —                      | same list, 3rd (check dupes against the agency/expert rows)                            |
-| 57  | gohighlevel sub account transfer                            | informational-bottom     | /blog/hosted-crm-vs-own-account-leaving      | /services/local-business-plans               | gohighlevel       | —                      | constructed (calendar #10 target)                                                      |
-| 58  | whatsapp business uk cost                                   | informational-bottom     | /blog/whatsapp-uk-small-business-rules-2026  | /services/missed-call-text-back              | email-sms ◆       | —                      | "whatsapp business uk" list, 3rd; "… api pricing uk", 10th                             |
-| 59  | how much does it cost to design a landing page              | informational-bottom     | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | PAA on serp-0052 and serp-0053 (added 2026-09-24)                                      |
-| 60  | is google business profile manager free                     | informational-bottom     | /services/google-business-profile            | /blog/google-business-profile-suspended-uk   | local-listings ◆  | —                      | PAA on serp-0058 and serp-0059 (added 2026-09-24)                                      |
-| 61  | how much does a marketing package cost                      | informational-bottom     | /services/local-business-plans               | /pricing                                     | local-plans ◆     | —                      | PAA on serp-0060 (added 2026-09-24)                                                    |
-| 62  | how much does gohighlevel cost a month                      | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | PAA on serp-0061 (added 2026-09-24)                                                    |
-| 63  | how much should i pay for local seo                         | informational-bottom     | /services/seo                                | /blog/topic/seo                              | seo               | —                      | PAA on serp-0062 (added 2026-09-24)                                                    |
-| 64  | where can i get free text reminders for appointments        | informational-bottom     | /blog/appointment-reminder-texts-pecr        | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0064 (added 2026-09-24)                                                    |
-| 65  | how do i unsuspend my google business profile               | informational-bottom     | /blog/google-business-profile-suspended-uk   | /services/google-business-profile            | local-listings ◆  | —                      | PAA on serp-0069 (added 2026-09-24)                                                    |
-| 66  | what is the 24 hour rule for whatsapp business              | informational-bottom     | /blog/whatsapp-uk-small-business-rules-2026  | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0072 (added 2026-09-24)                                                    |
-| 67  | how much should a small business pay for marketing          | informational-bottom     | /services/local-business-plans               | /pricing                                     | local-plans ◆     | —                      | PAA on serp-0073 (added 2026-09-24)                                                    |
-| 68  | how much does gohighlevel charge for sms                    | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | PAA on serp-0075 (added 2026-09-24)                                                    |
-| 69  | how much does seo cost in the uk                            | informational-bottom     | /services/seo                                | /blog/topic/seo                              | seo               | —                      | PAA on serp-0077 (added 2026-09-24)                                                    |
-| 70  | how much does it cost to optimise a google business profile | informational-bottom     | /services/google-business-profile            | /pricing                                     | local-listings ◆  | —                      | PAA on serp-0078 (added 2026-09-24)                                                    |
-| 71  | how much does digital marketing cost for a small business   | informational-bottom     | /services/local-business-plans               | /pricing                                     | local-plans ◆     | —                      | PAA on serp-0083 (added 2026-09-24)                                                    |
+| #   | term                                                           | intent                   | primaryUrl                                   | supportingUrls                               | cluster           | vertical               | App. G evidence (position is ordinal)                                                  |
+| --- | -------------------------------------------------------------- | ------------------------ | -------------------------------------------- | -------------------------------------------- | ----------------- | ---------------------- | -------------------------------------------------------------------------------------- |
+| 1   | missed call text back uk                                       | transactional            | /services/missed-call-text-back              | /blog/missed-call-text-back-uk-rules         | lead-recovery ◆   | —                      | head "missed call text back uk" → itself, 1st                                          |
+| 2   | missed call text back service uk                               | transactional            | /services/missed-call-text-back              | —                                            | lead-recovery ◆   | —                      | same list, 2nd                                                                         |
+| 3   | missed call text back service                                  | transactional            | /services/missed-call-text-back              | —                                            | lead-recovery ◆   | —                      | head "missed call text back" → "… service", 6th                                        |
+| 4   | text back missed calls                                         | commercial-investigation | /services/missed-call-text-back              | /blog/missed-call-text-back-uk-rules         | lead-recovery ◆   | —                      | head → itself, 1st; "auto text back missed call", 2nd                                  |
+| 5   | missed call text back software                                 | commercial-investigation | /blog/missed-call-text-back-uk-rules         | /services/missed-call-text-back              | lead-recovery ◆   | —                      | "software" 2nd, "software free" 8th — product intent → post                            |
+| 6   | is missed call text back legal uk                              | informational-bottom     | /blog/missed-call-text-back-uk-rules         | /services/missed-call-text-back              | uk-compliance     | —                      | constructed (calendar #1 target); no list returned                                     |
+| 7   | why do i get a text message after a missed call                | informational-top        | /blog/missed-call-text-back-uk-rules         | —                                            | lead-recovery ◆   | —                      | two heads returned it (5th and 5th)                                                    |
+| 8   | auto reply text missed call                                    | informational-bottom     | /blog/missed-call-text-back-uk-rules         | —                                            | lead-recovery ◆   | —                      | head → android/iphone variants (consumer intent — weak)                                |
+| 9   | missed call text back for plumbers                             | transactional            | /industries/trades-home-services             | /services/missed-call-text-back              | lead-recovery ◆   | trades-home-services ◇ | head → itself, 1st                                                                     |
+| 10  | google review management services uk                           | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | "google review management" → "… services", 5th (no uk list)                            |
+| 11  | google review management company                               | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | same list, 4th                                                                         |
+| 12  | google review management agency                                | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | same list, 6th                                                                         |
+| 13  | review management service uk                                   | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | "review management uk" → itself, 1st (drifts to jobs after)                            |
+| 14  | google review request automation                               | commercial-investigation | /services/review-management                  | /blog/google-reviews-dmcc-act-uk             | reviews ◆         | —                      | "review request automation" → "google …", 3rd                                          |
+| 15  | service to get more google reviews                             | transactional            | /services/review-management                  | —                                            | reviews ◆         | —                      | "get more google reviews service" → 1st                                                |
+| 16  | how to get more google reviews from customers                  | informational-bottom     | /blog/google-reviews-dmcc-act-uk             | /services/review-management                  | reviews ◆         | —                      | same list, 2nd                                                                         |
+| 17  | how to ask for google reviews legally uk                       | informational-bottom     | /blog/google-reviews-dmcc-act-uk             | —                                            | uk-compliance     | —                      | constructed (calendar #2 target)                                                       |
+| 18  | review gating uk                                               | informational-bottom     | /blog/google-reviews-dmcc-act-uk             | —                                            | uk-compliance     | —                      | constructed                                                                            |
+| 19  | incentivised reviews uk                                        | informational-bottom     | /blog/google-reviews-dmcc-act-uk             | —                                            | uk-compliance     | —                      | constructed                                                                            |
+| 20  | reputation management for dentists                             | transactional            | /industries/dental-practices                 | /services/review-management                  | reviews ◆         | dental-practices       | "review management for dentists" → 1st                                                 |
+| 21  | ai phone receptionist uk                                       | transactional            | /services/ai-receptionist                    | —                                            | ai-receptionist ◆ | —                      | "ai receptionist uk" list, 5th                                                         |
+| 22  | ai voice receptionist uk                                       | transactional            | /services/ai-receptionist                    | —                                            | ai-receptionist ◆ | —                      | same list, 7th                                                                         |
+| 23  | ai receptionist for small business uk                          | transactional            | /services/ai-receptionist                    | —                                            | ai-receptionist ◆ | —                      | same list, 8th                                                                         |
+| 24  | ai call answering service uk                                   | transactional            | /services/ai-receptionist                    | —                                            | ai-receptionist ◆ | —                      | "ai call answering service" → "… uk", 2nd                                              |
+| 25  | ai receptionist cost uk                                        | commercial-investigation | /blog/ai-receptionist-uk-rules-costs         | /services/ai-receptionist                    | ai-receptionist ◆ | —                      | "ai receptionist" → "… cost", 4th; uk constructed                                      |
+| 26  | free ai receptionist uk                                        | commercial-investigation | /blog/ai-receptionist-uk-rules-costs         | —                                            | ai-receptionist ◆ | —                      | "ai receptionist uk" list, 6th — software intent → post                                |
+| 27  | ai dental receptionist uk                                      | transactional            | /industries/dental-practices                 | /services/ai-integration                     | ai-voice-agents   | dental-practices       | same list, 3rd — clinics stay on the bespoke build                                     |
+| 28  | is an ai receptionist legal uk                                 | informational-bottom     | /blog/ai-receptionist-uk-rules-costs         | —                                            | uk-compliance     | —                      | constructed (existing row "are ai receptionists legal uk" — check dupes)               |
+| 29  | email marketing agency uk                                      | transactional            | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | head → itself, 1st                                                                     |
+| 30  | email marketing services uk                                    | transactional            | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | same list, 5th                                                                         |
+| 31  | email marketing companies uk                                   | commercial-investigation | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | same list, 4th                                                                         |
+| 32  | email marketing agency for small business                      | transactional            | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | "email marketing agency small business" list, 3rd                                      |
+| 33  | sms marketing services uk                                      | transactional            | /services/email-sms-marketing                | —                                            | email-sms ◆       | —                      | "sms marketing uk" list (platform-heavy) — service form constructed                    |
+| 34  | sms marketing cost                                             | informational-bottom     | /services/email-sms-marketing                | /blog/gohighlevel-uk-local-business-gbp-cost | email-sms ◆       | —                      | same list, 7th — answered by the page's SMS-cost FAQ                                   |
+| 35  | database reactivation campaign                                 | informational-bottom     | /blog/database-reactivation-uk-lawfully      | /services/email-sms-marketing                | email-sms ◆       | —                      | "database reactivation" → "… campaign", 2nd                                            |
+| 36  | database reactivation uk                                       | informational-bottom     | /blog/database-reactivation-uk-lawfully      | —                                            | email-sms ◆       | —                      | constructed (no list)                                                                  |
+| 37  | customer follow up automation                                  | commercial-investigation | /services/email-sms-marketing                | /services/crm-automation                     | email-sms ◆       | —                      | constructed (no list)                                                                  |
+| 38  | landing page design uk                                         | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | head → "… agency uk", 1st                                                              |
+| 39  | landing page design agency uk                                  | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | same, 1st                                                                              |
+| 40  | landing page design cost                                       | informational-bottom     | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | same list, 2nd                                                                         |
+| 41  | landing page or website small business                         | informational-bottom     | /blog/landing-page-or-website-small-business | —                                            | landing-pages ◆   | —                      | constructed (calendar #7 target)                                                       |
+| 42  | landing page building service                                  | commercial-investigation | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | re-pointed 2026-09-24: builder SERP (serp-0055)                                        |
+| 43  | sales funnel design uk                                         | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | "sales funnel design" list — uk constructed                                            |
+| 44  | google business profile management uk                          | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | constructed (empty list) — the page's head term                                        |
+| 45  | google business profile management services                    | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | head → "… services", 2nd                                                               |
+| 46  | google business profile optimisation service                   | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | "… optimisation" → "… optimisation service", 2nd (British spelling surfaced)           |
+| 47  | google business profile management agency                      | transactional            | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | head list, 7th                                                                         |
+| 48  | google business profile management cost                        | informational-bottom     | /services/google-business-profile            | —                                            | local-listings ◆  | —                      | head list, 9th — answered by the page's pricing FAQ                                    |
+| 49  | google business profile suspended help                         | informational-bottom     | /blog/google-business-profile-suspended-uk   | /services/google-business-profile            | local-listings ◆  | —                      | head → itself, 1st                                                                     |
+| 50  | how to reinstate google business account                       | informational-bottom     | /blog/google-business-profile-suspended-uk   | —                                            | local-listings ◆  | —                      | same list, 9th                                                                         |
+| 51  | marketing packages for small business uk                       | transactional            | /services/local-business-plans               | —                                            | local-plans ◆     | —                      | constructed (empty list); "marketing packages for small business" 2nd on the bare head |
+| 52  | small business marketing packages                              | transactional            | /services/local-business-plans               | —                                            | local-plans ◆     | —                      | "local business marketing packages" → 1st                                              |
+| 53  | local business marketing services                              | transactional            | /services/local-business-plans               | —                                            | local-plans ◆     | —                      | same list, 2nd                                                                         |
+| 54  | gohighlevel sms pricing uk                                     | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | "gohighlevel uk" list, 8th; "gohighlevel pricing uk" list, 2nd                         |
+| 55  | gohighlevel uk number                                          | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | —                                            | gohighlevel       | —                      | "gohighlevel uk" list, 2nd                                                             |
+| 56  | gohighlevel consultant uk                                      | transactional            | /services/crm-automation                     | —                                            | gohighlevel       | —                      | same list, 3rd (check dupes against the agency/expert rows)                            |
+| 57  | gohighlevel sub account transfer                               | informational-bottom     | /blog/hosted-crm-vs-own-account-leaving      | /services/local-business-plans               | gohighlevel       | —                      | constructed (calendar #10 target)                                                      |
+| 58  | whatsapp business uk cost                                      | informational-bottom     | /blog/whatsapp-uk-small-business-rules-2026  | /services/missed-call-text-back              | email-sms ◆       | —                      | "whatsapp business uk" list, 3rd; "… api pricing uk", 10th                             |
+| 59  | how much does it cost to design a landing page                 | informational-bottom     | /blog/landing-page-or-website-small-business | /services/landing-pages                      | landing-pages ◆   | —                      | PAA on serp-0052 and serp-0053 (added 2026-09-24)                                      |
+| 60  | is google business profile manager free                        | informational-bottom     | /services/google-business-profile            | /blog/google-business-profile-suspended-uk   | local-listings ◆  | —                      | PAA on serp-0058 and serp-0059 (added 2026-09-24)                                      |
+| 61  | how much does a marketing package cost                         | informational-bottom     | /services/local-business-plans               | /pricing                                     | local-plans ◆     | —                      | PAA on serp-0060 (added 2026-09-24)                                                    |
+| 62  | how much does gohighlevel cost a month                         | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | PAA on serp-0061 (added 2026-09-24)                                                    |
+| 63  | how much should i pay for local seo                            | informational-bottom     | /services/seo                                | /blog/topic/seo                              | seo               | —                      | PAA on serp-0062 (added 2026-09-24)                                                    |
+| 64  | where can i get free text reminders for appointments           | informational-bottom     | /blog/appointment-reminder-texts-pecr        | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0064 (added 2026-09-24)                                                    |
+| 65  | how do i unsuspend my google business profile                  | informational-bottom     | /blog/google-business-profile-suspended-uk   | /services/google-business-profile            | local-listings ◆  | —                      | PAA on serp-0069 (added 2026-09-24)                                                    |
+| 66  | what is the 24 hour rule for whatsapp business                 | informational-bottom     | /blog/whatsapp-uk-small-business-rules-2026  | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0072 (added 2026-09-24)                                                    |
+| 67  | how much should a small business pay for marketing             | informational-bottom     | /services/local-business-plans               | /pricing                                     | local-plans ◆     | —                      | PAA on serp-0073 (added 2026-09-24)                                                    |
+| 68  | how much does gohighlevel charge for sms                       | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | PAA on serp-0075 (added 2026-09-24)                                                    |
+| 69  | how much does seo cost in the uk                               | informational-bottom     | /services/seo                                | /blog/topic/seo                              | seo               | —                      | PAA on serp-0077 (added 2026-09-24)                                                    |
+| 70  | how much does it cost to optimise a google business profile    | informational-bottom     | /services/google-business-profile            | /pricing                                     | local-listings ◆  | —                      | PAA on serp-0078 (added 2026-09-24)                                                    |
+| 71  | how much does digital marketing cost for a small business      | informational-bottom     | /services/local-business-plans               | /pricing                                     | local-plans ◆     | —                      | PAA on serp-0083 (added 2026-09-24)                                                    |
+| 72  | how much does an online booking system cost                    | informational-bottom     | /services/local-business-plans               | /services/missed-call-text-back              | local-plans ◆     | —                      | fold-test head, High on serp-0093 (added 2026-09-24; a post if S6 opens one)           |
+| 73  | can i send an automated text message to confirm an appointment | informational-bottom     | /blog/appointment-reminder-texts-pecr        | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0095 (added 2026-09-24)                                                    |
 
 Vertical rows for the wave-1 industry pages (added in S6 after 06): `vet clinic marketing agency`,
 `vet practice marketing`, `cma vet price list website` (→ calendar #8; `uk-compliance`;
@@ -473,7 +475,7 @@ and no `organic` array, never retried with a solved CAPTCHA.
 
 ## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-**Coverage.** 92 `google.co.uk` records (`serp-0001`–`serp-0092`: 89 captures and three block records), 32 Bing
+**Coverage.** 97 `google.co.uk` records (`serp-0001`–`serp-0097`: 94 captures and three block records), 32 Bing
 `cc=GB` captures (`bing-0001`–`bing-0032`; the last two are the trades heads, added in S4) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
 in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
 the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
@@ -487,21 +489,21 @@ window an hour later did the same for the two fold tests and the three vertical 
 the profile long-tail, the two remaining landing-page terms and WhatsApp, and a seventh for the
 bundle and GoHighLevel tail and the local-SEO agency wording, and an eighth for the rest of the profile
 tail, and a ninth for the rest of the bundle and GoHighLevel tail, and a tenth for the local-SEO services
-and vertical SEO terms. The pages
+and vertical SEO terms, and an eleventh for the booking, reminder, WhatsApp API and web-chat tail. The pages
 captured on Google are text-back, reviews, the receptionist, email/SMS, landing pages, the heads of
 the profile service, the bundle and local SEO, the booking and reminder fold tests and the three
-vertical heads; the remaining vertical terms, the near-me and comparison shapes and the booking, chat and
-inbox tails are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
+vertical heads; the remaining vertical terms, the near-me and comparison shapes, live chat and the unified
+inbox are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
 provisional until the Google capture lands.
 
-**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 80 of the 89
+**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 85 of the 94
 successful Google captures** — on every text-back, receptionist and email-agency term — so the
 answer-first opening paragraph in `12` is not optional on this line. (2) **A local pack appeared on four
-terms in 89**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
+terms in 94**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
 (`serp-0065`), `local business marketing services` (`serp-0074`) and `local seo agency uk`
 (`serp-0077`) — always on a "services" or "agency" wording, never on a product or question — so local
 intent exists on the agency-shaped heads and nowhere else in the set; D1's no-profile ruling costs this
-line those four terms, not a category, and the four pages concerned enter on their long tail. (3) **Ads sat on 65 of 89** captures, four
+line those four terms, not a category, and the four pages concerned enter on their long tail. (3) **Ads sat on 69 of 94** captures, four
 at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
 and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
 the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
@@ -890,7 +892,7 @@ its own specialists. **Reading:** the vertical SEO terms belong to the industry 
 `local seo services for plumbers` is the first High vertical × service term in the set and goes into
 the S6 vertical rows with `serp-0092` as its record.
 
-### 6.9 The fold-or-page tests (`serp-0063`–`serp-0064`; Bing `bing-0025`–`bing-0027`; the WhatsApp, web-chat and inbox terms queued)
+### 6.9 The fold-or-page tests (`serp-0063`–`serp-0064`, `serp-0072`, `serp-0093`–`serp-0097`; Bing `bing-0025`–`bing-0027`; live chat and the inbox queued)
 
 - **Booking: fold confirmed on Google.** `online booking system small business uk` (`serp-0063`) is
   2/9 UK, A7/B2 Hard, four ads above and two in the feed (HubSpot, Booking.com, Wix, bookinbeautiful,
@@ -917,8 +919,37 @@ the S6 vertical rows with `serp-0092` as its record.
   Business?", "Is there an UK alternative to WhatsApp?" — the calendar's item 11 takes the 24-hour
   rule as an H2 and answers the cost in the vendor's own units, dated (the per-message rates change on
   1 October 2026, `10` § 2). Bing (`bing-0027`) agreed. The text-back page owns nothing
-  WhatsApp-specific. **Web chat and the unified inbox** stay Bing-only (§ 6.4) until § 6.11 batches 6
-  and 7 land: software SERPs on every wording tried. **Fold.**
+  WhatsApp-specific. `whatsapp business api pricing uk` (`serp-0096`, eleventh window) is 3/9 UK,
+  A0/B9 Soft, four ads above and two in the feed (Hostinger, Twilio, whatchimp.com, rinkel.com) and
+  **Medium** (E1 + E4): Meta's two pricing pages, SleekFlow, Superchat, LinkedIn, YouTube,
+  blueticks.co and ominiflow.com; PAA "How much does a WhatsApp Business API cost?", "How much does
+  WhatsApp Business cost in the UK?", "Which WhatsApp API providers are available in the UK?" — item
+  11's H2s, with the providers question answered as a list of what each charges, dated.
+- **The booking and reminder tails confirm the folds, with one High question on them (eleventh
+  window).** `how much does an online booking system cost` (`serp-0093`) is 5/9 UK, A6/B3 Hard,
+  one feed ad, an AI Overview and **High** (E1 + E3 + E4 + E5) — SimplyBook.me, BookingLive, Square,
+  a WordPress plugin vendor, The Access Group, SumUp, Capterra UK, a smallbusiness.co.uk guide and
+  Reservio; PAA "Is there a free online booking system available?", "What is the typical cost of
+  scheduling software?", "Which online booking system is best?". A High cost question on a product
+  SERP: the fold stands, and the question becomes the bundle page's booking FAQ (answered with what
+  the plan includes and what a standalone product charges, in the vendors' own units), with a post
+  only if S6 opens one (§ 8). `sms appointment reminder service` (`serp-0094`) is 1/9 UK, A7/B2
+  Hard, no ads and **Medium** (E1 + E5): ClickSend, appointmentreminder.com, Square, Google
+  Workspace, Twilio, Mailchimp, two listicles and easypractice.net — global products; PAA "How do I
+  send an appointment reminder text?", "Where can I get free text reminders for appointments?".
+  `automated appointment reminder service uk` (`serp-0095`) is 5/9 UK, A7/B2 Hard, two ads above and
+  two in the feed (ClickSend, Agenda, HubSpot, Fiverr) and **Medium** (E3 + E4 + E5): Square,
+  appointmentreminder.com, Capterra UK, ClickSend, GReminders, remindlo.co.uk, SimplyBook.me,
+  sendmode.co.uk and savience.com; PAA "Can I send an automated text message to confirm an
+  appointment?" — item 4's PECR answer (a confirmation is a service message; the marketing line after
+  it is not). **Fold** on all three.
+- **Web chat is a UK product SERP; fold.** `web chat for small business uk` (`serp-0097`) is
+  **9/9 UK**, A5/B4 Soft, three ads above and two in the feed (Tidio, HubSpot, Talkdesk), an AI
+  Overview and **Medium** (E3 + E4): Click4Assistance, mtechcomms.co.uk, Capterra UK, a gov.uk page,
+  Moneypenny, whito.co.uk, saasinfinity.co.uk, Three Business and yourbot.uk; the PAA set is off-topic
+  ("How can I get paid to chat online in the UK?"). Web chat stays a feature line inside the bundle's
+  Answer tier and the CRM page's widget; no page. `live chat for small business uk` and `unified
+inbox small business` are § 6.11 batch 1.
 
 ### 6.10 Vertical terms (`serp-0065`–`serp-0067`; Bing `bing-0028`–`bing-0032`; the remaining vertical terms queued; rows in S6)
 
@@ -961,29 +992,27 @@ the S6 vertical rows with `serp-0092` as its record.
   and `local seo services for plumbers` is **High** (`serp-0092`) — § 6.8; the trades page's SEO
   section takes both (S6 rows).
 
-### 6.11 Queued — the 18 Google captures still pending
+### 6.11 Queued — the 13 Google captures still pending
 
 **Block history, all on 24 September 2026, all from the same address.** HTTP 429 after 45 captures at
 4–8 s; HTTP 403 after five more at 12–18 s forty minutes later; HTTP 403 after five more at 25–30 s
 from a fresh browser context two and a half hours after that (`serp-0045`, `serp-0051`,
 `serp-0057`); then, forty minutes after the third block, **five captures with no refusal**, stopped
 at five by design (`serp-0058`–`serp-0062`), and an hour after that five more (`serp-0063`–`serp-0067`), and an hour after that another five
-(`serp-0068`–`serp-0072`), then five more (`serp-0073`–`serp-0077`) and five more (`serp-0078`–`serp-0082`), then five more (`serp-0083`–`serp-0087`) and five more (`serp-0088`–`serp-0092`). The pattern is a reputation-based allowance of about
+(`serp-0068`–`serp-0072`), then five more (`serp-0073`–`serp-0077`) and five more (`serp-0078`–`serp-0082`), then five more (`serp-0083`–`serp-0087`) and five more (`serp-0088`–`serp-0092`), then five more (`serp-0093`–`serp-0097`). The pattern is a reputation-based allowance of about
 five requests per window from this address, so the queue runs five to a batch, page-head terms first,
 one window an hour or more apart; the tail groups stay Bing-only until captured:
 
-1. how much does an online booking system cost · sms appointment reminder service · automated
-   appointment reminder service uk · whatsapp business api pricing uk · web chat for small business uk
-2. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
+1. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
    price list website · veterinary services market investigation order 2026
-3. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
+2. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
    receptionist near me · google business profile management near me (near-me terms are evidence
    only, D1)
-4. email marketing agency near me · best missed call text back software uk · best email marketing
+3. email marketing agency near me · best missed call text back software uk · best email marketing
    agency uk
 
 > ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): every page head and every fold test
-> is now on Google; the four remaining batches are long-tail and evidence rows. Take them one
+> is now on Google; the three remaining batches are long-tail and evidence rows. Take them one
 > window an hour while a session is open, and accept Bing-only, provisional tiers for whatever is
 > left when it closes; never through a CAPTCHA. The
 > founder decides whether the tail groups are worth further windows.
@@ -1094,9 +1123,14 @@ the day real volumes arrive.
 | seo for dentists uk                             | serp-0090 | 9/9   | 0/2 · AIO                 | A0/B9 Soft   | E3 E4          | Medium                            | amstraddigital.co.uk, nexushealthcare.co.uk, seoworks.co.uk                                  |
 | google maps ranking service uk                  | serp-0091 | 7/9   | 0/0 · AIO                 | A4/B5 Soft   | E3             | Low                               | support.google.com, levelupleads.co.uk, gbpmanager.co.uk                                     |
 | local seo services for plumbers                 | serp-0092 | 8/9   | 0/1 · AIO                 | A1/B8 Soft   | E1 E3 E4       | **High**                          | webdesignandseocompany.co.uk, outrank.co.uk, tradepixels.co.uk                               |
+| how much does an online booking system cost     | serp-0093 | 5/9   | 0/1 · AIO                 | A6/B3 Hard   | E1 E3 E4 E5    | **High**                          | simplybook.me, bookinglive.com, squareup.com                                                 |
+| sms appointment reminder service                | serp-0094 | 1/9   | 0/0 · AIO                 | A7/B2 Hard   | E1 E5          | Medium                            | clicksend.com, appointmentreminder.com, squareup.com                                         |
+| automated appointment reminder service uk       | serp-0095 | 5/9   | 2/2 · AIO                 | A7/B2 Hard   | E3 E4 E5       | Medium                            | squareup.com, appointmentreminder.com, capterra.co.uk                                        |
+| whatsapp business api pricing uk                | serp-0096 | 3/9   | 4/2 · AIO                 | A0/B9 Soft   | E1 E4          | Medium                            | whatsappbusiness.com, developers.facebook.com, sleekflow.io                                  |
+| web chat for small business uk                  | serp-0097 | 9/9   | 3/2 · AIO                 | A5/B4 Soft   | E3 E4          | Medium                            | click4assistance.co.uk, mtechcomms.co.uk, capterra.co.uk                                     |
 
-**Reading across the pages.** 24 terms are High, 43 Medium, 22 Low, none Constructed among
-the 89 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
+**Reading across the pages.** 25 terms are High, 47 Medium, 22 Low, none Constructed among
+the 94 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
 the email-agency heads are High on Soft SERPs, which is the combination a zero-authority `.co.uk` can
 act on first; the reviews page has no High service head and earns its High only on the compliance
 long-tail, which sets its cluster order. Terms not yet captured on Google carry no tier. E5 is set by
@@ -1136,7 +1170,7 @@ marketing agency cost`, `is sms marketing legal uk`, `how much does it cost to s
 `database reactivation service`, `digital marketing packages for small business`, `landing page cost
 uk`, `local seo packages uk`, `whatsapp business api pricing uk`, `vet clinic marketing agency`, `ai
 receptionist for garages`, `mot reminder text service`, `ai receptionist cost` (bare; post) and `ai
-receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 92
+receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 94
 rows after the afternoon captures added `how much does it cost to design a landing page` (PAA on
 `serp-0052` and `serp-0053`; to the post), `is google business profile manager free` (PAA on
 `serp-0058` and `serp-0059`; to the profile page's FAQ), `how much does a marketing package cost`
@@ -1149,8 +1183,11 @@ item 11), `how much should a small business pay for marketing` (PAA on `serp-007
 second pricing FAQ), `how much does gohighlevel charge for sms` (PAA on `serp-0075`; to the
 calendar's item 12) `how much does seo cost in the uk` (PAA on `serp-0077`; to `/services/seo`) `how much does
 it cost to optimise a google business profile` (PAA on `serp-0078`; the profile page's cost FAQ, with
-the British spelling the page uses) and `how much does digital marketing cost for a small business`
-(PAA on `serp-0083`; the bundle's FAQ); the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
+the British spelling the page uses) `how much does digital marketing cost for a small business`
+(PAA on `serp-0083`; the bundle's FAQ), `how much does an online booking system cost` (the fold
+test's own head, **High** on `serp-0093`; the bundle's booking FAQ, or a post if S6 opens one) and
+`can i send an automated text message to confirm an appointment` (PAA on `serp-0095`; to the
+calendar's item 4); the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
 target is reached with the remaining captures.
 
 ## 9. PAA → FAQ candidates (pricing first; the SERP term in brackets)
@@ -1221,9 +1258,17 @@ target is reached with the remaining captures.
   page? (`serp-0071`) · How much should I charge for a website in the UK? (`serp-0071` — the buyer's
   mirror question) · Are Google landing pages free? (`serp-0071`).
 - **Calendar item 4 (reminders) and the booking fold:** Where can I get free text reminders for
-  appointments? (`serp-0064`) · What is the best free appointment reminder app? (`serp-0064`) · What
-  is the cheapest online booking system? (`serp-0063`) · Can I make my own booking system?
-  (`serp-0063`) — all answered without a product recommendation.
+  appointments? (`serp-0064`, `-0094`, `-0095`) · Can I send an automated text message to confirm an
+  appointment? (`serp-0095` — yes; the PECR line sits after it) · How do I send an appointment
+  reminder text? (`serp-0094`) · What is the best free appointment reminder app? (`serp-0064`,
+  `-0095`) · How much does an online booking system cost? (`serp-0093` — the bundle's booking FAQ) ·
+  Is there a free online booking system available? (`serp-0093`) · What is the cheapest online
+  booking system? (`serp-0063`) · Can I make my own booking system? (`serp-0063`) — all answered
+  without a product recommendation.
+- **Calendar item 11 (WhatsApp), additions:** How much does a WhatsApp Business API cost?
+  (`serp-0096`) · Which WhatsApp API providers are available in the UK? (`serp-0096` — a dated list
+  of what each charges) · How can I send 10,000 messages on WhatsApp? (`serp-0096` — the template and
+  opt-in rules first).
 - **Trades industry page (S6 rows):** How much do local SEO services cost? (`serp-0092`) · How much
   does a plumbing website cost? (`serp-0092`) · What is the best advertising for plumbers? (`serp-0089`,
   `-0092`) · Are plumbers in demand in the UK? (`serp-0089` — answered with a sourced figure or not at

@@ -9457,6 +9457,559 @@
       "notes": ""
     },
     {
+      "id": "serp-0093",
+      "term": "how much does an online booking system cost",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T21:55:35.157Z",
+      "adsTop": 0,
+      "adsBottom": 1,
+      "adsDomains": ["moder.app"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "Is there a free online booking system available?",
+        "Can I make my own booking system?",
+        "What is the typical cost of scheduling software?",
+        "Which online booking system is best?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Free online booking system Google",
+        "Free online booking and payment system",
+        "Online booking system for small business",
+        "Free online booking system for small business",
+        "Online appointment booking system",
+        "SimplyBook me pricing",
+        "Online booking system for small business UK",
+        "Free appointment booking app"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "simplybook.me",
+          "url": "https://simplybook.me/pricing",
+          "title": "SimplyBook.me Pricing 2026 | Plans, Features & Free Trial",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "bookinglive.com",
+          "url": "https://www.bookinglive.com/Blogs",
+          "title": "How Much Does An Online Booking System Cost?",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "squareup.com",
+          "url": "https://squareup.com/appointments/pricing",
+          "title": "Pricing and Plans | Square Appointments",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "wpmet.com",
+          "url": "https://wpmet.com/booking-system-cost-for-small-busi...",
+          "title": "How Much Does a Booking System Cost for Small Business?",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "theaccessgroup.com",
+          "url": "https://www.theaccessgroup.com/.../Reservations",
+          "title": "How much does an online reservation system cost in 2024?",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "sumup.com",
+          "url": "https://www.sumup.com/en-gb/bookings",
+          "title": "Online booking system by SumUp: free scheduling software",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "capterra.co.uk",
+          "url": "https://www.capterra.co.uk/reservations/software",
+          "title": "Online Booking Systems - Price Comparison & Reviews",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "smallbusiness.co.uk",
+          "url": "https://smallbusiness.co.uk/.../Running a Business",
+          "title": "Online Booking Systems for Small Businesses",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "reservio.com",
+          "url": "https://www.reservio.com/blog/tips/best-booking-sy...",
+          "title": "9 Best Online Booking Systems for Small Businesses in 2026",
+          "type": "listicle",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 5,
+      "difficultyProxy": {
+        "a": 6,
+        "b": 3,
+        "label": "Hard"
+      },
+      "evidence": ["E1", "E3", "E4", "E5"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0094",
+      "term": "sms appointment reminder service",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T21:55:59.644Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How do I send an appointment reminder text?",
+        "How can I set up text message reminders for appointments?",
+        "What are some good SMS appointment reminder apps?",
+        "Where can I get free text reminders for appointments?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Sms appointment reminder service free",
+        "Call sms appointment reminder service",
+        "Appointment reminder text example",
+        "Sms appointment reminder service email",
+        "Text message reminder free",
+        "Free text reminders for appointments",
+        "Free appointment reminder app",
+        "Automated appointment reminders free"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "clicksend.com",
+          "url": "https://www.clicksend.com/solutions/reminders",
+          "title": "SMS Appointment Reminder",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "appointmentreminder.com",
+          "url": "https://appointmentreminder.com/country",
+          "title": "Appointment Reminders for UK Businesses",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "squareup.com",
+          "url": "https://squareup.com/features/reminders",
+          "title": "Free SMS & Email Appointment Reminder Software",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "workspace.google.com",
+          "url": "https://workspace.google.com/marketplace/app/sms...",
+          "title": "SMS Appointment Reminders & Scheduling GReminders",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "engagelab.com",
+          "url": "https://www.engagelab.com/Blog",
+          "title": "10 Best Text Reminder Services for Businesses in 2026",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "twilio.com",
+          "url": "https://www.twilio.com/Twilio/Use Cases",
+          "title": "Appointment reminder texts and emails",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "mailchimp.com",
+          "url": "https://mailchimp.com/sms-appointment-reminder",
+          "title": "SMS Appointment Reminders: Reduce No-Shows",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "easypractice.net",
+          "url": "https://easypractice.net/functions/sms-reminders",
+          "title": "Send SMS and email reminders to your clients",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "sakari.io",
+          "url": "https://sakari.io/blog/best-sms-tools-for-appointment...",
+          "title": "Best SMS Tools for Appointment Reminders: 7 Platforms ...",
+          "type": "listicle",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 1,
+      "difficultyProxy": {
+        "a": 7,
+        "b": 2,
+        "label": "Hard"
+      },
+      "evidence": ["E1", "E5"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0095",
+      "term": "automated appointment reminder service uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T21:56:23.491Z",
+      "adsTop": 2,
+      "adsBottom": 2,
+      "adsDomains": ["try.clicksend.com", "salons.withagenda.com", "hubspot.com", "fiverr.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What is the best free appointment reminder app?",
+        "Can I send an automated text message to confirm an appointment?",
+        "Where can I get free text reminders for appointments?",
+        "How do I set up a reminder for an appointment?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Automated appointment reminder service uk template",
+        "Best automated appointment reminder service uk",
+        "Automated appointment reminder service uk free",
+        "Automated appointment reminder service uk email",
+        "Automated appointment reminders free",
+        "Appointment reminder message examples",
+        "Free appointment reminder text",
+        "Appointment reminder software for small business"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "squareup.com",
+          "url": "https://squareup.com/appointments/features/reminders",
+          "title": "Free SMS & Email Appointment Reminder Software",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "appointmentreminder.com",
+          "url": "https://appointmentreminder.com/country/uk",
+          "title": "Appointment Reminders for UK Businesses",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "capterra.co.uk",
+          "url": "https://www.capterra.co.uk/directory/software",
+          "title": "Appointment Reminder Software",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "clicksend.com",
+          "url": "https://www.clicksend.com/solutions/reminders",
+          "title": "SMS Appointment Reminder",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "greminders.com",
+          "url": "https://www.greminders.com/uk",
+          "title": "SMS Appointment Reminders for UK / United Kingdom",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "remindlo.co.uk",
+          "url": "https://www.remindlo.co.uk/blog/best-sms-reminder...",
+          "title": "7 Best Business Text Reminder Services in the UK (2026)",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "simplybook.me",
+          "url": "https://simplybook.me/blog/automated-appointment...",
+          "title": "How to Send Automated Appointment Reminders (Email, ...",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "sendmode.co.uk",
+          "url": "https://www.sendmode.co.uk/automated-appointment-...",
+          "title": "SMS Automated Appointment Reminders for Healthcare ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "savience.com",
+          "url": "https://savience.com/reminder-service",
+          "title": "Patient Appointment Reminder and Validation Service",
+          "type": "agency",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 5,
+      "difficultyProxy": {
+        "a": 7,
+        "b": 2,
+        "label": "Hard"
+      },
+      "evidence": ["E3", "E4", "E5"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0096",
+      "term": "whatsapp business api pricing uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T21:56:48.286Z",
+      "adsTop": 4,
+      "adsBottom": 2,
+      "adsDomains": ["hostinger.com", "twilio.com", "whatchimp.com", "rinkel.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How much does a WhatsApp Business API cost?",
+        "How much does WhatsApp Business cost in the UK?",
+        "How can I send 10,000 messages on WhatsApp?",
+        "Which WhatsApp API providers are available in the UK?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "WhatsApp Business API pricing per-message",
+        "Whatsapp business api pricing uk calculator",
+        "WhatsApp messaging API pricing",
+        "WhatsApp API pricing per-message",
+        "WhatsApp Business API free",
+        "WhatsApp API pricing per month",
+        "Meta API pricing WhatsApp",
+        "Twilio WhatsApp API pricing"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "whatsappbusiness.com",
+          "url": "https://whatsappbusiness.com/Products",
+          "title": "WhatsApp Business Platform Pricing",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "developers.facebook.com",
+          "url": "https://developers.facebook.com/business-messaging",
+          "title": "Pricing on the WhatsApp Business Platform",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "sleekflow.io",
+          "url": "https://sleekflow.io/en-gb/blog/whatsapp-business-...",
+          "title": "WhatsApp Business API pricing model in UK (2026)",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "superchat.com",
+          "url": "https://www.superchat.com/blog/whatsapp-business-...",
+          "title": "WhatsApp Business Pricing (2026)",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "linkedin.com",
+          "url": "https://linkedin.com",
+          "title": "WhatsApp Business API Costs: What UK Businesses Need ...",
+          "type": "forum-ugc",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "whatsappbusiness.com",
+          "url": "https://whatsappbusiness.com/Products",
+          "title": "WhatsApp Business Platform | Business messaging APIs",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "youtube.com",
+          "url": "https://youtube.com",
+          "title": "WhatsApp Business API Pricing 2026 Explained (Simple ...",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "blueticks.co",
+          "url": "https://blueticks.co/blog/whatsapp-business-api-pricin...",
+          "title": "WhatsApp Business API Pricing in 2026",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "ominiflow.com",
+          "url": "https://ominiflow.com/whatsapp-api-pricing-by-country",
+          "title": "WhatsApp Business API Pricing by Country",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 3,
+      "difficultyProxy": {
+        "a": 0,
+        "b": 9,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0097",
+      "term": "web chat for small business uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T21:57:10.001Z",
+      "adsTop": 3,
+      "adsBottom": 2,
+      "adsDomains": ["tidio.com", "hubspot.com", "talkdesk.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What are the best websites for small businesses in the UK?",
+        "What is the best chat site in the UK?",
+        "What are some good chat platforms for business?",
+        "How can I get paid to chat online in the UK?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Web chat for small business uk free",
+        "Web chat for small business uk app",
+        "Best web chat for small business uk",
+        "Web chat for small business uk 2022",
+        "Click for assistance",
+        "Cheshire west live chat"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "click4assistance.co.uk",
+          "url": "https://www.click4assistance.co.uk/best-live-chat-softw...",
+          "title": "What Is The Best Live Chat Software For Business Use?",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "mtechcomms.co.uk",
+          "url": "https://mtechcomms.co.uk/what-is-web-chat-guide-uk...",
+          "title": "What Is Web Chat? A Guide for UK Businesses",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "capterra.co.uk",
+          "url": "https://www.capterra.co.uk/directory/software",
+          "title": "Live Chat Software - Price Comparison & Reviews",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "gov.uk",
+          "url": "https://www.gov.uk/.../Grow your business",
+          "title": "Get help and support for your business",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "moneypenny.com",
+          "url": "https://www.moneypenny.com/uk/resources/blog",
+          "title": "Best Live Chat for websites - Moneypenny | Resources",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "whito.co.uk",
+          "url": "https://whito.co.uk/Tools & Buyer Guides",
+          "title": "Best Live Chat Software UK 2026: 7 Tools Compared",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "saasinfinity.co.uk",
+          "url": "https://saasinfinity.co.uk/ai-chatbot-for-small-business...",
+          "title": "AI chatbot for small business UK: 7 Powerful Benefits",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "three.co.uk",
+          "url": "https://www.three.co.uk/.../Help",
+          "title": "Contact us | Three Business",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "yourbot.uk",
+          "url": "https://www.yourbot.uk/welcome-to-yourbot-the-ai-c...",
+          "title": "Welcome to YourBOT: The AI chatbot built for UK small ...",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 9,
+      "difficultyProxy": {
+        "a": 5,
+        "b": 4,
+        "label": "Soft"
+      },
+      "evidence": ["E3", "E4"],
+      "notes": ""
+    },
+    {
       "id": "bing-0001",
       "term": "missed call text back uk",
       "source": "bing",
