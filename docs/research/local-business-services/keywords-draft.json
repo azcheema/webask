@@ -872,6 +872,26 @@
       "supportingUrls": ["/services/missed-call-text-back"],
       "cluster": "email-sms",
       "vertical": null
+    },
+    {
+      "term": "how do i unsuspend my google business profile",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-business-profile-suspended-uk",
+      "supportingUrls": ["/services/google-business-profile"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "what is the 24 hour rule for whatsapp business",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/whatsapp-uk-small-business-rules-2026",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "email-sms",
+      "vertical": null
     }
   ]
 }

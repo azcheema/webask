@@ -379,6 +379,8 @@ One row, as JSON:
 | 62  | how much does gohighlevel cost a month               | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | PAA on serp-0061 (added 2026-09-24)                                                    |
 | 63  | how much should i pay for local seo                  | informational-bottom     | /services/seo                                | /blog/topic/seo                              | seo               | —                      | PAA on serp-0062 (added 2026-09-24)                                                    |
 | 64  | where can i get free text reminders for appointments | informational-bottom     | /blog/appointment-reminder-texts-pecr        | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0064 (added 2026-09-24)                                                    |
+| 65  | how do i unsuspend my google business profile        | informational-bottom     | /blog/google-business-profile-suspended-uk   | /services/google-business-profile            | local-listings ◆  | —                      | PAA on serp-0069 (added 2026-09-24)                                                    |
+| 66  | what is the 24 hour rule for whatsapp business       | informational-bottom     | /blog/whatsapp-uk-small-business-rules-2026  | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0072 (added 2026-09-24)                                                    |
 
 Vertical rows for the wave-1 industry pages (added in S6 after 06): `vet clinic marketing agency`,
 `vet practice marketing`, `cma vet price list website` (→ calendar #8; `uk-compliance`;
@@ -466,7 +468,7 @@ and no `organic` array, never retried with a solved CAPTCHA.
 
 ## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-**Coverage.** 67 `google.co.uk` records (`serp-0001`–`serp-0067`: 64 captures and three block records), 32 Bing
+**Coverage.** 72 `google.co.uk` records (`serp-0001`–`serp-0072`: 69 captures and three block records), 32 Bing
 `cc=GB` captures (`bing-0001`–`bing-0032`; the last two are the trades heads, added in S4) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
 in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
 the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
@@ -476,20 +478,21 @@ sixth (`serp-0057`): the block sits on the address's reputation, not on the pace
 run stopped where it was refused, nothing was retried through a CAPTCHA, and all three blocks are
 records in the log (`serp-0045`, `serp-0051`, `serp-0057`). A fourth window, forty minutes after the
 third block, captured the five page heads without refusal and stopped at five by design; a fifth
-window an hour later did the same for the two fold tests and the three vertical heads. The pages
+window an hour later did the same for the two fold tests and the three vertical heads, and a sixth for
+the profile long-tail, the two remaining landing-page terms and WhatsApp. The pages
 captured on Google are text-back, reviews, the receptionist, email/SMS, landing pages, the heads of
 the profile service, the bundle and local SEO, the booking and reminder fold tests and the three
-vertical heads; the long tail of the profile, bundle, local-SEO and vertical groups and the WhatsApp,
-web-chat and inbox tests are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
+vertical heads; the long tail of the bundle, local-SEO and vertical groups and the web-chat and
+inbox tests are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
 provisional until the Google capture lands.
 
-**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 56 of the 64
+**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 61 of the 69
 successful Google captures** — on every text-back, receptionist and email-agency term — so the
 answer-first opening paragraph in `12` is not optional on this line. (2) **A local pack appeared on two
-terms in 64**: `email marketing services uk` (`serp-0040`), which carried a map and a "More
+terms in 69**: `email marketing services uk` (`serp-0040`), which carried a map and a "More
 businesses" link, and `vet clinic marketing agency` (`serp-0065`), whose map listed a vet-marketing
 agency with a 4.4 rating — local intent exists for the "services" and "agency" wordings on two heads
-and nowhere else in the set; D1's no-profile ruling costs this line two terms, not a category. (3) **Ads sat on 50 of 64** captures, four
+and nowhere else in the set; D1's no-profile ruling costs this line two terms, not a category. (3) **Ads sat on 53 of 69** captures, four
 at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
 and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
 the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
@@ -666,10 +669,23 @@ building service` (`serp-0055`) is **0/8 UK**, A8/B0 Hard, **Medium** on paper (
   Express, Xero's explainer, marketinggeeks.co.uk, milesmarketing.co.uk, bubblegummarketing.com,
   Shopify and Crazy Egg. The row stays as a secondary term on the service page; "funnel" is not the
   page's H1.
-- **Still queued on Google:** `landing page agency uk` (the 403 landed on it, `serp-0057`),
-  `landing page cost uk` and `lead generation page design uk`.
+- **The bare agency head and the UK cost term, captured in the sixth window.** `landing page agency
+uk` (`serp-0070`) is **9/9 UK**, A1/B8 Soft, four ads above and two in the feed (Webflow,
+  muhlertdigital.com, elementarydigital.co.uk, theyardcreative.com, NinjaPromo), an AI Overview and
+  **Medium** (E3 + E4; no PAA): converted.co.uk first, kingkong.co, Sortlist, paramountdigital.co.uk,
+  then a Michael Page listing and a StudySmarter jobs page — the wording without "design" has a
+  jobs reading — with nuttersons.co.uk, lnetdigital.co.uk and primeliondigital.co.uk. The page keeps
+  `landing page design agency uk` as its H1 term (High, § 7) and takes this one as a secondary.
+  `landing page cost uk` (`serp-0071`) is **9/9 UK**, A1/B8 Soft, four ads above and two in the feed
+  (Fiverr, Bark, Wix, lovable.dev, Squarespace) and **Medium** (E3 + E4): a UK Reddit thread first,
+  GoDaddy's UK guide, then UK cost guides — luxbranding.co.uk, bennettsdesign.co.uk, duport.co.uk,
+  redeagle.tech, tiblo.co.uk, awmedia.marketing, devtrios.com. PAA: "What is the average cost of a
+  landing page?", "How much should I charge for a website in the UK?", "Are Google landing pages
+  free?", "How much does a website domain cost in the UK?" — the calendar's item 7 owns the UK
+  figure in pounds and the "free page" question. Still queued: `lead generation page design uk`
+  (§ 6.11 batch 8).
 
-### 6.6 Google Business Profile (`serp-0058`–`serp-0059`; Bing `bing-0018`–`bing-0020`; the cost, agency, suspension and near-me terms queued)
+### 6.6 Google Business Profile (`serp-0058`–`serp-0059`, `serp-0068`–`serp-0069`; Bing `bing-0018`–`bing-0020`; the agency, optimisation, maps and near-me terms queued)
 
 **Google confirms the Bing reading: the bare heads are Google's own.** `google business profile
 management uk` (`serp-0058`) is **4/9 UK**, A3/B6 Soft, no ads above and two in the feed (Fiverr,
@@ -689,8 +705,23 @@ truehost, aaptly). **Reading:** the service page cannot expect the bare "managem
 Google's own properties; it owns the "services / agency / cost" long-tail (`serp-0059` shows an
 agency SERP behind Google, with virens.co.uk the one UK agency on both heads — a `04` Set C
 candidate), the "is it free / how much" FAQ pair, and the industry × profile inserts; the calendar's
-item 5 sits below Google's help pages by design. The cost, agency, suspension and near-me terms are
-§ 6.11 batches 2, 4 and 9.
+item 5 sits below Google's help pages by design.
+
+**The cost and suspension terms confirm the split (sixth window).** `google business profile
+management cost` (`serp-0068`) is 1/9 UK, A1/B8 Soft, no ads, an AI Overview and **Low** (E1):
+business.google.com, a Reddit thread, Google Workspace, ignitingbusiness.com, **virens.co.uk fifth**
+(the one UK agency, with its published ladder — `04` § 4 row 9), support.google.com, a Facebook
+result and two North American agencies. PAA: "Is there a fee for a Google Business Profile?", "Is a
+Google Business Profile worth it?" and two Google Ads cost questions — the profile is free and the
+searcher knows it; the page prices the work, not the listing. `google business profile suspended
+help` (`serp-0069`) is **0/7 UK**, A4/B3 Soft, no ads and **Low** (E1): support.google.com first,
+fourth and sixth, a Reddit thread, BrightLocal's guide, ollyolly.com and Search Engine Journal. PAA:
+"How do I unsuspend my Google Business Profile?", "Why is my Google Business Profile suspended?",
+"How do I contact Google about a suspended account?"; related: "Google Business Profile appeals
+tool", "suspended suspicious activity", "suspended for no reason". The calendar's item 5 is confirmed
+as a post that sits under Google's help pages and answers the appeals-tool question in UK terms; the
+service page carries the suspension-support line only (Virens sells it at "£295+VAT", `04` § 4). The
+agency, optimisation, maps and near-me terms are § 6.11 batches 3 and 8.
 
 ### 6.7 The bundle and the GBP-cost cluster (`serp-0060`–`serp-0061`; Bing `bing-0021`–`bing-0023`; the other bundle and GoHighLevel terms queued)
 
@@ -763,9 +794,17 @@ The decision stays with the brainstorm (D13); the vertical terms (`seo for plumb
   get free text reminders for appointments?", "What is the best free appointment reminder app?" — the
   calendar's item 4 owns the free-and-lawful answer (PECR, the service-message test). **Fold**; Bing
   (`bing-0026`) agreed.
-- **WhatsApp, web chat and the unified inbox** stay Bing-only (`bing-0027`; § 6.4) until § 6.11
-  batches 2, 7 and 8 land: WhatsApp is whatsappbusiness.com first, then UK and global guides (post
-  target, item 11); web chat and inbox were software SERPs on every wording tried. **Fold.**
+- **WhatsApp: post confirmed on Google.** `whatsapp business uk cost` (`serp-0072`) is 2/9 UK,
+  A1/B8 Soft, one ad above and two in the feed (bird.com, Hostinger, yourbusinessnumber.com), an AI
+  Overview and **Medium** (E1 + E4): whatsappbusiness.com first and second, SleekFlow's UK guide,
+  Meta's developer pricing page, Superchat, a LinkedIn post, yourbusinessnumber.com, a flowcart.ai
+  listicle and respond.io — vendors and guides, no service surface. PAA: "Does it cost money to use
+  WhatsApp Business?", "What is the 24 hour rule for WhatsApp Business?", "Is it worth getting WhatsApp
+  Business?", "Is there an UK alternative to WhatsApp?" — the calendar's item 11 takes the 24-hour
+  rule as an H2 and answers the cost in the vendor's own units, dated (the per-message rates change on
+  1 October 2026, `10` § 2). Bing (`bing-0027`) agreed. The text-back page owns nothing
+  WhatsApp-specific. **Web chat and the unified inbox** stay Bing-only (§ 6.4) until § 6.11 batches 6
+  and 7 land: software SERPs on every wording tried. **Fold.**
 
 ### 6.10 Vertical terms (`serp-0065`–`serp-0067`; Bing `bing-0028`–`bing-0032`; the remaining vertical terms queued; rows in S6)
 
@@ -806,40 +845,39 @@ The decision stays with the brainstorm (D13); the vertical terms (`seo for plumb
   than on "marketing agency". The three read in `04` § 5 are plumbersmarketingco.co.uk, bird.co.uk and
   seodons.co.uk. Google captures for both terms are queued (§ 6.11, batches 7 and 8).
 
-### 6.11 Queued — the 43 Google captures still pending
+### 6.11 Queued — the 38 Google captures still pending
 
 **Block history, all on 24 September 2026, all from the same address.** HTTP 429 after 45 captures at
 4–8 s; HTTP 403 after five more at 12–18 s forty minutes later; HTTP 403 after five more at 25–30 s
 from a fresh browser context two and a half hours after that (`serp-0045`, `serp-0051`,
 `serp-0057`); then, forty minutes after the third block, **five captures with no refusal**, stopped
-at five by design (`serp-0058`–`serp-0062`), and an hour after that five more (`serp-0063`–`serp-0067`). The pattern is a reputation-based allowance of about
+at five by design (`serp-0058`–`serp-0062`), and an hour after that five more (`serp-0063`–`serp-0067`), and an hour after that another five
+(`serp-0068`–`serp-0072`). The pattern is a reputation-based allowance of about
 five requests per window from this address, so the queue runs five to a batch, page-head terms first,
 one window an hour or more apart; the tail groups stay Bing-only until captured:
 
-1. google business profile management cost · google business profile suspended help · landing page
-   agency uk · landing page cost uk · whatsapp business uk cost
-2. small business marketing packages · local business marketing services · gohighlevel sms pricing
+1. small business marketing packages · local business marketing services · gohighlevel sms pricing
    uk · gohighlevel agency uk · local seo agency uk
-3. google business profile optimisation service · google business profile management agency · google
+2. google business profile optimisation service · google business profile management agency · google
    maps listing management uk · gbp management service uk · how to reinstate google business account
-4. digital marketing packages for small business · gohighlevel uk number · gohighlevel consultant uk ·
+3. digital marketing packages for small business · gohighlevel uk number · gohighlevel consultant uk ·
    gohighlevel sub account transfer · all in one marketing platform small business uk
-5. local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
+4. local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
    ranking service uk · local seo services for plumbers
-6. how much does an online booking system cost · sms appointment reminder service · automated
+5. how much does an online booking system cost · sms appointment reminder service · automated
    appointment reminder service uk · whatsapp business api pricing uk · web chat for small business uk
-7. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
+6. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
    price list website · veterinary services market investigation order 2026
-8. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
+7. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
    receptionist near me · google business profile management near me (near-me terms are evidence
    only, D1)
-9. email marketing agency near me · best missed call text back software uk · best email marketing
+8. email marketing agency near me · best missed call text back software uk · best email marketing
    agency uk
 
-> ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): batch 1 (the profile
-> long-tail, the two remaining landing-page terms and WhatsApp) in the next window; then accept
-> Bing-only, provisional tiers for batches 2–9 unless a later session has capacity; never through a
-> CAPTCHA. The
+> ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): every page head and every fold test
+> is now on Google; the eight remaining batches are long-tail and evidence rows. Take them one
+> window an hour while a session is open, and accept Bing-only, provisional tiers for whatever is
+> left when it closes; never through a CAPTCHA. The
 > founder decides whether the tail groups are worth further windows.
 
 ## 7. Demand tiers
@@ -923,9 +961,14 @@ the day real volumes arrive.
 | vet clinic marketing agency                     | serp-0065 | 4/10  | 0/1 · local pack          | A1/B9 Soft   | E1 E4          | Medium       | connectedvet.co.uk, vetsdigital.com, rcomms.co.uk                  |
 | ai receptionist for garages                     | serp-0066 | 7/8   | 0/1 · AIO                 | A5/B3 Soft   | E1 E3 E4 E5    | **High**     | electronicreceptionist.co.uk, sesar.co.uk, lineshift.ai            |
 | mot reminder text service                       | serp-0067 | 7/9   | 0/0 · AIO                 | A6/B3 Hard   | E3             | Low          | gov.uk, reminders.mot-testing.service.gov.uk, mottext.co.uk        |
+| google business profile management cost         | serp-0068 | 1/9   | 0/0 · AIO                 | A1/B8 Soft   | E1             | Low          | business.google.com, reddit.com, workspace.google.com              |
+| google business profile suspended help          | serp-0069 | 0/7   | 0/0 · AIO                 | A4/B3 Soft   | E1             | Low          | support.google.com, reddit.com, brightlocal.com                    |
+| landing page agency uk                          | serp-0070 | 9/9   | 4/2 · AIO                 | A1/B8 Soft   | E3 E4          | Medium       | converted.co.uk, kingkong.co, sortlist.co.uk                       |
+| landing page cost uk                            | serp-0071 | 9/9   | 4/2 · AIO                 | A1/B8 Soft   | E3 E4          | Medium       | reddit.com, godaddy.com, luxbranding.co.uk                         |
+| whatsapp business uk cost                       | serp-0072 | 2/9   | 1/2 · AIO                 | A1/B8 Soft   | E1 E4          | Medium       | whatsappbusiness.com, whatsappbusiness.com, sleekflow.io           |
 
-**Reading across the pages.** 19 terms are High, 31 Medium, 14 Low, none Constructed among
-the 64 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
+**Reading across the pages.** 19 terms are High, 34 Medium, 16 Low, none Constructed among
+the 69 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
 the email-agency heads are High on Soft SERPs, which is the combination a zero-authority `.co.uk` can
 act on first; the reviews page has no High service head and earns its High only on the compliance
 long-tail, which sets its cluster order. Terms not yet captured on Google carry no tier. E5 is set by
@@ -965,14 +1008,16 @@ marketing agency cost`, `is sms marketing legal uk`, `how much does it cost to s
 `database reactivation service`, `digital marketing packages for small business`, `landing page cost
 uk`, `local seo packages uk`, `whatsapp business api pricing uk`, `vet clinic marketing agency`, `ai
 receptionist for garages`, `mot reminder text service`, `ai receptionist cost` (bare; post) and `ai
-receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 85
+receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 87
 rows after the afternoon captures added `how much does it cost to design a landing page` (PAA on
 `serp-0052` and `serp-0053`; to the post), `is google business profile manager free` (PAA on
 `serp-0058` and `serp-0059`; to the profile page's FAQ), `how much does a marketing package cost`
 (PAA on `serp-0060`; the bundle's pricing FAQ), `how much does gohighlevel cost a month` (PAA on
 `serp-0061`; to the post) `how much should i pay for local seo` (PAA on `serp-0062`; to the `/services/seo` packages FAQ)
-and `where can i get free text reminders for appointments` (PAA on `serp-0064`; to the calendar's
-item 4); the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
+`where can i get free text reminders for appointments` (PAA on `serp-0064`; to the calendar's
+item 4), `how do i unsuspend my google business profile` (PAA on `serp-0069`; to the calendar's
+item 5) and `what is the 24 hour rule for whatsapp business` (PAA on `serp-0072`; to the calendar's
+item 11); the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
 target is reached with the remaining captures.
 
 ## 9. PAA → FAQ candidates (pricing first; the SERP term in brackets)
@@ -1012,9 +1057,11 @@ target is reached with the remaining captures.
   profile is free; what costs is the work) · Is Google Business Profile Manager free? (`serp-0058`,
   `-0059`) · What is Google Business Profile management? (`serp-0059`) · How do I request to manage a
   Google Business Profile? (`serp-0059` — the manager-access route, and why WebAsk never owns the
-  listing) · How do I check who owns a Google Business Profile? (`serp-0058`) · What happens if the
-  profile is suspended? (calendar item 5; `bing-0020`) · Does WebAsk need a UK office to manage my
-  profile? (constructed; D1).
+  listing) · How do I check who owns a Google Business Profile? (`serp-0058`) · Is there a fee for a
+  Google Business Profile? (`serp-0068` — no; the work is what costs) · What happens if the profile
+  is suspended? (`serp-0069`; calendar item 5 answers "How do I unsuspend…", "Why is my … suspended?"
+  and "How do I contact Google about a suspended account?") · Does WebAsk need a UK office to manage
+  my profile? (constructed; D1).
 - **`local-business-plans`:** How much does a marketing package cost? (`serp-0060`) · How much does
   GoHighLevel cost a month? (`serp-0061` — answered without a converted figure; the post carries the
   detail) · Which marketing is best for small businesses? (`serp-0060`) · Is there a cheaper
@@ -1024,6 +1071,13 @@ target is reached with the remaining captures.
 - **`/services/seo` packages section (if D13 opens it):** How much should I pay for local SEO?
   (`serp-0062`) · How much does SEO typically cost in the UK? (`serp-0062`) · Is SEO still worth it
   in 2026? (`serp-0062`).
+- **Calendar item 11 (WhatsApp):** Does it cost money to use WhatsApp Business? (`serp-0072`) · What
+  is the 24 hour rule for WhatsApp Business? (`serp-0072`) · Is it worth getting WhatsApp Business?
+  (`serp-0072`) · Is there a UK alternative to WhatsApp? (`serp-0072` — answered without a product
+  pick).
+- **Calendar item 7 (landing page or website), additions:** What is the average cost of a landing
+  page? (`serp-0071`) · How much should I charge for a website in the UK? (`serp-0071` — the buyer's
+  mirror question) · Are Google landing pages free? (`serp-0071`).
 - **Calendar item 4 (reminders) and the booking fold:** Where can I get free text reminders for
   appointments? (`serp-0064`) · What is the best free appointment reminder app? (`serp-0064`) · What
   is the cheapest online booking system? (`serp-0063`) · Can I make my own booking system?
