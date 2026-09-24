@@ -836,9 +836,10 @@ one window an hour or more apart; the tail groups stay Bing-only until captured:
 9. email marketing agency near me · best missed call text back software uk · best email marketing
    agency uk
 
-> ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): batches 1 and 2 (the fold
-> tests, the vertical heads and the profile long-tail) in the next two windows; then accept Bing-only,
-> provisional tiers for batches 3–10 unless a later session has capacity; never through a CAPTCHA. The
+> ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): batch 1 (the profile
+> long-tail, the two remaining landing-page terms and WhatsApp) in the next window; then accept
+> Bing-only, provisional tiers for batches 2–9 unless a later session has capacity; never through a
+> CAPTCHA. The
 > founder decides whether the tail groups are worth further windows.
 
 ## 7. Demand tiers
