@@ -41,6 +41,28 @@ you|managed|setup` → service page. Questions → blog/FAQ. **Near-me** terms a
    the new slugs are heads.
 8. **PAA → FAQs:** normalise, assign to a page, 6–8 per page, pricing question first, cite the SERP term.
 
+> **How the capture was actually run (S3, 24 September 2026) — the departures from the protocol
+> above, all recorded in `serp-log.json` `meta.note`.** (a) Google's result anchors are redirect stubs
+> (`/goto?url=…`) that do not carry the destination, so each organic result's URL and domain are read
+> from its visible `cite` line; a result with no cite (Reddit, YouTube, LinkedIn cards) is typed from
+> its label. (b) Ads are counted as distinct display-URL lines inside the top and bottom ad containers;
+> the advertisers rotate between captures of the same term, so the count is "as served". (c) PAA
+> questions are read from the `data-q` attributes; "revealed" questions were not expanded. (d) The
+> related-searches block was empty on every Google capture of this session. (e) A result is `uk: true`
+> when its domain ends in `.uk` or its title or snippet names the UK, the pound or the NHS — a rule, so
+> a reader can recompute it. (f) The 1280×900 viewport was set once; consent was rejected once. (g) The
+> suggest endpoint was queried by `curl` for 154 heads (the App. G heads plus every capture term) and
+> entered as `sug-*` records; 39 returned empty lists. (h) Google served an HTTP 429 "unusual traffic"
+> interstitial on the 45th capture; a probe forty minutes later was clear, five more terms were captured
+> at 12–18 s, and the 51st request returned HTTP 403 (a plain error page, which the block check did not
+> recognise, so six further empty responses were discarded rather than recorded); the session stopped
+> there and the remaining 56 terms are listed in § 6.11. (i) Bing `cc=GB&setlang=en-GB` was captured for 30
+> heads with the same cite-based method; Bing's ads and "People also ask" selectors returned little,
+> so Bing records carry organic, related and answer-box fields only. (j) Type classification is a
+> domain map plus a title rule (a "best / top N / compared / guide" title is `listicle` whoever
+> publishes it); the map lives with the scratch tools and every result's type is stored in the log so
+> the labels can be disputed row by row.
+
 ## 2. Seeds per service (App. E.2 — starting points, not findings)
 
 - text-back: missed call text back · missed call text message service · auto reply text missed call ·
@@ -424,21 +446,396 @@ proxy is § 5.2 step 6 (A = national SaaS + high-authority listicles + regulator
 UGC, thin agency pages); the "unusual traffic" stop is recorded as a capture with `"notes": "blocked"`
 and no `organic` array, never retried with a solved CAPTCHA.
 
-## 6. UK SERP summaries per service
+## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-_S3._
+**Coverage.** 51 `google.co.uk` records (`serp-0001`–`serp-0051`: 49 captures and two block records), 30 Bing
+`cc=GB` captures (`bing-0001`–`bing-0030`) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
+in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
+the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
+12–18 s, and the 51st request returned HTTP 403. Per § 1 step 3 the capture stopped there, nothing was
+retried through a CAPTCHA, and both blocks are records in the log (`serp-0045`, `serp-0051`). The
+pages captured on Google are text-back, reviews, the receptionist, email/SMS and the landing-page
+head; the remaining landing-page terms, the profile service, the bundle, local SEO, the fold tests and
+the vertical terms are **Bing-only** in this set and are re-run on Google at the start of the next session
+(README "Next"). Every verdict below names its record; a Bing-only verdict is marked as such and is
+provisional until the Google capture lands.
+
+**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 42 of the 49
+successful Google captures** — on every text-back, receptionist and email-agency term — so the
+answer-first opening paragraph in `12` is not optional on this line. (2) **No local pack appeared on any
+service term** except `email marketing services uk` (`serp-0040`), which carried a map and a "More
+businesses" link: local intent exists for the "services" wording and nowhere else in the set — D1's
+no-profile ruling costs this line one term, not a category. (3) **Ads sat on 28 of 44** captures, four
+at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
+and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
+the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
+this term".
+
+### 6.1 Missed-call text-back (`serp-0001`–`serp-0012`; `bing-0001`–`bing-0002`)
+
+- **The UK service SERP exists and is small-agency-shaped.** `missed call text back uk` is 9/9 UK and
+  `missed call text back service uk` 8/9; both are **High** (E1 + E3 + E4, plus E5). The top ten are
+  UK GoHighLevel resellers and micro-products — call2sms.co.uk, digitaltoolbag.co.uk, mctb.1nexus.co.uk,
+  downtoearthai.co.uk, contactfusion.co.uk, smbbooster.co.uk, notluck.co.uk, marketing-4-results.co.uk,
+  callcatchers.co.uk — with `help.gohighlevel.com` ranking first on the bare head (`serp-0010`,
+  `serp-0004`, `serp-0005`). Difficulty proxy **Soft** (A2/B7, A3/B6). Bing (`bing-0001`) adds a second
+  tier of UK point solutions with prices on the title: MissedCallFix "From £49/mo", Call2SMS "From
+  £37/mo", CallBack (tradespeople), dAIsy, AlwaysOn Booking, Call Catchers, textthecaller — the
+  incumbent price point for `04` Set B sits in the tens of pounds a month and is printed in the SERP.
+- **Software wording is Hard and belongs to a post.** `missed call text back software` (`serp-0005`)
+  is A7/B0 with upfirst.ai, helpgenie.ai, enzak.com and leadsorbit.ai — the § 1 step 4 rule holds;
+  row 5 stays on the rules post.
+- **The consumer question dominates the question head.** `why do i get a text message after a missed
+call` (`serp-0007`) is r/AskUK, the EE, iD Mobile and Three community forums and a scam-warning
+  page (`choice.community`), with "Turn off missed call text message iPhone" in the related list. The
+  post's H2 "Why do I get a text message after a missed call?" must answer the consumer first — the
+  network's own missed-call alert, then the business text-back — or it will not hold the query.
+- **The legal question has no UK explainer ranking.** `is missed call text back legal uk` (`serp-0006`)
+  is A0/B9: two reseller pages, a JustAnswer thread, a r/gohighlevel thread and a US TCPA thread. The
+  PAA on the head terms asks "Can I automatically text back a missed call?" and "Can GoHighLevel text
+  back missed calls?" — the calendar's item 1 is the only PECR-first answer in the set (information
+  gain confirmed for `12` § M.1).
+- **`for plumbers`** (`serp-0009`) is US-weighted (tagmktg, leadtruffle, autogrowpro, peppersend) with
+  praxum.co.uk the one UK page: E1 + E4, Medium, and the trades page owns it as planned.
+- **Ads:** Moneypenny, Outreach, Aircall, Ringover, Telness, Telavox, Cloudtalk — call-answering and
+  telephony brands, none selling text-back itself.
+
+### 6.2 Review management (`serp-0013`–`serp-0026`; `bing-0003`–`bing-0004`)
+
+- **"Google review" wording is right; bare "review management" is not.** `google review management
+services uk` (`serp-0013`) is 7/8 UK, Soft (A2/B5), with UK agencies (artemis.marketing,
+  localexposure.co.uk, reviewmanagement.org.uk, gleavemedia.co.uk, smartreplay.uk) and — at rank 7 —
+  londonlovesbusiness.com's "Where to buy Google reviews in the UK: Best sites listed". `review
+management service uk` (`serp-0016`) is 9/9 UK. Both are **Medium** (E3 + E4; E5 on the second): no
+  E1, because the suggest endpoint returns no UK list for the reviews heads (`sug-0019`,
+  `sug-0022`). The head-noun drift the autocomplete predicted (jobs, "London Weight Management
+  review") did not reach the top ten, but capterra.co.uk and a "7 Best Reputation Management Agencies
+  UK" listicle did.
+- **The non-UK heads are SaaS SERPs.** `google review management company` / `agency` / `google review
+request automation` (`serp-0014`, `-0015`, `-0017`) are 0–1/8 UK and **Hard** (A6–A7): wiremo,
+  localo, shapo, famewall, gmbapi, sproutsocial, reviewflowz, n8n. They are software intents wearing
+  agency words; the page owns the two UK-suffixed heads and treats these as comparison-post
+  vocabulary at most.
+- **The compliance long-tail is where the information gain is largest.** `incentivised reviews uk`
+  (`serp-0022`) is **High** (E1 + E3 + E4) and ranks gov.uk, the CMA208 PDF, asa.org.uk, Trustpilot's
+  help page and three law firms — no agency page at all; `review gating uk` (`serp-0021`) ranks
+  BrightLocal, HelpHound, Partoo, a Reddit thread and gov.uk's short guide at rank 8; `how to ask for
+google reviews legally uk` (`serp-0020`) ranks gov.uk second and a "legal way (UK and US)" agency
+  post. The PAA set across these — "Is review gating illegal?", "Are you allowed to solicit Google
+  reviews?", "Can I pay for 5-star reviews on Google?", "Does Google have a review gating policy?" — is
+  the calendar's item 2 almost verbatim (§ 9).
+- **Pricing questions surface on the service heads:** "How much does online reputation management
+  cost?" (`serp-0016`, `serp-0025`), "How much does Trustpilot cost per month?" (`serp-0016`) —
+  the page's pricing-first FAQ has a captured query behind it.
+- **Dental** (`serp-0023`) is US-dominated (inmoment, doctible, practicemojo, hellopearl,
+  convertlens) with two UK agencies at ranks 3 and 6: Hard, Low tier — it belongs to the dental
+  industry page as an insert, never to the service page's head.
+- **Bing** (`bing-0003`, `bing-0004`) surfaces UK point products absent from Google's top ten —
+  reevoos.co.uk, googlereviewmanagement.uk, revupal.co.uk, everyreply.co.uk, sanmo.uk,
+  reviewspro.co.uk, reputationdetect.co.uk — which `04` Set B fetches.
+- **Ads:** tapandrate.co.uk (on four of the fourteen), removify, pinmeto, mediawatcher.ai,
+  thereviewoffice.co.uk, mention-me — a UK review-tool advertiser exists on the service terms.
+
+### 6.3 AI receptionist (`serp-0027`–`serp-0038`; `bing-0005`–`bing-0007`)
+
+- **The strongest demand signal in the set, and the hardest SERP.** Eight of the twelve terms are
+  **High** (E1 + E3 + E4 + E5): `ai receptionist uk`, `ai phone receptionist uk`, `ai voice receptionist
+uk`, `ai receptionist for small business uk`, `ai call answering service uk`, `ai phone answering
+service uk`, `free ai receptionist uk`, `ai dental receptionist uk`. UK-specific runs 6–9 of 9 on
+  every term, three or four ads sit above the fold on all twelve, and eleven carry an AI Overview.
+- **Who ranks:** hosting brands (fasthosts.co.uk first on eight terms, ionos.co.uk second on six),
+  BT Business, RingCentral, Moneypenny and answer.co.uk, plus a layer of UK point products with
+  prices on their titles — team-connect.co.uk "From £19.99/mo", callagents-ai.co.uk "from £149/month"
+  (Bing), aiphonecalls.co.uk (ARROW), thevoipshop.co.uk, norango.ai, aianswerphone.co.uk,
+  perfectreception.co.uk, sophiie.ai, rednea.ai — and a listicle layer (aiworkforce.co.uk,
+  bookedsolid.health, marketerm8.com, heyjodie.com, lotusbrainsstudio.com, cxassist.io). Difficulty
+  proxy **Hard** on eleven of twelve (A7–A9). The re-point of the six existing `ai receptionist` rows
+  from `/services/ai-integration` to `/services/ai-receptionist` (§ 8) is confirmed by the shape: this
+  is a product-and-service SERP, not a bespoke-build one.
+- **Cost is the recurring PAA:** "How much does an AI receptionist cost?" / "How much should an AI
+  receptionist cost?" appears on eight captures; "Is there a free AI receptionist?" on four; "Are AI
+  receptionists worth it?" on five. `ai receptionist cost uk` (`serp-0031`) already has five UK cost
+  guides in its top ten (aiphonecalls, aiworkforce, handonweb, fasthosts, dansonmarketing on Bing):
+  the calendar's item 3 competes on the **rules** half, where nothing ranks — `is an ai receptionist
+legal uk` (`serp-0034`) returns pages about AI receptionists _for law firms_ and one Reddit thread,
+  and its PAA asks "What are the legal restrictions on AI chatbots in the UK?" with no page answering
+  it.
+- **Dental is a served UK niche:** roboreception.co.uk, viveoai.com, dentaai.com, meetlinda.ai,
+  intavia.ai, a CQC-ready page and two news items (dentistry.co.uk, nature.com) — the dental industry
+  page competes against products, which is why clinics stay on the bespoke `ai-integration` build and
+  the industry page's insert links there (`02` § 2.1).
+- **Ads:** moneypenny.com on ten of twelve, cloudtalk.io, talkdesk.com, zendesk.co.uk, emea.newo.ai,
+  callpenelope.ai, justcall.io — the category is bought; nobody bids on "legal".
+
+### 6.4 Email and SMS marketing (`serp-0039`–`serp-0044`, `serp-0046`–`serp-0049`; `bing-0008`–`bing-0014`)
+
+- **The agency heads are High and Soft.** `email marketing agency uk` (`serp-0039`), `email marketing
+services uk` (`-0040`), `email marketing companies uk` (`-0041`) and `email marketing agency for
+small business` (`-0042`) are 7–9/9 UK, **High** (E1 + E3 + E4), A3–A5. The organic mix is UK
+  agencies (email-postman.co.uk, zestydigital.co.uk, bluefrontier.co.uk, kwmarketinguk.co.uk, ceek,
+  enchant, multiwebmarketing "From £99.50pw", thegoodmarketer, growth-by-design) and agency
+  directories (Semrush Agencies, Clutch, DAN, f6s). On Bing the same heads are **directory-shaped** —
+  GoodFirms, DesignRush, Sortlist, Clutch, DAN, Agency Index, ITProfiles, SuperbCompanies fill eight
+  of ten (`bing-0008`, `bing-0014`) — which `04` reads as the citation tier for this page.
+- **The one local pack in the set** is on `email marketing services uk` (`serp-0040`).
+- **SMS wording is platform territory.** `sms marketing services uk` (`serp-0043`) is 9/9 UK but
+  **Hard** (A9/B0): VoodooSMS, ClickSend, TextAnywhere, Text Marketer, FireText, PureSMS, Klaviyo —
+  bulk-SMS platforms, not agencies; `sms marketing cost` (`-0044`) is Text Marketer's price list,
+  Shopify, Mailchimp and cost guides. The page owns no SMS head; its SMS-cost FAQ answers the PAA
+  ("How much does it cost to do SMS marketing?", "Is SMS marketing legal?") and the GBP-cost post
+  carries the figures.
+- **Database reactivation is UK agency jargon with UK supply (Bing-only).** `database reactivation
+uk` (`bing-0011`) returns ampliflow.ai, pbaventures.co.uk, fixerhq.co.uk, oncueai.net, aiwills.co.uk,
+  elwynnai.com and databasereactivation.co.uk — a UK GHL-agency vocabulary confirmed; the bare
+  `database reactivation campaign` (`bing-0010`) is US (cometly, stakd, levityleads, closebot).
+  Google capture pending.
+- **`customer follow up automation` is software intent** (`bing-0012`: Zapier ×2, monday.com,
+  HubSpot, Zendesk, Sobot) — row 37 is dropped (§ 8).
+- **PAA worth a FAQ:** "How much does an email marketing agency cost?" (`serp-0039`, `-0042`), "How
+  much does it cost to send 1000 emails?" (`-0042`), "Is email marketing still worth it in 2026?"
+  (`-0039`).
+
+### 6.5 Landing pages (`serp-0050`; Bing `bing-0015`–`bing-0017`; the agency and cost terms pending on Google)
+
+On Google, `landing page design uk` (`serp-0050`) is 7/9 UK, **Soft** (A2/B7) and **Medium** (E3 +
+E4; the suggest list for the term starts at "… agency uk", so no E1): mylandingpage.co.uk "from £750",
+converted.co.uk, Sortlist, an Adobe examples page, an IONOS guide, ellicode.co.uk, a UK cost guide
+(bennettsdesign.co.uk) and webpro-it.co.uk, with landingpage-designs.co.uk and Fiverr advertising. On
+Bing, `landing page design uk` and `landing page design agency uk` are UK agency SERPs with prices in the
+titles — converted.co.uk ("UK's #1 Conversion…"), astrofy.uk "from £900", luxbranding.co.uk "From
+£199", iines.co.uk "from £149", landingpage-designs.co.uk, launchdigital.agency, pricemediagroup.co.uk,
+berkstechnologies.co.uk — 6/7 and 6/10 UK, with Sortlist as the directory. `landing page design cost`
+is global cost guides (Apexure, Landingi, involve.me) plus three UK ones (luxbranding, matmad.co.uk,
+bennettsdesign.co.uk), and Bing's own answer box gives a dollar range: the calendar's item 7 competes
+on the UK figure and the builder-versus-code trade-off. Page confirmed with a Medium head; the cost question goes to the post; the agency-suffix and
+cost terms wait for Google.
+
+### 6.6 Google Business Profile (Bing-only: `bing-0018`–`bing-0020`; Google pending)
+
+`google business profile management uk` and `… management services` are **Google-owned SERPs**:
+accounts.google.com, business.google.com and support.google.com take the top three on both, then
+profiletree.com's UK guide, brightsprout.co.uk, and agencies (digivisi.co.uk, virens.co.uk, whito.co.uk,
+gbpmanagementservice.com, gmbgorilla.com). `google business profile suspended help` is Google's own
+help pages first and second, then reinstatement explainers (ilocalhero, reviewtactic, truehost, aaptly).
+Provisional reading: the service page cannot expect the bare "management uk" head against Google's
+own properties; it owns the "services / agency / cost" long-tail and the industry × profile inserts,
+and the calendar's item 5 sits below Google's help pages by design. Confirm on Google before `12`
+§ M.6 is finalised.
+
+### 6.7 The bundle and the GBP-cost cluster (Bing-only: `bing-0021`–`bing-0023`; Google pending)
+
+- `marketing packages for small business uk` is **10/10 UK** and agency-shaped: dandymarketing.co.uk,
+  thegoodmarketer.co.uk, punchgraft.co.uk, thebusinesstea.co.uk, hook-digital.co.uk,
+  whitecommunications.co.uk, shello.co.uk, thesmallbizexpert.co.uk, mbbusinessanddesign.co.uk — every
+  one a packages page with tiers. The bundle page's shape (three named tiers, inclusions, a price) is
+  what ranks here; the hosted-or-owned section and the exit clause are the information gain.
+- `gohighlevel pricing uk` ranks gohighlevel.com first, then **five UK-pound explainers** —
+  crmreviews.co.uk, automationclarityhub.com ("Real Costs in GBP and USD"), softomatesolutions.com,
+  automatetogrow.com, blogrator.com ("Setup from £185, Sub-Account from…"), bestgohighlevelagency.com
+  ("Subscription, Usage, VAT") — so the competitor gap the plan assumed for the calendar's item 12 is
+  smaller than drafted: those pages convert at a point rate, which is exactly the practice the post
+  refuses, and that refusal has to be the post's argument, not a footnote. `gohighlevel sms pricing
+uk` ranks two vendor help articles, three cost explainers and a "SMS Cost Calculator"; Bing's answer
+  box states a converted per-segment figure in pence. Both re-points in `05` § 3 (the row to the post,
+  the bundle as support) are consistent with the shape; § 8 records them.
+
+### 6.8 Local SEO (Bing-only: `bing-0024`; Google pending)
+
+`local seo packages uk` is 7/10 UK: listicles (topdevelopers, overrank.ai, clickslice, levelupleads,
+appearonline), a packages page (creativeideaz.co.uk) and two pricing explainers (profiletree.com,
+mr-marketing.co.uk). E1 holds (the term is first in its own suggest list, `sug-0122`). Provisional: a
+"packages" section on the existing `/services/seo` page, not a new page, unless the Google capture
+shows agencies with a GHL-style productised tier ranking (Q17).
+
+### 6.9 The fold-or-page tests (Bing-only: `bing-0025`–`bing-0027`; Google pending)
+
+- **Booking:** `online booking system small business uk` returned two organic results and an answer
+  box naming Booksy Biz, Setmore and Square Appointments — product intent, no service surface. **Fold
+  confirmed** (Answer tier and text-back), with the cost question ("how much does an online booking
+  system cost", `sug-0134`) as a post candidate only.
+- **Reminders:** `appointment reminder service uk` is a product SERP (appointmentreminder.com,
+  GReminders, Square, remindlo.co.uk, ClickSend, EasyWeek, turnuptext.co.uk). Service-shaped only as
+  SaaS. **Fold confirmed**; the calendar's item 4 owns the PECR question.
+- **WhatsApp:** `whatsapp business uk cost` is whatsappbusiness.com first, then UK and global guides
+  (whito.co.uk, sleekflow, textglobal.co.uk, go4whatsup, buildflowdigital.co.uk). Post target confirmed
+  (item 11); the text-back page owns nothing WhatsApp-specific.
+- **Inbox / web chat / follow-up automation:** software SERPs on every wording tried (§ 6.4). **Fold.**
+
+### 6.10 Vertical terms (Bing-only: `bing-0028`–`bing-0030`; Google pending; rows in S6)
+
+- `vet clinic marketing agency`: 5/10 UK — vetgrowth.co.uk, vetboost.co.uk, wiredmedia.co.uk,
+  impact-digital.co.uk, connectedvet.co.uk — plus US specialists (growdvm, vetmarketingagency,
+  intouchvet, vetcelerator). UK vet-marketing agencies exist and are `04` Set C candidates; none of the
+  five pages read is about the Order.
+- `ai receptionist for garages`: **8/10 UK and already a micro-niche** — electronicreceptionist.co.uk,
+  garagereceptionist.co.uk (twice), receptionmate.co.uk, frontmate.co.uk, garagecallai.com,
+  sesar.co.uk, bayassist.co.uk. The garages page must not lead on the receptionist; its wedge is the
+  reminder, the Code and the forecourt rules (App. AN as drafted).
+- `mot reminder text service`: **gov.uk's free MOT reminder is first**, with reminders.mot-testing
+  .service.gov.uk twice more in the top ten, then mottext.co.uk, motmanager.co.uk and remindlo.co.uk.
+  The garages draft's "the government offers a free one" line is the right first sentence; a paid
+  reminder is sold as service-plus-MOT, never as the MOT reminder alone.
+
+### 6.11 Queued for the next session — the Google captures the blocks prevented
+
+Re-run at 15 s pacing or slower from a fresh browser context, in this order, with a checkpoint after
+each group: **landing pages** — landing page design agency uk · landing page design cost · landing page
+or website small business · landing page building service · sales funnel design uk · landing page
+agency uk · lead generation page design uk · landing page cost uk; **profile** — google business
+profile management uk · google business profile management services · google business profile
+optimisation service · google business profile management agency · google business profile management
+cost · google business profile suspended help · how to reinstate google business account · google maps
+listing management uk · gbp management service uk; **bundle and GBP-cost cluster** — marketing packages
+for small business uk · small business marketing packages · local business marketing services · digital
+marketing packages for small business · gohighlevel sms pricing uk · gohighlevel uk number ·
+gohighlevel consultant uk · gohighlevel sub account transfer · gohighlevel pricing uk · all in one
+marketing platform small business uk · gohighlevel agency uk; **local SEO** — local seo packages uk ·
+local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
+ranking service uk · local seo agency uk · local seo services for plumbers; **fold tests** — online
+booking system small business uk · how much does an online booking system cost · appointment reminder
+service uk · sms appointment reminder service · automated appointment reminder service uk · whatsapp
+business uk cost · whatsapp business api pricing uk · web chat for small business uk · live chat for
+small business uk · unified inbox small business; **verticals** — vet clinic marketing agency · vet
+practice marketing uk · cma vet price list website · veterinary services market investigation order
+2026 · ai receptionist for garages · mot reminder text service · gym membership marketing uk;
+**near-me (evidence only, D1)** — missed call text back near me · ai receptionist near me · google
+business profile management near me · email marketing agency near me; **comparison shapes** — best
+missed call text back software uk · best email marketing agency uk. Fifty-six terms; with the 49
+captured, the session total lands inside the protocol's 120–160.
 
 ## 7. Demand tiers
 
-_S3 — rubric in § 1 step 5; the reusable caveat paragraph is written with the first tier._
+**The caveat that travels with every tier.** A tier here is a reading of surfaces — an autocomplete
+ordinal, a question box, the share of UK domains in ten results, the presence of an advertiser and of
+a UK product — captured on one day from one machine with personalisation off. It is not a volume, it
+cannot be compared with a volume, and it cannot sequence work by itself: `msv` and `kd` stay null until
+a UK-locale export exists, and the difficulty label is a SERP-shape proxy (§ 1 step 6) whose A/B
+counts are printed so a reader can disagree with the label. Two terms with the same tier can differ by
+an order of magnitude in searches. The tiers are used for one decision only — which candidate rows
+survive into `keywords-draft.json` and which pages carry a head term — and that decision is re-run on
+the day real volumes arrive.
+
+| Term                                            | Record    | UK/10 | Ads top/bottom · features | Proxy        | Evidence       | Tier         | Ranks 1–3                                                       |
+| ----------------------------------------------- | --------- | ----- | ------------------------- | ------------ | -------------- | ------------ | --------------------------------------------------------------- |
+| missed call text back uk                        | serp-0001 | 9/9   | 0/2 · AIO                 | A2/B7 Soft   | E1 E3 E4 E5    | **High**     | call2sms.co.uk, digitaltoolbag.co.uk, mctb.1nexus.co.uk         |
+| missed call text back service uk                | serp-0002 | 8/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E3 E4 E5    | **High**     | marketing-4-results.co.uk, digitaltoolbag.co.uk, 1nexus         |
+| missed call text back service                   | serp-0003 | 3/8   | 0/1 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, everycatch.com            |
+| text back missed calls                          | serp-0004 | 4/8   | 4/2 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com            |
+| missed call text back software                  | serp-0005 | 2/8   | 0/0 · AIO                 | A7/B0 Hard   | E1 E5          | Medium       | help.gohighlevel.com, upfirst.ai, call2sms.co.uk                |
+| is missed call text back legal uk               | serp-0006 | 7/9   | 0/0 · AIO                 | A0/B9 Soft   | E3             | Low          | digitaltoolbag.co.uk, smbbooster.co.uk, justanswer.co.uk        |
+| why do i get a text message after a missed call | serp-0007 | 4/9   | 0/0 · AIO                 | A2/B7 Soft   | E1 E2          | Medium       | reddit.com, community.ee.co.uk, community.idmobile.co.uk        |
+| auto reply text missed call                     | serp-0008 | 1/7   | 0/0 · AIO                 | A5/B2 Soft   | E5             | Low          | reddit.com, contactfusion.co.uk, support.callrail.com           |
+| missed call text back for plumbers              | serp-0009 | 1/8   | 4/2 · AIO                 | A1/B6 Soft   | E1 E4          | Medium       | reddit.com, tagmktg.com, leadtruffle.co                         |
+| missed call text back                           | serp-0010 | 4/8   | 0/0 · AIO                 | A4/B3 Soft   | E1 E2 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com            |
+| missed call sms service uk                      | serp-0011 | 9/9   | 4/0 · AIO                 | A6/B3 Hard   | E3 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, callcatchers.co.uk        |
+| missed call text message service                | serp-0012 | 4/8   | 0/0 · AIO                 | A3/B5 Soft   | E5             | Low          | community.ee.co.uk, reddit.com, digitaltoolbag.co.uk            |
+| google review management services uk            | serp-0013 | 7/8   | 4/0 · AIO                 | A2/B5 Soft   | E3 E4          | Medium       | artemis.marketing, localexposure.co.uk, reviewmanagement.org.uk |
+| google review management company                | serp-0014 | 0/8   | 4/0 · AIO                 | A6/B1 Hard   | E1 E4          | Medium       | artemis.marketing, wiremo.co, thecmo.com                        |
+| google review management agency                 | serp-0015 | 1/8   | 0/0 · AIO                 | A6/B2 Hard   | E1             | Low          | artemis.marketing, gmbapi.com, sproutsocial.com                 |
+| review management service uk                    | serp-0016 | 9/9   | 4/0 · AIO                 | A4/B5 Soft   | E3 E4 E5       | Medium       | reviewmanagement.org.uk, purereputation.co.uk, localexposure    |
+| google review request automation                | serp-0017 | 0/8   | 1/1                       | A7/B1 Hard   | E1 E4          | Medium       | reddit.com, roapp.io, repairdesk.co                             |
+| service to get more google reviews              | serp-0018 | 0/4   | 0/0 · AIO                 | A2/B2 Soft   | E1             | Low          | reddit.com, asknicely.com, goqdos.com                           |
+| how to get more google reviews from customers   | serp-0019 | 1/6   | 0/1 · AIO                 | A4/B2 Soft   | E1 E4          | Medium       | reddit.com, asknicely.com, reputation.com                       |
+| how to ask for google reviews legally uk        | serp-0020 | 6/7   | 0/0 · AIO                 | A3/B2 Soft   | E3 E5          | Medium       | (untitled result), gov.uk, axiomai.uk                           |
+| review gating uk                                | serp-0021 | 6/9   | 0/0 · AIO                 | A4/B4 Soft   | E3             | Low          | reddit.com, brightlocal.com, helphound.info                     |
+| incentivised reviews uk                         | serp-0022 | 6/9   | 0/1                       | A5/B0 Medium | E1 E3 E4       | **High**     | lcf.co.uk, gov.uk, assets.publishing.service.gov.uk             |
+| reputation management for dentists              | serp-0023 | 2/9   | 0/0 · AIO                 | A6/B3 Hard   | E1             | Low          | inmoment.com, doctible.com, dentalmarketingexpert.co.uk         |
+| google review management                        | serp-0024 | 0/8   | 0/1 · AIO                 | A5/B3 Soft   | E1 E4          | Medium       | wiremo.co, youtube.com, sproutsocial.com                        |
+| online reputation management small business uk  | serp-0025 | 6/9   | 4/0 · AIO                 | A3/B6 Soft   | E3 E4          | Medium       | xero.com, igniyte.co.uk, birdeye.com                            |
+| review management software uk                   | serp-0026 | 8/9   | 4/2 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | capterra.co.uk, birdeye.com, ehubt.io                           |
+| ai phone receptionist uk                        | serp-0027 | 8/9   | 4/0 · AIO                 | A9/B0 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, thevoipshop.co.uk                 |
+| ai voice receptionist uk                        | serp-0028 | 7/9   | 3/0 · AIO                 | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                    |
+| ai receptionist for small business uk           | serp-0029 | 6/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, bookedsolid.health                |
+| ai call answering service uk                    | serp-0030 | 8/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, norango.ai                |
+| ai receptionist cost uk                         | serp-0031 | 8/9   | 3/0 · AIO                 | A7/B2 Hard   | E3 E4 E5       | Medium       | aiphonecalls.co.uk, fasthosts.co.uk, bookedsolid.health         |
+| free ai receptionist uk                         | serp-0032 | 8/9   | 4/0                       | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, sophiie.ai                        |
+| ai dental receptionist uk                       | serp-0033 | 8/9   | 3/0 · AIO                 | A5/B2 Soft   | E1 E3 E4 E5    | **High**     | roboreception.co.uk, dentistry.co.uk, viveoai.com               |
+| is an ai receptionist legal uk                  | serp-0034 | 9/9   | 4/2                       | A6/B3 Hard   | E3 E4 E5       | Medium       | softomatesolutions.com, reddit.com, fortayconnect.com           |
+| ai receptionist uk                              | serp-0035 | 8/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                    |
+| ai phone answering service uk                   | serp-0036 | 7/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, aiphonecalls.co.uk        |
+| virtual receptionist ai uk                      | serp-0037 | 8/9   | 3/0 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, answer.co.uk, thevoipshop.co.uk                |
+| best ai receptionist uk                         | serp-0038 | 8/9   | 4/0 · AIO                 | A7/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, sophiie.ai, bookedsolid.health                 |
+| email marketing agency uk                       | serp-0039 | 9/9   | 4/0 · AIO                 | A3/B6 Soft   | E1 E3 E4       | **High**     | email-postman.co.uk, zestydigital.co.uk, agencies.semrush.com   |
+| email marketing services uk                     | serp-0040 | 9/10  | 4/0 · local pack          | A3/B5 Soft   | E1 E3 E4       | **High**     | bluefrontier.co.uk, email-postman.co.uk, agencies.semrush.com   |
+| email marketing companies uk                    | serp-0041 | 8/9   | 4/0 · AIO                 | A5/B4 Soft   | E1 E2 E3 E4    | **High**     | email-postman.co.uk, emailoctopus.com, clutch.co                |
+| email marketing agency for small business       | serp-0042 | 7/9   | 4/0                       | A5/B4 Soft   | E1 E3 E4       | **High**     | thegoodmarketer.co.uk, growth-by-design.co.uk, salesforce.com   |
+| sms marketing services uk                       | serp-0043 | 9/9   | 4/0 · AIO                 | A9/B0 Hard   | E3 E4 E5       | Medium       | voodoosms.com, clicksend.com, klaviyo.com                       |
+| sms marketing cost                              | serp-0044 | 2/9   | 4/2                       | A8/B1 Hard   | E1 E4 E5       | Medium       | textmarketer.co.uk, help.shopify.com, thesmsworks.co.uk         |
+| database reactivation campaign                  | serp-0045 | —     | —                         | —            | —              | not captured | blocked (HTTP 429) — re-run                                     |
+
+**Reading across the pages.** 16 terms are High, 25 Medium, 8 Low, none Constructed among
+the 49 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
+the email-agency heads are High on Soft SERPs, which is the combination a zero-authority `.co.uk` can
+act on first; the reviews page has no High service head and earns its High only on the compliance
+long-tail, which sets its cluster order. Terms not yet captured on Google carry no tier. E5 is set by
+rule where a UK point product ranked in the top ten of the term's own SERP (§ 1 step 5 read
+strictly); E2 counts a term that appeared verbatim in any capture's PAA or related list.
 
 ## 8. Anti-cannibalisation against the 332 rows
 
-_S3 — the re-points hypothesised in `05` § 3 are confirmed or amended here._
+`node private/tools/dupes.mjs keywords-draft.json data/keywords.json` on 24 September 2026: **57 draft
+rows · 0 exact duplicates · 21 head overlaps · 0 schema problems** after one exact duplicate
+(`gohighlevel consultant uk`, already `/services/crm-automation`) was removed from the draft. The
+head function is the first two words, so most overlaps are false: `how to …` and `small business …`
+match unrelated rows. Re-run after the 23 additions below: **79 rows · 0 exact duplicates · 36 head overlaps · 0 schema problems**; the fifteen new overlaps are the same stems (`can i …`, `how much …`), the `ai receptionist …` family against the rows being re-pointed, `ai receptionist for garages` against the four existing receptionist rows (industry × service on the industry head — the doc 08 matrix rule), and `local seo packages uk` against the three city rows on `/services/seo/<city>` (the programmatic pattern). Decisions:
 
-## 9. PAA → FAQ candidates
+| Overlap (draft ~ existing)                                                                                                                                                                                                                                                                                                                                                                                                              | Decision                                                                                                                                                                                                                                                                                                                                                                                                                |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `how to …` ×6 (reviews and reinstatement questions ~ `how to advertise injectables legally uk`, `how to rank in the map pack uk`)                                                                                                                                                                                                                                                                                                       | false positive on the stem; **keep**                                                                                                                                                                                                                                                                                                                                                                                    |
+| `small business marketing packages` ~ four `small business web design …` rows                                                                                                                                                                                                                                                                                                                                                           | false positive on the stem; **keep**                                                                                                                                                                                                                                                                                                                                                                                    |
+| `google business profile management cost` / `… suspended help` ~ `google business profile alternatives uk` (`/blog/topic/seo`)                                                                                                                                                                                                                                                                                                          | different intent objects (cost, reinstatement, alternatives); **keep**                                                                                                                                                                                                                                                                                                                                                  |
+| **the `ai receptionist` family** — `ai phone receptionist uk`, `ai voice receptionist uk`, `ai receptionist for small business uk`, `ai call answering service uk` ~ six existing rows on `/services/ai-integration` (`ai receptionist uk`, `ai receptionist for uk business`, `ai phone answering service uk`, `ai call answering for small business uk`, `ai voice agent uk`, `ai voice agent for uk business`) and two industry rows | **re-point confirmed** (`05` § 3): the six existing `ai receptionist` / `ai … answering` rows move to `/services/ai-receptionist` on the day the page goes live — the SERP is product-and-service, not bespoke-build (§ 6.3). The two `ai voice agent` rows **stay** on `ai-integration` (bespoke wording). The clinic and dental industry rows **stay** on their industry heads (clinics are M1 on the bespoke build). |
+| `ai receptionist cost uk` ~ `ai receptionist vs answering service uk` (`/services/ai-integration`)                                                                                                                                                                                                                                                                                                                                      | the existing comparison row **moves with the family** to `/services/ai-receptionist`; the cost row stays on the post                                                                                                                                                                                                                                                                                                    |
+| `gohighlevel pricing uk` (existing, `/services/crm-automation`)                                                                                                                                                                                                                                                                                                                                                                         | **re-point amended**: `05` § 3 proposed the bundle; the Bing SERP (`bing-0022`) is gohighlevel.com plus five GBP explainers, so the row moves to `/blog/gohighlevel-uk-local-business-gbp-cost` with `/services/local-business-plans` as the supporting URL — dated 2026-09-24, pending the Google capture                                                                                                              |
+| `customer follow up automation` (draft row 37)                                                                                                                                                                                                                                                                                                                                                                                          | **dropped** — software SERP (`bing-0012`), no post planned                                                                                                                                                                                                                                                                                                                                                              |
 
-_S3 — pricing question first._
+The `> 5 transactional terms on a non-head URL` warning in `scripts/check-keywords.ts` cannot fire on
+the draft rows once the seven new slugs are service heads (`AE.1`, `AE.8`); until then the file is not
+mergeable, by design.
+
+**Rows added from the captures (23, § 4 pairing):** the questions and phrasings that surfaced in PAA,
+related lists and titles — `ai answering service uk`, `ai telephone answering service uk`, `24/7 ai
+receptionist uk`, `best ai receptionist for small business uk`, `how much does an ai receptionist
+cost`, `telephone answering service uk cost`, `can i automatically text back a missed call`, `can
+gohighlevel text back missed calls`, `how much does online reputation management cost`, `can i pay
+for 5 star reviews on google`, `are you allowed to solicit google reviews`, `how much does an email
+marketing agency cost`, `is sms marketing legal uk`, `how much does it cost to send 1000 emails`,
+`database reactivation service`, `digital marketing packages for small business`, `landing page cost
+uk`, `local seo packages uk`, `whatsapp business api pricing uk`, `vet clinic marketing agency`, `ai
+receptionist for garages`, `mot reminder text service`, `ai receptionist cost` (bare; post) and `ai
+receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 79
+rows; the 150–250 target is reached with the remaining captures.
+
+## 9. PAA → FAQ candidates (pricing first; the SERP term in brackets)
+
+- **`missed-call-text-back`:** What does missed-call text-back cost, and what does a text cost?
+  (constructed — no pricing PAA surfaced; keep first by rule) · Can I automatically text back a missed
+  call? (`serp-0002`, `-0003`, `-0005`) · Is an automatic text back allowed in the UK? (calendar item 1;
+  `serp-0006` has no answering page) · Why do I get a text message after a missed call? (`serp-0001`,
+  `-0007` — answer the network alert first) · Can GoHighLevel text back missed calls? (`serp-0005`,
+  `-0006`) · How do I text back after a missed call? (`serp-0001`, `-0002`) · Whose number does the
+  text come from? (constructed; § 6.1 divert design).
+- **`review-management`:** How much does online reputation management cost? (`serp-0016`, `-0025`) ·
+  Are you allowed to solicit Google reviews? (`serp-0020`) · Is review gating illegal? (`serp-0021`) ·
+  Can I pay for 5-star reviews on Google? (`serp-0018` — no; CMA208 and Google's policy) · How do I
+  manage Google reviews for my business? (`serp-0014`) · How do I politely ask for a Google review?
+  (`serp-0020`) · How do I contact Google to take down a review? (`serp-0013` — what we do and do not
+  do) · What is the best company for managing Google reviews? (`serp-0013` — answered without a claim).
+- **`ai-receptionist`:** How much does an AI receptionist cost? (`serp-0035`, `-0027`, `-0031`) · Is
+  there a free AI receptionist? (`serp-0027`, `-0032`) · Is an AI receptionist legal in the UK?
+  (`serp-0034` PAA "What are the legal restrictions on AI chatbots in the UK?") · What does an AI
+  receptionist do? (`serp-0035`) · Can I get AI to answer my phone calls? (`serp-0030`) · Are AI
+  receptionists worth it? (`serp-0027`) · Is AI replacing receptionists? (`serp-0033` — inbound only,
+  hand-over rule) · Will callers know they are talking to an AI? (R23; constructed).
+- **`email-sms-marketing`:** How much does an email marketing agency cost? (`serp-0039`, `-0042`) ·
+  How much does it cost to send 1,000 emails? (`serp-0042`) · How much does SMS marketing cost?
+  (`serp-0043`, `-0044`) · Is SMS marketing legal? (`serp-0043` — PECR, link to the CRM page) · Who
+  can we legally email or text in the UK? (draft H2; constructed) · Is email marketing still worth it?
+  (`serp-0039` — replies and bookings, not open rates) · What is database reactivation? (`sug-0058`
+  list; `bing-0011`).
+- **`landing-pages`, `google-business-profile`, `local-business-plans`:** no Google PAA captured yet
+  (Bing returned none); the pricing-first questions stand as constructed from the drafts and are
+  replaced from the pending captures.
 
 ## Sources
 
