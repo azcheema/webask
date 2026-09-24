@@ -1,0 +1,20 @@
+Copyright (c) 2026 Naxdor (an enskild firma registered in Sweden, operated by Ansar Cheema),
+trading in the United Kingdom as WebAsk. All rights reserved.
+
+This repository contains the source code, design, written content, research and documentation
+of the WebAsk website (webask.co.uk). It is published for transparency and continuous-integration
+purposes only. No licence is granted.
+
+You may view this repository on GitHub and fork it within GitHub to the extent GitHub's Terms of
+Service require us to allow. You may not otherwise copy, reproduce, modify, distribute, publish,
+sell, sublicense, host or create derivative works from any part of this repository — including
+its code, designs, written content, research and data files — without prior written permission
+from Naxdor.
+
+Third-party components included under their own licences remain subject to those licences (see
+package.json for dependencies); nothing here alters them.
+
+The WebAsk and Naxdor names and marks may not be used without permission.
+
+For permissions, use the contact details published at
+https://webask.co.uk/legal/company-information
