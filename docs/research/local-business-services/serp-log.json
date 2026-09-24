@@ -7296,6 +7296,564 @@
       "notes": ""
     },
     {
+      "id": "serp-0073",
+      "term": "small business marketing packages",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T17:43:08.860Z",
+      "adsTop": 0,
+      "adsBottom": 2,
+      "adsDomains": ["getstarted.tiktok.com", "newgenmedia.co.uk"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How much should a small business pay for marketing?",
+        "Which marketing is best for small businesses?",
+        "What is the 3-3-3 rule for marketing?",
+        "How to earn 1 lakh per month in digital marketing?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Best small business marketing packages",
+        "Affordable marketing agency for small business",
+        "Digital marketing services for small business",
+        "Best marketing companies for small business",
+        "Monthly marketing packages",
+        "Small business marketing agencies",
+        "Content marketing packages",
+        "Social media marketing agency for small business"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "munro.agency",
+          "url": "https://www.munro.agency/start-up-small-business-mar...",
+          "title": "Start-up & Small Business Marketing Packages & Free Tools",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "iconicdigital.co.uk",
+          "url": "https://www.iconicdigital.co.uk/digital-marketing-pac...",
+          "title": "Small Business Marketing Packages",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "smashmarketing.co.uk",
+          "url": "https://smashmarketing.co.uk/marketing-packages",
+          "title": "Multi-platform Digital Marketing Packages",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "capsulecrm.com",
+          "url": "https://capsulecrm.com/blog/marketing-packages-fo...",
+          "title": "Marketing packages for small businesses: how to choose",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "webvillage.marketing",
+          "url": "https://webvillage.marketing/marketing-chat/the-6-...",
+          "title": "The 6 Most Common Marketing Packages for Small Business",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "petitedigital.co.uk",
+          "url": "https://petitedigital.co.uk/marketing-for-small-business",
+          "title": "Marketing Packages",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "milesmarketing.co.uk",
+          "url": "https://www.milesmarketing.co.uk/small-business-mar...",
+          "title": "Best Small Business Marketing Agency UK 2026",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "mixdigital.agency",
+          "url": "https://mixdigital.agency/Posts",
+          "title": "Digital Marketing Packages for Small Business: 2026 Guide",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "enterprisenation.com",
+          "url": "https://www.enterprisenation.com/learn-something/u...",
+          "title": "The ultimate guide to small business marketing in the UK",
+          "type": "listicle",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 5,
+      "difficultyProxy": {
+        "a": 2,
+        "b": 7,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E3", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0074",
+      "term": "local business marketing services",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T17:43:30.688Z",
+      "adsTop": 4,
+      "adsBottom": 2,
+      "adsDomains": [
+        "impactcommerce.com",
+        "integrate.com",
+        "raket.digital",
+        "oncampusadvertising.com",
+        "wearenameless.co.uk"
+      ],
+      "aiOverview": true,
+      "localPack": true,
+      "featuredSnippet": null,
+      "paa": [
+        "What are the 7 types of marketing?",
+        "How can I promote my business locally?",
+        "What is the 3-3-3 rule for marketing?",
+        "How do I advertise my business in my local area?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Local business marketing services near me",
+        "Local business marketing services reviews",
+        "Local business marketing services examples",
+        "Local business marketing services jobs",
+        "Best local business marketing services"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "find-and-update.company-information.service.gov.uk",
+          "url": "https://find-and-update.company-information.service.gov.uk/...",
+          "title": "local business marketing ltd - Companies House",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "footprint.co.uk",
+          "url": "https://www.footprint.co.uk/local-business-marketing-...",
+          "title": "Local Business Marketing Eastbourne - Footprint Digital",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "firstdigitalmedia.co.uk",
+          "url": "https://firstdigitalmedia.co.uk/digital-marketing-for-lo...",
+          "title": "Digital Marketing for Local Businesses",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "hiscox.co.uk",
+          "url": "https://www.hiscox.co.uk/Knowledge centre",
+          "title": "How to Market a Small Local Business",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "loudlocal.co.uk",
+          "url": "https://www.loudlocal.co.uk/local-presence-managem...",
+          "title": "Local Marketing Services | Digital Marketing Agency",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "clicksgeek.com",
+          "url": "https://clicksgeek.com/best-local-business-marketing-s...",
+          "title": "Best Local Business Marketing Services: 2026 Guide",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "warwickshirewebsites.com",
+          "url": "https://warwickshirewebsites.com/local-business-mark...",
+          "title": "Local Business Marketing Services",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "salesforce.com",
+          "url": "https://www.salesforce.com/marketing/local-marketi...",
+          "title": "Local Marketing: A Complete Guide",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "reddit.com",
+          "url": "https://reddit.com",
+          "title": "Best marketing strategies for a local/small business?",
+          "type": "forum-ugc",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 5,
+      "difficultyProxy": {
+        "a": 3,
+        "b": 6,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E3", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0075",
+      "term": "gohighlevel sms pricing uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T17:43:55.622Z",
+      "adsTop": 1,
+      "adsBottom": 1,
+      "adsDomains": ["gohighlevel.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How much does GoHighLevel charge for SMS?",
+        "How much does a text message cost in the UK?",
+        "How much does it cost to send bulk SMS messages?",
+        "Is there anything better than GoHighLevel?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Gohighlevel sms pricing uk reddit",
+        "GoHighLevel pricing plans",
+        "GoHighLevel phone number pricing",
+        "GoHighLevel Pricing Comparison",
+        "GoHighLevel email pricing",
+        "GoHighLevel AI pricing",
+        "GoHighLevel stock price",
+        "How much is go high level per month"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "help.gohighlevel.com",
+          "url": "https://help.gohighlevel.com/solutions/articles/4800...",
+          "title": "Phone System Pricing & Billing Guide",
+          "type": "vendor-ghl",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "skool.com",
+          "url": "https://www.skool.com/gohighlevel/ghltwilio-uk-sm...",
+          "title": "GHL/Twilio UK SMS Fees · GoHighLevel w/ Robb Bailey",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "gohighlevel.com",
+          "url": "https://www.gohighlevel.com/pricing",
+          "title": "HighLevel Pricing",
+          "type": "vendor-ghl",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "help.gohighlevel.com",
+          "url": "https://help.gohighlevel.com/solutions/articles/4800...",
+          "title": "How to Calculate SMS and MMS Costs",
+          "type": "vendor-ghl",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "softomatesolutions.com",
+          "url": "https://www.softomatesolutions.com/.../GoHighLevel",
+          "title": "GoHighLevel Pricing UK 2026",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "help.gohighlevel.com",
+          "url": "https://help.gohighlevel.com/solutions/articles/1550...",
+          "title": "HighLevel Pricing & Billing: Wallets, Charges, Rebilling",
+          "type": "vendor-ghl",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "reddit.com",
+          "url": "https://reddit.com",
+          "title": "r/gohighlevel - SMS & Email & other Fees",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "automationclarityhub.com",
+          "url": "https://automationclarityhub.com/gohighlevel/gohig...",
+          "title": "GoHighLevel Pricing UK (2026): Real Costs in GBP and USD",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "leadsflex.com",
+          "url": "https://leadsflex.com/gohighlevel-sms-pricing",
+          "title": "GoHighLevel SMS Pricing 2026: Real Costs Per Segment",
+          "type": "agency",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 3,
+      "difficultyProxy": {
+        "a": 0,
+        "b": 5,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0076",
+      "term": "gohighlevel agency uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T17:44:17.055Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What is a GoHighLevel agency?",
+        "Which is the top marketing agency in the UK?",
+        "What company owns GoHighLevel?",
+        "Where is GoHighLevel located?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Gohighlevel agency uk reviews",
+        "GoHighLevel company",
+        "GoHighLevel alternatives",
+        "GoHighLevel login",
+        "GoHighLevel pricing plans",
+        "GoHighLevel marketplace",
+        "GoHighLevel SaaS Pro Plan",
+        "GoHighLevel App"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "gohighlevel.com",
+          "url": "https://www.gohighlevel.com",
+          "title": "GoHighLevel - It's time to take your Agency to the Next Level",
+          "type": "vendor-ghl",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "notluck.co.uk",
+          "url": "https://notluck.co.uk/Gohighlevel Agency Uk",
+          "title": "GoHighLevel Agency UK | Certified GHL Partner",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "softomatesolutions.com",
+          "url": "https://www.softomatesolutions.com/.../GoHighLevel",
+          "title": "GoHighLevel Agencies UK & London",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "wearemarketable.co.uk",
+          "url": "https://wearemarketable.co.uk/what-is-gohighlevel-a-...",
+          "title": "What is GoHighLevel - A Comprehensive Guide",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "smartwebagency.co.uk",
+          "url": "https://www.smartwebagency.co.uk/what-is-gohighle...",
+          "title": "What is GoHighLevel? Complete UK Guide 2026",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "julianmills.co.uk",
+          "url": "https://www.julianmills.co.uk",
+          "title": "Julian Mills | UK HighLevel Consultant & HighLevel Expert ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "facebook.com",
+          "url": "https://facebook.com",
+          "title": "What UK GHL agencies offer hands-on training and support?",
+          "type": "forum-ugc",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "uk.trustpilot.com",
+          "url": "https://uk.trustpilot.com/.../Software company",
+          "title": "HighLevel Reviews | Read Customer Service ...",
+          "type": "directory",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "gohighlevel.com",
+          "url": "https://www.gohighlevel.com/pricing",
+          "title": "HighLevel Pricing",
+          "type": "vendor-ghl",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 6,
+      "difficultyProxy": {
+        "a": 1,
+        "b": 6,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E3"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0077",
+      "term": "local seo agency uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T17:44:39.566Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": false,
+      "localPack": true,
+      "featuredSnippet": null,
+      "paa": [
+        "How much does SEO cost in the UK?",
+        "Which SEO agency is the best in the UK?",
+        "Is SEO still worth it in 2026?",
+        "How to get a local SEO?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Free local seo agency uk",
+        "Best local seo agency uk",
+        "Local SEO agency London",
+        "Best UK SEO agency",
+        "SEO agency Manchester",
+        "The affordable seo company",
+        "Cardiff seo agency",
+        "Think Local SEO"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "localseoservicesuk.co.uk",
+          "url": "https://localseoservicesuk.co.uk",
+          "title": "Local SEO Services UK | #1 Local SEO Agency in London ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "phoenixwebservices.co.uk",
+          "url": "https://www.phoenixwebservices.co.uk/local-seo-agen...",
+          "title": "Local SEO Agency Services for Small Businesses",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "localseouk.co.uk",
+          "url": "https://localseouk.co.uk",
+          "title": "Local SEO UK: Local Search Engine Optimisation Agency",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "agencies.semrush.com",
+          "url": "https://agencies.semrush.com/list/united-kingdom",
+          "title": "Best Local SEO Companies in United Kingdom 2026",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "primeliondigital.co.uk",
+          "url": "https://primeliondigital.co.uk/.../SEO & Analytics",
+          "title": "Local SEO Services UK - Prime Lion Digital",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "appearonline.co.uk",
+          "url": "https://www.appearonline.co.uk/blog/best-local-seo-...",
+          "title": "25 Best Local SEO Agencies in the UK (2026)",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "firstplaceseo.co.uk",
+          "url": "https://firstplaceseo.co.uk",
+          "title": "First Place SEO: SEO Company London | SEO Services & AI ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "sortlist.co.uk",
+          "url": "https://www.sortlist.co.uk/.../England/Greater London",
+          "title": "The 10 Best Local SEO Companies in London",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "direwolfseo.co.uk",
+          "url": "https://direwolfseo.co.uk/Services",
+          "title": "Local SEO Services | UK Local SEO Agency",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 9,
+      "difficultyProxy": {
+        "a": 3,
+        "b": 6,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E3"],
+      "notes": ""
+    },
+    {
       "id": "bing-0001",
       "term": "missed call text back uk",
       "source": "bing",

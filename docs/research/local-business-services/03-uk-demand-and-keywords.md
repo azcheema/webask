@@ -381,6 +381,9 @@ One row, as JSON:
 | 64  | where can i get free text reminders for appointments | informational-bottom     | /blog/appointment-reminder-texts-pecr        | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0064 (added 2026-09-24)                                                    |
 | 65  | how do i unsuspend my google business profile        | informational-bottom     | /blog/google-business-profile-suspended-uk   | /services/google-business-profile            | local-listings ◆  | —                      | PAA on serp-0069 (added 2026-09-24)                                                    |
 | 66  | what is the 24 hour rule for whatsapp business       | informational-bottom     | /blog/whatsapp-uk-small-business-rules-2026  | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0072 (added 2026-09-24)                                                    |
+| 67  | how much should a small business pay for marketing   | informational-bottom     | /services/local-business-plans               | /pricing                                     | local-plans ◆     | —                      | PAA on serp-0073 (added 2026-09-24)                                                    |
+| 68  | how much does gohighlevel charge for sms             | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | PAA on serp-0075 (added 2026-09-24)                                                    |
+| 69  | how much does seo cost in the uk                     | informational-bottom     | /services/seo                                | /blog/topic/seo                              | seo               | —                      | PAA on serp-0077 (added 2026-09-24)                                                    |
 
 Vertical rows for the wave-1 industry pages (added in S6 after 06): `vet clinic marketing agency`,
 `vet practice marketing`, `cma vet price list website` (→ calendar #8; `uk-compliance`;
@@ -468,7 +471,7 @@ and no `organic` array, never retried with a solved CAPTCHA.
 
 ## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-**Coverage.** 72 `google.co.uk` records (`serp-0001`–`serp-0072`: 69 captures and three block records), 32 Bing
+**Coverage.** 77 `google.co.uk` records (`serp-0001`–`serp-0077`: 74 captures and three block records), 32 Bing
 `cc=GB` captures (`bing-0001`–`bing-0032`; the last two are the trades heads, added in S4) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
 in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
 the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
@@ -479,20 +482,22 @@ run stopped where it was refused, nothing was retried through a CAPTCHA, and all
 records in the log (`serp-0045`, `serp-0051`, `serp-0057`). A fourth window, forty minutes after the
 third block, captured the five page heads without refusal and stopped at five by design; a fifth
 window an hour later did the same for the two fold tests and the three vertical heads, and a sixth for
-the profile long-tail, the two remaining landing-page terms and WhatsApp. The pages
+the profile long-tail, the two remaining landing-page terms and WhatsApp, and a seventh for the
+bundle and GoHighLevel tail and the local-SEO agency wording. The pages
 captured on Google are text-back, reviews, the receptionist, email/SMS, landing pages, the heads of
 the profile service, the bundle and local SEO, the booking and reminder fold tests and the three
-vertical heads; the long tail of the bundle, local-SEO and vertical groups and the web-chat and
+vertical heads; the remaining GoHighLevel, local-SEO and vertical long tail and the web-chat and
 inbox tests are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
 provisional until the Google capture lands.
 
-**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 61 of the 69
+**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 65 of the 74
 successful Google captures** — on every text-back, receptionist and email-agency term — so the
-answer-first opening paragraph in `12` is not optional on this line. (2) **A local pack appeared on two
-terms in 69**: `email marketing services uk` (`serp-0040`), which carried a map and a "More
-businesses" link, and `vet clinic marketing agency` (`serp-0065`), whose map listed a vet-marketing
-agency with a 4.4 rating — local intent exists for the "services" and "agency" wordings on two heads
-and nowhere else in the set; D1's no-profile ruling costs this line two terms, not a category. (3) **Ads sat on 53 of 69** captures, four
+answer-first opening paragraph in `12` is not optional on this line. (2) **A local pack appeared on four
+terms in 74**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
+(`serp-0065`), `local business marketing services` (`serp-0074`) and `local seo agency uk`
+(`serp-0077`) — always on a "services" or "agency" wording, never on a product or question — so local
+intent exists on the agency-shaped heads and nowhere else in the set; D1's no-profile ruling costs this
+line those four terms, not a category, and the four pages concerned enter on their long tail. (3) **Ads sat on 56 of 74** captures, four
 at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
 and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
 the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
@@ -723,7 +728,7 @@ as a post that sits under Google's help pages and answers the appeals-tool quest
 service page carries the suspension-support line only (Virens sells it at "£295+VAT", `04` § 4). The
 agency, optimisation, maps and near-me terms are § 6.11 batches 3 and 8.
 
-### 6.7 The bundle and the GBP-cost cluster (`serp-0060`–`serp-0061`; Bing `bing-0021`–`bing-0023`; the other bundle and GoHighLevel terms queued)
+### 6.7 The bundle and the GBP-cost cluster (`serp-0060`–`serp-0061`, `serp-0073`–`serp-0076`; Bing `bing-0021`–`bing-0023`; the remaining GoHighLevel terms queued)
 
 - **The bundle head is an all-UK agency SERP with the vendor advertising on it.** `marketing packages
 for small business uk` (`serp-0060`) is **9/9 UK**, A2/B7 Soft, four ads above and two in the feed,
@@ -758,8 +763,36 @@ for small business uk` (`serp-0060`) is **9/9 UK**, A2/B7 Soft, four ads above a
   cost explainers and a "SMS Cost Calculator", with a converted per-segment figure in pence in Bing's
   answer box; its Google capture is § 6.11 batch 4. Both re-points in `05` § 3 (the row to the post,
   the bundle as support) are consistent with the shape; § 8 records them.
+- **The two other bundle wordings are High, and one carries a local pack (seventh window).** `small
+business marketing packages` (`serp-0073`) is 5/9 UK, A2/B7 Soft, two feed ads (TikTok for
+  Business, newgenmedia.co.uk), an AI Overview and **High** (E1 + E3 + E4): munro.agency,
+  iconicdigital.co.uk, smashmarketing.co.uk, Capsule CRM's guide, webvillage.marketing,
+  petitedigital.co.uk, a milesmarketing.co.uk listicle, mixdigital.agency and an Enterprise Nation
+  listicle. PAA: "How much should a small business pay for marketing?" — the bundle's second pricing
+  FAQ — and "Which marketing is best for small businesses?". `local business marketing services`
+  (`serp-0074`) is 5/9 UK, A3/B6 Soft, four ads above and two in the feed, an AI Overview, a **local
+  pack** and **High** (E1 + E3 + E4): a Companies House record first (a company registered under the
+  phrase), footprint.co.uk, firstdigitalmedia.co.uk, a Hiscox guide, loudlocal.co.uk, a clicksgeek
+  listicle, warwickshirewebsites.com, a Salesforce listicle and Reddit; PAA "How can I promote my
+  business locally?", "How do I advertise my business in my local area?"; related "near me". The
+  bundle page takes both as secondary terms under `marketing packages for small business uk`; the
+  local pack on the "services" wording is the D1 cost again (§ 6, fact 2).
+- **The GoHighLevel tail is the vendor's, and the "agency" head is Set A's.** `gohighlevel sms
+pricing uk` (`serp-0075`) is 3/9 UK, A0/B5 Soft, one ad above and one in the feed (both
+  gohighlevel.com), an AI Overview and **Medium** (E1 + E4): help.gohighlevel.com first, fourth and
+  sixth, a Skool community post, gohighlevel.com, softomatesolutions.com, a Reddit thread,
+  automationclarityhub.com and leadsflex.com; PAA "How much does GoHighLevel charge for SMS?", "How
+  much does a text message cost in the UK?", "How much does it cost to send bulk SMS messages?" — the
+  calendar's item 12 answers all three in the vendor's units, dated. `gohighlevel agency uk`
+  (`serp-0076`) is 6/9 UK, A1/B6 Soft, no ads, an AI Overview and **Medium** (E1 + E3):
+  gohighlevel.com first and ninth (its own agency pages), then **four Set A agencies in a row** —
+  notluck.co.uk, softomatesolutions.com, wearemarketable.co.uk, smartwebagency.co.uk — julianmills.co.uk,
+  a Facebook page and Trustpilot UK; PAA "What is a GoHighLevel agency?", "What company owns
+  GoHighLevel?", "Where is GoHighLevel located?". The head is claimed by the agencies `04` § 2 read;
+  WebAsk's bundle enters as "local business plans" with the platform named inside, not as a
+  "GoHighLevel agency" page — consistent with D6 and `05` § 3's re-points (S6 confirms).
 
-### 6.8 Local SEO (`serp-0062`; Bing `bing-0024`; the services, agency, vertical and maps terms queued)
+### 6.8 Local SEO (`serp-0062`, `serp-0077`; Bing `bing-0024`; the services, vertical and maps terms queued)
 
 `local seo packages uk` (`serp-0062`) is **9/9 UK**, A2/B7 Soft, one feed ad, an AI Overview and
 **High** (E1 + E3 + E4): seoworks.co.uk, rapidseo.london, localseoservicesuk.co.uk, wrise.co.uk (also
@@ -772,9 +805,15 @@ worth it in 2026?"; related: "SEO packages pricing UK", "Affordable SEO packages
 packages uk". **Reading for Q17:** the Google capture shows packages pages, not GoHighLevel-style
 productised tiers, ranking on a High head — which supports a **priced "packages" section on the
 existing `/services/seo` page**, with the two pricing PAAs as its FAQ pair, rather than a new page.
-The decision stays with the brainstorm (D13); the vertical terms (`seo for plumbers uk`,
-`seo for dentists uk`), the services and agency wordings and `google maps ranking service uk` are
-§ 6.11 batches 4 and 7.
+The decision stays with the brainstorm (D13). `local seo agency uk` (`serp-0077`, seventh window) is
+**9/9 UK**, A3/B6 Soft, no ads, **no AI Overview**, a **local pack** and **Medium** (E1 + E3):
+localseoservicesuk.co.uk, phoenixwebservices.co.uk, localseouk.co.uk, Semrush's agency directory,
+primeliondigital.co.uk, an appearonline.co.uk listicle, firstplaceseo.co.uk, Sortlist and
+direwolfseo.co.uk; PAA "How much does SEO cost in the UK?", "Which SEO agency is the best in the
+UK?"; related "Local SEO agency London", "SEO agency Manchester" — the city pages on `/services/seo`
+already own that tail, and the local pack on the "agency" wording is the D1 cost. The vertical terms
+(`seo for plumbers uk`, `seo for dentists uk`), the services wording and `google maps ranking
+service uk` are § 6.11 batch 4.
 
 ### 6.9 The fold-or-page tests (`serp-0063`–`serp-0064`; Bing `bing-0025`–`bing-0027`; the WhatsApp, web-chat and inbox terms queued)
 
@@ -845,37 +884,35 @@ The decision stays with the brainstorm (D13); the vertical terms (`seo for plumb
   than on "marketing agency". The three read in `04` § 5 are plumbersmarketingco.co.uk, bird.co.uk and
   seodons.co.uk. Google captures for both terms are queued (§ 6.11, batches 7 and 8).
 
-### 6.11 Queued — the 38 Google captures still pending
+### 6.11 Queued — the 33 Google captures still pending
 
 **Block history, all on 24 September 2026, all from the same address.** HTTP 429 after 45 captures at
 4–8 s; HTTP 403 after five more at 12–18 s forty minutes later; HTTP 403 after five more at 25–30 s
 from a fresh browser context two and a half hours after that (`serp-0045`, `serp-0051`,
 `serp-0057`); then, forty minutes after the third block, **five captures with no refusal**, stopped
 at five by design (`serp-0058`–`serp-0062`), and an hour after that five more (`serp-0063`–`serp-0067`), and an hour after that another five
-(`serp-0068`–`serp-0072`). The pattern is a reputation-based allowance of about
+(`serp-0068`–`serp-0072`), then five more (`serp-0073`–`serp-0077`). The pattern is a reputation-based allowance of about
 five requests per window from this address, so the queue runs five to a batch, page-head terms first,
 one window an hour or more apart; the tail groups stay Bing-only until captured:
 
-1. small business marketing packages · local business marketing services · gohighlevel sms pricing
-   uk · gohighlevel agency uk · local seo agency uk
-2. google business profile optimisation service · google business profile management agency · google
+1. google business profile optimisation service · google business profile management agency · google
    maps listing management uk · gbp management service uk · how to reinstate google business account
-3. digital marketing packages for small business · gohighlevel uk number · gohighlevel consultant uk ·
+2. digital marketing packages for small business · gohighlevel uk number · gohighlevel consultant uk ·
    gohighlevel sub account transfer · all in one marketing platform small business uk
-4. local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
+3. local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
    ranking service uk · local seo services for plumbers
-5. how much does an online booking system cost · sms appointment reminder service · automated
+4. how much does an online booking system cost · sms appointment reminder service · automated
    appointment reminder service uk · whatsapp business api pricing uk · web chat for small business uk
-6. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
+5. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
    price list website · veterinary services market investigation order 2026
-7. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
+6. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
    receptionist near me · google business profile management near me (near-me terms are evidence
    only, D1)
-8. email marketing agency near me · best missed call text back software uk · best email marketing
+7. email marketing agency near me · best missed call text back software uk · best email marketing
    agency uk
 
 > ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): every page head and every fold test
-> is now on Google; the eight remaining batches are long-tail and evidence rows. Take them one
+> is now on Google; the seven remaining batches are long-tail and evidence rows. Take them one
 > window an hour while a session is open, and accept Bing-only, provisional tiers for whatever is
 > left when it closes; never through a CAPTCHA. The
 > founder decides whether the tail groups are worth further windows.
@@ -892,83 +929,88 @@ an order of magnitude in searches. The tiers are used for one decision only — 
 survive into `keywords-draft.json` and which pages carry a head term — and that decision is re-run on
 the day real volumes arrive.
 
-| Term                                            | Record    | UK/10 | Ads top/bottom · features | Proxy        | Evidence       | Tier         | Ranks 1–3                                                          |
-| ----------------------------------------------- | --------- | ----- | ------------------------- | ------------ | -------------- | ------------ | ------------------------------------------------------------------ |
-| missed call text back uk                        | serp-0001 | 9/9   | 0/2 · AIO                 | A2/B7 Soft   | E1 E3 E4 E5    | **High**     | call2sms.co.uk, digitaltoolbag.co.uk, mctb.1nexus.co.uk            |
-| missed call text back service uk                | serp-0002 | 8/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E3 E4 E5    | **High**     | marketing-4-results.co.uk, digitaltoolbag.co.uk, 1nexus            |
-| missed call text back service                   | serp-0003 | 3/8   | 0/1 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, everycatch.com               |
-| text back missed calls                          | serp-0004 | 4/8   | 4/2 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com               |
-| missed call text back software                  | serp-0005 | 2/8   | 0/0 · AIO                 | A7/B0 Hard   | E1 E5          | Medium       | help.gohighlevel.com, upfirst.ai, call2sms.co.uk                   |
-| is missed call text back legal uk               | serp-0006 | 7/9   | 0/0 · AIO                 | A0/B9 Soft   | E3             | Low          | digitaltoolbag.co.uk, smbbooster.co.uk, justanswer.co.uk           |
-| why do i get a text message after a missed call | serp-0007 | 4/9   | 0/0 · AIO                 | A2/B7 Soft   | E1 E2          | Medium       | reddit.com, community.ee.co.uk, community.idmobile.co.uk           |
-| auto reply text missed call                     | serp-0008 | 1/7   | 0/0 · AIO                 | A5/B2 Soft   | E5             | Low          | reddit.com, contactfusion.co.uk, support.callrail.com              |
-| missed call text back for plumbers              | serp-0009 | 1/8   | 4/2 · AIO                 | A1/B6 Soft   | E1 E4          | Medium       | reddit.com, tagmktg.com, leadtruffle.co                            |
-| missed call text back                           | serp-0010 | 4/8   | 0/0 · AIO                 | A4/B3 Soft   | E1 E2 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com               |
-| missed call sms service uk                      | serp-0011 | 9/9   | 4/0 · AIO                 | A6/B3 Hard   | E3 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, callcatchers.co.uk           |
-| missed call text message service                | serp-0012 | 4/8   | 0/0 · AIO                 | A3/B5 Soft   | E5             | Low          | community.ee.co.uk, reddit.com, digitaltoolbag.co.uk               |
-| google review management services uk            | serp-0013 | 7/8   | 4/0 · AIO                 | A2/B5 Soft   | E3 E4          | Medium       | artemis.marketing, localexposure.co.uk, reviewmanagement.org.uk    |
-| google review management company                | serp-0014 | 0/8   | 4/0 · AIO                 | A6/B1 Hard   | E1 E4          | Medium       | artemis.marketing, wiremo.co, thecmo.com                           |
-| google review management agency                 | serp-0015 | 1/8   | 0/0 · AIO                 | A6/B2 Hard   | E1             | Low          | artemis.marketing, gmbapi.com, sproutsocial.com                    |
-| review management service uk                    | serp-0016 | 9/9   | 4/0 · AIO                 | A4/B5 Soft   | E3 E4 E5       | Medium       | reviewmanagement.org.uk, purereputation.co.uk, localexposure       |
-| google review request automation                | serp-0017 | 0/8   | 1/1                       | A7/B1 Hard   | E1 E4          | Medium       | reddit.com, roapp.io, repairdesk.co                                |
-| service to get more google reviews              | serp-0018 | 0/4   | 0/0 · AIO                 | A2/B2 Soft   | E1             | Low          | reddit.com, asknicely.com, goqdos.com                              |
-| how to get more google reviews from customers   | serp-0019 | 1/6   | 0/1 · AIO                 | A4/B2 Soft   | E1 E4          | Medium       | reddit.com, asknicely.com, reputation.com                          |
-| how to ask for google reviews legally uk        | serp-0020 | 6/7   | 0/0 · AIO                 | A3/B2 Soft   | E3 E5          | Medium       | (untitled result), gov.uk, axiomai.uk                              |
-| review gating uk                                | serp-0021 | 6/9   | 0/0 · AIO                 | A4/B4 Soft   | E3             | Low          | reddit.com, brightlocal.com, helphound.info                        |
-| incentivised reviews uk                         | serp-0022 | 6/9   | 0/1                       | A5/B0 Medium | E1 E3 E4       | **High**     | lcf.co.uk, gov.uk, assets.publishing.service.gov.uk                |
-| reputation management for dentists              | serp-0023 | 2/9   | 0/0 · AIO                 | A6/B3 Hard   | E1             | Low          | inmoment.com, doctible.com, dentalmarketingexpert.co.uk            |
-| google review management                        | serp-0024 | 0/8   | 0/1 · AIO                 | A5/B3 Soft   | E1 E4          | Medium       | wiremo.co, youtube.com, sproutsocial.com                           |
-| online reputation management small business uk  | serp-0025 | 6/9   | 4/0 · AIO                 | A3/B6 Soft   | E3 E4          | Medium       | xero.com, igniyte.co.uk, birdeye.com                               |
-| review management software uk                   | serp-0026 | 8/9   | 4/2 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | capterra.co.uk, birdeye.com, ehubt.io                              |
-| ai phone receptionist uk                        | serp-0027 | 8/9   | 4/0 · AIO                 | A9/B0 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, thevoipshop.co.uk                    |
-| ai voice receptionist uk                        | serp-0028 | 7/9   | 3/0 · AIO                 | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                       |
-| ai receptionist for small business uk           | serp-0029 | 6/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, bookedsolid.health                   |
-| ai call answering service uk                    | serp-0030 | 8/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, norango.ai                   |
-| ai receptionist cost uk                         | serp-0031 | 8/9   | 3/0 · AIO                 | A7/B2 Hard   | E3 E4 E5       | Medium       | aiphonecalls.co.uk, fasthosts.co.uk, bookedsolid.health            |
-| free ai receptionist uk                         | serp-0032 | 8/9   | 4/0                       | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, sophiie.ai                           |
-| ai dental receptionist uk                       | serp-0033 | 8/9   | 3/0 · AIO                 | A5/B2 Soft   | E1 E3 E4 E5    | **High**     | roboreception.co.uk, dentistry.co.uk, viveoai.com                  |
-| is an ai receptionist legal uk                  | serp-0034 | 9/9   | 4/2                       | A6/B3 Hard   | E3 E4 E5       | Medium       | softomatesolutions.com, reddit.com, fortayconnect.com              |
-| ai receptionist uk                              | serp-0035 | 8/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                       |
-| ai phone answering service uk                   | serp-0036 | 7/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, aiphonecalls.co.uk           |
-| virtual receptionist ai uk                      | serp-0037 | 8/9   | 3/0 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, answer.co.uk, thevoipshop.co.uk                   |
-| best ai receptionist uk                         | serp-0038 | 8/9   | 4/0 · AIO                 | A7/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, sophiie.ai, bookedsolid.health                    |
-| email marketing agency uk                       | serp-0039 | 9/9   | 4/0 · AIO                 | A3/B6 Soft   | E1 E3 E4       | **High**     | email-postman.co.uk, zestydigital.co.uk, agencies.semrush.com      |
-| email marketing services uk                     | serp-0040 | 9/10  | 4/0 · local pack          | A3/B5 Soft   | E1 E3 E4       | **High**     | bluefrontier.co.uk, email-postman.co.uk, agencies.semrush.com      |
-| email marketing companies uk                    | serp-0041 | 8/9   | 4/0 · AIO                 | A5/B4 Soft   | E1 E2 E3 E4    | **High**     | email-postman.co.uk, emailoctopus.com, clutch.co                   |
-| email marketing agency for small business       | serp-0042 | 7/9   | 4/0                       | A5/B4 Soft   | E1 E3 E4       | **High**     | thegoodmarketer.co.uk, growth-by-design.co.uk, salesforce.com      |
-| sms marketing services uk                       | serp-0043 | 9/9   | 4/0 · AIO                 | A9/B0 Hard   | E3 E4 E5       | Medium       | voodoosms.com, clicksend.com, klaviyo.com                          |
-| sms marketing cost                              | serp-0044 | 2/9   | 4/2                       | A8/B1 Hard   | E1 E4 E5       | Medium       | textmarketer.co.uk, help.shopify.com, thesmsworks.co.uk            |
-| database reactivation campaign                  | serp-0045 | —     | —                         | —            | —              | block record | HTTP 429 after 45 captures                                         |
-| database reactivation campaign                  | serp-0046 | 0/8   | 0/0 · AIO                 | A0/B8 Soft   | E1             | Low          | yaystarter.com, revsquared.ai, refreshagent.com                    |
-| database reactivation uk                        | serp-0047 | 8/9   | 3/2 · AIO                 | A0/B9 Soft   | E3 E4          | Medium       | databasereactivation.co.uk, vantagegrowthptnrs.com, yaystarter.com |
-| sms marketing uk                                | serp-0048 | 8/9   | 3/0 · AIO                 | A9/B0 Hard   | E1 E2 E3 E4 E5 | **High**     | voodoosms.com, firetext.co.uk, salesforce.com                      |
-| email marketing management uk                   | serp-0049 | 7/9   | 4/0 · AIO                 | A5/B4 Soft   | E3 E4          | Medium       | zestydigital.co.uk, constantcontact.com, salesforce.com            |
-| landing page design uk                          | serp-0050 | 7/9   | 3/0 · AIO                 | A3/B6 Soft   | E3 E4          | Medium       | mylandingpage.co.uk, converted.co.uk, sortlist.co.uk               |
-| landing page design agency uk                   | serp-0051 | —     | —                         | —            | —              | block record | HTTP 403 after 5 more captures                                     |
-| landing page design agency uk                   | serp-0052 | 9/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E3 E4       | **High**     | landingpage-designs.co.uk, converted.co.uk, sortlist.co.uk         |
-| landing page design cost                        | serp-0053 | 2/9   | 0/0 · AIO                 | A5/B4 Soft   | E1             | Low          | reddit.com, convertri.com, landingi.com                            |
-| landing page or website small business          | serp-0054 | 1/9   | 0/2 · AIO                 | A7/B2 Hard   | E4             | Low          | sandstonecastles.co.uk, unbounce.com, sites.google.com             |
-| landing page building service                   | serp-0055 | 0/8   | 4/2 · AIO                 | A8/B0 Hard   | E1 E4          | Medium       | zapier.com, wix.com, mailerlite.com                                |
-| sales funnel design uk                          | serp-0056 | 3/8   | 4/2 · AIO                 | A4/B4 Soft   | E4             | Low          | wearemarketable.co.uk, adobe.com, xero.com                         |
-| landing page agency uk                          | serp-0057 | —     | —                         | —            | —              | block record | HTTP 403 after 5 more captures (afternoon, fresh context)          |
-| google business profile management uk           | serp-0058 | 4/9   | 0/2 · AIO                 | A3/B6 Soft   | E4             | Low          | business.google.com, support.google.com, business.google.com       |
-| google business profile management services     | serp-0059 | 2/9   | 0/1 · AIO                 | A1/B8 Soft   | E1 E4          | Medium       | business.google.com, support.google.com, virens.co.uk              |
-| marketing packages for small business uk        | serp-0060 | 9/9   | 4/2 · AIO                 | A2/B7 Soft   | E3 E4          | Medium       | smashmarketing.co.uk, wrise.co.uk, republicmarketing.co.uk         |
-| gohighlevel pricing uk                          | serp-0061 | 3/9   | 3/2 · AIO                 | A0/B6 Soft   | E1 E4          | Medium       | gohighlevel.com, softomatesolutions.com, help.gohighlevel.com      |
-| local seo packages uk                           | serp-0062 | 9/9   | 0/1 · AIO                 | A2/B7 Soft   | E1 E3 E4       | **High**     | seoworks.co.uk, rapidseo.london, localseoservicesuk.co.uk          |
-| online booking system small business uk         | serp-0063 | 2/9   | 4/2 · AIO                 | A7/B2 Hard   | E4             | Low          | squareup.com, simplybook.me, smallbusiness.co.uk                   |
-| appointment reminder service uk                 | serp-0064 | 7/9   | 4/2 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | squareup.com, appointmentreminder.com, uclh.nhs.uk                 |
-| vet clinic marketing agency                     | serp-0065 | 4/10  | 0/1 · local pack          | A1/B9 Soft   | E1 E4          | Medium       | connectedvet.co.uk, vetsdigital.com, rcomms.co.uk                  |
-| ai receptionist for garages                     | serp-0066 | 7/8   | 0/1 · AIO                 | A5/B3 Soft   | E1 E3 E4 E5    | **High**     | electronicreceptionist.co.uk, sesar.co.uk, lineshift.ai            |
-| mot reminder text service                       | serp-0067 | 7/9   | 0/0 · AIO                 | A6/B3 Hard   | E3             | Low          | gov.uk, reminders.mot-testing.service.gov.uk, mottext.co.uk        |
-| google business profile management cost         | serp-0068 | 1/9   | 0/0 · AIO                 | A1/B8 Soft   | E1             | Low          | business.google.com, reddit.com, workspace.google.com              |
-| google business profile suspended help          | serp-0069 | 0/7   | 0/0 · AIO                 | A4/B3 Soft   | E1             | Low          | support.google.com, reddit.com, brightlocal.com                    |
-| landing page agency uk                          | serp-0070 | 9/9   | 4/2 · AIO                 | A1/B8 Soft   | E3 E4          | Medium       | converted.co.uk, kingkong.co, sortlist.co.uk                       |
-| landing page cost uk                            | serp-0071 | 9/9   | 4/2 · AIO                 | A1/B8 Soft   | E3 E4          | Medium       | reddit.com, godaddy.com, luxbranding.co.uk                         |
-| whatsapp business uk cost                       | serp-0072 | 2/9   | 1/2 · AIO                 | A1/B8 Soft   | E1 E4          | Medium       | whatsappbusiness.com, whatsappbusiness.com, sleekflow.io           |
+| Term                                            | Record    | UK/10 | Ads top/bottom · features | Proxy        | Evidence       | Tier         | Ranks 1–3                                                                                    |
+| ----------------------------------------------- | --------- | ----- | ------------------------- | ------------ | -------------- | ------------ | -------------------------------------------------------------------------------------------- |
+| missed call text back uk                        | serp-0001 | 9/9   | 0/2 · AIO                 | A2/B7 Soft   | E1 E3 E4 E5    | **High**     | call2sms.co.uk, digitaltoolbag.co.uk, mctb.1nexus.co.uk                                      |
+| missed call text back service uk                | serp-0002 | 8/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E3 E4 E5    | **High**     | marketing-4-results.co.uk, digitaltoolbag.co.uk, 1nexus                                      |
+| missed call text back service                   | serp-0003 | 3/8   | 0/1 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, everycatch.com                                         |
+| text back missed calls                          | serp-0004 | 4/8   | 4/2 · AIO                 | A4/B3 Soft   | E1 E4 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com                                         |
+| missed call text back software                  | serp-0005 | 2/8   | 0/0 · AIO                 | A7/B0 Hard   | E1 E5          | Medium       | help.gohighlevel.com, upfirst.ai, call2sms.co.uk                                             |
+| is missed call text back legal uk               | serp-0006 | 7/9   | 0/0 · AIO                 | A0/B9 Soft   | E3             | Low          | digitaltoolbag.co.uk, smbbooster.co.uk, justanswer.co.uk                                     |
+| why do i get a text message after a missed call | serp-0007 | 4/9   | 0/0 · AIO                 | A2/B7 Soft   | E1 E2          | Medium       | reddit.com, community.ee.co.uk, community.idmobile.co.uk                                     |
+| auto reply text missed call                     | serp-0008 | 1/7   | 0/0 · AIO                 | A5/B2 Soft   | E5             | Low          | reddit.com, contactfusion.co.uk, support.callrail.com                                        |
+| missed call text back for plumbers              | serp-0009 | 1/8   | 4/2 · AIO                 | A1/B6 Soft   | E1 E4          | Medium       | reddit.com, tagmktg.com, leadtruffle.co                                                      |
+| missed call text back                           | serp-0010 | 4/8   | 0/0 · AIO                 | A4/B3 Soft   | E1 E2 E5       | Medium       | help.gohighlevel.com, call2sms.co.uk, everycatch.com                                         |
+| missed call sms service uk                      | serp-0011 | 9/9   | 4/0 · AIO                 | A6/B3 Hard   | E3 E4 E5       | Medium       | call2sms.co.uk, digitaltoolbag.co.uk, callcatchers.co.uk                                     |
+| missed call text message service                | serp-0012 | 4/8   | 0/0 · AIO                 | A3/B5 Soft   | E5             | Low          | community.ee.co.uk, reddit.com, digitaltoolbag.co.uk                                         |
+| google review management services uk            | serp-0013 | 7/8   | 4/0 · AIO                 | A2/B5 Soft   | E3 E4          | Medium       | artemis.marketing, localexposure.co.uk, reviewmanagement.org.uk                              |
+| google review management company                | serp-0014 | 0/8   | 4/0 · AIO                 | A6/B1 Hard   | E1 E4          | Medium       | artemis.marketing, wiremo.co, thecmo.com                                                     |
+| google review management agency                 | serp-0015 | 1/8   | 0/0 · AIO                 | A6/B2 Hard   | E1             | Low          | artemis.marketing, gmbapi.com, sproutsocial.com                                              |
+| review management service uk                    | serp-0016 | 9/9   | 4/0 · AIO                 | A4/B5 Soft   | E3 E4 E5       | Medium       | reviewmanagement.org.uk, purereputation.co.uk, localexposure                                 |
+| google review request automation                | serp-0017 | 0/8   | 1/1                       | A7/B1 Hard   | E1 E4          | Medium       | reddit.com, roapp.io, repairdesk.co                                                          |
+| service to get more google reviews              | serp-0018 | 0/4   | 0/0 · AIO                 | A2/B2 Soft   | E1             | Low          | reddit.com, asknicely.com, goqdos.com                                                        |
+| how to get more google reviews from customers   | serp-0019 | 1/6   | 0/1 · AIO                 | A4/B2 Soft   | E1 E4          | Medium       | reddit.com, asknicely.com, reputation.com                                                    |
+| how to ask for google reviews legally uk        | serp-0020 | 6/7   | 0/0 · AIO                 | A3/B2 Soft   | E3 E5          | Medium       | (untitled result), gov.uk, axiomai.uk                                                        |
+| review gating uk                                | serp-0021 | 6/9   | 0/0 · AIO                 | A4/B4 Soft   | E3             | Low          | reddit.com, brightlocal.com, helphound.info                                                  |
+| incentivised reviews uk                         | serp-0022 | 6/9   | 0/1                       | A5/B0 Medium | E1 E3 E4       | **High**     | lcf.co.uk, gov.uk, assets.publishing.service.gov.uk                                          |
+| reputation management for dentists              | serp-0023 | 2/9   | 0/0 · AIO                 | A6/B3 Hard   | E1             | Low          | inmoment.com, doctible.com, dentalmarketingexpert.co.uk                                      |
+| google review management                        | serp-0024 | 0/8   | 0/1 · AIO                 | A5/B3 Soft   | E1 E4          | Medium       | wiremo.co, youtube.com, sproutsocial.com                                                     |
+| online reputation management small business uk  | serp-0025 | 6/9   | 4/0 · AIO                 | A3/B6 Soft   | E3 E4          | Medium       | xero.com, igniyte.co.uk, birdeye.com                                                         |
+| review management software uk                   | serp-0026 | 8/9   | 4/2 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | capterra.co.uk, birdeye.com, ehubt.io                                                        |
+| ai phone receptionist uk                        | serp-0027 | 8/9   | 4/0 · AIO                 | A9/B0 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, thevoipshop.co.uk                                              |
+| ai voice receptionist uk                        | serp-0028 | 7/9   | 3/0 · AIO                 | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                                                 |
+| ai receptionist for small business uk           | serp-0029 | 6/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, bookedsolid.health                                             |
+| ai call answering service uk                    | serp-0030 | 8/9   | 4/2 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, norango.ai                                             |
+| ai receptionist cost uk                         | serp-0031 | 8/9   | 3/0 · AIO                 | A7/B2 Hard   | E3 E4 E5       | Medium       | aiphonecalls.co.uk, fasthosts.co.uk, bookedsolid.health                                      |
+| free ai receptionist uk                         | serp-0032 | 8/9   | 4/0                       | A8/B1 Hard   | E1 E3 E4 E5    | **High**     | fasthosts.co.uk, ionos.co.uk, sophiie.ai                                                     |
+| ai dental receptionist uk                       | serp-0033 | 8/9   | 3/0 · AIO                 | A5/B2 Soft   | E1 E3 E4 E5    | **High**     | roboreception.co.uk, dentistry.co.uk, viveoai.com                                            |
+| is an ai receptionist legal uk                  | serp-0034 | 9/9   | 4/2                       | A6/B3 Hard   | E3 E4 E5       | Medium       | softomatesolutions.com, reddit.com, fortayconnect.com                                        |
+| ai receptionist uk                              | serp-0035 | 8/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E2 E3 E4 E5 | **High**     | fasthosts.co.uk, ionos.co.uk, moneypenny.com                                                 |
+| ai phone answering service uk                   | serp-0036 | 7/9   | 4/0 · AIO                 | A7/B2 Hard   | E1 E3 E4 E5    | **High**     | perfectreception.co.uk, answer.co.uk, aiphonecalls.co.uk                                     |
+| virtual receptionist ai uk                      | serp-0037 | 8/9   | 3/0 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, answer.co.uk, thevoipshop.co.uk                                             |
+| best ai receptionist uk                         | serp-0038 | 8/9   | 4/0 · AIO                 | A7/B1 Hard   | E3 E4 E5       | Medium       | fasthosts.co.uk, sophiie.ai, bookedsolid.health                                              |
+| email marketing agency uk                       | serp-0039 | 9/9   | 4/0 · AIO                 | A3/B6 Soft   | E1 E3 E4       | **High**     | email-postman.co.uk, zestydigital.co.uk, agencies.semrush.com                                |
+| email marketing services uk                     | serp-0040 | 9/10  | 4/0 · local pack          | A3/B5 Soft   | E1 E3 E4       | **High**     | bluefrontier.co.uk, email-postman.co.uk, agencies.semrush.com                                |
+| email marketing companies uk                    | serp-0041 | 8/9   | 4/0 · AIO                 | A5/B4 Soft   | E1 E2 E3 E4    | **High**     | email-postman.co.uk, emailoctopus.com, clutch.co                                             |
+| email marketing agency for small business       | serp-0042 | 7/9   | 4/0                       | A5/B4 Soft   | E1 E3 E4       | **High**     | thegoodmarketer.co.uk, growth-by-design.co.uk, salesforce.com                                |
+| sms marketing services uk                       | serp-0043 | 9/9   | 4/0 · AIO                 | A9/B0 Hard   | E3 E4 E5       | Medium       | voodoosms.com, clicksend.com, klaviyo.com                                                    |
+| sms marketing cost                              | serp-0044 | 2/9   | 4/2                       | A8/B1 Hard   | E1 E4 E5       | Medium       | textmarketer.co.uk, help.shopify.com, thesmsworks.co.uk                                      |
+| database reactivation campaign                  | serp-0045 | —     | —                         | —            | —              | block record | HTTP 429 after 45 captures                                                                   |
+| database reactivation campaign                  | serp-0046 | 0/8   | 0/0 · AIO                 | A0/B8 Soft   | E1             | Low          | yaystarter.com, revsquared.ai, refreshagent.com                                              |
+| database reactivation uk                        | serp-0047 | 8/9   | 3/2 · AIO                 | A0/B9 Soft   | E3 E4          | Medium       | databasereactivation.co.uk, vantagegrowthptnrs.com, yaystarter.com                           |
+| sms marketing uk                                | serp-0048 | 8/9   | 3/0 · AIO                 | A9/B0 Hard   | E1 E2 E3 E4 E5 | **High**     | voodoosms.com, firetext.co.uk, salesforce.com                                                |
+| email marketing management uk                   | serp-0049 | 7/9   | 4/0 · AIO                 | A5/B4 Soft   | E3 E4          | Medium       | zestydigital.co.uk, constantcontact.com, salesforce.com                                      |
+| landing page design uk                          | serp-0050 | 7/9   | 3/0 · AIO                 | A3/B6 Soft   | E3 E4          | Medium       | mylandingpage.co.uk, converted.co.uk, sortlist.co.uk                                         |
+| landing page design agency uk                   | serp-0051 | —     | —                         | —            | —              | block record | HTTP 403 after 5 more captures                                                               |
+| landing page design agency uk                   | serp-0052 | 9/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E3 E4       | **High**     | landingpage-designs.co.uk, converted.co.uk, sortlist.co.uk                                   |
+| landing page design cost                        | serp-0053 | 2/9   | 0/0 · AIO                 | A5/B4 Soft   | E1             | Low          | reddit.com, convertri.com, landingi.com                                                      |
+| landing page or website small business          | serp-0054 | 1/9   | 0/2 · AIO                 | A7/B2 Hard   | E4             | Low          | sandstonecastles.co.uk, unbounce.com, sites.google.com                                       |
+| landing page building service                   | serp-0055 | 0/8   | 4/2 · AIO                 | A8/B0 Hard   | E1 E4          | Medium       | zapier.com, wix.com, mailerlite.com                                                          |
+| sales funnel design uk                          | serp-0056 | 3/8   | 4/2 · AIO                 | A4/B4 Soft   | E4             | Low          | wearemarketable.co.uk, adobe.com, xero.com                                                   |
+| landing page agency uk                          | serp-0057 | —     | —                         | —            | —              | block record | HTTP 403 after 5 more captures (afternoon, fresh context)                                    |
+| google business profile management uk           | serp-0058 | 4/9   | 0/2 · AIO                 | A3/B6 Soft   | E4             | Low          | business.google.com, support.google.com, business.google.com                                 |
+| google business profile management services     | serp-0059 | 2/9   | 0/1 · AIO                 | A1/B8 Soft   | E1 E4          | Medium       | business.google.com, support.google.com, virens.co.uk                                        |
+| marketing packages for small business uk        | serp-0060 | 9/9   | 4/2 · AIO                 | A2/B7 Soft   | E3 E4          | Medium       | smashmarketing.co.uk, wrise.co.uk, republicmarketing.co.uk                                   |
+| gohighlevel pricing uk                          | serp-0061 | 3/9   | 3/2 · AIO                 | A0/B6 Soft   | E1 E4          | Medium       | gohighlevel.com, softomatesolutions.com, help.gohighlevel.com                                |
+| local seo packages uk                           | serp-0062 | 9/9   | 0/1 · AIO                 | A2/B7 Soft   | E1 E3 E4       | **High**     | seoworks.co.uk, rapidseo.london, localseoservicesuk.co.uk                                    |
+| online booking system small business uk         | serp-0063 | 2/9   | 4/2 · AIO                 | A7/B2 Hard   | E4             | Low          | squareup.com, simplybook.me, smallbusiness.co.uk                                             |
+| appointment reminder service uk                 | serp-0064 | 7/9   | 4/2 · AIO                 | A8/B1 Hard   | E3 E4 E5       | Medium       | squareup.com, appointmentreminder.com, uclh.nhs.uk                                           |
+| vet clinic marketing agency                     | serp-0065 | 4/10  | 0/1 · local pack          | A1/B9 Soft   | E1 E4          | Medium       | connectedvet.co.uk, vetsdigital.com, rcomms.co.uk                                            |
+| ai receptionist for garages                     | serp-0066 | 7/8   | 0/1 · AIO                 | A5/B3 Soft   | E1 E3 E4 E5    | **High**     | electronicreceptionist.co.uk, sesar.co.uk, lineshift.ai                                      |
+| mot reminder text service                       | serp-0067 | 7/9   | 0/0 · AIO                 | A6/B3 Hard   | E3             | Low          | gov.uk, reminders.mot-testing.service.gov.uk, mottext.co.uk                                  |
+| google business profile management cost         | serp-0068 | 1/9   | 0/0 · AIO                 | A1/B8 Soft   | E1             | Low          | business.google.com, reddit.com, workspace.google.com                                        |
+| google business profile suspended help          | serp-0069 | 0/7   | 0/0 · AIO                 | A4/B3 Soft   | E1             | Low          | support.google.com, reddit.com, brightlocal.com                                              |
+| landing page agency uk                          | serp-0070 | 9/9   | 4/2 · AIO                 | A1/B8 Soft   | E3 E4          | Medium       | converted.co.uk, kingkong.co, sortlist.co.uk                                                 |
+| landing page cost uk                            | serp-0071 | 9/9   | 4/2 · AIO                 | A1/B8 Soft   | E3 E4          | Medium       | reddit.com, godaddy.com, luxbranding.co.uk                                                   |
+| whatsapp business uk cost                       | serp-0072 | 2/9   | 1/2 · AIO                 | A1/B8 Soft   | E1 E4          | Medium       | whatsappbusiness.com, whatsappbusiness.com, sleekflow.io                                     |
+| small business marketing packages               | serp-0073 | 5/9   | 0/2 · AIO                 | A2/B7 Soft   | E1 E3 E4       | **High**     | munro.agency, iconicdigital.co.uk, smashmarketing.co.uk                                      |
+| local business marketing services               | serp-0074 | 5/9   | 4/2 · AIO · local pack    | A3/B6 Soft   | E1 E3 E4       | **High**     | find-and-update.company-information.service.gov.uk, footprint.co.uk, firstdigitalmedia.co.uk |
+| gohighlevel sms pricing uk                      | serp-0075 | 3/9   | 1/1 · AIO                 | A0/B5 Soft   | E1 E4          | Medium       | help.gohighlevel.com, skool.com, gohighlevel.com                                             |
+| gohighlevel agency uk                           | serp-0076 | 6/9   | 0/0 · AIO                 | A1/B6 Soft   | E1 E3          | Medium       | gohighlevel.com, notluck.co.uk, softomatesolutions.com                                       |
+| local seo agency uk                             | serp-0077 | 9/9   | 0/0 · local pack          | A3/B6 Soft   | E1 E3          | Medium       | localseoservicesuk.co.uk, phoenixwebservices.co.uk, localseouk.co.uk                         |
 
-**Reading across the pages.** 19 terms are High, 34 Medium, 16 Low, none Constructed among
-the 69 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
+**Reading across the pages.** 21 terms are High, 37 Medium, 16 Low, none Constructed among
+the 74 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
 the email-agency heads are High on Soft SERPs, which is the combination a zero-authority `.co.uk` can
 act on first; the reviews page has no High service head and earns its High only on the compliance
 long-tail, which sets its cluster order. Terms not yet captured on Google carry no tier. E5 is set by
@@ -1008,7 +1050,7 @@ marketing agency cost`, `is sms marketing legal uk`, `how much does it cost to s
 `database reactivation service`, `digital marketing packages for small business`, `landing page cost
 uk`, `local seo packages uk`, `whatsapp business api pricing uk`, `vet clinic marketing agency`, `ai
 receptionist for garages`, `mot reminder text service`, `ai receptionist cost` (bare; post) and `ai
-receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 87
+receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 90
 rows after the afternoon captures added `how much does it cost to design a landing page` (PAA on
 `serp-0052` and `serp-0053`; to the post), `is google business profile manager free` (PAA on
 `serp-0058` and `serp-0059`; to the profile page's FAQ), `how much does a marketing package cost`
@@ -1016,8 +1058,11 @@ rows after the afternoon captures added `how much does it cost to design a landi
 `serp-0061`; to the post) `how much should i pay for local seo` (PAA on `serp-0062`; to the `/services/seo` packages FAQ)
 `where can i get free text reminders for appointments` (PAA on `serp-0064`; to the calendar's
 item 4), `how do i unsuspend my google business profile` (PAA on `serp-0069`; to the calendar's
-item 5) and `what is the 24 hour rule for whatsapp business` (PAA on `serp-0072`; to the calendar's
-item 11); the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
+item 5) `what is the 24 hour rule for whatsapp business` (PAA on `serp-0072`; to the calendar's
+item 11), `how much should a small business pay for marketing` (PAA on `serp-0073`; the bundle's
+second pricing FAQ), `how much does gohighlevel charge for sms` (PAA on `serp-0075`; to the
+calendar's item 12) and `how much does seo cost in the uk` (PAA on `serp-0077`; to `/services/seo`);
+the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
 target is reached with the remaining captures.
 
 ## 9. PAA → FAQ candidates (pricing first; the SERP term in brackets)
@@ -1062,14 +1107,18 @@ target is reached with the remaining captures.
   is suspended? (`serp-0069`; calendar item 5 answers "How do I unsuspend…", "Why is my … suspended?"
   and "How do I contact Google about a suspended account?") · Does WebAsk need a UK office to manage
   my profile? (constructed; D1).
-- **`local-business-plans`:** How much does a marketing package cost? (`serp-0060`) · How much does
+- **`local-business-plans`:** How much does a marketing package cost? (`serp-0060`) · How much should
+  a small business pay for marketing? (`serp-0073`) · How much does GoHighLevel charge for SMS?
+  (`serp-0075` — the post carries the dated figure) · How can I promote my business locally?
+  (`serp-0074`) · What is a GoHighLevel agency? (`serp-0076` — and why this page is not one) · How much does
   GoHighLevel cost a month? (`serp-0061` — answered without a converted figure; the post carries the
   detail) · Which marketing is best for small businesses? (`serp-0060`) · Is there a cheaper
   alternative to GoHighLevel? (`serp-0061` — the "own account" route, honestly) · Is GoHighLevel worth
   the money? (`serp-0061`) · What happens to my data if I leave? (constructed; the exit clause, D11) ·
   What is included in each tier? (constructed).
 - **`/services/seo` packages section (if D13 opens it):** How much should I pay for local SEO?
-  (`serp-0062`) · How much does SEO typically cost in the UK? (`serp-0062`) · Is SEO still worth it
+  (`serp-0062`) · How much does SEO cost in the UK? (`serp-0077`; `serp-0062` "typically") · Which SEO
+  agency is the best in the UK? (`serp-0077` — answered without a claim) · Is SEO still worth it
   in 2026? (`serp-0062`).
 - **Calendar item 11 (WhatsApp):** Does it cost money to use WhatsApp Business? (`serp-0072`) · What
   is the 24 hour rule for WhatsApp Business? (`serp-0072`) · Is it worth getting WhatsApp Business?

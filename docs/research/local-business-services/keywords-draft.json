@@ -892,6 +892,36 @@
       "supportingUrls": ["/services/missed-call-text-back"],
       "cluster": "email-sms",
       "vertical": null
+    },
+    {
+      "term": "how much should a small business pay for marketing",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "how much does gohighlevel charge for sms",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/gohighlevel-uk-local-business-gbp-cost",
+      "supportingUrls": ["/services/local-business-plans"],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "how much does seo cost in the uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": ["/blog/topic/seo"],
+      "cluster": "seo",
+      "vertical": null
     }
   ]
 }
