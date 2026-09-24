@@ -922,6 +922,16 @@
       "supportingUrls": ["/blog/topic/seo"],
       "cluster": "seo",
       "vertical": null
+    },
+    {
+      "term": "how much does it cost to optimise a google business profile",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-listings",
+      "vertical": null
     }
   ]
 }

@@ -7854,6 +7854,545 @@
       "notes": ""
     },
     {
+      "id": "serp-0078",
+      "term": "google business profile optimisation service",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T18:46:36.544Z",
+      "adsTop": 0,
+      "adsBottom": 1,
+      "adsDomains": ["topdog.nu"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What are Google Business Profile Optimization services?",
+        "How much does it cost to optimize a Google My Business profile?",
+        "What is Google business optimisation?",
+        "Is SEO still worth it in 2026?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Google business profile optimisation service review",
+        "Google business profile optimisation service free",
+        "My Business",
+        "Google business profile optimisation service cost",
+        "Google My Business",
+        "Google Business Profile Manager",
+        "Google Business Profile dashboard",
+        "Google Business Profile page"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "virens.co.uk",
+          "url": "https://virens.co.uk/Services/Google Business Profiles",
+          "title": "Google Business Profile Management & Optimisation - Virens",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "business.google.com",
+          "url": "https://business.google.com/business-profile",
+          "title": "Get Listed on Google - Google Business Profile",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "uberall.com",
+          "url": "https://uberall.com/Home/Blogs",
+          "title": "Google Business Profile Optimization & Analytics Tips",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "semrush.com",
+          "url": "https://www.semrush.com/gbp-optimization/start",
+          "title": "your Google Business Profile and lead in local search",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "localo.com",
+          "url": "https://localo.com/blog/google-business-profile-opti...",
+          "title": "Google Business Profile Optimization and Management ...",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "fiverr.com",
+          "url": "https://www.fiverr.com/Digital Marketing/Local SEO",
+          "title": "Google My Business (GMB) Optimization Services",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "support.google.com",
+          "url": "https://support.google.com/business",
+          "title": "Google Business Profile Help",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "thryv.com.au",
+          "url": "https://www.thryv.com.au/blog/google-business-pr...",
+          "title": "Google Business Profile Optimisation: How to Get Found, ...",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "youtube.com",
+          "url": "https://youtube.com",
+          "title": "How to Optimize Google Business Profile for Service Based ...",
+          "type": "forum-ugc",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 1,
+      "difficultyProxy": {
+        "a": 4,
+        "b": 5,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0079",
+      "term": "google business profile management agency",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T18:47:02.504Z",
+      "adsTop": 2,
+      "adsBottom": 2,
+      "adsDomains": ["merkle.se", "go.wilmington-services.co.uk"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How much does it cost to get a Google Business Profile?",
+        "Which Google Ads agency is the best?",
+        "How much does it cost to hire a Google partner?",
+        "Where can I manage my Google Business Profile?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "My Business",
+        "Google business profile management agency login",
+        "Google business profile management agency reviews",
+        "Google business profile management agency address",
+        "Google my business agency partner",
+        "Google my Business agency login",
+        "Google agency account",
+        "Google Business Profile Manager"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "gmbgorilla.com",
+          "url": "https://gmbgorilla.com",
+          "title": "GMB Gorilla: Google Business Profile Specialists",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "support.google.com",
+          "url": "https://support.google.com/business/answer",
+          "title": "Register your agency for Business Profiles",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "business.google.com",
+          "url": "https://business.google.com/business-profile",
+          "title": "Get Listed on Google - Google Business Profile",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "virens.co.uk",
+          "url": "https://virens.co.uk/Services/Google Business Profiles",
+          "title": "Google Business Profile Management & Optimisation - Virens",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "support.google.com",
+          "url": "https://support.google.com/business/answer",
+          "title": "Manage agency organisations - Google Business Profile ...",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "storytellermedia.ca",
+          "url": "https://storytellermedia.ca/google-business-profile-ma...",
+          "title": "Google Business Profile Management Service: Monthly Plan",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "sterlingsky.ca",
+          "url": "https://www.sterlingsky.ca/google-business-profile-ag...",
+          "title": "Google Business Profile Agency Dashboard",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "youtube.com",
+          "url": "https://youtube.com",
+          "title": "The Ultimate Local SEO Guide to Google's Business Profile ...",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "embedsocial.com",
+          "url": "https://embedsocial.com/blog/become-google-busin...",
+          "title": "How to Become a Google Business Profile Agency in 2026?",
+          "type": "agency",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 1,
+      "difficultyProxy": {
+        "a": 2,
+        "b": 7,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0080",
+      "term": "google maps listing management uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T18:47:28.391Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How to make money with Google Maps 100-200 per day?",
+        "How to manage lists in Google Maps?",
+        "How much does it cost to appear on Google Maps?",
+        "What is the UK version of Google Maps?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "My Business",
+        "Google maps listing management uk reviews",
+        "Google maps listing management uk login",
+        "Google maps listing management uk free",
+        "Google My Business",
+        "Google maps listing management uk contact number",
+        "Google Business Profile",
+        "Google my business login"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "business.google.com",
+          "url": "https://business.google.com/uk/business-profile",
+          "title": "Get Listed on Google - Google Business Profile",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "support.google.com",
+          "url": "https://support.google.com/business",
+          "title": "Google Business Profile Help",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "business.google.com",
+          "url": "https://business.google.com/create",
+          "title": "Sign in",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "support.google.com",
+          "url": "https://support.google.com/business/answer",
+          "title": "Add or claim your Business Profile",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "virens.co.uk",
+          "url": "https://virens.co.uk/Services/Google Business Profiles",
+          "title": "Google Business Profile Management & Optimisation - Virens",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "shopify.com",
+          "url": "https://www.shopify.com/uk/blog/google-business...",
+          "title": "Google Business Profile for Ecommerce (2026)",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "business.yell.com",
+          "url": "https://business.yell.com/Insights",
+          "title": "How to Add Your UK Business to Google Maps",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "ionos.co.uk",
+          "url": "https://www.ionos.co.uk/.../Online sales",
+          "title": "Registering with Google Maps in just a few small steps",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "visilocali.com",
+          "url": "https://visilocali.com/Insights/Educational",
+          "title": "Google Maps Business Listing: The 2026 UK Setup Guide",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 4,
+      "difficultyProxy": {
+        "a": 5,
+        "b": 4,
+        "label": "Soft"
+      },
+      "evidence": ["E5"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0081",
+      "term": "gbp management service uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T18:47:51.196Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What does GBP management entail?",
+        "How can I contact Parking Control Management (UK) Ltd. about my PCN?",
+        "What is the best GBP management software?",
+        "Why is GBP management important?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Gbp management service uk reviews",
+        "Gbp management service uk phone number",
+        "Gbp management service uk contact number",
+        "Gbp management service uk contact",
+        "Gbp management service uk address",
+        "GBP Management Ltd",
+        "GBP Management Ltd reviews",
+        "GBP Management Ltd Leicester"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "gbparking.uk",
+          "url": "https://www.gbparking.uk",
+          "title": "GBP Management Ltd - Parking Management",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "gbpmanagementservice.com",
+          "url": "https://gbpmanagementservice.com",
+          "title": "GBP Management: Google Business Profile Management ...",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "web-aviso.com",
+          "url": "https://www.web-aviso.com/google-business",
+          "title": "Google Business Profile (GBP) Management I web-aviso",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "localise.co.uk",
+          "url": "https://localise.co.uk/google-business-profile-how-to-...",
+          "title": "Google Business Profile: How to Optimize Your GBP Listing?",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "gbpmanager.co.uk",
+          "url": "https://gbpmanager.co.uk",
+          "title": "GBP Manager – Google Business Profile Manager",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "localhq.io",
+          "url": "https://localhq.io/google-business-profile-managemen...",
+          "title": "Google Business Profile Management Service",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "gbparking.uk",
+          "url": "https://www.gbparking.uk/our-services",
+          "title": "Our Services",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "trustpilot.com",
+          "url": "https://www.trustpilot.com/review/gbpmanager.co.uk",
+          "title": "Read Customer Service Reviews of gbpmanager.co.uk",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "reddit.com",
+          "url": "https://reddit.com",
+          "title": "GBP Management Tools for Agencies : r/localseo",
+          "type": "forum-ugc",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 6,
+      "difficultyProxy": {
+        "a": 1,
+        "b": 8,
+        "label": "Soft"
+      },
+      "evidence": ["E3"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0082",
+      "term": "how to reinstate google business account",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T18:48:13.036Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How to get Google business reinstated?",
+        "How can I fix a suspended business profile?",
+        "Why has my Google business account been suspended?",
+        "How do I reactivate a suspended Google account?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "How to reinstate google business account reddit",
+        "Google Business Profile reinstatement request form",
+        "Google Business Profile suspended due to policy violation",
+        "How to recover suspended Google My Business",
+        "Google Business Profile appeals tool",
+        "Google my business reinstatement service",
+        "Google appeal tool",
+        "Google Business appeal phone number"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "support.google.com",
+          "url": "https://support.google.com/business/answer",
+          "title": "Fix suspended or disabled profiles - Google Business ...",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "support.google.com",
+          "url": "https://support.google.com/business/answer",
+          "title": "Appeal Business Profile content and profile restrictions",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 3,
+          "domain": "reddit.com",
+          "url": "https://reddit.com",
+          "title": "How I got my suspended Google Business Profile back ...",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "facebook.com",
+          "url": "https://facebook.com",
+          "title": "How to recover a suspended Google Business page",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "gmbgorilla.com",
+          "url": "https://gmbgorilla.com/google-my-business-reinstate...",
+          "title": "Get Your Suspended Google Business Profile Reinstated",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "reinstatelabs.com",
+          "url": "https://www.reinstatelabs.com/blogs/how-to-reinstat...",
+          "title": "Google Business Profile Reinstatement Guide (2026)",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "searchenginejournal.com",
+          "url": "https://www.searchenginejournal.com/google-my-bus...",
+          "title": "Google Business Profile Suspended? Here's How To Get ...",
+          "type": "agency",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 0,
+      "difficultyProxy": {
+        "a": 2,
+        "b": 5,
+        "label": "Soft"
+      },
+      "evidence": ["E1"],
+      "notes": ""
+    },
+    {
       "id": "bing-0001",
       "term": "missed call text back uk",
       "source": "bing",
