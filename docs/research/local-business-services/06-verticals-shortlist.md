@@ -141,8 +141,12 @@ the compliance table on the PDF page itself, because `pdftotext -layout` jumbles
 **Status.** Made 22 September 2026 (gov.uk publication page, "Published 22 September 2026", thirteen
 documents); Art. 1(2) "This Order shall come into force on the day after the Order is made"; extends
 to the whole UK (Art. 1(3)). The CMA says an "updated explainer on what veterinary businesses need
-to do to comply" is coming. The BVA (page updated 24 Sep 2026) offers a "Get ready, get compliant"
-guide and five remedy guides — fetch in S4.
+to do to comply" is coming. The BVA's CMA resource page [S36] links a "Get ready, get compliant" guide
+and five "Breaking down the CMA's measures" remedy guides (ownership, prices and services; treatments;
+prescribing; complaints; cremation), all fetched on 24 September 2026 and all **member-only** — the
+public page says only that "The remedies will be introduced in phases, with full implementation
+complete by September 2027" and that "Smaller businesses have longer to comply with the remedies than
+larger businesses" [S158]. Nothing in this section rests on them; the Order is the source.
 
 **Definitions (Art. 2).** "'Large Veterinary Business' means a Veterinary Business with 15 or more
 FOPs and/or OOH Centres"; "'Small Veterinary Business' means a Veterinary Business with fewer than

@@ -458,8 +458,8 @@ and no `organic` array, never retried with a solved CAPTCHA.
 
 ## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-**Coverage.** 57 `google.co.uk` records (`serp-0001`–`serp-0057`: 54 captures and three block records), 30 Bing
-`cc=GB` captures (`bing-0001`–`bing-0030`) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
+**Coverage.** 57 `google.co.uk` records (`serp-0001`–`serp-0057`: 54 captures and three block records), 32 Bing
+`cc=GB` captures (`bing-0001`–`bing-0032`; the last two are the trades heads, added in S4) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
 in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
 the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
 12–18 s, and the 51st request returned HTTP 403. An afternoon re-run from a fresh browser context at
@@ -722,6 +722,16 @@ shows agencies with a GHL-style productised tier ranking (Q17).
   .service.gov.uk twice more in the top ten, then mottext.co.uk, motmanager.co.uk and remindlo.co.uk.
   The garages draft's "the government offers a free one" line is the right first sentence; a paid
   reminder is sold as service-plus-MOT, never as the MOT reminder alone.
+- **Trades (Bing, added in S4 to pick the deep-dive three):** `seo for plumbers uk` (`bing-0031`) is 7/7 UK
+  and guide-shaped — six "SEO for Plumbers UK" guides (seodons.co.uk, klarai.uk, igrowix.com,
+  seobridge.co.uk, localadder.co.uk, awresults.co.uk) and one local-SEO services page — so the term
+  belongs to a post or the trades industry page's SEO section, not to `/services/seo` as a head.
+  `plumber marketing agency uk` (`bing-0032`) is **10/10 UK agencies**: bird.co.uk,
+  plumbersmarketingco.co.uk, vistoplex.com, primename.co.uk, bubyli.co.uk, m4plumbersnearme.com,
+  dandymarketing.co.uk, ad-tivity.co.uk, peacomarketing.com, puremarketing.uk — a crowded, named
+  vertical the industry page enters on the compliance angle (registration display, the CCRs) rather
+  than on "marketing agency". The three read in `04` § 5 are plumbersmarketingco.co.uk, bird.co.uk and
+  seodons.co.uk. Google captures for both terms are queued (§ 6.11, batches 7 and 8).
 
 ### 6.11 Queued — the 53 Google captures the blocks prevented
 
