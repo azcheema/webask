@@ -932,6 +932,16 @@
       "supportingUrls": ["/pricing"],
       "cluster": "local-listings",
       "vertical": null
+    },
+    {
+      "term": "how much does digital marketing cost for a small business",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-plans",
+      "vertical": null
     }
   ]
 }

@@ -385,6 +385,7 @@ One row, as JSON:
 | 68  | how much does gohighlevel charge for sms                    | informational-bottom     | /blog/gohighlevel-uk-local-business-gbp-cost | /services/local-business-plans               | gohighlevel       | —                      | PAA on serp-0075 (added 2026-09-24)                                                    |
 | 69  | how much does seo cost in the uk                            | informational-bottom     | /services/seo                                | /blog/topic/seo                              | seo               | —                      | PAA on serp-0077 (added 2026-09-24)                                                    |
 | 70  | how much does it cost to optimise a google business profile | informational-bottom     | /services/google-business-profile            | /pricing                                     | local-listings ◆  | —                      | PAA on serp-0078 (added 2026-09-24)                                                    |
+| 71  | how much does digital marketing cost for a small business   | informational-bottom     | /services/local-business-plans               | /pricing                                     | local-plans ◆     | —                      | PAA on serp-0083 (added 2026-09-24)                                                    |
 
 Vertical rows for the wave-1 industry pages (added in S6 after 06): `vet clinic marketing agency`,
 `vet practice marketing`, `cma vet price list website` (→ calendar #8; `uk-compliance`;
@@ -472,7 +473,7 @@ and no `organic` array, never retried with a solved CAPTCHA.
 
 ## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-**Coverage.** 82 `google.co.uk` records (`serp-0001`–`serp-0082`: 79 captures and three block records), 32 Bing
+**Coverage.** 87 `google.co.uk` records (`serp-0001`–`serp-0087`: 84 captures and three block records), 32 Bing
 `cc=GB` captures (`bing-0001`–`bing-0032`; the last two are the trades heads, added in S4) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
 in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
 the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
@@ -485,21 +486,21 @@ third block, captured the five page heads without refusal and stopped at five by
 window an hour later did the same for the two fold tests and the three vertical heads, and a sixth for
 the profile long-tail, the two remaining landing-page terms and WhatsApp, and a seventh for the
 bundle and GoHighLevel tail and the local-SEO agency wording, and an eighth for the rest of the profile
-tail. The pages
+tail, and a ninth for the rest of the bundle and GoHighLevel tail. The pages
 captured on Google are text-back, reviews, the receptionist, email/SMS, landing pages, the heads of
 the profile service, the bundle and local SEO, the booking and reminder fold tests and the three
-vertical heads; the remaining GoHighLevel, local-SEO and vertical long tail, the near-me and comparison shapes
-and the web-chat and inbox tests are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
+vertical heads; the remaining local-SEO and vertical long tail, the near-me and comparison shapes and the
+web-chat and inbox tests are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
 provisional until the Google capture lands.
 
-**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 70 of the 79
+**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 75 of the 84
 successful Google captures** — on every text-back, receptionist and email-agency term — so the
 answer-first opening paragraph in `12` is not optional on this line. (2) **A local pack appeared on four
-terms in 79**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
+terms in 84**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
 (`serp-0065`), `local business marketing services` (`serp-0074`) and `local seo agency uk`
 (`serp-0077`) — always on a "services" or "agency" wording, never on a product or question — so local
 intent exists on the agency-shaped heads and nowhere else in the set; D1's no-profile ruling costs this
-line those four terms, not a category, and the four pages concerned enter on their long tail. (3) **Ads sat on 58 of 79** captures, four
+line those four terms, not a category, and the four pages concerned enter on their long tail. (3) **Ads sat on 62 of 84** captures, four
 at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
 and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
 the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
@@ -756,7 +757,7 @@ service` and `… management agency` as its term set with the cost and "is it fr
 leaves the maps wording and reinstatement to the post. Only `google business profile management
 near me` remains queued (§ 6.11 batch 6; evidence only, D1).
 
-### 6.7 The bundle and the GBP-cost cluster (`serp-0060`–`serp-0061`, `serp-0073`–`serp-0076`; Bing `bing-0021`–`bing-0023`; the remaining GoHighLevel terms queued)
+### 6.7 The bundle and the GBP-cost cluster (`serp-0060`–`serp-0061`, `serp-0073`–`serp-0076`, `serp-0083`–`serp-0087`; Bing `bing-0021`–`bing-0023`; complete)
 
 - **The bundle head is an all-UK agency SERP with the vendor advertising on it.** `marketing packages
 for small business uk` (`serp-0060`) is **9/9 UK**, A2/B7 Soft, four ads above and two in the feed,
@@ -819,6 +820,28 @@ pricing uk` (`serp-0075`) is 3/9 UK, A0/B5 Soft, one ad above and one in the fee
   GoHighLevel?", "Where is GoHighLevel located?". The head is claimed by the agencies `04` § 2 read;
   WebAsk's bundle enters as "local business plans" with the platform named inside, not as a
   "GoHighLevel agency" page — consistent with D6 and `05` § 3's re-points (S6 confirms).
+- **The ninth window closes the cluster.** `digital marketing packages for small business`
+  (`serp-0083`) is 7/9 UK, A2/B7 Soft, one feed ad, an AI Overview and **High** (E1 + E3 + E4) —
+  the bundle's third High wording, with the same agencies as the other two (iconicdigital.co.uk,
+  smashmarketing.co.uk, dandymarketing.co.uk, vizcomdesign.co.uk, petitedigital.co.uk) and PAA "How
+  much does digital marketing cost for a small business?"; related "… near me", "… london". The
+  bundle page carries all three package wordings, the "packages … uk" head first. `gohighlevel
+consultant uk` (`serp-0085`) is 7/9 UK, A0/B8 Soft, one feed ad (Fiverr), an AI Overview and
+  **High** (E1 + E3 + E4): julianmills.co.uk, gohighlevel.com, then the Set A agencies again
+  (softomatesolutions.com, automationclarityhub.com, automatetogrow.com), businessfirstonline.co.uk,
+  nexus360.digital, LinkedIn and Reddit — the existing `/services/crm-automation` row keeps it (§ 8).
+  `gohighlevel uk number` (`serp-0084`) is vendor-owned — a Facebook group first, then eight
+  HighLevel help, ideas and marketplace pages — **Medium** (E1 + E4) with no PAA; related "Gohighlevel
+  transfer phone number", "Ghl phone number Verification", "Gohighlevel caller id": the number and
+  KYC questions (Q14) belong to the bundle's FAQ and the calendar's item 12, answered in the vendor's
+  terms. `gohighlevel sub account transfer` (`serp-0086`) is 0/7 UK, A0/B3 Soft, no ads and **Low**
+  (E1): three help-centre pages, Reddit, the ideas board, Facebook and oneexpand.com; related "GHL sub
+  account for sale", "Domain transfer in ghl" — the calendar's item 10 (hosted CRM versus your own
+  account, and leaving) owns it as drafted. `all in one marketing platform small business uk`
+  (`serp-0087`) is 6/9 UK, **A7/B2 Hard**, four ads above and two in the feed (HubSpot, Apollo,
+  Sintra, Mailchimp, monday.com), an AI Overview and **Medium** (E3 + E4): aiom.co.uk, Capterra UK,
+  YouTube, GetApp UK, two listicles, Salesforce, EmailToolTester and Trustpilot — a software SERP;
+  by § 1 step 4 the "platform" wording never heads the bundle page and carries no row.
 
 ### 6.8 Local SEO (`serp-0062`, `serp-0077`; Bing `bing-0024`; the services, vertical and maps terms queued)
 
@@ -912,33 +935,31 @@ service uk` are § 6.11 batch 4.
   than on "marketing agency". The three read in `04` § 5 are plumbersmarketingco.co.uk, bird.co.uk and
   seodons.co.uk. Google captures for both terms are queued (§ 6.11, batches 7 and 8).
 
-### 6.11 Queued — the 28 Google captures still pending
+### 6.11 Queued — the 23 Google captures still pending
 
 **Block history, all on 24 September 2026, all from the same address.** HTTP 429 after 45 captures at
 4–8 s; HTTP 403 after five more at 12–18 s forty minutes later; HTTP 403 after five more at 25–30 s
 from a fresh browser context two and a half hours after that (`serp-0045`, `serp-0051`,
 `serp-0057`); then, forty minutes after the third block, **five captures with no refusal**, stopped
 at five by design (`serp-0058`–`serp-0062`), and an hour after that five more (`serp-0063`–`serp-0067`), and an hour after that another five
-(`serp-0068`–`serp-0072`), then five more (`serp-0073`–`serp-0077`) and five more (`serp-0078`–`serp-0082`). The pattern is a reputation-based allowance of about
+(`serp-0068`–`serp-0072`), then five more (`serp-0073`–`serp-0077`) and five more (`serp-0078`–`serp-0082`), then five more (`serp-0083`–`serp-0087`). The pattern is a reputation-based allowance of about
 five requests per window from this address, so the queue runs five to a batch, page-head terms first,
 one window an hour or more apart; the tail groups stay Bing-only until captured:
 
-1. digital marketing packages for small business · gohighlevel uk number · gohighlevel consultant uk ·
-   gohighlevel sub account transfer · all in one marketing platform small business uk
-2. local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
+1. local seo services for small business uk · seo for plumbers uk · seo for dentists uk · google maps
    ranking service uk · local seo services for plumbers
-3. how much does an online booking system cost · sms appointment reminder service · automated
+2. how much does an online booking system cost · sms appointment reminder service · automated
    appointment reminder service uk · whatsapp business api pricing uk · web chat for small business uk
-4. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
+3. live chat for small business uk · unified inbox small business · vet practice marketing uk · cma vet
    price list website · veterinary services market investigation order 2026
-5. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
+4. gym membership marketing uk · lead generation page design uk · missed call text back near me · ai
    receptionist near me · google business profile management near me (near-me terms are evidence
    only, D1)
-6. email marketing agency near me · best missed call text back software uk · best email marketing
+5. email marketing agency near me · best missed call text back software uk · best email marketing
    agency uk
 
 > ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): every page head and every fold test
-> is now on Google; the six remaining batches are long-tail and evidence rows. Take them one
+> is now on Google; the five remaining batches are long-tail and evidence rows. Take them one
 > window an hour while a session is open, and accept Bing-only, provisional tiers for whatever is
 > left when it closes; never through a CAPTCHA. The
 > founder decides whether the tail groups are worth further windows.
@@ -1039,9 +1060,14 @@ the day real volumes arrive.
 | google maps listing management uk               | serp-0080 | 4/9   | 0/0 · AIO                 | A5/B4 Soft   | E5             | Low                               | business.google.com, support.google.com, business.google.com                                 |
 | gbp management service uk                       | serp-0081 | 6/9   | 0/0 · AIO                 | A1/B8 Soft   | E3             | Low — ambiguous (parking company) | gbparking.uk, gbpmanagementservice.com, web-aviso.com                                        |
 | how to reinstate google business account        | serp-0082 | 0/7   | 0/0 · AIO                 | A2/B5 Soft   | E1             | Low                               | support.google.com, support.google.com, reddit.com                                           |
+| digital marketing packages for small business   | serp-0083 | 7/9   | 0/1 · AIO                 | A2/B7 Soft   | E1 E3 E4       | **High**                          | iconicdigital.co.uk, smashmarketing.co.uk, dandymarketing.co.uk                              |
+| gohighlevel uk number                           | serp-0084 | 3/9   | 0/1 · AIO                 | A0/B1 Soft   | E1 E4          | Medium                            | facebook.com, help.gohighlevel.com, ideas.gohighlevel.com                                    |
+| gohighlevel consultant uk                       | serp-0085 | 7/9   | 0/1 · AIO                 | A0/B8 Soft   | E1 E3 E4       | **High**                          | julianmills.co.uk, gohighlevel.com, softomatesolutions.com                                   |
+| gohighlevel sub account transfer                | serp-0086 | 0/7   | 0/0 · AIO                 | A0/B3 Soft   | E1             | Low                               | help.gohighlevel.com, help.gohighlevel.com, reddit.com                                       |
+| all in one marketing platform small business uk | serp-0087 | 6/9   | 4/2 · AIO                 | A7/B2 Hard   | E3 E4          | Medium                            | aiom.co.uk, capterra.co.uk, youtube.com                                                      |
 
-**Reading across the pages.** 21 terms are High, 39 Medium, 19 Low, none Constructed among
-the 79 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
+**Reading across the pages.** 23 terms are High, 41 Medium, 20 Low, none Constructed among
+the 84 captured. The receptionist carries the most High terms on the hardest SERPs; text-back and
 the email-agency heads are High on Soft SERPs, which is the combination a zero-authority `.co.uk` can
 act on first; the reviews page has no High service head and earns its High only on the compliance
 long-tail, which sets its cluster order. Terms not yet captured on Google carry no tier. E5 is set by
@@ -1081,7 +1107,7 @@ marketing agency cost`, `is sms marketing legal uk`, `how much does it cost to s
 `database reactivation service`, `digital marketing packages for small business`, `landing page cost
 uk`, `local seo packages uk`, `whatsapp business api pricing uk`, `vet clinic marketing agency`, `ai
 receptionist for garages`, `mot reminder text service`, `ai receptionist cost` (bare; post) and `ai
-receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 91
+receptionist for gp surgery uk` (evidence only, out of scope — **not** added). The file now holds 92
 rows after the afternoon captures added `how much does it cost to design a landing page` (PAA on
 `serp-0052` and `serp-0053`; to the post), `is google business profile manager free` (PAA on
 `serp-0058` and `serp-0059`; to the profile page's FAQ), `how much does a marketing package cost`
@@ -1092,9 +1118,10 @@ item 4), `how do i unsuspend my google business profile` (PAA on `serp-0069`; to
 item 5) `what is the 24 hour rule for whatsapp business` (PAA on `serp-0072`; to the calendar's
 item 11), `how much should a small business pay for marketing` (PAA on `serp-0073`; the bundle's
 second pricing FAQ), `how much does gohighlevel charge for sms` (PAA on `serp-0075`; to the
-calendar's item 12) `how much does seo cost in the uk` (PAA on `serp-0077`; to `/services/seo`) and `how much does
+calendar's item 12) `how much does seo cost in the uk` (PAA on `serp-0077`; to `/services/seo`) `how much does
 it cost to optimise a google business profile` (PAA on `serp-0078`; the profile page's cost FAQ, with
-the British spelling the page uses); the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
+the British spelling the page uses) and `how much does digital marketing cost for a small business`
+(PAA on `serp-0083`; the bundle's FAQ); the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
 target is reached with the remaining captures.
 
 ## 9. PAA → FAQ candidates (pricing first; the SERP term in brackets)
@@ -1142,7 +1169,8 @@ target is reached with the remaining captures.
   and "How do I contact Google about a suspended account?") · Does WebAsk need a UK office to manage
   my profile? (constructed; D1).
 - **`local-business-plans`:** How much does a marketing package cost? (`serp-0060`) · How much should
-  a small business pay for marketing? (`serp-0073`) · How much does GoHighLevel charge for SMS?
+  a small business pay for marketing? (`serp-0073`) · How much does digital marketing cost for a small
+  business? (`serp-0083`) · Can I have a UK number, and whose is it? (`serp-0084` related searches; Q14) · How much does GoHighLevel charge for SMS?
   (`serp-0075` — the post carries the dated figure) · How can I promote my business locally?
   (`serp-0074`) · What is a GoHighLevel agency? (`serp-0076` — and why this page is not one) · How much does
   GoHighLevel cost a month? (`serp-0061` — answered without a converted figure; the post carries the
