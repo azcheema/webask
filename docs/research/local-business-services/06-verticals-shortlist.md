@@ -120,10 +120,13 @@ the compliance table on the PDF page itself, because `pdftotext -layout` jumbles
   contract"; 36(6) "The consumer bears no cost for supply of the service, in full or in part, in the
   cancellation period, if—(a) the trader has failed to provide the consumer with the information on
   the right to cancel required by paragraph (l) of Schedule 2 … or (b) the service is not supplied in
-  response to a request in accordance with paragraph (1)". Reg 6 excludes contracts for the
-  construction of new buildings and substantial conversions (quote in S4). Whether Part 3 carries its
-  own £42 floor (reg 27) is to confirm in S4. Statute; it bites on every trade quote accepted at the
-  door, by phone, by text or through a website.
+  response to a request in accordance with paragraph (1)". Reg 6(1)(e) excludes contracts "for the
+  construction of new buildings, or the construction of substantially new buildings by the conversion
+  of existing buildings" (quoted in L.3.2). **Confirmed 24 September 2026 (S4):** Part 3 carries its
+  own floor — reg 27(3) "This Part does not apply to off-premises contracts under which the payment to
+  be made by the consumer is not more than £42" — so for an off-premises job of £42 or less neither the
+  information duties (reg 7(4)) nor the right to cancel applies; a distance contract has no floor.
+  Statute; it bites on every trade quote accepted at the door, by phone, by text or through a website.
 - **Consumer Rights Act 2015 ss 49–51** (S116–S118): s 49(1) "Every contract to supply a service is to
   be treated as including a term that the trader must perform the service with reasonable care and
   skill"; s 50(1) every such contract includes "anything that is said or written to the consumer, by

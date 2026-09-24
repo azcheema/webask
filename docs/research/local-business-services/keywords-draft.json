@@ -822,6 +822,46 @@
       "supportingUrls": ["/services/landing-pages"],
       "cluster": "landing-pages",
       "vertical": null
+    },
+    {
+      "term": "is google business profile manager free",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": ["/blog/google-business-profile-suspended-uk"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "how much does a marketing package cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "how much does gohighlevel cost a month",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/gohighlevel-uk-local-business-gbp-cost",
+      "supportingUrls": ["/services/local-business-plans"],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "how much should i pay for local seo",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": ["/blog/topic/seo"],
+      "cluster": "seo",
+      "vertical": null
     }
   ]
 }

@@ -354,7 +354,7 @@ verdict. Title 58; description ≈156. Length ≈ 1,350 words. Publish only afte
 ## `blog/missed-calls-trades-divert-text-back.mdx`
 
 **Pass 1 self-check.** Statute, ICO, Gas Safe and GOV.UK quotations verbatim as recorded in App.
-L and AH; R01–R03, R36–R37, R47–R50 applied; the £42 sentence names the information duties; the
+L and AH; R01–R03, R36–R37, R47–R50 applied; the £42 sentence names the information duties (corrected 2026-09-24, S4: reg 27(3) removes the right to cancel as well for an off-premises job of £42 or less — the sentence now says so); the
 "requesting a quote" gloss is the ICO's and the missed-call caveat keeps § 10 row 1's open point;
 the market sentence is bounded to four products. Watch-list words: none. Title 56; description
 ≈158. Length ≈ 1,350 words. Publish after the trades page (App. AM) and doc 03 § B11 (App. AO.1).
@@ -421,7 +421,7 @@ describes the plans without saying where they are hosted.
 
 **Pass 1 self-check (planning session; pass 2 and tooling in S8).** Every quoted phrase is verbatim
 from the regulations, the Act, the Gas Safe policy or GOV.UK as recorded in App. L and AH on
-2026-09-24; the £42 sentence names the information duties, not the right to cancel (R47); the Gas
+2026-09-24; the £42 sentence names the information duties, not the right to cancel (R47) — corrected 2026-09-24 (S4): reg 27(3) gives Part 3 its own £42 floor, so the sentence now names both, off-premises only; the Gas
 Safe sentence is § 3.1's own wording, not the paraphrase (R50); "misleading action under consumer
 law" is stated generally and R50 flags the CMA207 paragraph for S4. Fabricated-proof: "A trade
 business has the same two problems" replaced the first draft's "the two problems a trade business
