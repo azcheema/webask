@@ -10010,6 +10010,561 @@
       "notes": ""
     },
     {
+      "id": "serp-0098",
+      "term": "live chat for small business uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T22:58:40.841Z",
+      "adsTop": 4,
+      "adsBottom": 2,
+      "adsDomains": ["cloudtalk.io", "tidio.com", "livechat.com", "lp2.connecteam.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What is the best chat site in the UK?",
+        "How do I chat with a live agent?",
+        "Where can I get free advice for my small business in the UK?",
+        "What is the best live chat software for my business?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Live chat for small business uk free",
+        "Three Live Chat UK",
+        "Live chat for small business uk app",
+        "Best live chat for small business uk",
+        "Live chat for small business uk 2022",
+        "Three customer service number 0800 Live Chat",
+        "Three customer service number UK 0800",
+        "Three Live Chat times"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "three.co.uk",
+          "url": "https://www.three.co.uk/.../Help",
+          "title": "Contact us | Three Business",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "click4assistance.co.uk",
+          "url": "https://www.click4assistance.co.uk",
+          "title": "UK Live Chat Software, ChatBots and AI Agent provider for ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "moneypenny.com",
+          "url": "https://www.moneypenny.com/uk/resources/blog",
+          "title": "Live Chat: The complete guide for UK businesses (2026)",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "whito.co.uk",
+          "url": "https://whito.co.uk/Tools & Buyer Guides",
+          "title": "Best Live Chat Software UK 2026: 7 Tools Compared",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "livechat.com",
+          "url": "https://www.livechat.com",
+          "title": "LiveChat® - The Best AI Live Chat Software for Business ...",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "gov.uk",
+          "url": "https://www.gov.uk/.../Grow your business",
+          "title": "Get help and support for your business",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "business.hsbc.uk",
+          "url": "https://www.business.hsbc.uk/en-gb/solutions/chat...",
+          "title": "Online Live Chat Assistant | Business Banking | HSBC UK",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "zendesk.co.uk",
+          "url": "https://www.zendesk.co.uk/business/smb",
+          "title": "AI-powered small business customer service software - Zendesk",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "unitelcontactcentres.com",
+          "url": "https://www.unitelcontactcentres.com/what-is-live-chat-...",
+          "title": "What is Live Chat Support and Why Does Your Business ...",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 8,
+      "difficultyProxy": {
+        "a": 5,
+        "b": 4,
+        "label": "Soft"
+      },
+      "evidence": ["E3", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0099",
+      "term": "unified inbox small business",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T22:59:06.044Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What is an unified inbox?",
+        "Can you have a unified inbox in Outlook?",
+        "How do I use unified email for this account?",
+        "How can I create a unified inbox for multiple Gmail accounts?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Unified inbox small business outlook",
+        "Unified inbox small business outlook 365",
+        "Unified inbox small business reddit",
+        "Unified inbox social media",
+        "Beeper"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "reddit.com",
+          "url": "https://reddit.com",
+          "title": "Looking for a unified inbox solution for social media + email",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 2,
+          "domain": "ineedleads.co.uk",
+          "url": "https://ineedleads.co.uk/Blog",
+          "title": "Best Unified Inbox for Small Business |…",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "liveagent.com",
+          "url": "https://www.liveagent.com/Blog",
+          "title": "What is a unified inbox and why small businesses need ...",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 4,
+          "domain": "support.microsoft.com",
+          "url": "https://support.microsoft.com/en-us/outlook/how-...",
+          "title": "How do I consolidate/unify my email accounts in my inbox?",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "corynet.co.uk",
+          "url": "https://corynet.co.uk/Services",
+          "title": "Unified Customer Message Inbox for Small Businesses",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "zoho.com",
+          "url": "https://www.zoho.com/teaminbox/articles/omnich...",
+          "title": "Omnichannel Inbox for Small Business",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 7,
+          "domain": "ubico.io",
+          "url": "https://www.ubico.io/post/take-control-of-your-inb...",
+          "title": "Take Control of Your Inbox with Ubico's Unified Inbox",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "omnilo.io",
+          "url": "https://omnilo.io/Blog/Buyer Guides",
+          "title": "Best Unified Inbox Software for Small Business",
+          "type": "listicle",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "rogerroger.io",
+          "url": "https://rogerroger.io/blog/what-is-a-unified-inbox",
+          "title": "What Is a Unified Inbox and Why Your Business Needs One",
+          "type": "agency",
+          "uk": false
+        }
+      ],
+      "ukSpecific": 2,
+      "difficultyProxy": {
+        "a": 2,
+        "b": 7,
+        "label": "Soft"
+      },
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "id": "serp-0100",
+      "term": "vet practice marketing uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T22:59:28.767Z",
+      "adsTop": 2,
+      "adsBottom": 2,
+      "adsDomains": ["provet.com", "heedly.co"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [],
+      "paaRevealed": [],
+      "related": [
+        "Vet practice marketing uk examples",
+        "Vet practice marketing uk courses",
+        "Best vet practice marketing uk",
+        "Veterinary marketing agency",
+        "Vets digital",
+        "Veterinary marketing company",
+        "Practice Made Purrfect",
+        "Vet Success pet plan"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "vetsuccess.co.uk",
+          "url": "https://www.vetsuccess.co.uk/bespoke-marketing-for-v...",
+          "title": "Bespoke Marketing For Vet Practices",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "connectedvet.co.uk",
+          "url": "https://www.connectedvet.co.uk",
+          "title": "Connected Vet I Digital Marketing Agency for Vets",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "nvsweb.co.uk",
+          "url": "https://www.nvsweb.co.uk/Blog",
+          "title": "A quick guide to marketing your new veterinary practice",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "practicemadepurrfect.com",
+          "url": "https://www.practicemadepurrfect.com",
+          "title": "Practice Made Purrfect: Veterinary Practice Business Consultant",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "vma.org.uk",
+          "url": "https://vma.org.uk/5-top-tips-for-marketing-your-pract...",
+          "title": "5 Key Marketing Tips for Your Veterinary Practice | VMA",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "whitehat-seo.co.uk",
+          "url": "https://whitehat-seo.co.uk/blog/infrographics/mark...",
+          "title": "Veterinary Practice Online Marketing (2026)",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "whito.co.uk",
+          "url": "https://whito.co.uk/research/uk-vet-marketing-data",
+          "title": "UK Vet Practice Marketing in Numbers: 2026 Data Report",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "uk.indeed.com",
+          "url": "https://uk.indeed.com/q-veterinary-marketing-jobs",
+          "title": "Veterinary Marketing Jobs (with Salaries)",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "morethanwordsuk.co.uk",
+          "url": "https://www.morethanwordsuk.co.uk/blog/marketin...",
+          "title": "Marketing To Veterinarians UK | Directly Contact Decision ...",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 8,
+      "difficultyProxy": {
+        "a": 0,
+        "b": 9,
+        "label": "Soft"
+      },
+      "evidence": ["E3", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0101",
+      "term": "cma vet price list website",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T22:59:53.244Z",
+      "adsTop": 1,
+      "adsBottom": 1,
+      "adsDomains": ["heedly.co"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "How much do vet fees cost?",
+        "What is CMA in vets?",
+        "What is the latest news on vet charges?",
+        "What are the latest updates on the CMA's veterinary market investigation?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Cma vet price list website england",
+        "CMA vet report summary",
+        "CMA vet review",
+        "CMA final report vets",
+        "CMA vets market investigation",
+        "Vet prescription fee cap",
+        "Vet prescription fees to be capped at 21",
+        "CMA vet remedies"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "gov.uk",
+          "url": "https://www.gov.uk/.../Competition/Markets",
+          "title": "CMA concludes market investigation with major reforms to ...",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "chalklandvets.co.uk",
+          "url": "https://chalklandvets.co.uk/2026/04/21/what-the-cm...",
+          "title": "CMA Vet Pricing Update",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "gov.uk",
+          "url": "https://www.gov.uk/.../Competition/Markets",
+          "title": "What veterinary businesses and vets need to do following ...",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "vetcomply.co.uk",
+          "url": "https://vetcomply.co.uk/Guides",
+          "title": "CMA Price List Rules for Vets: Where and How to Display ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "bbc.co.uk",
+          "url": "https://www.bbc.co.uk/news/articles",
+          "title": "Vets should be made to publish prices, watchdog says",
+          "type": "news",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "bva.co.uk",
+          "url": "https://www.bva.co.uk/resources-support/competitio...",
+          "title": "Competition and Markets Authority | British Veterinary ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "assets.publishing.service.gov.uk",
+          "url": "https://assets.publishing.service.gov.uk/Summary",
+          "title": "Message from Martin Coleman, chair of the inquiry",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "vetcostindex.co.uk",
+          "url": "https://www.vetcostindex.co.uk",
+          "title": "Vet Cost Index — Transparent UK Veterinary Prices",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "theguardian.com",
+          "url": "https://www.theguardian.com/business/mar/uk-vet...",
+          "title": "UK vets face crackdown over fees as pet owners 'left in ...",
+          "type": "news",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 9,
+      "difficultyProxy": {
+        "a": 3,
+        "b": 4,
+        "label": "Soft"
+      },
+      "evidence": ["E3", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0102",
+      "term": "veterinary services market investigation order 2026",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-24T23:00:19.299Z",
+      "adsTop": 0,
+      "adsBottom": 0,
+      "adsDomains": [],
+      "aiOverview": false,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What are the latest updates on the CMA's veterinary market investigation?",
+        "What are the changes to the animal health and welfare pathway in 2026?",
+        "What is the latest news on vet charges?",
+        "Who are the big 6 vet groups?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Veterinary services market investigation order 2026 gov uk",
+        "Cma veterinary services market investigation order 2026",
+        "CMA vets market investigation",
+        "CMA vet report summary",
+        "CMA veterinary report",
+        "CMA vet review",
+        "Cma vet news",
+        "Cma vets provisional decision"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "gov.uk",
+          "url": "https://www.gov.uk/.../Competition",
+          "title": "Vets market investigation: draft substantive Order and ...",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "connect.cma.gov.uk",
+          "url": "https://connect.cma.gov.uk/consultations/draft-fundin...",
+          "title": "Vets market investigation: draft Funding Order and Undertakings",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "rcvs.org.uk",
+          "url": "https://www.rcvs.org.uk/news-and-views/news/rcv...",
+          "title": "RCVS responds to publication of CMA Order",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "gov.uk",
+          "url": "https://www.gov.uk/Business and industry",
+          "title": "Veterinary Services Market Investigation Order 2026 and ...",
+          "type": "regulator-gov",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "uk.practicallaw.thomsonreuters.com",
+          "url": "https://uk.practicallaw.thomsonreuters.com/...",
+          "title": "CMA consults on draft order and undertakings to implement ...",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 6,
+          "domain": "twobirds.com",
+          "url": "https://www.twobirds.com/insights/2026/paws-and...",
+          "title": "The CMA's Final Report Confirms Major Reforms for the UK ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "facebook.com",
+          "url": "https://facebook.com",
+          "title": "The CMA has today published the final Veterinary Services ...",
+          "type": "forum-ugc",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "content.next.westlaw.com",
+          "url": "https://content.next.westlaw.com/document/CMA-m...",
+          "title": "CMA makes final order and undertakings implementing vet ...",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 9,
+          "domain": "facebook.com",
+          "url": "https://facebook.com",
+          "title": "The UK's veterinary sector is set to witness its biggest reforms ...",
+          "type": "forum-ugc",
+          "uk": true
+        },
+        {
+          "rank": 10,
+          "domain": "vettimes.com",
+          "url": "https://www.vettimes.com/news/practice-developments",
+          "title": "CMA publishes draft veterinary orders as consultation opens",
+          "type": "news",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 7,
+      "difficultyProxy": {
+        "a": 4,
+        "b": 5,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E3"],
+      "notes": ""
+    },
+    {
       "id": "bing-0001",
       "term": "missed call text back uk",
       "source": "bing",
