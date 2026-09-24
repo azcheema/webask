@@ -1,0 +1,76 @@
+---
+slug: veterinary-practices
+title: "Vet Practice Websites for the CMA Order 2026"
+description: "Websites, price-list pages and booking automation for UK veterinary practices, built to the CMA's Veterinary Services Market Investigation Order 2026."
+dateModified: "2026-09-24"
+---
+
+{/* Body prose only. Catalogue data (hero, FAQs, related services, audienceType) lives in data/industries.ts under the veterinary-practices entry and is read by the page template — do not duplicate those fields here. */}
+
+{/* WRITTEN FRESH for the UK, and deliberately DISTINCT from the dental-practices page. Dentistry turns on a CMA market study that has not reported; veterinary practice turns on an Order the CMA has already made, with Article numbers and dates. Every dated claim is sourced to the Order (made 22 September 2026), its Schedule 1, its explanatory note, the CMA's release of 24 March 2026, and RCVS supporting guidance chapter 23 (updated 8 October 2025) — research bundle 06 and 10. The compliance table is quoted from the Order's Article 3 as extracted by pdftotext; S4 confirms it against the PDF page. The "less than 40%" figure is the CMA's own statement, attributed and dated. Deliberately absent: any client, any statement that a practice "is compliant", any count of affected practices, competitor names, and legal advice. Q10 (hosted plans for practices) is left open: the page describes the automations without saying where they are hosted. */}
+
+The rules for a veterinary website used to be the general ones. Since 22 September 2026 they have Article numbers and dates, and the dates are close.
+
+That is not a scare tactic. The Competition and Markets Authority made the **Veterinary Services Market Investigation Order 2026** on that day, following its final report of **24 March 2026**, and the Order came into force the day after it was made. Several of its obligations are about what appears on your website, where, and by when.
+
+## The Order is made, and the dates are in it
+
+The Order distinguishes a **Large Veterinary Business**, with 15 or more practices or out-of-hours centres, from a **Small Veterinary Business** with fewer. An independent practice with fewer than 15 sites is small under the Order, whatever its turnover. The rows of the Order's Article 3 table that reach a website, a booking system or the paperwork around a visit:
+
+| Obligation                                                                                   | Large (15 or more sites) | Small (fewer than 15) |
+| -------------------------------------------------------------------------------------------- | ------------------------ | --------------------- |
+| Ownership information online, on signage and at the premises                                 | 22 March 2027            | 22 March 2027         |
+| Practice information, the price list, the parasiticide price list, pet care plan information | 22 December 2026         | 22 March 2027         |
+| In-house complaint process and complaint logs                                                | 22 March 2027            | 22 March 2027         |
+| Written estimates for higher-cost treatments and itemised bills                              | 22 June 2027             | 22 September 2027     |
+| Written-prescription awareness, provision and the standard notices                           | 22 June 2027             | 22 September 2027     |
+
+The CMA has said an updated explainer for practices is coming, and the BVA publishes guidance on getting ready. The Order itself is the document we build from, because a summary can drop an Article and a website cannot.
+
+## What has to be on the website, in the Order's words
+
+**Where things go.** Anything an Article puts on a website "must be … easily accessible on or via the homepage, with any links to the relevant page labelled in a Clear and Prominent way and, unless stated otherwise in the Article, requiring no more than two clicks from the homepage". A practice inside a group meets that on its own site or on a dedicated page of the group's.
+
+**Who owns you.** Ownership Information must be "displayed in a Clear and Prominent manner" on the website, and the group's name or trading name must "appear on the homepages … including the top website banner where available", "be included within the metadata of all webpages … including metadata used by general search services", appear in paid and organic search results, and "appear in online map results" for premises clients visit — with a reasonable-representations defence where a practice cannot control the results itself.
+
+**Practice information**, published on each practice's website and kept current. **A parasiticide price list** with "a link to the VMD Register of Online Retailers". **Pet care plan standard information** "on the main page that provides visitors to the website with information about Pet Care Plan(s)", with savings claims written to the Order's two definitions. **The RCVS Written Prescription Literature**, "in a Clear and Prominent manner" and "within a maximum of two (2) clicks from the homepage". **A written complaints process** that tells clients "that Pet Owners have a right to complain and how they can complain", with the ten-working-day and eight-week stages the Order sets out.
+
+And one obligation that lives in your booking system rather than on a page: the first digital communication confirming a consultation must include "the price the Veterinary Business will charge for the consultation" and "a link to the webpage where the Price List is published".
+
+## The price list is a page, and the Order says where
+
+Schedule 1 lists **36** services, products and procedures in five categories, several with required extras — the standard appointment duration in minutes, a hyperlink to what a care plan includes, how asterisked items are priced, and the third party where a service is outsourced. The list must be "accessible in a maximum of one click away from the homepage" and "hosted on a webpage which uses the terms 'price', 'prices', 'pricing' or 'fees' in page navigation information and page metadata". It must be updated "before any revised price is charged". Where you refer a scheduled service to a third party as a matter of course, the website must say so.
+
+One thing the Order does not say but the law does: a price shown online must say whether it includes VAT, a rule for every trading website. And one thing neither says but a searcher will: a page built to be found in one click has to load on a phone in a car park.
+
+The CMA's release of 24 March 2026 put the starting point plainly: "Less than 40% of practices have prices on their websites." The Order turns that into a dated obligation.
+
+## Three things worth checking on your own site
+
+**The group name in the metadata.** Article 5 does not stop at the banner. If your practice is part of a group, the group's name has to be in the metadata of every page, including what search engines read, and it has to appear in map results. That is a template change and a structured-data change, not a line in the footer.
+
+**The prescription literature, two clicks from home.** The RCVS literature is a document the RCVS updates and the Order requires you to keep current within a month of notice. A page that carries it, a link that reaches it in two clicks, and a note of who updates it are all part of the obligation.
+
+**The booking confirmation.** If your confirmations are sent by your practice management or CRM system, the template has to carry the consultation price and the price-list link from the first message. It is the obligation easiest to miss, because it is nowhere on the website.
+
+## The RCVS layer
+
+The Order sits on top of the RCVS Code and its supporting guidance on advertising, which has not changed: "All advertising should be accurate, truthful, and not of a character likely to bring the profession into disrepute". Comparative claims "should have regard to section 3 of the CAP Code". "Specialist" or "advanced practitioner" in a practice name needs "genuine and meaningful involvement, and oversight, in case management by at least one RCVS specialist" in every discipline offered under that name, and "Veterinary Hospital" is for practices accredited at that level. Endorsements should be "underpinned by sound scientific principles or have a recognised evidence base". We check every instance of those words during a build.
+
+## What we build
+
+- **The website.** Fast, mobile-first, on Next.js — with layout shift, blocking time and page weight enforced as build-failing budgets, and load time held to a two-second target that is settled in the field rather than on a build server. The price page is one click from the homepage, labelled and tagged as the Order requires; practice information, the complaints process, the care plan page and the prescription literature each have their place within two clicks.
+- **Ownership, everywhere the Order looks.** The group or trading name in the banner, in every page's metadata and in the structured data that feeds search and maps, with the representations to the map providers made and recorded.
+- **Booking confirmations that carry the price.** The confirmation template pulls the consultation price and the price-list link for every booking, and recall reminders are kept apart from anything promotional.
+- **The calls you miss.** A text back to every missed call, written as a service message, and an inbox that reaches whoever is free between consultations.
+- **A review programme that survives scrutiny.** Every client asked, nobody incentivised, nothing hidden — the CMA's guidance on reviews applies to practices as it does to everyone.
+- **Your Google profile, kept to the Order.** Categories, hours and services maintained in your own account, with the group name where the Order requires it to appear.
+- **Local SEO.** Technical foundations, service and area pages mapped to real UK search demand, feeding a site whose price page is already where a searcher expects it.
+
+## What we are not
+
+We are not solicitors and we are not a veterinary compliance consultancy; anything with real regulatory consequence should go past someone qualified to give it. What we have read, and what we build from it, is in the questions below. The RCVS has given Undertakings alongside the Order, the BVA publishes practical guidance, and the CMA's explainer is on its way.
+
+## Where to next
+
+Start with a **free audit**. It is five prioritised findings on search, speed and conversion, narrated over your own site — and on a practice site we read them against the Order's Articles first, so they say what to change, in what order, and by which date. The findings are yours whether or not you work with us.

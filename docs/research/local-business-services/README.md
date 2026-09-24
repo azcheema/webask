@@ -23,35 +23,38 @@ brainstormed with the founder before any build work, and the brainstorm's decisi
 Work is checkpointed in nine sessions, S1–S9, from the planning file's run sheet. Every session ends
 by updating this table and the **Next** line below it; together they are the handoff.
 
-| File                                                                     | What it answers                                                                                  | Status                             | Last touched |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ---------------------------------- | ------------ |
-| `README.md`                                                              | Where to start; which numbers are real; decided vs proposed; public repo and `private/`          | 🟡 skeleton + pre-draft inventory  | 2026-09-24   |
-| `00-decisions-and-open-questions.md`                                     | What was decided, what is assumed, what this re-opens, what must still be decided                | 🟡 Q-list seeded, owners pending   | 2026-09-24   |
-| `01-gohighlevel-product-study.md`                                        | What the platform sells, what it costs a UK reseller, where the data sits, how sub-accounts move | 🔲                                 | —            |
-| `02-service-line-definition.md`                                          | Which services, delivered how, bounded against the existing nine; taxonomy; the bundle           | 🔲                                 | —            |
-| `03-uk-demand-and-keywords.md` + `keywords-draft.json` + `serp-log.json` | Does UK demand exist per service, at what evidence tier, which terms each page owns              | 🔲                                 | —            |
-| `04-competitor-analysis.md`                                              | What the UK supply side sells, at what price, with what proof and compliance                     | 🔲                                 | —            |
-| `05-site-structure.md`                                                   | URLs, nav, link mesh, schema, staging                                                            | 🔲                                 | —            |
-| `06-verticals-shortlist.md`                                              | Which local verticals, on what evidence, in what order                                           | 🔲                                 | —            |
-| `07-pricing-ladders.md` (+ `private/07-cost-model.md`)                   | Indicative GBP ladders [D4] and their public rationale; cost and margin in private               | 🔲 (private skeleton in place)     | —            |
-| `08-compliance-addendum.md`                                              | Each doc 03 gap: source, question, copy rule, insertion point                                    | 🔲                                 | —            |
-| `09-content-drafts/`                                                     | Ship-shaped drafts, verified twice                                                               | 🔲 (verification log in place)     | —            |
-| `10-sources.md`                                                          | Every source with retrieval date and confidence                                                  | 🟡 App. AH rows entered (S01–S139) | 2026-09-24   |
-| `11-implementation-outline.md`                                           | The build plan for after the brainstorm                                                          | 🔲                                 | —            |
-| `12-seo-ranking-plan.md`                                                 | How each new page ranks                                                                          | 🔲                                 | —            |
+| File                                                                     | What it answers                                                                                  | Status                                                                                                                | Last touched |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------- | ------------ |
+| `README.md`                                                              | Where to start; which numbers are real; decided vs proposed; public repo and `private/`          | 🟡 status table, pre-draft inventory, Next line                                                                       | 2026-09-24   |
+| `00-decisions-and-open-questions.md`                                     | What was decided, what is assumed, what this re-opens, what must still be decided                | 🟡 Q-list seeded, owners pending; decision log 4 rows                                                                 | 2026-09-24   |
+| `01-gohighlevel-product-study.md`                                        | What the platform sells, what it costs a UK reseller, where the data sits, how sub-accounts move | 🟡 method, planning vendor facts and unknowns seeded; unwritten                                                       | 2026-09-24   |
+| `02-service-line-definition.md`                                          | Which services, delivered how, bounded against the existing nine; taxonomy; the bundle           | 🟡 models, set, playbooks, boundaries, taxonomy pasted; evidence pending 03–08                                        | 2026-09-24   |
+| `03-uk-demand-and-keywords.md` + `keywords-draft.json` + `serp-log.json` | Does UK demand exist per service, at what evidence tier, which terms each page owns              | 🟡 protocol, seeds, autocomplete harvest, candidate rows pasted; no SERP captured; the two JSON files not yet created | 2026-09-24   |
+| `04-competitor-analysis.md`                                              | What the UK supply side sells, at what price, with what proof and compliance                     | 🟡 Sets A and B pre-fetched; Set C candidates only                                                                    | 2026-09-24   |
+| `05-site-structure.md`                                                   | URLs, nav, link mesh, schema, staging                                                            | 🟡 taxonomy, sitemap delta and re-points as hypotheses                                                                | 2026-09-24   |
+| `06-verticals-shortlist.md`                                              | Which local verticals, on what evidence, in what order                                           | 🟡 scored table and evidence pasted; founder column blank; recommendation open                                        | 2026-09-24   |
+| `07-pricing-ladders.md` (+ `private/07-cost-model.md`)                   | Indicative GBP ladders [D4] and their public rationale; cost and margin in private               | 🟡 ladders as shapes, every figure blank [D4]; private inputs register in place                                       | 2026-09-24   |
+| `08-compliance-addendum.md`                                              | Each doc 03 gap: source, question, copy rule, insertion point                                    | 🟡 gap register seeded, rules R01–R56, three doc 03 sections drafted                                                  | 2026-09-24   |
+| `09-content-drafts/`                                                     | Ship-shaped drafts, verified twice                                                               | 🟡 6 service pairs, bundle pair, 3 industry pairs, 12 blog drafts, index/deltas, self-checks; unverified (S8)         | 2026-09-24   |
+| `10-sources.md`                                                          | Every source with retrieval date and confidence                                                  | 🟡 register entered (S01–S139)                                                                                        | 2026-09-24   |
+| `11-implementation-outline.md`                                           | The build plan for after the brainstorm                                                          | 🟡 shipping order and snippets AE.1–AE.9 pasted                                                                       | 2026-09-24   |
+| `12-seo-ranking-plan.md`                                                 | How each new page ranks                                                                          | 🟡 method, page arguments and per-page skeletons pasted                                                               | 2026-09-24   |
 
 Status values: 🔲 not started · 🟡 draft · 🟢 done · 🔴 blocked (name the blocker in the cell).
 
-**Next:** S2 — `01-gohighlevel-product-study.md`. The founder exports the LC Phone UK rate file from
-inside the GoHighLevel account if the executor has no account access.
+**Next:** S2 — `01` product study on the vendor pages — and S3 — the `google.co.uk` SERP capture,
+as early as possible, because it is the only evidence that can change the plan (planning § 0 item 10).
+S2 waits on the LC Phone UK rate file, which the founder exports from inside the GoHighLevel account
+into `private/` (decision of 24 September 2026, `00` § 6).
 
 ### 2.1 What the planning file already holds for each bundle file
 
 The research was planned before it was executed. The planning file lives outside this repository (in
 the executor's Claude Code plans folder, `i-want-to-add-flickering-lemon.md`) and holds pre-drafted
 material for most of the files below; its section and appendix references are kept here so each
-session starts from the draft rather than from memory. The "Status after S1" column describes that
-pre-drafted material, not a file in this folder — the table above is the folder's status. Every
+session starts from the draft rather than from memory. The pieces named in the second column were
+pasted into this folder on 24 September 2026; the "Status after S1" column is the planning file's own
+expectation, kept as the record. The table above is the folder's status. Every
 pre-draft is a hypothesis: if the UK SERP evidence gathered in S3 contradicts a boundary or a keyword
 mapping, the draft is reworked.
 
@@ -75,7 +78,7 @@ mapping, the draft is reworked.
 | `09-content-drafts/index-and-nav.md`, `deltas.md` | App. AD, I.8, I.9, AB.3                                                                                                           | S7                                                   | 🟡                                                 |
 | `09-content-drafts/blog/`                         | calendar App. AI; drafts App. U, X, Y, AQ, AR, AS–AY (all twelve calendar items); outlines App. AJ                                | S7, verified S8                                      | 🟡 twelve drafts; S3's PAA capture may reshape H2s |
 | `09-content-drafts/industries/`                   | App. AA (vets), App. AM (trades), App. AN (garages)                                                                               | S7, verified S8                                      | 🟡 three drafted; each gated on doc 03             |
-| `10-sources.md`                                   | F.7 header; App. AH S01–S139                                                                                                      | S1; consolidated S9                                  | 🟡 register entered                                |
+| `10-sources.md`                                   | F.7 header; App. AH S01–S129                                                                                                      | S1; consolidated S9                                  | 🟡 register entered                                |
 | `11-implementation-outline.md`                    | § 4.7; App. AE.1–AE.9; AB                                                                                                         | S9                                                   | 🟡 snippets drafted                                |
 | `12-seo-ranking-plan.md`                          | § 5.8; App. M.1–M.8; AJ clusters                                                                                                  | S6                                                   | 🟡 per-page skeletons drafted                      |
 | `private/tools/*.mjs`                             | App. AF.1–AF.4                                                                                                                    | S3 (dupes), S7 (counts), S8 (similarity), S9 (cites) | 🔲 sources ready to paste                          |
