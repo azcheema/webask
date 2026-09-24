@@ -46,20 +46,28 @@ Weights: GHL fit 20 · UK demand evidence 20 · ownable regulatory angle 20 · c
 size 10 · remote serviceability 5 · clinic overlap 5 · founder affinity 10. Scores 1–5; the weighted
 total is out of 100 before the founder's column. Every score cites its evidence or says "assumption".
 
-| Vertical                 | GHL fit | Demand evidence | Regulatory angle | Competition | Ticket | Remote | Overlap | Founder | Weighted (of 90) | Evidence in brief                                                                                                                                                                                                                                                                                                                  |
-| ------------------------ | ------- | --------------- | ---------------- | ----------- | ------ | ------ | ------- | ------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Veterinary practices     | 4       | 3               | 5                | 4           | 4      | 5      | 4       | —       | 75               | Order made 22 Sep 2026 with website Articles and dates (App. L); "vet clinic marketing agency" surfaced (App. G); CMA "less than 40%" statistic; a practice's client data is owners' contact data (assumption on hosting, Q10)                                                                                                     |
-| Trades / home services   | 5       | 4               | 3                | 3           | 3      | 5      | 3       | —       | 70               | Text-back and reviews built for them (App. Q: three UK text-back products target trades); registration display and claims-of-approval rules (App. L.3); "seo for plumbers" family (App. G); busy SERPs (Set A agencies name tradesmen); CCRs to source                                                                             |
-| Garages / MOT centres    | 5       | 2               | 2                | 3           | 3      | 5      | 3       | —       | 61               | Missed-call and MOT-reminder fit (service messages, R08); DVSA rules are physical signage only (App. L.4); no UK autocomplete signal beyond "ai receptionist for garages" itself (App. G)                                                                                                                                          |
-| Gyms / fitness studios   | 4       | 2               | 3                | 3           | 3      | 5      | 3       | —       | 60               | DMCC subscription regime — the DBT response (2 Apr 2026) says "we anticipate that the regime will commence in spring 2027"; "gym membership marketing" thin (App. G); CMA gym-contract enforcement 2011–2016 now sourced and the DBT response read in full (App. AP: "we anticipate that the regime will commence in spring 2027") |
-| Solicitors / accountants | 3       | 3               | 4                | 3           | 4      | 5      | 2       | —       | 64               | SRA 8.9 limits outbound marketing; Transparency Rules put prices on the website (§ 10 row 7); Leeds hub already argues the price-publication point; email/SMS plan constrained (R41)                                                                                                                                               |
-| Estate / letting agents  | 3       | 3               | 4                | 2           | 3      | 5      | 2       | —       | 59               | Material-information rules on DMCC footing (§ 10 row 8; NTS withdrawal secondary); portal-feed work not the monthly plans; `check-keywords.ts` dropped real-estate deliberately                                                                                                                                                    |
-| Hospitality              | 3       | 2               | 3                | 2           | 2      | 4      | 2       | —       | 48               | FHRS display by nation, allergens, drip pricing to source; entrenched booking platforms (App. Q: "online booking system for restaurant uk" is product intent)                                                                                                                                                                      |
-| Salons / barbers         | 4       | 3               | 2                | 3           | 2      | 5      | 5       | —       | —                | Already inside `beauty-wellness-clinics` (`audienceType` names beauty salons) — no new page; add "barbers" to that line if wanted                                                                                                                                                                                                  |
-| Tutors                   | 3       | 1               | 2                | 3           | 1      | 5      | 1       | —       | 42               | Low budget, seasonal; DBS position to source; no autocomplete signal captured                                                                                                                                                                                                                                                      |
+| Vertical                 | GHL fit | Demand evidence | Regulatory angle | Competition | Ticket | Remote | Overlap | Founder | Weighted (of 90) | Evidence in brief                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ------------------------ | ------- | --------------- | ---------------- | ----------- | ------ | ------ | ------- | ------- | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Veterinary practices     | 4       | 3               | 5                | 4           | 4      | 5      | 4       | —       | 73               | Order made 22 Sep 2026 with website Articles and dates (App. L); "vet clinic marketing agency" surfaced (App. G) and captured on Bing (`bing-0028`, 5/10 UK; Google queued); deep dive L.2.2: one of three agencies names the CMA, none publishes a price; CMA "less than 40%" statistic; a practice's client data is owners' contact data (assumption on hosting, Q10)                                                                                                                                              |
+| Trades / home services   | 5       | 4               | 3                | 3           | 3      | 5      | 3       | —       | 68               | Text-back and reviews built for them (App. Q: three UK text-back products target trades); registration display and claims-of-approval rules (App. L.3); "seo for plumbers" family (App. G) — on Bing a guide SERP (`bing-0031`) and 10/10 UK agencies on "plumber marketing agency uk" (`bing-0032`); `missed call text back for plumbers` Medium on Google (`serp-0009`); deep dive L.3.1: two of three publish retainers from "£1,000 +VAT", none mentions the CCRs or text-back; CCRs sourced in L.1 and `08` § 2 |
+| Garages / MOT centres    | 5       | 2               | 2                | 3           | 3      | 5      | 3       | —       | 56               | Missed-call and MOT-reminder fit (service messages, R08); DVSA rules are physical signage only (App. L.4); no UK autocomplete signal beyond "ai receptionist for garages" itself (App. G), whose Bing SERP is 8/10 UK products (`bing-0029`); gov.uk's free reminder is first on "mot reminder text service" (`bing-0030`); deep dive L.4.1: three products at £97–£697 a month, one states the AI disclosure                                                                                                        |
+| Gyms / fitness studios   | 4       | 2               | 3                | 3           | 3      | 5      | 3       | —       | 56               | DMCC subscription regime — the DBT response (2 Apr 2026) says "we anticipate that the regime will commence in spring 2027"; "gym membership marketing" thin (App. G); CMA gym-contract enforcement 2011–2016 now sourced and the DBT response read in full (App. AP: "we anticipate that the regime will commence in spring 2027")                                                                                                                                                                                   |
+| Solicitors / accountants | 3       | 3               | 4                | 3           | 4      | 5      | 2       | —       | 61               | SRA 8.9 limits outbound marketing; Transparency Rules put prices on the website (§ 10 row 7); Leeds hub already argues the price-publication point; email/SMS plan constrained (R41)                                                                                                                                                                                                                                                                                                                                 |
+| Estate / letting agents  | 3       | 3               | 4                | 2           | 3      | 5      | 2       | —       | 57               | Material-information rules on DMCC footing (§ 10 row 8; NTS withdrawal secondary); portal-feed work not the monthly plans; `check-keywords.ts` dropped real-estate deliberately                                                                                                                                                                                                                                                                                                                                      |
+| Hospitality              | 3       | 2               | 3                | 2           | 2      | 4      | 2       | —       | 46               | FHRS display by nation, allergens, drip pricing to source; entrenched booking platforms (App. Q: "online booking system for restaurant uk" is product intent)                                                                                                                                                                                                                                                                                                                                                        |
+| Salons / barbers         | 4       | 3               | 2                | 3           | 2      | 5      | 5       | —       | —                | Already inside `beauty-wellness-clinics` (`audienceType` names beauty salons) — no new page; add "barbers" to that line if wanted                                                                                                                                                                                                                                                                                                                                                                                    |
+| Tutors                   | 3       | 1               | 2                | 3           | 1      | 5      | 1       | —       | 38               | Low budget, seasonal; DBS position to source; no autocomplete signal captured                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 Recommendation carried from § 4.6: wave 1 vets, trades, garages (garages on fit, not regulation);
 wave 2 gyms; wave 3 solicitors, agents; deferred hospitality; no page for salons and tutors.
+
+> **Totals recomputed 24 September 2026 (S4).** The pasted table carried totals that did not follow
+> its own formula (Σ weight × score ÷ 5, of 90): vets printed 75, recomputed 73; trades 70 → 68;
+> garages 61 → 56; gyms 60 → 56; solicitors 64 → 61; agents 59 → 57; hospitality 48 → 46; tutors
+> 42 → 38. The order is unchanged except that garages and gyms now tie, and garages sit below
+> solicitors and agents on the rubric — which is why § 5 keeps garages in wave 1 on fit and the
+> reminder's service-message status, not on the score. The founder's column (10) can move any of
+> them; the brainstorm re-derives the table with that column filled.
 
 ## 3. Evidence: the obligations that touch a business website (App. L, read 2026-09-24)
 
@@ -324,6 +332,44 @@ practice website or booking flow must contain. Articles as printed.
 > price-page brief becomes the Schedule 1 names with bands and checkboxes, not a designed table. S7
 > applies them; `08` § B10 records the rules.
 
+#### L.2.2 Three-competitor deep dive — veterinary practices (read 24 September 2026)
+
+Chosen by rank on `vet clinic marketing agency` (`bing-0028`, 5/10 UK; the Google capture is queued
+in `03` § 6.11 batch 2): vetgrowth.co.uk (#1), vetboost.co.uk (#4) and connectedvet.co.uk (#10 — the
+only one that names the CMA on its pages). Three pages each by `curl`, token counts from the stripped
+HTML; every cell is what the page says.
+
+| Agency (representative URL)                                                                 | Positioning (verbatim)                                                                                                                                                        | Pricing                                                                                                                                                                              | Delivery model (words on the page)                                                                                                                                                                                                                        | CMA / Order on the page                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| vet Growth (Lodestone Marketing Ltd) — `https://www.vetgrowth.co.uk/`                       | "Vet marketing \| Veterinary marketing" (H1); strap "Unlock up to x20 Return on Investment on your veterinary marketing"                                                      | **Hidden** — no service price; "up to £20 return for each £1 spend" is a claim, not a price; VAT not stated                                                                          | Done-for-you: "We're not consultants. We don't just say what you should be doing, we do it all for you"; "our initial veterinarian marketing discussions are always FREE"; "our strictly limited number of practice owners"                               | **Nothing** — CMA, "Competition and Markets Authority", Order, "price list", RCVS, prescription, transparency all 0 on four pages; nearest framing: "as 'veterinary' private equity increases its geographical footprints by buying more veterinary practices"                                                                                                                                                                                                                                                                                                |
+| VetBoost — `https://www.vetboost.co.uk/`                                                    | "Marketing that fills the diary" (H1); hero "Google Ads, new practice launches, and websites for UK and Ireland vets — from a marketer who's run practices, not just slides." | **Hidden** — no £ figure; "all at very reasonable prices"; "a FREE no-strings-attached marketing audit"; VAT not stated                                                              | Retainer and managed: "Growth retainers / planning — Ongoing marketing support and annual planning."; "We manage the account. You keep clinical focus."                                                                                                   | **Nothing** — every vet-specific token 0 (the three "Order" hits are "in order to")                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Connected Vet — `https://www.connectedvet.co.uk/products-and-services/cma-gdpr-compliance/` | "Helping independent vet practices thrive through smarter digital marketing" (H1); compliance page H1 "CMA & GDPR Compliance Made Practical"                                  | **Hidden** — no £ figure on any page; "competitive pricing"; the "complete Compliance Pack" is sold on contact ("Purchasers will receive updates"), price not stated; VAT not stated | Managed and hosted: "we handle your hosting, domain management, and technical maintenance"; "a bespoke design or our user-friendly VetWeb platform"; "Our ready-to-use compliance products, proven implementation frameworks and experienced consultants" | **Yes — a named product.** "Implement the CMA remedies with confidence using Connected Vet's practical Compliance Pack"; nav "CMA and GDPR Compliance"; CMA ×7 and GDPR ×5 on the compliance page. Its free PDF ("Connected Vet's CMA Compliance Pack 2026") is built on "the CMA's final remedies, published in March 2026, and will continue to evolve as the Orders are finalised" — i.e. on the report, not on the Order made 22 September; its dates ("2b. Price lists … Dec 2026–Mar 2027"; "4a. Written estimates … Sep 2027") match the Order's table |
+
+**Counted across the pages reached (24 September 2026):** PECR, ICO, DMCC, TPS, Ofcom, consent,
+opt-in and opt-out are 0 on every page of all three; GDPR appears only on Connected Vet (2–5 per
+page); "price list", RCVS and "prescription" appear on none of the HTML pages (Connected Vet's PDF
+carries "price list" ×9 and "prescription" ×7). VAT is stated by none; a company number by one (vet
+Growth, on its testimonials page: "registered in England and Wales under company number 07629264");
+an ICO registration by none. **Proof:** vet Growth — seven testimonials, every one "Independent
+Veterinarian Partner \*" with "Names and practice details will be shared at your 1st meeting"; VetBoost
+— one named press quote ("Nicky Paull / Kernow Vet Group") and "Ask us for recent Google Ads examples";
+Connected Vet — 14 practice logos, one named testimonial and one named case study ("Partridge
+Practices"), "helped over 100 veterinary businesses" unsourced.
+
+**What this changes for the vets page (App. AA), the calendar's item 8 and `08` § B10.** (1) The
+compliance angle is **not unclaimed** in this vertical: Connected Vet sells a Compliance Pack and an
+Academy, and ranks on the head term. WebAsk's page cannot claim to be first; it competes on being
+**Order-accurate and dated** — Article numbers, the Art. 3 dates by business size, the L.2.1 items
+(Schedule 1 names, the "typical case" statement, the end-of-life page, the Standard Electronic
+Message trigger, the RCVS URL registration) — where the Pack's public PDF cites the March report and
+promises to "evolve as the Orders are finalised". (2) Two of three vet-marketing agencies say nothing
+about the Order at all, five weeks after it was made; the CMA's "Less than 40% of practices have
+prices on their websites" (24 March 2026) stands as the demand statistic. (3) No agency publishes a
+price; the vets ladder in `07` is the only published one on this SERP if it ships. (4) The bounded
+sentence for copy: "We read three UK vet-marketing agencies that rank for 'vet clinic marketing
+agency' on 24 September 2026. One named the CMA's remedies on its pages; none published a price or
+stated how VAT applies." Never name the Pack in copy, and never say "first" or "only".
+
 ### L.3 Trades and home services
 
 - **Gas Safe Register — Brand Enforcement Policy, P001_BEP001 v5.0, November 2017** (the same PDF,
@@ -371,12 +417,122 @@ practice website or booking flow must contain. Articles as printed.
   a misleading action under DMCC Part 4 Chapter 1 (CMA207 § on misleading actions — cite in S4;
   Business Companion's "Membership logos and claims of approval" guide is the Trading Standards
   summary).
-- **To source in S4:** Consumer Contracts (Information, Cancellation and Additional Charges)
-  Regulations 2013 — off-premises and distance contracts (quotes accepted at home or online carry a
-  14-day cancellation right and pre-contract information duties); NICEIC/NAPIT Part P registration
-  display; the Building Regulations competent-person scheme rules.
+- **Sourced in S4 (24 September 2026):** the Consumer Contracts (Information, Cancellation and
+  Additional Charges) Regulations 2013 are quoted in L.1 and in `08` § 2 ("The Consumer Contracts
+  Regulations, in detail"); the competent-person conditions and the NICEIC/NAPIT/TrustMark display
+  rules were fetched the same day and are recorded in L.3.2 below.
 - **Verdict for 06:** medium regulatory angle (registration display, claims of approval, cancellation
   rights) on top of the strongest missed-call fit; wave 1 stands.
+
+#### L.3.1 Three-competitor deep dive — trades and home services (read 24 September 2026)
+
+Chosen by rank on the two trades heads captured on Bing in S4 (`bing-0032` `plumber marketing agency
+uk`, 10/10 UK agencies; `bing-0031` `seo for plumbers uk`, 7/7 UK, guide-shaped; both queued on Google
+in `03` § 6.11 batches 7–8): plumbersmarketingco.co.uk (#2), bird.co.uk (#1) and seodons.co.uk (#1 on
+the SEO head). Three pages each by `curl`; every cell is what the page says. Two method notes: Bird's
+live site answered HTTP 403 (a Cloudflare challenge) on ten URLs and two fetch-tool attempts, so its
+row is read from two dated Wayback captures (12 April 2026 home; 12 November 2025 plumbing page) and
+its pricing pages are blocked even there; SEO Dons is a single-page application whose three routes
+return the same 9 KB shell, so its copy and counts are read from the route bundles, not raw HTML.
+
+| Agency (representative URL)                                                                      | Positioning (verbatim)                                                                                                                                                                       | Pricing                                                                                                                                                                                                                                                                                                        | Delivery model (words on the page)                                                                                                             | Trades-specific (verbatim)                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| The Plumbers Marketing Company — `https://plumbersmarketingco.co.uk/packages/`                   | "Helping Ambitious Plumbers Generate More Leads, Book More Jobs & Grow Their Business." (first H2); hero "We ran Pimlico Plumbers' digital marketing for 8 years before they sold for £144M" | **Published**: "£1,000 +VAT Per month", "£1,500 +VAT Per month", "£1,750 +VAT per month", "£2,500 +VAT per month"; "Minimum Google budget is £1,000 per month"; "google spend over £10k per month is charged at 10%"; "+VAT" on the packages page, not on the home page; contract term not stated              | Monthly packages of Google Ads and Local Service Ads management; "working with just 10 clients and no more than one plumbing company per city" | Gas Safe, NICEIC, TrustMark, Checkatrade, "missed call", "text back", "reviews", PECR, consent, opt-in and opt-out all **0** on home, packages and the case-study page; no address, phone or company number on any page; the home page's testimonial block renders a heading reading "Test content"                                                                                                                                                                                                    |
+| Bird Marketing Limited — `https://bird.co.uk/plumbing/` (live site HTTP 403; Wayback captures)   | "Plumbing Digital Marketing Agency UK" (H1); "Top Rated and Award Winning … That Delivers Results"                                                                                           | **Blocked** — the plumbing page prints no £ figure ("Costs vary based on the strategies adopted … PPC costs depend on your ad spend"; "We aim to have pricing available to review within 24 hours"); the pricing routes are challenge pages in the archive too; VAT not stated (VAT number in the footer only) | Quote-based: "GET MY FREE PROPOSAL"; "recurring fees"; nav "Pay Monthly Websites"                                                              | "reviews" ×9 on the plumbing page ("Reputation Building: Encourage positive online testimonials through follow-up feedback emails."); Gas Safe, NICEIC, CCRs, text-back, PECR all 0; "Using a combination of these approaches guarantees consistent lead generation"; the industries list runs to 56 entries, from "Electrician Digital Marketing" to Adult, Casino, Crypto and Cannabis & CBD; four review badges ("4.9 /5 (98 Reviews)" Trustpilot, "4.9 /5 (64 Reviews)" Google, and two more)      |
+| SEO Dons Ltd — `https://seodons.co.uk/seo-for-plumbers` (single-page app; copy from the bundles) | "Be the First Plumber Customers Find in an Emergency." (H1); pricing H1 "Transparent Pricing. Real Results."                                                                                 | **Published ranges**: "£2,000-3,000/month", "£3,500-5,000/month", "£5,000-15,000/month", each "Price locked for 12 months"; home "Monthly investment from £1,500." and "£0 Setup Fees"; "No. We work on rolling monthly agreements … If you're not happy, you can leave."; VAT not stated                      | Monthly retainer: "Your retainer covers everything."; "The first month IS the setup"; "One Plumber Per Region"; "All leads exclusive"          | Gas Safe ×12 on the plumber page — "Your Gas Safe registration number should appear prominently on your homepage, contact page, and Google Business Profile. It is both a direct keyword opportunity and a major E-E-A-T trust signal"; TrustMark ×1; review requests: "a text message sent 24-48 hours after job completion with a direct review link"; "Can you guarantee specific rankings? No -- and any agency that does is lying."; CCRs, text-back, PECR, consent all 0; "Company No. 16766013" |
+
+**Counted across the pages reached (24 September 2026):** PECR, ICO, GDPR, DMCC, TPS, Ofcom,
+consent, opt-in and opt-out are 0 on every page of all three (the cookie-banner templates excluded);
+"missed call" and "text back" appear on none; the Consumer Contracts Regulations and cancellation
+rights appear on none; Gas Safe appears on one (SEO Dons, as an SEO signal, with the registration
+number "prominently on your homepage" — the same display rule L.3 sources from the register); VAT is
+stated on one packages page ("+VAT"); a company number by two (Bird, SEO Dons); an ICO registration
+by none. **Proof:** Plumbers Marketing Co — two named testimonials (Pimlico Group; Quantum
+Electricians & Plumbers), one named case study ("44% increase in lead volume year-over-year", no
+source) and a client cap stated four ways ("ONLY 10", "10-15", "15 - 20", "once we have 10 clients");
+Bird — three initials-only testimonials, six named case studies none of them plumbing, "100+ Projects
+Delivered"; SEO Dons — six named testimonials and nine named case studies "in Adjacent Trades" (solar,
+electrical), figures from its own case studies ("537 calls generated"), and "31 Active Clients" on
+the home page against "We have 7 active clients right now" in the pricing FAQ.
+
+**What this changes for the trades page (App. AM) and `08` § B11.** (1) The vertical's SERP is the
+most crowded of the three — ten UK agencies in ten on the Bing head, retainers from "£1,000 +VAT" to
+"£5,000-15,000/month" — so the page does not enter on "plumber marketing agency"; it enters on the
+two things none of the three sells: the sub-£200 missed-call and reviews plan for a one-van business
+(Set B's text-back products already price that band, `04` § 3 Q.1) and the compliance items — Gas
+Safe and Part P registration display, claims of approval, and the CCRs on a quote accepted at the
+customer's door or by text. (2) "Gas Safe number on the homepage" is already sold as an SEO signal by
+one agency; WebAsk states it as the register's rule first and the ranking effect second, with the
+"approved/accredited" boundary (`08` R44–R46 as drafted). (3) Exclusivity ("one per region", "no more
+than one plumbing company per city") is the vertical's selling convention; the bundle's support caps
+(Q26) can be stated in the same shape without a territorial promise. (4) Published, VAT-stated retainers
+exist here (Plumbers Marketing Co), so the two-part display with "+ VAT where applicable" is the
+market's shape, not a novelty. Bounded sentence for copy: "We read three UK agencies that rank for
+plumber marketing on 24 September 2026. Two published a monthly price; none mentioned missed-call
+text-back, the cancellation rules that apply to quotes accepted at the customer's home, or PECR."
+
+#### L.3.2 Registration display and the competent-person conditions — what the primary documents say (S4, 24 September 2026)
+
+Fetched with `curl` on 24 September 2026 (legislation.gov.uk "made" text; the DCLG conditions PDF;
+the NAPIT scheme rules PDF; TrustMark's brand guidelines PDF; NICEIC's public pages). The honest
+result narrows the draft: **no scheme publishes a rule that a registration number must be displayed
+on a website.** The enforceable duties are claims-of-approval limits, Gas Safe's own rules as quoted
+above, and the CCRs.
+
+- **CCRs — the provisions L.1 did not yet quote.** Reg 10(2): the off-premises information "and any
+  cancellation form must be given on paper or, if the consumer agrees, on another durable medium and
+  must be legible"; reg 10(5) and 13(6): information the trader gives "is to be treated as included as
+  a term of the contract"; reg 12(1), (3), (4)(b): for an off-premises contract "a copy of the signed
+  contract, or … confirmation of the contract", "on paper or, if the consumer agrees, on another
+  durable medium", and "before performance begins of any service supplied under the contract" (reg
+  16(1), (4)(b) the same for distance contracts, "on a durable medium"); reg 29(2): "The cancellation
+  period begins when the contract is entered into"; reg 31(2): where the cancellation information is
+  given late but within 12 months, "the cancellation period ends at the end of 14 days after the
+  consumer receives the information"; reg 36(2): the right is lost once "the service has been fully
+  performed, and performance of the service began — (a) after a request by the consumer in accordance
+  with paragraph (1), and (b) with the acknowledgement that the consumer would lose that right once the
+  contract had been fully performed by the trader"; reg 32(3): the consumer may cancel with "a form
+  following the model cancellation form in part B of Schedule 3, or (b) … any other clear statement"
+  (Schedule 3 is served as three images on legislation.gov.uk; reg 37 is digital content, not the
+  form); reg 27(3): "This Part does not apply to off-premises contracts under which the payment to be
+  made by the consumer is not more than £42" — Part 3 carries its own £42 floor, which closes the
+  question left open in L.1 and `08` R47; reg 6(1)(e) excludes contracts "for the construction of new
+  buildings"; enforcement is **Part 6** (not Part 5, which is "Delivery and risk"): reg 44(1) "It is
+  the duty of an enforcement authority to consider any complaint made to it about a contravention of
+  these Regulations", 44(3) "every local weights and measures authority in Great Britain", 45(1) "An
+  enforcement authority may apply for an injunction … against any person who appears to the authority
+  to be responsible for a contravention". The only pending amendment (DMCC Act 2024 s. 279(5)–(6), not
+  in force) excludes subscription contracts and does not touch the floor.
+- **Competent-person conditions of authorisation (DCLG, April 2016, 8 pp.).** Every condition binds
+  the scheme operator, none the installer's marketing. Nearest: condition 15, the operator publishes
+  registration lists "so as to allow consumers … to check if an installer is registered with a
+  scheme"; condition 18, registrants "remain responsible for ensuring that all work within the scope
+  of the scheme … is compliant with the Building Regulations"; footnote 5, registrants' work "refers to
+  work that falls within the scope of the scheme". (The gov.uk URL in the planning file, singular
+  "scheme", returns 404; the live page is `…/competent-person-schemes-conditions-of-authorisation`.)
+- **NICEIC.** Logo rules are member-only: "our branding is safely kept under lock and key and can only
+  be accessed by those who have earned the right to use it. If you are certified by NICEIC, you can
+  download our full asset pack via your customer portal" (blog, 5 May 2023); the logo is a Certsure LLP
+  trade mark, "You are not permitted to use it without our approval" (terms of use). No public rule on
+  displaying a registration number.
+- **NAPIT (Scheme Rules NAP/REQ/010 v2.0, April 2026).** 8.1: a "non-exclusive license to use the
+  NAPIT logo and NAPIT trademarks in relation to certification and/or registration … provided that
+  such use is limited to the Company's scope of certification"; 8.4: the right "is conditional upon
+  maintaining certification"; 8.5: "must comply with the published Brand Identity Guidelines"; 10.2:
+  "must not make any false or misleading claims regarding its certification scope or status". No
+  registration-number display rule.
+- **TrustMark (Brand Guidelines V1.2, May 2024; member-benefits page).** Artwork rules only ("The
+  original artwork must always be used", "The TrustMark logo cannot be used within copy or
+  headlines."); the benefits page invites display "on your letterheads, marketing material, website
+  and vehicles". No licence-number display rule.
+
+**Consequence for the trades page (App. AM) and `08` § B11.** The "registration display" wedge as
+drafted over-promised: the page can require (a) claims of approval only within scope and only while
+registered (NAPIT 8.1, 8.4, 10.2; TrustMark's logo-misuse page; the CPRs on false approval claims,
+L.3 above), (b) Gas Safe's own rules as quoted in L.3, and (c) the CCRs' information, form,
+confirmation and express-request duties on every quote accepted at the door or by text — but it must
+not tell a NICEIC or NAPIT contractor that a rule obliges them to print a number on the site. S5
+re-reads R44–R46 against this; S7 re-reads App. AM's registration paragraph and the trades FAQ.
 
 ### L.4 Garages and MOT centres
 
@@ -425,6 +581,47 @@ practice website or booking flow must contain. Articles as printed.
 - **Verdict for 06:** the regulatory angle is thin online; garages stay wave 1 on missed-call and
   reminder fit (MOT and service reminders are the textbook service message under R08), not on
   compliance. Say so in 06 rather than inflating it.
+
+#### L.4.1 Three-competitor deep dive — garages and MOT centres (read 24 September 2026)
+
+Chosen by rank on `ai receptionist for garages` (`bing-0029`; the Google capture is queued in `03`
+§ 6.11 batch 2): garagereceptionist.co.uk (#2–#3), electronicreceptionist.co.uk (#1) and
+bayassist.co.uk (#10, the only one with a published all-in price). Three pages each by `curl`, token
+counts from the stripped HTML; every cell is what the page says.
+
+| Provider (representative URL)                                                                       | Positioning (verbatim)                                                             | Pricing                                                                                                                                                                                                                                                                                 | Stack (as stated)                                                                                                           | AI disclosure · recording · hand-over (verbatim)                                                                                                                                                                                                                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Garage Receptionist — `https://garagereceptionist.co.uk/` (plans on the home page; `/pricing/` 404) | "AI Garage Receptionist For UK Garages & Mobile Mechanics" (H1)                    | **Published**: "£159/mo" + "£249 setup"; "£279/mo" + "£499 setup"; "£449/mo" + "£899 setup"; uplifts "+£79/mo", "+£149/mo"; extras "+£39/mo", "+£29/mo", "+£249 one-time"; VAT not stated; "Subscriptions renew monthly unless cancelled"; "Either party may cancel on 30 days' notice" | "Services by Cartcom. Powered by UKGB.ai."; "a live DVLA-grade VRM, MOT and tax check"; no voice platform, CRM or DMS named | Disclosure **not stated**; the usage terms shift it to the garage: "You are responsible for any legally required caller notices about recording, transcription, AI assistance, or data processing." Hand-over: "It politely takes a message with the full job detail and flags it for you to call back."                                                                                                                                          |
+| Electronic Receptionist — `https://www.electronicreceptionist.co.uk/plans` (apex host HTTP 525)     | "AI Receptionist for UK Garages, MOT Centres & Workshops" (H1)                     | **From-price**: "Start from £97/month."; "Plans start from £97/month and scale with the level of automation your workshop needs."; no tiers printed; VAT not stated; "start your 14-day free trial"; "No contracts. No complexity. Just more bookings."                                 | "can integrate with your existing workshop software and garage management systems"; none named                              | Disclosure **not stated**; recording: the garage receives "Full call transcript or recording", no caller-notice statement. Hand-over not stated ("You simply review the enquiry and confirm the booking.")                                                                                                                                                                                                                                        |
+| BayAssist — `https://bayassist.co.uk/pricing`                                                       | "Nobody here has retyped an invoice in a month." (H1); "Built for UK MOT garages." | **Published, one price**: "£697 a month"; "£797 one-time setup."; "One price, everything included."; VAT not stated; "No contract, 30 days notice."; demo: "Ring the demo garage on 01952 767 010 and book a fake MOT yourself."                                                        | "It checks the DVSA database as the caller speaks"; "we act as your data processor under a written DPA"; own workshop board | **Stated** (FAQ): "It never pretends to be human. Callers hear a recording disclosure at the start of every call, and if anyone asks, it says straight out that it is an AI assistant."; home: "No human will answer." Hand-over: "when someone genuinely needs a person, it transfers to the workshop, or takes the details and logs a callback"; "after two failed attempts at a detail it stops and arranges a callback rather than guessing." |
+
+**Counted across the nine core pages (24 September 2026):** PECR, ICO, GDPR, DMCC, TPS, Ofcom,
+opt-in, opt-out, "call recording", "Motor Ombudsman" and "Code of Practice" are **0 on every page of
+all three**; "consent" appears once (Garage Receptionist's usage terms); "DVSA" appears only on
+BayAssist; VAT is stated by none; a company number and an ICO registration are shown by none.
+**Reminders:** Garage Receptionist "MOT reminder campaigns are included on the Pro plan"; Electronic
+Receptionist can "send MOT reminders up to a year in advance"; BayAssist sends confirmations and
+"Advisories captured at the test and chased before they become failures". None mentions consent for
+the reminder or the DVSA's free MOT reminder service. **Proof:** Garage Receptionist — one unnamed
+testimonial, "200+ customer reviews" qualified on the page as relating to "Cartcom's technology support
+services", "1 in 3 Workshop calls go unanswered" and "£180+ Average value of a missed booking
+enquiry" unsourced; Electronic Receptionist — two first-name testimonials ("Dave, Birmingham Garage
+Owner"; "Liam, Warwickshire MOT Centre"), no figures; BayAssist — three quotes from a named person
+and garage ("Andy, AutoFix Telford, recorded 13 May 2026") with counted figures from "our first
+garage" ("103 invoices", "24 bookings … 14 of them" on 21 August) offered as "Checkable at the
+counter, any visit".
+
+**What this changes for the garages page (App. AN) and `08` § B12.** (1) The receptionist is not
+the wedge — the micro-niche has three UK products at £97–£697 a month, and the SERP (`bing-0029`) is
+8/10 UK — so the page leads on the reminder, the Code and the forecourt rules as drafted, and places
+the receptionist as a plan inside the bundle. (2) The disclosure sentence is the open ground: one of
+three states it, one shifts it to the garage in its terms, one is silent — M.3 § 2 and R23–R29 apply
+verbatim to the garage variant. (3) Reminder consent is unaddressed by all three: the "service message
+or marketing" test (R08) and the free gov.uk reminder sentence are the page's information gain. (4)
+Two of three carry a set-up fee beside the monthly price: the two-part display (`07`) is the market
+shape here too. Bounded sentence for copy: "We read three UK AI-receptionist products built for
+garages on 24 September 2026. One said on its pages that callers are told they are speaking to an AI;
+none stated how VAT applies to its prices."
 
 ## 4. Wave 2 — gyms and fitness studios (App. AP, read 2026-09-24)
 
@@ -557,11 +754,67 @@ read in S4 before any page quotes a term as unfair.
 - **Precondition:** a doc 03 § B13 in the § B10–B12 pattern, written after the regulations and DBT
   guidance are published; until then this skeleton stays a skeleton.
 
-## 5. Recommendation
+## 5. Recommendation (S4, 24 September 2026 — founder-affinity column blank)
 
-_S4 — waves with the first service each buys and the proposed slug / `VERTICAL_ENUM` value; why the
-others lost; the drift guard (`scripts/check-keywords.ts` L77–80 dropped `home-services`
-deliberately); no industry page ships without its own doc 03 Part B section first._
+> 💡 Proposal (executor). Every line below cites § 2, § 3 or a `03` record; the founder's column and
+> the queued Google captures (`03` § 6.11 batch 2: the three vertical heads) are the two things that
+> can still move the order. Nothing here is decided until `00` § 6 records it (Q16, D12).
+
+**Wave 1 — three pages, in this order.**
+
+1. **Veterinary practices** — slug `/industries/veterinary-practices`, `VERTICAL_ENUM`
+   `veterinary-practices`. **First purchase:** the Order-shaped website work (the price page built to
+   Schedule 1 with bands and checkboxes, practice information, the end-of-life options page, the
+   complaints page, the RCVS literature within two clicks) with the bundle's three CRM items (the
+   first booking confirmation carrying the consultation price and the price-list link, Art. 7(3)(c);
+   the Standard Electronic Message on every confirmation and reminder, Art. 14(10); the pet-care-plan
+   renewal reminder, Art. 9(12)). **Why first:** the only vertical with dated, primary-law website
+   duties (L.2; 22 March 2027 and 22 September 2027 for small practices), a sourced demand statistic
+   ("Less than 40% of practices have prices on their websites", CMA, 24 March 2026), the highest
+   rubric score (73), and a supply side in which one of three ranking agencies names the CMA and none
+   publishes a price (L.2.2). **The caveat:** the compliance ground is not empty — Connected Vet sells
+   a Compliance Pack built on the March report — so the page wins on being Order-accurate and dated,
+   never on "first" or "only". Search demand is Bing-only until `vet clinic marketing agency` lands
+   on Google.
+2. **Trades and home services** — slug `/industries/trades-home-services`, `VERTICAL_ENUM`
+   `trades-home-services`. **First purchase:** missed-call text-back with reviews (the Set B products
+   already price that band at £6.49–£97 a month, and three of them target trades; `missed call text
+back for plumbers` is Medium on Google, `serp-0009`), then the site items — Gas Safe and Part P
+   registration display, claims of approval, and the CCRs' information and cancellation duties on a
+   quote accepted at the door or by text (L.1, L.3, `08` § 2). **Why second:** the strongest platform
+   fit (5) and the second score (68), but the most crowded agency SERP of the three (10/10 UK on
+   `bing-0032`, retainers from "£1,000 +VAT" to "£5,000-15,000/month") — so the page enters on the
+   sub-£200 plan and the compliance items, not on "plumber marketing agency" (L.3.1). The
+   `VERTICAL_ENUM` value re-adds a vertical `scripts/check-keywords.ts` L77–80 dropped as
+   `home-services` on purpose; `11` records why it comes back under a different name.
+3. **Garages and MOT centres** — slug `/industries/garages-mot-centres`, `VERTICAL_ENUM`
+   `garages-mot-centres`. **First purchase:** the reminder-and-text-back plan (MOT and service
+   reminders are the textbook service message under R08, and gov.uk's free reminder is the first
+   sentence, `bing-0030`), with the receptionist sold only as a plan inside the bundle. **Why third,
+   and why at all:** the rubric puts garages at 56, level with gyms and below solicitors and agents,
+   because the regulatory angle is thin online (L.4) and the demand signal is one autocomplete term;
+   it stays in wave 1 on fit — the micro-niche already has three UK products at "£97/month" to "£697 a
+   month" (L.4.1), the disclosure sentence is open ground (one of three states it), and every other
+   service on the line is bought by a garage the same way a plumber buys it. If the founder's column
+   scores it low, it drops to wave 2 without touching the other two.
+
+**Wave 2 — gyms and fitness studios**, timed to the DMCC subscription-contract regime: the DBT
+response says "we anticipate that the regime will commence in spring 2027" (§ 4, S37); the page
+skeleton is § 4 AP.4; its trigger is the commencement order, not a date WebAsk picks.
+
+**Wave 3 at most — solicitors and accountants; estate and letting agents.** Both score above garages
+on the rubric (61, 57) and both lost on delivery, not demand: SRA rule 8.9 constrains the email/SMS
+and text-back plans (R41), and the price-transparency wedge is website work the Leeds hub already
+argues; agents' material-information duties are portal-feed work, not the monthly plans, and
+`check-keywords.ts` dropped real-estate deliberately (§ 1). **Deferred:** hospitality (entrenched
+booking platforms; FHRS and allergen rules to source). **No page:** salons and barbers (inside
+`beauty-wellness-clinics` — add "barbers" to that line if wanted), tutors.
+
+**Drift guard.** Two rules travel with this list: no industry page ships without its own doc 03
+Part B section (`08` § B10–B12, drafted) and its three-competitor deep dive (L.2.2, L.3.1, L.4.1 —
+all dated 24 September 2026, all re-read before the page ships); and the three `VERTICAL_ENUM`
+values are added to `scripts/check-keywords.ts` in the same commit as the first row that uses them
+(`11`, AE.8), never before.
 
 ## Sources
 
