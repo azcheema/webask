@@ -4,7 +4,12 @@
 > Nothing in this folder is implemented. Figures are proposals pending D4 unless marked
 > **finding**. Seeded on 24 September 2026 from the planning file (see `README.md` § 2.1):
 > every section below is a **hypothesis** until the session named there confirms, amends or
-> rejects it with evidence.
+> rejects it with evidence. **S5 (25 September 2026):** § 1.1 carries every seed row forward as a
+> `C` entry with its primary source, question, rules and insertion point; § 2 folds in the S4
+> corrections (`06` L.2.1, L.3.2, the reg 27(3) reading) and adds the seven doc 03 sub-sections the
+> plan asked for (A5a–A5c, A8, A9, B5, B6); § 3 re-reads R43–R51 against S4's sources and adds
+> R57–R60; the one item the plan still listed as unverified — The Motor Ombudsman's logo sentence —
+> was read on the raw page on 25 September 2026 and closed.
 
 ## 1. Gap register — seeded from the planning pre-check (planning § 10, retrieved 23–24 September 2026)
 
@@ -20,7 +25,8 @@ is the fake-reviews guidance (4 Apr 2025); CMA207 is the unfair-commercial-pract
 > transfer permission, the transfer guide's asset lists are images, and an eject invites the client
 > onto the "$97/month plan" and pays the releasing agency a "40% affiliate commission" (row 11); the
 > vendor's privacy policy names a UK representative, Rickert Services Ltd, Peterborough (row 4).
-> These rows are rewritten in S5; nothing below has been edited.
+> The table below stays as the seed record, unedited; § 1.1 (S5) is where each row was carried
+> forward with what S2 and S4 changed.
 
 | #   | Finding (confidence)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Constraint on the design                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | Still open → 08 row                                                                                                                                 |
 | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,7 +55,34 @@ number rental figure differs between Twilio's SMS page ($1.15) and voice page ($
 
 ---
 
-_S5 turns each row into a `C01…` entry: primary source, question, copy rule, insertion point._
+### 1.1 The `C` register (S5, 25 September 2026)
+
+One entry per gap: the seed row it came from, the primary source it now rests on, the question that
+was open, the copy rules that answer it, where the answer is inserted into doc 03, and its status
+after S2 and S4. "Closed" means the design no longer depends on the answer; "open" names who owns it.
+Rows C14–C18 are gaps the seed table did not have — three from the S4 verticals work, one from the
+DUA Act cookie point, one from WhatsApp.
+
+| C   | Gap (seed row)                                       | Primary source                                                                                                                                     | The question                                                                                                                                                    | Rules                  | Insertion point in doc 03                      | Status after S2/S4/S5                                                                                                                                                                                                                                                                             |
+| --- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| C01 | Service message or marketing — the text-back (1)     | ICO _Identify direct marketing_ [S03]; electronic mail guide and its compliance page [S04] [S05]; PECR regs 22–23 [S15] [S16]                      | Is a first-time caller a "relationship", and a missed call "negotiations for the sale" (soft opt-in)? Is a review request direct marketing?                     | R01–R03, R05, R09, R12 | § A5a                                          | **Closed for the design**: the text-back carries no marketing, so consent never arises for it; the review request is a plain ask. **Open as law**: both questions untested; the copy says so (Q12 decided the template rule).                                                                     |
+| C02 | Fines and DUA Act commencement (2)                   | ICO statement 5 Feb 2026 [S07]; DUAA contents [S17]; SI 2025/904 [S18]; SI 2026/82 [S19]                                                           | The ICO's PECR fining guidance under the new regime; further commencement orders                                                                                | R07                    | § A4 (figure + dates); § A9                    | Figure settled (20 Aug 2025). Guidance **not found** on the pages read — regulatory watch (Q28). The stale £500,000 page is a known conflict.                                                                                                                                                     |
+| C03 | Reviews — DMCC, CMA208, Google (3)                   | CMA208 [S26] [S27]; SI 2025/272 [S20]; Google Maps policy [S38]; GDC (doc 03 § B2)                                                                 | None material after the Google policy was read; the clinic widget/POM question for CAP Copy Advice remains                                                      | R13–R22                | § A6 (commissioning liability, Google); § B5   | **Closed** except R21 (CAP Copy Advice — Q13).                                                                                                                                                                                                                                                    |
+| C04 | Hosting and the transfer chain (4)                   | DPA [S41]; sub-processors [S42]; security overview [S43]; DPF list [S44]; privacy policy [S40]; Terms [S147]                                       | Retention and audit clauses; which entity invoices WebAsk                                                                                                       | R30–R35                | § A8                                           | Retention read in S2 (DPA: "promptly delete or return"; Terms: 90 days on the agency's account); audits at the vendor's rates. **Open**: the invoicing entity (`01` § 10.3, in-account only).                                                                                                     |
+| C05 | UK numbers, KYC, senders, rates (5)                  | KYC [S46]; UK SMS [S45]; messaging policy [S153]; LC Phone guide and country files [S48] [S140–S142]; Ofcom 15 Jul 2026 rules [S69]                | The in-account rate file (superseded by the public files); whether LC Phone marks up; RC-bundle scope per sub-account or per agency; Ofcom implementation dates | R36, R37, R39          | § A5a (senders); § A5c                         | Rates **settled** on the public files (S2). **Open**: the wallet-line spot-check (founder, `01` § 10.1); bundle scope (`01` § 10.9, design assumes one per business).                                                                                                                             |
+| C06 | The AI receptionist (6)                              | PECR reg 19 [S13], reg 21 [S14]; ICO live calls [S06]; robo-call fines [S09]; AI pricing and rebilling [S143] [S54] [S55]; AI sub-processors [S42] | UK GDPR transparency for AI handling beyond § B3; the per-minute rates and the fair-use rule; the vendor's AI Acceptable Use Policy                             | R23–R29                | § A5b; § B3 addendum                           | Rates **settled** (S2; `private/07` § 3.3 models pay-per-use). Transparency: the privacy notice names the US AI providers (§ A8). **Open**: the AI AUP, Exhibit B, unread (`01` § 10.11) — before the receptionist ships.                                                                         |
+| C07 | Solicitors (7)                                       | SRA Code 8.9 [S70]; Transparency Rules [S71]                                                                                                       | Firm-level attribution of an agency's campaign to the firm                                                                                                      | R41                    | § B6                                           | Wave 3 at most; **open** until a solicitors page is scoped (the SRA Code for Firms was not read).                                                                                                                                                                                                 |
+| C08 | Estate agents (8)                                    | SI 2025/272 [S20]; CPRs status [S21]; CMA207 [S28]; NTS, Propertymark, RICS [S72–S74]                                                              | A primary NTS statement; the MHCLG roadmap                                                                                                                      | —                      | § B6 (one line)                                | Wave 3 at most; **open**; no page without its own research.                                                                                                                                                                                                                                       |
+| C09 | Ofcom CLI (9)                                        | Ofcom pages [S66–S69]                                                                                                                              | GC C6 wording; implementation dates                                                                                                                             | R24                    | § A5b (one paragraph)                          | Dates as the pages state them (29 Jan 2025; 15 Jul 2026); GC C6 text **open** (PDFs blocked). A risk item for outbound `ai-integration` work only.                                                                                                                                                |
+| C10 | Art. 28, Art. 27 and the fee (10)                    | ICO contracts [S10]; fee page [S11]; fee regs [S23]; Art. 27 [S22]; territorial scope [S12]                                                        | The fee for a non-UK controller; SI 2026/386 amendments                                                                                                         | R30, R34               | § A3 addendum; § A8                            | Processor role carries no fee; the controller-side question is **D3's** (open). SI 2026/386 not read — regulatory watch.                                                                                                                                                                          |
+| C11 | Transfer and eject (11)                              | Transfer guide [S52]; eject [S53]; snapshots [S148]; SaaS FAQs [S152]; Terms [S147]                                                                | Fees on transfer or eject; the white-label claim                                                                                                                | R33                    | § A8 (the exit paragraph)                      | **Resolved in S2**: no fee stated in either article ("none stated", not "none"); the white-label claim unsupported and closed; the eject commission disclosed in the contract only (D11 decided 24 Sep 2026).                                                                                     |
+| C12 | The veterinary Order (12)                            | Order and Schedules [S30–S34]; CMA release [S29]; RCVS ch. 23 [S35]; BVA [S36] [S158]                                                              | The Order's obligations, dates and size thresholds; which remedies bind independents                                                                            | R42–R44, R57           | § B10                                          | **Closed** (S4 re-read; four corrections; L.2.1). Size split Art. 2; the ownership duty binds groups and networks (Art. 5(1)(a)); the CMA's practice explainer awaited — watch.                                                                                                                   |
+| C13 | Google Business Profile (13)                         | Business Profile guidelines [S39]; suspended profiles [S128]                                                                                       | Any Google rule on agency-created profiles beyond the menu-URL consent sentence                                                                                 | R58                    | § B6 (platform rules row); the D1 ruling (Q20) | **Closed**: the guidelines' eligibility, one-page-per-location and third-party consent sentences are the rule (S139 note); no broader agency rule found.                                                                                                                                          |
+| C14 | Trades — consumer-contract law and scheme rules (S4) | CCRs 2013 [S110–S115]; CRA 2015 [S116–S118]; Gas Safe BEP [S119]; TrustMark [S77] [S183]; NAPIT [S182]; NICEIC [S184]; DCLG conditions [S181]      | Whether any scheme obliges a registration number on a website; the £42 floor's reach; the new-build exclusion                                                   | R46–R50, R59           | § B11                                          | **Closed** (L.3.2): no scheme publishes a number-display rule; reg 27(3) gives Part 3 its own £42 floor; reg 6(1)(e) excludes new builds. **Open**: the Gas Safe Rules of Registration (404) and Brand Guidelines (not fetched); the CMA207 misleading-actions paragraph still to cite by number. |
+| C15 | Garages — the Code and the logos (S4)                | DVSA guide [S78] [S121]; Get MOT reminders [S122]; TMO Code [S123] [S124]; TMO logo page [S188]; Smart Badge [S189]                                | Whether accredited garages may show the logos on websites (a search-summary sentence)                                                                           | R51–R52, R60           | § B12                                          | **Closed 25 Sep 2026**: the sponsor's own page says accredited businesses "should place the Motor Ombudsman logo and a link … on their website" — read on the raw page, not a summary.                                                                                                            |
+| C16 | Gyms — the subscription regime (S4)                  | DBT response [S37]; DMCC Part 4 Ch. 2 [S131]; Schedule 23 [S132]; CMA/OFT cases [S133–S135]                                                        | Commencement; what "online", "straightforward" and a reasonable retention offer will mean                                                                       | R54–R56                | § B6 (wave 2 line); a § B13 on commencement    | Prospective: "we anticipate that the regime will commence in spring 2027"; guidance promised. **Watch**; no page before the commencement order.                                                                                                                                                   |
+| C17 | The DUA Act cookie exception (site-wide)             | SI 2026/82 [S19]; DUAA [S17]                                                                                                                       | Whether the site adopts the statistical-purposes exception with a simple opt-out (Q15)                                                                          | —                      | § A4                                           | **Open** (Q15) — a separate feature, recorded not acted on.                                                                                                                                                                                                                                       |
+| C18 | WhatsApp (rows 5 and 1)                              | WhatsApp policy [S61]; Meta pricing [S59] [S60] [S137]; vendor guide [S51]                                                                         | The agency plan needed to rebill WhatsApp; the 1 October 2026 service-message change                                                                            | R10                    | § A5c                                          | **Closed for the design**: nothing is rebilled through the platform, so the plan question is moot; the October change is on the schedule and in `10` § 2's stale-by table.                                                                                                                        |
 
 ## 2. Proposed doc 03 sections (drafts; each pasted into doc 03 only in the pass the brainstorm approves)
 
@@ -60,7 +93,8 @@ format (the `### Bn.` heading, a regulator table, a dated "Added" blockquote, an
 Retrieved …" line, "Site-design implications" bullets, modality warnings). **Insertion point:**
 after § B3 (AI voice) and before § B4 (the copy-review checklist), so that B4 can gain the practice
 items listed at the end. Nothing here edits doc 03; the executor pastes it in the pass that the
-brainstorm approves, with the Article 3 table confirmed on the Order PDF first (S4).
+brainstorm approves. The Article 3 table was confirmed on the Order PDF in S4 (24 September 2026;
+`06` L.2) and the further obligations `06` L.2.1 found were folded in here in S5 (25 September 2026).
 
 #### B10. Veterinary practices — the Veterinary Services Market Investigation Order 2026
 
@@ -68,8 +102,8 @@ brainstorm approves, with the Article 3 table confirmed on the Order PDF first (
 > with Article numbers and dates rather than a study or a code: the CMA made the Order on
 > **22 September 2026**, it came into force the next day, and several Articles are about what a
 > practice website must carry, where, and by when. No industry page for practices ships until this
-> section exists (the § B2a lesson), and the compliance table below is confirmed against the Order
-> PDF before any page quotes a date.
+> section exists (the § B2a lesson); the compliance table below was confirmed against the Order PDF
+> on 24 September 2026, row by row.
 
 Three bodies reach a practice website at once:
 
@@ -91,24 +125,28 @@ Regulations on the advertising of prescription veterinary medicines.
   Order is made"; extends to the whole UK. Follows the Final Report of **24 March 2026**.
 - Art. 2: **"'Large Veterinary Business' means a Veterinary Business with 15 or more FOPs and/or OOH
   Centres"**; **"'Small Veterinary Business' … fewer than 15"**. FOP is a first-opinion practice.
-- Art. 3 compliance table (as extracted — ⚠️ **confirm on the PDF page before quoting**):
+- Art. 3 compliance table (confirmed row by row on PDF pages 18 and 20 with `pdftotext -table`,
+  24 September 2026 — `06` L.2; the Notice of making, not the Order body, carries the 22 September
+  2026 date):
 
-  | Obligation                                                                   | Large       | Small       |
-  | ---------------------------------------------------------------------------- | ----------- | ----------- |
-  | Ownership Information (Part 2)                                               | 22 Mar 2027 | 22 Mar 2027 |
-  | Practice Information · Price List · Parasiticide Price List · Pet Care Plans | 22 Dec 2026 | 22 Mar 2027 |
-  | In-house complaint process · complaint logs                                  | 22 Mar 2027 | 22 Mar 2027 |
-  | Written estimates for higher-cost treatments · itemised bills                | 22 Jun 2027 | 22 Sep 2027 |
-  | Written-prescription awareness, provision, standard notices (Part 4)         | 22 Jun 2027 | 22 Sep 2027 |
-  | Prescription fees (Art. 18)                                                  | 22 Mar 2027 | 22 Sep 2027 |
-  | Cremation options and prices (Part 6, Art. 20)                               | 22 Dec 2026 | 22 Mar 2027 |
+  | Obligation                                                                   | Large (≥ 15 sites)                                                                                        | Small (< 15 sites) |
+  | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------ |
+  | Ownership Information (Part 2)                                               | 22 Mar 2027                                                                                               | 22 Mar 2027        |
+  | Practice Information · Price List · Parasiticide Price List · Pet Care Plans | 22 Dec 2026                                                                                               | 22 Mar 2027        |
+  | Written estimates for higher-cost treatments · itemised bills                | 22 Jun 2027                                                                                               | 22 Sep 2027        |
+  | Written-prescription awareness, provision, standard notices (Part 4)         | 22 Jun 2027                                                                                               | 22 Sep 2027        |
+  | Prescription fees (Art. 18)                                                  | 22 Mar 2027                                                                                               | 22 Sep 2027        |
+  | Cremation options and prices (Part 6, Art. 20)                               | 22 Dec 2026                                                                                               | 22 Mar 2027        |
+  | In-house complaint process (Art. 21) · complaint logs (Art. 22)              | 22 Mar 2027                                                                                               | 22 Mar 2027        |
+  | Submission of information to the RCVS Find a Vet platform                    | 3 months from the RCVS's compliance with para 4.1 of its Undertakings, or 22 Sep 2027, whichever is later | same               |
 
-- **Website placement, Art. 4(2):** information an Article puts on a website "must be: (a) easily
+- **Website placement, Art. 4(2):** information a Part 2 Article puts on a website "must be: (a) easily
   accessible on or via the homepage, with any links to the relevant page labelled in a Clear and
   Prominent way and, unless stated otherwise in the Article, requiring no more than two clicks from
   the homepage; and (b) displayed in such a way that its content is Clear and Prominent." Art. 4(3):
   a practice inside a group meets it on its own website or on a dedicated page of the group's.
-- **Ownership, Art. 5:** Clear and Prominent on the group's and each practice's website; the Main
+- **Ownership, Art. 5 (groups and networks only — Art. 5(1)(a)):** Clear and Prominent on the
+  group's and each practice's website; the Main
   Entity's name or the group's Trading Name must "(a) appear on the homepages … including the top
   website banner where available; (b) be included within the metadata of all webpages … including
   metadata used by general search services and others; (c) appear in both paid-for and organic
@@ -141,15 +179,81 @@ Regulations on the advertising of prescription veterinary medicines.
   medication invoice, "in the same font and no smaller than the main text".
 - **Complaints, Art. 21:** a written in-house process telling owners "that Pet Owners have a right
   to complain and how they can complain", a ten-working-day informal stage, written acknowledgement
-  of an Actionable Complaint, an eight-week resolution window, and a complaint log (Schedule 4).
+  of an Actionable Complaint, and an eight-week resolution window; **complaint logs are Art. 22**
+  (Schedule 4 is the submission format under Art. 22(3)(a)) — corrected S4.
+
+**Further website and CRM obligations in the Order** (S4 re-read, 24 September 2026, `06` L.2.1;
+folded in here in S5 — none of these was in the first read, and each changes what a compliant
+practice website or booking flow must contain):
+
+- **The price page's content is prescribed, not just its position.** Art. 7(2)(a): items "are
+  described using the names for each that are specified in the Price List Schedule, and the list does
+  not use free text to describe those treatments and services"; 7(2)(c) the animal bands "(i) cat;
+  (ii) small dog (<10kg); (iii) medium dog (10 to <25kg); (iv) large dog (25 to <40kg); (v)
+  extra-large dog (40 to <60kg); and (vi) giant dog (60kg and over)"; 7(2)(e)(ii) checkboxes on the
+  dental, castration and spay rows that "clearly indicate which of the components … are included in
+  the price for the treatment and which are not"; 7(2)(f)–(g) "prices displayed on the Price List
+  include VAT" and "are up to date"; 7(2)(l) a "clear statement informing Pet Owners that the prices
+  displayed … relate to the typical case and that prices may increase in more complex or complicated
+  cases". The price-page brief is therefore the Schedule 1 names with bands and checkboxes, not a
+  designed table.
+- **Pet-care-plan pages carry substantiation.** Art. 9(4): a plan containing parasiticides must
+  "(a) provide a link to the Parasiticide Price List", "(b) identify which Parasiticides are
+  included", "(c) include a statement advising Pet Owners to speak to their Veterinary Professional
+  or a Suitably Qualified Person" and "(d) provide an indicative standalone price for 12 months of
+  Parasiticides" that "does not name any specific medicinal product"; 9(5)–(8) a Quantified Savings
+  Claim carries the Art. 9(7) information "in the same place as it makes such claim"; **9(12):**
+  "Where a Pet Owner has an annual Pet Care Plan which automatically renews, the Veterinary Business
+  must send a reminder to the Pet Owner before the renewal takes effect" — a CRM item.
+- **The page URLs are registered with the RCVS.** Art. 10(1)(f): each practice supplies "the public
+  URL for each of the webpages" carrying the Art. 10(1)(b)–(e) information through "the Find a Vet
+  Web Form"; 10(5)–(6) price changes are notified "before the revised price is charged to Pet
+  Owners". A rebuild that moves the price, parasiticide, practice-information or pet-care-plan pages
+  keeps or re-registers those URLs.
+- **The Standard Electronic Message has a trigger.** Art. 14(10): it is "included in any email, text
+  message or other electronic communication sent by or on behalf of the Veterinary Business to a Pet
+  Owner in respect of an upcoming consultation at a FOP" — every confirmation and reminder the CRM
+  sends, from 22 September 2027 for small practices.
+- **An end-of-life options page.** Art. 20(3)(a): "publish the End-of-Life Care Options, which must
+  include a Basic Communal Cremation Service offered by the Veterinary Business, on the Veterinary
+  Business's website for that FOP or OOH Centre"; 20(4) each option "must be set out with equal
+  prominence on the Veterinary Business's website(s)". Small practices: 22 March 2027.
+- **Complaints reach beyond the page.** Art. 21(3): reception signage "stating that the Complaint
+  Process is available on the relevant website and in hard copy on request"; at registration "a link
+  to an online version of the process"; "(e) include on invoices to the Pet Owner information on
+  where the Complaint Process can be found"; "(i) display the Decision Tree in prominently placed
+  signage in the FOP's or OOH Centre's reception and on the website"; the process names "the approved
+  ADR provider" (21(2)(i)).
+- **Group name, everywhere and at equal prominence (groups and networks only).** Art. 4(6)–(8): "Pet
+  Owner Communications" include "advertising and marketing materials", social media, "appointment
+  confirmations" and "newsletters"; Art. 5(7) the Ownership Information "must be displayed in a Clear
+  and Prominent manner in Pet Owner Communications"; Art. 5(8) the name "at least equal in prominence
+  to any other names published or displayed with it"; Art. 2, "Clear and Prominent": "not obscured by
+  … pop-up text and images; or … trademarks, Branding or marketing straplines".
+- **Definitions that fix page content (Art. 2).** Practice Information includes the qualifications
+  of long-term Veterinary Professionals, PSS accreditations "including a web link to supporting
+  information for Pet Owners about the PSS on the RCVS website" and, for outsourced out-of-hours, the
+  provider's trading name, telephone numbers, website, addresses, opening times and services; the
+  Parasiticide Price List gives per product "the full authorised product name; the brand name;
+  whether or not the Parasiticide is an Own Brand Medicine; the active ingredient(s)", the amount,
+  strength and dosage size, additional charges and "the amount payable in VAT".
+- **Dated duties that are not website items but sit on every practice.** Art. 26(1): supply the RCVS
+  "by 30 November 2026" the registered or company name, Trading Name, head-office address, a named
+  compliance contact and the name and addresses of each site; Art. 3(2): 30 days to bring an acquired
+  practice into compliance; Art. 24: multi-site businesses file Initial Attestations "within 30 days
+  of the applicable Compliance Date" and Annual Attestations "no later than 30 September 2027";
+  Art. 25(4): self-report non-compliance "within 14 days of becoming so aware".
 
 ⚠️ **Modality.** The obligations bind "Veterinary Businesses" by category and date; copy must carry
 the size split and the date ("a practice with fewer than 15 sites … by 22 March 2027"), never "the
 CMA now requires all vets to". The CMA's release of 24 March 2026 states "Less than 40% of practices
 have prices on their websites" — quote it as the CMA's statement with the date, never as our finding.
-The CMA says "an updated explainer on what veterinary businesses need to do" is coming; the BVA
-(page updated 24 September 2026) publishes "Get ready, get compliant" guidance and five remedy
-guides. Re-verify all three before a page ships.
+The CMA says "an updated explainer on what veterinary businesses need to do" is coming. The BVA's
+"Get ready, get compliant" guide and its five remedy guides are **member-only** (fetched 24
+September 2026, `06` L.2 [S158]); its public page says only that "The remedies will be introduced in
+phases, with full implementation complete by September 2027" and that smaller businesses have longer
+— nothing in this section rests on them; the Order is the source. Re-verify the explainer before a
+page ships.
 
 **RCVS supporting guidance ch. 23** (page updated 8 October 2025): 23.15 "All advertising should be
 accurate, truthful, and not of a character likely to bring the profession into disrepute"; 23.45
@@ -170,31 +274,50 @@ Bird & Bird, Van Bael & Bellis) used only to locate the primary documents.
 
 **Site-design implications we can actually sell:**
 
-- A price page one click from the homepage, on a URL and in navigation and metadata that use
-  "prices" or "fees", carrying the 36 Schedule 1 items with appointment durations, VAT stated
-  (E-Commerce Regulations reg 6(2)), and a change process so the list is updated before a price is
-  charged
-- The group or trading name in the homepage banner, in every page's metadata and in the structured
-  data that feeds search and map results, with the representations to map providers recorded
-- Practice Information, the complaints process, the care-plan page with the Standard Information,
-  and the RCVS prescription literature each within two clicks
-- The booking confirmation template carrying the consultation price and the price-list link — a
-  CRM automation obligation, and the one most likely to be missed because it is not on a page
+- A price page one click from the homepage, with "price", "prices", "pricing" or "fees" in the page
+  navigation and page metadata (Art. 7(4)(b) — the URL itself is not prescribed), carrying the 36
+  Schedule 1 items **under the Schedule's own names, with the animal bands and the inclusion
+  checkboxes** (Art. 7(2)), appointment durations, VAT included in every figure (Art. 7(2)(f);
+  E-Commerce Regulations reg 6(2)), the "typical case" statement (Art. 7(2)(l)), and a change
+  process so the list is updated before a price is charged and the RCVS notified (Art. 10(5)–(6))
+- For a group or network business only: the group or trading name in the homepage banner, in every
+  page's metadata and in the structured data that feeds search and map results, with the
+  representations to map providers recorded (Art. 5(4)–(5))
+- Practice Information, the complaints process (with the Decision Tree), the care-plan page with
+  the Standard Information and the Art. 9(4) substantiation, the parasiticide list with the VMD link,
+  the **end-of-life options page with each option at equal prominence** (Art. 20), and the RCVS
+  prescription literature each within two clicks — and the page URLs kept stable because they are
+  registered with the RCVS (Art. 10(1)(f))
+- **Three CRM obligations that belong in the bundle's vet playbook, because none of them is on a
+  page:** the first booking confirmation carrying the consultation price and the price-list link
+  (Art. 7(3)(c)); the Standard Electronic Message on every email or text about an upcoming
+  consultation (Art. 14(10)–(11), from 22 September 2027 for small practices); the pet-care-plan
+  renewal reminder before an automatic renewal (Art. 9(12))
+- The complaints line on every invoice (Art. 21(3)(e)) and the Invoice and Receipt Notification in
+  the footer of every medication invoice (Art. 14(12)–(14)) — invoice templates, not pages
 - Recall and vaccination reminders kept apart from promotional messages (§ A5), and review flows
   that ask every client with nothing attached (§ A6)
 - A practice's Google Business Profile maintained in the practice's own account with the group
   name where Art. 5(4)(d) requires it
+- The 30 November 2026 RCVS return (Art. 26(1)) as the first date on the practice's compliance
+  calendar — earlier than any website date
 
-**Copy rules (from research 08 R42–R44):** quote the Order's Article, size split and date; attribute
-the "less than 40%" figure to the CMA's release and date it; never rely on a law-firm summary for an
-obligation; never state a practice "is compliant" — list what the site carries and what it lacks.
+**Copy rules (from research 08 R42–R44, R57):** quote the Order's Article, size split and date;
+attribute the "less than 40%" figure to the CMA's release and date it; never rely on a law-firm
+summary for an obligation; never state a practice "is compliant" — list what the site carries and
+what it lacks; the three CRM messages are described as built for the Order, never as making the
+practice compliant (R57).
 
 **Additions elsewhere in doc 03 that travel with this section:**
 
-- **§ B4 checklist**, three items appended: "- [ ] Practice price list one click from the homepage
-  on a 'prices'/'fees' page, all Schedule 1 items, VAT stated"; "- [ ] Group or trading name in the
-  homepage banner and page metadata (Order Art. 5(4))"; "- [ ] Booking confirmations carry the
-  consultation price and the price-list link (Order Art. 7(3)(c))".
+- **§ B4 checklist**, six items appended: "- [ ] Practice price list one click from the homepage on
+  a 'prices'/'fees' page, all Schedule 1 items under the Schedule's names with bands and checkboxes,
+  VAT included"; "- [ ] Group or trading name in the homepage banner and page metadata (Order
+  Art. 5(4); groups and networks)"; "- [ ] Booking confirmations carry the consultation price and
+  the price-list link (Order Art. 7(3)(c))"; "- [ ] Every consultation confirmation and reminder
+  carries the Standard Electronic Message (Art. 14(10))"; "- [ ] End-of-life options page, each
+  option at equal prominence (Art. 20(3)–(4))"; "- [ ] Complaints process linked at registration and
+  on invoices (Art. 21(3))".
 - **Compliance action register**, new row: `| 10 | Regulatory watch: the CMA's practice explainer,
 the Article 3 dates, RCVS Undertakings monitoring | Founder | Vets industry page freshness | 🟢
 Documented |`.
@@ -204,7 +327,8 @@ Documented |`.
   page" with "Retrieved 2026-09-24".
 
 **Self-check.** Every quotation is from the Order text extracted on 24 September 2026 or the RCVS
-page; the compliance table carries the confirm-on-PDF warning; the size definitions are quoted;
+page; the compliance table was confirmed on the PDF in S4 and the four corrections `06` L.2 records
+are applied (Art. 14 dates, Part 6, Art. 22, the Notice's date); the size definitions are quoted;
 modality warnings mirror the § B2 pattern ("by", never "until"; CMA statement, not our finding); the
 Veterinary Medicines Regulations point is marked "to be sourced" rather than asserted; the section
 sells implications the site can deliver and names the one that lives in the CRM. Format matches
@@ -224,14 +348,14 @@ the registered, and one code that binds the accredited.
 > the policies of the registers and schemes whose logos the trade wants to show. No industry page
 > for trades ships until this section exists (the § B2a lesson).
 
-| Body / instrument                                             | What it governs                                                                                                                                                                                                       |
-| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Consumer Contracts Regulations 2013 (SI 2013/3134)**        | Quotes accepted at the customer's home (off-premises) or by phone, text, email or website (distance): pre-contract information, the 14-day right to cancel, the express request to start, the urgent-repair exception |
-| **Consumer Rights Act 2015 ss 49–51**                         | Reasonable care and skill; statements about the trader or the service as contract terms; a reasonable price where none was fixed                                                                                      |
-| **Trading Disclosures Regs 2015; E-Commerce Regs 2002 reg 6** | What every company's and every trading website must carry (§ L.1 of research 06; R46)                                                                                                                                 |
-| **Gas Safe Register (CGRAS/HSE) — Brand Enforcement Policy**  | Who may show the brand and a registration number, with what, and what happens on misuse                                                                                                                               |
-| **TrustMark; competent person schemes (MHCLG)**               | Logo use only while registered; self-certification and the certificate the customer receives                                                                                                                          |
-| **CMA / DMCC Act 2024; ASA/CAP**                              | Claims of approval and membership as misleading actions; reviews (§ A6); all marketing communications                                                                                                                 |
+| Body / instrument                                              | What it governs                                                                                                                                                                                                                                                      |
+| -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Consumer Contracts Regulations 2013 (SI 2013/3134)**         | Quotes accepted at the customer's home (off-premises) or by phone, text, email or website (distance): pre-contract information, the 14-day right to cancel, the express request to start, the urgent-repair exception                                                |
+| **Consumer Rights Act 2015 ss 49–51**                          | Reasonable care and skill; statements about the trader or the service as contract terms; a reasonable price where none was fixed                                                                                                                                     |
+| **Trading Disclosures Regs 2015; E-Commerce Regs 2002 reg 6**  | What every company's and every trading website must carry (§ L.1 of research 06; R46)                                                                                                                                                                                |
+| **Gas Safe Register (CGRAS/HSE) — Brand Enforcement Policy**   | Who may show the brand and a registration number, with what, and what happens on misuse                                                                                                                                                                              |
+| **TrustMark; NAPIT; NICEIC; competent person schemes (MHCLG)** | Logo use only while registered and within the scope of certification, in the scheme's own artwork; self-certification and the certificate the customer receives. **No scheme publishes a rule that a registration number must appear on a website** (S4, `06` L.3.2) |
+| **CMA / DMCC Act 2024; ASA/CAP**                               | Claims of approval and membership as misleading actions; reviews (§ A6); all marketing communications                                                                                                                                                                |
 
 Plus PECR for the text-back and reminders (§ A5; the text-back is a service message only while it
 carries no promotion — R01, R02) and UK GDPR for callers' numbers (R03).
@@ -302,36 +426,92 @@ installers "self-certify that their work complies with building standards" and "
 authority about work on your behalf"; the customer receives "a certificate within 8 weeks of
 completion which can be used as evidence of compliance".
 
-**Sources.** Retrieved 2026-09-24. legislation.gov.uk, SI 2013/3134 regs 5, 7, 28, 36 and Parts 2–3;
-Consumer Rights Act 2015 ss 49–51; Gas Safe Register, _Brand Enforcement Policy_ v5.0 (November
-2017); TrustMark, _Logo misuse_; GOV.UK, _Building regulations approval_ and _Use a competent person
-scheme_; Business Companion, _Membership logos and claims of approval_ (Trading Standards summary,
-🟡). Research 04 Set B (Appendix Q) for the market observation that of four UK text-back products
-checked, one is sold to plumbers by name and none mentions PECR.
+**What the scheme documents actually say about display** (S4, 24 September 2026, `06` L.3.2; folded
+in here in S5). The draft's "registration display" wedge over-promised: **no scheme publishes a rule
+that a registration number must be displayed on a website.** The enforceable duties are narrower:
+
+- **Competent-person conditions of authorisation (DCLG, April 2016)** [S181]: every condition binds
+  the scheme operator, none the installer's marketing; condition 15 has the operator publish
+  registration lists "so as to allow consumers … to check if an installer is registered with a
+  scheme"; condition 18 keeps registrants "responsible for ensuring that all work within the scope of
+  the scheme … is compliant with the Building Regulations".
+- **NAPIT (Scheme Rules NAP/REQ/010 v2.0, April 2026)** [S182]: 8.1 a "non-exclusive license to use
+  the NAPIT logo and NAPIT trademarks in relation to certification and/or registration … provided
+  that such use is limited to the Company's scope of certification"; 8.4 the right "is conditional
+  upon maintaining certification"; 8.5 "must comply with the published Brand Identity Guidelines";
+  10.2 "must not make any false or misleading claims regarding its certification scope or status".
+  No registration-number display rule.
+- **NICEIC** [S184]: logo rules are member-only ("our branding is safely kept under lock and key and
+  can only be accessed by those who have earned the right to use it"); the logo is a Certsure LLP
+  trade mark, "You are not permitted to use it without our approval". No public rule on displaying a
+  registration number.
+- **TrustMark (Brand Guidelines V1.2, May 2024)** [S183]: artwork rules only ("The original artwork
+  must always be used"; "The TrustMark logo cannot be used within copy or headlines"); the benefits
+  page invites display "on your letterheads, marketing material, website and vehicles". No
+  licence-number display rule.
+- **Gas Safe** is the one scheme whose policy pairs the number with a condition — § 3.1 above: brand
+  "and/or a Gas Safe registration number … only … in association with the registered trading name".
+
+So the page can require (a) claims of approval only within scope and only while registered, (b) Gas
+Safe's own rule, and (c) the CCRs' duties on every quote accepted at the door or by text — but it
+must not tell a NICEIC or NAPIT contractor that a rule obliges them to print a number on the site.
+One agency sells "Gas Safe number on the homepage" as an SEO signal (`06` L.3.1); WebAsk states the
+register's rule first and the ranking effect second (R59).
+
+**The CCRs' further provisions** (S4, `06` L.3.2): reg 10(2) the off-premises information "and any
+cancellation form must be given on paper or, if the consumer agrees, on another durable medium and
+must be legible"; regs 10(5) and 13(6) the information "is to be treated as included as a term of
+the contract"; reg 12 a copy of the signed contract or confirmation "before performance begins" (reg
+16 the same for distance contracts, "on a durable medium"); reg 29(2) "The cancellation period begins
+when the contract is entered into"; reg 31(2) where the information is given late but within 12
+months, "the cancellation period ends at the end of 14 days after the consumer receives the
+information"; reg 36(2) the right is lost once "the service has been fully performed" after an
+express request "with the acknowledgement that the consumer would lose that right"; reg 32(3) the
+model cancellation form in Schedule 3 Part B "or … any other clear statement"; **enforcement is Part
+6** — reg 44(1) "It is the duty of an enforcement authority to consider any complaint made to it",
+44(3) "every local weights and measures authority in Great Britain", 45(1) an injunction "against any
+person who appears to the authority to be responsible for a contravention". The only pending
+amendment (DMCC Act 2024 s. 279(5)–(6), not in force) excludes subscription contracts and does not
+touch the floor.
+
+**Sources.** Retrieved 2026-09-24. legislation.gov.uk, SI 2013/3134 regs 5, 7, 10, 12–13, 16, 27–32,
+36, 44–45 and Parts 2–3, 6 [S110–S115]; Consumer Rights Act 2015 ss 49–51 [S116–S118]; Gas Safe
+Register, _Brand Enforcement Policy_ v5.0 (November 2017) [S119]; TrustMark, _Logo misuse_ [S77] and
+_Brand Guidelines_ V1.2 [S183]; NAPIT, _Installer Scheme Rules_ v2.0 [S182]; NICEIC, logo blog and
+terms of use [S184]; DCLG, _Competent person schemes: conditions of authorisation_ [S181]; GOV.UK,
+_Building regulations approval_ and _Use a competent person scheme_ [S125] [S126] [S129]; Business
+Companion, _Membership logos and claims of approval_ (Trading Standards summary, 🟡) [S79]. Research
+04 Set B (Appendix Q) for the market observation that of four UK text-back products checked, one is
+sold to plumbers by name and none mentions PECR; `06` L.3.1 for the three ranking agencies (none
+mentions the CCRs, PECR or text-back).
 
 **Site-design implications we can actually sell:**
 
 - A quote flow that gives the Schedule 2 information and the cancellation form before the customer
-  is bound, confirms them by email, records the express request to start on a durable medium, and
-  flags the urgent-repair exception and the £42 floor where they apply
+  is bound, on paper or (if the customer agrees) a durable medium, confirms the contract before work
+  begins, records the express request to start with the reg 36(2) acknowledgement, and flags the
+  urgent-repair exception, the new-build exclusion and the £42 off-premises floor where they apply
 - Copy written to s 50: specific, qualified, and no promise the business would not put in the quote
-- Scheme logos with the registered trading name and number, in the scheme's own form, checked
-  against the register on the day the page ships; "approved" and "accredited" never used unless the
-  register uses them
+- Scheme marks within the scope the register shows and only while registered, in the scheme's own
+  artwork, checked against the register on the day the page ships; the Gas Safe brand or number only
+  with the registered trading name; "approved" and "accredited" never used unless the register uses
+  them; and no claim that any scheme obliges a number on the site
 - The Trading Disclosures and E-Commerce disclosures in the footer (R46), and VAT stated beside
   every price
 - The missed-call text-back on a divert from the published number (R01–R03, R36–R37) and reminders
   as service messages (R08)
 - Reviews asked of every customer after the job, nobody incentivised (R13–R22)
 
-**Copy rules (research 08 R47–R50):** quote the regulation and the section; name the exception and
-the size of the floor; never "no cancellation rights on trade work"; never "Gas Safe approved"; never
-a site "is compliant".
+**Copy rules (research 08 R47–R50, R59):** quote the regulation and the section; name the exception
+and the size of the floor, and which Part it belongs to; never "no cancellation rights on trade
+work"; never "Gas Safe approved"; never "the rules require your registration number on your website"
+to a NICEIC or NAPIT contractor; never a site "is compliant".
 
 **Additions elsewhere in doc 03 that travel with § B11:** § B4 checklist gains "- [ ] Quote flow
 carries the CCRs Schedule 2 information, the cancellation form and the express-request-to-start
-line (regs 10/13, 36)" and "- [ ] Scheme logos shown with the registered trading name and number,
-only while registered (Gas Safe BEP § 3.1)"; the doc-level Sources gain the trades bullet above.
+line (regs 10/13, 36)" and "- [ ] Scheme marks within scope and only while registered, in the
+scheme's artwork; the Gas Safe brand or number only with the registered trading name (BEP § 3.1;
+NAPIT 8.1, 8.4)"; the doc-level Sources gain the trades bullet above.
 
 ### 2.3 § B12 — garages and MOT centres (App. AO.2)
 
@@ -383,18 +563,34 @@ costs"; 8.2–8.3 an accessible complaints arrangement and accreditation shown "
 displaying appropriate signage"; 8.6 the final response tells the consumer "how to refer your
 complaint to The Motor Ombudsman"; 8.9 a final response in "no longer than eight weeks". ⚠️
 Modality: binding on accredited garages; the site applies the distinctions to every garage as good
-practice and shows the Code and CTSI logos only where the garage is accredited on the day. The
-sponsor's statement that accredited garages may use the logos "on literature and websites" comes
-from a search summary — verify on the garages page before copy relies on it (R51).
+practice and shows the Code and CTSI logos only where the garage is accredited on the day.
+
+**The logos on websites — verified 25 September 2026 (S5) on the sponsor's raw pages, not a
+summary.** The Motor Ombudsman's logo page (published 10 November 2016, modified 18 December 2025)
+[S188]: "Accredited businesses should place the Motor Ombudsman logo and a link to the Motor
+Ombudsman website on their website, so consumers are aware they are using a business they can rely
+on."; "Motor Ombudsman branding can be used on literature wherever it is relevant (including without
+limitation customer booklets, guides, invoice folders, invoices, letterheads and compliment slips)."
+Its Smart Badge page (modified 18 December 2025) [S189]: "As a business that is to committed to one
+or more of our Chartered Trading Standards Institute (CTSI)-approved Codes of Practice, you have
+privileged use of the Motor Ombudsman and Approved Code logos." (sic); "It is a requirement of CTSI
+that Code-accredited garages are using the correct logos on their websites and they are currently
+carrying out regular audits of all businesses that are part of a Code, to check how many are
+displaying the Approved Code logo."; the badge "allows consumers to click on the Smart Badge logo to
+verify that your accreditation is active". The search summary's phrase "on literature and websites"
+was a paraphrase of these two sentences; the copy quotes the pages (R60). The garages landing page
+itself [S190] carries no logo sentence.
 
 **Consumer law that binds every garage:** CRA 2015 ss 49–51 and E-Commerce Regs reg 6(2) as in
 § B11 and § L.1; the Trading Disclosures duties (R46).
 
-**Sources.** Retrieved 2026-09-24. GOV.UK, _MOT testing guide for test stations_, Appendix 2 and
-D. Requirements for authorisation; GOV.UK, _Get MOT reminders_; The Motor Ombudsman, _Service and
-Repair Code_ page and _The Motor Industry Code of Practice for Service and Repair_ (1 June 2025);
-legislation.gov.uk, Consumer Rights Act 2015 ss 49–51 and SI 2002/2013 reg 6; ICO, _Identify direct
-marketing_; Google, _Maps user-contributed content policy_.
+**Sources.** Retrieved 2026-09-24 unless stated. GOV.UK, _MOT testing guide for test stations_,
+Appendix 2 and D. Requirements for authorisation [S78] [S121]; GOV.UK, _Get MOT reminders_ [S122];
+The Motor Ombudsman, _Service and Repair Code_ page and _The Motor Industry Code of Practice for
+Service and Repair_ (1 June 2025) [S123] [S124], its logo page and Smart Badge page (retrieved
+2026-09-25) [S188] [S189] and its garages page [S190]; legislation.gov.uk, Consumer Rights Act 2015
+ss 49–51 and SI 2002/2013 reg 6; ICO, _Identify direct marketing_; Google, _Maps user-contributed
+content policy_.
 
 **Site-design implications we can actually sell:**
 
@@ -405,30 +601,253 @@ marketing_; Google, _Maps user-contributed content policy_.
 - The missed-call text-back on a divert, and an inbound-only automated assistant for the hours nobody
   can pick up (R23–R29)
 - Review requests sent after the customer has left, never at the counter (R14, R22)
-- The Code and CTSI logos only where the garage is accredited (R51); no MOT-logo advice online
+- The Code and CTSI logos only where the garage is accredited (R51), placed the way the sponsor's
+  page says — the logo, a link to The Motor Ombudsman's site and a statement of what accreditation
+  means, with the Smart Badge so a customer can verify it is active (R60); no MOT-logo advice online
   beyond what the guide says
 
-**Copy rules (research 08 R51–R52):** the Code's commitments as the Code's; DVSA's silence stated
-as silence; reminders as service messages with the DVSA timing quoted; never "approved garage"
-without the scheme.
+**Copy rules (research 08 R51–R52, R60):** the Code's commitments as the Code's; DVSA's silence
+stated as silence; reminders as service messages with the DVSA timing quoted; never "approved garage"
+without the scheme; the logo sentences as the sponsor's, quoted.
 
 **Additions elsewhere in doc 03 that travel with § B12:** § B4 checklist gains "- [ ] Prices page:
 fixed prices labelled fixed, estimates labelled, VAT and disposal inside the figure (TMO Code cl.
 1.3, 2.8–2.9; reg 6(2))" and "- [ ] Reminders carry no offer and quote a booking link and price
 (R52)"; the doc-level Sources gain the garages bullet above.
 
-**Self-check for AO.** Every quotation matches App. L.1/L.4 and AH; both sections carry the ⚠️
-modality lines their sources need (reg 6 and reg 27 to confirm; DVSA silence is not permission; the
-Code binds the accredited; the logos-on-websites sentence unverified; the Gas Safe paraphrase
-corrected); both name the § B4 additions and the doc-level Sources bullet; both keep the § B2/§ B10
-format.
+**Self-check for AO (updated S5).** Every quotation matches `06` L.1/L.3/L.4 and the register; both
+sections carry the ⚠️ modality lines their sources need (reg 6(1)(e) and reg 27(3) now confirmed;
+DVSA silence is not permission; the Code binds the accredited; the logos-on-websites sentence
+verified on the raw page on 25 September 2026; the Gas Safe paraphrase corrected; no scheme
+number-display rule asserted); both name the § B4 additions and the doc-level Sources bullet; both
+keep the § B2/§ B10 format.
 
-### 2.4 Further sub-sections
+### 2.4 Further sub-sections (S5, 25 September 2026)
 
-_S5 — A5a SMS and service messages, A5b TPS/CTPS and reg 19, A5c WhatsApp, A8 the processor role,
-A9 DUA Act commencement, B5 review requests across verticals, B6 local-business regulators._
+Seven proposals in doc 03's own format, each with its insertion point. They carry the primary
+sources the `C` register names, the modality line each needs, the site-design implications, and
+the copy rules that answer them. Nothing here edits doc 03; each is pasted in the pass the
+brainstorm approves. Quotations are the ones already verified in `01`, `06` and § 3 of this file;
+nothing is quoted here that was not read on the page.
 
-## 3. Copy rules `R01…R56` (App. J; R43–R53 from App. L.5; R54–R56 from App. AP.2)
+#### A5a. SMS, service messages and the soft opt-in — messages sent for a client
+
+> Added 2026-09-25 from research 08. **Insertion point:** after § A5's soft opt-in paragraph. § A5
+> covers who WebAsk may email; this sub-section covers the messages the new services send on a
+> client's behalf — the missed-call text-back, appointment and MOT reminders, review requests and
+> campaigns — and the question every one of them turns on: is it a service message, or is it
+> marketing?
+
+| Message                                  | The ICO's test, as the pages state it                                                                                                              | Result in the design                                                                                      | Rules            |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------- |
+| Missed-call text-back (the J.7 template) | Content-based: "if your service message has elements that are direct marketing … it will count as direct marketing"; branding alone does not [S03] | A service message while it says only that the call was missed, how to reach the business, and how to stop | R01–R03, R06     |
+| Appointment, MOT, recall reminder        | "confirm or remind them about appointments" is the ICO's own example of a service message [S03]                                                    | A service message while it carries no offer; an offer makes it marketing                                  | R08, R52, R56    |
+| Review request                           | The ICO is silent; the nearest analogue is market research; a request that promotes the business is marketing (§ 10 row 1)                         | A plain ask with nothing attached — stated as the design, never as a legal conclusion                     | R09, R13         |
+| Campaign (email, SMS, WhatsApp)          | Direct marketing by definition; reg 22 applies to "individual subscribers" [S15]                                                                   | Consent, or the soft opt-in in the statute's words; corporate subscribers excepted                        | R04–R06, R10–R12 |
+| A request for consent                    | Contacting people to ask them for consent to direct marketing is itself direct marketing (ICO, with the hotel example) [S03]                       | Never sent electronically to an individual with no basis; post, a TPS-screened call, or the next visit    | R53              |
+
+**Statute and guidance, quoted.** PECR reg 22(2): a person "shall neither transmit, nor instigate
+the transmission of, unsolicited communications for the purposes of direct marketing by means of
+electronic mail unless the recipient of the electronic mail has previously notified the sender that
+he consents" [S15]; SMS is electronic mail — the ICO's guide: electronic mail "includes messages sent
+using a short message service" [S04]. The soft opt-in, reg 22(3)(a)–(c): details "obtained … in the
+course of the sale or negotiations for the sale", marketing "in respect of … similar products and
+services only", and "a simple means of refusing … at the time that the details were initially
+collected, and … at the time of each subsequent communication" [S15]; the ICO: "It's enough if
+'negotiations for the sale' took place", with the examples "signing up to a free trial …, requesting
+a quote or asking for more details", and bought-in lists never qualify [S05]. Reg 23: identity not
+"disguised or concealed"; "a valid address … to which the recipient … may send a request that such
+communications cease" [S16]. The fine: up to £17.5 million or 4% of global annual turnover,
+whichever is higher, since 20 August 2025 (SI 2025/904 [S18]; ICO statement of 5 February 2026 [S07]).
+
+⚠️ **Modality.** Two points are undecided and the design does not depend on either: whether a missed
+call is "negotiations for the sale" (untested — the text-back carries no marketing, so consent never
+arises for it; the question arises only where a client wants to follow a caller up with an offer,
+which is the Follow-Up tier on a lawful basis first, R05), and whether a review request is direct
+marketing (the ICO is silent — the site says what the request contains, never "review requests are
+not marketing", R09). The ICO's "What are PECR?" page still shows £500,000 under an "under review"
+banner; never cite it for the figure (R07).
+
+**Site-design implications:** the J.7 template as a deliverable, one GSM-7 segment, no offer, a way
+to stop; reminders as a flow separate from campaigns (the dental recall rule, § B2, generalised to
+every vertical); consent captured where the number is collected, with the "simple means of refusing"
+in every message; records with no basis parked and reached by post, a TPS-screened live call or the
+next visit — never an electronic consent request; the client's privacy notice names the processing
+(R03). **Copy rules:** R01–R12, R53.
+
+#### A5b. TPS, CTPS, regulation 19 and the inbound-only receptionist
+
+> Added 2026-09-25 from research 08. **Insertion point:** after § A5a. Extends § B3 with the two
+> PECR call rules and the TPS, and records why the AI Receptionist is inbound-only by design.
+
+- **Reg 19(1):** "communications comprising recorded matter for direct marketing purposes by means of
+  an automated calling system" need the subscriber's prior consent [S13]. **Reg 21:** "unsolicited
+  calls for direct marketing purposes" may not be made to a number on the TPS or CTPS, nor where the
+  subscriber has objected [S14]; the register is screened before live marketing calls and re-checked
+  every 28 days [S06] [S75].
+- **Enforcement:** on 25 September 2025 the ICO fined two energy firms £300,000 and £250,000 for
+  marketing calls made with recorded, non-live speech, treated as automated calls [S09].
+- **Both regulations are drafted around calls the organisation makes.** An inbound call the customer
+  places is outside their wording (§ 10 row 6). The receptionist answers; it never dials (R23–R24).
+  Outbound synthetic-voice marketing needs the person's specific prior consent and lives only in a
+  scoped `ai-integration` project.
+- **Ofcom** (§ 10 row 9): international calls presenting a UK number blocked except for legitimate
+  use cases from 29 January 2025; from 15 July 2026, calls from abroad with +447 presentation numbers
+  shown as withheld unless verified [S66] [S67]; the messaging rules of 15 July 2026 require
+  operators and aggregators to KYC senders and corroborate sender IDs [S69]. LC Phone UK numbers are
+  UK-allocated; the risk item is an outbound call presenting a UK number from US cloud telephony —
+  `ai-integration`'s, not the inbound receptionist's. The GC C6 wording is unread (PDFs blocked).
+
+⚠️ **Modality.** The live/automated classification for AI voice is "unsettled, with a lean" (§ B3)
+— never "decided"; no UK statute specific to AI-voice disclosure was found (§ 10 rows 6, 9): the
+site says "we disclose it in the first sentence", never "the law requires an AI to identify itself"
+(R25).
+
+**Site-design implications:** the J.7 opening line (business named, "automated assistant", "this call
+is recorded", a person offered); no callback feature on the receptionist page; recording disclosed
+before anything else and silence never treated as consent (R26); the TPS screen inside the email/SMS
+plan's live-call route for parked records (R53). **Copy rules:** R23–R29.
+
+#### A5c. WhatsApp — opt-in, pricing in two currencies, and 1 October 2026
+
+> Added 2026-09-25 from research 08. **Insertion point:** after § A5b.
+
+- **Policy** (WhatsApp Business Messaging Policy, updated 23 September 2026 [S61]): a business may
+  contact people on WhatsApp only where "(a) they have given you their mobile phone number or
+  username; and (b) you have received opt-in permission" — platform policy, contractual, on top of
+  the law. PECR's electronic-mail rules are applied on top as a design rule (R10, R12); the ICO
+  pages read do not address over-the-top messaging by name, so the site states the design, not a
+  reading of the statute.
+- **Two price cards, one of which is ours.** Meta's UK card: marketing £0.0458, utility £0.0159 per
+  message [S59]. The platform bills WebAsk in US dollars: $0.0667 marketing / $0.0231 utility,
+  "Updated Jul 2026", plus $10 per sub-account per month, with a default rebill multiplier of 1.05×
+  and a 5% Stripe fee on rebilled charges [S51]. From 1 October 2026 service messages are charged per
+  message, with the first 1,000 per number per month free [S51] [S60]. Meta's pound card is Meta's
+  price, never WebAsk's (R10); what the client pays is the schedule (`07` § 2.1).
+
+⚠️ **Modality.** "Updated Jul 2026" is the vendor's date on the rate; quote it with the rate. The
+plan tier the vendor requires to rebill WhatsApp is not stated (`01` § 10.8) and does not matter
+while nothing is rebilled through the platform.
+
+**Site-design implications:** WhatsApp is an inbox channel and a campaign channel for customers who
+opted in, never first-contact marketing; it is "at cost" on every tier, never an allowance; it is
+cancelled before any eject (`01` § 6), so it restarts on the client's side. **Copy rules:** R10, R12,
+R39.
+
+#### A8. The processor role — when WebAsk hosts a sub-account
+
+> Added 2026-09-25 from research 08. **Insertion point:** after § A7, before Part B. § A3 treats
+> WebAsk as a controller of its own prospects' data. The hosted plans add a second role — processor
+> for each hosted client, with HighLevel, Inc. as sub-processor — and this sub-section is the chain,
+> what the vendor's documents say, and what the client contract must carry. It is what gate D10
+> writes down.
+
+| Party                                                                                                                                                                         | Role                                                                                                                                                                           | Instrument                                                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| The hosted client                                                                                                                                                             | Controller of its customers' data                                                                                                                                              | Its privacy notice; the WebAsk DPA                                                                                                               |
+| WebAsk                                                                                                                                                                        | Processor                                                                                                                                                                      | A written contract, which Art. 28 requires whenever a controller uses a processor [S10] — the DPA template (D10)                                 |
+| HighLevel, Inc. (Dallas)                                                                                                                                                      | Sub-processor: "To the extent Customer acts as a Processor to other parties when processing Customer Personal Data, HighLevel will act as the Sub-Processor to Customer" [S41] | The vendor DPA, "Last Updated July 2026"                                                                                                         |
+| HighLevel's sub-processors: Google Cloud, AWS, Twilio, Mailgun, Stripe and others (United States); AI: BotPress, RetellAI, Synthflow, OpenAI (United States); HighLevel India | Sub-sub-processors                                                                                                                                                             | The vendor's list, "Last Modified: September 2025" [S42]; 30-day notice, a written objection right, termination "with no further fees due" [S41] |
+
+**Transfer.** The product infrastructure "resides in the United States" [S43]. The transfer rests on
+the vendor's certification to "the UK Extension to the EU-U.S. Data Privacy Framework" — one
+participant, "HighLevel Inc", Dallas, "Active - Re-certification under Review" on all three
+frameworks as at 24 September 2026 [S44] — with the UK Addendum to the standard contractual clauses
+as the fallback [S41]; a transfer risk assessment where special-category data could appear; and the
+plan's rule that **clinic patient data is never hosted** (Q10; R32). **Retention.** The DPA: on
+termination "promptly delete or return all Customer Personal Data (including copies)"; the Terms:
+the vendor "will retain any data associated with your account for a period of ninety (90) days"
+after cancellation, on the agency's account [S147] — so every right the client keeps is contractual
+with WebAsk (R33). **Breach.** Notice "within seventy-two (72) hours of becoming aware" [S41].
+**Fees and Art. 27.** The ICO fee falls on controllers (£52 / £78 / £3,763); a pure processor pays
+none [S11] [S23]; Art. 27 applies to a non-UK processor within Art. 3(2), which is not automatically
+covered by acting for a UK controller [S12] [S22] — D3's representative remains the precondition for
+hosting anything (R34). The vendor itself names a UK representative, Rickert Services Ltd,
+Peterborough [S40]. **AI.** The receptionist's call audio and summaries pass to named US AI
+providers [S42]; the client's privacy notice and the DPA flow-down say so.
+
+⚠️ **Modality.** "Re-certification under Review" is an active status, re-checked monthly and quoted
+with an "as at" date (R31). "GDPR compliant" is never used as a label — the vendor's own sentence:
+"use of the HighLevel product alone does not make you GDPR compliant" [S43]. The entity that invoices
+WebAsk (LLC or Inc.) is visible only on an in-account invoice (`01` § 10.3).
+
+**Site-design implications:** the DPA template (D10) mirrors the vendor's — sub-processor flow-down
+with 30 days' notice, deletion on exit, the export, 72-hour breach notice; the J.7 hosted-data
+paragraph on the bundle page and on every M2 service page; the privacy notice's processing list
+gains the hosted role and the AI providers. **Additions elsewhere:** the compliance action register
+gains `| 11 | DPA template for hosted clients; D3 representative as the precondition | Founder +
+solicitor | First hosted client | 🔴 Open (D10) |`. **Copy rules:** R30–R35.
+
+#### A9. The Data (Use and Access) Act 2025 — commencement tracker
+
+> Added 2026-09-25 from research 08. **Insertion point:** after § A8, or as a dated addendum to
+> § A4, where the cookie point belongs.
+
+| Provision                                                                                                                              | In force        | Instrument                                                   | What it changes here                                                                           |
+| -------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------- |
+| PECR fines raised to £17.5 million / 4% of global annual turnover, whichever is higher                                                 | 20 August 2025  | SI 2025/904 [S18]; ICO statement 5 February 2026 [S07]       | R07; § A4's figure stands, with the date                                                       |
+| Cookies: new Schedule A1 exceptions (statistical purposes; preferences) with a simple opt-out; charity soft opt-in; enforcement powers | 5 February 2026 | SI 2026/82 [S19]; ICO note on charities, 28 April 2026 [S08] | Q15: the statistical-purposes exception is a site-wide candidate — recorded, not acted on here |
+| Complaints process for data subjects                                                                                                   | by 19 June 2026 | (§ 10 row 2)                                                 | A privacy-notice item                                                                          |
+| Further commencement orders                                                                                                            | expected        | quarterly re-check (`10` § 2)                                | —                                                                                              |
+
+⚠️ **Modality.** The ICO's "What are PECR?" page still shows £500,000 under an "under review"
+banner — stale; cite the statement and the commencement order. The ICO's PECR fining guidance under
+the new regime was not found on the pages read (C02) — a regulatory-watch item (Q28), not a claim
+either way.
+
+#### B5. Review requests across every vertical — the DMCC Act, CMA208, Google, and the sector layers
+
+> Added 2026-09-25 from research 08. **Insertion point:** after § B4 (B7–B9 reserved; B10–B12 are
+> the wave-1 verticals). § A6 covers WebAsk's own testimonials; this section covers the review
+> programme the site sells to clients in every vertical.
+
+- **CMA208** (4 April 2025) [S26]: § 3.3 names "marketing companies, individuals acting on behalf
+  of traders" among those who can commit the offence by commissioning; § 3.6 — asking "without
+  predetermining the contents or sentiment expressed in the review, for example by merely emailing
+  customers generally to ask if they wish to provide a review, is not prohibited under the banned
+  practice"; §§ 3.5, 3.7 — an incentivised review must be labelled "prominently as incentivised,
+  namely, as an advert"; § 4.4(iii) "arbitrarily stopping and starting review invitations"; § 4.5
+  "Cherry picking positive reviews … by encouraging just those who are satisfied to leave reviews".
+  The duty is non-delegable. Since 6 April 2025 the CMA can determine a breach itself and fine up to
+  10% of global annual turnover or £300,000, whichever is higher (SI 2025/272 [S20]; § A6).
+- **Google's Maps user-contributed content policy** (read 24 September 2026) [S38]: businesses must
+  not "Discourage or prohibit negative reviews, or selectively solicit positive reviews from
+  customers", nor "Offer incentives … in exchange for posting any review", nor pressure customers to
+  review on the premises.
+- **The sector layers.** Dental — the GDC: genuine reviews, no incentives at all (§ B2; R20).
+  Aesthetics and beauty — no embedded widget until the CAP question on treatment names is answered
+  (§ B1; R21). Vets — RCVS ch. 23: endorsements "underpinned by sound scientific principles or have a
+  recognised evidence base" (§ B10). Trades — nothing sector-specific. Garages — Google's on-premises
+  rule bites at the counter (R14, R22). Solicitors — SRA 8.9 does not reach a request to an existing
+  client (R41).
+- **PECR.** A request that promotes the business is marketing (§ A5a; R09).
+
+**The programme, in one line each:** ask everyone; incentivise nobody; hide nothing; no two-step
+"rate us first"; replies drafted for approval, never posted unseen; the widget shows what Google
+shows; WebAsk states its own operator exposure rather than hiding behind the client (R17).
+
+**Additions to § B4:** "- [ ] Review flow asks every customer, with no screening step and no
+incentive (CMA208 §§ 3.6, 4.5; Google's policy)"; "- [ ] Review widget shows the published rating
+and reviews unfiltered (CMA208 § 4.3)". **Copy rules:** R13–R22.
+
+#### B6. Local-business regulators and platform rules — the map for the verticals beyond the clinics
+
+> Added 2026-09-25 from research 08. **Insertion point:** after § B5. One line per vertical the
+> research scored (`06` § 2), pointing to its section or to the reason it has none. No industry page
+> ships without its own section (the § B2a lesson).
+
+| Vertical                  | Wave      | What reaches the website                                                                                                                                                                                                                                                                                                                       | Section                                                         | Rules        |
+| ------------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------ |
+| Veterinary practices      | 1         | The Veterinary Services Market Investigation Order 2026 (Arts 4–10, 14, 20–22, 26); RCVS supporting guidance ch. 23                                                                                                                                                                                                                            | § B10                                                           | R42–R44, R57 |
+| Trades and home services  | 1         | Consumer Contracts Regulations 2013; Consumer Rights Act 2015 ss 49–51; Trading Disclosures Regs; Gas Safe Brand Enforcement Policy; NAPIT, NICEIC and TrustMark rules — no scheme obliges a number on the site                                                                                                                                | § B11                                                           | R46–R50, R59 |
+| Garages and MOT centres   | 1         | DVSA's guide (forecourt only); The Motor Ombudsman's Code (accredited only) and its logo pages; CRA; E-Commerce Regs reg 6(2)                                                                                                                                                                                                                  | § B12                                                           | R51–R52, R60 |
+| Gyms and fitness studios  | 2         | DMCC Act Part 4 Chapter 2 (prospective; "we anticipate that the regime will commence in spring 2027" [S37]); the CMA/OFT gym cases                                                                                                                                                                                                             | research 08 § 4 AP; a § B13 when the commencement order is made | R54–R56      |
+| Solicitors                | 3 at most | SRA Code 8.9 — no unsolicited approaches to members of the public except current or former clients; Transparency Rules 1.3/1.4 (published prices for listed services) and 4.1 (SRA number and digital badge) [S70] [S71]; open: attribution of an agency's campaign to the firm                                                                | none yet                                                        | R41          |
+| Estate and letting agents | 3 at most | The CPRs 2008 revoked 6 April 2025 (SI 2025/272 [S20]); CMA207 has no estate-agency chapter [S28]; the NTS material-information guidance withdrawn per Propertymark and RICS (secondary) [S72–S74]                                                                                                                                             | none — own research first                                       | —            |
+| Every vertical            | —         | Trading Disclosures Regs 2015 regs 24–25; E-Commerce Regs 2002 reg 6, including 6(2) on prices "clearly and unambiguously" with the tax position [S24] [S25]                                                                                                                                                                                   | `06` L.1                                                        | R46          |
+| Every vertical — Google   | —         | Business Profile guidelines: eligible if the business "either has a physical location that customers can visit, or travels to customers where they are"; service-area businesses "should hide your business address"; a virtual office "isn't eligible"; third parties need the owner's notice and consent; one page per location [S39] [S128] | the D1 ruling (`00` Q20)                                        | R58          |
+
+## 3. Copy rules `R01…R60` (App. J; R43–R53 from App. L.5; R54–R56 from App. AP.2; R57–R60 added S5)
 
 Each rule gives the sentence form to use, the form never to use, what it rests on (§ 10 row or App. A
 source), and the modality check — how strongly the source says it, so the copy says it no more
@@ -546,8 +965,8 @@ You stay the controller of your customers' data; we process it for you under a w
 | R47 | **Use:** "A quote your customer accepts at home, or by phone, text, email or your website, is an off-premises or distance contract: they have 14 days to cancel without giving a reason, they must be told so before they are bound and given it in writing, and if that information is missing the period can run for up to 12 months and a customer who cancels in that time cannot be charged for work already done. A visit they asked for to carry out urgent repairs or maintenance is the exception — extra work sold on that visit is not." **Never:** "no cancellation rights on trade work"; never begin work inside the 14 days without the customer's express request (on paper or by email for a doorstep quote); never cite "the £42 rule" without saying which contracts it covers: for an off-premises job of £42 or less it removes both the information duties (reg 7(4)) and the right to cancel (reg 27(3)); it never applies to a quote accepted by phone, text, email or website, which is a distance contract with no floor (confirmed 24 September 2026, `06` L.3.2). | CCRs 2013 regs 5, 7(4), 10, 13, 28(1)(e), 28(2)(a), 29(1), 30, 31, 36 (L.1; S110–S115)                                                                                                                                                      | Statute, quoted; the new-build and substantial-conversion exclusion (reg 6) stated wherever a builder's page needs it.                                                                                                                      |
 | R48 | **Use:** "What your website says about the work is a term of the contract if the customer took it into account — the Consumer Rights Act 2015 says so." **Never:** unqualified promises ("same-day fix", "all work guaranteed for life", "no call-out charge") without the terms alongside them; never a claim on the site the business would not put in the quote.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | CRA 2015 s 50(1)–(3) (S117)                                                                                                                                                                                                                 | Statute: "anything that is said or written to the consumer, by or on behalf of the trader, about the trader or the service" that the consumer takes into account is a term.                                                                 |
 | R49 | **Use:** the Act's own words — the work is done "with reasonable care and skill", and where no price was fixed the customer pays "a reasonable price for the service, and no more". **Never:** "guaranteed workmanship" as if it were a legal standard; never "fixed price" for an estimate.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | CRA 2015 ss 49(1), 51(2)–(3) (S116, S118)                                                                                                                                                                                                   | Statute.                                                                                                                                                                                                                                    |
-| R50 | **Use (replaces R45's wording):** "The Gas Safe Register brand and a registration number appear only with the registered trading name, and only while registered; scheme logos in the scheme's own form." **Never:** "Gas Safe approved" or "Gas Safe accredited" (the register registers; it does not approve); never a logo without a register check on the day the page ships; never the summariser's line that "the registration number must accompany the logo" — the policy's words are its § 3.1 sentence, and the Brand Guidelines (not fetched) govern layout.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Gas Safe Brand Enforcement Policy v5.0 §§ 3.1, 3.4, 4 (L.3; S119); TrustMark misuse page (S77); DMCC misleading actions (CMA207, S28 — paragraph to cite in S4)                                                                             | Scheme policy (contractual, enforced through the Rules of Registration and Trading Standards referral) plus consumer law; the policy's own definition of marketing material includes "websites … social media, online website directories". |
-| R51 | **Use:** on garage pages, the Code's commitments as the Code's — "prices inclusive of VAT and disposal charges; estimates and quotations in writing before work, labelled as which; the final invoice matches the quotation unless extra work was authorised; a final response to a complaint within eight weeks" — binding on accredited garages, good practice for the rest. **Never:** "Motor Ombudsman accredited" or the CTSI logo unless the garage is accredited on the day; never "approved garage" without naming the scheme.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | The Motor Ombudsman Service and Repair Code, issued 1 June 2025, cl. 1.1–1.4, 2.8–2.11, 4.1–4.3, 8.2–8.3, 8.6, 8.9 (L.4; S123–S124)                                                                                                         | Voluntary code, CTSI-approved; quote clause numbers; the "logos on websites" sentence comes from a search summary of the sponsor's garages page — verify before use.                                                                        |
+| R50 | **Use (replaces R45's wording):** "The Gas Safe Register brand and a registration number appear only with the registered trading name, and only while registered; scheme logos in the scheme's own form." **Never:** "Gas Safe approved" or "Gas Safe accredited" (the register registers; it does not approve); never a logo without a register check on the day the page ships; never the summariser's line that "the registration number must accompany the logo" — the policy's words are its § 3.1 sentence, and the Brand Guidelines (not fetched) govern layout.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Gas Safe Brand Enforcement Policy v5.0 §§ 3.1, 3.4, 4 (L.3; S119); TrustMark misuse page (S77); DMCC misleading actions (CMA207, S28 — the paragraph number still to cite; carried to S6)                                                   | Scheme policy (contractual, enforced through the Rules of Registration and Trading Standards referral) plus consumer law; the policy's own definition of marketing material includes "websites … social media, online website directories". |
+| R51 | **Use:** on garage pages, the Code's commitments as the Code's — "prices inclusive of VAT and disposal charges; estimates and quotations in writing before work, labelled as which; the final invoice matches the quotation unless extra work was authorised; a final response to a complaint within eight weeks" — binding on accredited garages, good practice for the rest. **Never:** "Motor Ombudsman accredited" or the CTSI logo unless the garage is accredited on the day; never "approved garage" without naming the scheme.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | The Motor Ombudsman Service and Repair Code, issued 1 June 2025, cl. 1.1–1.4, 2.8–2.11, 4.1–4.3, 8.2–8.3, 8.6, 8.9 (L.4; S123–S124)                                                                                                         | Voluntary code, CTSI-approved; quote clause numbers; the logo sentences were read on the sponsor's own pages on 25 September 2026 and are R60's.                                                                                            |
 | R52 | **Use:** "An MOT or service reminder that says when it is due and how to book is a service message. Any driver can sign up on GOV.UK for a free reminder a month before, so yours earns its place with the booking link and your price, not with an offer." **Never:** an offer inside the reminder; never "beat the DVSA reminder"; never a reminder to a number that was never a customer's.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | ICO service-message test (S03; R08); GOV.UK "Get MOT reminders" (S122)                                                                                                                                                                      | Guidance plus a GOV.UK statement of fact; the DVSA timing quoted as "one month before".                                                                                                                                                     |
 | R53 | **Use:** "We do not email or text people to ask whether they would like to hear from you: the ICO counts contacting people to ask for consent to direct marketing as direct marketing, so the request is the message you may not send. Individuals with no basis are reached by post, by a live call after a TPS screen, or at their next visit; limited companies can be emailed." **Never:** an "opt-in request" or "re-permission" campaign to individuals by email or SMS; never a consent request dressed as a service message; never "we'll just ask them first" as a fix for a list with no provenance.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | ICO, Identify direct marketing — "contacting people to ask them for consent to direct marketing" listed under direct marketing purposes, with the hotel example (S03); PECR reg 22 (S15); reg 21 and TPS for the live-call route (S14, S75) | Guidance restating the statutory definition; corrected App. V, Z.4 Q3, AG.2 and AJ.6 on 2026-09-24 (AJ.0).                                                                                                                                  |
 
@@ -559,14 +978,44 @@ You stay the controller of your customers' data; we process it for you under a w
 | R55 | **Use:** "If a member can join online they must be able to leave online, in a way that is straightforward and without steps that are not reasonably necessary — a retention offer is allowed, a maze is not." **Never:** a cancel-by-letter-only or cancel-in-person-only flow on a site that sells memberships online; never hide the cancellation route behind a login the member no longer has.                                                                                                | DMCC Act s 260 (S131); DBT response "Easy Exit" (S37); CMA gym cases 2011–2016 (S133–S135)                                        | Statute (prospective) plus the response's own words; the historic CMA cases show the terms the regulator has already acted on.                                  |
 | R56 | **Use:** "A renewal reminder is a prescribed notice under the regime: sent in the window the pre-contract information promised, carrying the amounts, dates and how to cancel, more prominent than anything sent with it — and it is a service message under PECR while it carries no offer." **Never:** an offer inside the reminder notice; never a reminder whose cancellation instructions are less prominent than the upsell.                                                                | DMCC Act ss 258–259, Schedule 23 Part 3 (S131–S132); DBT response on notice prominence (S37); ICO service-message test (S03; R08) | The notice's content is prescribed by the Act and regulations to come; PECR's test applies on top; both point the same way.                                     |
 
+### S5 additions (`R57–R60`, 25 September 2026)
+
+| ID  | Use / never                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Rests on                                                                                                                                                                       | Modality check                                                                                                                                                                                                                                                               |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| R57 | **Use:** on vet-facing copy and in the bundle's vet playbook: "From the practice's compliance date, the first digital confirmation of a consultation booking carries the price of the consultation and a link to the price list (Art. 7(3)(c)); every email or text about an upcoming consultation carries the sentence 'Written prescriptions are available. See the RCVS website for further information.' (Art. 14(10)–(11)); a pet care plan that renews automatically gets a reminder before the renewal (Art. 9(12))." **Never:** "the CRM makes you compliant"; never the Standard Electronic Message described as a legal duty before its date — build it now, describe it as "built for". | Order Arts 7(3)(c), 9(12), 14(10)–(11) [S31]; `06` L.2.1; § 2.1 above                                                                                                          | Statute (an Order under the Enterprise Act); dates by size from the Art. 3 table — for a small practice 22 March 2027 for Arts 7 and 9, 22 September 2027 for Art. 14.                                                                                                       |
+| R58 | **Use:** "We manage a profile that is eligible under Google's guidelines, as a manager on your account; the profile stays yours." **Never:** create a profile for an address nobody works from; never "we'll get you a profile" for a business with no premises and no service area; never a second profile for the same location; never "guaranteed reinstatement" or a reinstatement rate.                                                                                                                                                                                                                                                                                                       | Google Business Profile guidelines [S39]; suspended-profile page [S128]; the D1 ruling (`00` Q20; § 10 row 13)                                                                 | Platform policy, quoted as Google's and dated; the reinstatement rate one UK specialist prints ("currently averages ~70%", `04` § 4.2) is its figure, never ours.                                                                                                            |
+| R59 | **Use:** "Scheme marks appear within the scope the register shows, only while registered, in the scheme's own artwork; the Gas Safe brand or a registration number only with the registered trading name." **Never:** tell a NICEIC or NAPIT contractor that a rule obliges them to print a registration number on the site (no scheme publishes one); never "building regulations approved" as a bare claim; never a mark without a register check on the day the page ships.                                                                                                                                                                                                                     | NAPIT Scheme Rules 8.1, 8.4, 8.5, 10.2 [S182]; NICEIC terms [S184]; TrustMark Brand Guidelines [S183]; DCLG conditions (they bind operators) [S181]; Gas Safe BEP § 3.1 [S119] | Scheme rules (contractual) plus consumer law on claims of approval; the "number on the homepage" one agency sells as an SEO signal (`06` L.3.1) is its advice, not a rule — the site may say the number helps a customer verify the business, never that a rule requires it. |
+| R60 | **Use:** on garage pages: "An accredited garage places The Motor Ombudsman logo and a link to its website on the garage's site, with a statement of what accreditation means; the Smart Badge lets a customer check the accreditation is active." **Never:** the logos on a garage that is not accredited on the day; never "Motor Ombudsman approved" (a business is accredited to a Code); never the CTSI audit sentence as a threat.                                                                                                                                                                                                                                                            | The Motor Ombudsman logo page (modified 18 December 2025) [S188]; Smart Badge page (modified 18 December 2025) [S189]; § 2.3 above                                             | The sponsor's own guidance ("should place"), read on the raw page on 25 September 2026; the sentence about CTSI is the sponsor's statement about CTSI, quoted as the sponsor's.                                                                                              |
+
+### Coverage (S5): which rules the drafts cite
+
+A grep of `09-content-drafts/`, `02`, `06`, `11` and `12` on 25 September 2026 finds every rule
+R01–R56 referenced by at least one draft or file except six, each with a reason: **R40** — no draft
+carries an affiliate link, by design until D11 decides, and the rule guards that future case;
+**R45** — superseded by R50 and kept as the record; **R49** — S7 adds the Consumer Rights Act's own
+words to the trades page's quote paragraph, which currently paraphrases them; **R54–R56** — gyms are
+wave 2 and have no draft until the commencement order. The new **R57–R60** are applied by S7 to the
+vets, profile, trades and garages drafts respectively; the trades draft (App. AM) already carries the
+§ 3.1 Gas Safe wording and the corrected £42 sentence, and S7 re-reads its registration paragraph
+against R59 (`06` L.3.2's consequence).
+
 ## 4. Method (planning § 5.6)
 
 Primary sources only for the register (App. A: ICO PECR guide and direct-marketing pages,
 legislation.gov.uk PECR regs 19–24 / DUA Act 2025 and its commencement SIs / DMCC Act 2024 Sch. 20,
 CMA208, Google Maps content policy, TPS, Ofcom, ASA/CAP, WhatsApp/Meta policy and pricing, DPF list,
 HighLevel legal pages). Every rule carries the "does the source say it this strongly?" column. Proposals
-only — doc 03 is not edited. The § 10 findings are the seed rows.
+only — doc 03 is not edited. The § 10 findings are the seed rows; § 1.1 is where each was carried
+forward. **How S5 worked:** every quotation in § 2.4 was taken from a page already read for `01`,
+`06` or § 3 (no new law-firm or summary source was admitted); the one search-summary sentence still
+in the file — The Motor Ombudsman's logo line — was replaced by the sponsor's own sentences read on
+the raw HTML with `curl`, because the fetch tool's summaries had paraphrased Gas Safe's policy twice
+before; and the S4 corrections were folded into § 2 by editing the affected sentences in place, with
+the correction dated, rather than by appending notes that a reader could miss.
 
 ## Sources
 
-`[Sxx]` keys resolve in `10-sources.md`.
+`[Sxx]` keys resolve in `10-sources.md`. Cited in this file: S03–S16, S18–S20, S22–S24, S26–S28,
+S29–S39, S40–S46, S48, S51–S55, S59–S61, S66–S75, S77–S79, S110–S119, S121–S135, S137, S140–S143,
+S147–S148, S152–S153, S158, S181–S184, and the S5 rows S188–S190 (The Motor Ombudsman's logo page,
+Smart Badge page and garages page, retrieved 2026-09-25).
