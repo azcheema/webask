@@ -1,0 +1,1207 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "lastUpdated": "2026-09-25",
+    "msvKdSource": null,
+    "note": "Draft rows for the local-business services line; NOT mergeable into data/keywords.json until scripts/check-keywords.ts accepts the proposed clusters (lead-recovery, reviews, ai-receptionist, email-sms, landing-pages, local-listings, local-plans) and verticals (trades-home-services, veterinary-practices, garages-mot-centres) — see 11-implementation-outline.md. msv and kd are null throughout. Every row names its serp-log.json record in 03-uk-demand-and-keywords.md § 4 (S6 rows of 25 September 2026 in § 4.1: the wave-1 vertical rows, six service-page secondaries, and one row per proposed calendar item 13, 15, 16 and 17 — those last five rows leave with the item if S7 drops it); near-me terms are logged as evidence only and carry no row.",
+    "intentEnum": [
+      "transactional",
+      "commercial-investigation",
+      "informational-bottom",
+      "informational-top",
+      "navigational"
+    ],
+    "clusterEnumProposed": [
+      "lead-recovery",
+      "reviews",
+      "ai-receptionist",
+      "email-sms",
+      "landing-pages",
+      "local-listings",
+      "local-plans"
+    ],
+    "verticalEnumProposed": ["trades-home-services", "veterinary-practices", "garages-mot-centres"]
+  },
+  "keywords": [
+    {
+      "term": "missed call text back uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": ["/blog/missed-call-text-back-uk-rules"],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "missed call text back service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "missed call text back service",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "text back missed calls",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": ["/blog/missed-call-text-back-uk-rules"],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "missed call text back software",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/missed-call-text-back-uk-rules",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "is missed call text back legal uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/missed-call-text-back-uk-rules",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "why do i get a text message after a missed call",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/missed-call-text-back-uk-rules",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "auto reply text missed call",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/missed-call-text-back-uk-rules",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "missed call text back for plumbers",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "lead-recovery",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "google review management services uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "google review management company",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "google review management agency",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "review management service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "google review request automation",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": ["/blog/google-reviews-dmcc-act-uk"],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "service to get more google reviews",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "how to get more google reviews from customers",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-reviews-dmcc-act-uk",
+      "supportingUrls": ["/services/review-management"],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "how to ask for google reviews legally uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-reviews-dmcc-act-uk",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "review gating uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-reviews-dmcc-act-uk",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "incentivised reviews uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-reviews-dmcc-act-uk",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "reputation management for dentists",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/dental-practices",
+      "supportingUrls": ["/services/review-management"],
+      "cluster": "reviews",
+      "vertical": "dental-practices"
+    },
+    {
+      "term": "ai phone receptionist uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai voice receptionist uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai receptionist for small business uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai call answering service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai receptionist cost uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": ["/services/ai-receptionist"],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "free ai receptionist uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai dental receptionist uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/dental-practices",
+      "supportingUrls": ["/services/ai-integration"],
+      "cluster": "ai-voice-agents",
+      "vertical": "dental-practices"
+    },
+    {
+      "term": "is an ai receptionist legal uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "email marketing agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "email marketing services uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "email marketing companies uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "email marketing agency for small business",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "sms marketing services uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "sms marketing cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": ["/blog/gohighlevel-uk-local-business-gbp-cost"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "database reactivation campaign",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/database-reactivation-uk-lawfully",
+      "supportingUrls": ["/services/email-sms-marketing"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "database reactivation uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/database-reactivation-uk-lawfully",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "landing page design uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "landing page design agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "landing page design cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/landing-page-or-website-small-business",
+      "supportingUrls": ["/services/landing-pages"],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "landing page or website small business",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/landing-page-or-website-small-business",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "landing page building service",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/landing-page-or-website-small-business",
+      "supportingUrls": ["/services/landing-pages"],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "sales funnel design uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "google business profile management uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile management services",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile optimisation service",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile management agency",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile management cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile suspended help",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-business-profile-suspended-uk",
+      "supportingUrls": ["/services/google-business-profile"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "how to reinstate google business account",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-business-profile-suspended-uk",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "marketing packages for small business uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": [],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "small business marketing packages",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": [],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "local business marketing services",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": [],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "gohighlevel sms pricing uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/gohighlevel-uk-local-business-gbp-cost",
+      "supportingUrls": ["/services/local-business-plans"],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "gohighlevel uk number",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/gohighlevel-uk-local-business-gbp-cost",
+      "supportingUrls": [],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "gohighlevel sub account transfer",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/hosted-crm-vs-own-account-leaving",
+      "supportingUrls": ["/services/local-business-plans"],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "whatsapp business uk cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/whatsapp-uk-small-business-rules-2026",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "ai answering service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai telephone answering service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "24/7 ai receptionist uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "best ai receptionist for small business uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": ["/services/ai-receptionist"],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "how much does an ai receptionist cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": ["/services/ai-receptionist"],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai receptionist cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "telephone answering service uk cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": ["/services/ai-receptionist"],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "can i automatically text back a missed call",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": ["/blog/missed-call-text-back-uk-rules"],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "can gohighlevel text back missed calls",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "how much does online reputation management cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "can i pay for 5 star reviews on google",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-reviews-dmcc-act-uk",
+      "supportingUrls": ["/services/review-management"],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "are you allowed to solicit google reviews",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-reviews-dmcc-act-uk",
+      "supportingUrls": ["/services/review-management"],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "how much does an email marketing agency cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "is sms marketing legal uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": ["/services/crm-automation"],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "how much does it cost to send 1000 emails",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/gohighlevel-uk-local-business-gbp-cost",
+      "supportingUrls": ["/services/email-sms-marketing"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "database reactivation service",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": ["/blog/database-reactivation-uk-lawfully"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "digital marketing packages for small business",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": [],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "landing page cost uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/landing-page-or-website-small-business",
+      "supportingUrls": ["/services/landing-pages"],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "local seo packages uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": null
+    },
+    {
+      "term": "whatsapp business api pricing uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/whatsapp-uk-small-business-rules-2026",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "vet clinic marketing agency",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/veterinary-practices",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "ai receptionist for garages",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/garages-mot-centres",
+      "supportingUrls": ["/services/ai-receptionist"],
+      "cluster": "ai-receptionist",
+      "vertical": "garages-mot-centres"
+    },
+    {
+      "term": "mot reminder text service",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/garages-mot-centres",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": "garages-mot-centres"
+    },
+    {
+      "term": "how much does it cost to design a landing page",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/landing-page-or-website-small-business",
+      "supportingUrls": ["/services/landing-pages"],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "is google business profile manager free",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": ["/blog/google-business-profile-suspended-uk"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "how much does a marketing package cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "how much does gohighlevel cost a month",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/gohighlevel-uk-local-business-gbp-cost",
+      "supportingUrls": ["/services/local-business-plans"],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "how much should i pay for local seo",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": ["/blog/topic/seo"],
+      "cluster": "seo",
+      "vertical": null
+    },
+    {
+      "term": "where can i get free text reminders for appointments",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/appointment-reminder-texts-pecr",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "how do i unsuspend my google business profile",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-business-profile-suspended-uk",
+      "supportingUrls": ["/services/google-business-profile"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "what is the 24 hour rule for whatsapp business",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/whatsapp-uk-small-business-rules-2026",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "how much should a small business pay for marketing",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "how much does gohighlevel charge for sms",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/gohighlevel-uk-local-business-gbp-cost",
+      "supportingUrls": ["/services/local-business-plans"],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "how much does seo cost in the uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": ["/blog/topic/seo"],
+      "cluster": "seo",
+      "vertical": null
+    },
+    {
+      "term": "how much does it cost to optimise a google business profile",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "how much does digital marketing cost for a small business",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "how much does an online booking system cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/local-business-plans",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "local-plans",
+      "vertical": null
+    },
+    {
+      "term": "can i send an automated text message to confirm an appointment",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/appointment-reminder-texts-pecr",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "lead generation page design uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "missed call sms service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "virtual receptionist ai uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "email marketing management uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "landing page agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "local seo services for small business uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": null
+    },
+    {
+      "term": "vet practice marketing uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/veterinary-practices",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "cma vet price list website",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": ["/industries/veterinary-practices"],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "veterinary services market investigation order 2026",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "what is cma in vets",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "what are the latest updates on the cma's veterinary market investigation",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "who are the big 6 vet groups",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "seo for plumbers uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "local seo services for plumbers",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "plumber marketing agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": [],
+      "cluster": "local-plans",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "how much do local seo services cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": ["/industries/trades-home-services"],
+      "cluster": "seo",
+      "vertical": null
+    },
+    {
+      "term": "how much does a plumbing website cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": ["/services/web-development"],
+      "cluster": "web-development",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "how much should an ai receptionist cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": ["/industries/garages-mot-centres"],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "what does an ai receptionist do",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": ["/services/ai-receptionist"],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "how do i contact google to take down a review",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-review-removal-uk-rules",
+      "supportingUrls": ["/services/review-management"],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "how much does a sales funnel cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/sales-funnel-or-landing-page-uk",
+      "supportingUrls": ["/services/landing-pages"],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "google maps ranking service uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/check-google-maps-ranking-uk",
+      "supportingUrls": ["/services/google-business-profile"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "how to check google maps ranking",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/check-google-maps-ranking-uk",
+      "supportingUrls": ["/services/google-business-profile"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "best missed call text back software uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/missed-call-text-back-tools-uk-compared",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "lead-recovery",
+      "vertical": null
+    }
+  ]
+}
