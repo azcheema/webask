@@ -12,7 +12,7 @@
 - `services/<slug>.mdx` + `services/<slug>.catalogue.md` — six service pages (body + catalogue).
 - `bundle/local-business-plans.mdx` + `.catalogue.md` — the bundle page, its FAQs and the `tiers` data.
 - `industries/<slug>.mdx` + `.catalogue.md` — three wave-1 industry pages, each gated on its doc 03 section.
-- `blog/calendar.md`, `blog/outlines.md`, `blog/<slug>.mdx` — twelve posts, all `draft: true`.
+- `blog/calendar.md`, `blog/outlines.md`, `blog/<slug>.mdx` — sixteen posts, all `draft: true` (#13–#16 drafted in S7, 25 September 2026; #17 is an outline only).
 - `index-and-nav.md`, `deltas.md` — exact current strings and their proposed replacements.
 - `self-checks.md` — the planning notes and pass-1 self-check carried with every draft; S8's work list.
 
@@ -46,6 +46,42 @@
 - Structure: every `.mdx` opens with frontmatter; all twelve blog drafts carry `draft: true`; every
   fenced block closes; all 37 `[Sxx]` keys cited in the bundle resolve in `10-sources.md`; no `.ts` or
   `.tsx` file in the folder; `pnpm typecheck` and `pnpm lint` green.
+
+### 3.2 Run of 25 September 2026 (S7)
+
+What changed before this run: the seven catalogue drafts carry the working `[D4]` figures and
+allowances (typed once in the entry and once in the pricing-first FAQ answer, with "+ VAT where
+applicable"), with `category`, `status`, `setupAmount` and `usageNote` uncommented per D13 and D4;
+the seven page MDX L8 comments list each page's figures; the receptionist drafts, post #3, `08` J.7
+and R25 and `02` § 3.3 follow the recording-off decision; the bundle's exit section carries the Q6
+sentence; posts #13–#16 drafted and #17 outlined (`blog/outlines.md` AJ.13–AJ.17); post #12's
+segment sentence rewritten (S49 gives no GSM-7 per-part figure).
+
+- `counts.mjs`: **0 problems.** Two changes to the tool during the run: it now reads the industry
+  catalogues' `hero.subhead` (it had read `heroSubhead` only, so the three industry drafts reported
+  0 words), and it counts those against 30–50 words — the live industry subheads are 43–48 words
+  (`data/industries.ts`) and the drafts 38–45 — while the 12–20 service budget is unchanged. One
+  draft fix: post #13's description was 161 characters and is 153.
+- POM and euphemism: 1 hit — the pattern line in § 3 of this file (a case-insensitive run). Justified.
+- Performance claims: 9 hits, all justified and the same in kind as § 3.1 — the three industry "The
+  website" sentences (the dental page's wording), two in `blog/outlines.md` and four in this file and
+  `self-checks.md` stating the rule.
+- Implied proof: 15 hits, all justified and none in a draft body — the landing-page post's provenance
+  comment ("most businesses" under "deliberately absent"), `blog/outlines.md`, this file and
+  `self-checks.md` stating the rule, and `deltas.md` quoting the current site text. One hit that
+  appeared during the run, "usually" in post #13, was removed before this log was written.
+- US spelling: 4 hits, all justified — `deltas.md` quoting code comments that say "catalog", and this
+  file's pattern line.
+- Structure: sixteen blog drafts, every one `draft: true`; no `.ts` or `.tsx` in the folder;
+  `cites.mjs` 0 unresolved after S191 and S192 were registered (164 defined); prettier exit 0.
+- Re-checks the self-checks had assigned to S7: (a) S49 states 160, 70 and "up to 67" and gives no
+  GSM-7 per-part figure — #12 rewritten; (b) the ICO's electronic-mail page lists direct messages via
+  social media under the definition and its wording is technology-neutral — #11's hedge stands and
+  nothing more is asserted; (c) Ofcom's drama-number page was reached in a browser after a challenge
+  but its range table did not render — S8 checks the 0161 496 0xxx range by eye; (d) #6's "handful
+  of bookings" and #11's "growing share" sentences had already been rewritten (neither phrase
+  remains); (e) #5's description phrase "the rule to check first" names its H2 "the guideline
+  sections to read first" and stands.
 
 ## 4. Guardrails every draft obeys (planning § 6)
 

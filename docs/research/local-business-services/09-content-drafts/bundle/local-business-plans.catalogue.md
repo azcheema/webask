@@ -12,7 +12,8 @@
 {
   slug: "local-business-plans",
   name: "Local Business Plans",
-  // category: "automate", status: "draft",
+  category: "automate",
+  status: "draft",
   summary:
     "The front desk, the follow-up and the reviews, run for you in a hosted GoHighLevel sub-account — three plans, month to month, with a written exit.",
   heroSubhead:
@@ -20,11 +21,11 @@
   whoItsFor:
     "UK local businesses that want the phone, the follow-up and the reviews handled without running a platform themselves — and who want to know exactly what leaves with them if they go.",
   pricing: {
-    startingAmount: 0 /* [D4] — the Answer tier */,
+    startingAmount: 199 /* [D4] — the Answer tier; working set, 25 September 2026 */,
     currency: "GBP",
     cadence: "monthly",
-    // setupAmount: 0 /* [D4] per module */,
-    // usageNote: "Messages and minutes beyond each plan's allowance are passed through at cost on a published GBP schedule.",
+    setupAmount: 249 /* [D4] — the Answer module; Reputation and Follow-Up carry £647 across their modules */,
+    usageNote: "Messages and minutes beyond each plan's allowance are passed through at cost on a published GBP schedule.",
     priceNote:
       "What moves the price: the tier, a new UK number versus a divert, the AI Receptionist module, and usage.",
   },
@@ -63,7 +64,7 @@ faqs: [
   {
     question: "What do the plans cost, and what is the set-up fee?",
     answer:
-      "Each plan has a monthly fee and a set-up fee per module, with the starting figures shown on this page and on the pricing page, + VAT where applicable. Answer covers the hosted sub-account, the number or divert, missed-call text-back, the inbox, the booking calendar and the report; Reputation adds the review programme and Google Business Profile upkeep; Follow-Up adds campaigns, an automation a month and a landing page a quarter. The AI Receptionist module can be added to any plan. Usage beyond each plan's allowance is passed through at cost on a published schedule. What moves the price: the tier, a new number instead of a divert, the AI module, and what you use.",
+      "Each plan has a monthly fee and a set-up fee per module: Answer from £199 a month with a £249 set-up, Reputation from £399 with £647 across its modules, Follow-Up from £749 with the same £647, and the AI module £149 a month with a £499 set-up, + VAT where applicable. Answer covers the hosted sub-account, the number or divert, missed-call text-back, the inbox, the booking calendar and the report; Reputation adds the review programme and Google Business Profile upkeep; Follow-Up adds campaigns, an automation a month and a landing page a quarter. The AI Receptionist module can be added to any plan. Usage beyond each plan's allowance is passed through at cost on a published schedule. What moves the price: the tier, a new number instead of a divert, the AI module, and what you use.",
   },
   {
     question: "Hosted or my own account — which should I choose?",
@@ -155,12 +156,12 @@ tiers: [
     name: "Answer",
     summary: "The phone handled: every missed call texted back, one inbox, a booking calendar, run for you.",
     pricing: {
-      startingAmount: 0, // [D4]
-      setupAmount: 0, // [D4] — set-up for the hosted sub-account, number or divert, and templates
+      startingAmount: 199, // [D4] — working set, 25 September 2026
+      setupAmount: 249, // [D4] — set-up for the hosted sub-account, number or divert, and templates
       currency: "GBP",
       cadence: "monthly",
       usageNote:
-        "Includes an allowance of conversations a month; messages beyond it are passed through at cost on a published GBP schedule, reset each quarter against the exchange rate.",
+        "Includes 100 conversations a month; messages beyond it are passed through at cost on a published GBP schedule, reset each quarter against the exchange rate.",
     },
     includes: [
       "A hosted sub-account with a UK number registered to your business, or a divert from the number you publish",
@@ -180,8 +181,8 @@ tiers: [
     name: "Reputation",
     summary: "Everything in Answer, plus the review programme and your Google profile kept up, month to month.",
     pricing: {
-      startingAmount: 0, // [D4]
-      setupAmount: 0, // [D4] — adds the review-programme and profile set-up modules
+      startingAmount: 399, // [D4]
+      setupAmount: 647, // [D4] — Answer's £249 plus the review-programme and profile modules at £199 each
       currency: "GBP",
       cadence: "monthly",
       usageNote:
@@ -204,12 +205,12 @@ tiers: [
     name: "Follow-Up",
     summary: "Everything in Reputation, plus campaigns written and sent monthly to the people you may lawfully message.",
     pricing: {
-      startingAmount: 0, // [D4]
-      setupAmount: 0, // [D4] — adds no set-up module of its own (the consent audit is the first month's work, as on the email-sms-marketing entry), so the tier's set-up figure is Reputation's
+      startingAmount: 749, // [D4]
+      setupAmount: 647, // [D4] — adds no set-up module of its own (the consent audit is the first month's work, as on the email-sms-marketing entry), so the tier's set-up figure is Reputation's
       currency: "GBP",
       cadence: "monthly",
       usageNote:
-        "Campaign texts and WhatsApp messages are metered by the platform in US dollars and passed through at cost at the rates on the published GBP schedule, reset each quarter against the exchange rate.",
+        "Includes up to 10,000 emails and 200 text segments a month; campaign texts beyond that and WhatsApp messages are metered by the platform in US dollars and passed through at cost at the rates on the published GBP schedule, reset each quarter against the exchange rate.",
     },
     includes: [
       "Everything in Reputation",
@@ -228,6 +229,9 @@ tiers: [
     ],
   },
 ],
-// The AI Receptionist is a module on any tier, not a tier: its price and minutes live on the
-// ai-receptionist entry, and the bundle page and the Plans block say "add the AI Receptionist to any plan".
+// The AI Receptionist is a module on any tier, not a tier: £149 a month plus a £499 set-up inside a plan [D4]
+// (07 § 4 — below the standalone £179 / £599 because the divert, the number and the inbox are already in the plan),
+// 300 minutes a month, minutes beyond at the schedule rate. Where the module figure lives in the type is a build
+// question (11 AE.1: a `modules?` field on this entry, or a tier-less line in the Plans block); the bundle page and
+// the Plans block say "add the AI Receptionist to any plan".
 ```

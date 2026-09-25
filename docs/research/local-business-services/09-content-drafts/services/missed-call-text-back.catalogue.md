@@ -12,7 +12,8 @@
 {
   slug: "missed-call-text-back",
   name: "Missed-Call Text-Back",
-  // category: "grow", status: "draft",
+  category: "grow",
+  status: "draft",
   summary:
     "Every call you miss gets a text back in seconds — a service message, from your own number, into one inbox.",
   heroSubhead:
@@ -20,11 +21,11 @@
   whoItsFor:
     "UK local businesses whose phone rings while they are working — trades, garages, salons, practices — and who lose the enquiry to whoever answers first.",
   pricing: {
-    startingAmount: 0 /* [D4] */,
+    startingAmount: 99 /* [D4] — working set, 25 September 2026 */,
     currency: "GBP",
     cadence: "monthly",
-    // setupAmount: 0 /* [D4] */,
-    // usageNote: "Messages beyond the plan allowance are passed through at cost, on a published GBP schedule reviewed quarterly.",
+    setupAmount: 249 /* [D4] */,
+    usageNote: "Messages beyond the plan's 100 conversations a month are passed through at cost, on a published GBP schedule reviewed quarterly.",
     priceNote:
       "What moves the price: a new UK number versus a divert, WhatsApp and web chat in the inbox, and how many conversations a month the plan carries.",
   },
@@ -34,6 +35,7 @@
     "One inbox for replies, web chat and, if you want it, WhatsApp, with the mobile app for whoever holds the phone",
     "Set-up, a test from a real phone, and thirty days of tuning, then month to month",
     "A monthly report: calls missed, texts sent, conversations that replied, bookings that followed",
+    "100 conversations a month in the plan — a conversation is one text-back and the replies to it — with usage beyond that at cost on the published schedule",
   ],
   notIncluded: [
     "Promotional follow-up to the numbers that called — that is Email & SMS Marketing, and it needs a lawful basis first",
@@ -63,7 +65,7 @@ faqs: [
   {
     question: "What does the monthly plan cost, and what is in the set-up fee?",
     answer:
-      "The plan is a one-off set-up fee and a monthly fee, with the starting figures shown on this page and on the pricing page, + VAT where applicable. Set-up covers the divert or the number registered to your business, the message templates written as service messages, the inbox and app for whoever holds the phone, a test from a real phone, and thirty days of tuning. The monthly fee covers the running of it and an allowance of conversations; messages beyond the allowance are passed through at cost on a published schedule. What moves the price is small: a new number instead of a divert, WhatsApp and web chat in the inbox, and how many conversations a month the plan carries. Your industry does not move it.",
+      "The plan is a one-off set-up fee of £249 and a monthly fee starting at £99, or £129 with web chat and WhatsApp in the inbox, + VAT where applicable. Set-up covers the divert or the number registered to your business, the message templates written as service messages, the inbox and app for whoever holds the phone, a test from a real phone, and thirty days of tuning. The monthly fee covers the running of it and an allowance of conversations; messages beyond the allowance are passed through at cost on a published schedule. What moves the price is small: a new number instead of a divert, WhatsApp and web chat in the inbox, and how many conversations a month the plan carries. Your industry does not move it.",
   },
   {
     question: "Is an automatic text back to a missed call allowed under UK rules?",
@@ -93,7 +95,7 @@ faqs: [
   {
     question: "What does a message cost once I go past the allowance?",
     answer:
-      "Messages beyond the plan's monthly allowance are passed through at cost. The platform bills them in US dollars; we charge them at the rates on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. The plan fee itself is fixed in pounds for twelve months. A text is billed per 160-character segment in the basic character set, which is why the template is written to fit one segment and avoids emoji and typographic dashes that would double it. The monthly report shows how many texts went out, so you can see the allowance being used before the schedule applies.",
+      "Messages beyond the plan's 100 conversations a month are passed through at cost. The platform bills them in US dollars; we charge them at the rates on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. The plan fee itself is fixed in pounds for twelve months. A text is billed per 160-character segment in the basic character set, which is why the template is written to fit one segment and avoids emoji and typographic dashes that would double it. The monthly report shows how many texts went out, so you can see the allowance being used before the schedule applies.",
   }, // Q4/Q5
   {
     question: "What if I want to leave — what do I keep?",

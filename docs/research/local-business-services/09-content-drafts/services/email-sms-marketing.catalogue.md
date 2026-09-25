@@ -12,7 +12,8 @@
 {
   slug: "email-sms-marketing",
   name: "Email & SMS Marketing",
-  // category: "grow", status: "draft",
+  category: "grow",
+  status: "draft",
   summary:
     "Campaigns written, sent and reported every month — to the people you may lawfully message, with the opt-out in every one.",
   heroSubhead:
@@ -20,9 +21,10 @@
   whoItsFor:
     "businesses with a list and no time — a CRM that is live and quiet, customers who never hear from them, lapsed customers nobody has asked back.",
   pricing: {
-    startingAmount: 0 /* [D4] */,
+    startingAmount: 395 /* [D4] — working set, 25 September 2026 */,
     currency: "GBP",
     cadence: "monthly",
+    usageNote: "SMS segments beyond the plan's allowance are passed through at cost, on a published GBP schedule reviewed quarterly.",
     priceNote:
       "What moves the price: campaigns a month, automations built or reviewed, the state of the consent records you hold, and SMS volume.",
   },
@@ -32,6 +34,7 @@
     "A reactivation campaign in the first quarter, on the records that can carry it",
     "List hygiene — bounces, opt-outs honoured across every tool, sole-trader and freemail records segmented as individuals",
     "A monthly report tied to replies and bookings, not open rates",
+    "Up to 10,000 emails and 200 SMS segments a month in the plan, or 25,000 and 500 on the larger one, with segments beyond that at cost",
   ],
   notIncluded: [
     "Bought, rented or scraped lists — never imported, never sent to",
@@ -61,7 +64,7 @@ faqs: [
   {
     question: "What does the monthly plan cost, and what is in the first month?",
     answer:
-      "A monthly fee with the starting figure shown on this page and on the pricing page, + VAT where applicable, and no set-up fee. The first month is the consent audit: every record on your list is tagged by legal form and by the basis on which it may be messaged, records without a basis are parked, and nothing is sent until that is done. From month two, two campaigns a month and one automation built or reviewed. What moves the price: campaigns a month, automations, the state of the consent records you hold, and SMS volume, which is metered by the platform and passed through at cost on a published schedule. The size of the list does not move it.",
+      "A monthly fee starting at £395 for two campaigns a month, or £695 for four with a landing page each quarter, + VAT where applicable, and no set-up fee. The first month is the consent audit: every record on your list is tagged by legal form and by the basis on which it may be messaged, records without a basis are parked, and nothing is sent until that is done. From month two, two campaigns a month and one automation built or reviewed. What moves the price: campaigns a month, automations, the state of the consent records you hold, and SMS volume, which is metered by the platform and passed through at cost on a published schedule. The size of the list does not move it.",
   },
   {
     question: "Who can we legally email or text in the UK?",
@@ -96,7 +99,7 @@ faqs: [
   {
     question: "What does an SMS cost us?",
     answer:
-      "A text is metered by the platform per 160-character segment and billed in US dollars; we charge it at the rate on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. Each plan carries an allowance and the schedule applies beyond it. The plan fee itself stays fixed in pounds for twelve months, so the only line that moves with the exchange rate is the one that moves with what you send. Campaign texts are written to fit one segment in the basic character set wherever the message allows, and each names the sender and carries a way to stop — which the rules require, and which keeps your sending number in good standing.",
+      "A text is metered by the platform per 160-character segment and billed in US dollars; we charge it at the rate on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. Each plan carries an allowance of 200 segments a month, or 500 on the larger plan, and the schedule applies beyond it. The plan fee itself stays fixed in pounds for twelve months, so the only line that moves with the exchange rate is the one that moves with what you send. Campaign texts are written to fit one segment in the basic character set wherever the message allows, and each names the sender and carries a way to stop — which the rules require, and which keeps your sending number in good standing.",
   }, // Q4/Q5
 ],
 ```

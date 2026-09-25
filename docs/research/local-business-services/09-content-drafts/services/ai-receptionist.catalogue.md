@@ -12,7 +12,8 @@
 {
   slug: "ai-receptionist",
   name: "AI Receptionist",
-  // category: "grow", status: "draft",
+  category: "grow",
+  status: "draft",
   summary:
     "A voice agent on a monthly plan that answers the calls you miss, books into your diary and hands over when it should — inbound only.",
   heroSubhead:
@@ -20,11 +21,11 @@
   whoItsFor:
     "businesses that miss calls they would have won, cannot justify a receptionist, and do not need an agent built to a regulated answer set.",
   pricing: {
-    startingAmount: 0 /* [D4] */,
+    startingAmount: 179 /* [D4] — working set, 25 September 2026 */,
     currency: "GBP",
     cadence: "monthly",
-    // setupAmount: 0 /* [D4] */,
-    // usageNote: "Minutes beyond the plan allowance are charged at a published GBP rate, reviewed quarterly.",
+    setupAmount: 599 /* [D4] */,
+    usageNote: "Minutes beyond the plan's 300 a month are charged at a published GBP rate, reviewed quarterly.",
     priceNote:
       "What moves the price: minutes a month, calendar and CRM wiring, and how many distinct jobs the agent is scripted to do.",
   },
@@ -32,8 +33,9 @@
     "A GoHighLevel Voice AI agent scripted to a narrow job — answer, qualify, book, take a message, transfer",
     "Your published number stays; the agent sits behind a divert — out of hours, on overflow, or on every call",
     "Calendar booking, call summaries to your inbox and CRM record, and a test number to ring before go-live",
-    "Recording and AI-identification disclosures in the opening line, and an automatic fallback to voicemail or a person if the agent fails",
+    "The AI-identification disclosure in the opening line, the recording disclosure whenever you switch recording on, and an automatic fallback to voicemail or a person if the agent fails",
     "Monthly tuning and a report: answered, booked, transferred, dropped, minutes used",
+    "300 minutes a month in the plan, with minutes beyond that at the published pound rate",
   ],
   notIncluded: [
     "Outbound calls of any kind — under PECR and Ofcom's rules that is a scoped project with a consent record, under AI Integration",
@@ -63,7 +65,7 @@ faqs: [
   {
     question: "What does the AI receptionist cost per month, and what do the minutes cost?",
     answer:
-      "A one-off set-up fee and a monthly fee, with the starting figures shown on this page and on the pricing page, + VAT where applicable. Set-up covers scripting the narrow job, the divert or number, the calendar and CRM wiring, the disclosure line, the fallback path and a test number for you to ring. The monthly fee covers an allowance of minutes, tuning and the report. Minutes beyond the allowance are charged at a rate published in pounds and reset each quarter against the exchange rate; the platform bills the underlying minutes in US dollars and we pass them through at the rate on that schedule. What moves the price: minutes a month, how much calendar and CRM wiring you need, and how many distinct jobs the agent is scripted to do.",
+      "A one-off set-up fee of £599 and a monthly fee starting at £179, + VAT where applicable. Set-up covers scripting the narrow job, the divert or number, the calendar and CRM wiring, the disclosure line, the fallback path and a test number for you to ring. The monthly fee covers 300 minutes a month, tuning and the report. Minutes beyond the allowance are charged at a rate published in pounds and reset each quarter against the exchange rate; the platform bills the underlying minutes in US dollars and we pass them through at the rate on that schedule. What moves the price: minutes a month, how much calendar and CRM wiring you need, and how many distinct jobs the agent is scripted to do.",
   }, // Q8, Q4/Q5
   {
     question: "Is an AI answering my business phone legal in the UK?",
@@ -73,7 +75,7 @@ faqs: [
   {
     question: "Will callers know they are talking to an AI?",
     answer:
-      "Yes, in its first sentence: it names your business, says it is an automated assistant, says the call is recorded, and offers to book, take a message or put the caller through to a person. We could not find a UK statute that requires an assistant to say it is automated; we do it because a caller who believes they are speaking to a person has been misled, and because an assistant that lets people assume it is human is one you will eventually have to apologise for. The recording disclosure is the clearer one: callers are told up front, because the ICO's view is that telling them supports fairness even where consent is not strictly required. You hear the opening line yourself on the test number before the plan goes live.",
+      "Yes, in its first sentence: it names your business, says it is an automated assistant, and offers to book, take a message or put the caller through to a person. We could not find a UK statute that requires an assistant to say it is automated; we do it because a caller who believes they are speaking to a person has been misled, and because an assistant that lets people assume it is human is one you will eventually have to apologise for. Call recording is off unless you switch it on; when it is on, the same sentence says the call is recorded, because the ICO's view is that telling callers up front supports fairness even where consent is not strictly required. You hear the opening line yourself on the test number before the plan goes live.",
   },
   {
     question: "What happens when it cannot answer a question?",

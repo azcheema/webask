@@ -74,7 +74,7 @@ service uk` **High** (`serp-0002`), `missed call text back service` Medium (`ser
 missed calls` Medium (`serp-0004`), `missed call sms service uk` Medium (`serp-0011`), the PAA pair
   `can i automatically text back a missed call` and `can gohighlevel text back missed calls`;
   supporting on nine post rows (#1, #4, #11, the booking-cost question, the trades row and the
-  proposed #17).
+  #17, second wave — decided 25 September 2026).
 - **SERP shape to beat:** 9/9 and 8/9 UK, Soft (A2/B7, A3/B6), an AI Overview on every text-back
   term, four ads above the fold on the "service uk" wording (Moneypenny, Aircall, Ringover, Cloudtalk
   — telephony, none selling text-back), no local pack even on the near-me wording (`serp-0105`). The
@@ -156,7 +156,7 @@ much does online reputation management cost`; supporting on the dental row and f
   manage Google reviews for my business?" (`serp-0014`); H2 3–4 ↔ "Is review gating illegal?"
   (`serp-0021`), "Are you allowed to solicit Google reviews?" (`serp-0020`), "Can I pay for 5-star
   reviews on Google?" (`serp-0018`); H2 11 ↔ "How do I contact Google to take down a review?"
-  (`serp-0013`; the proposed #13 carries the full answer); FAQ 1 ↔ "How much does online reputation
+  (`serp-0013`; #13 (drafted S7) carries the full answer); FAQ 1 ↔ "How much does online reputation
   management cost?" (`serp-0016`, `-0025`).
 - **FAQs (8):** the catalogue's I.2 set, pricing first; "What is the best company for managing Google
   reviews?" (`serp-0013`) answered without a claim.
@@ -166,7 +166,7 @@ much does online reputation management cost`; supporting on the dental row and f
   post #2, `/pricing`. **Links in (7):** `crm-automation.mdx:74`, dental L67, beauty L59–61 and L98,
   the `seo` catalogue exclusion, the bundle's Reputation tier, the profile page, the trades and
   garages industry pages.
-- **Cluster (2):** #2; proposed #13 (removal and Google's policy — from the `serp-0013` PAA and the
+- **Cluster (2):** #2; #13 (drafted S7; removal and Google's policy — from the `serp-0013` PAA and the
   `04` gap).
 - **Priority:** tier 1 — the page enters on the compliance long-tail (`incentivised reviews uk`,
   `review gating uk`, `how to ask for google reviews legally uk` on post #2) because it has no High
@@ -221,7 +221,7 @@ service uk`, `24/7 ai receptionist uk`, `virtual receptionist ai uk` Medium (`se
   `/services/local-business-plans`, post #3, `/process`. **Links in (6):** the new `ai-integration.mdx`
   paragraph after L30, the `data/services.ts:559` boundary, the bundle's AI module, the garages and
   trades industry pages, post #3; beauty L79–81 links the bespoke build instead (R27).
-- **Cluster (2):** #3; proposed #14 (AI receptionist or a call-answering service — the live `vs` row,
+- **Cluster (2):** #3; #14 (drafted S7; AI receptionist or a call-answering service — the live `vs` row,
   `03` § 1 step 4, and the answering services that share the SERP).
 - **Priority:** tier 1 on the rules half (post #3 and H2 3, where nothing ranks); tier 3 on the cost
   PAA; the High heads are tier 5 and Hard — no early expectation is written for them.
@@ -315,7 +315,7 @@ uk` Medium (`serp-0104`), `sales funnel design uk` Low (`serp-0056`); supporting
   landing page without a website?" (`serp-0054`); H2 3 and FAQ 1 ↔ "How much does it cost to design
   a landing page?" (`serp-0052`, `-0053`) and "What is the average cost of a landing page?"
   (`serp-0071`); H2 6 ↔ "Are Google landing pages free?" (`serp-0071` — the free page and what it
-  cannot do); FAQ ↔ "How much does a sales funnel cost?" (`serp-0056`; proposed #15) and "Can ChatGPT
+  cannot do); FAQ ↔ "How much does a sales funnel cost?" (`serp-0056`; #15, drafted S7) and "Can ChatGPT
   build a landing page?" (`serp-0054`, `-0055` — answered without disparaging the tools).
 - **FAQs (7):** the catalogue's I.5 set, pricing first.
 - **Schema:** project `Offer`.
@@ -323,7 +323,7 @@ uk` Medium (`serp-0104`), `sales funnel design uk` Low (`serp-0056`); supporting
   `/services/crm-automation`, `/services/ui-ux-design`, post #7. **Links in (4):**
   `web-development.mdx:52`, the web-development FAQ L102–104, the bundle's Follow-Up tier, the
   email/SMS page.
-- **Cluster (2):** #7; proposed #15 (funnel or page — from `serp-0056` and its cost PAA).
+- **Cluster (2):** #7; #15 (drafted S7; funnel or page — from `serp-0056` and its cost PAA).
 - **Priority:** tier 3 on the cost questions (post #7 and the FAQ); the Soft High agency head is
   tier 5.
 - **Deliberately absent:** conversion-rate claims; "high-converting".
@@ -335,7 +335,7 @@ uk` Medium (`serp-0104`), `sales funnel design uk` Low (`serp-0056`); supporting
 management agency` Medium (`serp-0079`), `google business profile management uk` Low (`serp-0058`
   — Google's own), the cost and free FAQ rows (`google business profile management cost` Low,
   `serp-0068`; `is google business profile manager free`; `how much does it cost to optimise a google
-business profile`); supporting on post #5's rows and the proposed #16.
+business profile`); supporting on post #5's rows and #16 (drafted S7).
 - **SERP shape to beat:** Google's own properties (business.google.com, support.google.com) in the
   top five on every wording, Soft (A1–A4), no ads above the fold, an AI Overview, a local pack on
   the near-me wording (`serp-0107`); one UK agency — virens.co.uk — in every top ten and first on the
@@ -377,7 +377,7 @@ business profile`); supporting on post #5's rows and the proposed #16.
   **Links in (6):** `seo.mdx:20`, the `seo` catalogue exclusion, beauty L98 and
   `data/industries.ts:237`, the bundle's Reputation tier, the three wave-1 industry pages, the
   reviews page.
-- **Cluster (2):** #5; proposed #16 (checking a Maps ranking honestly — `serp-0091` and its PAA, with
+- **Cluster (2):** #5; #16 (drafted S7; checking a Maps ranking honestly — `serp-0091` and its PAA, with
   the no-guarantee sentence).
 - **Priority:** tier 3 on the cost and "is it free" questions; tier 2 on the industry × profile
   inserts; the bare head is never expected (Google's own).
@@ -458,23 +458,24 @@ business marketing packages` **High** (`serp-0073`), `local business marketing s
 The calendar is `09-content-drafts/blog/calendar.md` (items 1–12 drafted; 13–17 proposed in S6);
 outlines for items 4–12 are in `09-content-drafts/blog/outlines.md`. Publication follows doc 08 § 8:
 
-| Order | Item                                                                                                                                                   | Pillar                                                       | Tier              | Trigger                                                   |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------ | ----------------- | --------------------------------------------------------- |
-| 1     | #1 missed-call text rules                                                                                                                              | text-back                                                    | 1                 | the text-back page live                                   |
-| 2     | #2 Google reviews after the DMCC Act                                                                                                                   | reviews                                                      | 1                 | the reviews page live                                     |
-| 3     | #3 AI receptionist rules and costs                                                                                                                     | receptionist                                                 | 1                 | the receptionist page live                                |
-| 4     | #8 the CMA's vet Order                                                                                                                                 | vets (industry)                                              | 2                 | doc 03 § B10 and the vets page                            |
-| 5     | #9 missed calls in the trades                                                                                                                          | trades (industry)                                            | 2                 | the trades page                                           |
-| 6     | #5 profile suspended                                                                                                                                   | profile                                                      | 3                 | the profile page live                                     |
-| 7     | #7 landing page or website                                                                                                                             | landing pages                                                | 3                 | the landing-pages page live                               |
-| 8     | #11 WhatsApp rules and pricing                                                                                                                         | text-back                                                    | 3                 | the 1 October 2026 rates re-read (`10` § 2)               |
-| 9     | #12 GoHighLevel in GBP                                                                                                                                 | bundle                                                       | 3                 | `07`'s FX band final; the bundle live                     |
-| 10    | #4 reminder texts                                                                                                                                      | bundle                                                       | 1                 | the bundle live                                           |
-| 11    | #6 database reactivation                                                                                                                               | email/SMS                                                    | 1                 | the email/SMS page live                                   |
-| 12    | #10 hosted CRM or your own account                                                                                                                     | bundle                                                       | 1                 | the bundle live                                           |
-| 13–17 | proposed: #13 review removal · #14 receptionist vs answering service · #15 funnel or page · #16 checking a Maps ranking · #17 text-back tools compared | reviews · receptionist · landing pages · profile · text-back | 3 / 1 / 3 / 3 / 3 | S7 accepts or drops each with its row; #17 is second wave |
+| Order | Item                                                                                                                                          | Pillar                                           | Tier          | Trigger                                                                                                    |
+| ----- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ------------- | ---------------------------------------------------------------------------------------------------------- |
+| 1     | #1 missed-call text rules                                                                                                                     | text-back                                        | 1             | the text-back page live                                                                                    |
+| 2     | #2 Google reviews after the DMCC Act                                                                                                          | reviews                                          | 1             | the reviews page live                                                                                      |
+| 3     | #3 AI receptionist rules and costs                                                                                                            | receptionist                                     | 1             | the receptionist page live                                                                                 |
+| 4     | #8 the CMA's vet Order                                                                                                                        | vets (industry)                                  | 2             | doc 03 § B10 and the vets page                                                                             |
+| 5     | #9 missed calls in the trades                                                                                                                 | trades (industry)                                | 2             | the trades page                                                                                            |
+| 6     | #5 profile suspended                                                                                                                          | profile                                          | 3             | the profile page live                                                                                      |
+| 7     | #7 landing page or website                                                                                                                    | landing pages                                    | 3             | the landing-pages page live                                                                                |
+| 8     | #11 WhatsApp rules and pricing                                                                                                                | text-back                                        | 3             | the 1 October 2026 rates re-read (`10` § 2)                                                                |
+| 9     | #12 GoHighLevel in GBP                                                                                                                        | bundle                                           | 3             | `07`'s FX band final; the bundle live                                                                      |
+| 10    | #4 reminder texts                                                                                                                             | bundle                                           | 1             | the bundle live                                                                                            |
+| 11    | #6 database reactivation                                                                                                                      | email/SMS                                        | 1             | the email/SMS page live                                                                                    |
+| 12    | #10 hosted CRM or your own account                                                                                                            | bundle                                           | 1             | the bundle live                                                                                            |
+| 13–16 | #13 review removal · #14 receptionist vs answering service · #15 funnel or page · #16 checking a Maps ranking — drafted S7, 25 September 2026 | reviews · receptionist · landing pages · profile | 3 / 1 / 3 / 3 | each page's second cluster post; publishes after its pillar page and first-wave post                       |
+| 17    | #17 text-back tools compared — second wave (decided 25 September 2026); row 97 and outline AJ.17 kept                                         | text-back                                        | 3             | the text-back page live with its three first-wave posts indexed; the tool pages re-read on the writing day |
 
-Every proposed item cites its evidence in the calendar; none is drafted. Industry inserts (the
+Items 13–16 were drafted in S7 (25 September 2026) and #17 keeps its row and outline for the second wave (`00` § 6). Industry inserts (the
 three wave-1 pages' service sections) and the one location variant (`05` § 6) complete the clusters.
 
 ## 5. Off-page, E-E-A-T, SERP features, indexation and measurement (S6)
@@ -570,18 +571,18 @@ Rows are counted as primary · primary plus supporting (`shape.mjs`); the accept
 keyword rows" as the second figure, because a post's row that names the page as its supporting URL
 is a row the page is written to hold. Landing pages carries 5 as primary and 10 in total.
 
-| Page          | Rows ≥ 8 | Info-gain sentence | H2 ↔ PAA | Links in ≥ 3 | Links out ≥ 3 | Cluster ≥ 2    | Schema list | Measurement row |
-| ------------- | -------- | ------------------ | -------- | ------------ | ------------- | -------------- | ----------- | --------------- |
-| text-back     | 7 · 16   | ✅                 | ✅       | 6            | 8             | 3              | ✅          | ✅              |
-| reviews       | 7 · 12   | ✅                 | ✅       | 7            | 7             | 1 + 1 proposed | ✅          | ✅              |
-| receptionist  | 8 · 14   | ✅                 | ✅       | 6            | 5             | 1 + 1 proposed | ✅          | ✅              |
-| email/SMS     | 10 · 12  | ✅                 | ✅       | 5            | 7             | 3              | ✅          | ✅              |
-| landing pages | 5 · 10   | ✅                 | ✅       | 4            | 5             | 1 + 1 proposed | ✅          | ✅              |
-| profile       | 7 · 11   | ✅                 | ✅       | 6            | 5             | 1 + 1 proposed | ✅          | ✅              |
-| bundle        | 8 · 12   | ✅                 | ✅       | 6+           | 10            | 3              | ✅          | ✅              |
+| Page          | Rows ≥ 8 | Info-gain sentence | H2 ↔ PAA | Links in ≥ 3 | Links out ≥ 3 | Cluster ≥ 2 | Schema list | Measurement row |
+| ------------- | -------- | ------------------ | -------- | ------------ | ------------- | ----------- | ----------- | --------------- |
+| text-back     | 7 · 16   | ✅                 | ✅       | 6            | 8             | 3           | ✅          | ✅              |
+| reviews       | 7 · 12   | ✅                 | ✅       | 7            | 7             | 2           | ✅          | ✅              |
+| receptionist  | 8 · 14   | ✅                 | ✅       | 6            | 5             | 2           | ✅          | ✅              |
+| email/SMS     | 10 · 12  | ✅                 | ✅       | 5            | 7             | 3           | ✅          | ✅              |
+| landing pages | 5 · 10   | ✅                 | ✅       | 4            | 5             | 2           | ✅          | ✅              |
+| profile       | 7 · 11   | ✅                 | ✅       | 6            | 5             | 2           | ✅          | ✅              |
+| bundle        | 8 · 12   | ✅                 | ✅       | 6+           | 10            | 3           | ✅          | ✅              |
 
-Four pages meet the two-post cluster only with an S6 proposal (#13–#16); if S7 drops a proposal, the
-page's cluster falls to one post and the acceptance is re-recorded, not waved through.
+Four pages met the two-post cluster only with an S6 proposal; #13–#16 were drafted in S7 (25 September
+2026), so every page now carries two posts, and #17 stays a second-wave outline.
 
 ## Sources
 

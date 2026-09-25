@@ -12,7 +12,8 @@
 {
   slug: "review-management",
   name: "Review Management",
-  // category: "grow", status: "draft",
+  category: "grow",
+  status: "draft",
   summary:
     "Google reviews asked for the lawful way — everyone asked, nobody incentivised, nothing hidden — with replies drafted for you.",
   heroSubhead:
@@ -20,10 +21,10 @@
   whoItsFor:
     "local businesses chosen on their Google reviews — trades, garages, salons, clinics, practices — that ask nobody today, or ask only the happy ones.",
   pricing: {
-    startingAmount: 0 /* [D4] */,
+    startingAmount: 99 /* [D4] — working set, 25 September 2026 */,
     currency: "GBP",
     cadence: "monthly",
-    // setupAmount: 0 /* [D4] */,
+    setupAmount: 299 /* [D4] */,
     priceNote:
       "What moves the price: locations, the platforms watched beyond Google, and whether replies are drafted for you or also posted for you.",
   },
@@ -62,7 +63,7 @@ faqs: [
   {
     question: "What does review management cost per month?",
     answer:
-      "A one-off set-up fee and a monthly fee per location, with the starting figures shown on this page and on the pricing page, + VAT where applicable. Set-up covers connecting your Google and Facebook accounts, writing the request flows and their timing for each service, the one-page policy for your team, and the widget if you want one. The monthly fee covers the requests, the replies drafted for your approval, the monitoring and the report. What moves the price: how many locations you have, the platforms watched beyond Google, and whether replies are also posted for you after approval. What does not move it is how many reviews you want, because that is not a number we sell or promise.",
+      "A one-off set-up fee of £299 and a monthly fee starting at £99 per location, or £149 with replies posted for you and the other platforms watched, + VAT where applicable. Set-up covers connecting your Google and Facebook accounts, writing the request flows and their timing for each service, the one-page policy for your team, and the widget if you want one. The monthly fee covers the requests, the replies drafted for your approval, the monitoring and the report. What moves the price: how many locations you have, the platforms watched beyond Google, and whether replies are also posted for you after approval. What does not move it is how many reviews you want, because that is not a number we sell or promise.",
   },
   {
     question: "Is it legal to ask customers for Google reviews in the UK?",

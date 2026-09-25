@@ -12,7 +12,8 @@
 {
   slug: "google-business-profile",
   name: "Google Business Profile",
-  // category: "grow", status: "draft",
+  category: "grow",
+  status: "draft",
   summary:
     "Your profile run properly — categories, services, posts, photos, questions and listings — for a real premises or service area, by a firm honest about having none.",
   heroSubhead:
@@ -20,10 +21,11 @@
   whoItsFor:
     "local businesses with premises or a genuine service area whose profile is unclaimed, half-filled or suspended, and who want the map-pack work done without a full SEO retainer.",
   pricing: {
-    startingAmount: 0 /* [D4] */,
+    startingAmount: 129 /* [D4] — working set, 25 September 2026 */,
     currency: "GBP",
     cadence: "monthly",
-    // setupAmount: 0 /* [D4] */,
+    setupAmount: 249 /* [D4] */,
+    usageNote: "The listings add-on is passed through at cost on the published GBP schedule.",
     priceNote:
       "What moves the price: locations, a suspension to work through, and listings sync to the directories that matter.",
   },
@@ -62,7 +64,7 @@ faqs: [
   {
     question: "What does Google Business Profile management cost?",
     answer:
-      "A one-off set-up fee and a monthly fee per location, with the starting figures shown on this page and on the pricing page, + VAT where applicable. Set-up covers the audit of your existing profile against Google's guidelines, being added as a manager on your account, and the full pass over categories, services, attributes, hours, photos and description. The monthly fee covers weekly posts, questions answered, photo guidance, listings kept consistent and the report from Google's own insights. What moves the price: how many locations you have, a suspension to work through, and syncing to the wider directories, which is added at cost. What does not move it is your industry, and nothing in the price is tied to a ranking.",
+      "A one-off set-up fee of £249 and a monthly fee starting at £129 per location, + VAT where applicable. Set-up covers the audit of your existing profile against Google's guidelines, being added as a manager on your account, and the full pass over categories, services, attributes, hours, photos and description. The monthly fee covers weekly posts, questions answered, photo guidance, listings kept consistent and the report from Google's own insights. What moves the price: how many locations you have, a suspension to work through, and syncing to the wider directories, which is added at cost. What does not move it is your industry, and nothing in the price is tied to a ranking.",
   },
   {
     question: "Are we eligible for a profile at all?",

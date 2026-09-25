@@ -1,4 +1,4 @@
-# 09 — Blog outlines for calendar items 4–12 (App. AJ)
+# 09 — Blog outlines for calendar items 4–17 (App. AJ; AJ.13–AJ.17 added in S7, 25 September 2026)
 
 Conventions for all nine: real frontmatter keys (`slug`, `title`, `description`, `datePublished`,
 `dateModified`, `authorSlug: ansar-cheema`, `topic`, `keywords`, `draft: true`); `topic` stays inside
@@ -115,3 +115,53 @@ or purchase — or leaving them parked. Corporate subscribers may be emailed. Th
 rewritten on 2026-09-24 (App. V "Month one" and "Database reactivation" paragraphs; Z.4 Q3; AG.2's
 Email & SMS "Build" cell), R53 records the rule, and App. V's pass-1 self-check line about R09 and
 "often" is superseded by this note. S8 still reads the rewritten sentences with fresh eyes.
+
+### AJ.13 `google-review-removal-uk-rules` — Removing a Google Review in the UK: What Google Allows (54) · topic `crm` · anchor `review-management` · publish after the reviews page and post #2 · **drafted S7, 25 September 2026**
+
+- **Description (153):** "Google removes reviews that break its policy, nothing else. How to report one, what the tool shows, why removal cannot be bought, and what helps instead."
+- **Keywords:** how do i contact google to take down a review · remove google review uk · report a google review · google review removal policy · fake google review removal uk · google reviews management tool
+- **Information gain:** the `serp-0013` PAA "How do I contact Google to take down a review?" has no page in the capture that answers it from Google's own reporting page; this post quotes that page (the report button, "Do not report a review just because you disagree with it or dislike it", "Only those that violate Google policies are eligible for removal", "several days", the Reviews Management Tool statuses and the one-time appeal), states the removal boundary as ours, and separates Google's policy from the CMA's rules for reviews a business publishes itself.
+- **Sources:** S191 (Google, report inappropriate reviews — read 25 September 2026), S38 (Maps content policy categories), S192 (Google's reply sentence), S26/S27 (CMA208 § 4.3 for self-published reviews), `04` § 4.5 (the unnamed money-back removal page, stated as our boundary), R13, R18, R21, R36.
+- **H2 outline:** 1 "How do I contact Google to take down a review?" (the report route; the tool; the appeal) · 2 What Google will remove, and what it will not (the categories; "negative" is not one) · 3 The review that says something untrue (defamation is a solicitor's route; not legal advice) · 4 What the reviews tool shows while you wait ("several days"; the record) · 5 Why nobody can sell you removal (the boundary) · 6 The reviews you publish yourself are a different law (CMA208; R18; the clinic-widget clause) · 7 What helps instead: the reply (Google's own sentence; no personal data in replies) · 8 A checklist · 9 Where to start.
+- **Deliberately absent:** a removal success rate; any timescale beyond Google's; a defamation threshold; any product, agency or tool by name; any client.
+- **Pass-1 flags for S8:** re-read S191 on the day for the tool's status labels (quoted verbatim); confirm the policy category names against S38's headings; the sentence on personal data in replies is a design rule, not a statutory quotation — keep it that way.
+
+### AJ.14 `ai-receptionist-vs-answering-service-uk` — AI Receptionist vs Answering Service for UK Small Businesses (60) · topic `ai` · anchor `ai-receptionist` · publish after the receptionist page and post #3 · **drafted S7, 25 September 2026**
+
+- **Description (155):** "A human answering service and an AI agent handle a missed call differently. Hours, hand-over, disclosure, what each charges by the unit, and how to choose."
+- **Keywords:** ai receptionist vs answering service uk (the live row; re-points to this post when live, `05` § 3) · telephone answering service uk cost · ai call answering service uk · call answering service or ai receptionist · virtual receptionist vs ai receptionist · can i get ai to answer my phone calls
+- **Information gain:** the receptionist SERPs mix human answering services and AI products (`serp-0030`, `serp-0036`) and no captured page compares them on disclosure and hand-over; this post compares the two on who speaks, the billing unit, hours, the first sentence, the failure path and the regulated-answer limit, without a price, and gives seven questions to ask either.
+- **Sources:** `serp-0030` [S157] (the shared results and the two PAA questions, dated), `04` Q.2 and Q.7 (the three-product sentence), S15/S16 (regs 19 and 21 as the service page applies them), R23–R29; the recording sentence follows the 25 September 2026 decision (off by default).
+- **H2 outline:** 1 What each one is · 2 They share the same search results (bounded, dated) · 3 The unit you pay by (no figures — R29) · 4 Hours · 5 Who is speaking, and whether they say so (the first sentence; recording when on) · 6 The hand-over (the failure path) · 7 What neither should answer (R27) · 8 Is either one a marketing-call problem? (R23, R24) · 9 A decision table · 10 Seven questions · 11 Where to start.
+- **Deliberately absent:** any price per call, minute or month; answer rates; product or provider names; a universal verdict.
+- **Pass-1 flags for S8:** the sentence "human answering services and AI products in the same ten" must match the `serp-0030` record's types (saas-vendor rows include the human services — check the domain list before publication); "on our plan, recording is off unless you switch it on" must match the receptionist catalogue after the S7 patch.
+
+### AJ.15 `sales-funnel-or-landing-page-uk` — Sales Funnel or Landing Page: What to Build First (49) · topic `web-development` · anchor `landing-pages` · publish after the landing-pages page and post #7 · **drafted S7, 25 September 2026**
+
+- **Description (154):** "A funnel is a landing page with two more pages behind it. What each step is for, what moves the cost of either, and when one page does the job on its own."
+- **Keywords:** how much does a sales funnel cost · sales funnel design uk · sales funnel or landing page · sales funnel for small business uk · landing page funnel · three step funnel
+- **Information gain:** the `serp-0056` SERP is agencies and software guides answering the five-stage model; its PAA asks what a funnel costs and whether it is still relevant. This post defines the funnel as three pages, says which page does what, names the four cost drivers without a figure, and lists the rules each page must meet (cookies post-DUA, reg 6(2), the CCRs, company details).
+- **Sources:** `serp-0056` [S157] (the four PAA questions, dated), S19 (SI 2026/82 cookie exceptions, 5 February 2026), R38, R46, R47, J.6; the `[D4]` figures are pointed at, never printed.
+- **H2 outline:** 1 What people mean by a sales funnel · 2 The three-step funnel, page by page · 3 When one page is enough · 4 What moves the cost (four drivers; no figure) · 5 The rules all three pages must meet · 6 Builder or code · 7 A decision table · 8 A checklist · 9 Where to start.
+- **Deliberately absent:** any pound figure; conversion rates; "high-converting"; any builder, agency or platform named as best; any client.
+- **Pass-1 flags for S8:** the cookie paragraph must stay at the SI's own scope (statistical purposes and preferences with a simple opt-out) — re-read S19 and `08` A9 before publication; "the E-Commerce Regulations require it to say clearly whether it includes tax" is reg 6(2)'s wording as R38 carries it — quote, do not paraphrase further.
+
+### AJ.16 `check-google-maps-ranking-uk` — How to Check Your Google Maps Ranking, and What It Means (56) · topic `seo` · anchor `google-business-profile` · publish after the profile page and post #5 · **drafted S7, 25 September 2026**
+
+- **Description (154):** "Your Maps position changes with where the searcher stands. How to check it honestly, what Google says decides it, and why nobody can guarantee a top spot."
+- **Keywords:** how to check google maps ranking · google maps ranking service uk · google map ranking checker · google maps ranking checker free · google business profile ranking · local pack ranking uk
+- **Information gain:** the `serp-0091` SERP is Google's own help page followed by listicles and agencies selling "Google Maps ranking"; its PAA asks how to check it. This post quotes Google's three factors and its "no way to request or pay" sentence, gives a six-step check that accounts for distance, points at the profile's own performance counts as the number that matters, and states the no-guarantee position as ours.
+- **Sources:** S192 (Google, local ranking tips — read 25 September 2026; six quotations), S39 (eligibility; service-area address rule), `serp-0091` [S157], R58, R13, the D1 sentence.
+- **H2 outline:** 1 Why there isn't one ranking (the three factors, quoted) · 2 How to check it without fooling yourself (six steps; grid tools as a trend, unnamed) · 3 The number that matters more than the rank (the performance counts) · 4 What Google says moves it, and what you control · 5 Why nobody can guarantee a position · 6 What a "Google Maps ranking service" can honestly sell · 7 A checklist for a monthly check · 8 Where to start.
+- **Deliberately absent:** "rank #1", "top 3 guaranteed", any grid-checker or rank-tracker by name, any percentage, any client, any claim about a ranking we have moved.
+- **Pass-1 flags for S8:** the performance-report field names (searches, views, calls, directions, website clicks, bookings) are described from the product, not quoted — confirm against the profile's own Performance page before publication; the service-area sentence rests on S39's wording, re-read on the day.
+
+### AJ.17 `missed-call-text-back-tools-uk-compared` — UK Missed-Call Text-Back Tools Compared: Prices, Numbers and PECR (60) · topic `crm` · anchor `missed-call-text-back` · **second wave (decided 25 September 2026): outline only; row 97 kept**
+
+- **Description (draft, uncounted):** "Eight UK text-back tools read on one day: what each charges, whose number the text comes from, whether the sample message is a service message, and what none of the pages say."
+- **Keywords:** best missed call text back software uk · missed call text back software uk · missed call text back app uk · missed call text back pricing
+- **Information gain:** `serp-0109` is a product-and-listicle SERP with one comparison listicle; `04` Q.1 and Q.7 hold the bounded sentences (four products checked; none mentioned PECR; two sample messages carried a "book today" line or an emoji). The post compares, on a stated date, price and unit as printed, the number the text is sent from, the sample message against the service-message test, and the VAT statement — never a verdict on which is best.
+- **Sources:** `04` Q.1, Q.6, Q.7 (re-read on the day of writing; every figure dated), `07` § 3 text-back row, R01–R03, R38; `serp-0109` [S157].
+- **H2 outline:** 1 What we compared and when (the bounded sentence) · 2 The table: tool · price and unit as printed · VAT stated · number the text comes from · sample message shown · PECR mentioned · 3 The number question (own number, divert, new number, alphanumeric sender) · 4 The message question (the ICO content test against each sample) · 5 What the pages leave out · 6 What a managed plan adds and what it costs by the unit (no figure — the page) · 7 Where to start.
+- **Deliberately absent:** a "best" verdict; any figure not re-read on the writing day; disparagement; any client.
+- **Second-wave trigger:** the text-back page live with its three first-wave posts indexed, and a re-read of the eight tool pages on the writing day (prices move).

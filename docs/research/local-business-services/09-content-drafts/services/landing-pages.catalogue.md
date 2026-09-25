@@ -12,7 +12,8 @@
 {
   slug: "landing-pages",
   name: "Landing Pages",
-  // category: "build", status: "draft",
+  category: "build",
+  status: "draft",
   summary:
     "One page, one job — a campaign, an offer or a booking page — designed, built, wired to your CRM and measured.",
   heroSubhead:
@@ -20,7 +21,7 @@
   whoItsFor:
     "businesses running a campaign that needs somewhere to land, and anyone whose site cannot host a new page quickly.",
   pricing: {
-    startingAmount: 0 /* [D4] */,
+    startingAmount: 750 /* [D4] — working set, 25 September 2026 */,
     currency: "GBP",
     cadence: "project",
     priceNote:
@@ -60,7 +61,7 @@ faqs: [
   {
     question: "What does a landing page cost?",
     answer:
-      "A project price, with the starting figure shown on this page and on the pricing page, + VAT where applicable. It covers one page designed and built, the form or booking calendar wired to your CRM with consent captured at entry, the thank-you and follow-up message, conversion events and campaign tagging, a report at thirty days, and two rounds of revisions on copy you supply. What moves the price: whether the page is built in the platform's builder or in code alongside a site we built, whether the copy is written for you rather than edited, and whether it is one page or a short funnel of landing, offer and thank-you pages. Your industry does not move it, and no figure depends on how the page performs.",
+      "A project price from £750 for a page in the builder, £1,250 for a coded page and £1,950 for a three-step funnel, + VAT where applicable. It covers one page designed and built, the form or booking calendar wired to your CRM with consent captured at entry, the thank-you and follow-up message, conversion events and campaign tagging, a report at thirty days, and two rounds of revisions on copy you supply. What moves the price: whether the page is built in the platform's builder or in code alongside a site we built, whether the copy is written for you rather than edited, and whether it is one page or a short funnel of landing, offer and thank-you pages. Your industry does not move it, and no figure depends on how the page performs.",
   },
   {
     question: "Builder or code — which will you use for mine, and why does it matter?",

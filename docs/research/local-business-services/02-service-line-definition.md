@@ -217,8 +217,8 @@ ship (re-verified in `app/(marketing)/services/page.tsx` on 25 September 2026).
 ### 3.3 `ai-receptionist`
 
 - **Definition.** A narrow inbound voice agent on a divert from the client's own number that answers,
-  books into the calendar, takes a message or hands over to a person; it says it is automated and
-  that the call is recorded in its first sentence; minutes are an allowance with a published rate
+  books into the calendar, takes a message or hands over to a person; it says it is automated in its first sentence, and that the call is
+  recorded whenever recording is on (off by default; D4, 25 September 2026); minutes are an allowance with a published rate
   beyond it.
 - **Who it is for.** UK small businesses that miss calls they cannot answer and whose calls are
   bookings and questions with an approved answer set — not regulated advice.
