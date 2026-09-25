@@ -11,14 +11,14 @@
  */
 
 /** localStorage key holding the visitor's analytics-consent decision. */
-export const ANALYTICS_CONSENT_KEY = "naxdor:analytics-consent";
+export const ANALYTICS_CONSENT_KEY = "webask:analytics-consent";
 
 /**
  * Custom DOM event broadcast on the same tab when consent changes, so every
  * `useSyncExternalStore` subscriber re-reads. (`storage` only fires in *other*
  * tabs, so we need our own same-tab signal.)
  */
-export const CONSENT_CHANGE_EVENT = "naxdor:consent-change";
+export const CONSENT_CHANGE_EVENT = "webask:consent-change";
 
 export type ConsentState = "granted" | "denied" | "unset";
 

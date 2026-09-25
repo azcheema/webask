@@ -9,7 +9,7 @@ import { expect, test, type Page } from "@playwright/test";
  * cleanly rather than failing. The analytics scripts themselves never load here
  * — consent isn't granted until we click, and even then the ID is fake.
  */
-const CONSENT_KEY = "naxdor:analytics-consent";
+const CONSENT_KEY = "webask:analytics-consent";
 
 async function bannerShown(page: Page): Promise<boolean> {
   const banner = page.getByRole("region", { name: /cookie consent/i });
@@ -34,12 +34,12 @@ test.describe("cookie consent", () => {
     await expect(banner).toBeHidden();
   });
 
-  test("Decline dismisses the banner and persists across reloads", async ({ page }) => {
+  test("Reject dismisses the banner and persists across reloads", async ({ page }) => {
     await page.goto("/");
     test.skip(!(await bannerShown(page)), "no NEXT_PUBLIC_GA_ID at build — banner not rendered");
 
     const banner = page.getByRole("region", { name: /cookie consent/i });
-    await banner.getByRole("button", { name: /^decline$/i }).click();
+    await banner.getByRole("button", { name: /^reject analytics$/i }).click();
     await expect(banner).toBeHidden();
 
     expect(await page.evaluate((k) => localStorage.getItem(k), CONSENT_KEY)).toBe("denied");

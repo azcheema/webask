@@ -2,6 +2,8 @@ import "server-only";
 
 import { z } from "zod";
 
+import { site } from "@/data/site";
+
 /*
  * Server-only environment variables. The `server-only` import makes this
  * module a hard compile error if it's ever pulled into a client bundle —
@@ -38,9 +40,13 @@ const senderAddress = z
 const serverEnvSchema = z.object({
   RESEND_API_KEY: z.string().min(1).optional(),
   /** Verified Resend sender (bare or "Name <email>"). Falls back to a Resend-onboarding address until the domain is verified. */
-  CONTACT_FROM_EMAIL: senderAddress.default("Naxdor <onboarding@resend.dev>"),
-  /** Inbox that receives lead notifications. */
-  CONTACT_NOTIFY_EMAIL: z.string().email().default("contact@naxdor.com"),
+  CONTACT_FROM_EMAIL: senderAddress.default(`${site.name} <onboarding@resend.dev>`),
+  /**
+   * Inbox that receives lead notifications. Defaults to the published contact
+   * address so an unset variable can never route WebAsk leads to the fork's
+   * naxdor.com inbox (the inherited default until 2026-09-25).
+   */
+  CONTACT_NOTIFY_EMAIL: z.string().email().default(site.email),
 });
 
 const parsed = serverEnvSchema.safeParse({

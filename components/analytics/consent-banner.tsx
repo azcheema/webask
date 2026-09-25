@@ -51,10 +51,17 @@ export function ConsentBanner() {
               Close
             </Button>
           ) : null}
+          {/*
+           * Reject and Accept share the same variant, size and weight on purpose.
+           * PECR consent must be freely given, and the ICO's main enforcement
+           * point is a banner that makes rejecting harder or quieter than
+           * accepting (docs/03 § A4). Do not "promote" Accept to the filled
+           * primary style.
+           */}
           <Button variant="outline" size="sm" onClick={deny}>
-            Decline
+            Reject analytics
           </Button>
-          <Button size="sm" onClick={grant}>
+          <Button variant="outline" size="sm" onClick={grant}>
             Accept analytics
           </Button>
         </div>
