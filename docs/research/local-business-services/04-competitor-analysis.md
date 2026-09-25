@@ -167,8 +167,10 @@ is what the page says; nothing is a judgement of the product.
   excess messages, are published GBP figures to cite in 07 § 3 when explaining why usage is passed
   through on a schedule rather than hidden in a plan.
 - **Reviews (07, 04):** UK-native platforms (Trustpilot) sell invitations on 12-month prepaid USD
-  contracts; the US tools quote in USD or hide prices. No Set B review page mentions the DMCC Act,
-  incentives or gating — R13–R22 remain the open ground.
+  contracts; the US tools quote in USD or hide prices. No Set B review page mentions incentives or
+  gating, and one (Feefo's pricing page, on the S4 re-fetch of 24 September 2026 — § Q.3) mentions the
+  DMCC Act in a labelling line; corrected here on 25 September 2026 (S8), the sentence had said no page
+  mentioned the Act — R13–R22 remain the open ground.
 - **Booking (02 § 2):** every booking product is self-serve SaaS with SMS credits as the add-on;
   nothing here argues for a WebAsk booking _page_ — the fold into the bundle (Q17) stands unless the
   UK SERP shows agencies ranking.

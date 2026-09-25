@@ -33,7 +33,7 @@
     "Audit and set-up in your Google account — you as owner, us as a manager, never the other way round",
     "Categories, services, attributes, hours, photos and description written to Google's guidelines, with name, phone and address matching your website character for character",
     "Weekly posts, questions answered, photos guided, and suspicious competitor listings reported",
-    "Listings synced to the UK directories that matter — Bing Places, Apple Business Connect, Yell, FreeIndex — with the sync add-on at cost where it helps",
+    "Listings kept consistent by hand on Bing Places, Apple Business Connect, Yell and FreeIndex, with a sync add-on at cost where several locations make it worth it",
     "A monthly report from Google's own insights",
   ],
   notIncluded: [
@@ -99,7 +99,7 @@ faqs: [
   {
     question: "What about Bing, Apple Maps and Yell?",
     answer:
-      "They are kept consistent as part of the plan. Bing Places feeds the search behind Copilot and ChatGPT; Apple Business Connect feeds Maps on every iPhone; Yell, FreeIndex and the other directories your customers still use carry your details whether you maintain them or not, and a wrong phone number on any of them is a customer who cannot reach you, exactly as on Google. We maintain the ones that matter by hand, with the name, address and phone matching your website character for character. Where a sync tool helps, for several locations or a long directory list, it is added at cost and shown as its own line rather than folded into the fee.",
+      "They are kept consistent as part of the plan. Bing Places feeds Copilot and, indirectly, ChatGPT; Apple Business Connect feeds Maps on every iPhone; Yell, FreeIndex and the other directories your customers still use carry your details whether you maintain them or not, and a wrong phone number on any of them is a customer who cannot reach you, exactly as on Google. We maintain the ones that matter by hand, with the name, address and phone matching your website character for character. Where a sync tool helps, for several locations or a long directory list, it is added at cost and shown as its own line rather than folded into the fee.",
   },
 ],
 ```

@@ -25,6 +25,8 @@
     currency: "GBP",
     cadence: "monthly",
     setupAmount: 299 /* [D4] */,
+    usageNote:
+      "Request texts and emails are metered by the platform and passed through at cost, on a published GBP schedule reviewed quarterly.",
     priceNote:
       "What moves the price: locations, the platforms watched beyond Google, and whether replies are drafted for you or also posted for you.",
   },
@@ -36,7 +38,7 @@
     "A monthly report: requests sent, reviews received, rating movement, reviews still unanswered",
   ],
   notIncluded: [
-    "Suppressing genuine negative reviews, or writing reviews — the first is what the CMA's guidance treats as misleading presentation, the second a fake review the Act has banned since 6 April 2025; we do neither",
+    "Suppressing genuine negative reviews, or writing reviews — the first is what the CMA's guidance says may infringe the ban on publishing reviews in a misleading way, the second a fake review the Act has banned since 6 April 2025; we do neither",
     "Crisis or press reputation work",
   ],
   primaryCta: { label: "Start a review programme", href: "/contact" },
@@ -63,7 +65,7 @@ faqs: [
   {
     question: "What does review management cost per month?",
     answer:
-      "A one-off set-up fee of £299 and a monthly fee starting at £99 per location, or £149 with replies posted for you and the other platforms watched, + VAT where applicable. Set-up covers connecting your Google and Facebook accounts, writing the request flows and their timing for each service, the one-page policy for your team, and the widget if you want one. The monthly fee covers the requests, the replies drafted for your approval, the monitoring and the report. What moves the price: how many locations you have, the platforms watched beyond Google, and whether replies are also posted for you after approval. What does not move it is how many reviews you want, because that is not a number we sell or promise.",
+      "A one-off set-up fee of £299 and a monthly fee starting at £99 per location, or £149 with replies posted for you and the other platforms watched, + VAT where applicable. Set-up covers connecting your Google and Facebook accounts, writing the request flows and their timing for each service, the one-page policy for your team, and the widget if you want one. The monthly fee covers the request flows, the replies drafted for your approval, the monitoring and the report; the texts and emails the requests ride on are passed through at cost on a published schedule. What moves the price: how many locations you have, the platforms watched beyond Google, and whether replies are also posted for you after approval. What does not move it is how many reviews you want, because that is not a number we sell or promise.",
   },
   {
     question: "Is it legal to ask customers for Google reviews in the UK?",
@@ -78,7 +80,7 @@ faqs: [
   {
     question: "Can we offer a discount or a prize draw for a review?",
     answer:
-      "Not on this plan. Under the Act an incentivised review is not banned, but it must be labelled prominently as incentivised, and the CMA's guidance says the label should read as an advert; concealing the incentive is the offence. Google's policy goes further and forbids offering payment, discounts or free goods for any review at all, so an incentive risks the reviews and the profile as well as the fine. Dental practices have a third rule of their own from the General Dental Council. Offering nothing satisfies all of them, so we offer nothing, and we will say no if you ask us to add one.",
+      "Not on this plan. Under the Act an incentivised review is not banned, but it must be labelled prominently as incentivised, and the CMA's guidance says it must be labelled prominently as incentivised — as an advert; concealing the incentive is the banned practice. Google's policy goes further and forbids offering payment, discounts or free goods for any review at all, so an incentive risks the reviews and the profile as well as the fine. Dental practices have a third rule of their own from the General Dental Council. Offering nothing satisfies all of them, so we offer nothing, and we will say no if you ask us to add one.",
   },
   {
     question: "Who writes the replies, and can they go out without us seeing them?",

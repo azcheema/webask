@@ -74,7 +74,7 @@ faqs: [
   {
     question: "Where is my data, and who is responsible for it?",
     answer:
-      "You are the controller of your customers' data; we are your processor under a written contract, as UK GDPR Article 28 requires, and HighLevel, Inc. processes it for us as our sub-processor. The platform runs in the United States: the transfer relies on HighLevel's certification, as at 23 September 2026, under the UK Extension to the EU-US Data Privacy Framework, with the UK Addendum to the standard contractual clauses behind it — terms in HighLevel's own data processing agreement that our contract with you passes on, including thirty days' notice of any new sub-processor and a right to object. We will not tell you the data stays in the UK, because it does not.",
+      "You are the controller of your customers' data; we are your processor under a written contract, as UK GDPR Article 28 requires, and HighLevel, Inc. processes it for us as our sub-processor. The platform runs in the United States: the transfer relies on HighLevel's certification, as at 24 September 2026, under the UK Extension to the EU-US Data Privacy Framework, with the UK Addendum to the standard contractual clauses behind it — terms in HighLevel's own data processing agreement that our contract with you passes on, including thirty days' notice of any new sub-processor and a right to object. We will not tell you the data stays in the UK, because it does not.",
   },
   {
     question: "What happens if I leave — what do I keep?",
@@ -85,28 +85,28 @@ faqs: [
     question: "What do messages and minutes cost beyond the allowance?",
     answer:
       "At cost, on a schedule you can read before you send anything. The platform bills texts, calls, AI minutes and WhatsApp messages in US dollars; we publish a schedule in pounds, reset it each quarter against the exchange rate, and charge usage beyond your plan's allowance at the rates on it, with nothing added. Inside the allowance there is nothing to pay. The plan fee is fixed in pounds for twelve months, so the exchange rate reaches you only through the usage line, and the monthly report shows the allowance being used up before the schedule applies — no surprise on the invoice.",
-  }, // Q4/Q5
+  }, // Q4/Q5 decided 25 September 2026 (00 § 6); figures still [D4]
   {
     question: "Can I start with Answer and add modules later?",
     answer:
-      "Yes, and that is the order we recommend. Answer is the cheapest plan to run and the easiest to leave, and its report tells you whether the others are worth adding: if the text-back is producing replies and bookings, the review programme and the profile upkeep in Reputation are the next step; if the list is growing, the campaigns in Follow-Up are. The AI Receptionist module can be added to any plan when the dropped-call line in the report says the phone needs answering rather than texting. Moving up is a change to the plan and a set-up fee for the new module, not a new contract.",
+      "Yes, and that is the order we recommend. Answer is the cheapest plan to run and the easiest to leave, and its report tells you whether the others are worth adding: if the text-back is producing replies and bookings, the review programme and the profile upkeep in Reputation are the next step; if the list is growing, the campaigns in Follow-Up are. The AI Receptionist module can be added to any plan when the missed-call count in the report says the phone needs answering rather than texting. Moving up is a change to the plan and a set-up fee for the new module, not a new contract.",
   },
   {
     question: "Is there a minimum term?",
     answer:
       "No. Set-up is paid on signature, the plan monthly in advance and usage in arrears, and thirty days' notice ends it. The plan fee is fixed in pounds for twelve months, which protects you from the exchange rate rather than binding you to the term. We ask for the first month to be a proper set-up, with the divert tested from a real phone and the templates approved, because a plan cancelled before it has run has taught nobody anything, but nothing in the terms requires you to stay. If you leave, the exit works as described on this page, with the export and the transfer checklist.",
-  }, // Q4/Q5
+  }, // Q4/Q5 decided 25 September 2026 (00 § 6); figures still [D4]
   {
     question: "We are a clinic — is a hosted plan right for us?",
     answer:
       "For the phone, the reviews and the profile, possibly; for patient data, no. If your customers are patients, the records you hold are health data, and a hosted sub-account on a US-hosted platform is the wrong place for them. Clinics and dental practices get the same automations built in an account they own, with the consent design and the advertising rules those pages set out, including the rule that no message names, or hints at, a prescription-only medicine. The plans on this page are for businesses whose contact records are names, numbers and jobs. Talk to us about which parts of a plan can run for a practice without touching patient records, and which cannot.",
-  }, // Q10
+  }, // Q10 decided 25 September 2026 (00 § 6, D9 and D10)
 ],
 ```
 
 **Pass 1 self-check (planning session; pass 2 and `counts.mjs` in S7/S8).** Every answer is plain
 text with no markdown, no links and no double quotes inside the string (apostrophes only). Pricing
-first in all seven sets; no figure printed; each pricing answer names what the fee covers and what
+first in all seven sets; each figure typed once in the entry and once in the pricing answer (all [D4]); each pricing answer names what the fee covers and what
 moves it. Word counts by eye sit between about 95 and 135 — S7 verifies 80–150 by script. No
 prescription-only medicine named or euphemised (Z.4 Q6 and Z.7 Q8 say "product" and "treatment"
 only). No client, result, rating or team implied; watch-list words absent after two removals ("most
@@ -114,7 +114,7 @@ customers read" and "most owners never learn" were rewritten). Modality: legal s
 sources (DMCC penalty with "whichever is higher"; CMA208 "not prohibited"; Google's policy as
 Google's; PECR regs 19/21 scoped to calls the organisation makes; the UK Extension and Addendum as in
 HighLevel's DPA; transfer conditions as in the vendor articles). Items marked `// Q4/Q5`, `// Q8`,
-`// Q10`, `// Q17` depend on brainstorm decisions; the Z.5 distance-sale answer is flagged for
+`// Q10`, `// Q17` record decisions taken on 25 September 2026 (00 § 6); the Z.5 distance-sale answer was sourced in S8 (S110, S112, S113, S114) and no longer waits for
 statute sourcing in S8. `FAQPage` constraint: every answer stands alone without the page around it.
 
 ## 3. `BundleTier` type and the `tiers` array (App. AB.1)
@@ -186,7 +186,7 @@ tiers: [
       currency: "GBP",
       cadence: "monthly",
       usageNote:
-        "Review requests by text count against the plan's conversation allowance; beyond it, the same published GBP schedule applies.",
+        "Review requests by text and email are passed through at cost on the same published GBP schedule as the plan's other usage.",
     },
     includes: [
       "Everything in Answer",

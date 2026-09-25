@@ -32,7 +32,7 @@
   includes: [
     "A divert from the number you publish, or a UK number registered to your business, with the text-back firing on every missed call, evenings included",
     "Reply templates written as service messages — sender named, no offers, a way to stop — with a booking link where you take bookings",
-    "One inbox for replies, web chat and, if you want it, WhatsApp, with the mobile app for whoever holds the phone",
+    "One inbox for the replies, with the mobile app for whoever holds the phone; web chat and WhatsApp join the same inbox on the larger tier",
     "Set-up, a test from a real phone, and thirty days of tuning, then month to month",
     "A monthly report: calls missed, texts sent, conversations that replied, bookings that followed",
     "100 conversations a month in the plan — a conversation is one text-back and the replies to it — with usage beyond that at cost on the published schedule",
@@ -70,7 +70,7 @@ faqs: [
   {
     question: "Is an automatic text back to a missed call allowed under UK rules?",
     answer:
-      "It depends on what the text says. The UK's marketing rules, PECR, treat a text as electronic mail, and the regulator's test for whether a message is marketing is about content: a message for customer-service purposes, such as telling someone you missed their call and how to reach you, is a service message, but if it has elements that are direct marketing, even as a side purpose, it counts as marketing. So the text we send says who missed the call, how to reply and how to book, and carries no offer, no discount and no review link. Written that way it carries nothing the test would count as marketing. Add a promotion and it becomes marketing to a number you hold no consent for, which is the one thing the plan will not do.",
+      "It depends on what the text says. The UK's marketing rules, PECR, treat a text as electronic mail, and the regulator's test for whether a message is marketing is about content: a message sent for customer-service purposes is a service message, but if it has elements that are direct marketing, even as a side purpose, it counts as marketing. So the text we send says who missed the call, how to reply and how to book, and carries no offer, no discount and no review link. Add a promotion and it becomes marketing to a number you hold no consent for, which is the one thing the plan will not do.",
   },
   {
     question: "Do I need a new phone number, or can you use the one on my van and my website?",
@@ -80,7 +80,7 @@ faqs: [
   {
     question: "Who replies when a caller texts back?",
     answer:
-      "You do, by default, from the inbox on your phone or a screen, and the plan is set up so that whoever is free can answer. The caller's reply lands in one inbox alongside your website chat, the conversation history stays with the contact, and the second person to pick it up can see what the first one said. Nothing replies automatically beyond the first text, because a second automated message is where a service message starts drifting into a sequence. If nobody in your business can watch the inbox, say so on the first call; the honest answer may be that the AI Receptionist plan, which answers the call itself, fits you better than a text-back.",
+      "You do, by default, from the inbox on your phone or a screen, and the plan is set up so that whoever is free can answer. The caller's reply lands in one inbox, alongside your website chat where you have it, the conversation history stays with the contact, and the second person to pick it up can see what the first one said. Nothing replies automatically beyond the first text, because a second automated message is where a service message starts drifting into a sequence. If nobody in your business can watch the inbox, say so on the first call; the honest answer may be that the AI Receptionist plan, which answers the call itself, fits you better than a text-back.",
   },
   {
     question: "Can it text on WhatsApp as well as SMS?",
@@ -95,12 +95,12 @@ faqs: [
   {
     question: "What does a message cost once I go past the allowance?",
     answer:
-      "Messages beyond the plan's 100 conversations a month are passed through at cost. The platform bills them in US dollars; we charge them at the rates on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. The plan fee itself is fixed in pounds for twelve months. A text is billed per 160-character segment in the basic character set, which is why the template is written to fit one segment and avoids emoji and typographic dashes that would double it. The monthly report shows how many texts went out, so you can see the allowance being used before the schedule applies.",
-  }, // Q4/Q5
+      "Messages beyond the plan's 100 conversations a month are passed through at cost. The platform bills them in US dollars; we charge them at the rates on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. The plan fee itself is fixed in pounds for twelve months. A text is billed per 160-character segment in the basic character set, which is why the template is written to fit one segment and avoids emoji and typographic dashes, which switch the message to a smaller character set and split it into more segments. The monthly report shows how many texts went out, so you can see the allowance being used before the schedule applies.",
+  }, // Q4/Q5 decided 25 September 2026 (00 § 6); figures still [D4]
   {
     question: "What if I want to leave — what do I keep?",
     answer:
-      "On a divert, leaving is switching the divert off; your published number was never ours. If a number was registered to your business, it stays registered to your business. Your contacts, conversations and forms are exported to you on request. On a plan we host, the sub-account can be transferred to an agency account of your own: contacts with their history, calendars and users move with it, automations arrive as drafts for you to switch on, channels are reconnected on your side, and add-on subscriptions end with the plan. It is a documented move with a checklist rather than a seamless one, and the checklist is written at set-up so leaving is never the first time anyone reads it.",
+      "On a divert, leaving is switching the divert off; your published number was never ours. If a number was registered to your business, it stays registered to your business. Your contacts, conversations and forms are exported to you on request. On a plan we host, the sub-account can be transferred to an agency account of your own; the Local Business Plans page lists what moves, what arrives switched off and what you reconnect, and the checklist for it is written at set-up rather than at the exit.",
   },
 ],
 ```

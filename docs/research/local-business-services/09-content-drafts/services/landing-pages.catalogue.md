@@ -54,7 +54,7 @@
 
 ## 2. FAQ answers (App. Z)
 
-### Z.5 `landing-pages` (R38, R46; the distance-sale sentence flagged for S8 sourcing)
+### Z.5 `landing-pages` (R38, R46; the distance-sale sentence sourced in S8 — CCRs regs 5, 13, 28, 29: S110, S112, S113, S114)
 
 ```ts
 faqs: [
@@ -86,12 +86,12 @@ faqs: [
   {
     question: "Can it take a deposit or a booking?",
     answer:
-      "Yes. A booking calendar or a payment step can be wired into the page, and both feed your CRM so the booking or the deposit appears on the contact's record without retyping. Taking money or a booking from a consumer who is not in front of you is a distance contract under the Consumer Contracts Regulations, so the page carries the information the customer must be given before they are bound and the cancellation wording they are entitled to, on the page rather than behind a link. If the deposit is for a regulated service, the sector's own rules apply on top. We set the terms and the wording with you at scope, because they are part of the page, not an afterthought.",
+      "Yes. A booking calendar or a payment step can be wired into the page, and both feed your CRM so the booking or the deposit appears on the contact's record without retyping. Taking money or a booking from a consumer who is not in front of you is a distance contract under the Consumer Contracts Regulations, so the page carries the information the customer must be given before they are bound, including whether they have a right to cancel and how to use it, on the page rather than behind a link. If the deposit is for a regulated service, the sector's own rules apply on top. We set the terms and the wording with you at scope, because they are part of the page, not an afterthought.",
   }, // sourced: CCRs regs 5, 13, 29 (S110, S112, S114)
   {
     question: "How long does one page take?",
     answer:
-      "A page in the builder is measured in days once the copy and images are in hand; a coded page alongside an existing site is measured in a week or two, because it goes through the same build and checks as the site did. A three-step funnel adds time for each step and for the wiring between them. What sets the date in practice is the material: your draft copy, your photographs, your offer and your approvals. Where those are ready, the page is quick; where they are not, the schedule waits on them rather than on the build, and the scope says so. The report follows thirty days after launch.",
+      "A page in the builder is measured in days once the copy and images are in hand; a coded page alongside an existing site is measured in a week or two, because it goes through the same build and checks as the site did. A three-step funnel adds time for each step and for the wiring between them. What sets the date is the material: your draft copy, your photographs, your offer and your approvals. Where those are ready, the page is quick; where they are not, the schedule waits on them rather than on the build, and the scope says so. The report follows thirty days after launch.",
   },
   {
     question: "Who owns the page afterwards?",

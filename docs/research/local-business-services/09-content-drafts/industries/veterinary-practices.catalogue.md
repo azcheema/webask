@@ -25,8 +25,9 @@
     primaryCta: { label: "Book a practice strategy call", href: "/contact" },
   },
   cardSummary:
-    "Price-list pages, practice information and booking automation for UK veterinary practices, built to the CMA's Order 2026 and its 2027 compliance dates.",
+    "Price-list pages, practice information and booking automation for UK veterinary practices, built to the CMA's Order 2026 and its compliance dates.",
   relatedServiceSlugs: [
+    // pending — the slugs below that are not yet in data/services.ts ship in the same commit as this page (11 AE.9); the template drops unknown slugs silently, so the grid would render short until then
     "web-development",
     "crm-automation",
     "missed-call-text-back",
@@ -38,17 +39,17 @@
     {
       question: "How much does a veterinary practice website cost?",
       answer:
-        "A custom practice website starts at £3,500 for the build, and for a practice the build includes the pages the Order now requires: the price list one click from the homepage, practice information, the ownership statement and the prescription notice. Two additions are worth scoping alongside it: CRM automation (from £2,500) so that booking confirmations carry the consultation price and a link to the price list, as the Order requires from the first digital confirmation, and local SEO (from £750 a month) where new-client search is the channel you compete in — each + VAT where applicable. The monthly plans for the phone, reviews and your Google profile have their own starting figures on the pricing page. We scope the combination on a call rather than selling the larger one by default.",
+        "For a practice the build starts at £3,500 and carries the pages the Order requires: the price list one click from the homepage, practice information, the ownership statement, the end-of-life options page and the prescription literature. Booking confirmations that carry the consultation price and the price-list link from the first message are CRM automation, from £2,500; local SEO is from £750 a month where new-client search is where you compete. Each figure is + VAT where applicable. The monthly plans for the phone, reviews and your Google profile have their own starting figures on the pricing page, and the combination is scoped on a call — a single-site practice and a fifteen-site group sit on different dates and need different things.",
     },
     {
       question: "What does the CMA's Order require on our website, and by when?",
       answer:
-        "The Veterinary Services Market Investigation Order 2026 was made on 22 September 2026 and came into force the next day. For a practice with fewer than 15 sites, the price list, practice information, the parasiticide price list and pet care plan information must be published online by 22 March 2027, ownership information by the same date, the complaints process by 22 March 2027, and the written-prescription literature and notices by 22 September 2027. Groups with 15 or more sites have until 22 December 2026 for the price list and practice information, 22 March 2027 for ownership and complaints, and 22 June 2027 for the prescription items. Anything published on a website under the Order must be easily accessible from the homepage, clearly and prominently, and within two clicks unless an Article says one. The dates above are taken from its Article 3 table.",
+        "The Veterinary Services Market Investigation Order 2026 was made on 22 September 2026 and took effect the next day. For a practice with fewer than 15 sites, the price list, practice information, the parasiticide price list and pet care plan information must be published online by 22 March 2027, ownership information and the complaints process by the same date, and the written-prescription literature and notices by 22 September 2027. Groups with 15 or more sites have until 22 December 2026 for the price list and practice information, 22 March 2027 for ownership and complaints, and 22 June 2027 for the prescription items. Anything a Part 2 Article of the Order puts on a website must be easily accessible from the homepage, clearly and prominently, and within two clicks unless the Article says one; the prescription literature has its own two-click rule. The dates are from its Article 3 table.",
     },
     {
       question: "What has to be on the price list?",
       answer:
-        "Schedule 1 to the Order lists 36 services, products and procedures in five categories: consultation and preventative care, prescription, dispensing and administration, surgeries and treatments, diagnostics and laboratory tests, and end-of-life care. Several carry extra information, such as the standard appointment duration in minutes, a hyperlink to what a care plan includes, how asterisked items are priced, and third-party details where a service is provided by someone else. The list must be accessible in one click from the homepage, on a page whose navigation label and metadata use the words price, prices, pricing or fees, and it must be updated before any revised price is charged. Prices shown online also have to say whether they include VAT, which is a separate rule that applies to every trading website.",
+        "Schedule 1 to the Order lists 36 services, products and procedures in five categories: consultation and preventative care, prescription, dispensing and administration, surgeries and treatments, diagnostics and laboratory tests, and end-of-life care. Several carry extra information, such as the standard appointment duration in minutes, a hyperlink to what a care plan includes, how asterisked items are priced, and third-party details where a service is provided by someone else. The list must be accessible in one click from the homepage, on a page whose navigation label and metadata use the words price, prices, pricing or fees, and it must be updated before any revised price is charged. The prices on it must include VAT and carry a clear statement that they relate to the typical case and may rise in a more complex one; separately, the general law requires any price shown online to say whether it includes tax.",
     },
     {
       question: "We are part of a group — what must the website show?",
@@ -58,7 +59,7 @@
     {
       question: "What about prescriptions and the RCVS notice?",
       answer:
-        "Under Article 14 a practice must display the digital version of the RCVS Written Prescription Literature clearly and prominently on each practice website and on the business's own site, within two clicks of the homepage, and update it within a month of the RCVS notifying a change. A standard electronic message, telling clients that written prescriptions are available and pointing to the RCVS website, goes into the digital communications the Order specifies, and every invoice or receipt for medication carries a notification of the prescription fee and that medicines may be cheaper elsewhere, in the footer and no smaller than the main text. For a small practice these obligations fall due on 22 September 2027; the pages and the templates are built before then.",
+        "Under Article 14 a practice must display the digital version of the RCVS Written Prescription Literature clearly and prominently on each practice website and on the business's own site, within two clicks of the homepage, and update it within a month of the RCVS notifying a change. A standard electronic message, telling clients that written prescriptions are available and pointing to the RCVS website, goes into the digital communications the Order specifies, and every invoice or receipt for medication carries the Order's standard prescription notification in its footer, in the same font and no smaller than the main text. For a small practice these obligations fall due on 22 September 2027; the pages and the templates are built before then.",
     },
     {
       question: "Does the Order change our booking confirmations?",
@@ -68,12 +69,12 @@
     {
       question: "Can we still advertise our pet care plan savings?",
       answer:
-        "Yes, within the Order's definitions. Article 9 distinguishes a Quantified Savings Claim, which states an amount, a percentage or the size of the saving, from a General Savings Claim, which says a saving exists without saying how much, and it attaches requirements to each. Whatever you claim, the Pet Care Plan Standard Information must be published on the main page that tells visitors about your plans, and made available in writing at the practice. We build the plan page to carry the standard information and write any savings claim to the definition it falls under, with the arithmetic behind a quantified claim kept where you can show it. The Order's explanatory note is the reference we work from, with the CMA's explainer added when it appears.",
+        "Yes, within the Order's definitions. Article 9 distinguishes a Quantified Savings Claim, which states an amount, a percentage or the size of the saving, from a General Savings Claim, which says a saving exists without saying how much, and it attaches requirements to each. Whatever you claim, the Pet Care Plan Standard Information must be published on the main page that tells visitors about your plans. We build the plan page to carry the standard information and write any savings claim to the definition it falls under, with the arithmetic behind a quantified claim kept where you can show it. The Order's explanatory note is the reference we work from, with the CMA's explainer added when it appears.",
     },
     {
       question: "Are you veterinary compliance consultants?",
       answer:
-        "No. We are a web and automation studio that has read the Order, its schedules and its explanatory note, and builds practice websites and booking flows that respect them — a deliberate specialisation, and still short of professional advice. The BVA publishes guidance on getting ready for the remedies, the RCVS has given its own Undertakings alongside the Order, and the CMA has said an updated explainer for practices is coming; anything with real regulatory consequence should go past someone qualified to give it. The same services are built for any UK small business; veterinary practices are a focus because the Order puts dated obligations on the website itself, which is unusual and worth knowing properly.",
+        "No. We are a web and automation studio that has read the Order, its schedules and its explanatory note, and builds practice websites and booking flows that respect them — a deliberate specialisation, and still short of professional advice. The BVA publishes guidance on getting ready for the remedies, the RCVS has given its own Undertakings alongside the Order, and the CMA has said an updated explainer for practices is coming; anything with real regulatory consequence should go past someone qualified to give it. Everything here is built for UK small businesses in general; what makes a practice different is that the Order puts dated duties on the website itself, so the build comes with a compliance calendar attached.",
     },
   ],
 },

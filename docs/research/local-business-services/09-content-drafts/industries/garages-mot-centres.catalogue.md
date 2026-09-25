@@ -21,12 +21,13 @@
   hero: {
     h1: "The car is on the ramp. The phone is ringing. Neither can wait.",
     subhead:
-      "Missed-call text-back from your own number, MOT and service reminders that stay service messages, reviews asked of everyone, and a website that shows prices the way the Motor Ombudsman's Code expects — remotely, for garages anywhere in the UK.",
+      "Missed-call text-back from a number registered to your business, MOT and service reminders that stay service messages, reviews asked of everyone, and a website that shows prices the way the Motor Ombudsman's Code expects — remotely, for garages anywhere in the UK.",
     primaryCta: { label: "Book a call about your phone", href: "/contact" },
   },
   cardSummary:
     "Missed-call text-back, MOT and service reminders, reviews and websites for UK garages and MOT centres, built to the Code and consumer law.",
   relatedServiceSlugs: [
+    // pending — the slugs below that are not yet in data/services.ts ship in the same commit as this page (11 AE.9); the template drops unknown slugs silently, so the grid would render short until then
     "missed-call-text-back",
     "ai-receptionist",
     "review-management",
@@ -38,7 +39,7 @@
     {
       question: "How much does a garage website cost?",
       answer:
-        "A custom site starts at £3,500 for the build, and for a garage the build shows prices the way the Motor Ombudsman's Code expects of accredited garages — inclusive of VAT and any disposal charge, estimates and quotations labelled as which — and the way consumer law expects of everyone: stated clearly, with the VAT position beside each figure. Missed-call text-back, MOT and service reminders, the review programme and profile management are monthly plans with their own starting figures on the pricing page, and the AI receptionist is a module on top for the hours nobody can pick up. Every figure is + VAT where applicable. If the site you have is fine and the problem is the phone or the reminders, the plans work without a new site, and we will say so on the first call.",
+        "A custom site starts at £3,500 for the build, and for a garage the build shows prices the way the Motor Ombudsman's Code expects of accredited garages — inclusive of VAT and any disposal charge, estimates and quotations labelled as which — and the way consumer law expects of everyone: stated clearly, with the VAT position beside each figure. Missed-call text-back, MOT and service reminders, the review programme and profile management are monthly plans with their own starting figures on the pricing page, and the AI receptionist is its own plan, for the hours nobody can pick up. Every figure is + VAT where applicable. If the site you have is fine and the problem is the phone or the reminders, the plans work without a new site, and we will say so on the first call.",
     },
     {
       question: "Is an automatic MOT reminder text allowed?",
@@ -53,12 +54,12 @@
     {
       question: "Should we join The Motor Ombudsman's Service and Repair Code?",
       answer:
-        "That is your decision, and we do not sell it. The Code, issued in June 2025 and approved by the Chartered Trading Standards Institute, commits accredited garages to advertising that will not mislead, prices inclusive of VAT and disposal charges, written estimates and quotations labelled as which, no deposits unless parts are bespoke, no high-pressure selling, a complaints process everyone can use, a final response within eight weeks, and a route to the Ombudsman if that fails. We build every garage site to those commitments whether or not it is accredited: the Code binds only accredited garages, but it is good practice for the rest, and the general law already requires the VAT position to be stated. What we never do is show the Code or CTSI logo unless the garage is accredited on the day the page goes live.",
+        "Your decision, and not one we sell. The Code, issued in June 2025 and approved by the Chartered Trading Standards Institute, commits accredited garages to advertising that will not mislead, prices inclusive of VAT and disposal charges, written estimates and quotations labelled as which, no deposits unless parts are bespoke, no high-pressure selling, a complaints process everyone can use, a final response within eight weeks, and a route to the Ombudsman if that fails. We build every garage site to those commitments whether or not it is accredited; the Code binds only accredited garages, but is good practice for all. Where a garage is accredited, the sponsor's own guidance is to place the logo and a link to its site on the website, with the Smart Badge so a customer can check it is live; where it is not, neither the Code nor the CTSI logo appears.",
     },
     {
       question: "Are there rules about advertising MOT tests online?",
       answer:
-        "Fewer than you might expect. DVSA's MOT testing guide sets out what a test station must display at the premises: the three-triangles sign in a prominent position, and the current fees and appeals poster with DVSA's contact details on a notice board. Neither that appendix nor the guide's section on requirements for authorisation says anything about websites, social media or the logo online, on the version updated in September 2026. What does apply online is the general law: what your site says about a test or a repair becomes a term of the contract if the customer took it into account, a claim that misleads is a consumer-law problem, and any price shown must say whether it includes VAT. So the site states the test fee plainly and never promises what a test cannot.",
+        "Fewer than you might expect, in the two places DVSA publishes them. DVSA's MOT testing guide sets out what a test station must display at the premises: the three-triangles sign in a prominent position, and the current fees and appeals poster with DVSA's contact details on a notice board. Neither that appendix nor the guide's section on requirements for authorisation says anything about websites, social media or the logo online, on the version updated in September 2026. What does apply online is the general law: what your site says about a test or a repair becomes a term of the contract if the customer took it into account, a claim that misleads is a consumer-law problem, and any price shown must say whether it includes VAT. So the site states the test fee plainly and never promises what a test cannot.",
     },
     {
       question: "How should we show prices on the site?",
@@ -73,7 +74,7 @@
     {
       question: "Are you automotive compliance consultants?",
       answer:
-        "No. We build garage websites, reminders and phone systems, and we have read the Code, the testing guide, the Consumer Rights Act and the marketing rules closely enough to build to them — which is a specialisation, not a qualification, and not advice. The Motor Ombudsman, Trading Standards and a solicitor are where anything with real regulatory consequence belongs. The same services are built for any UK small business; garages are a focus because the reminder is the textbook service message, the phone problem is constant, and a price shown badly on a website costs the same trust as a price shown badly on the invoice.",
+        "No. We build garage websites, reminders and phone systems, and we have read the Code, the testing guide, the Consumer Rights Act and the marketing rules closely enough to build to them — which is a specialisation, not a qualification, and not advice. The Motor Ombudsman, Trading Standards and a solicitor are where anything with real regulatory consequence belongs. Everything here is built for UK small businesses in general; garages are where the reminder is the textbook service message, the phone problem is constant, and a price shown badly online costs the same trust as one shown badly on the invoice.",
     },
   ],
 },

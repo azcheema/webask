@@ -66,11 +66,11 @@ faqs: [
     question: "What does the AI receptionist cost per month, and what do the minutes cost?",
     answer:
       "A one-off set-up fee of £599 and a monthly fee starting at £179, + VAT where applicable. Set-up covers scripting the narrow job, the divert or number, the calendar and CRM wiring, the disclosure line, the fallback path and a test number for you to ring. The monthly fee covers 300 minutes a month, tuning and the report. Minutes beyond the allowance are charged at a rate published in pounds and reset each quarter against the exchange rate; the platform bills the underlying minutes in US dollars and we pass them through at the rate on that schedule. What moves the price: minutes a month, how much calendar and CRM wiring you need, and how many distinct jobs the agent is scripted to do.",
-  }, // Q8, Q4/Q5
+  }, // Q8 (one tier) and Q4/Q5 decided 25 September 2026 (00 § 6); figures still [D4]
   {
     question: "Is an AI answering my business phone legal in the UK?",
     answer:
-      "For inbound calls, the rules that restrict automated telephony do not reach it. PECR's regulation 19 restricts recorded marketing messages sent by automated calling systems, and regulation 21 governs making marketing calls; both are about calls an organisation makes. The receptionist makes no calls: the customer rang you and nothing is being marketed at them. What is unsettled is how an AI voice would be classified if it made marketing calls, which is why the plan never dials out. The recording and the transcript are personal data, so the call is disclosed as recorded at the start, your privacy notice covers it, and a retention period is chosen deliberately. None of this is legal advice, but it is the position we build to.",
+      "For inbound calls, the PECR rules that restrict automated telephony are written for calls an organisation makes, which is not what happens here. PECR's regulation 19 restricts recorded marketing messages sent by automated calling systems, and regulation 21 governs making marketing calls; both are about calls an organisation makes. The receptionist makes no calls: the customer rang you and nothing is being marketed at them. What is unsettled is how an AI voice would be classified if it made marketing calls, which is why the plan never dials out. The transcript, and a recording if you choose to switch recording on, are personal data, so callers are told when a call is recorded, your privacy notice covers it, and a retention period is chosen deliberately. None of this is legal advice, but it is the position we build to.",
   },
   {
     question: "Will callers know they are talking to an AI?",
