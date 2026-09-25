@@ -69,7 +69,7 @@
     {
       question: "Do we need a directory listing, a website, or both?",
       answer:
-        "Both can earn their keep, and they do different jobs. A directory listing rents you a place in someone else's shop window; your website is the asset you own outright, and where a customer checks who you are before they ring. Under the Consumer Rights Act 2015, anything said or written to a customer about you or the work, which they take into account, becomes a term of the contract — so a claim on a listing binds you as much as a claim on your site, and a site you control is easier to keep true. We do not sell places on lead directories; where you are listed, the profile plan's listings add-on keeps your name, number and address identical everywhere they are copied. We build the site, keep the Google profile up and answer the missed calls, and any listing can point at all three.",
+        "Both earn their keep, and they do different jobs. A directory listing rents you a place in someone else's shop window; your website is the asset you own outright, and where a customer checks who you are before they ring. Under the Consumer Rights Act 2015, anything said or written to a customer about you or the work, which they take into account, becomes a term of the contract — so a claim on a listing binds you as much as a claim on your site, and a site you control is easier to keep true. We do not sell places on lead directories; the profile plan keeps your name, number and address matching on the directories it covers, with a sync add-on at cost for a long list. We build the site, keep the Google profile up and answer the missed calls, and any listing can point at all three.",
     },
     {
       question: "Are you trades compliance consultants?",

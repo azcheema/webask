@@ -15,9 +15,9 @@
   category: "grow",
   status: "draft",
   summary:
-    "Every call you miss gets a text back in seconds — a service message, from your own number, into one inbox.",
+    "Every call you miss gets a text back in seconds — a service message, from a number registered to your business, into one inbox.",
   heroSubhead:
-    "Every missed call texted back in seconds from your own number — a service message, not an offer — into one inbox.",
+    "Missed calls texted back in seconds from a number registered to your business — a service message, not an offer.",
   whoItsFor:
     "UK local businesses whose phone rings while they are working — trades, garages, salons, practices — and who lose the enquiry to whoever answers first.",
   pricing: {
@@ -95,7 +95,7 @@ faqs: [
   {
     question: "What does a message cost once I go past the allowance?",
     answer:
-      "Messages beyond the plan's 100 conversations a month are passed through at cost. The platform bills them in US dollars; we charge them at the rates on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. The plan fee itself is fixed in pounds for twelve months. A text is billed per 160-character segment in the basic character set, which is why the template is written to fit one segment and avoids emoji and typographic dashes, which switch the message to a smaller character set and split it into more segments. The monthly report shows how many texts went out, so you can see the allowance being used before the schedule applies.",
+      "Messages beyond the plan's 100 conversations a month are passed through at cost. The platform bills them in US dollars; we charge them at the rates on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. The plan fee itself is fixed in pounds for twelve months. A text is billed per 160-character segment in the basic character set, which is why the template is written to fit one segment and avoids emoji and typographic dashes, which switch the message to an encoding that fits 70 characters in a segment instead of 160 and so split it into more. The monthly report shows how many texts went out, so you can see the allowance being used before the schedule applies.",
   }, // Q4/Q5 decided 25 September 2026 (00 § 6); figures still [D4]
   {
     question: "What if I want to leave — what do I keep?",

@@ -9,9 +9,9 @@ dateModified: "2026-09-24"
 
 {/* WRITTEN FRESH for the UK, and deliberately DISTINCT from the dental-practices page. Dentistry turns on a CMA market study that has not reported; veterinary practice turns on an Order the CMA has already made, with Article numbers and dates. Every dated claim is sourced to the Order (made 22 September 2026), its Schedule 1, its explanatory note, the CMA's release of 24 March 2026, and RCVS supporting guidance chapter 23 (updated 8 October 2025) — research bundle 06 and 10. The compliance table is quoted from the Order's Article 3 as extracted by pdftotext; S4 confirms it against the PDF page. The "less than 40%" figure is the CMA's own statement, attributed and dated. Deliberately absent: any client, any statement that a practice "is compliant", any count of affected practices, competitor names, and legal advice. Q10 (hosted plans for practices) is left open: the page describes the automations without saying where they are hosted. */}
 
-The rules for a veterinary website used to be the general ones. Since 22 September 2026 they have Article numbers and dates, and the dates are close; the first of them, the practice's return to the RCVS, falls on 30 November 2026.
+The rules for a veterinary website used to be the general ones. Since 22 September 2026 they have Article numbers and dates, and the dates are close; the first of them, the information every practice must send the RCVS, falls on 30 November 2026.
 
-The Competition and Markets Authority made the **Veterinary Services Market Investigation Order 2026** on that day, following its final report of **24 March 2026**, and the Order came into force the day after it was made. Several of its obligations are about what appears on your website, where, and by when.
+The Competition and Markets Authority made the **Veterinary Services Market Investigation Order 2026** on 22 September 2026, following its final report of **24 March 2026**, and the Order came into force the day after it was made. Several of its obligations are about what appears on your website, where, and by when.
 
 ## The Order is made, and the dates are in it
 
@@ -25,7 +25,6 @@ The Order distinguishes a **Large Veterinary Business**, with 15 or more practic
 | Written estimates for higher-cost treatments and itemised bills                              | 22 June 2027             | 22 September 2027     |
 | Written-prescription awareness, provision and the standard notices                           | 22 June 2027             | 22 September 2027     |
 | End-of-life care options and prices, on the website with each option at equal prominence     | 22 December 2026         | 22 March 2027         |
-| Prescription fees                                                                            | 22 March 2027            | 22 September 2027     |
 
 The CMA has said an updated explainer for practices is coming, and the BVA publishes guidance on getting ready. The Order itself is the document we build from, because a summary can drop an Article and a website cannot.
 
@@ -55,17 +54,17 @@ The CMA's release of 24 March 2026 put the starting point plainly: "Less than 40
 
 **The booking confirmation.** If your confirmations are sent by your practice management or CRM system, the template has to carry the consultation price and the price-list link from the first message. It is the obligation easiest to miss, because it is nowhere on the website.
 
-**The URLs you already have.** From your compliance date the addresses of the price, parasiticide, practice-information and care-plan pages are registered with the RCVS (Article 10). A rebuild that moves them has to keep them or re-register them; a redesign that forgets is a compliance event, not a broken link.
+**The URLs you already have.** Once the RCVS's Find a Vet platform is ready — a date the Order sets no earlier than 22 September 2027 — the addresses of the price, parasiticide, practice-information and care-plan pages are registered with the RCVS (Article 10). A rebuild that moves them afterwards has to re-register them; a redesign that forgets is a compliance event, not a broken link.
 
 ## The RCVS layer
 
-The Order sits on top of the RCVS Code and its supporting guidance on advertising, which has not changed: "All advertising should be accurate, truthful, and not of a character likely to bring the profession into disrepute". Comparative claims "should have regard to section 3 of the CAP Code". "Specialist" or "advanced practitioner" in a practice name needs "genuine and meaningful involvement, and oversight, in case management by at least one RCVS specialist" in every discipline offered under that name, and "Veterinary Hospital" is for practices accredited at that level. Endorsements should be "underpinned by sound scientific principles or have a recognised evidence base". Every use of those words is checked against the RCVS lists before the page ships.
+The Order sits on top of the RCVS Code and its supporting guidance on advertising, which has not changed: "All advertising should be accurate, truthful, and not of a character likely to bring the profession into disrepute". Comparative claims "should have regard to section 3 of the CAP Code". "Specialist" or "advanced practitioner" in a practice name needs "genuine and meaningful involvement, and oversight, in case management by at least one RCVS specialist" in every discipline offered under that name, and "Veterinary Hospital" is for practices accredited at that level. Endorsements should be "underpinned by sound scientific principles or have a recognised evidence base". Every use of those words is checked against the RCVS guidance before the page ships.
 
 ## What we build
 
 - **The website.** Fast, mobile-first, on Next.js — with layout shift, blocking time and page weight enforced as build-failing budgets, and load time held to a two-second target that is settled in the field rather than on a build server. The price page is one click from the homepage, labelled and tagged as the Order requires; practice information, the complaints process, the care plan page, the end-of-life options page and the prescription literature each have their place within two clicks.
 - **Ownership, everywhere the Order looks.** The group or trading name in the banner, in every page's metadata and in the structured data that feeds search and maps, with the representations to the map providers made and recorded.
-- **Booking confirmations that carry the price.** The confirmation template pulls the consultation price and the price-list link for every booking, a reminder goes out before any care plan renews automatically, which the Order also requires, and recall reminders are kept apart from anything promotional.
+- **Booking confirmations that carry the price.** The confirmation template pulls the consultation price and the price-list link for every booking, a reminder goes out before an annual care plan renews automatically, which the Order also requires, and recall reminders are kept apart from anything promotional.
 - **The calls you miss.** A text back to every missed call, written as a service message, and an inbox that reaches whoever is free between consultations.
 - **A review programme that survives scrutiny.** Every client asked, nobody incentivised, nothing hidden — the CMA's guidance on reviews applies to practices as it does to everyone.
 - **Your Google profile, kept to the Order.** Categories, hours and services maintained in your own account, with the group name where the Order requires it to appear.

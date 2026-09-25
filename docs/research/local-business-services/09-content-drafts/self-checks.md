@@ -4,6 +4,13 @@
 > second reader's: S8 reads every sentence they name, trusts the scripted counts over any count written
 > here, and does not re-open an item unless the sentence is still in the draft. Where a self-check says
 > "S8 softens" or "S8 confirms", that is the S8 work list.
+>
+> **S8 (25 September 2026):** the work list is closed. Every bolded sentence had already been
+> rewritten before S8 opened (none of the 19 phrases is in any draft); the items that remained open
+> (the CMA207 paragraph, the "as at" date, the two similarity pairs, the Article 3 table) are resolved
+> or carried in `README.md` § 3.3 of this folder. The notes below are kept verbatim as the record of
+> what the author flagged; where they say "S7 verifies" or "prices are not printed", the S7 and S8
+> log entries in `README.md` §§ 3.2–3.3 supersede them.
 
 ## Catalogue FAQ answers (App. Z — applies to every `*.catalogue.md`)
 

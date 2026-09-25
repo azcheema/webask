@@ -74,7 +74,7 @@ faqs: [
   {
     question: "Our list is old — can you reactivate it?",
     answer:
-      "Some of it, lawfully. The consent audit in month one sorts the records into those that carry a basis to be messaged and those that do not. The first group gets a reactivation campaign written to bring them back. The second group is not emailed or texted at all, not even to ask: the ICO counts contacting people to ask for consent to marketing as direct marketing, so the request would be the very message you may not send. Those people can be reached by post, by a live call after a Telephone Preference Service check, or at their next visit, and limited companies can be emailed without consent, sender named, with a way to stop. What we will not do is send an offer to everyone who ever gave you a number. The number that survives the audit, not your contact count, is the first honest figure.",
+      "Some of it, lawfully. The month-one consent audit sorts the records into those with a basis to be messaged and those without. The first group gets a reactivation campaign written to bring them back. The second group is not emailed or texted at all, not even to ask: the ICO counts contacting people to ask for consent to marketing as direct marketing, so the request would be the very message you may not send. Those people can be reached by post, by a live call after a Telephone Preference Service check, or at their next visit, and limited companies can be emailed without consent, sender named, with a way to stop. What we will not do is send an offer to everyone who ever gave you a number. The number that survives the audit, not your contact count, is the first honest figure about your list.",
   },
   {
     question: "Do we own the platform and the list?",
@@ -89,13 +89,13 @@ faqs: [
   {
     question: "We are a clinic — what can a follow-up message say?",
     answer:
-      "It promotes the consultation, not the treatment. For a clinic every automated email or text is an advert, because the advertising code applies to organic content and not only to paid ads, and a prescription-only medicine may not be advertised to the public; the regulator treats the familiar euphemisms as promotion of the medicine too. So a follow-up says what a consultation covers, who it is with and how to book, and it never names a product. Every clinic campaign is written to that rule before it is written to convert, and where a message is genuinely borderline the advertising regulator's free copy-advice service exists to be used before it goes out.",
+      "It promotes the consultation, not the treatment. For a clinic an automated email or text that promotes a treatment is an advert, because the advertising code applies to organic content and not only to paid ads, and a prescription-only medicine may not be advertised to the public; the regulator treats the familiar euphemisms as promotion of the medicine too. So a follow-up says what a consultation covers, who it is with and how to book, and it never names a product. Every clinic campaign is written to that rule before it is written to convert, and where a message is genuinely borderline CAP's Copy Advice service is free and is asked before it goes out.",
   },
   {
     question: "How many campaigns a month, and who writes them?",
     answer:
       "Two on the standard plan, more on a larger one, and we write them. You give a brief, a few lines on what the month is about, and we write each campaign in your voice, check it against the rules for your sector, send it from your platform to the segment that may receive it, and report on it two weeks later. A campaign is a message with a purpose: a seasonal reminder, a new service, a price change, a piece of advice worth sending. One automation a month is built or reviewed alongside, with the lawful-basis filter in front of it. If you would rather write the copy yourself, we edit and send it instead.",
-  }, // Q17 decided 25 September 2026 (00 § 6, D13)
+  }, // Q17 (the Plus tier) decided 25 September 2026 as the 07 § 4 working set (00 § 6, D4); figures still [D4]
   {
     question: "What does an SMS cost us?",
     answer:
