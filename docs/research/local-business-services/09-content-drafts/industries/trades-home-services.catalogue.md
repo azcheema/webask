@@ -64,7 +64,7 @@
     {
       question: "How do we get more Google reviews without breaking the rules?",
       answer:
-        "By asking every customer after every job, and offering nothing for it. The tempting shortcut for a trade — sending the review link only to the jobs that went well — is the one the regulator's guidance describes as cherry-picking and Google's policy forbids, and since 6 April 2025 the CMA has been able to fine directly for the practices the Act bans. So the request goes out by text or email once the job is done, to everyone, with no discount attached; a reply to each review is drafted for your approval; and your rating appears on the site as Google shows it, low scores included. The review management page carries the rules with their sources; the trade-specific point is timing — an hour after a call-out, a day after a bigger job.",
+        "By asking every customer after every job, and offering nothing for it. The tempting shortcut for a trade — sending the review link only to the jobs that went well — is the one the regulator's guidance describes as cherry-picking and Google's policy says merchants should not do, and since 6 April 2025 the CMA has been able to fine directly for the practices the Act bans. So the request goes out by text or email once the job is done, to everyone, with no discount attached; a reply to each review is drafted for your approval; and your rating appears on the site as Google shows it, low scores included. The review management page carries the rules with their sources; the trade-specific point is timing — an hour after a call-out, a day after a bigger job.",
     },
     {
       question: "Do we need a directory listing, a website, or both?",
