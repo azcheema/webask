@@ -1,4 +1,4 @@
-import { z } from "zod";
+import * as z from "zod/mini";
 
 import { services } from "@/data/services";
 
@@ -10,6 +10,21 @@ import { services } from "@/data/services";
  *
  * `value`/`label` Select options live here so the form and the email templates
  * render the same human-readable labels from the same submitted machine values.
+ *
+ * ── WHY `zod/mini` ──────────────────────────────────────────────────────
+ * This module is the only zod that reaches the client bundle (`/contact` ships
+ * it for the resolver). The classic `zod` entry point is class-based and
+ * cannot tree-shake, so every zod release grows `/contact` by the whole
+ * library's delta — the 4.4.3 → 4.6.5 bump alone added 26 KB gzipped and broke
+ * the page's `resource-summary:script:size` budget (390,000; measured
+ * 2026-09-25, `.lighthouserc.cjs`). `zod/mini` is the same engine with a
+ * functional, tree-shakeable API: only the checks used here are bundled. The
+ * server-only schemas (`lib/env*.ts`, `lib/blog.ts`, `lib/case-studies.ts`,
+ * `scripts/`) stay on classic `zod`; they never reach a browser.
+ *
+ * API differences that matter here: refinements are `.check(z.trim(),
+ * z.minLength(…))` instead of chained methods; string formats such as
+ * `z.email()` are checks too; `.safeParse()` and `z.infer` are unchanged.
  */
 
 export type SelectOption = { readonly value: string; readonly label: string };
@@ -74,23 +89,37 @@ const MESSAGE_MIN = 20;
 const MESSAGE_MAX = 2000;
 
 export const contactFormSchema = z.object({
-  name: z.string().trim().min(1, "Please enter your name").max(100, "That name is too long"),
-  email: z.string().trim().min(1, "Please enter your email").email("Enter a valid email address"),
-  company: z.string().trim().max(200, "That's too long").optional(),
+  name: z
+    .string()
+    .check(
+      z.trim(),
+      z.minLength(1, "Please enter your name"),
+      z.maxLength(100, "That name is too long"),
+    ),
+  email: z
+    .string()
+    .check(
+      z.trim(),
+      z.minLength(1, "Please enter your email"),
+      z.email("Enter a valid email address"),
+    ),
+  company: z.optional(z.string().check(z.trim(), z.maxLength(200, "That's too long"))),
   service: z.enum(values(SERVICE_OPTIONS), { message: "Pick the service you're interested in" }),
   budget: z.enum(values(BUDGET_OPTIONS), { message: "Select a budget range" }),
   timeline: z.enum(values(TIMELINE_OPTIONS), { message: "Select a timeline" }),
-  country: z.enum(values(COUNTRY_OPTIONS)).optional(),
+  country: z.optional(z.enum(values(COUNTRY_OPTIONS))),
   message: z
     .string()
-    .trim()
-    .min(MESSAGE_MIN, `Tell us a little more — at least ${MESSAGE_MIN} characters`)
-    .max(MESSAGE_MAX, `Please keep it under ${MESSAGE_MAX} characters`),
+    .check(
+      z.trim(),
+      z.minLength(MESSAGE_MIN, `Tell us a little more — at least ${MESSAGE_MIN} characters`),
+      z.maxLength(MESSAGE_MAX, `Please keep it under ${MESSAGE_MAX} characters`),
+    ),
   /**
    * Honeypot. Hidden from humans (`tabIndex=-1`, off-screen); bots that fill
    * every field trip it. Validated server-side only — non-empty means spam.
    */
-  company_url: z.string().optional(),
+  company_url: z.optional(z.string()),
 });
 
 export type ContactFormValues = z.infer<typeof contactFormSchema>;

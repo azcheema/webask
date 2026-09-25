@@ -47,6 +47,12 @@
  * below sit just above those with headroom, per the doc's "Budget exception
  * process". The doc's numbers were corrected to match.
  *
+ * 2026-09-25: the contact schema moved to `zod/mini` (tree-shakeable), taking
+ * `/contact` from 371,169 to 316,342 bytes of script transfer as measured
+ * locally against the built site — and to 321,995 with zod 4.6.5, the bump
+ * that had pushed the classic import to 403,465 and over the 390,000 gate.
+ * The budgets are unchanged; the headroom is now real.
+ *
  * URL list: the indexable critical templates. Deliberately excludes `noindex`
  * pages (`/legal/*`, `/dev/components`) — Lighthouse's SEO category fails any
  * page blocked from indexing, so scanning them would be a false negative.
