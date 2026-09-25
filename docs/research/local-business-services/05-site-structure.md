@@ -20,6 +20,9 @@ Maintenance). Footer becomes six columns at `lg` (three service groups + Industr
 Company). **Vocabulary rule:** "local" only ever describes the customer ("UK local businesses",
 "delivered remotely, anywhere in the UK"); never "your local agency", "near you", "based in".
 
+**D13 confirmed 25 September 2026** (`00` § 6): the grouping, the label "Automate & run", the bundle's
+highlight and the name Local Business Plans, as above.
+
 **The grouped `SERVICE_NAV` proposal** — labels, hrefs and the ≤ 12-word descriptions, the
 `SERVICE_CATEGORIES` constant with its three blurbs, the `/services` index constants and the CTA-band
 rewrite — is drafted string by string in `09-content-drafts/index-and-nav.md`; the derivation from

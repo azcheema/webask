@@ -523,6 +523,15 @@ own page (`05` § 5).
 - **Q26** — the caps proposed in § 3 (≈ 5 receptionist clients, ≈ 6 email/SMS clients).
 - **Q29** — social, paid media and the portal stay out.
 
+**Brainstorm outcome (25 September 2026; `00` § 6).** D9 confirmed the M1/M2 column as § 2 has it,
+with the same price for M1 and M2 on Reviews and Email & SMS. D13 confirmed the taxonomy and the label
+"Automate & run" (§ 6), the name **Local Business Plans** (§ 7.2, candidate 1) and the `/services/seo`
+packages section in place of a page (§ 2.2). Q8: one tier with the reasons printed. Q10 and D10:
+clinics and practices stay M1; a solicitor drafts the DPA. Q17, Q26 and Q29 as this section lists
+them. Q6: no white-label while hosted clients sit on Starter; from the fourth hosted client the branded
+domain and desktop app come with the move to Unlimited, so § 7.4's exit section also states that an
+agency-assigned domain does not move on an eject.
+
 ## Sources
 
 `[Sxx]` keys resolve in `10-sources.md`. The vendor facts in §§ 1 and 7.4 are `01` §§ 3, 4.2, 4.3 and 6

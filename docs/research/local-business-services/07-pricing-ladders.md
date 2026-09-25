@@ -358,6 +358,16 @@ Swedish accountant's, and is out of this folder's scope.
 6. The receptionist's shape (Q8): one tier with the reasons printed, or an entry tier.
 7. Whether the same price for M1 and M2 stands on Reviews and Email & SMS (`02` § 2).
 
+**Decided 25 September 2026 (`00` § 6) — as the working set, every figure still `[D4]`.** Items 1
+and 2: the § 4 figures and allowances are adopted for the S7 drafts and printed in them, each typed
+once in the catalogue entry and once in the pricing-first FAQ answer. Item 3: the schedule as § 2.1,
+quarterly, launch rates set on the launch day. Item 4: the type extension (§ 6.1 rule 2). Item 5: no
+minimum term, 30 days' notice; bank transfer by default, card on request through Stripe UK, no online
+checkout. Item 6: one receptionist tier with the reasons printed; call recording off by default and on
+by the client's choice. Item 7: the same price for M1 and M2 stands. Three conditions before any
+figure leaves `[D4]`: the wallet-line spot-check (`01` § 10.1), the `[founder]` rate (`private/07`
+§ 6), and the accountant's answers to § 6.2.
+
 ## Sources
 
 `[Sxx]` keys resolve in `10-sources.md`: S80 (Bank of England XUDLUSS, retrieved 2026-09-25); the

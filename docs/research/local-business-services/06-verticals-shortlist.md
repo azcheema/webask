@@ -66,8 +66,9 @@ wave 2 gyms; wave 3 solicitors, agents; deferred hospitality; no page for salons
 > garages 61 → 56; gyms 60 → 56; solicitors 64 → 61; agents 59 → 57; hospitality 48 → 46; tutors
 > 42 → 38. The order is unchanged except that garages and gyms now tie, and garages sit below
 > solicitors and agents on the rubric — which is why § 5 keeps garages in wave 1 on fit and the
-> reminder's service-message status, not on the score. The founder's column (10) can move any of
-> them; the brainstorm re-derives the table with that column filled.
+> reminder's service-message status, not on the score. The founder's column (10) could have moved any of
+> them; **on 25 September 2026 the founder chose not to score it** — the column stays blank by
+> decision and the order stands on the 90-point rubric (`00` § 6, D12).
 
 ## 3. Evidence: the obligations that touch a business website (App. L, read 2026-09-24)
 
@@ -755,11 +756,12 @@ read in S4 before any page quotes a term as unfair.
 - **Precondition:** a doc 03 § B13 in the § B10–B12 pattern, written after the regulations and DBT
   guidance are published; until then this skeleton stays a skeleton.
 
-## 5. Recommendation (S4, 24 September 2026 — founder-affinity column blank)
+## 5. Recommendation (S4, 24 September 2026 — decided D12, 25 September 2026; affinity column not scored)
 
 > 💡 Proposal (executor). Every line below cites § 2, § 3 or a `03` record; the founder's column and
 > the queued Google captures (`03` § 6.11 batch 2: the three vertical heads) are the two things that
-> can still move the order. Nothing here is decided until `00` § 6 records it (Q16, D12).
+> can still move the order. **Decided by the founder on 25 September 2026 (Q16, D12; `00` § 6): the waves and the order below
+> stand as written; the affinity column is not scored.**
 
 **Wave 1 — three pages, in this order.**
 

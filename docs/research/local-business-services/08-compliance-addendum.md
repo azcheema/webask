@@ -778,6 +778,9 @@ gains the hosted role and the AI providers. **Additions elsewhere:** the complia
 gains `| 11 | DPA template for hosted clients; D3 representative as the precondition | Founder +
 solicitor | First hosted client | 🔴 Open (D10) |`. **Copy rules:** R30–R35.
 
+**D10 recorded 25 September 2026** (`00` § 6): the posture above stands as decided; a solicitor drafts
+the DPA; D3's representative and the signed DPA precede the first hosted client.
+
 #### A9. The Data (Use and Access) Act 2025 — commencement tracker
 
 > Added 2026-09-25 from research 08. **Insertion point:** after § A8, or as a dated addendum to
