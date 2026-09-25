@@ -2,6 +2,7 @@
 
 import { Resend } from "resend";
 
+import { site } from "@/data/site";
 import ContactAutoresponder from "@/emails/contact-autoresponder";
 import ContactNotification from "@/emails/contact-notification";
 import {
@@ -16,11 +17,9 @@ import {
 import { isEmailConfigured, serverEnv } from "@/lib/env.server";
 
 export type ContactActionResult =
-  | { readonly success: true }
-  | { readonly success: false; readonly error: string };
+  { readonly success: true } | { readonly success: false; readonly error: string };
 
-const GENERIC_ERROR =
-  "Something went wrong sending your message. Please email contact@naxdor.com directly.";
+const GENERIC_ERROR = `Something went wrong sending your message. Please email ${site.email} directly.`;
 
 /**
  * Contact form submission. Re-validates at the trust boundary (the client RHF

@@ -128,7 +128,11 @@ Home · `/services` index · 2 flagship service pages (recommend **web-developme
 ### Tasks
 
 - [ ] **🔴 Remove every fabricated team member, project and testimonial.** DMCC Act 2024
-      exposure — doc 03 § A6. This is the gate; nothing goes live carrying it
+      exposure — doc 03 § A6. This is the gate; nothing goes live carrying it.
+      _Audited 2026-09-25: the new tree carries none of it (one real founder in
+      `data/team.ts`; portfolio scaffolds and the case-study template are guarded out of
+      every render). The fabricated content exists only on the WordPress site, so this box
+      closes at cutover, when that site stops answering_
 - [ ] Home page — UK copy, real value prop, one CTA per viewport
 - [ ] `/about` — the **real** founder, real credentials, real `Person` schema, and the
       **group disclosure** ("WebAsk is a trading name of Naxdor…")
@@ -136,13 +140,23 @@ Home · `/services` index · 2 flagship service pages (recommend **web-developme
       email. **No postal address** — D1 resolved fully remote, so `45 Ridgefield Rd, Oxford`
       does not carry forward (doc 04 § 3)
 - [ ] `/pricing` — GBP anchors (D4), "+ VAT where applicable" (D2)
-- [ ] `/legal/privacy` — UK GDPR, lawful bases, **Art. 27 representative if D3 requires**
-- [ ] `/legal/cookies` — every cookie enumerated: purpose, duration, provider
-- [ ] `/legal/terms`
-- [ ] **`/legal/company-information`** — full entity disclosure (doc 03 § A1)
-- [ ] Footer legal row + persistent "Cookie settings" link
+- [x] `/legal/privacy` — UK GDPR, lawful bases, **Art. 27 representative if D3 requires**
+      _(rewritten 2026-09-25 as a UK GDPR / DPA 2018 / PECR notice with a deliberate interim
+      Article 27 section — "being confirmed; email is the contact point until a
+      representative is named here". Stays `draft: true` (noindex + notice) until the
+      founder reviews it and D3 lands; the 12-month enquiry retention figure is the
+      founder's to confirm)_
+- [x] `/legal/cookies` — every cookie enumerated: purpose, duration, provider _(2026-09-25;
+      `draft: true` pending review — doc 03 § A4)_
+- [x] `/legal/terms` _(rewritten 2026-09-25 for the UK, governing law kept with the Swedish
+      entity plus the UK-consumer carve-out, flagged for D3; `draft: true`)_
+- [x] **`/legal/company-information`** — full entity disclosure (doc 03 § A1) _(shipped
+      2026-07-28, `draft: false`)_
+- [x] Footer legal row + persistent "Cookie settings" link _(inherited; verified 2026-09-25)_
 - [ ] **Consent banner audit** — "Accept all" and "Reject all" at genuinely equal prominence;
       verify in the network tab that nothing non-essential fires pre-consent (doc 03 § A4)
+      _(prominence failed and fixed 2026-09-25; the network-tab check waits for a preview
+      deployment with real GA4/Clarity IDs)_
 - [ ] **Pre-cutover crawl** of the live WordPress site → the redirect bible
 - [ ] **Full 301 map** including the trailing-slash sweep and catch-all families (doc 04 § 5)
 - [ ] `/sample-page/` → **410**

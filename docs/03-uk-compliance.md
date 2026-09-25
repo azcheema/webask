@@ -159,10 +159,21 @@ the fork, since the US-oriented original may not have been built to the ICO's st
 
 **Action items**
 
-- [ ] Audit the inherited consent component against equal-prominence
-- [ ] Confirm no non-essential cookie fires pre-consent (network tab, not code review)
-- [ ] Cookie policy page enumerates each cookie, purpose, duration and provider
-- [ ] Consent is re-obtainable — a persistent "cookie settings" link in the footer
+- [x] Audit the inherited consent component against equal-prominence — **failed and fixed
+      2026-09-25**: "Accept analytics" rendered as the filled primary button and "Decline" as
+      an outline; both are now the same outline variant, size and weight, labelled "Reject
+      analytics" / "Accept analytics" (`components/analytics/consent-banner.tsx`)
+- [ ] Confirm no non-essential cookie fires pre-consent (network tab, not code review) —
+      the loaders mount only on `consent === "granted"` by code, but the browser check needs
+      real `NEXT_PUBLIC_GA_ID` / `NEXT_PUBLIC_CLARITY_ID` values set; do it on the first
+      preview deployment that has them
+- [x] Cookie policy page enumerates each cookie, purpose, duration and provider — drafted
+      2026-09-25 (`data/copy/legal.ts`): `_ga` and `_ga_<container-id>` at 2 years from
+      Google's cookie-usage page; Clarity's seven cookies by name and purpose from
+      Microsoft's list, which prints no lifetimes, so the policy points to that list rather
+      than inventing durations; the two local-storage entries (theme, consent) named
+- [x] Consent is re-obtainable — a persistent "cookie settings" link in the footer
+      (`CookieSettingsButton`, inherited; verified 2026-09-25)
 
 ---
 
@@ -227,10 +238,17 @@ from Unfair Trading / misleading-action problem and an E-E-A-T disaster besides.
 
 **Action items — Phase 1, non-negotiable, at cutover**
 
-- [ ] Remove every fabricated team member; publish only the real founder
-- [ ] Remove every placeholder project and testimonial
-- [ ] `/portfolio/` 301s to `/case-studies`, which **self-hides while empty** (the inherited
-      case-studies engine already does this — see doc 01)
+- [x] Remove every fabricated team member; publish only the real founder — **true of the new
+      site** (`data/team.ts` holds one real person; audited 2026-09-25). The fabricated roster
+      lives only on the WordPress site and disappears when DNS moves at cutover
+- [x] Remove every placeholder project and testimonial — **true of the new site**:
+      `data/portfolio.ts` entries are `TODO(content-copy)` scaffolds that `PortfolioStrip`
+      filters out, the case-study template ships `draft: true` behind the same guard, and no
+      testimonial component exists (audited 2026-09-25). The live `/portfolio/` page goes at
+      cutover
+- [x] `/portfolio/` 301s to `/case-studies`, which **self-hides while empty** (the inherited
+      case-studies engine already does this — see doc 01) — in `lib/redirects.ts` since the
+      Phase 0 301 map; `/sample-page/` answers 410
 - [ ] No testimonial ships without a real named person, role and company who has consented
 - [ ] Never offer an incentive for a review without disclosing it
 

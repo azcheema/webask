@@ -104,9 +104,9 @@ const MODULES: ReadonlyArray<ModuleSpec> = [
   },
   {
     path: "data/copy/legal",
-    budget: 0.9,
+    budget: 0.1,
     verdict:
-      "⚠️ 69% AND STILL NAMES THE WRONG ENTITY ('Naxdor … enskild firma'). Gated behind D3 (privacy/terms/cookies are draft: true), so it is not live — but D3 landing is what unblocks publishing, so the rewrite belongs in that same pass, not after it.",
+      "Rewritten for UK GDPR / DPA 2018 / PECR on 2026-09-25 (69% → 3%). The residue is the company-information page, which is WebAsk-only and shares boilerplate list items with nothing that renders on naxdor.com. Privacy/terms/cookies stay draft: true until the founder's review and D3 (the Article 27 representative and governing law are worded as interim positions in the copy).",
   },
   {
     path: "data/industries",
