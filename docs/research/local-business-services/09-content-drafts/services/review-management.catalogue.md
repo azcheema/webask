@@ -70,7 +70,7 @@ faqs: [
   {
     question: "Is it legal to ask customers for Google reviews in the UK?",
     answer:
-      "Yes, provided you ask in the way the rules allow. Since 6 April 2025 the Digital Markets, Competition and Consumers Act has made it illegal to write or commission fake reviews, to conceal that a review was incentivised, or to present reviews misleadingly, and the Competition and Markets Authority can fine directly, up to ten per cent of global annual turnover or £300,000, whichever is higher. Its guidance says that asking customers generally, without predetermining the contents or sentiment of the review, is not prohibited. Google's own policy adds that businesses must not selectively solicit positive reviews or offer anything for a review. Asking every customer, offering nothing and showing what comes back is what the guidance allows, and it is exactly how the programme works.",
+      "Yes, provided you ask in the way the rules allow. Since 6 April 2025 the Digital Markets, Competition and Consumers Act has made it illegal to write or commission fake reviews, to conceal that a review was incentivised, or to present reviews misleadingly, and the Competition and Markets Authority can fine directly, up to ten per cent of global annual turnover or £300,000, whichever is higher. Its guidance says that asking customers generally, without predetermining the contents or sentiment of the review, is not prohibited. Google's own policy adds that businesses should not selectively solicit positive reviews or offer anything for a review. Asking every customer, offering nothing and showing what comes back is what the guidance allows, and it is exactly how the programme works.",
   },
   {
     question: "Can we ask only the customers we know are happy?",
@@ -80,7 +80,7 @@ faqs: [
   {
     question: "Can we offer a discount or a prize draw for a review?",
     answer:
-      "Not on this plan. Under the Act an incentivised review is not banned, but it must be labelled prominently as incentivised — the CMA's guidance says as an advert; concealing the incentive is the banned practice. Google's policy goes further and forbids offering payment, discounts or free goods for any review at all, so an incentive risks the reviews and the profile as well as the fine. Dental practices have a third rule of their own from the General Dental Council. Offering nothing satisfies all of them, so we offer nothing, and we will say no if you ask us to add one.",
+      "Not on this plan. Under the Act an incentivised review is not banned, but it must be labelled prominently as incentivised — namely, as an advert, in the CMA's guidance — and concealing the incentive is the banned practice. Google's policy goes further and forbids offering payment, discounts or free goods for any review at all, so an incentive risks the reviews and the profile as well as the fine. Dental practices have a third rule of their own from the General Dental Council. Offering nothing satisfies all of them, so we offer nothing, and we will say no if you ask us to add one.",
   },
   {
     question: "Who writes the replies, and can they go out without us seeing them?",

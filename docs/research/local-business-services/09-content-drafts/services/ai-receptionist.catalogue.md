@@ -70,7 +70,7 @@ faqs: [
   {
     question: "Is an AI answering my business phone legal in the UK?",
     answer:
-      "For inbound calls, the PECR rules that restrict automated telephony are not engaged. PECR's regulation 19 restricts recorded marketing messages sent by automated calling systems, and regulation 21 governs making marketing calls; both are about calls an organisation makes. The receptionist makes no calls: the customer rang you and nothing is being marketed at them. What is unsettled is how an AI voice would be classified if it made marketing calls, which is why the plan never dials out. The transcript, and a recording if you choose to switch recording on, are personal data, so callers are told when a call is recorded, your privacy notice covers it, and a retention period is chosen deliberately. None of this is legal advice, but it is the position we build to.",
+      "For inbound calls, the PECR rules that restrict automated telephony do not arise. PECR's regulation 19 restricts recorded marketing messages sent by automated calling systems, and regulation 21 governs making marketing calls; both are about calls an organisation makes. The receptionist makes no calls: the customer rang you and nothing is being marketed at them. What is unsettled is how an AI voice would be classified if it made marketing calls, which is why the plan never dials out. The transcript, and a recording if you choose to switch recording on, are personal data, so callers are told when a call is recorded, your privacy notice covers it, and a retention period is chosen deliberately. None of this is legal advice, but it is the position we build to.",
   },
   {
     question: "Will callers know they are talking to an AI?",
