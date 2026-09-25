@@ -2,9 +2,11 @@
 
 > Purpose: which services, delivered how, bounded against the existing nine; taxonomy; the bundle. Research window: 24 September 2026 → open.
 > Nothing in this folder is implemented. Figures are proposals pending D4 unless marked
-> **finding**. Seeded on 24 September 2026 from the planning file (see `README.md` § 2.1):
-> every section below is a **hypothesis** until the session named there confirms, amends or
-> rejects it with evidence.
+> **finding**. Seeded on 24 September 2026 from the planning file (see `README.md` § 2.1) and
+> **finalised in S6 on 25 September 2026** against the evidence in `01`, `03`, `04`, `07` and `08`:
+> § 2.2 scores every candidate on that evidence and confirms the page set, § 3 fills the per-service
+> template, § 7 finalises the bundle. Every verdict remains a proposal for the brainstorm (D9, D13)
+> until `00` § 6 records a decision; nothing here changes code.
 
 ## 1. Delivery models, defined once (planning § 4.1)
 
@@ -42,7 +44,14 @@ therefore
 promises export plus a documented transfer with workflows re-enabled and channels re-connected, never a
 seamless move.
 
-## 2. Service set — hypothesis (planning § 4.2)
+**S6 confirmation (25 September 2026).** The four models and the plan-ladder hypothesis stand as
+written: `01` § 3 confirmed the plan matrix and the Starter rebilling limit, `01` § 4.2 the AI
+rebilling rule, `01` § 6 the transfer and eject conditions quoted above, and `private/07` § 1.2 models
+the plan share per hosted client at N = 1, 3, 5, 10 and 20 without changing which plan the ladder
+starts on. Nothing in `03`, `04` or `08` argues for M3 or for an M4 page. The only model question the
+brainstorm still holds is D9's per-service confirmation of the M1/M2 column in § 2 and § 2.2.
+
+## 2. Service set — hypothesis (planning § 4.2), confirmed in § 2.2
 
 | Slug                      | Name                    | Category | Model                   | Cadence                   | Distinct intent it must own                                                       | Boundary strings to rewrite (file:line)                                                                                                                                    | Key compliance flags (see § 10)                                                                                           |
 | ------------------------- | ----------------------- | -------- | ----------------------- | ------------------------- | --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -97,24 +106,219 @@ below is provisional. No price appears here.
 | a "starter website on GHL" tier                  | builder plus WordPress hosting from $10 per site                                                                                                                                                                                                                                                     | **out** unless the brainstorm rules otherwise                                                                                  |
 | ringless voicemail; outbound Voice AI            | Voice AI outbound is included on the $97 plan; ringless voicemail is a listed product                                                                                                                                                                                                                | **out** — outbound synthetic-voice marketing needs specific consent and lives in `ai-integration` only                         |
 
-## 3. Service definitions
+### 2.2 Final scoring and the confirmed page set (S6, 25 September 2026)
 
-The catalogue-ready definition of each service — the full `Service` object with hero copy,
-includes, not-included, pricing placeholders and FAQs — lives once, in
+The six planning criteria, each with the file that now answers it: **buyability** (`01` § 2.1 above),
+**demand evidence** (`03` § 7 — the head term's tier and record; a tier is a reading of surfaces, never
+a volume), **incumbent price point** (`04` §§ 2–4 and `07` § 3 — as the page printed it, with its VAT
+statement where one exists), **compliance weight** (`08` § 1.1 — the `C` rows the page depends on and
+whether they are closed), **overlap** (`03` § 8 and § 5 below — the existing rows and strings the page
+must be bounded against), and **one-person deliverability** (§ 3's load-and-cap row; the hours behind it
+are 🔴 hypotheses in `private/07` § 3.1 and never appear here). Prices below are the market's, quoted
+from `04` and `07`; none is WebAsk's.
+
+| Candidate                   | Demand evidence (`03`)                                                                                                                                                                                | Incumbent price point (`04`, `07` § 3)                                                                                                                              | Compliance weight (`08`)                                                      | Overlap                                                                               | Deliverability                                                       | Verdict                                                                                                                                                                                                                                  |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `missed-call-text-back`     | **High** on a Soft, 9/9-UK SERP (`serp-0001`, `serp-0002`); the legal question has no UK explainer ranking (`serp-0006`)                                                                              | self-serve £6.49–£97 a month (`04` Q.6); one managed UK plan at £198 a month, printed beside an ROI calculator (`04` § 4.4)                                         | C01 closed for the design, open as law; C05 rates settled; C18 closed         | new head; two industry MDX bullets and one `ai-integration` line rewritten (§ 5)      | low recurring labour; capacity limited by inbox incidents, not hours | **Page, M2.** Confirmed.                                                                                                                                                                                                                 |
+| `review-management`         | no High service head — the two UK-suffixed heads are **Medium** (`serp-0013`, `serp-0016`); the compliance long-tail is **High** (`incentivised reviews uk`, `serp-0022`)                             | UK self-serve review platform from £149 a month + VAT; reputation retainers from £1,735 a month + VAT (`07` § 3); no Set B page mentions the DMCC Act (`04` Q.6)    | C03 closed except R21 (CAP Copy Advice, Q13)                                  | `seo` exclusion string L371; `crm-automation.mdx:74`; two industry lines              | replies drafted within two working days — labour scales with reviews | **Page, M2 with M1 at the same price.** Confirmed; enters on the compliance long-tail, not the head (`12` M.2).                                                                                                                          |
+| `ai-receptionist`           | eight of twelve terms **High** on the hardest SERPs in the set (A7–A9; `serp-0027`–`serp-0038`); the re-point of six existing rows confirmed by the SERP shape (`03` § 8)                             | self-serve £10–£199 a month, some "unlimited"; managed and sector products about £149–£449 a month with set-ups £249–£899 (`07` § 3); none states the AI disclosure | C06: rates settled; the AI Acceptable Use Policy unread (`01` § 10.11) — open | `ai-integration` `whoItsFor` L559 and a new MDX paragraph; six rows move (`05` § 3)   | tuning and incident response; cap ≈ 5 clients proposed (Q26)         | **Page, M2, inbound only.** Confirmed; shape (one tier or an entry tier) is Q8.                                                                                                                                                          |
+| `email-sms-marketing`       | the four agency heads **High** on Soft SERPs (`serp-0039`–`serp-0042`); SMS wording is platform territory and not owned (`serp-0043`, `serp-0048`)                                                    | two UK email agencies read publish no price; a secondary source reports £800–£3,000 a month for small businesses (`07` § 3); one agency prints "From £99.50pw"      | C01 (soft opt-in) open as law; R53 (a consent request is marketing) applied   | `crm-automation` L509 and FAQ L545–547; `crm-automation.mdx:84`                       | labour-linear (two or four campaigns a month); cap ≈ 6 clients (Q26) | **Page, M1 or M2 at the same price.** Confirmed.                                                                                                                                                                                         |
+| `landing-pages`             | `landing page design agency uk` **High** on a 9/9-UK Soft SERP (`serp-0052`); "building service" is a builder SERP and re-pointed to the post (`serp-0055`)                                           | agencies print "from £750", "from £900", "From £199", "from £149" in titles (`03` § 6.5); secondary guides report £299–£1,500 "custom" (`07` § 3)                   | C17 (DUA cookie exception) open, site-wide; reg 6(2) VAT display (R38)        | `web-development.mdx:52` and FAQ L102–104                                             | project, two revision rounds; no recurring load                      | **Page, project.** Confirmed.                                                                                                                                                                                                            |
+| `google-business-profile`   | the bare head is Google's own and **Low** (`serp-0058`); the services / optimisation / agency tail is **Medium** with one UK agency in every top ten (`serp-0059`, `serp-0078`, `serp-0079`)          | one UK specialist publishes £50–£230 a month per profile plus VAT and a £195 + VAT one-off; local-SEO retainers from £300–£395 a month + VAT (`07` § 3)             | C13 closed (eligibility, one page per location, third-party consent); R58     | `seo` L371 and `seo.mdx:20`; the D1 ruling in `data/service-locations.ts:19-23` (Q20) | weekly posts and Q&A per profile; per-location pricing               | **Page, M1, listings as an optional section.** Confirmed; the page never expects the bare head (`12` M.6).                                                                                                                               |
+| `local-business-plans`      | the "packages … uk" head **Medium** (`serp-0060`) with the vendor advertising on it; three "packages" wordings **High** (`serp-0073`, `serp-0074`, `serp-0083`); "gohighlevel agency" is Set A's      | managed local packages "From £299" and "From £699" a month (`04` Q.6); self-serve hubs £25–£97; a "complete" package at £995 a month + VAT (`07` § 4)               | C04 (invoicing entity) and C10 (D3 representative) open; C11 resolved         | `crm-automation` L490/501/532 kept, FAQ appended (§ 5); `data/copy/home.ts:154`       | modules built once; combined report; the hosted-data conversation    | **Page, M2 only.** Confirmed; D10 (DPA, D3 as precondition) gates the first hosted client.                                                                                                                                               |
+| booking and reminders       | product SERPs on every wording (`serp-0063`, `serp-0064`, `serp-0093`–`serp-0095`); the one High term is a cost question on a product SERP                                                            | self-serve SaaS with SMS credits as the add-on (`04` Q.6)                                                                                                           | R08, R52 (service messages)                                                   | `web-app-development` owns "booking system" intent today                              | —                                                                    | **Fold confirmed** — the Answer tier and the text-back page; the cost question is the bundle's booking FAQ (calendar #4 carries the rules).                                                                                              |
+| unified inbox, web chat     | web chat and live chat are UK product SERPs (`serp-0097`, `serp-0098`); "unified inbox" is the set's one Constructed term (`serp-0099`)                                                               | —                                                                                                                                                                   | R10 (WhatsApp opt-in)                                                         | —                                                                                     | —                                                                    | **Fold confirmed** — a section of text-back and a line in the Answer tier.                                                                                                                                                               |
+| WhatsApp                    | a vendor-and-guide SERP (`serp-0072`, `serp-0096`)                                                                                                                                                    | Meta's own rate card; the platform's $10 add-on (`01` § 4.3)                                                                                                        | C18 closed for the design                                                     | —                                                                                     | —                                                                    | **Fold confirmed** — calendar #11 carries the rules and the dated rates; the text-back page owns nothing WhatsApp-specific.                                                                                                              |
+| a local SEO plan            | `local seo packages uk` **High** on a 9/9-UK SERP of agency packages pages (`serp-0062`); `local seo services for small business uk` Medium (`serp-0088`); `local seo agency uk` carries a local pack | packages pages from £300–£395 a month + VAT (`07` § 3)                                                                                                              | none new                                                                      | `/services/seo` at £750 a month and its three city pages; the vertical SEO terms      | the add-on's contents are still unread (`01` § 10.6)                 | 💡 **Proposal (executor, D13): a priced "packages" section on the existing `/services/seo` page, not a new page** — the SERP ranks packages pages, and a second SEO URL would cannibalise the head (`03` § 8). The add-on is not resold. |
+| social, Ad Manager, portal  | not captured                                                                                                                                                                                          | —                                                                                                                                                                   | —                                                                             | out of scope per `docs/00-overview.md`                                                | —                                                                    | **Out.** Unchanged (Q29).                                                                                                                                                                                                                |
+| a "starter website on GHL"  | not captured                                                                                                                                                                                          | builder plus WordPress hosting from $10 a site (`01` § 3)                                                                                                           | —                                                                             | `/services/web-development`'s floor and the coded landing page                        | —                                                                    | **Out** unless the brainstorm rules otherwise. Unchanged.                                                                                                                                                                                |
+| outbound Voice AI, ringless | not captured                                                                                                                                                                                          | —                                                                                                                                                                   | R24 (specific prior consent; C09 CLI rules)                                   | `ai-integration` only                                                                 | —                                                                    | **Out.** Unchanged.                                                                                                                                                                                                                      |
+
+**The confirmed page set is the seven rows of § 2** — six services and the bundle — with the folds
+and outs above, and one open D13 proposal (the `/services/seo` packages section). No candidate moved
+between page, fold and out on the evidence; what the evidence changed is _how each page enters_ (the
+reviews and profile pages on their long tail, the receptionist on the rules half, the bundle under the
+vendor's own ads), which `12` § 3 carries page by page.
+
+## 3. Service definitions — the per-service template (S6, 25 September 2026)
+
+The catalogue-ready definition of each service — the full `Service` object with hero copy, includes,
+not-included, pricing placeholders and FAQs — lives once, in
 `09-content-drafts/services/<slug>.catalogue.md`; the bundle's is in
-`09-content-drafts/bundle/local-business-plans.catalogue.md`. This section gains the per-service
-template (definition, who it is for, what it is not, the model rationale table, compliance flags →
-`08` row IDs, client-verifiable KPIs, operational load and caps) once `03`–`08` supply the evidence.
-The planning note that governs those catalogue drafts:
+`09-content-drafts/bundle/local-business-plans.catalogue.md`. This section holds what the catalogue
+does not: the model rationale, the compliance dependencies by register row, the report fields a client
+can verify, and the operational load. Conventions: the **rationale table** has six fixed columns —
+consent ownership (whose lawful basis the messages rest on), processor role (`08` A8), recurring
+labour (qualitative; the hours are 🔴 hypotheses in `private/07` § 3.1), margin (a pointer to the
+`private/07` § 4 row — the band is never reproduced in a tracked file), churn exposure, and FX
+pass-through (what the client pays in USD-linked usage under the `07` § 2.1 rule). **KPIs** are the
+report's fields (R28's pattern): counts a client can check against their own phone, inbox or Google
+account, never an outcome or a rate. **Caps** are proposals for Q26.
 
-Starting copy for `02` and `09`, written to the guardrails (§ 6): no implied client, no watch-list
-words, British English, POM-free, service-message framing, ownership as the default promise. Every
-`startingAmount`/`setupAmount` is `0 /* [D4] */` — a placeholder, not a price. `category`, `status`,
-`setupAmount`, `usageNote` and `tiers` need the § 4.7 type extension; until then they are comments.
-`faqs` are the questions only, pricing first; answers are drafted in 09 at 80–150 words. Word counts on
-`heroSubhead` are within the type's 12–20 guidance except where noted. Names read badly through the
-current `name.toLowerCase()` ("See ai receptionist", "See google business profile") — § 4.7 A1
-removes the lowercasing before any of these ship.
+The planning note that governs the catalogue drafts still applies: starting copy written to the
+guardrails (§ 6) — no implied client, no watch-list words, British English, POM-free,
+service-message framing, ownership as the default promise. Every `startingAmount`/`setupAmount` is
+`0 /* [D4] */`. `category`, `status`, `setupAmount`, `usageNote` and `tiers` need the § 4.7 type
+extension (`11` AE.1); until then they are comments. Names read badly through the current
+`name.toLowerCase()` ("See ai receptionist") — `11` AE.6 removes the lowercasing before any of these
+ship (re-verified in `app/(marketing)/services/page.tsx` on 25 September 2026).
+
+### 3.1 `missed-call-text-back`
+
+- **Definition.** Every call the business misses is answered within seconds by a text from a number
+  tied to the business, written as a service message — who missed the call, how to reply, how to book
+  — into one inbox the client watches; run for the client month to month.
+- **Who it is for.** UK local businesses whose phone rings while they are working — trades, garages,
+  salons, practices — and who lose the enquiry to whoever answers first (`03` § 6.1: the SERP is
+  small-agency-shaped and 9/9 UK).
+- **What it is not.** Not call answering (that is the receptionist plan); not promotional follow-up to
+  the numbers that called (that is Email & SMS Marketing, and needs a lawful basis first); not a
+  WhatsApp product (WhatsApp is a channel in the inbox, at cost, for customers who opted in).
+- **Model: M2.** Rationale — consent: none arises for the text-back itself because it carries no
+  marketing (C01, R01–R03); the caller's number is used to reply to that call and for nothing else ·
+  processor: WebAsk, with HighLevel, Inc. as sub-processor (A8, R30) · labour: low and event-driven
+  (inbox incidents, template review on request) · margin: `private/07` § 4, Text-Back rows · churn:
+  month to month, 30 days' notice; the set-up prices the build so no lock-in is needed (`07` § 4) ·
+  FX: conversations beyond the allowance at the schedule rate, in arrears (R39). M1 is not offered
+  because the divert, the number's regulatory bundle and the inbox are the service; a client who wants
+  it in their own account buys `crm-automation`.
+- **Compliance flags.** C01 (service message — closed for the design, open as law), C05 (numbers, KYC,
+  senders — the wallet-line spot-check still open), C18 (WhatsApp); rules R01–R03, R06, R10, R12, R36,
+  R37, R39; templates J.7.
+- **Client-verifiable KPIs.** Calls missed · texts sent · conversations that replied · bookings that
+  followed (from the calendar) · conversations used against the allowance. Never a recovery
+  percentage or a revenue figure.
+- **Operational load and caps.** Set-up in one to two weeks (§ 4); then the inbox is the client's to
+  watch. No client cap is proposed: the labour is the incident path, not a monthly deliverable.
+
+### 3.2 `review-management`
+
+- **Definition.** A review programme that asks every customer for a Google review after the job or
+  visit, incentivises nobody and hides nothing; replies drafted for approval; the widget shows the
+  rating as Google shows it; built to CMA208 and Google's policy and run month to month.
+- **Who it is for.** UK local businesses whose next customer reads reviews first; dental practices
+  with the GDC layer (R20); trades and garages (the timing per job, `06` § 5).
+- **What it is not.** Not reputation management or review removal (the `04` § 4.5 gap names a
+  competitor selling guaranteed removal — WebAsk states the removal boundary, never their practice);
+  not a "get 5-star reviews" service; not a widget on aesthetic pages until R21 is answered.
+- **Model: M2, with M1 at the same price.** Rationale — consent: a plain review request is an ask, not
+  marketing (R09); where it promotes, the consent rules apply · processor: as A8 when hosted; in the
+  client's own account WebAsk is a processor only while it has access · labour: replies drafted within
+  two working days, so labour scales with review volume (§ 4) · margin: `private/07` § 4, Reviews rows
+  (the same price in both models is D4 item 7) · churn: month to month · FX: requests ride on SMS and
+  email at cost; Reviews AI is a platform cost inside the plan (`01` § 4.2).
+- **Compliance flags.** C03 (closed except R21); rules R13–R22 and, on dental pages only, R20; the
+  commissioning liability sentence R17.
+- **Client-verifiable KPIs.** Requests sent · reviews received · unanswered reviews · replies drafted
+  and approved · rating as Google shows it. Never "rating improvement" as a promise.
+- **Operational load and caps.** Set-up in one to two weeks; the reply window is the monthly promise.
+  No cap proposed; the constraint is the reply window, which the page states.
+
+### 3.3 `ai-receptionist`
+
+- **Definition.** A narrow inbound voice agent on a divert from the client's own number that answers,
+  books into the calendar, takes a message or hands over to a person; it says it is automated and
+  that the call is recorded in its first sentence; minutes are an allowance with a published rate
+  beyond it.
+- **Who it is for.** UK small businesses that miss calls they cannot answer and whose calls are
+  bookings and questions with an approved answer set — not regulated advice.
+- **What it is not.** Never outbound (R24); not a bespoke agent built to the client's own systems and
+  answer sets — that is `ai-integration`, and it is where clinics and practices belong (R27, Q10).
+- **Model: M2.** Rationale — consent: the caller rang the business, so the marketing-call rules do not
+  arise (R23); the classification of an AI-answered call is unsettled and the copy says so ·
+  processor: A8, with the four US AI providers named as sub-sub-processors in the client's privacy
+  notice · labour: tuning, incident response within a stated window, the monthly report · margin:
+  `private/07` § 4, Receptionist row (pay-per-use versus the $97 plan is modelled in `private/07`
+  § 3.3) · churn: month to month · FX: minutes beyond the allowance at the schedule rate (R29, R39);
+  minutes cannot be rebilled below the $497 plan, so the allowance is a cost inside the fee.
+- **Compliance flags.** C06 (rates settled; the AI Acceptable Use Policy unread — before the page
+  ships), C09 (a risk item for outbound work only); rules R23–R29; the J.7 opening line.
+- **Client-verifiable KPIs.** Answered · booked · transferred · dropped · minutes used (R28's
+  fields). Never an answer rate, "human-like" or "never misses a call".
+- **Operational load and caps.** Set-up in two to three weeks (§ 4); ≈ 5 clients proposed as the cap
+  while the incident path is one person (Q26), with the fallback to voicemail or a person on failure.
+
+### 3.4 `email-sms-marketing`
+
+- **Definition.** Two (or four) campaigns a month and one automation, written, sent and reported by
+  WebAsk, only to the people the client may lawfully message under PECR, with the sender named and an
+  opt-out in every message; month one is the consent audit.
+- **Who it is for.** Businesses whose CRM build stopped at the system and who have a list with
+  provenance to work from; solicitors on the existing-clients rule (R41); clinics and practices within
+  CAP's recall-versus-marketing line (J.6).
+- **What it is not.** Not the CRM build (`crm-automation`); not list buying or renting (R11); not an
+  electronic consent request to records with no lawful basis (R53 — post, a TPS-screened live call, or
+  the next visit).
+- **Model: M1 or M2 at the same price.** Rationale — consent: the client's, audited in month one and
+  segmented by legal form and basis (R04, R05) · processor: A8 when hosted; in the client's own account,
+  a processor while it has access · labour: labour-linear — the campaigns are the deliverable — which is
+  why a cap, not a lower price (`07` § 4) · margin: `private/07` § 4, Email & SMS rows · churn: month
+  to month, no set-up because the audit is the set-up · FX: emails and segments beyond the allowance
+  at the schedule rate (R39); WhatsApp at cost for opted-in customers (R10).
+- **Compliance flags.** C01 (the soft opt-in questions, open as law), C05 (senders), C07 on any
+  solicitor-facing copy, C18; rules R04–R08, R10–R12, R41, R53.
+- **Client-verifiable KPIs.** Campaigns sent · replies · bookings · opt-outs · mailable list size
+  after the audit. Never open rates or an ROI figure.
+- **Operational load and caps.** Four weeks for the audit, then ongoing; ≈ 6 clients proposed as the
+  cap (Q26) because every client is a fixed monthly writing load.
+
+### 3.5 `landing-pages`
+
+- **Definition.** One page for one job — a campaign, an offer or a booking page — designed, built in
+  the platform's builder or in code, wired to the client's CRM with consent captured at entry, tracked
+  and measured; priced as a page, not a site.
+- **Who it is for.** Businesses with one campaign to run, an existing site they are keeping, or a
+  coded site WebAsk built that needs a page alongside it.
+- **What it is not.** Not a website (`web-development`'s floor and its FAQ L102–104 draw the line);
+  not paid media; not a funnel-builder subscription sold on.
+- **Model: project (M1 in the client's account, or a coded page in the client's repository).**
+  Rationale — consent: captured at entry in the form, in the client's account · processor: none
+  beyond the build · labour: two revision rounds, then a 30-day report and nothing unless re-engaged ·
+  margin: `private/07` § 4, Landing Pages rows · churn: n/a · FX: none — a builder page rides on the
+  client's own plan or a hosted plan already priced.
+- **Compliance flags.** C17 (the DUA cookie exception — a site-wide decision, Q15) and the
+  equal-prominence rule (J.6); DMCC pricing rules on offers and reg 6(2) VAT clarity (R38, R46); the
+  distance-sale wording where the page sells (R47).
+- **Client-verifiable KPIs.** Visits · form or booking completions · events and tags firing · the
+  30-day report. Never a conversion-rate claim or "high-converting".
+- **Operational load and caps.** One to two weeks (builder) or two to three (code); no cap.
+
+### 3.6 `google-business-profile`
+
+- **Definition.** The client's Google Business Profile — a profile it is eligible for under Google's
+  guidelines — audited, set up and kept up in the client's own account with WebAsk as a manager:
+  categories, services, attributes, hours, photos, weekly posts, questions answered, NAP matching the
+  site, and the monthly report from Google's own insights; per location.
+- **Who it is for.** UK local businesses with a real premises or a genuine service area; the three
+  clinic industries and the wave-1 verticals alike.
+- **What it is not.** Not content, link or technical SEO (`/services/seo`); not a profile for an
+  address nobody works from (R58); not a map-pack ranking promise; not the review programme (the
+  page links it, R13).
+- **Model: M1, with the listings sync as an optional add-on at cost.** Rationale — consent: none
+  arises · processor: manager access on the client's Google account; a processor while it has access ·
+  labour: weekly posts and Q&A per profile — the reason for per-location pricing · margin:
+  `private/07` § 4, Profile rows · churn: month to month · FX: the listings add-on is a vendor add-on
+  passed through on the schedule, and only where a platform sub-account exists (`07` § 4); otherwise
+  directories are done by hand inside the plan.
+- **Compliance flags.** C13 (closed); the D1 ruling text (Q20) and the trademark-in-slug question
+  (Q19 — the page writes "Google Business Profile" in full in its title, H1 and slug; the abbreviation
+  collides with a parking company on `serp-0081`); rules R58, and R13 on the review boundary.
+- **Client-verifiable KPIs.** Profile completeness items closed · posts published · questions
+  answered · Google's own insight counts (views, calls, direction requests, as Google reports them).
+  Never "rank #1" or a map-pack position.
+- **Operational load and caps.** One to two weeks for the audit and the first pass; then the weekly
+  cadence. No cap proposed; suspension work "when it arises" is the variable load, and the page says
+  no reinstatement can be guaranteed (the `04` § 4.4 honesty sentence, in WebAsk's words).
+
+### 3.7 `local-business-plans` — the bundle
+
+The bundle's own template — tiers, name candidates, what it is not, hosted-or-owned and the exit
+route — is § 7. Its rationale table: consent: per module as above · processor: A8 always (M2 only) ·
+labour: the modules' loads combined, built once · margin: `private/07` § 4, bundle rows, and the
+implied-hours test in § 6 there · churn: month to month, set-up per module · FX: every metered unit
+on the one schedule (R39). Compliance flags: C04 (the invoicing entity, open), C10 (D3's
+representative as the precondition — R34), C11 (resolved), plus every module's rows. KPIs: the module
+reports combined and the allowance tracking.
 
 ## 4. Delivery playbooks (App. E.4 template; App. AG.2 per service)
 
@@ -125,11 +329,13 @@ wording, compliance sign-off against the 08 `R` rules, the fallback path when th
 Build (sub-account from snapshot, number or divert, integrations, end-to-end test from a real phone) →
 Grow (monthly cadence, what the report shows and does not claim, response window, client cap, incident
 path) → Exit (export, rebuild fee, transfer conditions as verified in 01). Timelines in weeks; nothing
-that implies a past client.
+that implies a past client. **Confirmed in S6:** the Exit column below is the `01` § 6 route set —
+export, snapshot-plus-export rebuild at a fixed fee, agency-to-agency transfer, or eject — with the
+conditions § 7.4 lists; "§ 10 row 11" is the planning register's row, now `08` C11.
 
 | Service                 | Discover (week 1)                                                                                                               | Design                                                                                                               | Build                                                                                                                                                                                    | Grow (monthly)                                                                                                  | Exit                                                                                           | Client supplies                                                                                     | Weeks to live              |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------- |
-| Missed-Call Text-Back   | Kick-off call (recorded with consent); which number, which hours, who watches the inbox; count of missed calls in a week        | Template to J.7 (one segment, no offer); divert plan; privacy-notice sentence for the client; retention setting      | Sub-account from snapshot; divert or number (KYC per sub-account); inbox + app; test from a real phone; STOP handling                                                                    | Report (calls missed, texts sent, replies, bookings); template review on request; usage schedule check          | Divert off; export; transfer checklist (§ 10 row 11)                                           | Published number; opening hours; Companies House details if a new number; booking link; who replies | 1–2                        |
+| Missed-Call Text-Back   | Kick-off call (recorded with consent); which number, which hours, who watches the inbox; count of missed calls in a week        | Template to J.7 (one segment, no offer); divert plan; privacy-notice sentence for the client; retention setting      | Sub-account from snapshot; divert or number (KYC per sub-account); inbox + app; test from a real phone; STOP handling                                                                    | Report (calls missed, texts sent, replies, bookings); template review on request; usage schedule check          | Divert off; export; transfer checklist (`08` C11)                                              | Published number; opening hours; Companies House details if a new number; booking link; who replies | 1–2                        |
 | Review Management       | Google and Facebook access as manager; services and their "right moment"; current review handling; sector rules (GDC etc.)      | Request timing per service; message copy (plain ask); team policy page; widget decision (off for aesthetics, R21)    | Connect profiles; request flows; reply-draft workflow with approval; widget; report                                                                                                      | Replies drafted within two working days; report; unanswered-review list                                         | Requests stop; export of request logs; profile access removed by the client                    | Profile ownership; service list with visit cycles; approval contact                                 | 1–2                        |
 | AI Receptionist         | The narrow job (book / message / transfer / short FAQ); calendar rules; the fallback person; sector check (regulated → bespoke) | Script with the J.7 opening line; answer set approved; recording retention; overage rate confirmed                   | Voice AI agent; divert; calendar + CRM wiring; test number; fallback to voicemail/person on failure                                                                                      | Tuning; report (answered, booked, transferred, dropped, minutes); incident response within the stated window    | Divert off; recordings exported or deleted per retention; number stays with the client         | Calendar access; approved answers; opening hours; the person who takes handovers                    | 2–3                        |
 | Email & SMS Marketing   | Platform access; export of the list; where records came from; sector constraints (CAP, SRA 8.9)                                 | Consent audit design; segments by legal form and basis; campaign calendar; automation map                            | Month one: audit, tagging, parked records (no electronic consent request — post, a TPS-screened live call, or the next visit; R53); templates with sender and stop; lawful-basis filters | Two campaigns; one automation; report (replies, bookings, opt-outs, mailable list size); quarterly reactivation | Export incl. consent records; automations remain in the client's account (M1) or transfer (M2) | The list; a monthly brief; approval within an agreed window; brand voice notes                      | 4 (audit) + ongoing        |
@@ -139,10 +345,12 @@ that implies a past client.
 
 ## 5. Boundaries against the existing nine, and the "nine" copy (App. I.8–I.9)
 
-### I.8 Exact boundary rewrites (current → replacement; verbatim current text read 2026-09-24)
+### I.8 Exact boundary rewrites (current → replacement; verbatim current text read 2026-09-24, re-verified line by line 2026-09-25)
 
 Plain-text fields (`data/*.ts`) take no markdown links because they feed `FAQPage` JSON-LD; MDX
-bodies take links.
+bodies take links. Every "Current" cell below was re-read against the working tree on 25 September
+2026 (`data/services.ts` L102–104, 371, 374, 490, 501, 508, 509, 512, 530–532, 545–547, 559, 575,
+579, 642; the MDX and `data/` lines named) and matches.
 
 | Where                                                                                                 | Current (verbatim)                                                                                                                                                                                                                                                                                                                                                                                                                                        | Replacement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -153,7 +361,7 @@ bodies take links.
 | `data/services.ts:508` crm `notIncluded[0]`                                                           | "Paid GoHighLevel or HubSpot licence fees (passed through at cost)"                                                                                                                                                                                                                                                                                                                                                                                       | **Keep.**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `data/services.ts:509` crm `notIncluded[1]`                                                           | "Week-to-week campaign writing, sending and list upkeep — you or your marketing team"                                                                                                                                                                                                                                                                                                                                                                     | "Week-to-week campaign writing, sending and list upkeep — your team, or our Email & SMS Marketing plan"                                                                                                                                                                                                                                                                                                                                                                                                     |
 | `data/services.ts:512` crm `relatedServiceSlugs`                                                      | `["ai-integration", "seo"]`                                                                                                                                                                                                                                                                                                                                                                                                                               | `["email-sms-marketing", "ai-integration"]`                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| `data/services.ts` ~L532 crm FAQ "Is the platform licence included…" answer                           | "No — the platform's licence or seat fees are separate and passed through at cost. You own the subscription in your own account; we configure and automate the platform on top of it. Keeping the subscription in your name is deliberate: you own the system and the data, and you are never locked into us to keep access to your own CRM."                                                                                                             | Append: " If you would rather not run a platform account at all, our Local Business Plans host a sub-account for you, with the exit route written into the plan."                                                                                                                                                                                                                                                                                                                                           |
+| `data/services.ts:530-532` crm FAQ "Is the platform licence included…" answer                         | "No — the platform's licence or seat fees are separate and passed through at cost. You own the subscription in your own account; we configure and automate the platform on top of it. Keeping the subscription in your name is deliberate: you own the system and the data, and you are never locked into us to keep access to your own CRM."                                                                                                             | Append: " If you would rather not run a platform account at all, our Local Business Plans host a sub-account for you, with the exit route written into the plan."                                                                                                                                                                                                                                                                                                                                           |
 | `data/services.ts:545-547` crm FAQ "Do you write and send the campaigns once the CRM is live?" answer | "No — this service builds the system and wires the integrations, and that is where it stops. Writing campaigns, sending them and keeping the list in order week after week is ongoing marketing work: it belongs with your marketing team, or an agency retained to do exactly that. Drawing the line there keeps the build a fixed piece of work with an end, and leaves you free to hand the running of it to anyone without unpicking what was built." | "Not within this project — it builds the system and wires the integrations, and that is where it stops. Writing campaigns, sending them and keeping the list in order week after week is ongoing marketing work, and it is a separate monthly plan: Email & SMS Marketing, run by us, or by your team or another agency if you prefer. Drawing the line there keeps the build a fixed piece of work with an end, and leaves you free to hand the running of it to anyone without unpicking what was built." |
 | `data/services.ts:559` ai-integration `whoItsFor`                                                     | "small businesses losing leads to unanswered phones, operators drowning in repetitive admin, or teams that want AI woven into existing tools — not a separate experiment."                                                                                                                                                                                                                                                                                | "businesses that need a voice agent, chatbot or workflow built to their own systems and rules — where an off-the-shelf receptionist plan is not enough — operators drowning in repetitive admin, or teams that want AI woven into existing tools rather than run as a separate experiment."                                                                                                                                                                                                                 |
 | `data/services.ts:575` ai `notIncluded[0]`                                                            | "Model and telephony usage — passed through at cost, on accounts you own"                                                                                                                                                                                                                                                                                                                                                                                 | **Keep.** True for the project.                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -192,7 +400,7 @@ bodies take links.
 | `data/industries.ts:128, 190, 257` FAQ answers | each mentions the nine (read the line before editing — feeds `FAQPage` JSON-LD)                                       | "every service we offer" / "the full range of services", count-free                                                                                                                         |
 | `lib/contact-schema.ts:17-21`                  | service options list                                                                                                  | derived from `liveServices`, grouped by category; keep "Not sure / multiple"                                                                                                                |
 
-## 6. Taxonomy (planning § 4.3)
+## 6. Taxonomy (planning § 4.3, confirmed S6)
 
 **Build / Grow / Automate & run** — reuses the process vocabulary already on the home page, splits
 6/6/4 into the existing three-column mega-menu, and separates project cadence from monthly cadence.
@@ -204,13 +412,119 @@ Maintenance). Footer becomes six columns at `lg` (three service groups + Industr
 Company). **Vocabulary rule:** "local" only ever describes the customer ("UK local businesses",
 "delivered remotely, anywhere in the UK"); never "your local agency", "near you", "based in".
 
-## 7. The bundle
+**Verified against the components on 25 September 2026** (`05` § 1 carries the consequences): the
+desktop mega-menu already renders `SERVICE_NAV` at `cols={3}` (`components/layout/site-header.tsx`
+L70), so three group columns need no new layout; the footer today is a four-column nav at `sm`
+(`grid-cols-2 sm:grid-cols-4`, `site-footer.tsx` L45) with Services as one column — six at `lg` is a
+change; the mobile drawer is an accordion (`mobile-nav-panel.tsx` L65–66) and gains the three group
+sub-headings. The grouping is by buyer job, not by tool: nothing in the nav says GoHighLevel, and the
+platform is named inside the plans and the CRM page only (D6). Category ids `build | grow | automate`
+and the `SERVICE_CATEGORIES` constant are drafted in `09-content-drafts/index-and-nav.md`; the label
+"Automate & run" and the bundle's highlight are D13.
 
-Members and tiers are named in § 2 above (the tiers paragraph); the `BundleTier` data shape is in
-`09-content-drafts/bundle/local-business-plans.catalogue.md` § 3 and the `/pricing` Plans block in
-`07-pricing-ladders.md` § 5. The "hosted or owned — your choice" section and the exit route are in
-the bundle MDX draft and wait on `01`'s re-read of the transfer and eject articles.
+## 7. The bundle — final (S6, 25 September 2026)
+
+### 7.1 Members and tiers
+
+Three tiers plus one module, each tier naming the component service pages it draws on so no
+component keyword moves to the bundle (`03` § 8; `12` M.7). Inclusions as the `tiers` array in
+`09-content-drafts/bundle/local-business-plans.catalogue.md` § 3 states them; the `[D4]` figures and
+their placement are `07` § 4.
+
+| Tier           | In (summary; the catalogue holds the card text)                                                                                                                                                                                                                                                                                                              | Component pages                                                           | Set-up                                                        |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| **Answer**     | hosted sub-account; UK number registered to the business or a divert from the number it publishes; text-back on every missed call as a service message; one inbox (web chat; WhatsApp at cost for opted-in customers); booking calendar with confirmations and reminders that carry appointment details and nothing promotional; the app; the monthly report | `missed-call-text-back`                                                   | the Answer module                                             |
+| **Reputation** | Answer, plus the review programme (everyone asked, nobody incentivised, nothing hidden; replies drafted for approval) and the Google Business Profile kept up in the client's own account, with listings kept consistent                                                                                                                                     | `missed-call-text-back` · `review-management` · `google-business-profile` | Answer's, plus the reviews and profile modules                |
+| **Follow-Up**  | Reputation, plus two campaigns a month and one automation to the people the client may lawfully message, quarterly reactivation, and a builder landing page each quarter                                                                                                                                                                                     | the above · `email-sms-marketing` · `landing-pages`                       | none of its own — the consent audit is the first month's work |
+| **AI module**  | the AI Receptionist on any tier, on the same divert, disclosed as automated in its first sentence, with a minutes allowance and the schedule rate beyond it                                                                                                                                                                                                  | `ai-receptionist`                                                         | the AI module                                                 |
+
+### 7.2 Name candidates (≤ 3; D13 decides — the slug `local-business-plans` and the `local-plans` cluster stay whichever label wins)
+
+1. **Local Business Plans** — the working name: matches the slug, the nav label drafted in
+   `09-content-drafts/index-and-nav.md`, the `/pricing` block's "Monthly plans" eyebrow (`07` § 5)
+   and the "plans" vocabulary the site already uses for its two monthly engagements.
+   💡 Proposal (executor): keep it as the nav label and the `name` field.
+2. **Local Business Marketing Packages** — the buyer's own phrase: the head term is `marketing
+packages for small business uk` and all three High wordings on the bundle SERP say "packages"
+   (`serp-0060`, `serp-0073`, `serp-0083`); every agency result on that SERP is a packages page with
+   tiers (`03` § 6.7). If the brainstorm prefers it, it belongs in the H1 and title wording rather
+   than the nav label, where "packages" beside "Plans" on `/pricing` would read as two products.
+3. **Answer · Reputation · Follow-Up** as the family, under the umbrella "Monthly plans" — the tier
+   names carry the meaning and the umbrella is the `/pricing` eyebrow; the page title would then lead
+   with the tiers. Weakest for search (no tier name is a query) and strongest for the pricing page.
+
+Never: a name containing the platform's name (D6; the "gohighlevel agency" head is Set A's, `03`
+§ 6.7), "all-in-one" (a software SERP, `serp-0087`, and `12`'s deliberately-absent list), or "local"
+used of WebAsk rather than the customer (§ 6's vocabulary rule).
+
+### 7.3 What the bundle is not
+
+Not a website (a builder page a quarter is the most it carries; sites are `web-development`); not
+paid media or social posting (out of scope, Q29); not a client portal or app beyond the platform's
+own mobile app; not a plan for clinics or practices whose records are patient data (R32 — they run
+the same automations in their own account, M1); not "hosted CRM" as a product in its own right — the
+hosted sub-account is the delivery mechanism, and the page says so before it lists tiers; not a
+GoHighLevel agency page — the platform is named inside the plan, never in the H1 or nav (D6). And
+nothing in it is "unlimited" or "free" where the platform bills it (`07` § 6.1 rule 6).
+
+### 7.4 Hosted or owned — your choice, and the exit route as verified in `01` § 6
+
+Ownership stays the default promise on every existing page ("in accounts you own", kept verbatim in
+§ 5). The plans are the labelled exception: a sub-account WebAsk hosts and runs, with the client as
+controller and WebAsk as processor (A8, R30–R31), and with the exit written into the plan before the
+client chooses one (R33). The section on the page says, in this order: where the data sits (a
+US-hosted platform; the transfer basis and its fallback, quoted with an "as at" date — R31); who is
+responsible for it; what usage costs and in which currency (R39, `07` § 2.1); and what leaves with the
+client. That last item is the route set `01` § 6 verified on 24 September 2026, stated on the page
+without a commission claim either way (D11, `00` § 6):
+
+1. **Export on request** — contacts, conversations and forms — at any time and on exit.
+2. **Rebuild in the client's own account at a fixed fee** — a snapshot of the build (workflows,
+   funnels, forms, calendars, pipelines, templates; a snapshot carries no contacts, conversations,
+   reviews data or Stripe connections, `01` § 6) plus the export.
+3. **Agency-to-agency transfer** to an agency account the client opens — the Agency Owner initiates;
+   the receiving agency needs the capacity and any compliance add-ons; phone numbers move only when
+   both agencies use LC Phone; a sub-account-owned email domain moves, an agency-assigned one is
+   removed, Mailgun/SMTP and a dedicated IP are removed; no partial transfers; no fee is stated in the
+   vendor's guide ("none stated", never "none").
+4. **Eject** to an independent account for the client — the nominated user must be an account-type
+   user on that sub-account alone; SaaS mode off; WordPress, listings, WhatsApp and dedicated-IP
+   subscriptions cancelled first (so those channels lapse and restart); websites, funnels, calendars,
+   contacts with history, workflow enrolments and API keys move; **every automation arrives as a
+   draft**; auth connections, Facebook and Google settings, Stripe fields, smart lists and Mailgun/SMTP
+   do not move; the client is invited onto the vendor's "$97/month plan". The 40% commission the
+   vendor pays the releasing agency is disclosed in the client contract only (founder,
+   24 September 2026), and route 3 is offered as the commission-free alternative.
+
+What the vendor's own documents give a hosted client on cancellation is nothing (the sub-account is
+the agency's; the Terms' 90-day retention runs on the agency's account), which is why every one of
+the four routes is a contractual promise from WebAsk and the page says "documented transfer with
+workflows re-enabled and channels re-connected", never "seamless" (`01` § 6; R33). The precondition
+for hosting anything at all is D3's UK representative (R34; `08` C10) and the signed DPA (D10).
+
+### 7.5 Payment terms and display (for `/pricing` and the page; Q4 and Q5 confirm)
+
+Set-up per module on signature; the plan monthly in advance, fixed in pounds for twelve months; usage
+in arrears at cost on the published GBP schedule, reset quarterly against the Bank of England range
+(`07` § 2.1); no minimum term; 30 days' notice. Two-part display needs the `setupAmount?` and
+`usageNote?` type extension (`07` § 6.1 rule 2; `11` AE.2); the bundle appears on `/pricing` as one
+row at the Answer tier's figure plus the Plans block (`07` § 5), and emits an `OfferCatalog` on its
+own page (`05` § 5).
+
+## 8. What this file hands to the brainstorm
+
+- **D9** — the M1/M2 column of § 2, service by service (the same price for M1 and M2 on Reviews and
+  Email & SMS is D4 item 7).
+- **D13** — the taxonomy and the three labels (§ 6); the bundle name (§ 7.2); the `/services/seo`
+  packages section instead of a local-SEO page (§ 2.2).
+- **Q8** — the receptionist's shape (one tier with the reasons printed, or an entry tier).
+- **Q10, D10** — clinics and practices stay M1; the DPA template and D3 as the precondition.
+- **Q17** — the folds confirmed in § 2.2 (booking and reminders, the inbox, WhatsApp, listings).
+- **Q26** — the caps proposed in § 3 (≈ 5 receptionist clients, ≈ 6 email/SMS clients).
+- **Q29** — social, paid media and the portal stay out.
 
 ## Sources
 
-`[Sxx]` keys resolve in `10-sources.md`.
+`[Sxx]` keys resolve in `10-sources.md`. The vendor facts in §§ 1 and 7.4 are `01` §§ 3, 4.2, 4.3 and 6
+([S01], [S50], [S52], [S53], [S54], [S55], [S147], [S148], [S152]); the market prices in § 2.2 are
+`04` §§ 2–4 and `07` § 3 as those files cite them; the SERP records are `serp-log.json` [S157].

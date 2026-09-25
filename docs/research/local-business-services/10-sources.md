@@ -218,6 +218,15 @@ quotations in `08` § 2.3 and R60 are the page's own words, including its typo (
 committed"). No other source was added in S5: every quotation in `08` § 2.4 comes from a page already
 in this register, cited by its existing ID.
 
+### Note on S6 (25 September 2026)
+
+No row was added. `02`, `05` and `12` cite only IDs already in the register: the vendor pages re-read
+for `01` ([S01], [S50], [S52]–[S55], [S58], [S147], [S148], [S152]), the SERP composite [S157], and
+the competitor and regulator rows as `04`, `06` and `08` cite them. The code facts in `05` (the
+`unitText` finding, the MDX anchor mapping, the grid's `BUILT_ROUTES` gap) are the working tree as
+read on 25 September 2026 with file and line, not sources. The certification terms `12` § 5.2 quotes
+are [S58] as `01` § 9 recorded them.
+
 ## 2. Stale-by dates
 
 | Source                                                    | Re-check by                                | Why                                                                             |

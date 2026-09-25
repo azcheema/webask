@@ -393,13 +393,51 @@ One row, as JSON:
 | 73  | can i send an automated text message to confirm an appointment | informational-bottom     | /blog/appointment-reminder-texts-pecr        | /services/missed-call-text-back              | email-sms ◆       | —                      | PAA on serp-0095 (added 2026-09-24)                                                    |
 | 74  | lead generation page design uk                                 | transactional            | /services/landing-pages                      | —                                            | landing-pages ◆   | —                      | Medium on serp-0104 (added 2026-09-25)                                                 |
 
-Vertical rows for the wave-1 industry pages (added in S6 after 06): `vet clinic marketing agency`,
-`vet practice marketing`, `cma vet price list website` (→ calendar #8; `uk-compliance`;
-`veterinary-practices` ◇), `veterinary services market investigation order 2026` (informational-top →
-#8), `seo for plumbers uk` and `local seo services for plumbers` (→ trades page; `seo`;
-`trades-home-services` ◇), `ai receptionist for garages` (→ garages page; `ai-receptionist` ◆;
-`garages-mot-centres` ◇), `mot reminder text service` (constructed; → garages page). Near-me variants
-captured in S3 are logged as evidence with no `primaryUrl` (D1).
+### 4.1 Rows added in S6 (25 September 2026) — the wave-1 vertical rows, six secondaries, and one row per proposed post
+
+Every row cites its `serp-log.json` record; PAA rows cite the capture whose question box carried the
+term. Rows for the proposed calendar items 13, 15, 16 and 17 leave with the item if S7 drops it.
+One candidate was **not** added: `local seo agency uk` (`serp-0077`) is already a live row on
+`/services/seo` (`dupes.mjs` exact duplicate). Consumer-side questions on the vertical SERPs were
+left as evidence only, because the searcher is the client's customer, not the client — "How much do
+vet fees cost?" (`serp-0101`), "Will I be reminded when my MOT is due?", "How can I get MOT and road
+tax reminders?", "Can I book MOT without a reminder letter?" (`serp-0067`), "What is the best
+advertising for plumbers?" (`serp-0089`, `serp-0092`; a `best` term with no post to own it). `gym
+membership marketing uk` (`serp-0103`) carries no row: gyms are wave 2 with no page until the
+subscription regime commences (`06` § 4).
+
+| #   | term                                                                     | intent                   | primaryUrl                                    | supportingUrls                    | cluster           | vertical               | Evidence (record; position is ordinal)                                                                                                                                                                                                               |
+| --- | ------------------------------------------------------------------------ | ------------------------ | --------------------------------------------- | --------------------------------- | ----------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 75  | missed call sms service uk                                               | transactional            | /services/missed-call-text-back               | —                                 | lead-recovery ◆   | —                      | `serp-0011`: 9/9 UK, Medium (E3 E4 E5), A6/B3 — the page's third UK head (§ 6.1)                                                                                                                                                                     |
+| 76  | virtual receptionist ai uk                                               | transactional            | /services/ai-receptionist                     | —                                 | ai-receptionist ◆ | —                      | `serp-0037`: 8/9 UK, Medium (E3 E4 E5) — a secondary wording (§ 6.3)                                                                                                                                                                                 |
+| 77  | email marketing management uk                                            | transactional            | /services/email-sms-marketing                 | —                                 | email-sms ◆       | —                      | `serp-0049`: 7/9 UK, Medium (E3 E4); its PAA is the page's pricing FAQ in the searcher's words (§ 6.4)                                                                                                                                               |
+| 78  | landing page agency uk                                                   | transactional            | /services/landing-pages                       | —                                 | landing-pages ◆   | —                      | `serp-0070`: 9/9 UK, Medium (E3 E4) — secondary to the "design agency" head (§ 6.5)                                                                                                                                                                  |
+| 79  | local seo services for small business uk                                 | transactional            | /services/seo                                 | —                                 | seo               | —                      | `serp-0088`: 8/9 UK, Medium (E3 E4) — the packages section's wording (§ 6.8; D13)                                                                                                                                                                    |
+| 80  | vet practice marketing uk                                                | transactional            | /industries/veterinary-practices              | —                                 | seo               | veterinary-practices ◇ | `serp-0100`: 8/9 UK, Medium (E3 E4), no PAA — the vets page's second term after the agency head (§ 6.10)                                                                                                                                             |
+| 81  | cma vet price list website                                               | informational-bottom     | /blog/cma-vets-order-practice-website         | /industries/veterinary-practices  | uk-compliance     | veterinary-practices ◇ | `serp-0101`: 9/9 UK, Medium (E3 E4); gov.uk first and third, a practice's own price page second, vetcomply.co.uk fourth — calendar #8 sits under gov.uk by design                                                                                    |
+| 82  | veterinary services market investigation order 2026                      | informational-top        | /blog/cma-vets-order-practice-website         | —                                 | uk-compliance     | veterinary-practices ◇ | `serp-0102`: 7/10 UK, Medium (E1 E3), no ads, no AI Overview — a regulator-and-law SERP the post names and quotes, never tries to outrank                                                                                                            |
+| 83  | what is cma in vets                                                      | informational-top        | /blog/cma-vets-order-practice-website         | —                                 | uk-compliance     | veterinary-practices ◇ | PAA on `serp-0101`                                                                                                                                                                                                                                   |
+| 84  | what are the latest updates on the cma's veterinary market investigation | informational-top        | /blog/cma-vets-order-practice-website         | —                                 | uk-compliance     | veterinary-practices ◇ | PAA on `serp-0101` and `serp-0102` — answered with the Order, dated                                                                                                                                                                                  |
+| 85  | who are the big 6 vet groups                                             | informational-top        | /blog/cma-vets-order-practice-website         | —                                 | uk-compliance     | veterinary-practices ◇ | PAA on `serp-0102` — named from the CMA's report only                                                                                                                                                                                                |
+| 86  | seo for plumbers uk                                                      | transactional            | /industries/trades-home-services              | —                                 | seo               | trades-home-services ◇ | `serp-0089`: 8/9 UK agency SERP, Low (E3); Bing `bing-0031` guide-shaped — the trades page's SEO section, never `/services/seo` (§ 6.8)                                                                                                              |
+| 87  | local seo services for plumbers                                          | transactional            | /industries/trades-home-services              | —                                 | seo               | trades-home-services ◇ | `serp-0092`: 8/9 UK, **High** (E1 E3 E4) — the set's first High vertical × service term                                                                                                                                                              |
+| 88  | plumber marketing agency uk                                              | transactional            | /industries/trades-home-services              | —                                 | local-plans ◆     | trades-home-services ◇ | `bing-0032` only: 10/10 UK agencies — **provisional**, no Google record (the queue closed before the trades head was captured); the page enters on compliance, not this head, but the row keeps the vertical's own head term from drifting elsewhere |
+| 89  | how much do local seo services cost                                      | informational-bottom     | /services/seo                                 | /industries/trades-home-services  | seo               | —                      | PAA on `serp-0092` — placed on the `/services/seo` packages FAQ beside `how much should i pay for local seo`, not on the trades page (one URL for the cost question); the trades page supports                                                       |
+| 90  | how much does a plumbing website cost                                    | informational-bottom     | /industries/trades-home-services              | /services/web-development         | web-development   | trades-home-services ◇ | PAA on `serp-0092` — the trades catalogue's first FAQ                                                                                                                                                                                                |
+| 91  | how much should an ai receptionist cost                                  | informational-bottom     | /blog/ai-receptionist-uk-rules-costs          | /industries/garages-mot-centres   | ai-receptionist ◆ | —                      | PAA on `serp-0066` and across the receptionist family — on post #3 beside `how much does an ai receptionist cost`; the garages page answers it in its FAQ without a converted figure                                                                 |
+| 92  | what does an ai receptionist do                                          | informational-top        | /blog/ai-receptionist-uk-rules-costs          | /services/ai-receptionist         | ai-receptionist ◆ | —                      | PAA on `serp-0035` and `serp-0066`                                                                                                                                                                                                                   |
+| 93  | how do i contact google to take down a review                            | informational-bottom     | /blog/google-review-removal-uk-rules          | /services/review-management       | reviews ◆         | —                      | PAA on `serp-0013`; the `04` § 4.5 removal gap — **proposed calendar #13**                                                                                                                                                                           |
+| 94  | how much does a sales funnel cost                                        | informational-bottom     | /blog/sales-funnel-or-landing-page-uk         | /services/landing-pages           | landing-pages ◆   | —                      | PAA on `serp-0056` — **proposed calendar #15**                                                                                                                                                                                                       |
+| 95  | google maps ranking service uk                                           | commercial-investigation | /blog/check-google-maps-ranking-uk            | /services/google-business-profile | local-listings ◆  | —                      | `serp-0091`: 7/9 UK, Low (E3); support.google.com first — a "service" nobody can honestly sell, so a post (**proposed #16**) with the no-guarantee line                                                                                              |
+| 96  | how to check google maps ranking                                         | informational-bottom     | /blog/check-google-maps-ranking-uk            | /services/google-business-profile | local-listings ◆  | —                      | PAA on `serp-0091` — **proposed #16**                                                                                                                                                                                                                |
+| 97  | best missed call text back software uk                                   | commercial-investigation | /blog/missed-call-text-back-tools-uk-compared | /services/missed-call-text-back   | lead-recovery ◆   | —                      | `serp-0109`: 7/8 UK, Medium (E3 E4 E5); `best … software` → a post by § 1 step 4 — **proposed #17**, second wave, built from `04` Q.1's product table                                                                                                |
+
+The file holds **118 rows** after S6 (95 + 24 added − 1 exact duplicate dropped). The planning
+target of 150–250 rows is **not reached and is not padded**: every row needs a capture record, the
+capture queue is closed (§ 6.11), and the remaining captured surfaces are either consumer-side
+questions, `software|best|platform` wordings with no post to own them, or near-me terms that carry no
+row by rule. The number moves again only with new captures (a second-wave comparison set, Q22) or
+with the real MSV/KD export that re-runs every tier.
 
 ## 5. `serp-log.json` record schema (App. AL.2)
 
@@ -1092,6 +1130,16 @@ agencies rank among directories: the service page can be found for it without cl
 "the best" (`04` § 4.6) — but the row waits for S6 with the same choice: a "how to choose" post or
 nothing.
 
+**S6 decisions on the two comparison shapes (25 September 2026).** `best missed call text back
+software uk` (`serp-0109`) → a **second-wave comparison post** is proposed as calendar item 17,
+built from `04` § 3 Q.1's product table and the Q.7 bounded sentences (what each charges, what none
+says about PECR), with the row in § 4.1 (row 97); S7 accepts or drops it with the row. `best email
+marketing agency uk` (`serp-0110`) → **no row and no post**: a `best … agency` row can point only at
+a comparison URL by § 1 step 4, a "how to choose" post would carry nothing the service page's PECR
+section does not already argue, and the page can be found for the term without claiming it (`04`
+§ 4.6 — never "the best"). The decision is recorded for Q22 and re-opened only if the term appears
+in the GSC query report for the service page.
+
 ## 7. Demand tiers
 
 **The caveat that travels with every tier.** A tier here is a reading of surfaces — an autocomplete
@@ -1278,6 +1326,27 @@ test's own head, **High** on `serp-0093`; the bundle's booking FAQ, or a post if
 calendar's item 4) and `lead generation page design uk` (a landing-pages secondary, Medium on
 `serp-0104`); the vertical PAAs (`serp-0066`, `serp-0067`) wait for the S6 vertical rows; the 150–250
 target is reached with the remaining captures.
+
+**S6 re-run (25 September 2026), after the § 4.1 additions.** `node private/tools/dupes.mjs
+keywords-draft.json data/keywords.json`: **118 draft rows · 0 exact duplicates · 54 head overlaps ·
+0 schema problems** — the one exact duplicate the first pass found (`local seo agency uk`, already
+`/services/seo`) was dropped. The eighteen new head overlaps are the same stems as before (`how much
+…`, `what is …`, `can i …`), the `local seo …` family against the three city rows on
+`/services/seo/<city>` (the programmatic pattern, kept), `seo for plumbers uk` against `seo for small
+business uk` and `seo for aesthetic clinics uk` (industry × service on the industry head — the doc 08
+matrix rule, kept), and `ai receptionist for garages` against the four existing receptionist rows
+(same rule, kept). `node private/tools/shape.mjs` — the H.6 schema-shape check against the row shape
+in `data/keywords.json` and the enums read from `scripts/check-keywords.ts` itself: **118 rows · 0
+schema problems · 88 rows on a proposed cluster · 14 rows on a proposed vertical**; no near-me term
+carries a row; the `> 5 transactional on a non-head URL` warning cannot fire once the seven slugs are
+heads. **One re-point corrected:** the table above moves `ai receptionist vs answering service uk`
+to the service page with the family; § 1 step 4 sends every `vs` term to a comparison or blog URL,
+so it re-points instead to the proposed post #14 (`/blog/ai-receptionist-vs-answering-service-uk`)
+with `/services/ai-receptionist` supporting, and stays where it is until that post exists (`05` § 3).
+`node private/tools/urlset.mjs` — every `primaryUrl` and `supportingUrls` entry in the draft diffed
+against the URL set in `05` § 2: 32 draft URLs, of which one (`/blog/topic/seo`, supporting only) is
+an existing archive outside `05`'s delta; the fifteen URLs on `05`'s side alone are support pages,
+existing heads with live rows, route patterns or a post with no row, each explained in its `05` row.
 
 ## 9. PAA → FAQ candidates (pricing first; the SERP term in brackets)
 

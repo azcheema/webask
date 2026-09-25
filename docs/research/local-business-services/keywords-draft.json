@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "0.1.0",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-09-25",
     "msvKdSource": null,
-    "note": "Draft rows for the local-business services line; NOT mergeable into data/keywords.json until scripts/check-keywords.ts accepts the proposed clusters (lead-recovery, reviews, ai-receptionist, email-sms, landing-pages, local-listings, local-plans) and verticals (trades-home-services, veterinary-practices, garages-mot-centres) — see 11-implementation-outline.md. msv and kd are null throughout. Every row names its serp-log.json record in 03-uk-demand-and-keywords.md § 4; near-me terms are logged as evidence only and carry no row.",
+    "note": "Draft rows for the local-business services line; NOT mergeable into data/keywords.json until scripts/check-keywords.ts accepts the proposed clusters (lead-recovery, reviews, ai-receptionist, email-sms, landing-pages, local-listings, local-plans) and verticals (trades-home-services, veterinary-practices, garages-mot-centres) — see 11-implementation-outline.md. msv and kd are null throughout. Every row names its serp-log.json record in 03-uk-demand-and-keywords.md § 4 (S6 rows of 25 September 2026 in § 4.1: the wave-1 vertical rows, six service-page secondaries, and one row per proposed calendar item 13, 15, 16 and 17 — those last five rows leave with the item if S7 drops it); near-me terms are logged as evidence only and carry no row.",
     "intentEnum": [
       "transactional",
       "commercial-investigation",
@@ -971,6 +971,236 @@
       "primaryUrl": "/services/landing-pages",
       "supportingUrls": [],
       "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "missed call sms service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "virtual receptionist ai uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "email marketing management uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "landing page agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "local seo services for small business uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": null
+    },
+    {
+      "term": "vet practice marketing uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/veterinary-practices",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "cma vet price list website",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": ["/industries/veterinary-practices"],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "veterinary services market investigation order 2026",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "what is cma in vets",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "what are the latest updates on the cma's veterinary market investigation",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "who are the big 6 vet groups",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/cma-vets-order-practice-website",
+      "supportingUrls": [],
+      "cluster": "uk-compliance",
+      "vertical": "veterinary-practices"
+    },
+    {
+      "term": "seo for plumbers uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "local seo services for plumbers",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": [],
+      "cluster": "seo",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "plumber marketing agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": [],
+      "cluster": "local-plans",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "how much do local seo services cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/seo",
+      "supportingUrls": ["/industries/trades-home-services"],
+      "cluster": "seo",
+      "vertical": null
+    },
+    {
+      "term": "how much does a plumbing website cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/industries/trades-home-services",
+      "supportingUrls": ["/services/web-development"],
+      "cluster": "web-development",
+      "vertical": "trades-home-services"
+    },
+    {
+      "term": "how much should an ai receptionist cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": ["/industries/garages-mot-centres"],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "what does an ai receptionist do",
+      "intent": "informational-top",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/ai-receptionist-uk-rules-costs",
+      "supportingUrls": ["/services/ai-receptionist"],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "how do i contact google to take down a review",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-review-removal-uk-rules",
+      "supportingUrls": ["/services/review-management"],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "how much does a sales funnel cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/sales-funnel-or-landing-page-uk",
+      "supportingUrls": ["/services/landing-pages"],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "google maps ranking service uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/check-google-maps-ranking-uk",
+      "supportingUrls": ["/services/google-business-profile"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "how to check google maps ranking",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/check-google-maps-ranking-uk",
+      "supportingUrls": ["/services/google-business-profile"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "best missed call text back software uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/missed-call-text-back-tools-uk-compared",
+      "supportingUrls": ["/services/missed-call-text-back"],
+      "cluster": "lead-recovery",
       "vertical": null
     }
   ]
