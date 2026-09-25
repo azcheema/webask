@@ -962,6 +962,16 @@
       "supportingUrls": ["/services/missed-call-text-back"],
       "cluster": "email-sms",
       "vertical": null
+    },
+    {
+      "term": "lead generation page design uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
     }
   ]
 }
