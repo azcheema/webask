@@ -80,7 +80,7 @@ faqs: [
   {
     question: "Can we offer a discount or a prize draw for a review?",
     answer:
-      "Not on this plan. Under the Act an incentivised review is not banned, but it must be labelled prominently as incentivised — namely, as an advert, in the CMA's guidance — and concealing the incentive is the banned practice. Google's policy goes further: merchants should not offer payment, discounts or free goods for any review at all, so an incentive risks the reviews and the profile as well as the fine. Dental practices have a third rule of their own from the General Dental Council. Offering nothing satisfies all of them, so we offer nothing, and we will say no if you ask us to add one.",
+      "Not on this plan. Under the Act an incentivised review is not banned, but it must be clearly identifiable as incentivised — usually a prominent label, as an advert, in the CMA's guidance — and concealing the incentive is the banned practice. Google's policy goes further: merchants should not offer payment, discounts or free goods for any review at all, so an incentive risks the reviews and the profile as well as the fine. Dental practices have a third rule of their own from the General Dental Council. Offering nothing satisfies all of them, so we offer nothing, and we will say no if you ask us to add one.",
   },
   {
     question: "Who writes the replies, and can they go out without us seeing them?",

@@ -220,6 +220,21 @@ than the line it replaced, and a bounded count widened past what was checked. Th
 have caught most of them is mechanical: after every fix, grep the phrase that was removed across the
 whole folder, and re-read the provenance comment of the file that changed.
 
+### 3.6 Run of 25 September 2026 (S9 — the carried items closed against the sources)
+
+Four one-phrase corrections, each after the source was re-read on the day and recorded in `10`:
+the garages page L24 and its catalogue FAQ 2 no longer say "any driver" — GOV.UK's reminder covers
+cars, vans and motorcycles at one month (S122), lorries, buses and large trailers at two; the reviews
+catalogue FAQ follows CMA208 § 3.5 as the PDF prints it — "must be clearly identifiable as
+incentivised", the advert label being what is "usually" necessary (S26); post #9 L53 and L55 and the
+trades catalogue FAQ 4 qualify "by text … is a distance contract" with "without a visit first" /
+"with no visit", because reg 5 limb (c) makes a text accepted straight after a home visit
+off-premises (S110) — the trades page already said so. The same corrections were made at their
+twins in `08` (R15, R47, R52, § B5, § 10 row 3) and `06` § L.1, with the date at each site. The
+trades FAQ 4 was trimmed from 162 to under 150 words without losing a fact. `counts.mjs` 0 problems ·
+`cites.mjs` 131 cited · 0 unresolved · 0 placeholders · prettier exit 0. No similarity run: no
+sentence was added that any other draft shares.
+
 ## 4. Guardrails every draft obeys (planning § 6)
 
 - No client, case study, ranking, audit history or team may be implied — including impersonal forms

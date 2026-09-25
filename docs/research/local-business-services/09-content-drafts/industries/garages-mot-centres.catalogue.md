@@ -44,7 +44,7 @@
     {
       question: "Is an automatic MOT reminder text allowed?",
       answer:
-        "Yes, while it stays a service message. The ICO lists reminding people about appointments among service messages, and its test is about content: a reminder that says the MOT is due on a date and how to book is a service message; add a discount and it becomes marketing to a number you may hold no consent for. Two things follow. Any driver can sign up on GOV.UK for a free reminder by text or email a month before the MOT is due, so yours has to offer what GOV.UK's does not, a way to book with you and the price. And the reminder goes only to your own customers, from a number registered to your business, with a way to stop, and never as the first message a number receives from you.",
+        "Yes, while it stays a service message. The ICO lists reminding people about appointments among service messages, and its test is about content: a reminder that says the MOT is due on a date and how to book is a service message; add a discount and it becomes marketing to a number you may hold no consent for. Two things follow. Drivers of cars, vans and motorcycles can sign up on GOV.UK for a free reminder by text or email a month before the MOT is due, so yours has to offer what GOV.UK's does not, a way to book with you and the price. And the reminder goes only to your own customers, from a number registered to your business, with a way to stop, and never as the first message a number receives from you.",
     },
     {
       question: "Can the text-back and reminders come from our existing number?",

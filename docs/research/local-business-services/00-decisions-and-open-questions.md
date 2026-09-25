@@ -44,15 +44,15 @@
 
 ## 4. Proposed new gates
 
-| Gate    | Question                                                                                                  | Owner                            | Blocks                                           |
-| ------- | --------------------------------------------------------------------------------------------------------- | -------------------------------- | ------------------------------------------------ |
-| D9      | Sales model per service (M1/M2/M3/M4)                                                                     | Founder                          | `02` final; every hosted-plan draft              |
-| D10     | Processor posture when hosting sub-accounts: DPA template, transfer mechanism, special-category exclusion | Founder + solicitor (extends D3) | first hosted client; the bundle page             |
-| D11     | Affiliate participation and disclosure wording                                                            | Founder                          | any affiliate link; `rel="sponsored"` code touch |
-| D12     | Vertical picks and waves                                                                                  | Founder                          | `06` final; industry pages                       |
-| D13     | Category taxonomy, bundle name, service-count copy                                                        | Founder                          | `05`; nav; `09/index-and-nav.md`                 |
-| D2 ext. | VAT on resold SaaS and metered usage                                                                      | Accountant                       | `07` display rules                               |
-| D4 ext. | The ladders; two-part price display; hosted-plan payment terms                                            | Founder                          | every `[D4]` figure                              |
+| Gate    | Question                                                                                                  | Owner                            | Blocks                                           | Standing (25 September 2026)                                                                                                                        |
+| ------- | --------------------------------------------------------------------------------------------------------- | -------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| D9      | Sales model per service (M1/M2/M3/M4)                                                                     | Founder                          | `02` final; every hosted-plan draft              | **Decided** (§ 6)                                                                                                                                   |
+| D10     | Processor posture when hosting sub-accounts: DPA template, transfer mechanism, special-category exclusion | Founder + solicitor (extends D3) | first hosted client; the bundle page             | **Decided** (§ 6); the first hosted client still waits for D3's UK representative and the solicitor's DPA (`11` § 1)                                |
+| D11     | Affiliate participation and disclosure wording                                                            | Founder                          | any affiliate link; `rel="sponsored"` code touch | **Decided** (§ 6): no affiliate link; the handler is never built unless one exists                                                                  |
+| D12     | Vertical picks and waves                                                                                  | Founder                          | `06` final; industry pages                       | **Decided** (§ 6)                                                                                                                                   |
+| D13     | Category taxonomy, bundle name, service-count copy                                                        | Founder                          | `05`; nav; `09/index-and-nav.md`                 | **Decided** (§ 6)                                                                                                                                   |
+| D2 ext. | VAT on resold SaaS and metered usage                                                                      | Accountant                       | `07` display rules                               | **Open** — the four questions in `07` § 6.2 (Q3); a condition on D4                                                                                 |
+| D4 ext. | The ladders; two-part price display; hosted-plan payment terms                                            | Founder                          | every `[D4]` figure                              | **Working set** (§ 6); three conditions before any figure leaves `[D4]`: the wallet-line spot-check, the `[founder]` rate, the accountant's answers |
 
 ## 5. Open questions (the brainstorm agenda)
 
@@ -83,6 +83,42 @@ September, all 58 queued terms were captured in eleven windows of five, an hour 
 refusal and no CAPTCHA (`03` § 6.11); nothing was left to Bing-only tiers.
 
 Each Q gets: the file that informs it, the owner, and a one-line proposal where one exists.
+
+**Reconciled in S9 (25 September 2026).** One row per question: the file that informs it, its owner,
+and where it stands after the brainstorm.
+
+| Q   | Informed by                       | Owner                                        | Standing (25 September 2026)                                                                                                              |
+| --- | --------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| Q1  | `02` § 2.2, § 3                   | Founder                                      | Decided — D9 (§ 6)                                                                                                                        |
+| Q2  | § 3 above; `02` § 7.5             | Founder                                      | Decided — narrowed to "self-serve online subscription checkout"; the dated note in `docs/00-overview.md` is a build-phase item (`11` § 5) |
+| Q3  | `07` § 6.2                        | Accountant                                   | **Open** — the four questions; a condition on D4                                                                                          |
+| Q4  | `07` § 6.1, `02` § 7.5            | Founder                                      | Decided — D4 (§ 6): the type extension, the terms                                                                                         |
+| Q5  | `07` § 2.1                        | Founder                                      | Decided — D4 (§ 6)                                                                                                                        |
+| Q6  | `01` § 6, `02` § 7.4              | Founder                                      | Decided — from the fourth hosted client (§ 6)                                                                                             |
+| Q7  | `01` § 9                          | Founder                                      | Decided — D11 (§ 6): no affiliate link                                                                                                    |
+| Q8  | `01` § 3, `07` § 4                | Founder                                      | Decided — D4 (§ 6): one tier, reasons printed                                                                                             |
+| Q9  | `08` § A8                         | Founder + solicitor                          | Decided — D10 (§ 6); the DPA is the solicitor's before the first hosted client                                                            |
+| Q10 | `08` § A8, `02` § 2               | Founder                                      | Decided — D9/D10 (§ 6): patient data never hosted                                                                                         |
+| Q11 | `08` § A8, `01` § 5               | Founder + solicitor                          | Decided — D10 (§ 6): UK Extension, Addendum fallback, TRA for special-category data                                                       |
+| Q12 | `08` J.7, R01–R03                 | Founder                                      | Decided (§ 6)                                                                                                                             |
+| Q13 | `08` J.2, R21                     | Founder; CAP Copy Advice for a clinic widget | Decided (§ 6); the CAP question is asked before any clinic review widget                                                                  |
+| Q14 | `01` § 7, `08` § 1 row 5          | Founder                                      | Decided (§ 6): divert-first                                                                                                               |
+| Q15 | `08` § A9                         | Founder                                      | Decided (§ 6): outside this initiative, tracked in `08` A9                                                                                |
+| Q16 | `06` § 5                          | Founder                                      | Decided — D12 (§ 6)                                                                                                                       |
+| Q17 | `02` § 2.2                        | Founder                                      | Decided — D13 (§ 6)                                                                                                                       |
+| Q18 | `02` §§ 6, 7.2                    | Founder                                      | Decided — D13 (§ 6): Local Business Plans                                                                                                 |
+| Q19 | `05` § 7                          | Founder                                      | Decided — D13 (§ 6): the slug stands                                                                                                      |
+| Q20 | `02` I.8, `08` R58                | Founder                                      | Decided (§ 6)                                                                                                                             |
+| Q21 | `09-content-drafts/deltas.md` § 3 | Founder                                      | Decided (§ 6)                                                                                                                             |
+| Q22 | `03` § 8, `05` § 3                | Founder                                      | Decided (§ 6)                                                                                                                             |
+| Q23 | `12` § 5.2                        | Founder                                      | Decided (§ 6)                                                                                                                             |
+| Q24 | `02` § 5                          | Founder                                      | Decided (§ 6)                                                                                                                             |
+| Q25 | `09-content-drafts/README.md` § 4 | Founder                                      | Decided (§ 6)                                                                                                                             |
+| Q26 | `02` § 3, `07` § 7                | Founder                                      | Decided (§ 6)                                                                                                                             |
+| Q27 | `11` § 7                          | Founder                                      | Decided (§ 6): after Phase 1 cutover, in the AE.9 order                                                                                   |
+| Q28 | `10` § 2                          | Founder                                      | Decided (§ 6): the founder owns the watch; `10` § 2 carries the owner column (S9)                                                         |
+| Q29 | `02` § 2.2                        | Founder                                      | Decided — D13 (§ 6): the outs                                                                                                             |
+| Q30 | `03` § 6.11                       | Executor                                     | Closed 25 September 2026                                                                                                                  |
 
 **Brainstorm held 25 September 2026.** Every question above is decided in § 6 except Q3, which
 stays with the accountant as the four questions in `07` § 6.2 and is a condition on D4, and Q30,

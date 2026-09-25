@@ -99,8 +99,7 @@ the compliance table on the PDF page itself, because `pdftotext -layout` jumbles
   and a consumer under an organised distance sales or service-provision scheme without the
   simultaneous physical presence of the trader and the consumer"; an "off-premises contract" includes
   one "concluded in the simultaneous physical presence of the trader and the consumer, in a place
-  which is not the business premises of the trader" and one "for which an offer was made by the
-  consumer" in such a place. Reg 7(4): Part 2 (the information duties) "does not apply to
+  which is not the business premises of the trader" and one "for which an offer was made by the consumer" in such a place, and — limb (c), added 25 September 2026 from the same page — one "concluded on the business premises of the trader or through any means of distance communication immediately after the consumer was personally and individually addressed in a place which is not the business premises of the trader in the simultaneous physical presence of the trader and the consumer", so a quote accepted by text or email straight after a home visit is off-premises, not distance. Reg 7(4): Part 2 (the information duties) "does not apply to
   off-premises contracts under which the payment to be made by the consumer is not more than £42".
   Reg 10(1): before an off-premises consumer is bound the trader must "give the consumer the
   information listed in Schedule 2 in a clear and comprehensible manner" plus the cancellation form;
