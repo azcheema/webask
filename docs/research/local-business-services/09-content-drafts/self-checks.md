@@ -287,7 +287,7 @@ uses for transaction and appointment updates") and flagged for a verbatim defini
 publication; the 155-character count is of the printed example. Fabricated-proof: no client, no
 percentage, no product; the dental example names no treatment; "{Practice}" replaced a placeholder name that turned out to be a real trading name (a second reader found three UK dental businesses using it),
 and the number is from Ofcom's reserved drama range (0161 496 0xxx), so the example can never dial a
-real line — S7 confirms the range is still reserved. UK-
+real line — S7 confirmed the range on 25 September 2026: Ofcom's page (last updated 11 May 2023) lists Manchester 0161, 496 0000 to 496 0999, as recommended for drama [S193]. UK-
 correctness: PECR reg 23 wording; GSM-7 segment rule. Template: distinct from Appendix U (the
 text-back post) and Appendix O. POM/euphemism, performance-claim and US-spelling greps: 0. Title
 58; description ≈154 (`counts.mjs` verifies). Length ≈ 1,250 words. `draft: true` until the bundle

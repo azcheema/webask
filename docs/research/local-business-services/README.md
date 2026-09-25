@@ -47,7 +47,7 @@ four S7 posts and the figures S7 typed in — logged in `09-content-drafts/READM
 severity, with the share of pass-2 findings that pass 1 introduced; the proposed fixes are verified
 too; a third pass if pass-2 findings were mostly introduced by pass 1. The similarity runs
 (`private/tools/similarity.mjs`) against the fork and across pages, worst pairs printed. Items S7
-left for S8: the Ofcom 0161 496 0xxx range checked by eye (the page blocks the fetch tool); the
+left for S8: the
 watch-list sentences `self-checks.md` assigns to S8; the industry subheads' 30–50-word budget
 confirmed against the live pages or the drafts cut. **Then S9:** `10` consolidated, `11` written,
 README all 🟢 or 🔴 with a named blocker, and the PR — asked for first. S7 closed on 25 September

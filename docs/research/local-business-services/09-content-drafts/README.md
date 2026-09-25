@@ -77,8 +77,7 @@ segment sentence rewritten (S49 gives no GSM-7 per-part figure).
 - Re-checks the self-checks had assigned to S7: (a) S49 states 160, 70 and "up to 67" and gives no
   GSM-7 per-part figure — #12 rewritten; (b) the ICO's electronic-mail page lists direct messages via
   social media under the definition and its wording is technology-neutral — #11's hedge stands and
-  nothing more is asserted; (c) Ofcom's drama-number page was reached in a browser after a challenge
-  but its range table did not render — S8 checks the 0161 496 0xxx range by eye; (d) #6's "handful
+  nothing more is asserted; (c) Ofcom's drama-number page blocks the fetch tool; read in a browser on 25 September 2026, its table lists Manchester 0161, 496 0000 to 496 0999, as recommended for drama (last updated 11 May 2023; S193) — the example in post #4 stands; (d) #6's "handful
   of bookings" and #11's "growing share" sentences had already been rewritten (neither phrase
   remains); (e) #5's description phrase "the rule to check first" names its H2 "the guideline
   sections to read first" and stands.
