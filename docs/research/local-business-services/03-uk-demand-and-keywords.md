@@ -1001,6 +1001,14 @@ small business` (`serp-0099`) is 2/9 UK, A2/B7 Soft, no ads, no evidence surface
   again, Practical Law, Bird & Bird, two Facebook posts, Westlaw and Vet Times — a regulator-and-law
   SERP; PAA "Who are the big 6 vet groups?", "What are the changes to the animal health and welfare
   pathway in 2026?". The post names the Order and quotes it; it does not try to outrank the CMA.
+- **Gyms (wave 2 evidence, thirteenth window).** `gym membership marketing uk` (`serp-0103`) is 7/9
+  UK, A1/B8 Soft, four ads above and two in the feed (beinfit.app, Mention Me, TikTok for Business,
+  Groupon, Talon.One), an AI Overview and **Medium** (E3 + E4): resamania.co.uk (club software), CFM's
+  UK site, ukpos.com, box12fitness.com, a directory, debitfinance.co.uk, an Indeed listing,
+  membership.quest and Wellhub — software, payments and one gym-marketing company, no agency SERP;
+  PAA "Which marketing agency is best for gyms?", "What is the average cost of a gym membership in
+  the UK?", "How profitable are gyms in the UK?". The signal is real but thin, as `06` § 2 scored
+  it; the wave-2 page (`06` § 4 AP.4) waits for the subscription regime.
 - **Garages: the receptionist micro-niche is High on Google too.** `ai receptionist for garages`
   (`serp-0066`) is 7/8 UK, A5/B3 Soft, one feed ad (receptionmate.co.uk), an AI Overview and
   **High** (E1 + E3 + E4 + E5): electronicreceptionist.co.uk first and fifth, sesar.co.uk, lineshift.ai,
