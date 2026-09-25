@@ -11121,6 +11121,322 @@
       "notes": ""
     },
     {
+      "id": "serp-0108",
+      "term": "email marketing agency near me",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-25T01:04:33.587Z",
+      "adsTop": 0,
+      "adsBottom": 1,
+      "adsDomains": ["rimarketing.se"],
+      "aiOverview": false,
+      "localPack": true,
+      "featuredSnippet": null,
+      "paa": [
+        "How much does an email marketing agency cost?",
+        "Is email marketing still worth it in 2026?",
+        "What is the cost of email marketing?",
+        "Who are the best email marketers?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Email marketing agency london",
+        "Best email marketing agency near me",
+        "Email marketing agency uk",
+        "Create8",
+        "Favoured Agency",
+        "CEEK agency",
+        "CEEK marketing",
+        "Best marketing agencies London"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "ceek.co.uk",
+          "url": "https://ceek.co.uk/london/email-marketing-agency",
+          "title": "Email Marketing Agency In London",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "create8.co.uk",
+          "url": "https://www.create8.co.uk/email-marketing",
+          "title": "Email Marketing Agency in Manchester",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "digitalagencynetwork.com",
+          "url": "https://digitalagencynetwork.com/agencies/email-ma...",
+          "title": "Best Email Marketing Agencies in UK",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "zestydigital.co.uk",
+          "url": "https://zestydigital.co.uk/our-services/email-marketing",
+          "title": "Email Marketing Agency",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "sqdigital.co.uk",
+          "url": "https://www.sqdigital.co.uk/email-marketing-agency",
+          "title": "Email Marketing Agency in Lancashire",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "agencies.semrush.com",
+          "url": "https://agencies.semrush.com/list/united-kingdom",
+          "title": "Best Email Marketing Agencies in United Kingdom 2026",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "ascensor.com",
+          "url": "https://www.ascensor.com/digital-marketing/email",
+          "title": "Email Marketing Agency Leeds - Ascensor",
+          "type": "agency",
+          "uk": false
+        },
+        {
+          "rank": 8,
+          "domain": "ecareinfoway.com",
+          "url": "https://ecareinfoway.com/blog/email-marketing-age...",
+          "title": "Best Email Marketing Agency in London - UK",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "soapmedia.co.uk",
+          "url": "https://www.soapmedia.co.uk/email-marketing-services",
+          "title": "Powerful Email Marketing Services & Automation",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 8,
+      "difficultyProxy": {
+        "a": 3,
+        "b": 6,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E3", "E4"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0109",
+      "term": "best missed call text back software uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-25T01:04:59.818Z",
+      "adsTop": 4,
+      "adsBottom": 2,
+      "adsDomains": ["zendesk.co.uk", "aircall.io", "amplemarket.com", "moneypenny.com"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "Can I automatically text back a missed call?",
+        "How to get text message when missed call?",
+        "What to text back after a missed call?",
+        "What is the best free texting app in the UK?"
+      ],
+      "paaRevealed": [],
+      "related": [],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "call2sms.co.uk",
+          "url": "https://call2sms.co.uk",
+          "title": "Call2SMS | Missed Call Text-Back for UK Businesses — From ...",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "digitaltoolbag.co.uk",
+          "url": "https://digitaltoolbag.co.uk/Business app",
+          "title": "Missed-Call Text Back",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "vantagegrowthptnrs.com",
+          "url": "https://www.vantagegrowthptnrs.com/best-missed-call...",
+          "title": "Best Missed-Call Text-Back Services UK (2026 Compared)",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "helpgenie.ai",
+          "url": "https://helpgenie.ai/Blog",
+          "title": "Missed Call Text Back Software Pricing for Small Business",
+          "type": "saas-vendor",
+          "uk": false
+        },
+        {
+          "rank": 5,
+          "domain": "contactfusion.co.uk",
+          "url": "https://www.contactfusion.co.uk/missed-call-text-back...",
+          "title": "Missed Call Text Back Software: Automate Your Text ...",
+          "type": "saas-vendor",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "ineedleads.co.uk",
+          "url": "https://ineedleads.co.uk/Blog",
+          "title": "Auto SMS for Missed Calls in UK Home Improvement",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "downtoearthai.co.uk",
+          "url": "https://www.downtoearthai.co.uk/ai-missed-call-text-ba...",
+          "title": "Missed Call Text Back for UK Tradesmen Your Safety ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "smbbooster.co.uk",
+          "url": "https://smbbooster.co.uk/missed-call-text-back",
+          "title": "Missed Call Text Back Service UK | Never Lose a Lead",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 7,
+      "difficultyProxy": {
+        "a": 4,
+        "b": 4,
+        "label": "Soft"
+      },
+      "evidence": ["E3", "E4", "E5"],
+      "notes": ""
+    },
+    {
+      "id": "serp-0110",
+      "term": "best email marketing agency uk",
+      "source": "google.co.uk",
+      "retrieved": "2026-09-25T01:05:22.339Z",
+      "adsTop": 2,
+      "adsBottom": 1,
+      "adsDomains": ["", "emailsquad.co.uk"],
+      "aiOverview": true,
+      "localPack": false,
+      "featuredSnippet": null,
+      "paa": [
+        "What are the best marketing agencies in the UK?",
+        "Who is the best email provider in the UK?",
+        "How much do agencies charge for email marketing?",
+        "Is email marketing still worth it in 2026?"
+      ],
+      "paaRevealed": [],
+      "related": [
+        "Best email marketing agency uk for small business",
+        "Email marketing agency London",
+        "Email marketing consultants",
+        "Digital marketing agency for small business UK",
+        "Favoured Agency",
+        "Marketing agencies UK",
+        "Best marketing agencies London",
+        "The good marketing company"
+      ],
+      "organic": [
+        {
+          "rank": 1,
+          "domain": "email-postman.co.uk",
+          "url": "https://www.email-postman.co.uk/email-marketing-ag...",
+          "title": "Email Marketing Agency UK – Expert Support for DTC & ...",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 2,
+          "domain": "agencies.semrush.com",
+          "url": "https://agencies.semrush.com/list/united-kingdom",
+          "title": "Best Email Marketing Agencies in United Kingdom 2026",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 3,
+          "domain": "zestydigital.co.uk",
+          "url": "https://zestydigital.co.uk/our-services/email-marketing",
+          "title": "Email Marketing Agency",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 4,
+          "domain": "digitalagencynetwork.com",
+          "url": "https://digitalagencynetwork.com/agencies/email-ma...",
+          "title": "Best Email Marketing Agencies in UK",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 5,
+          "domain": "clutch.co",
+          "url": "https://clutch.co/agencies/email/uk",
+          "title": "Top Email Marketing Agencies in the United Kingdom",
+          "type": "directory",
+          "uk": true
+        },
+        {
+          "rank": 6,
+          "domain": "ceek.co.uk",
+          "url": "https://ceek.co.uk/london/email-marketing-agency",
+          "title": "Email Marketing Agency In London",
+          "type": "agency",
+          "uk": true
+        },
+        {
+          "rank": 7,
+          "domain": "uk.pcmag.com",
+          "url": "https://uk.pcmag.com/.../Email Marketing",
+          "title": "The Best Email Marketing Software for 2026",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 8,
+          "domain": "constantcontact.com",
+          "url": "https://www.constantcontact.com/blog/email-market...",
+          "title": "8 Best Email Marketing Platforms in the UK [September 2026]",
+          "type": "listicle",
+          "uk": true
+        },
+        {
+          "rank": 9,
+          "domain": "kwmarketinguk.co.uk",
+          "url": "https://kwmarketinguk.co.uk/Services",
+          "title": "Email Marketing Agency",
+          "type": "agency",
+          "uk": true
+        }
+      ],
+      "ukSpecific": 9,
+      "difficultyProxy": {
+        "a": 5,
+        "b": 4,
+        "label": "Soft"
+      },
+      "evidence": ["E1", "E3", "E4"],
+      "notes": ""
+    },
+    {
       "id": "bing-0001",
       "term": "missed call text back uk",
       "source": "bing",

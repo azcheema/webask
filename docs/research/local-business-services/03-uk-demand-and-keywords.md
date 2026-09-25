@@ -479,7 +479,7 @@ and no `organic` array, never retried with a solved CAPTCHA.
 
 ## 6. UK SERP summaries per service (S3, 24 September 2026 — first capture set)
 
-**Coverage.** 107 `google.co.uk` records (`serp-0001`–`serp-0107`: 104 captures and three block records), 32 Bing
+**Coverage.** 110 `google.co.uk` records (`serp-0001`–`serp-0110`: 107 captures and three block records), 32 Bing
 `cc=GB` captures (`bing-0001`–`bing-0032`; the last two are the trades heads, added in S4) and 154 suggest-endpoint lists (`sug-0001`–`sug-0154`), all
 in `serp-log.json`. Google returned an HTTP 429 "unusual traffic" interstitial on the 45th capture at
 the protocol's 4–8 s pacing; a probe forty minutes later was clear, five more terms were captured at
@@ -495,23 +495,23 @@ bundle and GoHighLevel tail and the local-SEO agency wording, and an eighth for 
 tail, and a ninth for the rest of the bundle and GoHighLevel tail, and a tenth for the local-SEO services
 and vertical SEO terms, and an eleventh for the booking, reminder, WhatsApp API and web-chat tail, and a twelfth for live
 chat, the inbox and the vet tail, and a thirteenth for the gym and lead-generation terms and three of
-the four near-me shapes. The pages
-captured on Google are text-back, reviews, the receptionist, email/SMS, landing pages, the heads of
-the profile service, the bundle and local SEO, the booking and reminder fold tests and the three
-vertical heads; one near-me term and the two comparison shapes are **Bing-only** in this set and are queued for Google in § 6.11. Every verdict below names its record; a Bing-only verdict is marked as such and is
+the four near-me shapes, and a fourteenth, on 25 September, for the last near-me term and the two
+comparison shapes. **The queue is complete**: every term listed in § 6.11 on 24 September has a
+Google record. Every page, fold test, vertical, tail, near-me and comparison shape is on Google; the 32 Bing
+captures stand as the second-engine check on the heads. Every verdict below names its record; a Bing-only verdict is marked as such and is
 provisional until the Google capture lands.
 
-**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 94 of the 104
+**Three facts about the SERPs themselves, before the pages.** (1) An **AI Overview sat on 96 of the 107
 successful Google captures** — on every text-back, receptionist and email-agency term — so the
-answer-first opening paragraph in `12` is not optional on this line. (2) **A local pack appeared on five
-terms in 104**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
+answer-first opening paragraph in `12` is not optional on this line. (2) **A local pack appeared on six
+terms in 107**: `email marketing services uk` (`serp-0040`), `vet clinic marketing agency`
 (`serp-0065`), `local business marketing services` (`serp-0074`), `local seo agency uk`
-(`serp-0077`) and, of the three near-me terms captured, only `google business profile management
-near me` (`serp-0107`) — always on a "services", "agency" or "near me" wording, never on a product
+(`serp-0077`) and, of the four near-me terms, `google business profile management near me`
+(`serp-0107`) and `email marketing agency near me` (`serp-0108`) — always on a "services", "agency" or "near me" wording, never on a product
 or question — so local intent exists on the agency-shaped heads and nowhere else in the set; D1's
-no-profile ruling costs this line those five terms, not a category, and the pages concerned enter on
-their long tail. The other two near-me terms (`serp-0105`, `serp-0106`) returned the national SERP
-with no pack, which is what a remote agency wants to see. (3) **Ads sat on 75 of 104** captures, four
+no-profile ruling costs this line those six terms, not a category, and the pages concerned enter on
+their long tail. The text-back and receptionist near-me terms (`serp-0105`, `serp-0106`) returned the
+national SERP with no pack, which is what a remote agency wants to see. (3) **Ads sat on 78 of 107** captures, four
 at the top on most service-shaped terms, and the advertisers were mostly generic call-answering, CX
 and CRM brands (Moneypenny, Cloudtalk, Talkdesk, Zendesk, HubSpot, JustCall) rather than sellers of
 the exact service: the E4 signal is real but says "a category buyers pay for", not "a bidding war on
@@ -1038,27 +1038,20 @@ small business` (`serp-0099`) is 2/9 UK, A2/B7 Soft, no ads, no evidence surface
   and `local seo services for plumbers` is **High** (`serp-0092`) — § 6.8; the trades page's SEO
   section takes both (S6 rows).
 
-### 6.11 Queued — the 3 Google captures still pending
+### 6.11 The capture queue — complete (25 September 2026)
 
-**Block history, all on 24 September 2026, all from the same address.** HTTP 429 after 45 captures at
-4–8 s; HTTP 403 after five more at 12–18 s forty minutes later; HTTP 403 after five more at 25–30 s
-from a fresh browser context two and a half hours after that (`serp-0045`, `serp-0051`,
-`serp-0057`); then, forty minutes after the third block, **five captures with no refusal**, stopped
-at five by design (`serp-0058`–`serp-0062`), and an hour after that five more (`serp-0063`–`serp-0067`), and an hour after that another five
-(`serp-0068`–`serp-0072`), then five more (`serp-0073`–`serp-0077`) and five more (`serp-0078`–`serp-0082`), then five more (`serp-0083`–`serp-0087`) and five more (`serp-0088`–`serp-0092`), then five more (`serp-0093`–`serp-0097`) and five more (`serp-0098`–`serp-0102`), then five more (`serp-0103`–`serp-0107`). The pattern is a reputation-based allowance of about
-five requests per window from this address, so the queue runs five to a batch, page-head terms first,
-one window an hour or more apart; the tail groups stay Bing-only until captured:
+**Block history, all from one address.** On 24 September: HTTP 429 after 45 captures at 4–8 s; HTTP
+403 after five more at 12–18 s forty minutes later; HTTP 403 after five more at 25–30 s from a fresh
+browser context two and a half hours after that (`serp-0045`, `serp-0051`, `serp-0057`). From 14:36Z
+the remaining terms ran **five to a window, one window an hour or more apart, never through a
+CAPTCHA**: eleven windows (14:36Z, 15:37Z, 16:40Z, 17:43Z, 18:46Z, 19:49Z, 20:52Z, 21:55Z and 22:58Z
+on 24 September; 00:01Z and 01:04Z on 25 September), fifty-three captures, no refusal. The pattern
+to carry: a reputation-based allowance of about five requests per window from this address, and a
+window forty minutes after a 403 is enough. The session total — 110 Google records, 32 Bing captures
+and 154 suggest lists — sits inside the protocol's 120–160 SERP captures with the suggest lists on top.
+Q30 in `00` is closed: nothing was left to Bing-only tiers.
 
-1. email marketing agency near me · best missed call text back software uk · best email marketing
-   agency uk (the near-me term is evidence only, D1)
-
-> ❓ **Q30 — how far to take the Google captures.** 💡 Proposal (executor): every page head and every fold test
-> is now on Google; one three-term batch remains: a near-me evidence row and the two comparison shapes. Take them one
-> window an hour while a session is open, and accept Bing-only, provisional tiers for whatever is
-> left when it closes; never through a CAPTCHA. The
-> founder decides whether the tail groups are worth further windows.
-
-### 6.12 Near-me and comparison shapes (evidence only, D1; thirteenth window)
+### 6.12 Near-me and comparison shapes (evidence only, D1; thirteenth and fourteenth windows)
 
 Near-me terms carry no row (§ 1 step 4); they are captured to see whether Google serves them
 locally. Three of the four are in. `missed call text back near me` (`serp-0105`) returned the
@@ -1075,9 +1068,29 @@ thinklocalseo.co.uk, netmediasolutions.co.uk, gbpmanager.co.uk and boxchilli.com
 — 4/9 UK, no ads, **Low** (E1); PAA "How much to charge for a Google Business Profile?" (an
 agency-side question), "Is Google Business Profile Manager free?". Reading: on the two service heads
 where WebAsk leads, "near me" is served nationally; on the profile service it is served locally, and
-that page's near-me demand is the one D1 forgoes. The fourth near-me term and the two comparison
-shapes (`best missed call text back software uk`, `best email marketing agency uk`) are the last
-batch.
+that page's near-me demand is the one D1 forgoes. **The fourth near-me term drew a pack.** `email marketing agency near me` (`serp-0108`) is 8/9 UK,
+A3/B6 Soft, one feed ad (a Swedish advertiser, method note (l)), **no AI Overview**, a **local pack**
+and, as evidence, High (E1 + E3 + E4): ceek.co.uk, create8.co.uk, Digital Agency Network,
+zestydigital.co.uk fourth, sqdigital.co.uk, Semrush's directory, ascensor.com, a listicle and
+soapmedia.co.uk; PAA "How much does an email marketing agency cost?"; related "Email marketing agency
+london". So the email page, like the profile page, has a near-me demand that D1 forgoes, while
+text-back and the receptionist do not.
+
+**The comparison shapes.** `best missed call text back software uk` (`serp-0109`) is 7/8 UK,
+A4/B4 Soft, four ads above and two in the feed (Zendesk, Aircall, Amplemarket, Moneypenny), an AI
+Overview and **Medium** (E3 + E4 + E5): Call2SMS first, digitaltoolbag.co.uk, a listicle, helpgenie.ai,
+Contact Fusion, ineedleads.co.uk, downtoearthai.co.uk and smbbooster.co.uk — the same names as the
+head, products and agencies mixed, with the head's PAA. By § 1 step 4 a "best … software" term never
+points at a service page; no post in the calendar owns it, so it carries no row and is a candidate for
+a second-wave comparison post (S6, Q22) built from `04` § 3 Q.1's product table. `best email
+marketing agency uk` (`serp-0110`) is **9/9 UK**, A5/B4 Soft, two ads above and one in the feed
+(emailsquad.co.uk), an AI Overview and **High** (E1 + E3 + E4): email-postman.co.uk first, Semrush's
+directory, zestydigital.co.uk, Digital Agency Network, Clutch, ceek.co.uk, a PCMag UK listicle, a
+Constant Contact listicle and kwmarketinguk.co.uk; PAA "How much do agencies charge for email
+marketing?", "What are the best marketing agencies in the UK?". A High "best agency" term where four
+agencies rank among directories: the service page can be found for it without claiming it — never
+"the best" (`04` § 4.6) — but the row waits for S6 with the same choice: a "how to choose" post or
+nothing.
 
 ## 7. Demand tiers
 
@@ -1200,10 +1213,13 @@ the day real volumes arrive.
 | missed call text back near me                       | serp-0105 | 5/9   | 0/0 · AIO                 | A3/B6 Soft   | E3 E5          | Medium (evidence only)            | digitaltoolbag.co.uk, call2sms.co.uk, downtoearthai.co.uk                                    |
 | ai receptionist near me                             | serp-0106 | 3/9   | 4/2 · AIO                 | A3/B6 Soft   | E1 E4 E5       | Medium (evidence only)            | rondah.ai, myaifrontdesk.com, retellai.com                                                   |
 | google business profile management near me          | serp-0107 | 4/9   | 0/0 · AIO · local pack    | A2/B7 Soft   | E1             | Low (evidence only)               | business.google.com, support.google.com, virens.co.uk                                        |
+| email marketing agency near me                      | serp-0108 | 8/9   | 0/1 · local pack          | A3/B6 Soft   | E1 E3 E4       | High (evidence only)              | ceek.co.uk, create8.co.uk, digitalagencynetwork.com                                          |
+| best missed call text back software uk              | serp-0109 | 7/8   | 4/2 · AIO                 | A4/B4 Soft   | E3 E4 E5       | Medium (no row; S6)               | call2sms.co.uk, digitaltoolbag.co.uk, vantagegrowthptnrs.com                                 |
+| best email marketing agency uk                      | serp-0110 | 9/9   | 2/1 · AIO                 | A5/B4 Soft   | E1 E3 E4       | **High** (no row; S6)             | email-postman.co.uk, agencies.semrush.com, zestydigital.co.uk                                |
 
-**Reading across the pages.** 25 terms are High, 55 Medium, 23 Low and one Constructed (`unified
-inbox small business`, a record with no row) among the 104 captured; the three near-me records carry
-tiers as evidence only. The receptionist carries the most High terms on the hardest SERPs; text-back and
+**Reading across the pages.** 27 terms are High, 56 Medium, 23 Low and one Constructed (`unified
+inbox small business`, a record with no row) among the 107 captured; the four near-me records and
+the two comparison shapes carry tiers as evidence only. The receptionist carries the most High terms on the hardest SERPs; text-back and
 the email-agency heads are High on Soft SERPs, which is the combination a zero-authority `.co.uk` can
 act on first; the reviews page has no High service head and earns its High only on the compliance
 long-tail, which sets its cluster order. Terms not yet captured on Google carry no tier. E5 is set by
@@ -1284,7 +1300,8 @@ target is reached with the remaining captures.
   receptionist do? (`serp-0035`) · Can I get AI to answer my phone calls? (`serp-0030`) · Are AI
   receptionists worth it? (`serp-0027`) · Is AI replacing receptionists? (`serp-0033` — inbound only,
   hand-over rule) · Will callers know they are talking to an AI? (R23; constructed).
-- **`email-sms-marketing`:** How much does an email marketing agency cost? (`serp-0039`, `-0042`) ·
+- **`email-sms-marketing`:** How much does an email marketing agency cost? (`serp-0039`, `-0042`,
+  `-0108`) · How much do agencies charge for email marketing? (`serp-0110`) ·
   How much does it cost to send 1,000 emails? (`serp-0042`) · How much does SMS marketing cost?
   (`serp-0043`, `-0044`) · Is SMS marketing legal? (`serp-0043` — PECR, link to the CRM page) · Who
   can we legally email or text in the UK? (draft H2; constructed) · Is email marketing still worth it?
