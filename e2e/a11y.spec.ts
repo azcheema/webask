@@ -27,6 +27,7 @@ const ROUTES = [
   "/services/missed-call-text-back",
   "/services/review-management",
   "/services/ai-receptionist",
+  "/services/google-business-profile",
   "/industries",
   "/industries/aesthetic-clinics",
   "/industries/dental-practices",

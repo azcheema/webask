@@ -37,6 +37,7 @@ const SERVICE_SLUGS = [
   "missed-call-text-back",
   "review-management",
   "ai-receptionist",
+  "google-business-profile",
 ] as const;
 
 const INDUSTRY_SLUGS = [
@@ -84,6 +85,7 @@ const CLUSTER_ENUM = [
   "lead-recovery",
   "reviews",
   "ai-receptionist",
+  "local-listings",
 ] as const;
 
 // The three locked WebAsk verticals (docs/00). Naxdor's "real-estate" and

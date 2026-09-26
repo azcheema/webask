@@ -30,7 +30,8 @@
       "uk-compliance",
       "lead-recovery",
       "reviews",
-      "ai-receptionist"
+      "ai-receptionist",
+      "local-listings"
     ],
     "verticalEnum": ["aesthetic-clinics", "dental-practices", "beauty-wellness-clinics", null]
   },
@@ -3573,6 +3574,76 @@
       "primaryUrl": "/services/ai-receptionist",
       "supportingUrls": [],
       "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "google business profile management uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile management services",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile optimisation service",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile management agency",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "google business profile management cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": [],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "is google business profile manager free",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": ["/blog/google-business-profile-suspended-uk"],
+      "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "how much does it cost to optimise a google business profile",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/google-business-profile",
+      "supportingUrls": ["/pricing"],
+      "cluster": "local-listings",
       "vertical": null
     }
   ]
