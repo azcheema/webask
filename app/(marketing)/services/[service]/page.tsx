@@ -21,6 +21,7 @@ import type { CtaLink } from "@/data/types";
 import {
   breadcrumbsNode,
   buildGraph,
+  bundleCatalogNode,
   faqNode,
   renderJsonLd,
   serviceNode,
@@ -50,10 +51,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { service: slug } = await params;
   const { frontmatter } = await getServiceContent(slug);
+  const service = getServiceBySlug(slug);
   return buildMetadata({
     title: frontmatter.title,
     description: frontmatter.description,
     path: `/services/${slug}`,
+    // Drafts prerender for preview but never index (data/services.ts `status`).
+    noindex: service?.status !== "live",
   });
 }
 
@@ -106,7 +110,11 @@ export default async function ServicePage({ params }: { params: Promise<RoutePar
         name: service.name,
         description: service.summary,
         startingPrice: service.pricing.startingAmount,
+        cadence: service.pricing.cadence,
+        setupPrice: service.pricing.setupAmount,
+        hasOfferCatalog: service.tiers !== undefined,
       }),
+      ...(service.tiers ? [bundleCatalogNode(slug, service.tiers)] : []),
       breadcrumbsNode(path, [
         { name: "Home", path: "/" },
         { name: service.name, path },
@@ -130,8 +138,7 @@ export default async function ServicePage({ params }: { params: Promise<RoutePar
         name={service.name}
         subhead={service.heroSubhead}
         whoItsFor={service.whoItsFor}
-        startingAmount={service.pricing.startingAmount}
-        cadence={service.pricing.cadence}
+        pricing={service.pricing}
         primaryCta={service.primaryCta}
         secondaryCta={FREE_AUDIT_CTA}
       />
@@ -159,7 +166,7 @@ export default async function ServicePage({ params }: { params: Promise<RoutePar
       <CrossLinkGrid
         eyebrow="Locations"
         title={`Where we serve ${service.name}`}
-        intro={`Local ${service.name.toLowerCase()} pages for the areas we focus on — the same engagement, tuned to each market.`}
+        intro={`${service.name} for the areas we focus on — the same engagement, tuned to each market.`}
         links={locationLinks}
         bg="surface"
       />

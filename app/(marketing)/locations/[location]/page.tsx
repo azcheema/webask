@@ -18,7 +18,7 @@ import {
 } from "@/components/marketing";
 import { mdxComponents } from "@/components/mdx/mdx-components";
 import { authoredLocations, getLocationBySlug, isAuthoredLocation } from "@/data/locations";
-import { services } from "@/data/services";
+import { liveServices } from "@/data/services";
 import type { CtaLink } from "@/data/types";
 import {
   breadcrumbsNode,
@@ -101,7 +101,7 @@ export default async function LocationPage({ params }: { params: Promise<RoutePa
         // A county hub IS the administrative area — no containing county.
         ...(location.kind === "city" ? { county: location.county } : {}),
         description: frontmatter.description,
-        serviceTypes: services.map((service) => service.name),
+        serviceTypes: liveServices.map((service) => service.name),
       }),
       breadcrumbsNode(path, [
         { name: "Home", path: "/" },
@@ -150,7 +150,7 @@ export default async function LocationPage({ params }: { params: Promise<RoutePa
               title={`What we build for ${location.name} businesses`}
             />
             <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {services.map((service) => (
+              {liveServices.map((service) => (
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}

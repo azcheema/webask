@@ -14,7 +14,7 @@ import {
 import { home } from "@/data/copy/home";
 import { process as processContent } from "@/data/copy/process";
 import { portfolio } from "@/data/portfolio";
-import { getServiceBySlug, services } from "@/data/services";
+import { getServiceBySlug, liveServices } from "@/data/services";
 import { buildGraph, faqNode, renderJsonLd, webpageNode } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
 
@@ -59,10 +59,10 @@ if (pricingAnchorItems.length !== PRICING_ANCHOR_SLUGS.length) {
   );
 }
 
-// Full catalog feeds the hero's services marquee (name + slug — slug picks the
-// icon; labels are plain text, not links, since most /services/* routes ship in
-// Phase 2). data/services.ts stays the single source of truth.
-const heroServices = services.map((service) => ({ name: service.name, slug: service.slug }));
+// The live catalogue feeds the hero's services marquee (name + slug — slug picks
+// the icon; labels are plain text, not links). data/services.ts stays the single
+// source of truth; a draft service never appears here.
+const heroServices = liveServices.map((service) => ({ name: service.name, slug: service.slug }));
 
 export const metadata: Metadata = {
   ...buildMetadata({

@@ -12,10 +12,10 @@ import {
   SectionHeading,
 } from "@/components/marketing";
 import { pricing } from "@/data/copy/pricing";
-import { services } from "@/data/services";
+import { liveServices } from "@/data/services";
 import { breadcrumbsNode, buildGraph, faqNode, renderJsonLd, webpageNode } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
-import { getServiceContentSlugs } from "@/lib/services";
+import { listLiveServiceSlugs } from "@/lib/services";
 
 const PATH = "/pricing";
 
@@ -45,7 +45,7 @@ const pricingJsonLd = renderJsonLd(
 );
 
 export default async function PricingPage() {
-  const builtSlugs = await getServiceContentSlugs();
+  const builtSlugs = await listLiveServiceSlugs();
 
   return (
     <>
@@ -66,7 +66,7 @@ export default async function PricingPage() {
               title={pricing.tableIntro.h2}
               intro={pricing.tableIntro.body}
             />
-            <PricingTable services={services} builtSlugs={builtSlugs} />
+            <PricingTable services={liveServices} builtSlugs={builtSlugs} />
           </div>
         </Container>
       </Section>

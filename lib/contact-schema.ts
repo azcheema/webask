@@ -1,6 +1,6 @@
 import * as z from "zod/mini";
 
-import { services } from "@/data/services";
+import { liveServices } from "@/data/services";
 
 /*
  * Single source of truth for the contact form's shape and option lists.
@@ -29,9 +29,9 @@ import { services } from "@/data/services";
 
 export type SelectOption = { readonly value: string; readonly label: string };
 
-/** 9 services (machine slug → display name) + the catch-all. Order mirrors `data/services.ts`. */
+/** Every live service (machine slug → display name) + the catch-all. Order mirrors `data/services.ts`. */
 export const SERVICE_OPTIONS: ReadonlyArray<SelectOption> = [
-  ...services.map((service) => ({ value: service.slug, label: service.name })),
+  ...liveServices.map((service) => ({ value: service.slug, label: service.name })),
   { value: "not-sure", label: "Not sure / multiple" },
 ];
 

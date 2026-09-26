@@ -5,9 +5,9 @@ import { Breadcrumbs, type BreadcrumbsItem } from "@/components/layout/breadcrum
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { Button } from "@/components/ui/button";
-import type { PriceCadence } from "@/data/services";
+import type { ServicePricing } from "@/data/services";
 import type { CtaLink } from "@/data/types";
-import { cadenceLabel, formatGBP, VAT_NOTE } from "@/lib/pricing";
+import { formatGBP, pricingQualifier, VAT_NOTE } from "@/lib/pricing";
 
 type ServiceHeroProps = {
   /** Root → current page, passed verbatim to `breadcrumbsNode` for matching JSON-LD. */
@@ -17,9 +17,12 @@ type ServiceHeroProps = {
   readonly subhead: string;
   /** "Who it's for" qualifier — helps prospects self-select. */
   readonly whoItsFor: string;
-  /** Starting price (GBP) — surfaces the anatomy's "Starting at $X" hero tag. */
-  readonly startingAmount?: number;
-  readonly cadence?: PriceCadence;
+  /**
+   * The catalogue entry's pricing — surfaces the anatomy's "Starting at £X"
+   * hero tag, with the cadence, unit, set-up and usage parts from
+   * `pricingQualifier` so the hero and the price card read the same.
+   */
+  readonly pricing?: ServicePricing;
   readonly primaryCta: CtaLink;
   readonly secondaryCta?: CtaLink;
 };
@@ -37,8 +40,7 @@ export function ServiceHero({
   name,
   subhead,
   whoItsFor,
-  startingAmount,
-  cadence = "project",
+  pricing,
   primaryCta,
   secondaryCta,
 }: ServiceHeroProps) {
@@ -63,12 +65,12 @@ export function ServiceHero({
             </span>
             <p className="text-body text-fg-muted text-pretty">{whoItsFor}</p>
           </div>
-          {startingAmount != null ? (
+          {pricing ? (
             <p className="text-body">
               <span className="text-fg font-semibold tabular-nums">
-                {`Starting at ${formatGBP(startingAmount)}`}
+                {`Starting at ${formatGBP(pricing.startingAmount)}`}
               </span>
-              <span className="text-fg-muted">{` · ${cadenceLabel[cadence]}`}</span>
+              <span className="text-fg-muted">{` ${pricingQualifier(pricing)}`}</span>
               {/* Hedged until D2 resolves — see lib/pricing.ts VAT_NOTE. */}
               <span className="text-fg-muted">{` · ${VAT_NOTE}`}</span>
             </p>

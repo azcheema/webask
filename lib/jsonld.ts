@@ -4,6 +4,8 @@ import type {
   CollectionPage,
   CreativeWork,
   FAQPage,
+  Offer,
+  OfferCatalog,
   Organization,
   Person,
   ProfessionalService,
@@ -14,6 +16,7 @@ import type {
   WithContext,
 } from "schema-dts";
 
+import type { BundleTier, PriceCadence } from "@/data/services";
 import { site } from "@/data/site";
 import { team } from "@/data/team";
 import { env } from "@/lib/env";
@@ -278,10 +281,47 @@ export type ServiceOptions = {
    * Change them in `data/services.ts` (the single source) if D4 moves them.
    */
   startingPrice: number;
+  /** Drives the offer's unit text ("per project" vs "per month"). */
+  cadence: PriceCadence;
+  /** One-off set-up component of a monthly plan — emitted as a second Offer. [D4] */
+  setupPrice?: number | undefined;
+  /** Set when the page also emits a `bundleCatalogNode` for this slug. */
+  hasOfferCatalog?: boolean;
 };
 
-export function serviceNode({ slug, name, description, startingPrice }: ServiceOptions): Service {
+const unitTextFor = (cadence: PriceCadence): string =>
+  cadence === "monthly" ? "starting price per month" : "starting price per project";
+
+/** A priced `Offer` with its `UnitPriceSpecification`, in GBP. */
+function priceOffer(price: number, unitText: string): Offer {
+  return {
+    "@type": "Offer",
+    price: String(price),
+    priceCurrency: "GBP",
+    priceSpecification: {
+      "@type": "UnitPriceSpecification",
+      price: String(price),
+      priceCurrency: "GBP",
+      unitText,
+    },
+    availability: "https://schema.org/InStock",
+  };
+}
+
+/** `@id` of the bundle's `OfferCatalog` — shared by `serviceNode` and `bundleCatalogNode`. */
+const offerCatalogId = (slug: string): string => `${serviceId(slug)}-catalog`;
+
+export function serviceNode({
+  slug,
+  name,
+  description,
+  startingPrice,
+  cadence,
+  setupPrice,
+  hasOfferCatalog = false,
+}: ServiceOptions): Service {
   const url = abs(`/services/${slug}`);
+  const starting = priceOffer(startingPrice, unitTextFor(cadence));
   return {
     "@type": "Service",
     "@id": serviceId(slug),
@@ -291,18 +331,39 @@ export function serviceNode({ slug, name, description, startingPrice }: ServiceO
     url,
     provider: { "@id": ORG_ID },
     areaServed: UK,
-    offers: {
+    offers:
+      setupPrice === undefined
+        ? starting
+        : [starting, priceOffer(setupPrice, "one-off set-up fee")],
+    ...(hasOfferCatalog ? { hasOfferCatalog: { "@id": offerCatalogId(slug) } } : {}),
+  };
+}
+
+/**
+ * Bundle page: one `Offer` per tier inside an `OfferCatalog`, referenced from
+ * the `Service` node via `hasOfferCatalog` (pass `hasOfferCatalog: true` to
+ * `serviceNode`). Validate in the Rich Results Test when the bundle ships
+ * (research 11 § 9, step E).
+ */
+export function bundleCatalogNode(slug: string, tiers: ReadonlyArray<BundleTier>): OfferCatalog {
+  return {
+    "@type": "OfferCatalog",
+    "@id": offerCatalogId(slug),
+    name: "Plans",
+    itemListElement: tiers.map((tier) => ({
       "@type": "Offer",
-      price: String(startingPrice),
+      name: tier.name,
+      description: tier.summary,
+      price: String(tier.pricing.startingAmount),
       priceCurrency: "GBP",
       priceSpecification: {
         "@type": "UnitPriceSpecification",
-        price: String(startingPrice),
+        price: String(tier.pricing.startingAmount),
         priceCurrency: "GBP",
-        unitText: "starting price per project",
+        unitText: "starting price per month",
       },
-      availability: "https://schema.org/InStock",
-    },
+      url: abs(`/services/${slug}#${tier.slug}`),
+    })),
   };
 }
 
@@ -448,7 +509,7 @@ export type ServiceLocationOptions = {
   /** "Starting at £X" — see `ServiceOptions.startingPrice` on the D4 caveat. */
   startingPrice: number;
   /** Drives the offer's unit text ("per project" vs "per month"). */
-  cadence: "project" | "monthly";
+  cadence: PriceCadence;
 };
 
 /**
@@ -488,18 +549,7 @@ export function serviceLocationNodes({
     url,
     provider: { "@id": ORG_ID },
     areaServed,
-    offers: {
-      "@type": "Offer",
-      price: String(startingPrice),
-      priceCurrency: "GBP",
-      priceSpecification: {
-        "@type": "UnitPriceSpecification",
-        price: String(startingPrice),
-        priceCurrency: "GBP",
-        unitText: cadence === "monthly" ? "starting price per month" : "starting price per project",
-      },
-      availability: "https://schema.org/InStock",
-    },
+    offers: priceOffer(startingPrice, unitTextFor(cadence)),
   };
 
   const provider = {
