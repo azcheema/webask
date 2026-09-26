@@ -31,6 +31,10 @@ const SERVICE_SLUGS = [
   "crm-automation",
   "ai-integration",
   "maintenance-support",
+  // Local-business services line (research 11 AE.8): each slug is appended in
+  // the commit that adds its first keyword row, draft or live — a keyword may
+  // point at a draft page, which prerenders `noindex` until it is published.
+  "missed-call-text-back",
 ] as const;
 
 const INDUSTRY_SLUGS = [
@@ -72,6 +76,10 @@ const CLUSTER_ENUM = [
   // being smuggled into "seo".
   "clinic-compliance",
   "uk-compliance",
+  // Local-business services line (research 05 § 3): the remaining proposed
+  // clusters (reviews, ai-receptionist, email-sms, landing-pages,
+  // local-listings, local-plans) join here with the first row that uses each.
+  "lead-recovery",
 ] as const;
 
 // The three locked WebAsk verticals (docs/00). Naxdor's "real-estate" and

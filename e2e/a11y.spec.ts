@@ -23,6 +23,8 @@ const ROUTES = [
   "/services/crm-automation",
   "/services/ai-integration",
   "/services/maintenance-support",
+  // Draft services are audited while still `noindex` (research 11 § 5, D5).
+  "/services/missed-call-text-back",
   "/industries",
   "/industries/aesthetic-clinics",
   "/industries/dental-practices",

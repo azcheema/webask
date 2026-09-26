@@ -2,7 +2,7 @@
   "$schema": "./keywords.schema.json",
   "meta": {
     "version": "2.0.0",
-    "lastUpdated": "2026-07-28",
+    "lastUpdated": "2026-09-26",
     "msvKdSource": null,
     "note": "UK seed set for WebAsk, derived from docs/02 § 5 and docs/08. msv and kd are NULL throughout and msvKdSource is null: no Ahrefs/Semrush pull has been run, and inventing volumes would fabricate the exact numbers that drive prioritisation. Populate both from a real UK-locale export before using this file to sequence work, then set msvKdSource. Difficulty filter for a near-zero-authority .co.uk is KD <= 35 (docs/02 § 5). Priority order is docs/08 § 8: compliance long-tail first, service heads last.",
     "intentEnum": [
@@ -27,7 +27,8 @@
       "ai-automation",
       "maintenance",
       "clinic-compliance",
-      "uk-compliance"
+      "uk-compliance",
+      "lead-recovery"
     ],
     "verticalEnum": ["aesthetic-clinics", "dental-practices", "beauty-wellness-clinics", null]
   },
@@ -3350,6 +3351,76 @@
       "primaryUrl": "/",
       "supportingUrls": [],
       "cluster": "web-development",
+      "vertical": null
+    },
+    {
+      "term": "missed call text back uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": ["/blog/missed-call-text-back-uk-rules"],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "missed call text back service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "missed call text back service",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "text back missed calls",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": ["/blog/missed-call-text-back-uk-rules"],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "can i automatically text back a missed call",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": ["/blog/missed-call-text-back-uk-rules"],
+      "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "can gohighlevel text back missed calls",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "gohighlevel",
+      "vertical": null
+    },
+    {
+      "term": "missed call sms service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/missed-call-text-back",
+      "supportingUrls": [],
+      "cluster": "lead-recovery",
       "vertical": null
     }
   ]

@@ -1,5 +1,10 @@
 import { expect, test } from "@playwright/test";
 
+import { services } from "@/data/services";
+
+/** Catalogue entries still in draft — derived, so the checks track the data. */
+const DRAFT_SERVICE_SLUGS = services.filter((s) => s.status === "draft").map((s) => s.slug);
+
 test.describe("smoke", () => {
   test("home page renders with title and an h1", async ({ page }) => {
     const response = await page.goto("/");
@@ -94,7 +99,37 @@ test.describe("smoke", () => {
     for (const path of ["/legal/privacy", "/legal/terms", "/legal/cookies"]) {
       expect(body, `sitemap must not list draft/noindex ${path}`).not.toContain(`${path}</loc>`);
     }
+    // Draft services (data/services.ts `status`) prerender `noindex` too.
+    for (const slug of DRAFT_SERVICE_SLUGS) {
+      expect(body, `sitemap must not list draft service /services/${slug}`).not.toContain(
+        `/services/${slug}</loc>`,
+      );
+    }
     expect(body).not.toContain("/dev/");
+  });
+
+  test("a draft service prerenders noindex and sits on no public surface", async ({ page }) => {
+    // The drafting mechanism (research 11 § 7): a `status: "draft"` service
+    // with an MDX body renders for preview but must not index, and the grid,
+    // the pricing tables and the nav must not link to it.
+    test.skip(DRAFT_SERVICE_SLUGS.length === 0, "no draft service in the catalogue");
+    for (const slug of DRAFT_SERVICE_SLUGS) {
+      const path = `/services/${slug}`;
+      const response = await page.goto(path);
+      expect(response?.ok(), `${path} should respond 2xx`).toBe(true);
+      const robots = await page.locator('meta[name="robots"]').getAttribute("content");
+      expect(robots ?? "", `${path} must be noindex`).toMatch(/noindex/i);
+      expect(robots ?? "", `${path} stays follow`).toMatch(/follow/i);
+    }
+    for (const surface of ["/services", "/pricing", "/contact"]) {
+      await page.goto(surface);
+      for (const slug of DRAFT_SERVICE_SLUGS) {
+        await expect(
+          page.locator(`a[href="/services/${slug}"]`),
+          `${surface} must not link to draft /services/${slug}`,
+        ).toHaveCount(0);
+      }
+    }
   });
 
   test("service page renders MDX body, price card, and structured data", async ({ page }) => {
