@@ -29,7 +29,8 @@
       "clinic-compliance",
       "uk-compliance",
       "lead-recovery",
-      "reviews"
+      "reviews",
+      "ai-receptionist"
     ],
     "verticalEnum": ["aesthetic-clinics", "dental-practices", "beauty-wellness-clinics", null]
   },
@@ -3492,6 +3493,86 @@
       "primaryUrl": "/services/review-management",
       "supportingUrls": [],
       "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "ai phone receptionist uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai voice receptionist uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai receptionist for small business uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai call answering service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai answering service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "ai telephone answering service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "24/7 ai receptionist uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
+      "vertical": null
+    },
+    {
+      "term": "virtual receptionist ai uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/ai-receptionist",
+      "supportingUrls": [],
+      "cluster": "ai-receptionist",
       "vertical": null
     }
   ]

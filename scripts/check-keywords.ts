@@ -36,6 +36,7 @@ const SERVICE_SLUGS = [
   // point at a draft page, which prerenders `noindex` until it is published.
   "missed-call-text-back",
   "review-management",
+  "ai-receptionist",
 ] as const;
 
 const INDUSTRY_SLUGS = [
@@ -82,6 +83,7 @@ const CLUSTER_ENUM = [
   // local-listings, local-plans) join here with the first row that uses each.
   "lead-recovery",
   "reviews",
+  "ai-receptionist",
 ] as const;
 
 // The three locked WebAsk verticals (docs/00). Naxdor's "real-estate" and
