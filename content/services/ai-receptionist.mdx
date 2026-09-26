@@ -1,0 +1,66 @@
+---
+slug: ai-receptionist
+title: "AI Receptionist for UK Small Businesses"
+description: "A voice agent that answers the calls you miss, books appointments and hands over when it should. Inbound only, disclosed up front, on a monthly plan."
+dateModified: "2026-09-24"
+---
+
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ai-receptionist entry and is read by the page template — do not duplicate those fields here. The page's argument: an off-the-shelf receptionist is defensible only as an inbound-only agent that says what it is in its first sentence, does a narrow job and hands over cleanly; outbound and regulated answers belong to the bespoke build. Figures and quotations traceable to the research bundle: PECR reg 19(1) automated calling systems and reg 21 marketing calls (legislation.gov.uk [S13] [S14]); the ICO's definition of a live call and its 25 September 2025 fines of £300,000 and £250,000 for automated marketing calls using recorded lines (ICO news [S09]); the live-versus-automated classification "unsettled, with a lean" and the call-recording position (docs/03 § B3; the existing /services/ai-integration page); recording disclosure — callers told up front, silence is not consent (docs/03 § B3); market context — of the UK AI-receptionist products checked on 24 September 2026, unlimited-minute plans exist from under £50 a month and per-call pricing from 85p, and one of them (one of the three Set C garage products [S173]; research 06 § L.4.1) states that the assistant says it is an AI if asked and gives a recording disclosure at the start; none states an unprompted AI disclosure (research 04 Set B, Appendix Q; Set C rows [S160] [S171] [S172] [S173]); platform facts not printed on the page — AI Employee plans and the rebilling rule (HighLevel, 14 September 2026 [S54]). Decided as the working set (00 § 6, D4 and Q8, 25 September 2026): one tier, 300 minutes, the twelve-month fixed fee, the quarterly GBP schedule; still [D4]. Deliberately absent: any answer rate or "handles X% of calls", "human-like", a per-minute price, any competitor by name, any claim that the law requires an AI to identify itself, any promise of outbound calls or callbacks, any handling of health data, and any implied client. [D4] figures on this page (working set, 25 September 2026; 00 § 6): £179 a month, £599 set-up, 300 minutes a month; one tier with the reasons printed (Q8); call recording off by default and on by the client's choice, which the opening line and the disclosure paragraph follow — typed once in the catalogue entry and once in the pricing FAQ; the MDX body carries none. */}
+
+## What it does on a call, and what it hands over
+
+The phone rings, nobody is free, and the divert picks up. The assistant answers in your business's name, says what it is, and does one of five things: books an appointment into your calendar, takes a message, answers a question from the short list you approved, transfers the call to a person, or — when it cannot do any of those — says so and takes the caller's details for a call back from you. If the assistant itself fails, the call falls back to voicemail or a person. Every call ends with a summary in your inbox and on the contact's record.
+
+The job is narrow on purpose. An assistant permitted to hold any conversation is one nobody can test; one with a defined job can be run against a fixed set of calls before it ever picks up, and judged on how it fails rather than how often it succeeds. The failure we design for is the boring one: it hands over cleanly, every time it is unsure.
+
+## "Will callers know they are talking to an AI?"
+
+Yes, in the first sentence, before anything else:
+
+> Hello, you've reached \{Business\}. I'm an automated assistant. I can book an appointment or take a message, and I can put you through to a person. How can I help?
+
+One disclosure sits in that line and it is not optional: that it is automated. No UK statute we could find requires an assistant to say so; we say so because a caller who thinks they are speaking to a person has been misled about who they are dealing with, and because an assistant that lets people assume it is human is one you will eventually have to apologise for. A second disclosure joins it the moment you switch call recording on — "and this call is recorded", in the same sentence, before anything else. Recording is off by default on this plan: a recording is personal data you then have to keep for a period you must choose, and the call summary is written whether or not the audio is kept. When it is on, callers are told up front, because the ICO's position is that telling them supports fairness even where consent is not strictly required. Silence is not consent, and a recording nobody was told about is a problem you cannot fix afterwards.
+
+Of the UK receptionist products we checked in September 2026, one said on its page that the assistant will say it is an AI if a caller asks; none said that it tells them before anything else. We print the line so you can hear ours before you buy it.
+
+## Is an AI answering your phone legal in the UK?
+
+The rules that bite on automated telephony are in PECR, and they are written around calls an organisation makes. Regulation 19 forbids transmitting "communications comprising recorded matter for direct marketing purposes by means of an automated calling system" without the subscriber's prior consent; regulation 21 governs "unsolicited calls for direct marketing purposes", including the Telephone Preference Service screen. An inbound receptionist makes no calls. The caller rang you, nothing is being marketed at them, and neither regulation's wording reaches the conversation.
+
+What is not settled is how an AI voice would be classified if it ever did make a marketing call — as a live call, or as an automated one that needs specific consent. The regulator has not formally said, and in September 2025 it fined two energy firms £300,000 and £250,000 for marketing calls made with recorded, non-live speech, treating them as automated. So: unsettled, with a lean, and the lean is towards the stricter reading. We build to it.
+
+The privacy side is yours to cover in the ordinary way: the summaries and transcripts, and the recordings if you switch recording on, are personal data, your privacy notice needs to say they exist, and a retention period is chosen deliberately rather than left at whatever the platform defaults to.
+
+## Why it never calls anyone
+
+Because the moment it dials, every question above changes. An outbound call from a synthetic voice to market anything needs the person's specific prior consent under regulation 19, or the TPS screen under regulation 21 if it counts as live, with Ofcom's persistent-misuse rules on the calling operation itself — and the classification that is a footnote for an inbound receptionist becomes the whole case. The plan has no callback feature and no "chase the quote" feature, and it will not gain one. If outbound is genuinely the job, that is a scoped project on an evidenced consent record, under [AI Integration](/services/ai-integration), and we will tell you when it is not worth doing.
+
+## Your number stays
+
+The number on your van, your site and your Google profile does not change. The assistant sits behind a divert — out of hours only, on overflow when the line is busy, or on every call — and you choose which. Changing the divert is a setting, so you can start with out-of-hours and widen it when the summaries earn your trust. If you want a second line for the assistant instead, a UK number is registered to your business, not to us.
+
+## Booking, summaries and your CRM record
+
+The assistant books into the calendar you already run, with the availability rules you set: which services, which slots, how much notice, what to say when the diary is full. Each call produces a summary — who called, what they wanted, what happened — into your inbox and onto the contact's record, so a call answered at nine at night is a booking or a message by nine the next morning, with nothing to retype. Before go-live you ring a test number and hear the whole thing yourself.
+
+## What it will not answer
+
+Anything that needs a professional to answer it. A caller who asks a treatment question at a clinic, a legal question at a firm or a clinical question at a practice is handed to a person, every time. That is a design rule, not a limitation we are working around: for clinics and practices what may be said about a treatment is regulated — by the medicines rules that stop a prescription-only medicine being promoted to the public, and by the professional codes — so the answer set is not ours to improvise. Businesses in those positions get an assistant built to their own answer set and evaluated against it, in an account they own, on the [AI Integration](/services/ai-integration) page. This plan is for businesses whose calls are jobs, quotes, appointments and opening hours.
+
+## Minutes: what is in the plan, and what beyond it costs
+
+The plan carries a monthly allowance of minutes; beyond it, minutes are charged at the pound rate on our published schedule. The platform bills the underlying minutes in US dollars; we reset the schedule each quarter against the exchange rate and pass minutes through at the rate on it. The plan fee itself is fixed in pounds for twelve months.
+
+Of the UK receptionist products we checked in September 2026, unlimited-minute plans exist from under £50 a month before VAT, and if a lower-priced product does what you need, one of those may serve you well. What this plan pays for is the rest: the disclosure line, the fallback to a person, the answer set you approved, a real test call before launch, a month of tuning, and someone accountable when it gets a call wrong.
+
+## What the monthly report shows
+
+Answered. Booked. Transferred. Dropped. Minutes used. Five counts from the account that runs it, which you can log into — nothing modelled, no percentage we did not measure. If the "dropped" line is not close to zero, the divert or the answer set is wrong, and that is the conversation the report exists to start.
+
+## When a bespoke agent is the right answer
+
+When the calls are about regulated subjects; when you need it to make calls; when it must speak to systems it cannot reach through a standard integration; or when the failure mode has to be evaluated against your own call recordings before anyone will sign it off. All of those are the [AI Integration](/services/ai-integration) project, priced as a project, and this page will send you there when that is honest. If the calls you miss are quotes and appointments, start here.
+
+None of this is legal advice. It describes how the assistant is scripted and disclosed; how you use the recordings and what you send afterwards is yours to answer for.
+
+We work remotely, with no UK office; for something delivered over a divert and a phone number, that keeps a building out of your quote. [Get in touch](/contact) with what your phones look like on a busy afternoon, or read [how a project runs](/process) first.
