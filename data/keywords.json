@@ -31,7 +31,8 @@
       "lead-recovery",
       "reviews",
       "ai-receptionist",
-      "local-listings"
+      "local-listings",
+      "landing-pages"
     ],
     "verticalEnum": ["aesthetic-clinics", "dental-practices", "beauty-wellness-clinics", null]
   },
@@ -3644,6 +3645,56 @@
       "primaryUrl": "/services/google-business-profile",
       "supportingUrls": ["/pricing"],
       "cluster": "local-listings",
+      "vertical": null
+    },
+    {
+      "term": "landing page design uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "landing page design agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "sales funnel design uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "lead generation page design uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "landing page agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/landing-pages",
+      "supportingUrls": [],
+      "cluster": "landing-pages",
       "vertical": null
     }
   ]

@@ -28,6 +28,7 @@ const ROUTES = [
   "/services/review-management",
   "/services/ai-receptionist",
   "/services/google-business-profile",
+  "/services/landing-pages",
   "/industries",
   "/industries/aesthetic-clinics",
   "/industries/dental-practices",
