@@ -1201,6 +1201,87 @@ export const services: ReadonlyArray<Service> = [
       },
     ],
   },
+  {
+    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Copy from
+    // docs/research/local-business-services/09-content-drafts/services/email-sms-marketing.catalogue.md
+    // (verified S8, 25 September 2026). Every £ figure is the [D4] working set
+    // of 25 September 2026 (research 00 § 6) — not a confirmed price.
+    slug: "email-sms-marketing",
+    name: "Email & SMS Marketing",
+    category: "grow",
+    status: "draft",
+    summary:
+      "Campaigns written, sent and reported every month — to the people you may lawfully message, with the opt-out in every one.",
+    heroSubhead:
+      "Campaigns written, sent and reported monthly — only to people you may lawfully message, with an opt-out in every one.",
+    whoItsFor:
+      "businesses with a list and no time — a CRM that is live and quiet, customers who never hear from them, lapsed customers nobody has asked back.",
+    pricing: {
+      startingAmount: 395, // [D4] — working set, 25 September 2026
+      currency: "GBP",
+      cadence: "monthly",
+      usageNote:
+        "SMS segments beyond the plan's allowance are passed through at cost, on a published GBP schedule reviewed quarterly.",
+      priceNote:
+        "What moves the price: campaigns a month, automations built or reviewed, the state of the consent records you hold, and SMS volume.",
+    },
+    includes: [
+      "Two campaigns a month — email, SMS or both — written to your brief and sent from your platform",
+      "One automation built or reviewed each month — welcome, follow-up, rebooking, win-back — with the lawful-basis filter checked before it runs",
+      "A reactivation campaign each quarter, on the records that can carry it",
+      "List hygiene — bounces, opt-outs honoured across every tool, sole-trader and freemail records segmented as individuals",
+      "A monthly report tied to replies and bookings, not open rates",
+      "Up to 10,000 emails and 200 SMS segments a month in the plan, or 25,000 and 500 on the larger one, with segments beyond that at cost",
+    ],
+    notIncluded: [
+      "Bought, rented or scraped lists — never imported, never sent to",
+      "The CRM build itself — that is CRM Automation, priced as a project",
+    ],
+    primaryCta: { label: "Get a campaign plan", href: "/contact" },
+    relatedServiceSlugs: ["crm-automation", "review-management"],
+    faqs: [
+      {
+        question: "What does the monthly plan cost, and what is in the first month?",
+        answer:
+          "A monthly fee starting at £395 for two campaigns a month, or £695 for four with a landing page each quarter, + VAT where applicable, and no set-up fee. The first month is the consent audit: every record on your list is tagged by legal form and by the basis on which it may be messaged, records without a basis are parked, and nothing is sent until that is done. From month two, two campaigns a month and one automation built or reviewed. What moves the price: campaigns a month, automations, the state of the consent records you hold, and SMS volume, which is metered by the platform and passed through at cost on a published schedule. The size of the list does not move it.",
+      },
+      {
+        question: "Who can we legally email or text in the UK?",
+        answer:
+          "It turns on the legal form of the recipient, not on what the address looks like. Limited companies, LLPs and public bodies are corporate subscribers and PECR's consent rule does not apply to them. Sole traders, unincorporated partnerships and anyone on a personal email or number are individuals, and they may only receive unsolicited marketing if they have consented, or if the narrow soft opt-in applies: their details came from a sale or negotiations for a sale, the marketing is for your similar products or services, and they were given a simple way to refuse at collection and in every message since. A text counts as electronic mail under the same rules. The CRM page sets it out in full; this plan applies it to every send.",
+      },
+      {
+        question: "Our list is old — can you reactivate it?",
+        answer:
+          "Some of it, lawfully. The month-one consent audit sorts the records into those with a basis to be messaged and those without. The first group gets a reactivation campaign written to bring them back. The second group is not emailed or texted at all, not even to ask: the ICO counts contacting people to ask for consent to marketing as direct marketing, so the request would be the very message you may not send. Those people can be reached by post, by a live call after a Telephone Preference Service check, or at their next visit, and limited companies can be emailed without consent, sender named, with a way to stop. What we will not do is send an offer to everyone who ever gave you a number. The number that survives the audit, not your contact count, is the first honest figure about your list.",
+      },
+      {
+        question: "Do we own the platform and the list?",
+        answer:
+          "Yes to the list, always. The platform depends on the plan you choose. If your CRM lives in an account you own, we send from it and the subscription stays in your name. If you are on a hosted plan, the sending runs from a sub-account under our licence, you remain the controller of the data, we process it under a written contract, and your contacts, consent records and campaign history are exported to you on request. Either way the consent records are built into the contact records, not held in a spreadsheet of ours, so the lawful basis for every send leaves with you if you leave.",
+      },
+      {
+        question: "Can you send on WhatsApp too?",
+        answer:
+          "Yes, for the people who asked for it. WhatsApp's own business policy allows messages only to customers who gave you the number and opted in to hearing from you on WhatsApp, so it is never a first-contact channel, and PECR's consent rules sit on top for anything promotional. The consent audit records which channel each contact agreed to, and a campaign goes out by email, text or WhatsApp accordingly. WhatsApp messages are metered by the platform per message and passed through at cost on the published schedule as their own line. For the customers who chose it, WhatsApp can be the channel they answer fastest; for everyone else it is a channel they did not ask for, and WhatsApp's policy exists to stop exactly that.",
+      },
+      {
+        question: "We are a clinic — what can a follow-up message say?",
+        answer:
+          "It promotes the consultation, not the treatment. For a clinic an automated email or text that promotes a treatment is an advert, because the advertising code applies to organic content and not only to paid ads, and a prescription-only medicine may not be advertised to the public; the regulator treats the familiar euphemisms as promotion of the medicine too. So a follow-up says what a consultation covers, who it is with and how to book, and it never names a product. Every clinic campaign is written to that rule before it is written to convert, and where a message is genuinely borderline CAP's Copy Advice service is free and is asked before it goes out.",
+      },
+      {
+        question: "How many campaigns a month, and who writes them?",
+        answer:
+          "Two on the standard plan, more on a larger one, and we write them. You give a brief, a few lines on what the month is about, and we write each campaign in your voice, check it against the rules for your sector, send it from your platform to the segment that may receive it, and report on it two weeks later. A campaign is a message with a purpose: a seasonal reminder, a new service, a price change, a piece of advice worth sending. One automation a month is built or reviewed alongside, with the lawful-basis filter in front of it. If you would rather write the copy yourself, we edit and send it instead.",
+      }, // Q17 (the Plus tier) decided 25 September 2026 as the research 07 § 4 working set (00 § 6, D4); figures still [D4]
+      {
+        question: "What does an SMS cost us?",
+        answer:
+          "A text is metered by the platform per 160-character segment and billed in US dollars; we pass it through at the pound rate on our published schedule. That schedule is reset each quarter against the exchange rate and nothing is added to it. Each plan carries an allowance of 200 segments a month, or 500 on the larger plan, and the schedule applies beyond it; the plan fee is fixed in pounds for twelve months. Campaign texts are written to fit one segment in the basic character set wherever the message allows, and each names the sender and carries a way to stop — which the rules require, and which keeps your sending number in good standing.",
+      }, // Q4/Q5 decided 25 September 2026 (research 00 § 6); figures still [D4]
+    ],
+  },
 ] as const;
 
 /** Lookup by canonical slug. Returns undefined if the slug isn't a known service. */

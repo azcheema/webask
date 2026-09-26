@@ -32,7 +32,8 @@
       "reviews",
       "ai-receptionist",
       "local-listings",
-      "landing-pages"
+      "landing-pages",
+      "email-sms"
     ],
     "verticalEnum": ["aesthetic-clinics", "dental-practices", "beauty-wellness-clinics", null]
   },
@@ -3695,6 +3696,106 @@
       "primaryUrl": "/services/landing-pages",
       "supportingUrls": [],
       "cluster": "landing-pages",
+      "vertical": null
+    },
+    {
+      "term": "email marketing agency uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "email marketing services uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "email marketing companies uk",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "email marketing agency for small business",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "sms marketing services uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "sms marketing cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": ["/blog/gohighlevel-uk-local-business-gbp-cost"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "how much does an email marketing agency cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "is sms marketing legal uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": ["/services/crm-automation"],
+      "cluster": "uk-compliance",
+      "vertical": null
+    },
+    {
+      "term": "database reactivation service",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": ["/blog/database-reactivation-uk-lawfully"],
+      "cluster": "email-sms",
+      "vertical": null
+    },
+    {
+      "term": "email marketing management uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/email-sms-marketing",
+      "supportingUrls": [],
+      "cluster": "email-sms",
       "vertical": null
     }
   ]
