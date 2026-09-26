@@ -28,7 +28,8 @@
       "maintenance",
       "clinic-compliance",
       "uk-compliance",
-      "lead-recovery"
+      "lead-recovery",
+      "reviews"
     ],
     "verticalEnum": ["aesthetic-clinics", "dental-practices", "beauty-wellness-clinics", null]
   },
@@ -3421,6 +3422,76 @@
       "primaryUrl": "/services/missed-call-text-back",
       "supportingUrls": [],
       "cluster": "lead-recovery",
+      "vertical": null
+    },
+    {
+      "term": "google review management services uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "google review management company",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "google review management agency",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "review management service uk",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "google review request automation",
+      "intent": "commercial-investigation",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": ["/blog/google-reviews-dmcc-act-uk"],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "service to get more google reviews",
+      "intent": "transactional",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "how much does online reputation management cost",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/services/review-management",
+      "supportingUrls": [],
+      "cluster": "reviews",
       "vertical": null
     }
   ]

@@ -35,6 +35,7 @@ const SERVICE_SLUGS = [
   // the commit that adds its first keyword row, draft or live — a keyword may
   // point at a draft page, which prerenders `noindex` until it is published.
   "missed-call-text-back",
+  "review-management",
 ] as const;
 
 const INDUSTRY_SLUGS = [
@@ -80,6 +81,7 @@ const CLUSTER_ENUM = [
   // clusters (reviews, ai-receptionist, email-sms, landing-pages,
   // local-listings, local-plans) join here with the first row that uses each.
   "lead-recovery",
+  "reviews",
 ] as const;
 
 // The three locked WebAsk verticals (docs/00). Naxdor's "real-estate" and
