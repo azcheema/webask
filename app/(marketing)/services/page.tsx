@@ -6,12 +6,12 @@ import type { BreadcrumbsItem } from "@/components/layout/breadcrumbs";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { CtaBand, PageHero, PricingTable, SectionHeading } from "@/components/marketing";
-import { BUILT_ROUTES } from "@/components/layout/_nav-data";
-import { services } from "@/data/services";
+import { liveServices } from "@/data/services";
 import type { CtaLink } from "@/data/types";
 import { breadcrumbsNode, buildGraph, renderJsonLd, webpageNode } from "@/lib/jsonld";
-import { cadenceLabel, formatGBP } from "@/lib/pricing";
+import { formatGBP, pricingQualifier } from "@/lib/pricing";
 import { buildMetadata } from "@/lib/seo";
+import { listLiveServiceSlugs } from "@/lib/services";
 
 /*
  * The services index — the pillar of Silo 1 (docs/08 § 1).
@@ -63,7 +63,10 @@ const jsonLd = renderJsonLd(
   ),
 );
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+  // Bare slugs: PricingTable gates its links on `builtSlugs.has(slug)`, so the
+  // path-keyed BUILT_ROUTES set it was handed before never matched a row.
+  const liveSlugs = await listLiveServiceSlugs();
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
@@ -78,7 +81,7 @@ export default function ServicesPage() {
       <Section padding="lg">
         <Container size="lg">
           <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.map((service) => (
+            {liveServices.map((service) => (
               <li key={service.slug}>
                 <Link
                   href={`/services/${service.slug}`}
@@ -91,11 +94,11 @@ export default function ServicesPage() {
                   <span className="text-fg text-body-sm font-semibold tabular-nums">
                     From {formatGBP(service.pricing.startingAmount)}{" "}
                     <span className="text-fg-muted font-normal">
-                      {cadenceLabel[service.pricing.cadence]}
+                      {pricingQualifier(service.pricing)}
                     </span>
                   </span>
                   <span className="text-link text-body-sm inline-flex items-center gap-1 font-medium">
-                    See {service.name.toLowerCase()}
+                    See {service.name}
                     <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                   </span>
                 </Link>
@@ -113,7 +116,7 @@ export default function ServicesPage() {
               title="What each service starts at."
               intro="These are real starting points for scoped work, not teaser figures. Scope moves them — pages, integrations, complexity — and we tell you which on the first call rather than after it."
             />
-            <PricingTable services={services} builtSlugs={[...BUILT_ROUTES]} />
+            <PricingTable services={liveServices} builtSlugs={liveSlugs} />
           </div>
         </Container>
       </Section>

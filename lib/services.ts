@@ -1,5 +1,6 @@
 import { z } from "zod";
 
+import { LIVE_SERVICE_SLUGS } from "@/data/services";
 import { getMdx, listMdx, type LoadedMdx } from "@/lib/mdx";
 
 /*
@@ -43,4 +44,14 @@ export function getServiceContent(slug: string): Promise<ServiceContent> {
 export async function getServiceContentSlugs(): Promise<string[]> {
   const all = await listMdx(SERVICES_COLLECTION, serviceFrontmatterSchema);
   return all.map((entry) => entry.slug);
+}
+
+/**
+ * MDX present AND `status: "live"` in the catalogue — the set every public
+ * surface links to. A draft has a body and prerenders (`noindex`) for preview,
+ * but the grid, the pricing table and the sitemap must not point at it.
+ */
+export async function listLiveServiceSlugs(): Promise<string[]> {
+  const authored = await getServiceContentSlugs();
+  return authored.filter((slug) => LIVE_SERVICE_SLUGS.has(slug));
 }

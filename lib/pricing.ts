@@ -1,4 +1,4 @@
-import type { PriceCadence } from "@/data/services";
+import type { PriceCadence, ServicePricing } from "@/data/services";
 
 /*
  * Price formatting — GBP.
@@ -35,3 +35,30 @@ export const cadenceLabel: Record<PriceCadence, string> = {
   project: "per project",
   monthly: "per month",
 };
+
+export const SETUP_LABEL = "set-up";
+export const USAGE_LABEL = "usage at cost";
+
+/**
+ * Everything after the starting figure, in one string:
+ * "per month per location · £299 set-up · usage at cost" — each part only
+ * when the catalogue entry carries it. The hero, the price card, the grid
+ * card and the pricing table all render this, so a monthly plan with a set-up
+ * component reads the same on every surface (research 11 AE.2).
+ */
+export function pricingQualifier(pricing: ServicePricing): string {
+  const cadence = pricing.unit
+    ? `${cadenceLabel[pricing.cadence]} ${pricing.unit}`
+    : cadenceLabel[pricing.cadence];
+  const parts = [cadence];
+  if (pricing.setupAmount !== undefined) {
+    parts.push(`${formatGBP(pricing.setupAmount)} ${SETUP_LABEL}`);
+  }
+  if (pricing.usageNote) parts.push(USAGE_LABEL);
+  return parts.join(" · ");
+}
+
+/** "Starting at £99 per month per location · £299 set-up · usage at cost". */
+export function formatPricing(pricing: ServicePricing): string {
+  return `Starting at ${formatGBP(pricing.startingAmount)} ${pricingQualifier(pricing)}`;
+}

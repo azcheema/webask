@@ -28,18 +28,76 @@ export type Currency = "GBP";
 
 export type PriceCadence = "project" | "monthly";
 
+/**
+ * The three groups the services index, nav and footer are organised by
+ * (research 02 § 6, D13): project work you own, the monthly work that brings
+ * customers in, and the system that keeps it running.
+ */
+export type ServiceCategory = "build" | "grow" | "automate";
+
+/**
+ * `draft`: the page prerenders when its MDX exists but renders `noindex`, and
+ * is excluded from the nav, the sitemap, the services grid, the pricing table
+ * and the contact form. Flip to `live` in the same commit as the boundary
+ * edits and the `BUILT_ROUTES` entry (research 11 § 7).
+ */
+export type ServiceStatus = "draft" | "live";
+
 export type ServicePricing = {
   /** Starting price as a whole number in the smallest practical unit (pounds). */
   readonly startingAmount: number;
   readonly currency: Currency;
   readonly cadence: PriceCadence;
+  /**
+   * Per-unit qualifier appended to the cadence ("per location") where the
+   * work is per profile or per site. Rendered as "per month per location".
+   */
+  readonly unit?: string;
+  /** One-off set-up component of a monthly plan. Rendered as "· £X set-up". [D4] */
+  readonly setupAmount?: number;
+  /**
+   * Shown under the price where metered usage (messages, minutes) is passed
+   * through at cost. Its presence adds "· usage at cost" to the price line.
+   */
+  readonly usageNote?: string;
   /** Optional one-liner clarifying what bends the price (shown in place of an upper limit). */
   readonly priceNote?: string;
+};
+
+/**
+ * A tier of a bundled monthly plan. Rendered on the bundle page and in the
+ * /pricing Plans block; emitted as an `OfferCatalog` by `bundleCatalogNode`
+ * (research 09 bundle catalogue § 3, App. AB.1).
+ */
+export type BundleTier = {
+  readonly slug: string;
+  readonly name: string;
+  /** 12–20 words; the card's one line. */
+  readonly summary: string;
+  /** Monthly starting figure and the set-up component for this tier. Both [D4]. */
+  readonly pricing: {
+    readonly startingAmount: number;
+    /** Set-up is charged per module added, not per tier. */
+    readonly setupAmount: number;
+    readonly currency: Currency;
+    readonly cadence: "monthly";
+    readonly usageNote: string;
+  };
+  /** 4–6 bullets, each naming the component service page it draws on. */
+  readonly includes: ReadonlyArray<string>;
+  readonly notIncluded?: ReadonlyArray<string>;
+  /** Component service slugs this tier bundles — drives the "each part is a service of its own" links. */
+  readonly componentSlugs: ReadonlyArray<string>;
 };
 
 export type Service = {
   readonly slug: string;
   readonly name: string;
+  readonly category: ServiceCategory;
+  /** See `ServiceStatus`. Every public surface reads `liveServices`, never `services`. */
+  readonly status: ServiceStatus;
+  /** Sprite symbol id suffix in `service-marquee.tsx` (`svc-<icon>`). */
+  readonly icon?: string;
   /** One-line value prop used in nav, cards, and meta descriptions. */
   readonly summary: string;
   /** Hero subhead on the detail page — 12–20 words. */
@@ -66,12 +124,50 @@ export type Service = {
    * template omits the FAQ block + JSON-LD when this is absent or empty.
    */
   readonly faqs?: ReadonlyArray<FaqItem>;
+  /** Bundle only — the plan's tiers (App. AB.1). */
+  readonly tiers?: ReadonlyArray<BundleTier>;
 };
 
+export type ServiceCategoryDefinition = {
+  readonly id: ServiceCategory;
+  readonly label: string;
+  /** Intro under the category heading on the grouped services index. */
+  readonly blurb: string;
+};
+
+/**
+ * Display order of the three groups. Strings from research
+ * `09-content-drafts/index-and-nav.md`; the label "Automate & run" is D13.
+ */
+export const SERVICE_CATEGORIES: ReadonlyArray<ServiceCategoryDefinition> = [
+  {
+    id: "build",
+    label: "Build",
+    blurb: "Websites and software you own — priced as projects, handed over, kept in your name.",
+  },
+  {
+    id: "grow",
+    label: "Grow",
+    blurb:
+      "Being found, chosen and booked: search, your profile, your reviews, the calls you miss and the follow-up you never send. All monthly.",
+  },
+  {
+    id: "automate",
+    label: "Automate & run",
+    blurb: "The system behind it, kept running — hosted plans, CRM builds, AI, maintenance.",
+  },
+];
+
+/**
+ * Every service, drafts included — for authoring, `getServiceBySlug` and the
+ * `[service]` route's 404 check. Public surfaces read `liveServices`.
+ */
 export const services: ReadonlyArray<Service> = [
   {
     slug: "web-development",
     name: "Web Development",
+    category: "build",
+    status: "live",
     summary: "Custom website design and build for UK small businesses that need to be found.",
     heroSubhead:
       "Fixed-fee website design and build — fast on mobile, accessible to WCAG 2.2 AA, and hosted in accounts you own.",
@@ -143,6 +239,8 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "ecommerce-development",
     name: "E-Commerce",
+    category: "build",
+    status: "live",
     summary: "Shopify, headless and custom shops built to UK consumer rules.",
     heroSubhead:
       "Design, build and launch on Shopify, headless or custom — checkout, price display, reviews and consent wired to UK rules from day one.",
@@ -214,6 +312,8 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "web-app-development",
     name: "Web Applications",
+    category: "build",
+    status: "live",
     summary: "Bespoke staff tools, booking systems, and customer portals.",
     heroSubhead:
       "Staff tools, customer portals, and booking systems where access control, retention, and the audit trail are code you can inspect — not promises in a policy.",
@@ -280,6 +380,8 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "ui-ux-design",
     name: "UI / UX Design",
+    category: "build",
+    status: "live",
     summary:
       "Conversion-focused interface design and information architecture, built to WCAG 2.2 AA.",
     heroSubhead:
@@ -347,6 +449,8 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "seo",
     name: "SEO",
+    category: "grow",
+    status: "live",
     summary: "Organic search for UK businesses — technical fixes, keyword work, and writing.",
     heroSubhead:
       "Organic search run for the UK market — crawl and Core Web Vitals, keywords researched on UK volumes, and writing published every month.",
@@ -418,6 +522,8 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "mobile-app-development",
     name: "Mobile Apps",
+    category: "build",
+    status: "live",
     summary: "iOS and Android apps for what people open weekly, not once a year.",
     heroSubhead:
       "Native and cross-platform mobile apps — designed, built, and shipped to the App Store and Play Store with the same rigour as a website build.",
@@ -484,6 +590,8 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "crm-automation",
     name: "CRM",
+    category: "automate",
+    status: "live",
     summary:
       "GoHighLevel-first CRM builds, HubSpot migrations, and automations wired to UK consent rules.",
     heroSubhead:
@@ -551,6 +659,8 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "ai-integration",
     name: "AI Integration",
+    category: "automate",
+    status: "live",
     summary:
       "Inbound voice agents, chatbots that answer from your own material, and workflow automation.",
     heroSubhead:
@@ -618,6 +728,8 @@ export const services: ReadonlyArray<Service> = [
   {
     slug: "maintenance-support",
     name: "Maintenance",
+    category: "automate",
+    status: "live",
     summary: "Monthly care plans — patching, monitoring, and a quarterly re-read of your pages.",
     heroSubhead:
       "Monthly cover for a live site, app or CRM — patching, monitoring and improvement hours on a fixed cadence, plus a quarterly re-read of the claims your pages still make.",
@@ -690,7 +802,8 @@ export function getServiceBySlug(slug: string): Service | undefined {
 
 /**
  * Resolve a service's `relatedServiceSlugs` to full `Service` objects, in
- * declared order, dropping any slug that doesn't resolve. Returns an empty
+ * declared order, dropping any slug that doesn't resolve **or is not live** —
+ * a live page never links to a draft (research 11 § 7). Returns an empty
  * array for an unknown service slug.
  */
 export function getRelatedServices(slug: string): Service[] {
@@ -698,8 +811,26 @@ export function getRelatedServices(slug: string): Service[] {
   if (!service) return [];
   return service.relatedServiceSlugs
     .map((relatedSlug) => getServiceBySlug(relatedSlug))
-    .filter((related) => related !== undefined);
+    .filter((related): related is Service => related !== undefined && related.status === "live");
 }
 
-/** Slugs in canonical display order — handy when consumers want the order without the full object. */
+/** Slugs in canonical display order, drafts included — see `LIVE_SERVICE_SLUGS` for the public set. */
 export const SERVICE_SLUGS: ReadonlyArray<string> = services.map((service) => service.slug);
+
+/** The catalogue as the site presents it: nav, grid, sitemap, pricing table, contact form. */
+export const liveServices: ReadonlyArray<Service> = services.filter(
+  (service) => service.status === "live",
+);
+
+/** Live slugs — the set every public surface should gate on. */
+export const LIVE_SERVICE_SLUGS: ReadonlySet<string> = new Set(
+  liveServices.map((service) => service.slug),
+);
+
+/** Services in one category, in catalogue order. Defaults to the live set. */
+export function getServicesByCategory(
+  category: ServiceCategory,
+  source: ReadonlyArray<Service> = liveServices,
+): ReadonlyArray<Service> {
+  return source.filter((service) => service.category === category);
+}

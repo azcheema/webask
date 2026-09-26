@@ -2,16 +2,16 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 import type { Service } from "@/data/services";
-import { cadenceLabel, formatGBP, VAT_NOTE } from "@/lib/pricing";
+import { formatGBP, pricingQualifier, VAT_NOTE } from "@/lib/pricing";
 
 type PricingTableProps = {
-  /** The full 9-service catalog, in canonical display order. */
+  /** The live catalogue (`liveServices`), in canonical display order. */
   readonly services: ReadonlyArray<Service>;
   /**
-   * Slugs whose `/services/[slug]` detail page is built. Only these rows link
-   * out — gated identically to the service route's own MDX check, so the
-   * unbuilt rows render as plain text today and auto-link in Phase 2 with no
-   * pricing-page change. Nothing viewport-prefetches a 404.
+   * Bare slugs (not paths) whose `/services/[slug]` detail page is built AND
+   * live — `listLiveServiceSlugs()`. Only these rows link out, so a row whose
+   * page is unwritten or still a draft renders as plain text and nothing
+   * viewport-prefetches a 404 or a `noindex` page.
    */
   readonly builtSlugs: ReadonlyArray<string>;
 };
@@ -74,7 +74,7 @@ export function PricingTable({ services, builtSlugs }: PricingTableProps) {
                 <span className="text-fg text-body font-semibold">
                   {formatGBP(pricing.startingAmount)}
                 </span>
-                <span className="text-fg-muted text-body-sm">{cadenceLabel[pricing.cadence]}</span>
+                <span className="text-fg-muted text-body-sm">{pricingQualifier(pricing)}</span>
               </div>
             </li>
           );

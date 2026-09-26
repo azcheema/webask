@@ -3,7 +3,7 @@ import { ArrowRight, Check, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import type { Service } from "@/data/services";
-import { cadenceLabel, formatGBP, VAT_NOTE } from "@/lib/pricing";
+import { formatGBP, pricingQualifier, VAT_NOTE } from "@/lib/pricing";
 
 type PricingCardProps = {
   /** The catalog entry to price. Reused on the service detail page and the pricing page. */
@@ -30,11 +30,15 @@ export function PricingCard({ service }: PricingCardProps) {
           <span className="text-display text-fg font-semibold tracking-tight">
             {formatGBP(pricing.startingAmount)}
           </span>
-          <span className="text-body-sm text-fg-muted">{cadenceLabel[pricing.cadence]}</span>
+          <span className="text-body-sm text-fg-muted">{pricingQualifier(pricing)}</span>
         </div>
         {/* Hedged until decision gate D2 resolves — see lib/pricing.ts VAT_NOTE. */}
         <span className="text-caption text-fg-muted">{VAT_NOTE}</span>
       </div>
+
+      {pricing.usageNote ? (
+        <p className="text-body-sm text-fg-muted text-pretty">{pricing.usageNote}</p>
+      ) : null}
 
       {pricing.priceNote ? (
         <p className="text-body-sm text-fg-muted text-pretty">{pricing.priceNote}</p>
