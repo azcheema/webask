@@ -104,6 +104,18 @@ Anti-patterns:
 
 ### Service page sections (in order)
 
+> **Amended 27 September 2026 for the monthly plans and landing pages** (founder's brief; research
+> `13-page-shape-proposal.md` § 3). Those pages lead with the problem, not the price: **hero** (the
+> problem in the visitor's words, the outcome, the price line) → **Sound familiar?** (three use-case
+> scenes) → **How it works** (three to five plain steps) → **What the starting price buys** (the basic
+> scope only, then an "Add when you need it" list naming the extras without prices) → **What keeps
+> you safe** (one section, ≤ 120 words, only where a rule protects the client; the full reasoning
+> lives in a linked post) → **What it costs** (≤ 60 words) → **FAQs** (six, pricing first, 60–100
+> words each) → related services → CTA. Body target 700–900 words. Writer's test for every rule:
+> if the sentence starts with a regulation, cut or move it; if it starts with what happens to the
+> customer, keep it. The project services below keep the inherited order but adopt the same word
+> budgets and the same rule that the starting price buys a basic scope.
+
 1. **Hero** — value prop + outcome + primary CTA
 2. **Who it's for** — explicit audience qualifiers (helps prospects self-identify or self-disqualify)
 3. **What you get** — deliverables checklist (concrete, not vague)
@@ -182,7 +194,9 @@ Every image MUST have explicit `width` and `height` to prevent CLS.
 - Each question is a real question a prospect would search or ask.
 - Phrase questions as they'd be typed: "How much does a med spa website cost?" not "What is the typical pricing of a custom website for an aesthetic clinic?"
 - Lead the answer with the answer. AI Overviews quote the first sentence of an answer.
-- 80–150 words per answer typically. Concrete, not hedged.
+- 80–150 words per answer typically. Concrete, not hedged. _(Monthly plans and landing pages,
+  from 27 September 2026: 60–100 words — the answers that surface in UK AI Overviews are short,
+  and the FAQ block is no longer the page's second body.)_
 - Include numbers, timeframes, ranges where possible.
 - The FIRST FAQ on a service/industry page is always the pricing or cost question — it's the most-searched intent.
 

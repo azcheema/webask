@@ -794,20 +794,21 @@ export const services: ReadonlyArray<Service> = [
     ],
   },
   {
-    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Copy from
-    // docs/research/local-business-services/09-content-drafts/services/missed-call-text-back.catalogue.md
-    // (verified S8, 25 September 2026). Every £ figure is the [D4] working set
-    // of 25 September 2026 (research 00 § 6) — not a confirmed price.
+    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Reshaped
+    // 27 September 2026 to research 13 § 3 (problem first, basic scope at the
+    // starting figure, six FAQs at 60–100 words); facts unchanged from the
+    // S8-verified draft. Every £ figure is the [D4] working set of
+    // 25 September 2026 (research 00 § 6) — not a confirmed price.
     slug: "missed-call-text-back",
     name: "Missed-Call Text-Back",
     category: "grow",
     status: "draft",
     summary:
-      "Every call you miss gets a text back in seconds — a service message, from a number registered to your business, into one inbox.",
+      "Every call you miss gets a text back in seconds, so the customer waits for you instead of ringing the next name on the list.",
     heroSubhead:
-      "Missed calls texted back in seconds from a number registered to your business — a service message, not an offer.",
+      "You're on a job. The phone rings out. Seconds later the caller has a text from your business — sorry we missed you, reply here or book.",
     whoItsFor:
-      "UK local businesses whose phone rings while they are working — trades, garages, salons, practices — and who lose the enquiry to whoever answers first.",
+      "trades, garages, salons and practices whose phone rings while they are working, and who lose the enquiry to whoever answers first.",
     pricing: {
       startingAmount: 99, // [D4] — working set, 25 September 2026
       currency: "GBP",
@@ -816,80 +817,69 @@ export const services: ReadonlyArray<Service> = [
       usageNote:
         "Messages beyond the plan's 100 conversations a month are passed through at cost, on a published GBP schedule reviewed quarterly.",
       priceNote:
-        "What moves the price: a new UK number versus a divert, WhatsApp and web chat in the inbox, and how many conversations a month the plan carries.",
+        "What moves the price: a new UK number instead of a divert, web chat and WhatsApp in the inbox, and more conversations a month.",
     },
     includes: [
-      "A divert from the number you publish, or a UK number registered to your business, with the text-back firing on every missed call, evenings included",
-      "Reply templates written as service messages — sender named, no offers, a way to stop — with a booking link where you take bookings",
-      "One inbox for the replies, with the mobile app for whoever holds the phone; web chat and WhatsApp join the same inbox on the larger tier",
-      "Set-up, a test from a real phone, and thirty days of tuning, then month to month",
-      "A monthly report: calls missed, texts sent, conversations that replied, bookings that followed",
-      "100 conversations a month in the plan — a conversation is one text-back and the replies to it — with usage beyond that at cost on the published schedule",
+      "A divert from the number you already publish — nothing on your van or website changes",
+      "One text, sent within seconds of every missed call, written with you and tested from a real phone",
+      "One inbox and a phone app for the replies, so whoever is free can answer",
+      "100 conversations a month — a text-back and the replies to it",
+      "A one-page monthly report: calls missed, texts sent, replies, bookings",
     ],
     notIncluded: [
-      "Promotional follow-up to the numbers that called — that is Email & SMS Marketing, and it needs a lawful basis first",
-      "Answering the call itself — that is the AI Receptionist plan",
+      "A new UK number, web chat and WhatsApp in the same inbox, or more conversations — each is an add-on, priced when you need it",
+      "Answering the call itself (the AI Receptionist) or promotional follow-up to callers (Email & SMS Marketing)",
     ],
     primaryCta: { label: "Set up missed-call text-back", href: "/contact" },
     relatedServiceSlugs: ["ai-receptionist", "crm-automation"],
     faqs: [
       {
-        question: "What does the monthly plan cost, and what is in the set-up fee?",
+        question: "What does missed-call text-back cost, and what is in the set-up fee?",
         answer:
-          "The plan is a one-off set-up fee of £249 and a monthly fee starting at £99, or £129 with web chat and WhatsApp in the inbox, + VAT where applicable. Set-up covers the divert or the number registered to your business, the message templates written as service messages, the inbox and app for whoever holds the phone, a test from a real phone, and thirty days of tuning. The monthly fee covers the running of it and an allowance of conversations; messages beyond the allowance are passed through at cost on a published schedule. What moves the price is small: a new number instead of a divert, WhatsApp and web chat in the inbox, and how many conversations a month the plan carries. Your industry does not move it.",
+          "From £99 a month with a one-off £249 set-up, or £129 a month with web chat and WhatsApp in the same inbox, + VAT where applicable. Set-up covers the divert or the number registered to your business, the text written with you, the inbox and app, a test from a real phone and thirty days of tuning. The monthly fee covers the running of it and 100 conversations a month; texts beyond that are passed through at cost on a published pound schedule. Your industry does not move the price.",
       },
       {
-        question: "Is an automatic text back to a missed call allowed under UK rules?",
+        question: "Can I automatically text back a missed call in the UK?",
         answer:
-          "It depends on what the text says. The UK's marketing rules, PECR, treat a text as electronic mail, and the regulator's test for whether a message is marketing is about content: a message sent for customer-service purposes is a service message, but if it has elements that are direct marketing, even as a side purpose, it counts as marketing. So the text we send says who missed the call, how to reply and how to book, and carries no offer, no discount and no review link. Add a promotion and it becomes marketing to a number you hold no consent for, which is the one thing the plan will not do.",
+          "Yes, as long as the text is a customer-service message: who missed the call, how to reply, how to book, how to stop. The UK's marketing rules treat a text as electronic mail, and the regulator's test is about content, not intent — a message with an offer in it counts as marketing even if that was not its main purpose. So the text carries no offer, no discount and no review link, and the plan will not add one. The full rules are in our guide.",
       },
       {
-        question: "Do I need a new phone number, or can you use the one on my van and my website?",
+        question: "Do I need a new phone number?",
         answer:
-          "You keep the number you publish. The recommended set-up is a divert: unanswered calls forward to a line the platform watches, and the text goes out from a number tied to your business, so nothing on your van, website or Google profile changes. If you want a second line instead, a UK local number is registered to your business on the platform's regulatory record, which needs your business name, registration and a UK business address; a Companies House number means no further documents, and a business not registered in the UK gets a UK mobile or freephone number instead. Either way the number belongs to your business, not to us. Branded sender names only work one way, so a text that expects a reply always comes from a real number.",
+          "No. The recommended set-up is a divert: unanswered calls forward to a line we set up, and the text goes out from a number tied to your business, so nothing on your van, website or Google profile changes. If you would rather have a second line, a UK number is registered to your business on the platform's record — with your business name, registration and a UK address — and it belongs to you, not to us.",
       },
       {
         question: "Who replies when a caller texts back?",
         answer:
-          "You do, by default, from the inbox on your phone or a screen, and the plan is set up so that whoever is free can answer. The caller's reply lands in one inbox, alongside your website chat where you have it, the conversation history stays with the contact, and the second person to pick it up can see what the first one said. Nothing replies automatically beyond the first text, because a second automated message is where a service message starts drifting into a sequence. If nobody in your business can watch the inbox, say so on the first call; the honest answer may be that the AI Receptionist plan, which answers the call itself, fits you better than a text-back.",
+          "You do, from the inbox on your phone or a screen, and whoever is free can answer because the conversation stays with the contact. Nothing replies automatically after the first text; a second automated message is where a service message starts to become a sequence. If nobody in your business can watch the inbox, say so on the first call — the AI Receptionist, which answers the call itself, may fit you better.",
       },
       {
         question: "Can it text on WhatsApp as well as SMS?",
         answer:
-          "The text-back itself goes by SMS, because it answers a call and SMS reaches every mobile without an app. WhatsApp can be added to the same inbox for customers who have given you their number and opted in to WhatsApp messages from you, which WhatsApp's own policy requires before anything is sent there. WhatsApp messages are metered by the platform and passed through at cost on the published schedule, so they appear as their own line. Web chat from your website lands in the same inbox with neither constraint. If your customers already message you on WhatsApp, we switch it on at set-up; if not, it is a setting you can add later.",
+          "The text-back itself goes by SMS, because it answers a call and reaches every mobile without an app. WhatsApp can be added to the same inbox as an add-on, for customers who have given you their number and opted in to WhatsApp messages from you, which WhatsApp's own policy requires. Those messages are metered by the platform and passed through at cost, as their own line. Web chat from your website lands in the same inbox with no such constraint.",
       },
-      {
-        question: "What happens to the numbers it collects, and who owns them?",
-        answer:
-          "Each number is used to reply to that call and for nothing else unless the caller asks. It is not added to a campaign, a newsletter or a review request, because a number collected from a missed call carries no consent for marketing. You are the controller of the data; on a plan we host, we process it for you under a written contract, and the contact and conversation records are exported to you on request. Your privacy notice needs to say that you process callers' numbers to return their calls and for how long you keep them, and we set the retention in the account to match. If a caller replies STOP, the number is marked so that nothing further is sent.",
-      },
-      {
-        question: "What does a message cost once I go past the allowance?",
-        answer:
-          "Messages beyond the plan's 100 conversations a month are passed through at cost. The platform bills them in US dollars; we charge them at the rates on our published pound schedule, which we reset each quarter against the exchange rate, so the figure on the schedule is the figure you pay. The plan fee itself is fixed in pounds for twelve months. A text is billed per 160-character segment in the basic character set, which is why the template is written to fit one segment and avoids emoji and typographic dashes, which switch the message to an encoding that fits 70 characters in a segment instead of 160 and so split it into more. The monthly report shows how many texts went out, so you can see the allowance being used before the schedule applies.",
-      }, // Q4/Q5 decided 25 September 2026 (research 00 § 6); figures still [D4]
       {
         question: "What if I want to leave — what do I keep?",
         answer:
-          "On a divert, leaving is switching the divert off; your published number was never ours. If a number was registered to your business, it stays registered to your business. Your contacts, conversations and forms are exported to you on request. On a plan we host, the sub-account can be transferred to an agency account of your own; the Local Business Plans page lists what moves, what arrives switched off and what you reconnect, and the checklist for it is written at set-up rather than at the exit.",
+          "On a divert, leaving is switching the divert off; your published number was never ours. A number registered to your business stays registered to your business. Your contacts, conversations and forms are exported to you on request, and on a plan we host the account can be transferred to one of your own, with the checklist for it written at set-up rather than at the exit.",
       },
     ],
   },
   {
-    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Copy from
-    // docs/research/local-business-services/09-content-drafts/services/review-management.catalogue.md
-    // (verified S8, 25 September 2026). Every £ figure is the [D4] working set
-    // of 25 September 2026 (research 00 § 6) — not a confirmed price.
+    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Reshaped
+    // 27 September 2026 to research 13 § 3; facts unchanged from the
+    // S8-verified draft. Every £ figure is the [D4] working set of
+    // 25 September 2026 (research 00 § 6) — not a confirmed price.
     slug: "review-management",
     name: "Review Management",
     category: "grow",
     status: "draft",
     summary:
-      "Google reviews asked for the lawful way — everyone asked, nobody incentivised, nothing hidden — with replies drafted for you.",
+      "Every customer asked for a Google review, nobody incentivised, nothing hidden — and every review answered in your voice.",
     heroSubhead:
-      "Every customer asked, nobody incentivised, nothing hidden — reviews run to the CMA's guidance and Google's policy, replies drafted for you.",
+      "Good work, few reviews, and the bad one shows first. We ask every customer, once, and draft the reply to every review for you to approve.",
     whoItsFor:
-      "local businesses chosen on their Google reviews — trades, garages, salons, clinics, practices — that ask nobody today, or ask only the happy ones.",
+      "trades, garages, salons, clinics and practices chosen on their Google reviews, that ask nobody today or ask only the happy ones.",
     pricing: {
       startingAmount: 99, // [D4] — working set, 25 September 2026
       currency: "GBP",
@@ -901,18 +891,18 @@ export const services: ReadonlyArray<Service> = [
       usageNote:
         "Request texts and emails are metered by the platform and passed through at cost, on a published GBP schedule reviewed quarterly.",
       priceNote:
-        "What moves the price: locations, the platforms watched beyond Google, and whether replies are drafted for you or also posted for you.",
+        "What moves the price: locations, the platforms watched beyond Google, and whether replies are also posted for you.",
     },
     includes: [
-      "Request flows by SMS and email after the visit or job, timed per service, that ask every customer and filter nobody",
-      "Google and Facebook reviews in one place, with replies drafted for your approval within two working days",
-      "A site widget that shows your rating honestly — no hidden negatives, no cherry-picked wall (reviews stay on Google for aesthetic clinics until the advertising position is settled)",
-      "A one-page policy for your team — no incentives, no gating, what to do with a bad review — so the automation and the front desk agree",
+      "A request by text or email after every job or visit, timed for your service, that asks everyone and filters nobody",
+      "Google and Facebook reviews in one place, with a reply drafted in your voice within two working days",
+      "Nothing posted in your name until you have approved it",
+      "A one-page policy for your team — no incentives, no gating, what to do with a bad review",
       "A monthly report: requests sent, reviews received, rating movement, reviews still unanswered",
     ],
     notIncluded: [
-      "Suppressing genuine negative reviews, or writing reviews — the first is what the CMA's guidance says may infringe the ban on publishing reviews in a misleading way, the second a fake review the Act has banned since 6 April 2025; we do neither",
-      "Crisis or press reputation work",
+      "Replies posted for you, Trustpilot or Checkatrade watched, a site widget, or extra locations — each is an add-on, priced when you need it",
+      "Removing genuine negative reviews or writing reviews — we do neither, on any plan",
     ],
     primaryCta: { label: "Start a review programme", href: "/contact" },
     relatedServiceSlugs: ["google-business-profile", "email-sms-marketing"],
@@ -920,60 +910,50 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does review management cost per month?",
         answer:
-          "A one-off set-up fee of £299 and a monthly fee starting at £99 per location, or £149 with replies posted for you and the other platforms watched, + VAT where applicable. Set-up covers connecting your Google and Facebook accounts, writing the request flows and their timing for each service, the one-page policy for your team, and the widget if you want one. The monthly fee covers the request flows, the replies drafted for your approval, the monitoring and the report; the texts and emails the requests ride on are passed through at cost on a published schedule. What moves the price: how many locations you have, the platforms watched beyond Google, and whether replies are also posted for you after approval. What does not move it is how many reviews you want, because that is not a number we sell or promise.",
+          "From £99 a month per location with a one-off £299 set-up, or £149 a month with replies posted for you and the other platforms watched, + VAT where applicable. Set-up covers connecting your Google and Facebook accounts, writing the request flows and their timing, the one-page policy for your team and the approval workflow. The texts and emails the requests ride on are passed through at cost. What does not move the price is how many reviews you want, because that is not a number we sell or promise.",
       },
       {
         question: "Is it legal to ask customers for Google reviews in the UK?",
         answer:
-          "Yes, provided you ask in the way the rules allow. Since 6 April 2025 the Digital Markets, Competition and Consumers Act has made it illegal to write or commission fake reviews, to conceal that a review was incentivised, or to present reviews misleadingly, and the Competition and Markets Authority can fine directly, up to ten per cent of global annual turnover or £300,000, whichever is higher. Its guidance says that asking customers generally, without predetermining the contents or sentiment of the review, is not prohibited. Google's own policy adds that businesses should not selectively solicit positive reviews or offer anything for a review. Asking every customer, offering nothing and showing what comes back is what the guidance allows, and it is exactly how the programme works.",
+          "Yes, if you ask the way the rules allow. Since 6 April 2025 it has been illegal to write or commission fake reviews, to hide that a review was incentivised, or to present reviews misleadingly. The CMA's guidance says asking customers generally, without steering what they write, is not prohibited, and Google's policy adds that businesses should not selectively ask the happy ones or offer anything for a review. Asking everyone, offering nothing and showing what comes back is exactly how the programme works.",
       },
       {
         question: "Can we ask only the customers we know are happy?",
         answer:
-          "No, and the programme is built so that you cannot. The CMA's guidance describes encouraging just those who are satisfied to leave reviews as a form of cherry-picking, alongside suppressing negative reviews, and Google's policy says merchants should not selectively solicit positive reviews. The tool feature that asks customers to rate you privately first and sends the public link only to the happy ones is that shortcut implemented as software, so we do not run it. Every customer gets the same request at the same point in the job. The rating you earn that way may be lower than a curated one would have been, and it is the only one you can defend if anyone looks.",
+          "No, and the programme is built so that you cannot. The CMA's guidance calls encouraging just the satisfied customers to leave reviews a form of cherry-picking, and Google's policy says not to selectively solicit positive reviews. The tool feature that asks people to rate you privately first and sends the public link only to the happy ones is that shortcut as software, so we do not run it. Every customer gets the same request. The rating you earn that way is the only one you can defend.",
       },
       {
         question: "Can we offer a discount or a prize draw for a review?",
         answer:
-          "Not on this plan. Under the Act an incentivised review is not banned, but it must be clearly identifiable as incentivised — usually a prominent label, as an advert, in the CMA's guidance — and concealing the incentive is the banned practice. Google's policy goes further: merchants should not offer payment, discounts or free goods for any review at all, so an incentive risks the reviews and the profile as well as the fine. Dental practices have a third rule of their own from the General Dental Council. Offering nothing satisfies all of them, so we offer nothing, and we will say no if you ask us to add one.",
-      },
-      {
-        question: "Who writes the replies, and can they go out without us seeing them?",
-        answer:
-          "We draft them, and nothing is posted in your name until you have approved it. Each review gets a short, specific reply in your voice: thanking the good ones, taking the bad ones seriously without arguing, and never disputing a customer's account in public. Drafts reach you within two working days of the review appearing. If you want replies posted for you after a standing approval, that can be added, and even then any reply to a negative review comes to you first. A reply generated and posted unseen speaks in your name with nobody having read it, and we will not automate that.",
+          "Not on this plan. An incentivised review is not banned in the UK, but it must be clearly labelled as one, and hiding the incentive is the banned practice. Google's policy goes further and says not to offer payment, discounts or free goods for any review, so an incentive risks the profile as well. Dental practices have a third rule from the General Dental Council: no incentives at all. Offering nothing satisfies all three, so we offer nothing.",
       },
       {
         question: "What happens when we get a bad review?",
         answer:
-          "It stays up, it gets a reply, and it gets read. We do not remove or suppress genuine negative reviews; doing so is what the CMA's guidance says may infringe the Act's ban on misleading presentation, and a rating with no low scores looks curated to everyone who reads it. We draft a reply that acknowledges the complaint, says what you will do and moves the conversation offline, for your approval. If the review breaks Google's own rules, such as spam, an obvious fake or a competitor, we report it through Google's process, and whether it comes down is Google's decision, not ours. The monthly report lists every review still unanswered so none is missed.",
-      },
-      {
-        question: "We are a dental practice — do the GDC's rules change anything?",
-        answer:
-          "They add one rule and remove one option. The General Dental Council requires genuine reviews with no incentives at all, not merely disclosed ones, so a practice may never offer anything for a review. The programme already meets that because it offers nothing to anyone. Everything else is the same: every patient asked at the right moment after the appointment, a plain request with nothing attached, replies drafted for your approval, and a widget that shows the rating as Google shows it. Recall reminders and review requests are kept as separate flows so a request never rides on a clinical message. The dental practices page sets out the wider GDC position on your website.",
+          "It stays up, it gets a reply, and it gets read. We do not remove or suppress genuine negative reviews; a rating with no low scores looks curated to everyone who sees it. We draft a reply that acknowledges the complaint, says what you will do and moves the conversation offline, for your approval. If the review breaks Google's own rules — spam, an obvious fake, a competitor — we report it through Google's process, and whether it comes down is Google's decision, not ours.",
       },
       {
         question: "Do you also handle Trustpilot, Checkatrade or Facebook?",
         answer:
-          "Google and Facebook are connected on the standard plan, because those are the profiles the programme is built around. Trustpilot, Checkatrade, Reviews.io and similar platforms can be added to the watch list as a priced addition, so a review there gets a drafted reply too. We do not run separate request flows to several platforms at once; a customer gets one request, to one place, because asking the same person twice is how a programme starts to feel like pressure. If a trade platform is where your customers already are, we can point the single request there instead of Google and say so in the scope.",
+          "Google and Facebook are connected on the standard plan. Trustpilot, Checkatrade, Reviews.io and similar platforms can be added to the watch list as an add-on, so a review there gets a drafted reply too. We do not run separate request flows to several platforms at once: a customer gets one request, to one place, because asking the same person twice is how a programme starts to feel like pressure. If a trade platform is where your customers already are, the single request can point there instead.",
       },
     ],
   },
   {
-    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Copy from
-    // docs/research/local-business-services/09-content-drafts/services/ai-receptionist.catalogue.md
-    // (verified S8, 25 September 2026). Every £ figure is the [D4] working set
-    // of 25 September 2026 (research 00 § 6) — not a confirmed price.
+    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Reshaped
+    // 27 September 2026 to research 13 § 3; facts unchanged from the
+    // S8-verified draft. Every £ figure is the [D4] working set of
+    // 25 September 2026 (research 00 § 6) — not a confirmed price.
     slug: "ai-receptionist",
     name: "AI Receptionist",
     category: "grow",
     status: "draft",
     summary:
-      "A voice agent on a monthly plan that answers the calls you miss, books into your diary and hands over when it should — inbound only.",
+      "The calls you cannot answer, answered: booked into your diary or passed to you with a message, and the caller told it is automated.",
     heroSubhead:
-      "Missed calls answered, booked and handed over when they should be — inbound only, disclosed in its first sentence.",
+      "Nobody is free and the phone rings out. An assistant answers in your name, books or takes a message, and hands over the moment it should.",
     whoItsFor:
-      "businesses that miss calls they would have won, cannot justify a receptionist, and do not need an agent built to a regulated answer set.",
+      "garages, salons, trades and practices that miss calls they would have won, cannot justify a receptionist, and do not need answers on regulated subjects.",
     pricing: {
       startingAmount: 179, // [D4] — working set, 25 September 2026
       currency: "GBP",
@@ -982,19 +962,18 @@ export const services: ReadonlyArray<Service> = [
       usageNote:
         "Minutes beyond the plan's 300 a month are charged at a published GBP rate, reviewed quarterly.",
       priceNote:
-        "What moves the price: minutes a month, calendar and CRM wiring, and how many distinct jobs the agent is scripted to do.",
+        "What moves the price: minutes a month, calendar and CRM wiring, and how many distinct jobs the assistant is scripted to do.",
     },
     includes: [
-      "A GoHighLevel Voice AI agent scripted to a narrow job — answer, qualify, book, take a message, transfer",
-      "Your published number stays; the agent sits behind a divert — out of hours, on overflow, or on every call",
-      "Calendar booking, call summaries to your inbox and CRM record, and a test number to ring before go-live",
-      "The AI-identification disclosure in the opening line, the recording disclosure whenever you switch recording on, and an automatic fallback to voicemail or a person if the agent fails",
-      "Monthly tuning and a report: answered, booked, transferred, dropped, minutes used",
-      "300 minutes a month in the plan, with minutes beyond that at the published pound rate",
+      "An assistant scripted to a narrow job — answer, book, take a message, transfer — behind a divert from the number you publish",
+      "Booking into the calendar you already run, and a summary of every call to your inbox and CRM record",
+      "The automated-assistant disclosure in the first sentence, and a fallback to voicemail or a person if it fails",
+      "A test number you ring before go-live, and monthly tuning",
+      "300 minutes a month, and a monthly report: answered, booked, transferred, dropped, minutes used",
     ],
     notIncluded: [
-      "Outbound calls of any kind — under PECR and Ofcom's rules that is a scoped project with a consent record, under AI Integration",
-      "Answers on regulated subjects — a clinic's treatment questions need the grounded, evaluated build on AI Integration",
+      "More minutes, call recording, a second line, or CRM wiring beyond the calendar — each is an add-on, priced when you need it",
+      "Outbound calls of any kind, and answers on regulated subjects — both are a scoped project under AI Integration",
     ],
     primaryCta: { label: "Try the receptionist", href: "/contact" },
     relatedServiceSlugs: ["missed-call-text-back", "ai-integration"],
@@ -1002,60 +981,50 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does the AI receptionist cost per month, and what do the minutes cost?",
         answer:
-          "A one-off set-up fee of £599 and a monthly fee starting at £179, + VAT where applicable. Set-up covers scripting the narrow job, the divert or number, the calendar and CRM wiring, the disclosure line, the fallback path and a test number for you to ring. The monthly fee covers 300 minutes a month, tuning and the report. Minutes beyond the allowance are charged at a rate published in pounds and reset each quarter against the exchange rate; the platform bills the underlying minutes in US dollars and we pass them through at the rate on that schedule. What moves the price: minutes a month, how much calendar and CRM wiring you need, and how many distinct jobs the agent is scripted to do.",
-      }, // Q8 (one tier) and Q4/Q5 decided 25 September 2026 (research 00 § 6); figures still [D4]
+          "From £179 a month with a one-off £599 set-up, + VAT where applicable. Set-up covers scripting the job, the divert or number, the calendar wiring, the disclosure line, the fallback path and a test number for you to ring. The monthly fee covers 300 minutes, tuning and the report. Minutes beyond the allowance are charged at a rate published in pounds and reset each quarter against the exchange rate. What moves the price is minutes, wiring and how many distinct jobs it is scripted to do.",
+      },
       {
         question: "Is an AI answering my business phone legal in the UK?",
         answer:
-          "For inbound calls, the PECR rules that restrict automated telephony do not arise. PECR's regulation 19 restricts recorded marketing messages sent by automated calling systems, and regulation 21 governs making marketing calls; both are about calls an organisation makes. The receptionist makes no calls: the customer rang you and nothing is being marketed at them. What is unsettled is how an AI voice would be classified if it made marketing calls, which is why the plan never dials out. The transcript, and a recording if you choose to switch recording on, are personal data, so callers are told when a call is recorded, your privacy notice covers it, and a retention period is chosen deliberately. None of this is legal advice, but it is the position we build to.",
+          "For inbound calls, yes. The UK rules that restrict automated telephony are about calls an organisation makes — recorded marketing messages and unsolicited marketing calls. The receptionist makes no calls: the customer rang you and nothing is marketed at them. What is unsettled is how an AI voice would be treated if it made marketing calls, which is why the plan never dials out. Transcripts, and recordings if you switch recording on, are personal data, so callers are told and your privacy notice covers it. This is the position we build to, not legal advice.",
       },
       {
         question: "Will callers know they are talking to an AI?",
         answer:
-          "Yes, in its first sentence: it names your business, says it is an automated assistant, and offers to book, take a message or put the caller through to a person. We could not find a UK statute that requires an assistant to say it is automated; we do it because a caller who believes they are speaking to a person has been misled, and because an assistant that lets people assume it is human is one you will eventually have to apologise for. Call recording is off unless you switch it on; when it is on, the same sentence says the call is recorded, because the ICO's view is that telling callers up front supports fairness even where consent is not strictly required. You hear the opening line yourself on the test number before the plan goes live.",
+          "Yes, in its first sentence: it names your business, says it is an automated assistant, and offers to book, take a message or put the caller through to a person. We found no UK statute that requires this; we do it because a caller who believes they spoke to a person has been misled, and an assistant that lets people assume it is human is one you will eventually have to apologise for. When recording is on, the same sentence says the call is recorded.",
       },
       {
         question: "What happens when it cannot answer a question?",
         answer:
-          "It says so and hands over. The assistant is scripted to a narrow job: book, take a message, answer the short list of questions you approved, or transfer to a person. Anything outside that list, and anything it is unsure about, ends the same way: it tells the caller it will pass them on, takes their details, and either transfers the call or sends you a message to ring them back. Questions about treatments, legal matters or clinical issues are handed over every time by design. If the assistant itself fails, calls fall back to voicemail or a person automatically. The monthly report counts the handovers and the dropped calls, and a rising dropped line is the signal that the script or the divert needs changing.",
+          "It says so and hands over. The assistant is scripted to book, take a message, answer the short list of questions you approved, or transfer to a person; anything outside that, and anything it is unsure about, ends with it taking the caller's details or transferring the call. Treatment, legal and clinical questions are handed over every time by design. If the assistant itself fails, calls fall back to voicemail or a person. The monthly report counts handovers and dropped calls.",
       },
       {
         question: "Does it work with my existing number?",
         answer:
-          "Yes. Your published number does not change. The assistant sits behind a divert, which you set to out of hours only, to overflow when the line is engaged, or to every call. Changing the divert is a setting rather than a project, so a sensible start is out of hours, widening it once the call summaries have earned your trust. If you would rather the assistant had its own line, a UK number is registered to your business on the platform's regulatory record, not to us. There is no new number to print on anything unless you choose one, and the divert can be switched off in a minute if you ever want to stop.",
-      },
-      {
-        question: "Can it book straight into my diary?",
-        answer:
-          "Yes, into the calendar you already run, using the availability rules you set: which services can be booked, which slots, how much notice, and what to say when the diary is full. The booking is confirmed to the caller on the call and, if you want, by a confirmation text that carries the appointment details and nothing promotional. Each call also produces a summary of who called, what they wanted and what happened, into your inbox and onto the contact's record, so a call taken at nine at night is a booking or a message waiting for you at nine the next morning with nothing to retype.",
-      },
-      {
-        question: "What does it do outside opening hours?",
-        answer:
-          "Exactly what it does inside them, which is the point of the divert. Out of hours is the most sensible way to start: the assistant takes every call after closing, books what can be booked into the next available slots, takes messages for the rest, and sends you the summaries so the morning starts with a list rather than a voicemail queue. It states your opening hours when asked and never pretends someone is in. If you want it to cover overflow during the day as well, that is a change to the divert setting rather than a new plan.",
+          "Yes. Your published number does not change. The assistant sits behind a divert, set to out of hours only, to overflow when the line is engaged, or to every call, and changing it is a setting. A sensible start is out of hours, widening it once the call summaries have earned your trust. If you would rather it had its own line, a UK number is registered to your business, not to us, as an add-on.",
       },
       {
         question: "Can it call customers back or chase quotes?",
         answer:
-          "No, and it never will on this plan. The moment an assistant dials out to market anything, PECR requires the person's specific prior consent if the call counts as automated, a Telephone Preference Service screen if it counts as live — and the unsettled question of which an AI voice is becomes the whole case. The plan has no callback or outbound feature you could switch on by mistake. If outbound calling is genuinely the job, it is a separately scoped project on an evidenced consent record under our AI Integration service, and we will tell you when it is not worth doing. The receptionist's job is the calls you miss, not the calls you want to make.",
+          "No, and it never will on this plan. An outbound marketing call from an automated voice needs the person's specific prior consent, or a Telephone Preference Service check if it counts as live, and which of those an AI voice is has not been settled. The plan has no callback or outbound feature you could switch on by mistake. If outbound calling is genuinely the job, it is a separately scoped project on an evidenced consent record under AI Integration.",
       },
     ],
   },
   {
-    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Copy from
-    // docs/research/local-business-services/09-content-drafts/services/google-business-profile.catalogue.md
-    // (verified S8, 25 September 2026). Every £ figure is the [D4] working set
-    // of 25 September 2026 (research 00 § 6) — not a confirmed price.
+    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Reshaped
+    // 27 September 2026 to research 13 § 3; facts unchanged from the
+    // S8-verified draft. Every £ figure is the [D4] working set of
+    // 25 September 2026 (research 00 § 6) — not a confirmed price.
     slug: "google-business-profile",
     name: "Google Business Profile",
     category: "grow",
     status: "draft",
     summary:
-      "Your profile run properly — categories, services, posts, photos, questions and listings — for a real premises or service area, by a firm honest about having none.",
+      "Your profile run properly, every week, in your own account — categories, services, posts, photos, questions and listings.",
     heroSubhead:
-      "Your profile run properly in your own account, for a real premises or service area, by a firm with none.",
+      "Half-filled, unloved, and below a competitor on the map. We run the profile in your own Google account, for a real premises or service area.",
     whoItsFor:
-      "local businesses with premises or a genuine service area whose profile is unclaimed, half-filled or suspended, and who want the map-pack work done without a full SEO retainer.",
+      "shops, salons, practices, garages and trades whose profile is unclaimed, half-filled or suspended, and who want the map work done without a full SEO retainer.",
     pricing: {
       startingAmount: 129, // [D4] — working set, 25 September 2026
       currency: "GBP",
@@ -1064,20 +1033,21 @@ export const services: ReadonlyArray<Service> = [
       // FAQ below says "per location", so the hero must too.
       unit: "per location",
       setupAmount: 249, // [D4]
-      usageNote: "The listings add-on is passed through at cost on the published GBP schedule.",
+      usageNote:
+        "The listings sync add-on is passed through at cost on the published GBP schedule.",
       priceNote:
-        "What moves the price: locations, a suspension to work through, and listings sync to the directories that matter.",
+        "What moves the price: locations, a suspension to work through, and listings sync across a long directory list.",
     },
     includes: [
-      "Audit and set-up in your Google account — you as owner, us as a manager, never the other way round",
-      "Categories, services, attributes, hours, photos and description written to Google's guidelines, with name, phone and address matching your website character for character",
-      "Weekly posts, questions answered, photos guided, and suspicious competitor listings reported",
-      "Listings kept consistent by hand on Bing Places, Apple Business Connect, Yell and FreeIndex, with a sync add-on at cost where several locations make it worth it",
+      "An eligibility check on the first call, then the audit and full first pass in your Google account — you as owner, us as a manager",
+      "Categories, services, attributes, hours, photos and description written to Google's guidelines, matching your website character for character",
+      "A post every week, every customer question answered, and suspicious competitor listings reported",
+      "Bing Places, Apple Business Connect, Yell and FreeIndex kept consistent by hand",
       "A monthly report from Google's own insights",
     ],
     notIncluded: [
-      "Creating a profile for an address nobody works from — a virtual office, a mailbox, your accountant's address — Google rules them ineligible and can suspend them, and we have none of our own for the same reason",
-      "Content, links and technical SEO — that is the SEO retainer",
+      "A suspension appeal, listings synced by tool, or extra locations — each is an add-on, priced when you need it",
+      "A profile for an address nobody works from, and content, links or technical SEO — that is the SEO retainer",
     ],
     primaryCta: { label: "Get your profile managed", href: "/contact" },
     relatedServiceSlugs: ["seo", "review-management"],
@@ -1085,76 +1055,66 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does Google Business Profile management cost?",
         answer:
-          "A one-off set-up fee of £249 and a monthly fee starting at £129 per location, + VAT where applicable. Set-up covers the audit of your existing profile against Google's guidelines, being added as a manager on your account, and the full pass over categories, services, attributes, hours, photos and description. The monthly fee covers weekly posts, questions answered, photo guidance, listings kept consistent and the report from Google's own insights. What moves the price: how many locations you have, a suspension to work through, and syncing to the wider directories, which is added at cost. What does not move it is your industry, and nothing in the price is tied to a ranking.",
+          "From £129 a month per location with a one-off £249 set-up, + VAT where applicable. Set-up covers the eligibility check, the audit of your profile against Google's guidelines, being added as a manager on your account, and the full first pass over categories, services, attributes, hours, photos and description. The monthly fee covers the weekly post, questions answered, listings kept consistent and the report. What moves the price is locations, a suspension to work through, and syncing to the wider directories. Nothing in the price is tied to a ranking.",
       },
       {
         question: "Are we eligible for a profile at all?",
         answer:
-          "Google's test is short: if your business either has a physical location that customers can visit, or travels to customers where they are, you can create a Business Profile. A shop, salon, practice or garage qualifies on the first half; a plumber, a cleaner or a mobile groomer qualifies on the second as a service-area business, and Google says such businesses should hide their address and show the area served. What does not qualify: a rented mailing address you do not work from, which Google calls a virtual office and rules ineligible, and a coworking office unless it has signage, receives customers and is staffed by your people in business hours. We check on the first call and tell you before anything is created.",
+          "Google's test is short: a business either has a physical location customers can visit, or travels to customers where they are. A shop, salon, practice or garage qualifies on the first half; a plumber, a cleaner or a mobile groomer qualifies on the second as a service-area business, with the address hidden and the area served shown. A rented mailing address you do not work from does not qualify, and nor does a coworking office unless it has signage, receives customers and is staffed by your people. We check on the first call.",
       },
       {
         question: "Our profile is suspended — can you get it reinstated?",
         answer:
-          "We can read the profile against Google's guidelines, fix what breaks them, gather the evidence Google asks for and file the appeal properly, and we will tell you which rules the profile breaks. What we cannot do is promise a date or an outcome. Reinstatement is Google's process on Google's timetable, and a profile suspended for an ineligible address stays suspended until the address problem is fixed, not the appeal. If the cause was an address nobody works from, the honest answer is to fix the premises question first, and we will say so rather than file an appeal we expect to fail.",
+          "We can read the profile against Google's guidelines, fix what breaks them, gather the evidence Google asks for and file the appeal properly, and we will tell you which rules it broke. What we cannot do is promise a date or an outcome: reinstatement is Google's process on Google's timetable. A profile suspended for an ineligible address stays suspended until the address is fixed, not the appeal, and if that is the cause we will say so rather than file an appeal we expect to fail.",
       },
       {
         question: "Why do you not have a profile yourselves?",
         answer:
-          "Because we are not eligible for one, and we would rather say so than pretend. WebAsk works remotely with no UK office, and Google's rules require either a location customers can visit or a business that travels to them; a fully remote agency does neither, and a mailbox, a virtual office or an unstaffed desk does not qualify and can be suspended. So we have none and will not create one. It is also why we read the rules closely enough to run yours: the guidelines that shut us out are the ones that decide whether your profile stays up, and a firm with something to lose from bending them is a poor choice to manage a profile that belongs to you.",
+          "Because we are not eligible for one, and we would rather say so than pretend. WebAsk works remotely with no UK office, and Google's rules require a location customers can visit or a business that travels to them; a mailbox, a virtual office or an unstaffed desk does not qualify and can be suspended. It is also why we read the rules closely enough to run yours: the guidelines that shut us out are the ones that decide whether your profile stays up.",
       },
       {
         question: "Who owns the profile and the account?",
         answer:
-          "You do, in your own Google account, and that never changes. We are added as a manager, which is how Google expects a third party to work on an owner's behalf with the owner's consent, and you can remove us in a minute without losing the profile, its reviews or its history. We never hold the owner role, never create a profile in our name for a client, and never verify a location we have not confirmed you operate from. If a previous agency holds the owner role on your profile, recovering it is the first job, before anything else is touched.",
+          "You do, in your own Google account, and that never changes. We are added as a manager, which is how Google expects a third party to work on an owner's behalf with the owner's consent, and you can remove us in a minute without losing the profile, its reviews or its history. We never hold the owner role, never create a profile in our name for a client, and never verify a location we have not confirmed you operate from. If a previous agency holds the owner role, recovering it is the first job.",
       },
       {
         question: "Do we need this if we already pay for SEO?",
         answer:
-          "They are different work. The SEO retainer moves your website in the organic results with content, links and technical fixes; this plan runs the profile that appears in the map results and the knowledge panel. Both use the same name, address and phone, and both benefit from reviews, but the profile is maintained inside Google's product on Google's rules rather than on your site. If your SEO provider already manages the profile properly, you do not need this. If nobody has opened the profile since it was claimed, this plan fixes that without the retainer. The two are priced separately so you can buy the one you are missing.",
-      },
-      {
-        question: "How do reviews fit in?",
-        answer:
-          "They are the part of the profile with a regulator behind it, so they run as their own plan, Review Management, built to the rule of asking every customer, incentivising nobody and hiding nothing. This plan does not send review requests; it keeps the profile the reviews land on complete, accurate and active, and it replies to questions rather than reviews. Where you buy both, the two are set up together so that the request timing and the profile's own posts do not collide. What we will never do on either plan is buy, seed or incentivise reviews; concealing an incentive has been illegal in the UK since 6 April 2025.",
-      },
-      {
-        question: "What about Bing, Apple Maps and Yell?",
-        answer:
-          "They are kept consistent as part of the plan. Bing Places feeds Copilot and, indirectly, ChatGPT; Apple Business Connect feeds Maps on every iPhone; Yell, FreeIndex and the other directories your customers still use carry your details whether you maintain them or not, and a wrong phone number on any of them is a customer who cannot reach you, exactly as on Google. We maintain the ones that matter by hand, with the name, address and phone matching your website character for character. Where a sync tool helps, for several locations or a long directory list, it is added at cost and shown as its own line rather than folded into the fee.",
+          "They are different work. An SEO retainer moves your website in the organic results with content, links and technical fixes; this plan runs the profile that appears in the map results and the knowledge panel, inside Google's product on Google's rules. If your SEO provider already manages the profile properly, you do not need this. If nobody has opened the profile since it was claimed, this plan fixes that without the retainer. The two are priced separately so you can buy the one you are missing.",
       },
     ],
   },
   {
-    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Copy from
-    // docs/research/local-business-services/09-content-drafts/services/landing-pages.catalogue.md
-    // (verified S8, 25 September 2026). Every £ figure is the [D4] working set
-    // of 25 September 2026 (research 00 § 6) — not a confirmed price.
+    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Reshaped
+    // 27 September 2026 to research 13 § 3; facts unchanged from the
+    // S8-verified draft. Every £ figure is the [D4] working set of
+    // 25 September 2026 (research 00 § 6) — not a confirmed price.
     slug: "landing-pages",
     name: "Landing Pages",
     category: "build",
     status: "draft",
     summary:
-      "One page, one job — a campaign, an offer or a booking page — designed, built, wired to your CRM and measured.",
+      "One page for one job — an offer, an event, an advert — designed, built, wired to your CRM and measured, priced as a page.",
     heroSubhead:
-      "One page for one job, designed, built, wired to your CRM and measured — priced as a page, not a website.",
+      "You need one page, fast, and your website cannot give you one. One page, one job, wired to your CRM and measured — priced as a page, not a website.",
     whoItsFor:
-      "businesses running a campaign that needs somewhere to land, and anyone whose site cannot host a new page quickly.",
+      "businesses running an offer, an event or an ad campaign that needs somewhere to land, and anyone whose site cannot host a new page quickly.",
     pricing: {
       startingAmount: 750, // [D4] — working set, 25 September 2026
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "What moves the price: built in GoHighLevel's builder or in code alongside a site we built, copy written for you, and a multi-step funnel rather than one page.",
+        "What moves the price: a coded page instead of a builder page, copy written from a brief, and a three-step funnel rather than one page.",
     },
     includes: [
-      "One page, designed and built — in GoHighLevel's builder inside your account or plan, or in code alongside a site we built",
-      "Form or booking calendar wired to the CRM, consent captured at entry, thank-you and follow-up message set",
+      "One page in the platform's builder, inside your account or plan — headline, reasons, one ask",
+      "Form or booking calendar wired to your CRM, consent captured at entry, thank-you and follow-up message set",
       "Conversion events and campaign tagging, with a report at thirty days",
       "Copy edited from your draft, and two revision rounds",
     ],
     notIncluded: [
-      "Paid media — the page receives the traffic you send it",
-      "A multi-page website — that is Web Development, priced as a project",
+      "A coded page, a three-step funnel, copy written from a brief, or a payment step — each is an add-on, priced as what it is",
+      "Paid media (the page receives the traffic you send it) and a multi-page website — that is Web Development",
     ],
     primaryCta: { label: "Get a landing page quote", href: "/contact" },
     relatedServiceSlugs: ["web-development", "email-sms-marketing"],
@@ -1162,80 +1122,69 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does a landing page cost?",
         answer:
-          "A project price from £750 for a page in the builder, £1,250 for a coded page and £1,950 for a three-step funnel, + VAT where applicable. It covers one page designed and built, the form or booking calendar wired to your CRM with consent captured at entry, the thank-you and follow-up message, conversion events and campaign tagging, a report at thirty days, and two rounds of revisions on copy you supply. What moves the price: whether the page is built in the platform's builder or in code alongside a site we built, whether the copy is written for you rather than edited, and whether it is one page or a short funnel of landing, offer and thank-you pages. Your industry does not move it, and no figure depends on how the page performs.",
+          "From £750 for a page in the builder, £1,250 for a coded page and £1,950 for a three-step funnel, + VAT where applicable. The starting figure covers one page designed and built, the form or calendar wired to your CRM with consent at entry, the thank-you and follow-up message, tracking and campaign tags, a report at thirty days, and two rounds of revisions on copy you supply. What moves it is builder or code, copy written or edited, and one page or a funnel. No figure depends on how the page performs.",
       },
       {
-        question: "Builder or code — which will you use for mine, and why does it matter?",
+        question: "Builder or code — which will you use for mine?",
         answer:
-          "The first call decides, and the reason goes into the scope. A page in the platform's builder is fast to make, easy for you to duplicate for the next campaign, and wired to the CRM without integration because it is the CRM; the trade is speed, because a builder page carries the builder's own scripts, and we do not hold it to the mobile speed floor we measure our coded builds against. A page in code sits alongside a site we built, with the same speed and accessibility, deployed on your hosting; it costs more per page and takes longer. Traffic from an advert or an email tolerates the builder well; a page that has to rank in search or live inside a site you paid for wants code.",
+          "The first call decides, and the reason goes into the scope. A page in the platform's builder is fast to make, easy for you to duplicate for the next campaign, and wired to the CRM without integration because it is the CRM; the trade is speed, because it carries the builder's own scripts. A page in code sits alongside a site we built with the same speed and accessibility, costs more and takes longer. Traffic from an advert or an email tolerates the builder well; a page that has to rank wants code.",
       },
       {
         question: "Will a builder-hosted page be as fast as the sites you build?",
         answer:
-          "We do not promise it will be, and we say so rather than pretend otherwise. Our coded builds are measured against a mobile speed budget on every build; a page in the platform's builder loads the builder's scripts and styles first, and we do not hold it to that floor. For a landing page whose visitors arrive from an advert, an email or a QR code, that is a trade a campaign can reasonably accept, because the visitor has already decided to come. For a page that needs to rank in search, or that sits inside a site whose standards you paid for, the coded option is the right one, and the first call is where we choose. Either way, the page is measured after launch and the report tells you what it did.",
+          "We do not promise it will be, and we say so rather than pretend. Our coded builds are measured against a mobile speed budget on every build; a page in the builder loads the builder's scripts and styles first, and we do not hold it to that floor. For visitors who arrive from an advert, an email or a QR code, that is a trade a campaign can reasonably accept, because they have already decided to come. For a page that needs to rank in search, the coded option is the right one.",
       },
       {
         question: "Does the page need a cookie banner?",
         answer:
-          "If it sets anything non-essential, yes, to the UK standard: accept and reject with equal prominence, nothing pre-ticked, and nothing non-essential set before the visitor chooses. Since 5 February 2026 there are exceptions that matter for a campaign page: storage whose sole purpose is statistical, such as counting visits to improve the page, may run without consent provided the visitor is told what it is for and given a simple way to object, and so may remembering a preference. Advertising and cross-site tracking are not in the exceptions, so an ad platform's conversion pixel still waits for a yes. We build the banner to the rules as they stand on the day and check the builder's default settings before launch rather than trusting them.",
-      },
-      {
-        question: "Can you write the copy?",
-        answer:
-          "Yes, as an add-on scoped on its own. The base price assumes you send a draft and we edit it into a page: shorter, in a sensible order, with one ask and nothing competing with it. Writing from a brief is separate work, priced separately, and it starts with the rules for your sector before it starts with persuasion, because a page that converts and then has to come down has converted nothing. For a clinic that means the page promotes the consultation and names no treatment product; for anyone showing a price it means the price is stated clearly, including whether it includes VAT. Two revision rounds are included either way.",
+          "If it sets anything non-essential, yes: accept and reject with equal prominence, nothing pre-ticked, and nothing non-essential set before the visitor chooses. Since 5 February 2026, storage whose only purpose is statistical — counting visits to improve the page — may run without consent if the visitor is told and given a simple way to object, and so may remembering a preference. Advertising and cross-site tracking are not in the exceptions, so an ad platform's conversion pixel still waits for a yes.",
       },
       {
         question: "Can it take a deposit or a booking?",
         answer:
-          "Yes. A booking calendar or a payment step can be wired into the page, and both feed your CRM so the booking or the deposit appears on the contact's record without retyping. Taking money or a booking from a consumer who is not in front of you is a distance contract under the Consumer Contracts Regulations, so the page carries the information the customer must be given before they are bound, including whether they have a right to cancel and how to use it, on the page rather than behind a link. If the deposit is for a regulated service, the sector's own rules apply on top. We set the terms and the wording with you at scope, because they are part of the page, not an afterthought.",
-      }, // sourced: CCRs regs 5, 13, 29 (research 10: S110, S112, S114)
-      {
-        question: "How long does one page take?",
-        answer:
-          "A page in the builder is measured in days once the copy and images are in hand; a coded page alongside an existing site is measured in a week or two, because it goes through the same build and checks as the site did. A three-step funnel adds time for each step and for the wiring between them. What sets the date is the material: your draft copy, your photographs, your offer and your approvals. Where those are ready, the page is quick; where they are not, the schedule waits on them rather than on the build, and the scope says so. The report follows thirty days after launch.",
+          "Yes, as an add-on. A booking calendar or a payment step can be wired into the page, and both feed your CRM so the booking or the deposit appears on the contact's record. Taking money or a booking from a consumer who is not in front of you is a distance contract, so the page carries the information the customer must be given before they are bound, including the fourteen-day cancellation right where it applies, on the page rather than behind a link. We set the terms with you at scope.",
       },
       {
         question: "Who owns the page afterwards?",
         answer:
-          "You do. A builder page lives in your account or your hosted plan and stays there when the campaign ends, to be paused, duplicated or deleted by you. A coded page lives in the repository and on the hosting you already own. The domain, the form submissions, the tags and the analytics are yours from the first day. If you never work with us again, the page keeps working and nothing about it depends on us. On a hosted plan, the page leaves with the sub-account if you ever transfer it, in the same documented way as everything else in the account.",
+          "You do. A builder page lives in your account or your hosted plan and stays there when the campaign ends, to be paused, duplicated or deleted by you. A coded page lives in the repository and on the hosting you already own. The domain, the form submissions, the tags and the analytics are yours from the first day. If you never work with us again, the page keeps working and nothing about it depends on us.",
       },
     ],
   },
   {
-    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Copy from
-    // docs/research/local-business-services/09-content-drafts/services/email-sms-marketing.catalogue.md
-    // (verified S8, 25 September 2026). Every £ figure is the [D4] working set
-    // of 25 September 2026 (research 00 § 6) — not a confirmed price.
+    // Draft: prerenders `noindex`, on no surface (research 11 § 7). Reshaped
+    // 27 September 2026 to research 13 § 3; facts unchanged from the
+    // S8-verified draft. Every £ figure is the [D4] working set of
+    // 25 September 2026 (research 00 § 6) — not a confirmed price.
     slug: "email-sms-marketing",
     name: "Email & SMS Marketing",
     category: "grow",
     status: "draft",
     summary:
-      "Campaigns written, sent and reported every month — to the people you may lawfully message, with the opt-out in every one.",
+      "Campaigns written, sent and reported every month, to the past customers you may lawfully message, with an opt-out in every one.",
     heroSubhead:
-      "Campaigns written, sent and reported monthly — only to people you may lawfully message, with an opt-out in every one.",
+      "Hundreds of past customers in a system, and nobody messages them. Two campaigns a month, one automation, and a list you are allowed to send to.",
     whoItsFor:
-      "businesses with a list and no time — a CRM that is live and quiet, customers who never hear from them, lapsed customers nobody has asked back.",
+      "dentists, salons, trades and any business with a list and no time — a CRM that is live and quiet, customers who never hear from them.",
     pricing: {
       startingAmount: 395, // [D4] — working set, 25 September 2026
       currency: "GBP",
       cadence: "monthly",
       usageNote:
-        "SMS segments beyond the plan's allowance are passed through at cost, on a published GBP schedule reviewed quarterly.",
+        "Texts beyond the plan's allowance are passed through at cost, on a published GBP schedule reviewed quarterly.",
       priceNote:
-        "What moves the price: campaigns a month, automations built or reviewed, the state of the consent records you hold, and SMS volume.",
+        "What moves the price: campaigns a month, automations built or reviewed, the state of the consent records you hold, and text volume.",
     },
     includes: [
-      "Two campaigns a month — email, SMS or both — written to your brief and sent from your platform",
-      "One automation built or reviewed each month — welcome, follow-up, rebooking, win-back — with the lawful-basis filter checked before it runs",
-      "A reactivation campaign each quarter, on the records that can carry it",
-      "List hygiene — bounces, opt-outs honoured across every tool, sole-trader and freemail records segmented as individuals",
-      "A monthly report tied to replies and bookings, not open rates",
-      "Up to 10,000 emails and 200 SMS segments a month in the plan, or 25,000 and 500 on the larger one, with segments beyond that at cost",
+      "A consent audit in month one — every record tagged by who it belongs to and whether you may message them",
+      "Two campaigns a month, email or text, written to your brief and sent from your platform",
+      "One automation built or reviewed each month — welcome, follow-up, rebooking, win-back — with the lawful-basis check in front of it",
+      "List hygiene: bounces removed, opt-outs honoured in every tool, sender named in every message",
+      "A monthly report of replies and bookings, not open rates, with up to 10,000 emails and 200 texts a month",
     ],
     notIncluded: [
-      "Bought, rented or scraped lists — never imported, never sent to",
-      "The CRM build itself — that is CRM Automation, priced as a project",
+      "Four campaigns a month with a quarterly landing page, a WhatsApp channel, or more texts — each is an add-on, priced when you need it",
+      "Bought, rented or scraped lists (never imported), and the CRM build itself — that is CRM Automation, priced as a project",
     ],
     primaryCta: { label: "Get a campaign plan", href: "/contact" },
     relatedServiceSlugs: ["crm-automation", "review-management"],
@@ -1243,43 +1192,33 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does the monthly plan cost, and what is in the first month?",
         answer:
-          "A monthly fee starting at £395 for two campaigns a month, or £695 for four with a landing page each quarter, + VAT where applicable, and no set-up fee. The first month is the consent audit: every record on your list is tagged by legal form and by the basis on which it may be messaged, records without a basis are parked, and nothing is sent until that is done. From month two, two campaigns a month and one automation built or reviewed. What moves the price: campaigns a month, automations, the state of the consent records you hold, and SMS volume, which is metered by the platform and passed through at cost on a published schedule. The size of the list does not move it.",
+          "From £395 a month for two campaigns, or £695 for four with a landing page each quarter, + VAT where applicable, and no set-up fee. The first month is the consent audit: every record tagged by who it belongs to and whether you may message them, with records that have no basis parked, and nothing sent until that is done. From month two, two campaigns and one automation a month. Texts beyond the allowance are passed through at cost. The size of your list does not move the price.",
       },
       {
         question: "Who can we legally email or text in the UK?",
         answer:
-          "It turns on the legal form of the recipient, not on what the address looks like. Limited companies, LLPs and public bodies are corporate subscribers and PECR's consent rule does not apply to them. Sole traders, unincorporated partnerships and anyone on a personal email or number are individuals, and they may only receive unsolicited marketing if they have consented, or if the narrow soft opt-in applies: their details came from a sale or negotiations for a sale, the marketing is for your similar products or services, and they were given a simple way to refuse at collection and in every message since. A text counts as electronic mail under the same rules. The CRM page sets it out in full; this plan applies it to every send.",
+          "It turns on who the recipient is, not what the address looks like. Limited companies, LLPs and public bodies can be messaged without prior consent. Sole traders, partnerships and anyone on a personal email or number need to have consented, or to have bought from you or negotiated a sale, be sent similar products only, and have been given a simple way to refuse when their details were collected and in every message since. A text counts as email under the same rules. The CRM page sets it out in full.",
       },
       {
         question: "Our list is old — can you reactivate it?",
         answer:
-          "Some of it, lawfully. The month-one consent audit sorts the records into those with a basis to be messaged and those without. The first group gets a reactivation campaign written to bring them back. The second group is not emailed or texted at all, not even to ask: the ICO counts contacting people to ask for consent to marketing as direct marketing, so the request would be the very message you may not send. Those people can be reached by post, by a live call after a Telephone Preference Service check, or at their next visit, and limited companies can be emailed without consent, sender named, with a way to stop. What we will not do is send an offer to everyone who ever gave you a number. The number that survives the audit, not your contact count, is the first honest figure about your list.",
+          "Some of it, lawfully. The audit sorts the records into those you may message and those you may not. The first group gets a reactivation campaign written to bring them back. The second group is not emailed or texted at all, not even to ask: asking for consent to marketing counts as marketing. Those people can be reached by post, by a live call after a Telephone Preference Service check, or at their next visit. What we will not do is send an offer to everyone who ever gave you a number.",
       },
       {
         question: "Do we own the platform and the list?",
         answer:
-          "Yes to the list, always. The platform depends on the plan you choose. If your CRM lives in an account you own, we send from it and the subscription stays in your name. If you are on a hosted plan, the sending runs from a sub-account under our licence, you remain the controller of the data, we process it under a written contract, and your contacts, consent records and campaign history are exported to you on request. Either way the consent records are built into the contact records, not held in a spreadsheet of ours, so the lawful basis for every send leaves with you if you leave.",
+          "The list, always. The platform depends on the plan: if your CRM lives in an account you own, we send from it and the subscription stays in your name; on a hosted plan the sending runs from a sub-account under our licence, you remain the controller of the data, and your contacts, consent records and campaign history are exported to you on request. The consent records live on the contact records, not in a spreadsheet of ours, so the lawful basis for every send leaves with you if you leave.",
       },
       {
         question: "Can you send on WhatsApp too?",
         answer:
-          "Yes, for the people who asked for it. WhatsApp's own business policy allows messages only to customers who gave you the number and opted in to hearing from you on WhatsApp, so it is never a first-contact channel, and PECR's consent rules sit on top for anything promotional. The consent audit records which channel each contact agreed to, and a campaign goes out by email, text or WhatsApp accordingly. WhatsApp messages are metered by the platform per message and passed through at cost on the published schedule as their own line. For the customers who chose it, WhatsApp can be the channel they answer fastest; for everyone else it is a channel they did not ask for, and WhatsApp's policy exists to stop exactly that.",
+          "Yes, as an add-on, for the people who asked for it. WhatsApp's own policy allows messages only to customers who gave you the number and opted in to hearing from you there, so it is never a first-contact channel, and the consent rules sit on top for anything promotional. The audit records which channel each contact agreed to, and a campaign goes by email, text or WhatsApp accordingly. WhatsApp messages are metered by the platform and passed through at cost as their own line.",
       },
       {
-        question: "We are a clinic — what can a follow-up message say?",
+        question: "What does a text cost us?",
         answer:
-          "It promotes the consultation, not the treatment. For a clinic an automated email or text that promotes a treatment is an advert, because the advertising code applies to organic content and not only to paid ads, and a prescription-only medicine may not be advertised to the public; the regulator treats the familiar euphemisms as promotion of the medicine too. So a follow-up says what a consultation covers, who it is with and how to book, and it never names a product. Every clinic campaign is written to that rule before it is written to convert, and where a message is genuinely borderline CAP's Copy Advice service is free and is asked before it goes out.",
+          "Texts are metered by the platform per 160-character segment and billed in US dollars; we pass them through at the pound rate on our published schedule, reset each quarter against the exchange rate, with nothing added. The plan carries 200 segments a month, or 500 on the larger plan, and the schedule applies beyond that. Campaign texts are written to fit one segment wherever the message allows, and each names the sender and carries a way to stop.",
       },
-      {
-        question: "How many campaigns a month, and who writes them?",
-        answer:
-          "Two on the standard plan, more on a larger one, and we write them. You give a brief, a few lines on what the month is about, and we write each campaign in your voice, check it against the rules for your sector, send it from your platform to the segment that may receive it, and report on it two weeks later. A campaign is a message with a purpose: a seasonal reminder, a new service, a price change, a piece of advice worth sending. One automation a month is built or reviewed alongside, with the lawful-basis filter in front of it. If you would rather write the copy yourself, we edit and send it instead.",
-      }, // Q17 (the Plus tier) decided 25 September 2026 as the research 07 § 4 working set (00 § 6, D4); figures still [D4]
-      {
-        question: "What does an SMS cost us?",
-        answer:
-          "A text is metered by the platform per 160-character segment and billed in US dollars; we pass it through at the pound rate on our published schedule. That schedule is reset each quarter against the exchange rate and nothing is added to it. Each plan carries an allowance of 200 segments a month, or 500 on the larger plan, and the schedule applies beyond it; the plan fee is fixed in pounds for twelve months. Campaign texts are written to fit one segment in the basic character set wherever the message allows, and each names the sender and carries a way to stop — which the rules require, and which keeps your sending number in good standing.",
-      }, // Q4/Q5 decided 25 September 2026 (research 00 § 6); figures still [D4]
     ],
   },
 ] as const;
