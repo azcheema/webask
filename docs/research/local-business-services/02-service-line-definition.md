@@ -7,6 +7,11 @@
 > § 2.2 scores every candidate on that evidence and confirms the page set, § 3 fills the per-service
 > template, § 7 finalises the bundle. Every verdict remains a proposal for the brainstorm (D9, D13)
 > until `00` § 6 records a decision; nothing here changes code.
+>
+> **28 September 2026 — usage is not included (founder).** The usage allowances in this file are
+> withdrawn: everything the platform meters (texts, calls, AI minutes, WhatsApp messages, email
+> sends, number rental and add-ons) is billed on top at cost, based on what the client uses
+> (`00` § 6).
 
 ## 1. Delivery models, defined once (planning § 4.1)
 
@@ -183,7 +188,7 @@ ship (re-verified in `app/(marketing)/services/page.tsx` on 25 September 2026).
   because the divert, the number's regulatory bundle and the inbox are the service; a client who wants
   it in their own account buys `crm-automation`.
 - **Compliance flags.** C01 (service message — closed for the design, open as law), C05 (numbers, KYC,
-  senders — the wallet-line spot-check still open), C18 (WhatsApp); rules R01–R03, R06, R10, R12, R36,
+  senders — the wallet-line spot-check moved to the first client's wallet on 28 September 2026), C18 (WhatsApp); rules R01–R03, R06, R10, R12, R36,
   R37, R39; templates J.7.
 - **Client-verifiable KPIs.** Calls missed · texts sent · conversations that replied · bookings that
   followed (from the calendar) · conversations used against the allowance. Never a recovery

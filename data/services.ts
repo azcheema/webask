@@ -744,7 +744,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Do you maintain WordPress sites that someone else built?",
         answer:
-          "Yes. An inherited site starts with a short audit rather than a start date. On WordPress that means upkeep and review rather than development inside the platform: which plugins are still maintained, what the theme is doing, and which embeds set cookies nobody signed off. New features on a WooCommerce shop are an E-Commerce project. If a plan would only prop up a cracked foundation, we say so and quote the fix or the rebuild instead.",
+          "Yes. An inherited site starts with a short audit rather than a start date. On WordPress that means upkeep and review rather than development inside the platform: which plugins are still maintained, what the theme is doing, and which embeds set cookies nobody signed off. A plan's monthly hours there cover copy edits, image swaps and fixes; a new page or feature is quoted as a project, and on a WooCommerce shop a new feature is an E-Commerce project. If a plan would only prop up a cracked foundation, we say so and quote the fix or the rebuild instead.",
       },
       {
         question: "What happens when my website goes down?",
@@ -918,8 +918,10 @@ export const services: ReadonlyArray<Service> = [
     // 27 September 2026 to research 13 § 3; facts unchanged from the
     // S8-verified draft. £199 a month and £499 set-up adopted as launch
     // prices, 28 September 2026 (research 00 § 6). Platform usage is billed on
-    // top at cost, not included (founder, 28 September 2026). Still open:
-    // the wallet-line spot-check (research 01 § 10 item 1).
+    // top at cost, not included (founder, 28 September 2026). Launch usage
+    // is priced from the platform's published rates converted to pounds,
+    // rechecked against the first client's wallet (founder, 28 September 2026;
+    // research 00 § 6).
     slug: "ai-receptionist",
     name: "AI Receptionist",
     category: "grow",

@@ -44,18 +44,18 @@ across from `d:\naxdor` per doc 01, and this bundle sits alongside them as the U
 
 ## Stack snapshot (inherited from naxdor.com)
 
-| Layer      | Choice                                                           |
-| ---------- | ---------------------------------------------------------------- |
-| Framework  | Next.js 16.2.x (App Router, Turbopack)                           |
-| React      | 19.2.x                                                           |
-| TS         | strict, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes` |
-| Styling    | Tailwind v4 + `@theme` tokens                                    |
-| Components | shadcn/ui on **Base UI** (not Radix)                             |
-| Content    | MDX in repo → Payload CMS later                                  |
-| Hosting    | Vercel (new, separate project)                                   |
-| Email      | Resend                                                           |
-| Locale     | **en-GB only** — no i18n routing library needed                  |
-| Currency   | **GBP**, "+ VAT where applicable" (see 03 § VAT)                 |
+| Layer      | Choice                                                             |
+| ---------- | ------------------------------------------------------------------ |
+| Framework  | Next.js 16.2.x (App Router, Turbopack)                             |
+| React      | 19.2.x                                                             |
+| TS         | strict, `noUncheckedIndexedAccess`, `exactOptionalPropertyTypes`   |
+| Styling    | Tailwind v4 + `@theme` tokens                                      |
+| Components | shadcn/ui on **Base UI** (not Radix)                               |
+| Content    | MDX in repo → Payload CMS later                                    |
+| Hosting    | Vercel (new, separate project)                                     |
+| Email      | Resend                                                             |
+| Locale     | **en-GB only** — no i18n routing library needed                    |
+| Currency   | **GBP**, "excl. VAT" (D2 position adopted 2026-09-28; see 03 § A2) |
 
 ## Locked decisions (2026-07-27 — do not re-litigate)
 
@@ -69,25 +69,25 @@ across from `d:\naxdor` per doc 01, and this bundle sits alongside them as the U
 
 ## Open decision gates
 
-Seven gates. **Four resolved 2026-07-27; three still open.**
+Eight gates. **Five resolved 2026-07-27; D2 and D4 adopted 2026-09-28; D3 still open.**
 
-| #      | Gate                                              | Status                                                                                                                            |
-| ------ | ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **D1** | UK presence                                       | ✅ **Fully remote, no UK location.** No Google Business Profile; `areaServed`-only schema; Oxford address removed from `/contact` |
-| **D6** | CRM emphasis                                      | ✅ **GoHighLevel-first**, HubSpot as second section (founder call on future adoption)                                             |
-| **D7** | Anchor city                                       | ✅ **Manchester.** Hubs: Manchester → Cheshire → Leeds; North-West-first expansion                                                |
-| **D8** | Site framing                                      | ✅ **National, service-led** — city focus surfaces via `/locations/*`, not the home page                                          |
-| **D5** | Brand identity                                    | ✅ **Deep Teal `#0F766E` primary + Geist typographic wordmark.** Token block in [`01`](01-inherited-from-naxdor.md) § D5          |
-| **D2** | UK VAT (NETP £0 threshold vs. B2B reverse charge) | 🔴 Open — blocks `/pricing` final copy. **Accountant**                                                                            |
-| **D3** | UK GDPR Art. 27 representative (+ ICO fee)        | 🔴 Open — blocks `/legal/privacy`. Art. 27 now **near-certain**; ICO fee likely N/A. **Legal**                                    |
-| **D4** | Final GBP price list                              | 🔴 Open — blocks `/pricing` and all service pages. **Founder**                                                                    |
+| #      | Gate                                              | Status                                                                                                                                                                                               |
+| ------ | ------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **D1** | UK presence                                       | ✅ **Fully remote, no UK location.** No Google Business Profile; `areaServed`-only schema; Oxford address removed from `/contact`                                                                    |
+| **D6** | CRM emphasis                                      | ✅ **GoHighLevel-first**, HubSpot as second section (founder call on future adoption)                                                                                                                |
+| **D7** | Anchor city                                       | ✅ **Manchester.** Hubs: Manchester → Cheshire → Leeds; North-West-first expansion                                                                                                                   |
+| **D8** | Site framing                                      | ✅ **National, service-led** — city focus surfaces via `/locations/*`, not the home page                                                                                                             |
+| **D5** | Brand identity                                    | ✅ **Deep Teal `#0F766E` primary + Geist typographic wordmark.** Token block in [`01`](01-inherited-from-naxdor.md) § D5                                                                             |
+| **D2** | UK VAT (NETP £0 threshold vs. B2B reverse charge) | ✅ **Adopted 2026-09-28:** businesses only, reverse charge, no VAT on invoices, on an AI assistant's answer matching the research; no HMRC or Skatteverket confirmation. **Founder** (no accountant) |
+| **D3** | UK GDPR Art. 27 representative (+ ICO fee)        | 🔴 Open — blocks `/legal/privacy`. Art. 27 now **near-certain**; ICO fee likely N/A. **Legal**                                                                                                       |
+| **D4** | Final GBP price list                              | ✅ **Launch prices adopted 2026-09-28** (research `00` § 6). **Founder**                                                                                                                             |
 
 D1/D6/D7/D8 detailed in [`00-overview.md`](00-overview.md) § Decision gates; D2–D4 likewise;
 D5 in [`01-inherited-from-naxdor.md`](01-inherited-from-naxdor.md) § D5. Full status table
 in [`06-build-plan.md`](06-build-plan.md) § Decision gates.
 
-> **Phase 0 is fully unblocked.** The three open gates are all external — an accountant, a
-> solicitor and a founder pricing call — and none of them land before Phase 1.
+> **Phase 0 is fully unblocked.** The one open gate, D3, is external (a solicitor) and blocks
+> `/legal/privacy` final. D2 and D4 were adopted by the founder on 2026-09-28.
 
 ## Key principle (non-negotiable)
 

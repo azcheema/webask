@@ -119,7 +119,7 @@ statute sourcing in S8. `FAQPage` constraint: every answer stands alone without 
 
 ## 3. `BundleTier` type and the `tiers` array (App. AB.1)
 
-> **28 September 2026 — usage is not included (founder).** Everything the platform meters — texts, calls, AI minutes, WhatsApp messages, email sends, number rental and add-ons — is billed on top at cost, based on what the client uses; on a plan WebAsk hosts, that is the published pound schedule. The included allowances below (100 conversations, 300 minutes, 10,000 emails and 200 or 500 segments) are withdrawn; the service pages no longer promise any. Recorded in `00` § 6. Each tier's `usageNote` below needs the same change when the bundle is built.
+> **28 September 2026 — usage is not included (founder).** Everything the platform meters — texts, calls, AI minutes, WhatsApp messages, email sends, number rental and add-ons — is billed on top at cost, based on what the client uses; on a plan WebAsk hosts, that is the published pound schedule. The included allowances in this file (100 conversations, 300 minutes, 10,000 emails and 200 or 500 segments) are withdrawn; the service pages no longer promise any. Recorded in `00` § 6. Each tier's `usageNote` below needs the same change when the bundle is built.
 
 Everything here waits for the § 4.7 type extension (`tiers`, `setupAmount`, `usageNote`, `status`)
 and for D4; every figure is a `[D4]` placeholder. The FAQ strings feed `FAQPage` JSON-LD on `/pricing`

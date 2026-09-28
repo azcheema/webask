@@ -133,7 +133,8 @@ approval workflow and the widget.
 | Receptionist | inbound agent on a divert; booking; summaries; disclosures; fallback; tuning; report; 300 minutes a month | outbound calls; regulated answer sets | £179 per month [D4]                      | monthly    | £599 [D4]   |
 | Minutes      | beyond 300                                                                                                | —                                     | on the schedule (§ 2.1), per minute [D4] | in arrears | —           |
 
-> **28 September 2026 — adopted at £199 a month with a £499 set-up** (300 minutes unchanged; `00` § 6).
+> **28 September 2026 — adopted at £199 a month with a £499 set-up** (`00` § 6). The 300 included
+> minutes were withdrawn the same day: usage is not included (the usage note in this section).
 > £179 sat at the floor of the managed band while £599 sat mid-band for set-up; the swap lowers the
 > barrier to start and stays inside the £149–£449 managed band and the £249–£899 set-up band read on
 > 24 September.
@@ -193,7 +194,7 @@ figures the market publishes (£195 + VAT on one page) are the shape it follows.
 because the work is per profile. The listings add-on exists only where a platform sub-account exists
 (a hosted plan, or the client's own account); otherwise directories are done by hand inside the plan.
 
-> **28 September 2026 — usage is not included (founder).** Everything the platform meters — texts, calls, AI minutes, WhatsApp messages, email sends, number rental and add-ons — is billed on top at cost, based on what the client uses; on a plan WebAsk hosts, that is the published pound schedule. The included allowances below (100 conversations, 300 minutes, 10,000 emails and 200 or 500 segments) are withdrawn; the service pages no longer promise any. Recorded in `00` § 6.
+> **28 September 2026 — usage is not included (founder).** Everything the platform meters — texts, calls, AI minutes, WhatsApp messages, email sends, number rental and add-ons — is billed on top at cost, based on what the client uses; on a plan WebAsk hosts, that is the published pound schedule. The included allowances in this file (100 conversations, 300 minutes, 10,000 emails and 200 or 500 segments) are withdrawn; the service pages no longer promise any. Recorded in `00` § 6.
 
 **Local Business Plans (bundle)**
 
@@ -383,6 +384,13 @@ checkout. Item 6: one receptionist tier with the reasons printed; call recording
 by the client's choice. Item 7: the same price for M1 and M2 stands. Three conditions before any
 figure leaves `[D4]`: the wallet-line spot-check (`01` § 10.1), the `[founder]` rate (`private/07`
 § 6), and the accountant's answers to § 6.2.
+
+> **28 September 2026.** The founder adopted launch prices without waiting for the three
+> conditions (`00` § 6): the wallet-line spot-check became a recheck of the public-file rates against
+> the first client's wallet; the `[founder]` rate became implied earnings per hour; the accountant's
+> answers were not obtained, and none of § 6.2's four questions was part of the adopted D2 answer
+> (3 and 4 have a working position, the businesses-only terms and the "excl. VAT" display, but no
+> adviser answer; 4 waits on 1 to 3).
 
 ## Sources
 
