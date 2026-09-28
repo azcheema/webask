@@ -616,6 +616,14 @@ and it reads as a US import to exactly the audience we're targeting.
 Displayed as **"Starting at £X"** + custom-quote CTA — the inherited pattern. Care Plan
 tiers convert from Naxdor's USD ladder (Bronze / Silver / Gold) to GBP.
 
+> **28 September 2026 — D4 resolved.** Adopted as launch prices with four changes: CRM
+> automation **£3,500** (the table's £2,500 sat inside the GoHighLevel implementation band but
+> below every UK HubSpot partner band read on 27 September); web applications **£4,500** for a
+> focused tool (one workflow, sign-in with roles, one integration), with multi-user platforms
+> from £9,500; and, for the local-business line, review management £129 / £179 and the AI
+> receptionist £199 with a £499 set-up. Mobile apps stay at £12,000. Every other anchor stands.
+> The VAT presentation below changed the same day to **"excl. VAT"** (doc 03 § A2).
+
 **VAT presentation:** "+ VAT where applicable" until decision gate D2 resolves. Do not print
 "inc. VAT" or "ex. VAT" definitively before then — see
 [`03-uk-compliance.md`](03-uk-compliance.md) § VAT.

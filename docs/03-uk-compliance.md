@@ -74,6 +74,17 @@ not print "inc. VAT" or "ex. VAT" definitively until resolved. If you sell onlin
 prices to consumers, you must show VAT-inclusive prices or make the exclusion very clear —
 another reason to settle B2B-only positioning explicitly.
 
+> **28 September 2026 — B2B-only positioning settled; interim VAT position adopted.** The
+> founder has no accountant and adopted the position researched on 26 September (HMRC VAT
+> Notice 741A general rule; GOV.UK and the VAT Registration Manual on NETPs; Skatteverket on
+> services to UK businesses): WebAsk **supplies businesses only**, UK business customers
+> account for VAT under the reverse charge, and every figure shows **"excl. VAT"**. The terms
+> state the businesses-only line and the reverse charge (`data/copy/legal.ts`, "Services,
+> prices and proposals"); `/pricing` carries the explanation. The status row above stays
+> ⛔ in substance until the two free checks in `00-overview.md` § D2 are done; if either
+> answer differs, change `VAT_NOTE` and `VAT_EXPLAINER` in `lib/pricing.ts` and the FAQ
+> strings that repeat "excl. VAT".
+
 **Action items**
 
 - [ ] Accountant confirms: B2B reverse charge vs UK VAT registration

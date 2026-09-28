@@ -114,6 +114,10 @@ and the test from a real phone; it is the same figure for both tiers because the
 | Reviews           | SMS/email request flows; Google + Facebook in one place; replies drafted; widget; policy; report  | posting replies for you; other platforms | £99 per month per location [D4]  | monthly | £299 [D4]   |
 | Reviews + Posting | Reviews plus replies posted for you after approval, and Trustpilot/Checkatrade/Reviews.io watched | —                                        | £149 per month per location [D4] | monthly | £299 [D4]   |
 
+> **28 September 2026 — adopted at £129 / £179 a month per location** (set-up £299 unchanged; `00` § 6).
+> At £99 the managed plan priced below the self-serve platform's £149 entry, which buys no human work;
+> £129 keeps it far below the reputation retainers while reading as managed rather than as a tool.
+
 _Where it sits:_ below the UK self-serve review platform's entry price (from £149 a month + VAT, which
 buys request volume and seats, not replies), and far below reputation-management retainers (from
 £1,735 a month + VAT), which are a different service. The monthly fee buys the human work — the
@@ -128,6 +132,11 @@ approval workflow and the widget.
 | ------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------- | ---------------------------------------- | ---------- | ----------- |
 | Receptionist | inbound agent on a divert; booking; summaries; disclosures; fallback; tuning; report; 300 minutes a month | outbound calls; regulated answer sets | £179 per month [D4]                      | monthly    | £599 [D4]   |
 | Minutes      | beyond 300                                                                                                | —                                     | on the schedule (§ 2.1), per minute [D4] | in arrears | —           |
+
+> **28 September 2026 — adopted at £199 a month with a £499 set-up** (300 minutes unchanged; `00` § 6).
+> £179 sat at the floor of the managed band while £599 sat mid-band for set-up; the swap lowers the
+> barrier to start and stays inside the £149–£449 managed band and the £249–£899 set-up band read on
+> 24 September.
 
 _Where it sits:_ inside the band of managed and sector-specific UK products (from about £149 to £449
 a month on the pages read, with set-ups from £249 to £899), above the self-serve tools (£10–£199 a
@@ -204,6 +213,11 @@ packages (from £299); Reputation between that entry tier and the next (from £6
 the managed packages' upper tier and the "complete" digital-marketing package one UK agency
 publishes (£995 a month + VAT). The AI module is priced below the standalone receptionist because
 the divert, the number and the inbox are already in the plan.
+
+> **28 September 2026.** With Reviews at £129 the Reputation parts come to £457 against the tier's
+> £399, so the tier still costs less than its parts; Follow-Up's comparison (Reputation plus Email &
+> SMS Monthly, £794) is unchanged. The AI module (£149 + £499 set-up) now sits £50 below the
+> standalone receptionist's £199 and at the same set-up.
 
 **Payment terms line for `/pricing` (Q4 confirms):** set-up on signature; plan monthly in advance;
 usage in arrears; no minimum term; 30 days' notice; exit as R33. Against the market: the UK

@@ -90,6 +90,10 @@ page without prices.
 
 ### 4.2 The nine existing services (compact)
 
+> **28 September 2026.** Prices adopted with CRM from £3,500 and Web Apps from £4,500 for a focused
+> tool (platforms from £9,500); Mobile Apps stays at £12,000 with a "do we actually need an app in the
+> stores?" FAQ. The nine pages were rewritten to § 3 the same day with a 900–1,300-word budget.
+
 | Service         | Most-searched problem                                                     | Lead with                                                                   | Basic scope check                                                                                          |
 | --------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | Web Development | `web design for small business uk`; `why is my website so slow uk`        | "Your site is slow, templated and not bringing enquiries."                  | £3,500 buys a five-page marketing site; blog, booking and copywriting are named add-ons                    |
@@ -222,6 +226,9 @@ _What if I want to leave?_ — 60 words: switch the divert off; a registered num
 contacts and conversations exported on request.
 
 ## 7. VAT, in plain words (D2, without an accountant)
+
+> **Adopted by the founder on 28 September 2026** (`00` § 6). The two free checks remain before
+> cutover.
 
 **The position.** WebAsk sells to businesses. Services from a supplier outside the UK to a UK
 business are taxed where the customer is, under the reverse charge: Naxdor adds no VAT to the

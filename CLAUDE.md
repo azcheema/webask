@@ -56,7 +56,9 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
 | Brand relationship    | **Openly part of the Naxdor group** — footer, `/about`, `parentOrganization` schema                                                                                                                                                                    |
 | Legal entity          | **Trading name of Naxdor (Sweden)** — no UK company, **no Companies House number exists**                                                                                                                                                              |
 | Locale                | **en-GB only**. British English is a ranking signal, not cosmetic                                                                                                                                                                                      |
-| Currency              | **GBP**, "+ VAT where applicable" pending D2                                                                                                                                                                                                           |
+| Currency              | **GBP**, shown **"excl. VAT"** — D2 interim position (2026-09-28): **businesses only**, UK customers account for VAT under the reverse charge, no VAT on invoices. `VAT_NOTE` / `VAT_EXPLAINER` in `lib/pricing.ts`                                    |
+| **D4 — Prices**       | ✅ **Launch prices adopted 2026-09-28** (research `00` § 6): CRM from £3,500 · Web Apps from £4,500 (focused tool; platforms from £9,500) · Reviews £129/£179 · Receptionist £199 + £499 set-up; every other figure as the catalogue                   |
+| **Page shape**        | ✅ **Problem-first** (2026-09-27/28): problem → three use-case scenes → how it works → basic scope + named add-ons → one safety section → price → six FAQs at 60–100 words. `docs/strategy/content-guidelines.md`                                      |
 | **D1 — UK presence**  | ✅ **Fully remote, no UK location.** No Google Business Profile. `areaServed`-only schema. Oxford address removed from `/contact`                                                                                                                      |
 | **D6 — CRM emphasis** | ✅ **GoHighLevel-first**, HubSpot second section (incl. HubSpot→GHL migration)                                                                                                                                                                         |
 | **D7 — Anchor city**  | ✅ **Manchester** → Cheshire → Leeds. North-West-first expansion                                                                                                                                                                                       |
@@ -66,11 +68,10 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
 
 ## Open gates — none block Phase 0
 
-| #      | Gate                                    | Owner      | Blocks                    |
-| ------ | --------------------------------------- | ---------- | ------------------------- |
-| **D2** | UK VAT (NETP £0 vs. B2B reverse charge) | Accountant | `/pricing` final          |
-| **D3** | Art. 27 UK representative (+ ICO fee)   | Legal      | `/legal/privacy` final    |
-| **D4** | Final GBP price list                    | Founder    | `/pricing`, service pages |
+| #      | Gate                                                                                                                           | Owner                   | Blocks                                                                       |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------ | ----------------------- | ---------------------------------------------------------------------------- |
+| **D2** | UK VAT — interim position adopted 2026-09-28 (B2B only, reverse charge); **confirm with HMRC and Skatteverket before cutover** | Founder (no accountant) | nothing blocks; a different answer changes two constants and the FAQ strings |
+| **D3** | Art. 27 UK representative (+ ICO fee)                                                                                          | Legal                   | `/legal/privacy` final                                                       |
 
 ---
 
