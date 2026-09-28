@@ -210,7 +210,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Is a custom website better than WordPress?",
         answer:
-          "Not automatically; it depends on who builds it and who owns it. We build custom sites in Next.js and do not build in WordPress, which is a limit on us rather than a verdict on the platform. If WordPress is a requirement, a specialist who builds in it willingly is a better buy than anyone building it reluctantly. Either way, ask whose name is on the hosting and the domain, and whether a different developer could pick up the site without starting again.",
+          "Not automatically; it depends on who builds it and who owns it. We build custom sites in Next.js, and in WordPress only for WooCommerce shops, which is a limit on us rather than a verdict on the platform. If a WordPress brochure site is a requirement, a specialist who builds in it willingly is a better buy than anyone building it reluctantly. Either way, ask whose name is on the hosting and the domain, and whether a different developer could pick up the site without starting again.",
       },
       {
         question: "How long does it take to build a website?",
@@ -246,7 +246,7 @@ export const services: ReadonlyArray<Service> = [
       currency: "GBP",
       cadence: "project",
       priceNote:
-        "What moves the price: catalogue size, the depth of custom theming, integrations such as ERP, fulfilment or subscriptions, and headless versus Shopify-native.",
+        "What moves the price: catalogue size, the depth of custom theming, integrations such as ERP, fulfilment or subscriptions, and the platform: Shopify, WooCommerce or headless.",
     },
     includes: [
       "A themed Shopify build, with listing, product, basket and checkout templates designed for your catalogue",
@@ -271,7 +271,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Shopify or WooCommerce: which is better for a UK small business?",
         answer:
-          "Our starting recommendation is a themed Shopify store with custom template work, because Shopify runs the payments infrastructure, fraud tooling and platform patching, which leaves you less to look after. WooCommerce suits a business already running WordPress, with unusual product logic, or wanting to own everything, but then consent, reviews, VAT display and updates are all yours to look after; it runs on WordPress, which we do not build in, so where WordPress is a requirement a WordPress specialist is the honest option. Headless fits when the storefront experience is the product. We recommend on the first call.",
+          "Our starting recommendation is a themed Shopify store with custom template work, because Shopify runs the payments infrastructure, fraud tooling and platform patching, which leaves you less to look after. WooCommerce suits a business already running WordPress, with unusual product logic, or wanting to own everything, but then consent, reviews, VAT display and updates are all yours to look after, so someone has to own it; we build on either. Headless fits when the storefront experience is the product. We recommend on the first call.",
       },
       {
         question: "How long does it take to build an online shop?",
@@ -721,7 +721,7 @@ export const services: ReadonlyArray<Service> = [
     ],
     notIncluded: [
       "A faster response time, more improvement hours, proactive performance work or extra properties — the Growth and Priority tiers, or quoted on top of the closest one",
-      "Redesigns, rebuilds and substantial new features (projects under Web Development or Web Applications), and platform licence fees such as CRM seats or Vercel team plans",
+      "Redesigns, rebuilds and substantial new features (projects under Web Development, Web Applications or E-Commerce), and platform licence fees such as CRM seats or Vercel team plans",
     ],
     primaryCta: { label: "Discuss a care plan", href: "/contact" },
     relatedServiceSlugs: ["web-development", "seo"],
@@ -744,7 +744,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Do you maintain WordPress sites that someone else built?",
         answer:
-          "Yes: we look after and review an inherited WordPress site, but we do not build new features inside WordPress. An inherited site starts with a short audit rather than a start date. Looking after code you did not write means first finding out what is in it: which plugins are still maintained, what the theme is doing, and which embeds set cookies nobody signed off. The audit reads the content as well as the code. If a plan would only prop up a cracked foundation, we say so and quote the fix or the rebuild instead.",
+          "Yes. An inherited site starts with a short audit rather than a start date. On WordPress that means upkeep and review rather than development inside the platform: which plugins are still maintained, what the theme is doing, and which embeds set cookies nobody signed off. New features on a WooCommerce shop are an E-Commerce project. If a plan would only prop up a cracked foundation, we say so and quote the fix or the rebuild instead.",
       },
       {
         question: "What happens when my website goes down?",
