@@ -193,6 +193,8 @@ figures the market publishes (£195 + VAT on one page) are the shape it follows.
 because the work is per profile. The listings add-on exists only where a platform sub-account exists
 (a hosted plan, or the client's own account); otherwise directories are done by hand inside the plan.
 
+> **28 September 2026 — usage is not included (founder).** Everything the platform meters — texts, calls, AI minutes, WhatsApp messages, email sends, number rental and add-ons — is billed on top at cost, based on what the client uses; on a plan WebAsk hosts, that is the published pound schedule. The included allowances below (100 conversations, 300 minutes, 10,000 emails and 200 or 500 segments) are withdrawn; the service pages no longer promise any. Recorded in `00` § 6.
+
 **Local Business Plans (bundle)**
 
 | Tier       | In                                                                                                                        | Not in                         | Indicative GBP [D4]                           | Cadence | Set-up [D4]                                                                    |
