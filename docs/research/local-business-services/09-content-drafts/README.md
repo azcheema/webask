@@ -15,6 +15,11 @@
 - `blog/calendar.md`, `blog/outlines.md`, `blog/<slug>.mdx` — sixteen posts, all `draft: true` (#13–#16 drafted in S7, 25 September 2026; #17 is an outline only).
 - `index-and-nav.md`, `deltas.md` — exact current strings and their proposed replacements.
 - `self-checks.md` — the planning notes and pass-1 self-check carried with every draft; S8's work list.
+- `../13-page-shape-proposal.md` (27 September 2026) — the founder's brief to lead with the problem
+  and use cases, keep one clear price and a basic starting scope, and cut the legal exposition; a
+  new page anatomy, an intent-to-page map for all fifteen services, `missed-call-text-back` rewritten
+  as the test case, and the VAT position in plain words. **A proposal — none of the drafts above
+  has been changed to it yet.**
 
 ## 2. Verification log
 
