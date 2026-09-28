@@ -39,17 +39,17 @@ The Naxdor voice reads like a **senior consultant** — someone who has built th
 
 ≤ 60 characters visible (Google truncates at ~580px). Primary keyword first; brand at end.
 
-| Page type           | Pattern                                              | Example                                                    |
-| ------------------- | ---------------------------------------------------- | ---------------------------------------------------------- |
-| Home                | `[Brand] — [Value Prop]`                             | `WebAsk — Digital Services for UK Small Businesses`        |
-| Service             | `{Service} Services for Small Business \| WebAsk`    | `Web Development Services for Small Business \| WebAsk`    |
-| Service × Location  | `{Service} in {Area} \| WebAsk`                      | `GoHighLevel Agency in Manchester \| WebAsk`               |
-| Industry            | `{Service Bundle} for {Industry} \| WebAsk`          | `Web Design for Aesthetic Clinics \| WebAsk`               |
-| Industry × Location | `{Service} for {Industry} in {Area} \| WebAsk`       | `Dental SEO in Leeds \| WebAsk`                            |
-| Location hub        | `Digital Services for {Area} Businesses \| WebAsk`   | `Digital Services for Manchester Businesses \| WebAsk`     |
-| Pricing             | `{Service} Pricing — Starting at £X \| WebAsk`       | `Web Development Pricing — Starting at £4,500 \| WebAsk`   |
-| Blog                | `{Article Title} \| WebAsk Blog`                     | `GoHighLevel vs HubSpot for UK SMEs (2026) \| WebAsk Blog` |
-| Case study          | `{Outcome Metric} — {Service} for {Industry/Client}` | `3.4× Enquiries — GoHighLevel Setup for a Cheshire Clinic` |
+| Page type           | Pattern                                                                                                                                                                                                                                                     | Example                                                  |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| Home                | `[Brand] — [Value Prop]`                                                                                                                                                                                                                                    | `WebAsk — Digital Services for UK Small Businesses`      |
+| Service             | `{Service} Services for Small Business \| WebAsk`                                                                                                                                                                                                           | `Web Development Services for Small Business \| WebAsk`  |
+| Service × Location  | `{Service} in {Area} \| WebAsk`                                                                                                                                                                                                                             | `GoHighLevel Agency in Manchester \| WebAsk`             |
+| Industry            | `{Service Bundle} for {Industry} \| WebAsk`                                                                                                                                                                                                                 | `Web Design for Aesthetic Clinics \| WebAsk`             |
+| Industry × Location | `{Service} for {Industry} in {Area} \| WebAsk`                                                                                                                                                                                                              | `Dental SEO in Leeds \| WebAsk`                          |
+| Location hub        | `Digital Services for {Area} Businesses \| WebAsk`                                                                                                                                                                                                          | `Digital Services for Manchester Businesses \| WebAsk`   |
+| Pricing             | `{Service} Pricing — Starting at £X \| WebAsk`                                                                                                                                                                                                              | `Web Development Pricing — Starting at £3,500 \| WebAsk` |
+| Blog                | `{Article Title}` — the root layout's `"%s · WebAsk"` template adds " · WebAsk" (9 characters), so the frontmatter `title` is **≤ 51 characters** (corrected 28 September 2026; this said `{Article Title} \| WebAsk Blog`, which the site does not render) | `GoHighLevel vs HubSpot for UK SMEs (2026) · WebAsk`     |
+| Case study          | `{Outcome Metric} — {Service} for {Industry/Client}`                                                                                                                                                                                                        | `{N}× Enquiries — {Service} for {Client}` (format only)  |
 
 > **No `{State}` segment.** UK location titles use the bare area name — the US
 > `{City}, {ST}` form has no British equivalent and reads as an unlocalised
@@ -58,6 +58,14 @@ The Naxdor voice reads like a **senior consultant** — someone who has built th
 > ⚠️ Clinic-facing titles and copy must never name a prescription-only medicine
 > ("Botox"). ASA/CAP bans advertising POMs to the public — see
 > [`../03-uk-compliance.md`](../03-uk-compliance.md) § B.
+>
+> **One dated exception (founder, 28 September 2026).** Our editorial posts **A1** (flagship)
+> and **A2** (price list) in the clinic-compliance cluster may name the medicine in `title`,
+> slug, `description` and `keywords`, **only** as a question about, or a statement of, the
+> advertising rule. Never on non-compliance posts' related links, and the licence keyword
+> string (`do i need a licence for …`) is never printed in any field. Every other post, and
+> service pages, industry pages and client sites, keep the ban in title and meta. Authority:
+> [`../08-seo-architecture.md`](../08-seo-architecture.md) § 6 and CLAUDE.md.
 
 Avoid:
 
@@ -77,10 +85,16 @@ Avoid:
 
 Examples:
 
-- _Web Development service_: "Custom websites that load in under 1.5s and rank in local search. Built for UK small businesses by senior engineers. See packages from £4,500 or request a quote."
-- _CRM service_: "GoHighLevel setup, automation and HubSpot migration for UK small businesses. We've built funnels that 3× enquiry volume for clinics and dental practices. Book a call."
-- _Service × Location (Manchester CRM)_: "GoHighLevel implementation for Manchester businesses. Funnels, automation and migrations — built by senior engineers. Get a custom quote."
-- _Industry page (aesthetic clinic web design)_: "Fast, compliant aesthetic clinic websites that book consultations. Built for UK clinics against the CAP Code. See our work."
+- _Web Development service_: "Custom websites for UK small businesses, built for local search and for visitors on a phone. See what the starting price includes, or request a quote."
+- _CRM service_: "GoHighLevel setup, automation and HubSpot migration for UK small businesses. See what the starting price includes and what each add-on does. Book a call."
+- _Service × Location (Manchester CRM)_: "GoHighLevel implementation for Manchester businesses. Funnels, automation and migrations, delivered remotely from a published starting price. Get a quote."
+- _Industry page (aesthetic clinic web design)_: "Aesthetic clinic websites built around the consultation, to the route the ASA describes for price lists. See how the structure works and what it costs."
+
+> _(Examples replaced 28 September 2026. The old ones carried "We've built funnels that 3×
+> enquiry volume for clinics and dental practices" (a result we do not have), "built by senior
+> engineers" (a team we do not have), "See our work" (no portfolio yet), "load in under 1.5s"
+> (a performance claim CLAUDE.md bans) and "Fast, compliant … against the CAP Code" (a
+> compliance promise). They were never templates to copy.)_
 
 Anti-patterns:
 

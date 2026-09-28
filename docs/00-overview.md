@@ -135,10 +135,9 @@ knausgaard mustache blog fashion axe selfies salvia…"), plus testimonials attr
 "Mark Riley" and "Willie Walters" with identical generic praise.
 
 Since **6 April 2025**, the Digital Markets, Competition and Consumers Act 2024 makes
-writing, commissioning or publishing fake consumer reviews **illegal in the UK**, with
+writing, commissioning or publishing fake consumer reviews **a banned practice in the UK**, with
 the CMA able to determine a breach and fine directly — up to **10% of global annual
-turnover or £300,000**, whichever is higher (CMA guidance CMA208). In March 2026 the CMA
-opened investigations into five named businesses over review handling.
+turnover or £300,000**, whichever is higher (CMA guidance CMA208).
 
 This is a live legal exposure, not a tidy-up task. **It gets removed at cutover, in
 Phase 1 — not "later".**
@@ -173,10 +172,13 @@ The first five are inherited from Naxdor. The sixth is UK-specific and is the we
 5. **Future-proof** for a logged-in client portal.
 6. **Be the compliance-literate agency.** UK aesthetics and dentistry are regulated in
    ways US practices are not — ASA/CAP's ban on advertising prescription-only medicines,
-   the MHRA, the 2026 licensing scheme, the GDC, the CQC, the CMA. Nearly every UK clinic
-   website is quietly non-compliant. Being the agency that _knows this_ is verifiable
-   expertise (real E-E-A-T), generates content with genuine Information Gain, and is
-   almost unclaimed in the SERP. **This is WebAsk's flagship positioning.**
+   the MHRA, the proposed licensing scheme (not in force as at 28 September 2026), the GDC,
+   the CQC, the CMA. _(Corrected 28 September 2026: "the 2026 licensing scheme" became "the
+   proposed licensing scheme", and "Nearly every UK clinic website is quietly non-compliant"
+   is removed — no clinic sites were audited, so it implied an audit we never ran. The
+   supported thesis is about agency pages: doc 08 § 0.1.)_ Being the agency that _knows
+   this_ is verifiable expertise (real E-E-A-T), generates content with genuine Information
+   Gain, and is almost unclaimed in the SERP. **This is WebAsk's flagship positioning.**
 
 ---
 

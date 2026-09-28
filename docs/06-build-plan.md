@@ -157,7 +157,8 @@ Home · `/services` index · 2 flagship service pages (recommend **web-developme
       2026-07-28, `draft: false`)_
 - [x] Footer legal row + persistent "Cookie settings" link _(inherited; verified 2026-09-25)_
 - [ ] **Consent banner audit** — "Accept all" and "Reject all" at genuinely equal prominence;
-      verify in the network tab that nothing non-essential fires pre-consent (doc 03 § A4)
+      verify in the network tab that nothing non-exempt fires pre-consent (doc 03 § A4;
+      "non-exempt" is the ICO's term)
       _(prominence failed and fixed 2026-09-25; the network-tab check waits for a preview
       deployment with real GA4/Clarity IDs)_
 - [ ] **Pre-cutover crawl** of the live WordPress site → the redirect bible
@@ -276,6 +277,10 @@ internal-linking mesh.
       `data/copy/home.ts` (still named the POM), the **PECR qualifier in six service MDX
       files**, and **doc 03 § B1 + doc 02 § 2**, which still recommended "anti-wrinkle
       injections" as the ✅ compliant alternative — the exact euphemism the ASA rules against
+      _(corrected 28 September 2026: in the ASA's own words the phrase is conditional — "might
+      be acceptable" as a collective term where non-POM treatments are also offered, "we’d
+      advise against" it where only the POM is offered; WebAsk's build standard leaves it out
+      of client copy by choice. Doc 03 § B1)_
 - [ ] **First programmatic batch: 6–9 pages**, `noindex` first, promoted only against the
       inherited quality gate
 - [ ] `CrossLinkGrid` internal-linking mesh
@@ -325,15 +330,34 @@ Blog cluster A (compliance) first · case studies when real work exists · FAQ c
 - [ ] **Cluster A — UK clinic compliance** (doc 02 § 5). Ship this first. It's the
       differentiated content, the lowest-competition long-tail, and the material is already
       researched in doc 03. **This cluster now also owns the deleted playbook's ground** —
-      the aesthetic-clinic marketing post, under a UK slug
+      the aesthetic-clinic marketing post, under a UK slug. **Founder decisions, 28 September
+      2026:** the live clinic pages and the docs are corrected in one change set **before any
+      post** (F7); post A3 ("what an aesthetic clinic can say") **is** that UK replacement, with
+      no separate marketing-playbook post (F8); the `/blog/topic/clinic-compliance` hub is
+      clinic-scoped (F9); the licensing post is held (F5, below)
 - [ ] Cluster B (UK SEO), C (CRM/PECR), D (web dev cost), E (AI/Ofcom) follow
 - [ ] Author bylines, `Person` schema, `dateModified` on every post
 - [ ] Extend `e2e/jsonld.spec.ts` to assert every `Article` has `author` + `dateModified`
 - [ ] `/blog/topic/clinic-compliance` as the hub (reuses the existing topic-archive route)
 - [ ] Case studies **only when real client work exists** — the engine self-hides until then
 - [ ] Directory profiles (Clutch, DesignRush) → populate `Organization.sameAs`
-- [ ] **Regulatory watch**: the licensing scheme is mid-rollout and the CMA dentistry study
-      reports in due course. Diary a check. Stale regulatory content is worse than none
+- [ ] **Regulatory watch**: the proposed licensing scheme is **not in force** as at
+      28 September 2026 and we found no regulations made (doc 03 § B1; "mid-rollout" corrected that
+      day); the Government's latest word, 23 June 2026, is "We are preparing a consultation on
+      the draft legislation". The CMA dentistry study expects to publish its "emerging thinking"
+      "Between October and November" 2026 and its final report by 4 March 2027. **Monthly
+      check** until the licensing consultation is published: GOV.UK/DHSC, the Parliament
+      written-questions API, and legislation.gov.uk for a licensing SI. The dated stale-by rows
+      are in `research/local-business-services/10-sources.md` § 2. Stale regulatory content is
+      worse than none
+- [ ] **Triggers for the held posts** (28 September 2026). **L1 (licensing)** is held (founder,
+      F5) until the DHSC consultation on draft legislation is published; then it is written as
+      "what the draft regulations propose". **A standalone CMA dental post** waits for the CMA's
+      final report (due by 4 March 2027); until then the dental post covers the study
+- [ ] **Pre-publication review route for Cluster A** (founder, F4, 28 September 2026): every
+      rule sentence carries a dated primary quote or link, plus a second-reader verify pass;
+      CAP Copy Advice only for questions that are about an actual advert. No copy may claim
+      anything was "checked by CAP" or "reviewed by a lawyer"
 
 ### Acceptance
 
@@ -395,16 +419,16 @@ before Phase 1 cutover; D4 is a founder pricing decision needed before `/pricing
 
 ## Risks
 
-| Risk                                             | Mitigation                                                                                                             |
-| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| **Fabricated content ships or lingers**          | Phase 1 gate. Treated as a legal blocker, not a content task                                                           |
-| **Duplicate content vs. `naxdor.com`**           | Rewrite, don't translate. Manual cross-site diff before each service page merges (doc 05 § 2)                          |
-| **Trailing-slash redirect loop** at cutover      | Test in preview before DNS switch. Highest-risk single item in the migration                                           |
-| **GBP suspension from a non-qualifying address** | D1 answered honestly _before_ creating a profile                                                                       |
-| **Clinic copy breaches the CAP Code**            | Copy-review checklist + CAP Copy Advice (free) where uncertain                                                         |
-| **Regulatory content goes stale**                | Diarised regulatory watch in Phase 3                                                                                   |
-| **Ranking dip post-migration**                   | Expected 2–4 weeks. Complete 301 map, redirects held ≥ 12 months. Low absolute risk given near-zero starting authority |
-| **Windows toolchain flakes**                     | Documented in doc 01 § gotchas. Trust CI, not local Lighthouse                                                         |
+| Risk                                             | Mitigation                                                                                                                                                                                            |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Fabricated content ships or lingers**          | Phase 1 gate. Treated as a legal blocker, not a content task                                                                                                                                          |
+| **Duplicate content vs. `naxdor.com`**           | Rewrite, don't translate. Manual cross-site diff before each service page merges (doc 05 § 2)                                                                                                         |
+| **Trailing-slash redirect loop** at cutover      | Test in preview before DNS switch. Highest-risk single item in the migration                                                                                                                          |
+| **GBP suspension from a non-qualifying address** | D1 answered honestly _before_ creating a profile                                                                                                                                                      |
+| **Clinic copy breaches the CAP Code**            | Copy-review checklist (doc 03 § B4) + dated primary quotes and a second-reader verify pass; CAP Copy Advice (free standard service) only for questions about an actual advert (F4, 28 September 2026) |
+| **Regulatory content goes stale**                | Diarised regulatory watch in Phase 3                                                                                                                                                                  |
+| **Ranking dip post-migration**                   | Expected 2–4 weeks. Complete 301 map, redirects held ≥ 12 months. Low absolute risk given near-zero starting authority                                                                                |
+| **Windows toolchain flakes**                     | Documented in doc 01 § gotchas. Trust CI, not local Lighthouse                                                                                                                                        |
 
 ---
 
