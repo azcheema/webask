@@ -115,6 +115,13 @@ Anti-patterns:
 > if the sentence starts with a regulation, cut or move it; if it starts with what happens to the
 > customer, keep it. The project services below keep the inherited order but adopt the same word
 > budgets and the same rule that the starting price buys a basic scope.
+>
+> **Amended 28 September 2026 — the nine live service pages** take the same problem-first shape
+> (not the inherited order above), with a **900–1,300-word** body because they compete on harder
+> heads, and **at most one decision aid** (a short table or a few lines) where the keyword map shows
+> a comparison query — Shopify vs WooCommerce, custom vs WordPress, native vs cross-platform, build
+> vs buy, GoHighLevel vs HubSpot. Market-price tables leave the pages; one sourced line of UK
+> context may stay in "What it costs". Every figure shows **"excl. VAT"** (D2 interim position).
 
 1. **Hero** — value prop + outcome + primary CTA
 2. **Who it's for** — explicit audience qualifiers (helps prospects self-identify or self-disqualify)

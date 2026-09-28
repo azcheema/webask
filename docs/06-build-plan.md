@@ -140,6 +140,9 @@ Home · `/services` index · 2 flagship service pages (recommend **web-developme
       email. **No postal address** — D1 resolved fully remote, so `45 Ridgefield Rd, Oxford`
       does not carry forward (doc 04 § 3)
 - [ ] `/pricing` — GBP anchors (D4), "+ VAT where applicable" (D2)
+      _(2026-09-28: D4 resolved — launch prices adopted; D2 interim position "excl. VAT",
+      businesses only, reverse charge, with the explanation on `/pricing` and in the terms.
+      The founder later adopted the VAT position on an AI assistant's answer matching the research; no official confirmation was obtained, doc 00 § D2)_
 - [x] `/legal/privacy` — UK GDPR, lawful bases, **Art. 27 representative if D3 requires**
       _(rewritten 2026-09-25 as a UK GDPR / DPA 2018 / PECR notice with a deliberate interim
       Article 27 section — "being confirmed; email is the contact point until a
@@ -182,6 +185,10 @@ D2 (`/pricing` VAT wording) · D3 (`/legal/privacy`) · D4 (`/pricing` figures).
 **D4 must resolve before this phase completes.** D2 and D3
 can ship with a documented interim position if legal/accounting advice is still pending —
 but the interim wording must be deliberate, not accidental.
+
+> **28 September 2026.** D4 resolved (launch prices adopted, research `00` § 6). D2 has its
+> deliberate interim position (businesses only, reverse charge, "excl. VAT"; doc 03 § A2). D3
+> remains the only gate on this phase, and its interim wording is already deliberate.
 
 ---
 
@@ -366,16 +373,16 @@ one specific dimension) · every claim dated and sourced · reading level ≤ Gr
 
 ## Decision gates — status
 
-| #      | Gate                                 | Owner          | Blocks                             | Status                                                                                                      |
-| ------ | ------------------------------------ | -------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **D1** | UK presence                          | Founder        | GBP, `/contact`, schema            | ✅ **Resolved 2026-07-27: fully remote, no UK location.** No GBP; `areaServed`-only; Oxford address removed |
-| **D6** | CRM emphasis                         | Founder        | `/services/crm-automation`         | ✅ **Resolved: GoHighLevel-first**, HubSpot second section                                                  |
-| **D7** | Anchor city                          | Founder        | `/locations/*`, programmatic order | ✅ **Resolved: Manchester** → Cheshire → Leeds                                                              |
-| **D8** | Site framing                         | Founder        | Home + service copy                | ✅ **Resolved: national, service-led**; city surfaces via `/locations/*` only                               |
-| **D2** | UK VAT (NETP vs. B2B reverse charge) | **Accountant** | `/pricing` final                   | 🔴 Open                                                                                                     |
-| **D3** | Art. 27 UK representative + ICO fee  | **Legal**      | `/legal/privacy` final             | 🔴 Open — Art. 27 now **near-certain** (no UK establishment); ICO fee likely **not** required               |
-| **D4** | Final GBP price list                 | **Founder**    | `/pricing`, all service pages      | 🔴 Open                                                                                                     |
-| **D5** | Brand palette + wordmark             | Founder        | Phase 0                            | ✅ **Resolved 2026-07-27: Deep Teal `#0F766E` primary + Geist typographic wordmark.** Token block in doc 01 |
+| #      | Gate                                 | Owner                       | Blocks                             | Status                                                                                                                                                                                     |
+| ------ | ------------------------------------ | --------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **D1** | UK presence                          | Founder                     | GBP, `/contact`, schema            | ✅ **Resolved 2026-07-27: fully remote, no UK location.** No GBP; `areaServed`-only; Oxford address removed                                                                                |
+| **D6** | CRM emphasis                         | Founder                     | `/services/crm-automation`         | ✅ **Resolved: GoHighLevel-first**, HubSpot second section                                                                                                                                 |
+| **D7** | Anchor city                          | Founder                     | `/locations/*`, programmatic order | ✅ **Resolved: Manchester** → Cheshire → Leeds                                                                                                                                             |
+| **D8** | Site framing                         | Founder                     | Home + service copy                | ✅ **Resolved: national, service-led**; city surfaces via `/locations/*` only                                                                                                              |
+| **D2** | UK VAT (NETP vs. B2B reverse charge) | **Founder** (no accountant) | `/pricing` final                   | ✅ **Adopted 2026-09-28:** businesses only, reverse charge, no Swedish VAT, "excl. VAT" — on an AI assistant's answer matching the research; no HMRC or Skatteverket confirmation obtained |
+| **D3** | Art. 27 UK representative + ICO fee  | **Legal**                   | `/legal/privacy` final             | 🔴 Open — Art. 27 now **near-certain** (no UK establishment); ICO fee likely **not** required                                                                                              |
+| **D4** | Final GBP price list                 | **Founder**                 | `/pricing`, all service pages      | ✅ **Resolved 2026-09-28:** launch prices adopted (CRM £3,500 · Web Apps £4,500 focused / £9,500 platform · Reviews £129/£179 · Receptionist £199 + £499)                                  |
+| **D5** | Brand palette + wordmark             | Founder                     | Phase 0                            | ✅ **Resolved 2026-07-27: Deep Teal `#0F766E` primary + Geist typographic wordmark.** Token block in doc 01                                                                                |
 
 **Phase 0 is now fully unblocked.** The three remaining gates are all external and land
 later: D2 and D3 are professional advice that should be **commissioned now** so they arrive

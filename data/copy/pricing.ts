@@ -58,7 +58,7 @@ export const pricing: PricingContent = {
   tableIntro: {
     eyebrow: "Starting prices",
     h2: "Nine services, and the number each one starts at.",
-    body: "Project work starts between GBP £2,500 and £12,000 depending on the service; the two ongoing engagements start at £250 and £750 a month. Each figure covers the scope set out in the “What's included” list on that service's page, not a stripped-back version that makes an upsell inevitable. Every row links straight through to it, and to the levers that move that particular number.",
+    body: "Project work starts between GBP £3,000 and £12,000 depending on the service; the two ongoing engagements start at £250 and £750 a month. Each figure buys the basic scope listed on that service's page, and the add-ons that make a bigger job are named there too, so you can see what moves the number before anyone quotes. Every row links straight through to it.",
   },
   whatChangesPrice: {
     eyebrow: "What moves the number",
@@ -128,7 +128,7 @@ export const pricing: PricingContent = {
     {
       question: "Is VAT included in these prices?",
       answer:
-        "No. Every figure on this site is shown + VAT where applicable. WebAsk is the UK brand of Naxdor, a Swedish sole proprietorship, so how VAT applies depends on the supply and on your own VAT position; the proposal states the treatment for your engagement in writing and the invoice matches it. Every price here is an indicative starting point for guidance, not a binding offer — the written proposal is the document that commits either of us to a number.",
+        "No, and none is added to our invoices. WebAsk is the UK brand of Naxdor, a Swedish sole proprietorship, and supplies businesses only. When a UK business buys services from a supplier outside the UK, the business accounts for any VAT due itself under the reverse charge, so every figure on this site is shown excluding VAT and the invoice carries no VAT line. How the reverse charge affects you depends on your own VAT position. Every price here is an indicative starting point, not a binding offer — the written proposal is the document that commits either of us to a number.",
     },
     {
       question: "Do you bill by the day or by the project?",

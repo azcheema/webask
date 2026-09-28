@@ -79,6 +79,8 @@ page without prices.
 
 ### 4.1 The six plans
 
+> **28 September 2026 — usage is not included (founder).** Everything the platform meters — texts, calls, AI minutes, WhatsApp messages, email sends, number rental and add-ons — is billed on top at cost, based on what the client uses; on a plan WebAsk hosts, that is the published pound schedule. The included allowances below (100 conversations, 300 minutes, 10,000 emails and 200 or 500 segments) are withdrawn; the service pages no longer promise any. Recorded in `00` § 6.
+
 | Service                 | Most-searched problem (head term · tier)                                           | The pain in the visitor's words                                                                 | Three use cases                                                                                                    | Basic scope at the starting figure                                                                                                                           | Add-ons (named, not priced on the page)                                                 |
 | ----------------------- | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | Missed-Call Text-Back   | `missed call text back uk` · **High** (9/9 UK domains; GoHighLevel resellers rank) | "I'm on a job when the phone rings, and by the time I call back they've booked someone else."   | A plumber under a boiler · a salon mid-appointment · a garage with the phone on the counter                        | Divert from the number you publish · one text template · one inbox + app · a test from a real phone · 100 conversations a month · monthly report             | New UK number · web chat + WhatsApp in the inbox · more conversations                   |
@@ -89,6 +91,10 @@ page without prices.
 | Email & SMS Marketing   | `email marketing agency uk` · **High**; `is sms marketing legal uk` → post         | "We have hundreds of past customers in a system and never message them."                        | A dentist's lapsed patients · a salon's quiet month · a trade's annual service reminders                           | Consent audit in month one · two campaigns a month · one automation built or reviewed · list hygiene · monthly report · 10,000 emails and 200 texts a month  | Four campaigns · quarterly landing page · WhatsApp channel · more texts                 |
 
 ### 4.2 The nine existing services (compact)
+
+> **28 September 2026.** Prices adopted with CRM from £3,500 and Web Apps from £4,500 for a focused
+> tool (platforms from £9,500); Mobile Apps stays at £12,000 with a "do we actually need an app in the
+> stores?" FAQ. The nine pages were rewritten to § 3 the same day with a 900–1,300-word budget.
 
 | Service         | Most-searched problem                                                     | Lead with                                                                   | Basic scope check                                                                                          |
 | --------------- | ------------------------------------------------------------------------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -222,6 +228,10 @@ _What if I want to leave?_ — 60 words: switch the divert off; a registered num
 contacts and conversations exported on request.
 
 ## 7. VAT, in plain words (D2, without an accountant)
+
+> **Adopted by the founder on 28 September 2026** (`00` § 6), on an AI assistant's answer that
+> matches this section; no HMRC or Skatteverket confirmation was obtained. The two checks below are
+> optional.
 
 **The position.** WebAsk sells to businesses. Services from a supplier outside the UK to a UK
 business are taxed where the customer is, under the reverse charge: Naxdor adds no VAT to the

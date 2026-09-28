@@ -1,93 +1,75 @@
 ---
 slug: web-development
 title: "Web Design & Development for UK Small Businesses"
-description: "UK web design and development for small businesses — sub-2-second loads, WCAG 2.2 AA, transparent pricing. Starting at £3,500 + VAT where applicable."
-dateModified: "2026-07-28"
+description: "Website slow, templated and bringing in no enquiries? Custom web design for UK small businesses, fixed fee, in accounts you own. From £3,500 excl. VAT."
+dateModified: "2026-09-28"
 ---
 
-{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the web-development entry and is read by the page template — do not duplicate those fields here. Rewritten for the UK 2026-07-28 around real market cost bands (docs/08 § 7, docs/02 § 7), the Equality Act framing of accessibility (docs/03 § A7) and the consultation-first architecture rule (docs/08 § 6). It is deliberately not a British-spelling pass over the Naxdor original, and it deliberately argues rather than restating the price card, the includes list or the FAQ accordion the template already renders. */}
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the web-development entry and is read by the page template — do not duplicate those fields here. Shape: research 13 § 3, adopted 27 September 2026; live-page budget per the 28 September brief; basic scope at the starting figure per research 13 § 4.2 (five pages; blog, booking and copywriting named as add-ons). Facts carried from the page as of 27 September 2026 and the sources it cites: £3,500 starting fee, fixed before work starts rather than estimated hourly (data/services.ts; [D4], adopted as the launch price 28 September 2026); what moves the price (the entry's priceNote); Next.js and Tailwind, search foundations (structured data, sitemap, canonical tags, social previews), WCAG 2.2 AA, a cookie banner where Reject is as easy as Accept, thirty days of aftercare (the entry's includes); a two-second mobile loading budget, with page size checked automatically as the site is built (the entry's includes; worded as a budget, never as an enforced or guaranteed load time, per CLAUDE.md and .lighthouserc.cjs); four to eight weeks planned for five to ten pages and the rough stage lengths (the timeline FAQ; docs/06, the delivery playbook's plan); hosting, domain, analytics and Search Console in accounts the client owns, and the three ownership questions (the page and the hosting FAQ); Payload CMS as a separately quoted step (the editing FAQ); redesigning the visual layer costing less than starting again where the stack is modern, the codebase clean and plugins few, no redesign in place for a WordPress site (the redesign-or-rebuild FAQ); the free audit as five prioritised findings on search, speed and conversion (data/copy/free-audit.ts hero); a page builder's scripts and styles as something a slow site can be carrying (research 09-content-drafts/services/landing-pages.mdx); the redirect map as a deliverable, an add-on for a site that ranks, and every legacy webask.co.uk URL given an explicit destination ahead of a cutover that has not yet happened (the migration FAQ; the entry's notIncluded; docs/04 § 5; docs/06); the temporary brand kit (the brand FAQ); the Equality Act 2010 reasonable-adjustments framing and the automatic checks plus a manual keyboard pass (docs/03 § A7; the page's accessibility section); the clinic price-list architecture for a list naming a prescription-only medicine as a scope-stage decision, with no medicine named and our reading dated as at July 2026 (docs/08 § 6; the page); the UK agency band £2,500–£10,000 with London dearer for the same specification and the regional agency average £3,000–£6,000 (docs/02 § 7); a typical four- or five-page UK freelance build at £1,200–£2,000, and 15–20% of build cost a year to run a site across the UK market (docs/08 § 7); the Maintenance care plan from £250 a month (data/services.ts); no WordPress brochure builds — WooCommerce shops are the one WordPress build offered (founder decision, 28 September 2026, research 00 § 6) — and a Maintenance care plan looks after an inherited WordPress site (main's maintenance-support entry, inherited-stacks FAQ); fully remote with no UK office (D1). Deliberately absent: the first-month ranking watch (search work after launch belongs to SEO, per the entry's notIncluded), the site-builder price and the freelance band in When something else fits better (the agency-or-freelancer FAQ carries the freelance band), the four-route market-price table and the year-two cost essay (docs/08 § 7; the pricing page and the custom-vs-WordPress post carry the comparison), the IBISWorld market size and operator count (docs/02 § 1), Google's UK search share (docs/02; docs/05), the SEO retainer bands (docs/02 § 7; the SEO page), the full CAP two-click rule (docs/08 § 6; the aesthetic-clinics industry page), the "why the floor sits at £3,500" positioning essay, the maintenance FAQ (the care plan is one line in What it costs), the brand-kit FAQ (now an add-on line), the "Who should not buy" list (condensed into When something else fits better; the live-next-week and referral-only items cut), the web design vs web development section (one sentence in the hero), the "two things that move a quote" section (content readiness now the timeline caveat; the clinic rule one line in What keeps you safe), "sub-2-second", "gated in CI" and every other enforced-speed phrasing (CLAUDE.md; .lighthouserc.cjs), the "+ VAT where applicable" wording (now "excl. VAT" per the 28 September VAT decision; the reverse charge is explained on /pricing only), the free audit reading the codebase and plugins (the redesign-or-rebuild FAQ; data/copy/free-audit.ts does not promise it, so that reading belongs to the paid scope), and the link to /services, which is not on the live-page link list. */}
 
-## What a UK small-business website actually costs
+## Your website is slow, looks like everyone else's and brings in no enquiries
 
-There is no market price for "a website". Across the UK agency tier the published band runs **£2,500–£10,000** for a standard small-business site, and London is dearer than the rest of the country for the same specification — a location premium rather than a scope premium. Below that tier the numbers fall away steeply, and the product changes as they do.
+A small business website has three jobs: to be found, to open properly on a phone, and to make getting in touch the obvious next step. We design and build a site for those three jobs as one piece of work. Web design and web development are quoted together, as a single fixed fee agreed before anything starts. Everything it runs on sits in accounts you own from day one.
 
-Four routes, genuinely different from one another rather than one product at four prices.
+## Sound familiar?
 
-| Route              | Typical UK cost                                                                   | Ongoing                                 | Sensible when                                    |
-| ------------------ | --------------------------------------------------------------------------------- | --------------------------------------- | ------------------------------------------------ |
-| DIY site builder   | £240–£360 a year, all in                                                          | included in the subscription            | you are still testing whether the business works |
-| Freelancer         | £800–£3,000; a typical four- or five-page build lands at £1,200–£2,000            | £100–£300 a year for domain and hosting | the site is a brochure that rarely changes       |
-| Regional UK agency | £3,000–£6,000 for 5–15 pages with design, a responsive build, basic SEO and a CMS | 15–20% of build cost a year             | the site is one of the ways you get customers    |
-| WebAsk             | from £3,500                                                                       | optional care plan from £250 a month    | the site is load-bearing and has to rank         |
+Three situations that may be yours.
 
-**Most UK small businesses end up spending between £1,500 and £5,000 on a build.** If the quotes in front of you sit outside that, the useful question is which of those four rows each one is really pricing. Most disagreements about price turn out to be disagreements about the product, conducted in identical vocabulary.
+**The page that will not load.** A customer taps your link from Google on one bar of signal in a car park. The screen stays white, then half a layout jumps into place. They press back and call someone else. You never know they came.
 
-The spread is structural rather than mysterious. Industry reporting of IBISWorld figures puts the UK web design services market at **£658.2m in 2026**, across roughly **2,206 businesses** counted in 2025 — on the order of **£300,000** of revenue per operator. A market with no dominant national player, no standard product and no shared definitions is precisely the condition in which one brief attracts wildly different numbers.
+**The template everyone bought.** Your site came from a theme anyone can buy, so it can look like anyone else's. The business is busy and careful; the website says the opposite.
 
-## Why the floor sits at £3,500
+**The site nobody can change.** The person who built it registered the domain in their own name and has stopped answering email. Changing your opening hours means asking a favour. Moving to someone else means starting again.
 
-The figure on the card sits deliberately above the freelancer band and at the bottom of the regional agency band. That is a positioning decision, and it is more useful to explain it than to hide it.
+## How it works
 
-A starting price is not an opening bid waiting to be negotiated down. It is the point below which we would have to change the _product_ rather than the effort: a template instead of a design, a shorter site, or a performance and accessibility standard checked once on launch day and never again. The price card states what the number covers. What a card cannot show is the difference between a standard measured continuously and one asserted in a proposal — and that difference is most of what separates the rows in the table.
+1. **Scope and a fixed quote.** Roughly a week or two agreeing the pages, the structure and what each page has to do. The fee and a target date are written into the scope before design starts, rather than estimated by the hour and revised as the project goes.
+2. **Design.** One or two weeks shaping each page around the thing you want a visitor to do next: ring or send an enquiry.
+3. **Build.** Two to six weeks in Next.js and Tailwind, while the last design details are finished. Page size is checked automatically as the site is built. Loading on a phone is measured against a two-second budget: what we build to, not a promise about every phone on every signal.
+4. **Launch in your accounts.** The site goes live in accounts you own, after a manual keyboard pass.
+5. **Thirty days of aftercare.** Fixes, small changes and training for whoever will look after the site.
 
-The performance half of that floor earns its place for a specifically British reason. Google holds around **92.7% of UK search** (Q1 2025), a higher share than it holds in the United States. That makes Google's measurement of your site something other than one opinion among several: it is the only measurement that decides whether a stranger ever finds you. A slow mobile page is therefore not a question of taste. It is a number one company uses to rank you, in a market where that company is effectively the entire channel.
+End to end, we plan a site of five to ten pages at four to eight weeks. Each stage assumes the copy, photographs and approvals it needs are ready; where they are not, the schedule waits on those rather than on the build.
 
-The quote is fixed before work starts rather than estimated hourly and revised upward as the project reveals itself. How an enquiry becomes that number is set out in [our process](/process).
+## What the starting price buys
 
-## The number nobody quotes you: year two
+A five-page marketing site, designed for your business rather than taken from a theme, built on Next.js and Tailwind. It is set up so Google can read it properly, it works for visitors using a keyboard or screen reader, and it launches into accounts you own with thirty days of aftercare. The copy and photographs come from you; we fit them to the design.
 
-Across the UK market, running a website costs **15–20% of its build cost per year**. That figure is missing from almost every comparison put in front of a small business, and adding it back reorders the table above.
+**Add when you need it:** more pages · a blog · online booking · copywriting · an editor your team can publish from without asking us · location or industry pages · a temporary brand kit (a wordmark, two colours, one typeface) while a proper identity is made elsewhere · a redirect plan for replacing a site that already ranks. Each is quoted on its own before work starts.
 
-On a freelance build the visible ongoing cost is genuinely small — **£100–£300 a year** covers the domain and hosting, and if nothing ever changes, that is all you pay. The cost that never appears on any invoice is the rebuild. A site that cannot be edited, extended or moved is bought twice: once now, and again on the day it has to be replaced.
+## Web design agency, freelancer or site builder?
 
-Which suggests a better question to ask of every quote you are holding, ours included. Not "what is the monthly fee" but "what happens if I stop paying it". Three specifics settle it: whose name is on the hosting account, whose name is on the domain and the Search Console property, and whether a different developer could pick up the codebase without starting again. A supplier who cannot answer all three cheerfully is quietly pricing a second build into the first one, and you will not see the invoice for it until it is unavoidable.
+Four honest routes, each right for someone.
 
-If search is part of the plan, budget for it separately rather than assuming the build absorbs it. UK small-business SEO retainers run **£150–£800 a month**, with most single-location local campaigns landing at **£500–£1,500**. Below roughly **£99 a month** you are in the tier that sends automated links and a monthly PDF with no strategy underneath. Our [SEO engagement](/services/seo) is scoped and priced on its own, and a site built properly does not require one in order to work.
+| Route                     | Right when                                                                                   |
+| ------------------------- | -------------------------------------------------------------------------------------------- |
+| Site-builder subscription | you are still testing whether anyone wants what you sell                                     |
+| UK freelancer             | the site is a brochure that rarely changes                                                   |
+| A WordPress specialist    | a WordPress brochure site is a requirement; we build in WordPress only for WooCommerce shops |
+| WebAsk                    | the site is one of the ways you get customers                                                |
 
-## Who should not buy a £3,500 website from us
+Whichever you choose, ask three things of every quote, ours included. Whose name is on the hosting account? Whose name is on the domain and the Search Console property? Could a different developer pick up the site without starting again? For the platform question on its own, [custom website vs WordPress](/blog/custom-website-vs-wordpress-2026) compares the numbers.
 
-The honest disqualifications. A badly matched engagement is a worse outcome for us than no engagement at all.
+## What keeps you safe
 
-- **You are still testing whether the idea works.** A subscription builder at £240–£360 a year answers a cheaper question first: does anyone want this? Buy the permanent site once demand is evidence rather than a hypothesis.
-- **Your budget is under about £1,500.** A competent UK freelancer will build a good four- or five-page site for £1,200–£2,000. Spending £1,500 well beats spending £3,500 badly — and stretching to £3,500 usually means nothing is left for copy or photography, which is where the site would actually have improved.
-- **You need to be live next week.** The shortest sensible timeline is measured in weeks, and what sets it is normally your copy, your photography and your internal approvals rather than the build.
-- **WordPress is a requirement rather than a preference.** We do not work in it. That is a limit on us and not a verdict on the platform — but a WordPress site built reluctantly by the wrong hands is a worse asset than one built willingly by the right ones, and you should buy the second.
-- **The website's whole job is to confirm you exist.** If work arrives by referral and the site only needs to carry a phone number and opening hours, the cheapest credible option is the correct one.
+**Accessible to WCAG 2.2 AA.** Someone on a keyboard or a screen reader can move through the pages and fill in forms. It is checked automatically as the site is built, and by a manual keyboard pass before launch. An inaccessible website is a recognised risk area for you under the Equality Act 2010, which requires service providers to make reasonable adjustments for disabled people.
 
-## Accessibility is an Equality Act question here, not a nice-to-have
+**Visitors can refuse tracking.** The cookie banner makes Reject as easy as Accept.
 
-WCAG 2.2 AA is the same technical standard in every country. What differs in the United Kingdom is the reason to buy it. Under the **Equality Act 2010**, service providers must make reasonable adjustments for disabled people, and an inaccessible website is a recognised risk area. That duty does not wait for someone to complain before it exists.
+**You keep the asset intact.** Hosting, domain, analytics and Search Console are yours from day one, so ending work with us never costs you the site.
 
-The reframing matters more than it sounds. Accessibility bought as a design preference is the first line cut when a budget tightens; accessibility bought as risk reduction is not, because the risk does not shrink when the budget does. On a build of ours the standard is verified automatically on every change and by a manual keyboard pass before launch — the only way a standard survives its second year. An audit signed off once begins decaying with the next content update.
+**Clinic price lists are planned at scope.** If your price list names a prescription-only medicine, we agree at scope where it may sit and how visitors reach it. That follows our reading of ASA/CAP guidance as at July 2026, and it is not legal advice. More on [websites for aesthetic clinics](/industries/aesthetic-clinics).
 
-The commercial half of the argument is quieter and larger. Keyboard-only navigation, screen-reader labelling, colour contrast that survives daylight on a phone, tap targets that work one-handed on a moving train — those are the conditions people genuinely browse in. Building for the hardest of them produces a site that is simply easier for everybody else.
+## What it costs
 
-## Two things that move a quote more than page count
+From £3,500 as a fixed fee, excl. VAT, agreed before work starts. What moves it: page count, how bespoke the design is, whether your team needs an editor, how many systems the site must talk to, and any add-ons. Published UK agency prices for a standard small-business site run £2,500–£10,000, with London dearer for the same specification. Upkeep after day 30 is a separate care plan from £250 a month, excl. VAT. All starting prices are on the [pricing page](/pricing).
 
-The price card names the obvious levers. Two less obvious ones move a number further, and neither of them is really about the build.
+## When something else fits better
 
-**Content readiness.** The usual gating factor on a launch date is not code. It is copy that has not been written and photography that has not been taken. A fixed fee holds while the material exists and stops holding when a build waits weeks on a page of text only you can write. If you want the number on the card to be the number you pay, this is the part to start before you start us.
+- **Your site is slow and you want to know why before replacing it.** A slow site can be carrying a page builder's scripts and styles. A [free audit](/free-audit) gives five prioritised findings on search, speed and conversion before anyone argues about the design. Where the stack is modern, the codebase clean and plugins few, redesigning the visual layer costs less than starting again, and keeping the site you have is a genuine outcome. We do not redesign a WordPress brochure site in place, though a [care plan](/services/maintenance-support) can look after one, and a WooCommerce shop is [E-Commerce](/services/ecommerce-development) work.
+- **The site works but looks a decade old.** If the design is the whole job, that is [UI / UX Design](/services/ui-ux-design), scoped and priced on its own.
+- **You sell products online.** An online shop is an [E-Commerce](/services/ecommerce-development) project, priced on its own.
+- **You need to be found for more searches.** [SEO](/services/seo) is scoped separately; a site built properly does not need it in order to work.
+- **You are still testing the idea, or the budget is under about £1,500.** A site builder or a UK freelancer is the better buy, and spending £1,500 well beats spending £3,500 badly.
 
-**Regulatory constraints on the architecture.** Some sites cost more to build correctly because the rules dictate the structure rather than the styling. UK clinics are the clearest case. Prescription-only medicines cannot be advertised to the public under the CAP Code, and where such a medicine may appear in a price list at all, that page must sit at least two clicks from the homepage, be reached through a consultation-first path, stay purely informational with no promotional content, and appear in neither the homepage nor the primary navigation. (Our reading of ASA/CAP guidance as at July 2026, not legal advice — and the kind of wording we would put through CAP's free Copy Advice service before a clinic site publishes.) That is an information-architecture specification with a cost attached, and it is not a styling decision that can be retrofitted after launch — see [websites for UK aesthetic clinics](/industries/aesthetic-clinics).
-
-A redesign of a site that already ranks carries scope a new build does not, and it is the scope buyers are most tempted to cut. A card price assumes a site with nothing to lose. Years of accumulated search equity have to be moved across deliberately, and skipping that is not a saving — it is a decision to buy the same traffic a second time.
-
-## "Web design" and "web development" are one purchase
-
-UK buyers search for **web design**. The industry mostly sells **web development**. Two words, one job: the design decisions determine what gets built, and the build determines whether the design survives contact with a mid-range phone on a weak signal.
-
-They are quoted here as a single fixed fee, because separating them is where the unpleasant surprises live — a design number approved first, and a build number that appears only once the design has gone too far to walk away from.
-
-If the design genuinely is the whole job — an existing site that performs adequately but looks a decade old — that is [UI/UX design](/services/ui-ux-design), scoped and priced on its own.
-
-## If you are still comparing quotes
-
-Read the other numbers you have been given against the four routes at the top of this page. Settling which product each supplier is pricing resolves most of the confusion before anyone has to be chosen.
-
-Then, depending on where that leaves you:
-
-- **You already have a site and are not certain it needs replacing.** Start with a [free audit](/free-audit). Keeping the site you have is a genuine outcome of one.
-- **You have a real project and a real budget.** [Tell us what you are trying to achieve](/contact) and you will get either a fixed-fee quote or a recommendation to spend the money elsewhere.
-- **You want the range before you talk to anyone.** Starting prices sit on the [pricing](/pricing) page, and the full [list of services](/services) covers everything WebAsk builds.
-
-WebAsk is fully remote and has no UK office. Worth stating plainly for two reasons: no building overhead is priced into your quote, and where you are in the UK does not narrow what we can do for you.
+WebAsk works remotely, with no UK office, for businesses anywhere in the UK. [Get in touch](/contact) with the address of the site you have or a line about the one you need, or read [how a project runs](/process) first.

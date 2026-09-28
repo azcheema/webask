@@ -22,13 +22,21 @@ export const formatGBP = (amount: number): string => `£${gbp.format(amount)}`;
 /**
  * Shown wherever a price is displayed prominently.
  *
- * Deliberately hedged: decision gate **D2** (is a non-established taxable person
- * supplying UK B2B customers within scope for UK VAT, or outside it under the
- * reverse charge?) is open. Printing a definitive "inc. VAT" or "ex. VAT" before
- * the accountant answers would be a pricing claim we cannot stand behind.
- * Replace this constant — not the individual call sites — once D2 resolves.
+ * Decision gate **D2**, position adopted by the founder on 28 September 2026
+ * (research `00` § 6; `13-page-shape-proposal.md` § 7): WebAsk supplies
+ * businesses only, and a UK business buying services from a supplier outside
+ * the UK accounts for any VAT itself under the reverse charge — so no VAT is
+ * added to our invoices and every figure is shown excluding VAT. The full
+ * sentence lives on `/pricing` (`VAT_EXPLAINER`) and in the terms. The founder
+ * adopted it on an AI assistant's answer that matches the research; no HMRC or
+ * Skatteverket confirmation was obtained. If an official answer ever differs,
+ * change these two constants and the FAQ answers that repeat "excl. VAT".
  */
-export const VAT_NOTE = "+ VAT where applicable";
+export const VAT_NOTE = "excl. VAT";
+
+/** The one-sentence explanation shown once per table and on the pricing page. */
+export const VAT_EXPLAINER =
+  "All prices are in pounds and exclude VAT. We supply businesses only; a UK business customer accounts for any VAT under the reverse charge, so none is added to our invoices.";
 
 /** Human label for a service's billing cadence, shown beside the starting price. */
 export const cadenceLabel: Record<PriceCadence, string> = {

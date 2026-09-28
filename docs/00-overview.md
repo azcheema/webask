@@ -60,7 +60,8 @@ That single fact drives more of this plan than anything else:
   findable on the site.
 - **A non-UK-established business has a £0 UK VAT registration threshold**, not £90,000
   — although pure B2B services may be outside the scope under the reverse-charge rule.
-  Unresolved: decision gate **D2**.
+  Decision gate **D2** — interim position adopted 28 September 2026: businesses only,
+  reverse charge, "excl. VAT" (see § D2 below).
 - **UK GDPR Article 27** requires a named **UK representative** in the privacy notice,
   because the entity has no UK establishment but offers services to UK residents. With D1
   resolved to _fully remote_, this is **near-certain**, not merely likely. Conversely the
@@ -204,6 +205,9 @@ Eight gates. **D1, D6, D7 and D8 resolved 2026-07-27.** D2, D3, D4 and D5 remain
 all four are external dependencies (accountant, solicitor, founder) and **none block
 starting Phase 0**.
 
+> **28 September 2026.** D5 resolved on 2026-07-27 (CLAUDE.md); D4 resolved and D2 given a
+> deliberate interim position today (§§ D2, D4 below). **D3 is the only gate still open.**
+
 ### ✅ D1 — UK presence — **RESOLVED 2026-07-27: fully remote, no UK location**
 
 WebAsk is operated remotely from the Swedish entity, with a UK phone number. There is no
@@ -264,6 +268,16 @@ flags it rather than asserting an answer. **Interim rule for the site:** display
 "Starting at £X" with "+ VAT where applicable", and finalise once resolved.
 Blocks: `/pricing` final copy.
 
+> **28 September 2026 — interim position adopted by the founder (no accountant engaged).**
+> WebAsk supplies **businesses only**; a UK business customer accounts for any VAT under the
+> reverse charge, so no VAT is added to invoices and every figure is shown **"excl. VAT"**.
+> The one exposure — a UK consumer, or an electronically supplied service to one — is closed
+> by the businesses-only line in the terms. Before cutover, two free checks: HMRC's VAT
+> helpline and Skatteverket's business line, one question each. The reasoning and sources are
+> in `research/local-business-services/13-page-shape-proposal.md` § 7.
+>
+> **Later on 28 September 2026:** the position was adopted by the founder on 28 September 2026 on an AI assistant's answer that matches the research (no Swedish VAT on a B2B service to a UK business; the customer accounts for UK VAT under the reverse charge); no HMRC or Skatteverket confirmation was obtained. The two free checks are optional, not a cutover gate.
+
 ### D3 — UK GDPR Article 27 representative + ICO fee
 
 An entity with no UK establishment that offers services to UK residents or monitors their
@@ -282,6 +296,13 @@ them before publish** — the same gate `naxdor.se` used, and for the same reaso
 prices are a commitment, and the site's whole pricing posture depends on them being real.
 
 Blocks: `/pricing` and every service page's pricing anchor.
+
+> **28 September 2026 — resolved.** The founder adopted the catalogue figures as launch prices,
+> with four changes from the proposals: CRM automation from **£3,500** (was £2,500); web
+> applications from **£4,500** for a focused tool, platforms from £9,500; review management
+> **£129 / £179** a month per location; AI receptionist **£199** a month with a **£499** set-up.
+> Every starting price buys a basic scope, with add-ons named on the page. The decision and
+> what was not checked before it are logged in `research/local-business-services/00` § 6.
 
 ---
 
