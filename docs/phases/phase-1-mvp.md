@@ -51,6 +51,12 @@ The launch site has no partner badges, no third-party reviews, and no published 
 - **Capacity gate**: limit to 10 audits per month at launch. "Currently accepting 10 audits per month" — scarcity is honest, not manipulative.
 - CTA on home + service page + every blog post: "Get a free SEO + Core Web Vitals audit."
 
+> **2026-09-28 (WebAsk):** the UK rewrite of `data/copy/free-audit.ts` sets the offer — five
+> prioritised findings on search, speed and conversion, a 10–15-minute recorded walkthrough and a
+> one-page summary, within three working days unless the reply gives a later date. There is no
+> monthly number, no "30-minute" audit and no Core Web Vitals headline, and the live CTA label is
+> "Get a free site audit"; the file's comment has the sources.
+
 ### 3. Detailed process page
 
 - `/process` (or section within `/about`) walks through Discover → Design → Build → Grow in concrete steps.
@@ -151,6 +157,8 @@ The launch site has no partner badges, no third-party reviews, and no published 
 ### QA + launch
 
 - [x] axe-core passes on home, web dev, about, contact, pricing, privacy _(CI-enforced: `e2e/a11y.spec.ts` runs axe on the full route set in light **and** dark; qa-pass confirmed green coverage.)_
+
+<!-- prettier-ignore -->
 - [x] **Page-composition audit against `strategy/uiux-guidelines.md` § Page anatomy** — once all Phase 1 blocks exist, re-walk every shipped page (home first) against the prescribed anatomy (Hero → Trust strip → Problem/Solution → Proof → **Process (4-step visual)** → **Pricing anchor** → FAQ → CTA band). For each section either confirm it uses the intended block or record an explicit deviation reason (per anatomy spec line 35). _(page-composition-audit feature: audit complete — **every page conforms or deviates legitimately** (interior pages — about/contact/process/pricing/free-audit/legal — carry purpose-specific anatomy; `/pricing` and `/process` **are** the canonical pricing-anchor/4-step surfaces; service-page proof is deferred until case studies exist) **except the home page**. **Resolution (user → "match the anatomy"):** retrofitted home, server-only (zero JS-bundle cost — protects the perf-budget win): new **`ProcessStrip`** (compact 4-step reusing `ProcessStep.shortDescription`, which was authored for exactly this) replaced the `CtaBand` process teaser; new **`PricingAnchor`** ("starting at $X" — 4 curated service prices from `data/services.ts`) replaced the `CtaBand` pricing teaser, delivering the home copy's published-pricing promise on the page itself. Also fixed the one minor finding — **`ServiceHero` gained the anatomy's inline "Starting at USD $X" tag** next to the H1 (was only in the in-body `PricingCard`); inherited by all Phase-2 services via the template. Both retrofits keep their "see full…" deep-links + `cta_click` analytics. Verified: no horizontal overflow at 360/1280px; axe green on `/` light+dark; 13/13 smoke.)_
 - [x] Keyboard navigation manual pass _(human tab-through of the real marketing pages completed by the founder 2026-06-03; automated `e2e/keyboard.spec.ts` — focus-trap + ESC-restore + focus-ring — is CI-green; skip-to-content link + `<main id="main">` present; focus rings axe-tested on 22 routes. The spec only exercises `/dev/components`, not the real marketing pages — same primitives, low risk; a true human tab-through stays a manual step.)_
 - [~] Lighthouse CI green on all 6 critical templates _(lhci-budgets + perf-budget: CI scans the 6 indexable templates on **mobile**; green. After the perf-budget barrel-leak fix the **perf score ≥ 95** is met on 4/6 (`/`, `/pricing`, `/about`, `/process`); `/services` 0.94 and `/contact` 0.90 sit just under — kept as `warn`, not a hard gate, since they're within score variance.)_

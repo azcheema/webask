@@ -92,9 +92,9 @@ const MODULES: ReadonlyArray<ModuleSpec> = [
   },
   {
     path: "data/copy/free-audit",
-    budget: 0.5,
+    budget: 0.05,
     verdict:
-      "VERDICT (founder, 2026-07-30): NEEDS A UK REWRITE — queued as its own feature. The 39% remainder is not deliberate. Budget stays a holding line until the rewrite lands; tighten it to match the others afterwards.",
+      "Rewritten for the UK (2026-09-28), closing the founder's verdict of 2026-07-30 (needs a UK rewrite).",
   },
   {
     path: "data/copy/process",
