@@ -32,7 +32,7 @@ export function PricingCard({ service }: PricingCardProps) {
           </span>
           <span className="text-body-sm text-fg-muted">{pricingQualifier(pricing)}</span>
         </div>
-        {/* Hedged until decision gate D2 resolves — see lib/pricing.ts VAT_NOTE. */}
+        {/* D2 interim position (excl. VAT, reverse charge) — see lib/pricing.ts VAT_NOTE. */}
         <span className="text-caption text-fg-muted">{VAT_NOTE}</span>
       </div>
 

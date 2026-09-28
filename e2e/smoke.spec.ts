@@ -24,7 +24,9 @@ test.describe("smoke", () => {
       await expect(page.getByRole("heading", { level: 3, name: stage, exact: true })).toBeVisible();
     }
     // Pricing anchor surfaces a real "starting at" price on the home page itself.
-    await expect(page.getByText("£3,500", { exact: true })).toBeVisible();
+    // `.first()`: since the 28 September price decisions, web development and CRM
+    // both start at £3,500, so the figure legitimately appears on two anchor cards.
+    await expect(page.getByText("£3,500", { exact: true }).first()).toBeVisible();
     // Both retrofitted sections keep their "see full…" links to the deep pages.
     await expect(page.getByRole("link", { name: /see our process/i })).toBeVisible();
     await expect(page.getByRole("link", { name: /see full pricing/i })).toBeVisible();

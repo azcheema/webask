@@ -1,96 +1,63 @@
 ---
 slug: ecommerce-development
 title: "Ecommerce Website Design UK — Shopify, WooCommerce & Headless"
-description: "UK ecommerce website design built to convert — and to stand up to the DMCC Act, PECR and CMA scrutiny. Shopify, WooCommerce or headless. Starting at £6,500."
-dateModified: "2026-07-28"
+description: "Shopify or WooCommerce, and what does a shop cost to run? We say which fits. A themed Shopify build with checkout and VAT set up starts at £6,500 excl. VAT."
+dateModified: "2026-09-28"
 ---
 
-{/* Body prose only. The hero, price card, includes/not-included lists, FAQs and closing CTA all come from data/services.ts via the page template — do not restate them here. */}
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ecommerce-development entry and is read by the page template — do not duplicate those fields here. Shape: research 13 § 3 (problem → use cases → how it works → basic scope → one decision aid → one safety section → price), adopted 27 September 2026; live-page budget per the 28 September brief; lead and basic scope from research 13 § 4.2 (E-Commerce row: £6,500 buys a themed Shopify build, migrations and custom features are add-ons). Facts carried from the page as of 27 September 2026 and the sources it cites: fake and concealed-incentive reviews illegal since 6 April 2025 under the DMCC Act 2024, the CMA able to fine without recourse to the courts (docs/03 § A6); Accept and Reject with equal prominence and nothing non-essential set before consent (docs/03 § A4); an opt-out at the point of collection and the basis stored against each sign-up (docs/03 § A5; entry includes); VAT-inclusive consumer prices or the exclusion made very clear (docs/03 § A2, entry FAQ); WCAG 2.2 AA with a manual keyboard pass, and the Equality Act 2010 as the accessibility floor in UK terms (docs/03 § A7; the page); £2,500–£10,000 for a standard small-business website from UK agencies (docs/02 § 7, Duport / GetYouOnline 2026); rankings fluctuating for two to four weeks after a platform migration, some sources one to three months (docs/04 § Expected impact); a crawl of the existing shop to build the redirect map, Search Console watched afterwards and redirects kept at least twelve months (docs/04 § Discipline, docs/05 § 5); redirects checked against the new sitemap in Search Console before launch (entry FAQ); the Shopify / WooCommerce / headless trade-offs, Shopify's payment, fraud and patching tooling, the headless front end on Shopify or a fully custom build, each app needing a check before it goes on, the review build (empty launch, proof of purchase, disclosure, markup only where real reviews exist), unevidenced reviews left behind on migration, marketplace URLs never owned so the brand and catalogue move rather than the ranking, running costs not only hosting and all in your own accounts, platform transaction fees and third-party app subscriptions named in the proposal, thirty days of post-launch cover with bug fixes, small tweaks and team training, account ownership and the price levers (current page and entry); £6,500 and the Growth care plan from £500 for a site that earns revenue (brief § 1; research 00 § 6; the Maintenance tiers FAQ); "excl. VAT" (brief § 1.3). Deliberately absent: the DMCC fine ceilings and the March 2026 CMA investigations (docs/03 § A6); the ICO's letters to 53 of the top 100 sites and the PECR fine ceiling (docs/03 § A4); the soft opt-in conditions and the freemail rule (docs/03 § A5); the no-platform-absolves-the-trader paragraph (cut; the table's app point stands in for it); the "bites hardest at a checkout" line (cut, no source for where claims land); the delivery charge losing a basket (cut, no behavioural source); the "quiet drift" table cell (cut, no source for how an unowned install behaves); the photography and description specialist referral (cut, no referral list exists); Shopify Plus builds (no sourced position, founder to confirm scope); WooCommerce builds, because we do not build in WordPress (main's web-development page and entry), so a WordPress specialist is named where WordPress is a requirement; the reasonable-adjustments and recognised-risk-area wording (docs/03 § A7; cut so the same sentence does not repeat across service pages); a larger catalogue as an add-on (no sourced catalogue bound for the starting price; catalogue size stays a price lever in the entry); Google's UK search share (docs/02, docs/05); the regional-agency average and the £100–£300 hosting line (docs/02 § 7); the speed-budget paragraph and its CLS, TBT and LCP figures (.lighthouserc.cjs governs this site, not a client shop); the exposure-ordered fix list (cut; the free-audit link stays); the "what we won't do" list (the review refusal and the not-your-solicitor point are in the safety section, the app-vetting line is in the table); the line calling Core Web Vitals "an undiversified bet" (cut); the ranking-fluctuation band and twelve-month redirects (moved to the migration FAQ in the entry, docs/04, docs/05). */}
 
-## An online shop is a conversion problem and a consumer-law surface
+## Which platform, and what will the shop really cost to run?
 
-Every other page on a business website has one job: persuade. A shop has two. It has to move a visitor from a listing page to a confirmed order, and it has to do that inside UK rules that bite on the shop's _features_ — reviews, price display, basket-recovery email, tracking tags — rather than on its adjectives.
+Settle both before anyone designs a product page. A shop has to take a visitor from a listing to a confirmed order, with its reviews, prices, basket emails and tracking set up to follow UK rules. The starting price buys a Shopify build, handed over in your name; a headless front end (a storefront built as its own code, with Shopify behind it) or a fully custom build is an add-on. Beyond the build, a shop carries a platform subscription, the apps you run and payment fees, all in your own accounts.
 
-A shop built with only the first job in mind has a recognisable shape. The reviews widget came with the theme, the basket sequence came with the email app, the cookie banner came from a free plugin, and the advertising pixel fires regardless of what the visitor clicked. That is what happens when a build stops at "it looks good and the checkout works" — and since April 2025 the second job has had teeth the regulator can use without going near a courtroom.
+## Sound familiar?
 
-## Reviews are the most exposed feature on a UK shop
+Three situations a small business selling online may recognise.
 
-Since **6 April 2025** the Digital Markets, Competition and Consumers Act 2024 has made it illegal in the UK to write, commission or publish fake consumer reviews, or to conceal that a review was incentivised. "Incentivised" is drawn broadly: cash, a discount, a freebie, an event invite, a financial interest. Traders must also not present reviews in a misleading way, and **aggregate scores are explicitly in scope**.
+**The brand that has outgrown its theme.** The product pages are still the theme's defaults. The delivery charge first appears on the payment screen, which is the last point at which a customer learns what the order really costs. The reviews widget came with the theme, and nobody has checked what it shows.
 
-The enforcement design is the part people miss. The **CMA can determine a breach and fine directly, without recourse to the courts** — up to **10% of global annual turnover or £300,000**, whichever is higher, and up to **£150,000** for an individual. Its opening posture was supportive, but in **March 2026 it opened investigations into five named businesses** over review handling.
+**The WooCommerce shop nobody owns.** It was built years ago on WordPress. Plugins have piled up, updates are waiting, and nobody can say whether the advertising pixel loads before or after the cookie banner. It still takes orders, and any change has to keep it taking them.
 
-Set that against the failure modes a storefront build has to guard against: demo reviews arriving with the theme and surviving launch, a review app offers a discount for a photo review and discloses it nowhere, and `AggregateRating` fires on every product whether or not a real review exists.
+**The seller moving off Etsy or Wix.** Orders come in, but the shop lives on someone else's platform. You want a shop of your own, keeping the catalogue and the brand.
 
-So the review system is a named part of the build:
+## How it works
 
-- **Nothing seeded, imported or written by us.** A new shop launches with an empty review component and an honest "no reviews yet" state.
-- **Verified-purchase provenance stored against every review.** The question a regulator asks is not "is this review flattering" — it is "can you show it is real".
-- **Incentive disclosure built into the component**, shown on the review itself, not buried in a policy page nobody opens.
-- **`Product`, `Review` and `AggregateRating` markup that only fires where real reviews exist**, with the marked-up aggregate matching what the page displays.
-- **Moderation that does not quietly bury the negatives** — publishing only the four- and five-star reviews is a misleading presentation, and the easiest breach to prove from outside.
+1. **We make the platform recommendation on the first call.** Where a themed Shopify store fits, we will say so, even when a bigger build would bill more. We recommend headless or a fully custom build only when the brand experience or the integrations genuinely outgrow a themed store.
+2. **We design the templates that take money.** Listing, product, basket and checkout come first, not only the home page. Delivery costs show as a figure, or an honest estimate, as early as the shop can calculate one.
+3. **We wire payments, delivery and tax.** Payment gateway, delivery rules and carrier rates, and tax calculation, each tested against real orders before launch. The tax setting and the price on the page are set up together, so consumer prices display VAT-inclusive.
+4. **We build reviews in from the start.** Your review section launches empty, with an honest "no reviews yet", and each review is stored with proof of purchase. The star ratings that search engines read appear only once real reviews exist.
+5. **You launch, and we stay for thirty days.** Through the first weeks of live trading we cover bug fixes, small tweaks and team training. The store, domain, analytics and customer data sit in accounts you own from day one.
 
-## Basket recovery email, and the rule that decides whether you may send it
+## What the starting price buys
 
-Abandoned-basket and win-back email is the highest-return automation in ecommerce, and in the UK it stands on a narrow footing: the **PECR soft opt-in**. That applies only where all three of these hold.
+Enough to start trading: a themed Shopify shop designed for your catalogue that takes payment, charges delivery by your rules and shows VAT-inclusive consumer prices, with reviews and consent built in from the start. Product photography and description writing are not part of it.
 
-1. The details were obtained **during a sale, or during negotiations for a sale** — which is precisely what a started checkout is.
-2. You are marketing **your own similar goods or services**.
-3. A **clear opt-out was offered when the details were collected, and appears in every message you send**.
+**Add when you need it:** a move from WooCommerce or Wix, with every URL that matters mapped and redirected · a move from a marketplace such as Etsy, bringing the brand and catalogue across rather than the ranking · a headless front end or a fully custom build · subscriptions, with their pause, skip and failed-payment states · multi-currency and selling abroad · links to your business systems (ERP) or fulfilment · a care plan once the thirty days end. Each is scoped when you need it.
 
-Two consequences change the build. **Any freemail address is treated as an individual**, whichever business the person uses it for — so a `gmail.com` customer gets the individual regime whatever your segmentation thinks. And **bought or scraped lists never qualify**: a list inherited with an acquisition is not automatically mailable.
+## Shopify or WooCommerce: which suits a UK small business?
 
-Consent therefore belongs in the build, not in the email tool afterwards. The capture carries its opt-out and a purpose statement at the point of collection, and every record stores **which basis applies** — soft opt-in from a started checkout, or explicit consent from a signup — because a subscriber who never began a purchase isn't covered at all. Unsubscribes write back to the shop, not only to the email platform, and nothing is pre-ticked. Where the automation is the larger part of the job it belongs in [CRM automation](/services/crm-automation) rather than here.
+Shopify is the starting recommendation, because it runs the payments, fraud tooling and platform patching for you; WooCommerce suits a business already on WordPress or with unusual product logic, but then everything is yours to look after. It runs on WordPress, which we do not build in, so where WordPress is a requirement a WordPress specialist is the honest option. Where Shopify fits, moving an existing WooCommerce shop across is an add-on we scope with you.
 
-## Price display, VAT, and the screen where a basket dies
+| Platform                     | Choose it when                                                                | What you look after                                                                                                                            |
+| ---------------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Shopify, custom-themed**   | You want payments, fraud tooling and patching to stop being your problem      | Less: Shopify patches the platform, but reviews, consent and tax display follow the apps you add, so each app needs checking before it goes in |
+| **WooCommerce on WordPress** | You already run WordPress, have unusual product logic, or want to own the lot | All of it — consent, reviews, VAT display, updates — so someone has to own it                                                                  |
+| **Headless**                 | The storefront experience is the product, or speed is a competitive edge      | The storefront code itself; tracking runs only where that code is written to allow it                                                          |
 
-Pricing transparency is the CMA's territory, and of the two things worth saying here only one is a rule. The rule: **prices shown to UK consumers are VAT-inclusive, or the exclusion is made unmistakably clear.** A shop showing an ex-VAT figure to a consumer because its theme was built for a trade catalogue has a real problem, and the fix is a template decision made once rather than a plugin bought at month six.
+## What keeps you safe
 
-The other is only a preference: a delivery charge that first appears at the payment step is the most reliable way to lose a basket you had already won, so the templates surface a figure or an honest estimate as early as the shop can calculate one. Worth knowing which of the two you are being told.
+- **Reviews.** Since 6 April 2025 UK law has banned fake reviews and hiding that a review was incentivised, and the CMA can fine without going to court. We will not seed or write reviews, or carry over any not traceable to a real customer, and will decline a build that depends on them.
+- **Consent and email.** "Reject all" is as prominent as "Accept all", and we test that nothing non-essential, such as tracking or advertising code, runs before a visitor agrees. Every email sign-up is captured with its opt-out at the point of collection and stored with the basis it was collected on.
+- **Accessibility.** In UK terms the accessibility floor is the Equality Act 2010, so the checkout gets a manual keyboard pass against WCAG 2.2 AA.
+- **Your terms.** Your returns policy, terms and consumer-rights wording need someone qualified to sign them off.
 
-## Tags, pixels, and the cookie banner that does nothing
+## What it costs
 
-A shop runs more third-party code than any other kind of site — analytics, advertising pixels, review apps, chat, heatmaps. Under PECR, **"Accept all" and "Reject all" need equal visual prominence**, "by continuing to browse you agree" is not consent, and nothing non-essential may be set **before** consent. The ICO wrote to **53 of the UK's top 100 websites** about exactly this, and PECR exposure runs to **£17.5m or 4% of global turnover, whichever is higher**.
+From £6,500 for a themed Shopify build, excl. VAT. The catalogue, the theming and any integrations move it. UK agencies quote roughly £2,500–£10,000 for a standard small-business website; a shop has more to get right at once — order path, tax display, reviews and consent. Platform transaction fees and third-party app subscriptions stay in your name and are named in the proposal. Every service is on the [pricing page](/pricing).
 
-The commonest failure is the banner itself — rejection made harder than acceptance, which is the ICO's stated main enforcement focus. The second, which survives a banner rebuild, is an honest banner sitting above a theme that hard-codes the pixel into the layout, so it fires either way: invisible in a code review, obvious in the network tab. Which is why the check belongs in the network tab and not in a compliance checklist.
+## When something else fits better
 
-## The floor a shop gets built to
+If you sell nothing online and want enquiries rather than orders, [Web Development](/services/web-development) is the better fit. If the shop exists and simply needs looking after, a [Maintenance](/services/maintenance-support) plan covers updates, monitoring and a monthly bucket of improvement hours. Where the follow-up email automation is the larger part of the job, it belongs in [CRM automation](/services/crm-automation), and being found before anyone buys is [SEO](/services/seo). Clinics selling retail skincare and aftercare online carry the advertising rules for treatments on top of the consumer ones; that groundwork is on [beauty and wellness clinics](/industries/beauty-wellness-clinics). If you already sell online and want to know where the shop stands, start with a [free audit](/free-audit).
 
-Two sets of numbers sit underneath the build, and neither is a result being claimed on your behalf — they are the budgets this site is written against. **Speed:** Cumulative Layout Shift at or under 0.05 and main-thread blocking under 200ms are hard gates on every commit, so a change that regresses them fails before it merges; Largest Contentful Paint is written against 2.0 seconds and carried as a warning, because a throttled build server reports a pessimistically slow number and the field data is what settles it; Interaction to Next Paint cannot be measured in a lab at all, so it is watched in real visitor data after launch. **Accessibility:** WCAG 2.2 AA, an automated score of 100 that either passes or fails the build, a manual keyboard pass.
-
-Where you measure matters as much as the number. A homepage hero can be tuned until it reports beautifully while the listing and product templates — the two that actually take money — are never sampled. Google holds roughly **92.7% of UK search**, so treating Core Web Vitals as optional is an undiversified bet. The accessibility floor is the Equality Act 2010 in UK terms, and on a shop it bites hardest at a checkout that cannot be completed with a keyboard.
-
-## Shopify, WooCommerce or headless — and who carries the compliance surface
-
-Platform choice is usually framed as control versus overhead. In the UK that is incomplete: the platform also decides how much of the consumer-law surface you personally own, and how much gets settled by an app someone installed in ten minutes.
-
-| Approach                      | The case for it                                                          | What the compliance surface looks like                                                                             |
-| ----------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
-| **Shopify, seriously themed** | Payments, fraud tooling and patching stop being your problem             | Narrowed, not removed. Reviews, consent and tax display follow the apps you add, so app choice is a legal decision |
-| **WooCommerce on WordPress**  | An existing WordPress estate, unusual product logic, or owning the lot   | All yours — consent, reviews, VAT display, updates. Fine if someone owns it; quiet drift if nobody does            |
-| **Headless**                  | The storefront experience is the product, or speed is a competitive edge | The strongest position on consent: nothing fires unless you wrote the code that allows it                          |
-
-No platform absolves the trader. When the CMA writes about a review, or the ICO about a tag, it writes to the shop rather than to the vendor whose widget produced it — which argues for the smallest platform that can genuinely carry your catalogue. Every extra layer is one more place a rule gets implemented by accident.
-
-## What £6,500 buys, and what it is being compared against
-
-UK agencies quote roughly **£2,500–£10,000** for a standard small-business website, with regional agencies averaging **£3,000–£6,000**. Set a shop against that band rather than a page count. A brochure site has one thing to get wrong; a shop has an order path, a tax and delivery display, a review system and a consent layer that all have to be right at once — and three of the four have a regulator attached. Our own [pricing](/pricing) follows the display convention argued above: "starting at £X", "+ VAT where applicable".
-
-Running costs afterwards are modest by comparison — domain and hosting basics sit around **£100–£300 a year**, plus a [care plan](/services/maintenance-support) if the platform is to be actively looked after.
-
-## Moving off WooCommerce, Wix or a marketplace — and what not to bring
-
-A migration is usually described as a URL problem. Since April 2025 it is a provenance problem too, and that is the half nobody plans for. Reviews that cannot be traced to a real customer are the one asset to leave behind deliberately: republishing them on a new shop is a fresh act of publication, so an unevidenced corpus stops being inherited social proof and becomes inherited liability. Have that conversation before the build, not during cutover week.
-
-The search side is ordinary discipline, and two numbers are worth knowing in advance. Expect a **two-to-four-week ranking wobble** after cutover before things settle, and keep the redirects for **at least twelve months** — holding them longer costs nothing, and dropping them early is the one migration decision that cannot be walked back.
-
-## What we won't do
-
-- **We will not seed, import or write reviews for your shop**, and we'll decline a build that depends on it. This is the one item here that isn't a preference.
-- **We won't add an app because it is popular.** Apps get checked for what they set and what they publish before they go on, and the ones that can't answer don't go on.
-- **We are not your solicitor.** We build to published ICO and CMA guidance and will say where we think the risk sits, but your returns policy, terms and consumer-rights wording need someone qualified to sign them off.
-
-## If you already sell online, the order matters
-
-The temptation when fixing an existing shop is to work easiest-first rather than most-exposed-first. Ordered by exposure instead: reviews, as the one carrying direct fines with no court in the way. Then consent, because a pixel firing before the banner is trivial to verify from outside the business. Then price and delivery display, usually a template fix rather than a project. Speed last — it pays commercially and has no regulator attached, which is exactly why it tends to get done first. A [free audit](/free-audit) is the cheapest way to find out which of the four you are failing.
-
-Clinics selling retail skincare and aftercare online carry a stricter version of it, because the advertising rules for the treatments sit on top of the consumer ones — that groundwork is on [beauty and wellness clinics](/industries/beauty-wellness-clinics). [Our process](/process) sets out what each stage produces; the rest of what we build is on [services](/services).
+[Get in touch](/contact) with your catalogue and the platform you sell on today, or read [how a project runs](/process) first.

@@ -90,7 +90,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "How much does an aesthetic clinic website cost?",
         answer:
-          "A custom clinic website starts at £3,500 for the build. Add CRM and booking automation (from £2,500) where enquiries are getting lost between the form and the diary, and a monthly SEO retainer (from £750 a month) where local search is where your patients start — each + VAT where applicable. We scope the mix on a call: there is no sense selling you a £12,000 site when a focused build plus automation is what fills the diary. Every figure here is an indicative starting point published up front, not a binding offer and not a prompt to request a quote.",
+          "A custom clinic website starts at £3,500 for the build. Add CRM and booking automation (from £3,500) where enquiries are getting lost between the form and the diary, and a monthly SEO retainer (from £750 a month) where local search is where your patients start — each excl. VAT. We scope the mix on a call: there is no sense selling you a £12,000 site when a focused build plus automation is what fills the diary. Every figure here is an indicative starting point published up front, not a binding offer and not a prompt to request a quote.",
       },
       {
         question: "Why is my current clinic website probably non-compliant?",
@@ -152,7 +152,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "How much does a dental practice website cost?",
         answer:
-          "A custom practice website starts at £3,500 for the build. Two additions are worth scoping alongside it: local SEO (from £750 a month) where new-patient search is the channel you compete in, and CRM automation (from £2,500) to run recall, reminders and reactivation without the front desk chasing — each + VAT where applicable. We scope the combination on a call: a single-site general practice and a three-site orthodontic group need very different things, and we will not sell you the larger one to pad the invoice.",
+          "A custom practice website starts at £3,500 for the build. Two additions are worth scoping alongside it: local SEO (from £750 a month) where new-patient search is the channel you compete in, and CRM automation (from £3,500) to run recall, reminders and reactivation without the front desk chasing — each excl. VAT. We scope the combination on a call: a single-site general practice and a three-site orthodontic group need very different things, and we will not sell you the larger one to pad the invoice.",
       },
       {
         question: "Why does the CMA market study matter for my website?",
@@ -214,7 +214,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "How much does a website for a spa or wellness clinic cost?",
         answer:
-          "A custom site starts at £3,500. CRM and booking automation is scoped from £2,500 where bookings, memberships, packages and follow-up need to run without someone at the desk, and local SEO from £750 a month where nearby search is how people find you — each + VAT where applicable. The right mix depends on whether you are a single studio or a multi-service clinic with memberships, so we scope it on a call rather than quote blind. Every starting price is published up front.",
+          "A custom site starts at £3,500. CRM and booking automation is scoped from £3,500 where bookings, memberships, packages and follow-up need to run without someone at the desk, and local SEO from £750 a month where nearby search is how people find you — each excl. VAT. The right mix depends on whether you are a single studio or a multi-service clinic with memberships, so we scope it on a call rather than quote blind. Every starting price is published up front.",
       },
       {
         question: "Can you handle memberships, packages, and gift cards?",

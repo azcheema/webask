@@ -213,7 +213,7 @@ export const locations: ReadonlyArray<Location> = [
         {
           question: "How much does a website cost for a Manchester business",
           answer:
-            "A custom website build starts at £3,500, SEO at £750 a month and CRM automation at £2,500, all + VAT where applicable. Manchester carries no local surcharge: the price follows the scope, not the postcode. Worth knowing about the other end of the market, though — UK SEO sold at around £99 a month buys automated links and thin reporting (dotwall, 2026), which is why the monthly figure above sits well clear of that floor.",
+            "A custom website build starts at £3,500, SEO at £750 a month and CRM automation at £3,500, all excl. VAT. Manchester carries no local surcharge: the price follows the scope, not the postcode. Worth knowing about the other end of the market, though — UK SEO sold at around £99 a month buys automated links and thin reporting (dotwall, 2026), which is why the monthly figure above sits well clear of that floor.",
         },
         {
           question: "Should we target web design Manchester as our main keyword",
@@ -303,7 +303,7 @@ export const locations: ReadonlyArray<Location> = [
         {
           question: "How much does a website cost for a Cheshire business",
           answer:
-            "A custom website starts at £3,500 and SEO at £750 a month, with CRM and booking automation from £2,500 — all + VAT where applicable, and all published rather than released on request. For context: UK agencies quote £2,500–£10,000 for a standard small-business website (Duport / GetYouOnline, 2026), and UK SEO retainers for small businesses run roughly £150–£800 a month (dotwall / RedEagle, 2026). What moves the number is scope — pages, integrations, complexity — and nothing else. Where a clinic's price list has to be restructured rather than reworded, much of that scope is information architecture, and it is agreed in writing before anything is built.",
+            "A custom website starts at £3,500 and SEO at £750 a month, with CRM and booking automation from £3,500 — all excl. VAT, and all published rather than released on request. For context: UK agencies quote £2,500–£10,000 for a standard small-business website (Duport / GetYouOnline, 2026), and UK SEO retainers for small businesses run roughly £150–£800 a month (dotwall / RedEagle, 2026). What moves the number is scope — pages, integrations, complexity — and nothing else. Where a clinic's price list has to be restructured rather than reworded, much of that scope is information architecture, and it is agreed in writing before anything is built.",
         },
         {
           question: "Do you work with Cheshire businesses if you have no office in the county",
@@ -375,7 +375,7 @@ export const locations: ReadonlyArray<Location> = [
         {
           question: "How much does a website cost for a Leeds business",
           answer:
-            "A custom build starts at £3,500, SEO at £750 a month, CRM automation at £2,500 and a care plan at £250 a month, each + VAT where applicable. For context, UK agencies quote £2,500–£10,000 for a standard small-business website (Duport / GetYouOnline, 2026), and regional agencies average £3,000–£6,000 for design, responsive build, basic SEO, a CMS and five to fifteen pages, on UK regional-agency benchmark data from the same year. Regulated work is not automatically dearer. It is scoped differently: the information architecture has to satisfy a rulebook before it satisfies a layout, so that gets settled at the structure stage rather than at sign-off. Every figure is a starting point quoted against a written scope.",
+            "A custom build starts at £3,500, SEO at £750 a month, CRM automation at £3,500 and a care plan at £250 a month, each excl. VAT. For context, UK agencies quote £2,500–£10,000 for a standard small-business website (Duport / GetYouOnline, 2026), and regional agencies average £3,000–£6,000 for design, responsive build, basic SEO, a CMS and five to fifteen pages, on UK regional-agency benchmark data from the same year. Regulated work is not automatically dearer. It is scoped differently: the information architecture has to satisfy a rulebook before it satisfies a layout, so that gets settled at the structure stage rather than at sign-off. Every figure is a starting point quoted against a written scope.",
         },
         {
           question: "How does a remote build work with our compliance officer",

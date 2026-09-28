@@ -282,7 +282,7 @@ export const terms: LegalDocument = {
     {
       heading: "Services, prices and proposals",
       body: [
-        "The site describes our services and shows published starting prices in pounds sterling, exclusive of VAT where applicable. Those figures are indicative and are not an offer. An engagement begins only when we and you agree a written proposal or contract, which sets out the actual scope, price and terms, and that document takes precedence over anything on the site.",
+        "We supply our services to businesses only, not to consumers. The site describes those services and shows published starting prices in pounds sterling, excluding VAT: WebAsk is operated from Sweden, and a UK business customer accounts for any VAT due under the reverse charge, so none is added to our invoices. Those figures are indicative and are not an offer. An engagement begins only when we and you agree a written proposal or contract, which sets out the actual scope, price and terms, and that document takes precedence over anything on the site.",
       ],
     },
     {

@@ -71,7 +71,7 @@ export function ServiceHero({
                 {`Starting at ${formatGBP(pricing.startingAmount)}`}
               </span>
               <span className="text-fg-muted">{` ${pricingQualifier(pricing)}`}</span>
-              {/* Hedged until D2 resolves — see lib/pricing.ts VAT_NOTE. */}
+              {/* D2 interim position (excl. VAT, reverse charge) — see lib/pricing.ts VAT_NOTE. */}
               <span className="text-fg-muted">{` · ${VAT_NOTE}`}</span>
             </p>
           ) : null}

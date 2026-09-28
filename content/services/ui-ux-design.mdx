@@ -1,181 +1,61 @@
 ---
 slug: ui-ux-design
 title: "UX and UI Design Agency for UK Businesses"
-description: "UX and UI design for UK businesses — consent banners, WCAG 2.2 AA and an information architecture that survives UK regulation. Starting at £3,000."
-dateModified: "2026-07-28"
+description: "People land on your site and leave, and nobody knows why. A UX audit looks for where, then the key flows are redesigned to WCAG 2.2 AA. From £3,000."
+dateModified: "2026-09-28"
 ---
 
-{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ui-ux-design entry and is read by the page template — do not duplicate those fields here. */}
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ui-ux-design entry and is read by the page template — do not duplicate those fields here. Shape: research 13 § 3, adopted 27 September 2026; live-page budget per the 28 September brief; lead and basic scope from research 13 § 4.2 (UI / UX row: £3,000 buys an audit and a redesign of the key flows; a design system is an add-on — so the tokenised Figma component library, in the starting scope until 27 September, is now named as an add-on). Facts carried from the page as of 27 September 2026 and the sources it cites: the £3,000 starting price (docs/02 § 7, adopted 28 September 2026 per research 00 § 6), VAT as excl. VAT (28 September brief § 1.3); WCAG 2.2 AA (docs/03 § A7); the temporary brand kit as a Web Development add-on (the web-development entry's notIncluded); equal prominence of Accept all and Reject all, nothing non-essential before a choice as a documented handover item, the freely-given test and the ICO's main enforcement focus (docs/03 § A4, the page as of 27 September); the CMA's market study of private dentistry with pricing transparency in scope (docs/03 § B2, the page as of 27 September); the price-list architecture rule for a prescription-only medicine — at least two clicks from the homepage, reached through consultation pages, purely informational with no promotional framing, in neither the homepage nor the primary navigation — as our reading of ASA/CAP guidance as at July 2026, not legal advice, with CAP's free Copy Advice service (docs/03 § B1, docs/08 §§ 4 and 6); discovery interviews, information architecture and sitemap, wireframes then 3–10 screens or flows, the design done in Figma (the page as of 27 September), two revision rounds, exported assets and documentation, the designer carrying the design into the build (the catalogue entry of 27 September); roughly 4–6 weeks for a focused engagement (the catalogue FAQ); more flows, usability testing or a design system as what adds to the price (the catalogue priceNote); the conversion framing (the page as of 27 September); the five-page, no-payments, no-patient-data, no-regulator condition for a cheaper route (the page as of 27 September); the free audit as a first pass that costs nothing (the page as of 27 September); the paid UX audit sorting what to keep from what to redesign, with each change scoped before you commit (the catalogue FAQs of 27 September); a restyle of the visual layer that keeps what works as the cheaper route when the structure holds up (the catalogue FAQ of 27 September); no logo or brand identity; the full UX review as the research stage of an engagement, not sold separately; the silo discipline of one obvious parent per page, put in plain words as one clear home. Deliberately absent: the Equality Act sentence (Web Development carries it); the free audit putting a cost against each fix, which it does not do (data/copy/free-audit.ts: five prioritised fixes, no costing); the PECR fine ceiling and the 53-of-100 ICO letters (docs/03 § A4); the DMCC Act review rules, the CMA fine ceiling and the March 2026 investigations (docs/03 § A6); CAP 12.12 and 12.18 by number and the three named ASA rulings (docs/03 § B1, docs/08 § 6); the £8.4bn size and March 2026 opening of the CMA private-dentistry market study (docs/03 § B2, /industries/dental-practices); the old site's fabricated testimonials and staff page, and the no-testimonials disclosure (docs/04 cutover, /about); the fully-remote paragraph (/about and the footer, D1); the DIY, freelance and agency website price bands, which price a website build rather than design work (docs/02 § 7, /services/web-development); the Lighthouse CI accessibility gate, which describes this site's pipeline rather than a client deliverable (.lighthouserc.cjs); the link to /services, which is outside the live link list; this site's teal at 5.47:1 against white, which describes this site rather than a client deliverable (CLAUDE.md, docs/01 § D5); the minimal interim brand kit (the page as of 27 September); the per-stage target dates, which stay in the catalogue FAQ. */}
 
-{/* WRITTEN FRESH for the UK — deliberately not a British-spelling pass over Naxdor's US design page (docs/05 § 2, "ported pages get rewritten"). The spine is UK-only and cannot exist on a US site: PECR consent prominence (docs/03 § A4), the Equality Act 2010 framing of WCAG 2.2 AA (§ A7), CAP's two-click condition on a prescription-only price list as an IA deliverable (docs/08 § 4), and the DMCC Act 2024 review rules (docs/03 § A6). Note that this page describes the injectables advertising rule without naming a medicine or a euphemism — that discipline is the proof of the claim. Keep it that way. */}
+## Visits but no enquiries? Start with a UX audit.
 
-Most UX pages sell taste. This one starts somewhere less comfortable: in the UK, a handful of
-the decisions made in a design file are the ones a regulator eventually looks at.
+The analytics show visits. The inbox stays quiet. That may be a conversion problem: people giving up somewhere between the first screen and the enquiry form, and a new template will not tell you where. UX design starts by looking for where people leave. A UX audit comes first, then a redesign of the key flows: accessible to WCAG 2.2 AA, and documented well enough for any team to build.
 
-Not the typeface. The relative prominence of two buttons. The contrast of a link against the
-surface behind it. Whether a page sits one click from the homepage or two. Those get decided in
-the first fortnight, and by the time anyone checks them the site has been live a year and the
-fix is a rebuild.
+## Sound familiar?
 
-The conversion work is still the job — clearer structure, less friction, fewer people
-abandoning halfway through an enquiry. What is different here is that a few of those
-decisions are load-bearing, and get designed as if they are.
+**The enquiry form nobody finishes.** If a contact form asks for everything before it asks what the person wants, and the send button sits off the bottom of a phone screen, a visitor can start it and never press send.
 
-## The consent banner is a design problem, not a cookie plugin
+**The product that grew a menu.** If every feature since launch has added another menu item, and the colours were chosen in a hurry at the start, new users may struggle to find the one thing they signed up to do, even if those who learned it early do not.
 
-Under PECR, consent has to meet the UK GDPR Article 4(11) standard: freely given, specific,
-informed and unambiguous. Most UK sites treat that as something a plugin takes care of. A
-plugin ships a component; the standard is met or missed in how that component is designed.
+**The rebuild about to start.** If a developer is booked for the new site and the plan is to copy the old menu across, it is worth asking first whether the old menu was the problem. A page is easy to move while it is still a box on a wireframe, and expensive to move once it is code.
 
-The failure is prominence. **"Accept all" and "Reject all" need genuinely equal visual
-prominence.** A banner where accepting is a solid brand-coloured button and rejecting is grey
-text below it fails the freely-given test. That is the most common failure on UK sites and the
-ICO's main enforcement focus — it wrote to **53 of the UK's top 100 websites** about cookie
-banners, and PECR exposure runs to **£17.5m or 4% of global turnover, whichever is higher**.
+## How it works
 
-Equal prominence is not a legal question answered at the end of a build. It is contrast ratio,
-type scale, button weight, reading order and tap-target size — decided in Figma, in about ten
-minutes, usually by someone who has never been told it matters.
+1. **The UX audit.** Discovery interviews with you, and a review of the current site or product. It sets out what looks worth keeping and what may be costing you, before anything is redrawn. This is the UX review; it is the first stage of the work, not a report sold on its own.
+2. **Structure before screens.** We map every page and where it sits (the information architecture and sitemap), so each page has one clear home and the menu, the links and the sitemap agree.
+3. **Wireframes, then the UI design.** Wireframes are signed off before any colour goes on. Then the finished design, in Figma, across 3–10 screens or flows. Contrast is measured when a colour is chosen, not assumed.
+4. **Handover, or straight into the build.** You review the design in two rounds, then receive it documented for your developers to build from. If we build it too, the person who designed it writes the code, so there is no handover step for the design to drift in.
 
-What we design to, and hand over documented:
+A focused engagement is scoped at roughly 4–6 weeks.
 
-- Two actions at the same visual weight — same size, same hierarchy, same hit area. If the
-  reject path is one tap harder, it is not equal.
-- Nothing non-essential fires before a choice is made — not "on load, we will ask in a
-  moment". No pre-ticked boxes, no "by continuing to browse you agree", no cookie wall
-  withholding the content until acceptance. None of the three is consent.
-- A designed way back in: a persistent cookie settings link in the footer, in the layout from
-  the start, because consent has to be re-obtainable.
-- A cookie policy that enumerates each cookie, its purpose, duration and provider — a
-  content-design job with a real table in it, not a boilerplate paste.
+## What the starting price buys
 
-## Accessibility is an Equality Act question before it is a Lighthouse score
+A UX audit of your site or product, an information architecture and sitemap, wireframes and then finished design across 3–10 screens or flows, two revision rounds, and a handover of exported assets and written documentation. In short, an audit and a redesign of the key flows: on a marketing site, the path from a landing page to a sent enquiry; in a product, sign-up and the core task.
 
-We build to WCAG 2.2 AA. In the UK the framing that moves a budget is the **Equality Act
-2010**: service providers must make reasonable adjustments, and an inaccessible website is a
-recognised risk area. Risk reduction plus reach — not a nice-to-have, and not a badge.
+**Add when you need it:** a design system — every colour, type size and component defined once in Figma, named to match your developers' code, so every future screen is built from it · usability testing · more flows · design work after handover, as a retainer.
 
-Nearly all of it is settled in design rather than in code. Colour contrast. Visible focus
-states, the first thing removed when someone finds them ugly. Target size. The order in which
-things take keyboard focus, which is the order they were drawn in. An engineer can implement an
-inaccessible design perfectly, and frequently does.
+## UX agency or freelance designer?
 
-So contrast gets measured when a colour is chosen, not assumed. The teal on this site
-clears white text at 5.47:1 — a number that arrived by measurement and came in lower than the
-estimate it replaced, which is the entire argument for measuring. A brand colour that fails is
-cheap to change in week one and expensive to unpick once it is in forty components.
+The label matters less than what is broken. Three situations, three answers:
 
-Underneath that sits a gate rather than a promise: our pipeline fails a build that scores below
-100 for accessibility in Lighthouse CI, with axe-core and a manual keyboard pass alongside it.
-That is a constraint we work under, not a result we are inviting you to admire.
+| Your situation                                           | What fits                                                                                            |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| The structure works and only the look has dated          | A restyle of the visual layer that keeps what works: the cheaper route, by a freelancer or an agency |
+| People leave and nobody can say where                    | A UX audit before any redesign, by a freelancer or an agency                                         |
+| The design has to arrive in code exactly as it was drawn | Design and build by the same person, or documentation your developers build from                     |
 
-None of it survives on its own. Equal prominence agreed in a review and then rebuilt by
-eye stops being equal prominence; a contrast ratio that passes in a mockup and fails in the
-component library has passed nothing. So the rules that carry regulatory weight get written into
-the component definition — focus, error and disabled states, target sizes — where whoever adds a
-screen next year inherits them without having to be told they exist.
+## What keeps you safe
 
-## Information architecture as a compliance deliverable
+- **The cookie banner.** If there is one, "Accept all" and "Reject all" match in size, weight and tap area, and the documentation specifies nothing non-essential runs before a choice. Unequal prominence fails the freely-given test and is the ICO's main enforcement focus.
+- **Accessibility.** Every screen is designed to WCAG 2.2 AA: contrast measured, keyboard focus outlines kept, buttons big enough to tap.
+- **Clinic navigation.** A price list covering a prescription-only medicine may exist only if it sits at least two clicks from the homepage, reached through consultation pages. It must stay purely informational, without promotional framing, and be absent from the homepage and the primary navigation. Our reading of ASA/CAP guidance as at July 2026, not legal advice; borderline copy goes to CAP's free Copy Advice service.
 
-This is the argument nobody in UK UX seems to make, and it is the one that matters most if you
-run a clinic.
+## What it costs
 
-CAP Code rule 12.12 prohibits advertising a prescription-only medicine to the public. Most
-practitioners half-know that. What almost nobody explains is the conditional permission
-underneath it: a price list covering such a treatment **may** exist — provided it sits at
-least two clicks from the homepage, is reached through a consultation-first path, stays
-purely informational with no promotional framing, and appears in neither the homepage nor the
-primary navigation. (Our reading of ASA/CAP guidance as at July 2026, not legal advice.)
+From £3,000 a project, excl. VAT, for the audit and the redesign above. More flows, usability testing or a design system add to it, and each is scoped before you commit. Every starting figure is on the [pricing page](/pricing). If your site is five pages, takes no payments, holds no patient data and answers to no regulator, a cheaper route may well be the right call. If it is, we will say so rather than quote you.
 
-Read that as a specification rather than a warning, because that is what it is. Navigation
-depth. A required linking path. An exclusion from the top-level menu. A sitemap that agrees
-with the menu. Every one is an information-architecture deliverable — what a UX engagement
-produces, and what a copywriting pass cannot give you. No phrasing rescues a menu that lists
-the wrong thing at the top level, and the softer substitutes clinics reach for instead of the
-brand name have themselves been ruled against as implied promotion — Venus Beauty Lounge in
-2015, Beauty Boutique Aesthetics in 2019 and Glowery Ltd in 2023 among the upheld rulings — so
-rewording is not the escape hatch either.
+## When something else fits better
 
-We call the pattern **consultation-first architecture**: concern-led entry pages, the detailed
-material reached through consultation content, and the navigation, internal links and sitemap
-all built to the same rule instead of contradicting one another. More on how it is built on
-[websites for UK aesthetic clinics](/industries/aesthetic-clinics).
+If the structure is sound and what you need is a new site, design comes inside [Web Development](/services/web-development). If the screens belong to a tool with sign-in and roles, design is part of [Web Applications](/services/web-app-development). If you are not sure yet where the problem lies, the [free audit](/free-audit) is a no-cost first look at your site. The rules that shape a clinic's menus and price lists are covered for [aesthetic clinics](/industries/aesthetic-clinics); the CMA's market study of private dentistry, with pricing transparency in scope, is covered for [dental practices](/industries/dental-practices). A logo or a brand identity from scratch belongs with a brand studio; we design within an existing brand, and a temporary brand kit to launch a site with is a [Web Development](/services/web-development) add-on.
 
-Dentistry has its own version: the CMA opened a market study into the **£8.4bn private
-dentistry sector in March 2026**, pricing transparency squarely in scope — and a price list is
-an interface long before it is a policy. See
-[websites for UK dental practices](/industries/dental-practices).
-
-If nobody regulates your trade, none of this binds you. The discipline still transfers, because
-it is the discipline a silo runs on: every page with one obvious parent, one reason to exist,
-and links that point up to it, so relevance concentrates instead of scattering across a menu
-that grew by accretion.
-
-## The testimonial slider is a regulated component now
-
-Since **6 April 2025** the DMCC Act 2024 has made publishing fake consumer reviews illegal in
-the UK, along with concealing incentivised ones — and traders must not present reviews in a
-misleading way, aggregate scores included. The CMA can determine a breach and fine directly,
-without a court: up to **10% of global annual turnover or £300,000**, whichever is higher. In
-**March 2026** it opened investigations into five named businesses over review handling.
-
-That turns ordinary interface choices into decisions with consequences. A five-star average
-needs its sample size beside it. An incentive needs a disclosure sitting with the review, not a
-note on another page. A slider that quietly shows only the flattering ones is a presentation
-problem with a statutory definition. On a clinic site the same component answers to a second
-rule as well — CAP 12.18 bars celebrity and health-professional endorsement of a
-prescription-only medicine — so what a testimonial is allowed to display there is narrower than
-the honesty test alone would suggest.
-
-The clearest example we can point at is this domain. The old site it replaces carried
-testimonials attributed to people who do not exist, next to a staff page listing colleagues who
-were never hired, for a one-person business. That was ours, and it is coming down as part of
-this launch — in that order, because the new site has to be answering on the domain before the
-old one goes, or every indexed URL dies into a 404 in between.
-
-This site carries no testimonials at all. WebAsk is new in the UK, and there is nobody yet who
-could give one honestly. That makes a weaker page than a carousel of five-star quotes would. It
-is also the only version of it anyone making the argument above can honestly publish.
-
-## What a cheaper option genuinely buys you — and what we will not take on
-
-You can go cheaper, and the UK numbers are not close. A DIY builder runs **£240–£360 a year**.
-A freelance build sits around **£800–£3,000**, with a typical four-to-five-page site at
-**£1,200–£2,000**. Agency work starts around **£2,500**. If your site is five pages, takes no
-payments, holds no patient data and answers to no regulator, the cheap end may well be the
-right call, and we will say so rather than quote you.
-
-The starting figure on the price card above earns its keep in one situation: when the interface
-itself is where the risk sits, or when the structure is what is broken. A nicer template fixes
-neither.
-
-Three things this is not:
-
-- **Legal advice.** We are not solicitors. Where clinic copy or a structure sits close to the
-  line, CAP runs a free Copy Advice service, and that is where the question goes rather than
-  into a guess.
-- **A boxed UX audit with a price tag.** The first pass is the [free audit](/free-audit) and it
-  costs nothing; a full UX review is the research stage of an engagement, not a product sold
-  separately. A report nobody acts on is the least useful thing in this trade.
-- **A pixel-for-pixel rebuild.** If the brief rules out changing the structure, it rules out
-  most of what this page describes: banner prominence, navigation depth and focus order all
-  _are_ structure. You would be paying for rendering, and rendering is cheaper elsewhere.
-
-One thing worth stating plainly on a page about what an interface claims: WebAsk is fully
-remote, with no UK office. There is no map pin, no Google Business Profile and no address in
-this site's structured data — only the areas it serves. A postcode we do not work from would
-open up local search. It would also be precisely the class of claim this page argues against.
-
-## The question worth asking before you scope anything
-
-Which single screen would a regulator look at first? On most UK sites it is the consent banner.
-On a clinic site it is the navigation. On any site old enough to have a slider, it is the
-reviews. If the answer is obvious to you, your brief is nearly written. If it is not, that is
-the finding worth having, and it is what the [free audit](/free-audit) goes looking for.
-
-Design rarely arrives on its own either way — it sits next to a build, a rebuild, or a product
-that has outgrown its structure. The [full service list](/services) shows what it connects to,
-[our process](/process) sets out how an engagement runs, and [pricing](/pricing) collects every
-starting figure in one place. When you want to talk specifics, [get in touch](/contact): a
-reply comes within three working days, with a scope if the work fits and a name to try instead
-if it does not.
+[Get in touch](/contact) with the address of the site or product and the screen you suspect, or read [how a project runs](/process) first.

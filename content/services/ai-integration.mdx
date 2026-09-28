@@ -1,86 +1,67 @@
 ---
 slug: ai-integration
 title: "AI Automation Agency UK — Voice Agents, Chatbots & Workflows"
-description: "AI voice agents, chatbots and workflow automation for UK businesses, built inbound-first around PECR and Ofcom. Starting at £4,500 + VAT where applicable."
-dateModified: "2026-07-28"
+description: "Answering the same questions all day? AI chatbots, workflows and voice agents, built into your systems and tested on your own enquiries. From £4,500 excl. VAT."
+dateModified: "2026-09-28"
 ---
 
-{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ai-integration entry and is read by the page template — do not duplicate it, and in particular not the three price levers in priceNote, the two running costs in notIncluded, or the grounding and evaluation-harness FAQ answers. Structure follows the UK picture: AI calling under PECR/Ofcom (docs/03 § B3), what a generated answer is allowed to say under CAP and the GDC (docs/03 § B1, B2), and the widget consent gate (docs/03 § A4). The PECR legal-form segmentation argument belongs to /services/crm-automation — link to it, never restate it here. */}
+{/* Body prose only. Catalogue data (hero subhead, price, includes/not-included, CTA, FAQs) lives in data/services.ts under the ai-integration entry and is read by the page template — do not duplicate those fields here. Shape: research 13 § 3 (problem → use cases → how it works → basic scope → one decision aid → one safety section → price), adopted 27 September 2026; live-page budget per the 28 September brief; basic scope per research 13 § 4.2 (one grounded chatbot or one workflow; voice and more systems are add-ons). Facts carried from the page as of 27 September 2026 and the sources it cites: inbound as the clean case and outbound as a separate, consent-gated regime needing the subscriber's prior explicit consent (page, voice and outbound sections; docs/03 § B3); the unresolved live/automated classification (docs/03 § B3), informal ICO guidance that a two-way agent with a human handoff may be treated more like a live call, as an indication not a ruling (docs/03 § B3; main's page; catalogue FAQ); identification at the start of the call, a real route to a person (a transfer during opening hours, a callback request outside them, catalogue FAQ) and building for the safer reading rather than the convenient one (page, unresolved-law section); callers told up front about recording, disclosure in the opening line, recordings somewhere you own (page; docs/03 § B3); treating an answer given to a member of the public as your own marketing copy, answering from reviewed copy and declining treatment questions, pointed at the industry pages (page, "what the model is allowed to say"; docs/03 §§ B1, B2); nothing non-essential before consent and reject as prominent as accept (page; docs/03 § A4); the decidability test for workflows, n8n or Make, and the LLM-doing-arithmetic line (page, workflow section); the awkward ones, the price ones and the ones asked before anyone will book as a fixed test set from your own enquiries, run before launch and after every change (page, chatbot section; catalogue includes); a narrow job because it is testable (page); "start with the leak", enquiries at 9pm waiting until morning and an evening enquiry that may have gone cold (the page's "cold by morning", hedged), an afternoon a week moving data between two systems, and the no-model fixes (page, closing sections); the overflow when three lines ring at once and every line is busy (page, voice section; catalogue FAQ); the voice agent as one built to your own systems and answer sets, where an off-the-shelf receptionist plan is not enough (research 02 § 5 I.8); a working capability rather than three things half-finished (catalogue FAQ); how to work out whether a voice agent pays for itself (the ROI guide's own description); no published per-minute rate, modelled from your own call data during scoping (page; now in the catalogue pricing FAQ); the divert from your published number, the calendar and the reversible widget (catalogue FAQ); written scope within three working days or "do not build this" (page, closing); 30 days of tuning (catalogue includes); the optional Maintenance care plan picking up monitoring after them (catalogue FAQ on running costs, narrowed to monitoring because the Maintenance page covers a website, a web app or a CRM); usage passed through at cost (catalogue notIncluded); £4,500 and "excl. VAT" (brief of 28 September 2026 § 1). Deliberately absent: the CAP Code named as the reason, the POM ban read through euphemisms and the GDC's protected "specialist" description (/industries/aesthetic-clinics, /industries/dental-practices; docs/03 §§ B1, B2); the retention-period decision (cut for length); Maintenance's £250-a-month price (/services/maintenance-support and /pricing); lunchtime peaks, how often answers change and "not the internet" (no source); the "safer reading of UK rules" line in the description (kept in the safety section); the "automated the disagreement" line and the plain-fix promise (cut to keep the decision aid short; the table's test column carries the decidability test); the £17.5m or 4% PECR ceiling, Ofcom's persistent-misuse rules, CLI authenticity and the 2025 GC6 revision (docs/03 § B3; outbound is an add-on scoped separately); RIPA (docs/03 § B3); the 47 MHRA notices in 2024 and the ASA's AI-powered monitoring (docs/03 § B1, docs/02, /industries/aesthetic-clinics); the PECR legal-form segmentation argument (/services/crm-automation); "fully remote, no UK office" (/about and the footer); the ICO's 25 September 2025 fines on recorded, non-live marketing speech (research 08 § A5b [S09]; cut from the FAQ for length); a caller ringing the next name on the list (Missed-Call Text-Back carries it); "AI receptionist" as the name of the voice add-on (the draft plan's name; the receptionist plan is not named or linked while it is a draft); "as at July 2026" (the reading is now carried as "not legal advice"); the two-thirds-versus-nine-in-ten comparison, "usually the first to pay for itself", "often the leak closes" and "almost no small business needs one" (cut as implied track record); the /services index link (not on the live-link list). */}
 
-An AI voice agent answering your phone in the UK is not only a technology decision. It sits under **PECR** and **UK GDPR**, policed by the ICO, and under **Ofcom's** nuisance-call rules. That regulatory picture goes first on this page rather than last, because it changes what gets built — and because a well-advised buyer will raise it anyway.
+## The same questions all day, and the phone still rings out.
 
-Starting at **£4,500 + VAT where applicable**. Voice agents first, since that is where the law bites, then chatbots and workflow automation, where it mostly does not.
+Your team answers the price question, the parking question and the "are you open on Saturday" question again and again. Evening enquiries sit in an inbox until morning. Somebody spends an afternoon a week retyping forms into the CRM. AI integration takes one of those jobs off them: a chatbot that answers from material you have approved, a workflow that ends the retyping, or a voice agent for the calls that ring out. Each is built into the systems you already use.
 
-## The part of UK law that is genuinely unresolved
+## Sound familiar?
 
-PECR divides telephone calls into two kinds: **live** calls — a human, or something human-equivalent — and **automated** calls, meaning recorded or pre-recorded messages. Different rules attach to each. An AI voice agent is neither, cleanly.
+Three leaks you can name, and could measure.
 
-The regulator has not formally resolved that grey zone. Informal ICO guidance points one way: an AI capable of genuine two-way conversation, with a human handoff available, looks more like a live call than a recorded message. That is an indication, not a ruling.
+**Your website at nine at night.** Someone has read the treatment page and wants to know the consultation fee and the next free Saturday. There is nobody to ask. The enquiry form waits until morning, and by then the enquiry may have gone cold.
 
-So: unsettled, with a lean. Anyone telling you the classification is decided is either guessing or selling.
+**The front desk when every line is busy.** Three lines ring at once with questions that have a settled answer, and the next call rings out.
 
-We build for the safer reading rather than the convenient one — genuine two-way conversation instead of a decision tree with a voice on top, a real route to a person, and identification at the start of the call rather than an agent that lets callers assume it is human. If the position hardens, a system built that way does not need rebuilding.
+**An afternoon a week of copying.** Enquiries from the website form are typed into the CRM by hand, and bookings are copied from one system into another. Nobody would call it a job, but it takes that afternoon every week.
 
-## Voice agents, built inbound-first
+## How it works
 
-Inbound is the clean case, and the right place for a voice engagement to start: reception, booking, out-of-hours capture, the overflow when three lines ring at once. The caller rang you. Nothing is being marketed at them, so the consent question never arises.
+1. **Name the leak, then one job.** We start with where your business loses something you can measure, not with the technology. Together we agree the one job it does, the point where a person takes over and the subjects it must never attempt.
+2. **It answers from copy you have approved.** It can also take actions in your systems, such as booking into your calendar. A narrow job is deliberate: an assistant allowed to hold any conversation is one nobody can test.
+3. **It is tested on your own questions first.** The awkward questions, the price questions and the ones asked before anyone will book become a fixed test set, run before launch and after every change. Go-live is your call, not a milestone in our plan.
+4. **It lands where your team already works.** The enquiry goes into your CRM or your calendar, not a second inbox. The chat widget sits on the site you have now, and switching it off puts everything back.
+5. **Thirty days of tuning, then your choice.** For the first thirty days after go-live, what it says and when it hands over are adjusted. After that, an optional Maintenance care plan picks up monitoring.
 
-The agent's job is narrow on purpose, and the reason is testability rather than modesty: an agent permitted to hold any conversation is one nobody can evaluate, while an agent with a defined job can be run against a fixed set of cases before it ever picks up. Judge it on its failure mode rather than its success rate — one that handles two-thirds of calls and hands the rest cleanly to a person beats one that handles nine in ten and improvises through the last, because the improvised tenth is a wrong answer given to a real customer under your name.
+## What the starting price buys
 
-Clinics and practices are the clearest inbound case: enquiries arrive by phone, often outside opening hours, and the caller wants a consultation booked rather than a voicemail beep.
+Enough for one job: the chatbot or the workflow, not both, and one system for it to connect to. That is a working capability, not three things half-finished.
 
-**Call recording is a decision to take before launch, not after.** Callers must be told, up front. RIPA permits recording without consent in some circumstances, but UK GDPR transparency pulls the other way, and the ICO's position is that informing callers supports the fairness principle even where consent is not strictly required. Silence is not consent. In practice that means the disclosure sits in the agent's opening line, the retention period is chosen deliberately, and the recordings land somewhere you own.
+**Add when you need it:** an inbound voice agent built to your own systems and answer sets, on a divert from the number you already publish · more systems for it to read from and write to · a second job, such as a chatbot and a workflow together · outbound calling, only against a consent record you can evidence. Each is scoped in writing when you need it; none has to be there on day one.
 
-## Outbound is a different regime, and it is scoped separately
+## AI chatbot, AI receptionist or workflow — or no AI at all
 
-This is where the answer stops being comfortable.
+| Where the business leaks                                | What fits                                                | The test                                                                 |
+| ------------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------------------------------ |
+| An enquiry at 9pm waits until morning                   | A chatbot that answers from your approved copy           | Can every answer come from material you have already signed off?         |
+| Calls ring out, out of hours or when every line is busy | A voice agent built to your own systems, behind a divert | Is there a person to hand over to, or a callback to promise?             |
+| An afternoon a week moving data between two systems     | An n8n or Make workflow                                  | Would two competent people produce the same output from the same inputs? |
+| A form, a booking page or a rule is the real problem    | No model at all                                          | Does the plain fix cost less and break in fewer places?                  |
 
-- **Consent.** Outbound marketing calls made using automated calling systems require the subscriber's **prior explicit consent** under PECR. Not soft opt-in, not a bought list, not "they are a business, so it is fine".
-- **Ofcom's persistent-misuse rules** govern the calling operation itself: caps on abandoned-call rates, permitted calling hours, and requirements for what an abandoned-call message has to say.
-- **CLI authenticity and number allocation.** The 2025 revision to **General Condition 6** hardened both, with carrier-level filtering where they are not met — so non-compliant traffic stops connecting, which is a commercial problem before it is a legal one.
+A workflow calling a language model to do arithmetic is a slower, dearer, less reliable spreadsheet.
 
-Two regulators reaching different parts of the same campaign, then. A PECR breach carries exposure of **£17.5m or 4% of global turnover, whichever is higher** at the ICO; Ofcom can act on how the calling is conducted whether or not anyone consented to it.
+## What keeps you safe
 
-Our position: we will build outbound, but only against a consent record you can evidence, inside permitted hours, on authentic CLI, with abandoned-call behaviour configured rather than defaulted. Where that record does not exist, the project does not begin with a dialler — it begins with the inbound agent, which captures demand you already have and is not waiting on a legal question.
+**Callers know what they are talking to.** The voice agent identifies itself at the start of the call and offers a real route to a person: a transfer during opening hours, a callback request outside them. How UK law classifies an AI call is not settled, so it is built for the safer reading rather than the convenient one. If calls are recorded, callers are told in the opening line and the recordings land somewhere you own.
 
-None of this is legal advice — it is our reading as at July 2026. Where a situation sits close to a line, we say so and cite the source.
+**Treat an answer your assistant gives a member of the public as your own marketing copy.** So it answers from reviewed copy and declines treatment questions, which matters for [aesthetic clinics](/industries/aesthetic-clinics) and [dental practices](/industries/dental-practices).
 
-## What the model is allowed to say
+**Nothing that needs consent loads before it.** The chat widget waits behind the consent gate, with reject as prominent as accept.
 
-Everything above concerns how a call is placed. This concerns what comes out of the model once it connects, and in a regulated sector that is the harder question.
+None of this is legal advice.
 
-The CAP Code applies to organic content, not only to paid advertising, so an answer your agent gives a member of the public is your own marketing copy. It is also the only copy on your site that gets written after publication, by something that has never read your compliance notes.
+## What it costs
 
-For an aesthetic clinic that is not theoretical. Prescription-only medicines may not be advertised to the public, and the ASA reads a euphemism as a reference to the product itself — so the model breaches precisely when it is being most helpful, by answering in the words the caller used. MHRA enforcement notices to aesthetic businesses ran to **47 in 2024**, mostly on this rule, and the ASA's proactive monitoring is itself AI-powered: it finds non-compliant material without waiting for a complaint. Dentistry has its own version. The GDC treats "specialist" as a protected description tied to its specialist list, so an assistant that helpfully agrees a practice specialises in something can create a standards breach in a single sentence.
+From £4,500 excl. VAT, a fixed fee against a written scope. A voice agent is an add-on and is priced in that scope; model and telephony usage is passed through at cost. How to work out whether a voice agent pays for itself is in [the AI voice agent ROI guide](/blog/ai-voice-agents-roi-service-businesses); starting figures for this and everything else are on the [pricing](/pricing) page.
 
-The build answer is constraint rather than supervision after the fact. The retrieval corpus is copy that has already been through a compliance review, the agent declines rather than improvises on treatment questions, and anything that would need a product named is a handover to a person. The terminology rules a clinic site lives under are set out on [websites for UK aesthetic clinics](/industries/aesthetic-clinics), and the dental equivalents on [websites for UK dental practices](/industries/dental-practices).
+## When something else fits better
 
-## A chatbot's first UK problem is the widget, not the model
+If enquiries already arrive but nobody follows them up, the gap is the pipeline, not the conversation: that is [CRM](/services/crm-automation), and it is also where a chatbot's qualified leads should land. If the workflow needs people signing in, roles and records of its own, it is an application, and that is [Web Applications](/services/web-app-development). If the website itself is the weaker link, the [free audit](/free-audit) is the cheaper place to begin. Once a build is live and the thirty days of tuning are over, [Maintenance](/services/maintenance-support) picks up the monitoring.
 
-A chat widget that sets non-essential storage before the visitor has consented is a PECR problem however good the model behind it is, and "we set it on page load and asked a moment later" is not a defence. So nothing non-essential fires before consent, reject carries the same visual prominence as accept — the ICO's main enforcement focus, and the commonest failure on UK sites — and the widget waits behind the same gate as analytics instead of being quietly exempted from it as "functional".
-
-Past the gate, the question is whether the answers hold up over time. Grounding settles day one; it does nothing about day ninety. Providers update their models on their own schedule and your prices and policies change on yours; either can move an answer with nobody touching the build. So the questions your business genuinely receives — the awkward ones, the price ones, the ones asked before anyone will book — become a fixed test set, run before launch and after every change, which makes a regression something you detect rather than something a customer reports. Where a conversation qualifies, it belongs in the pipeline rather than the chat log; [CRM automation](/services/crm-automation) is the receiving end.
-
-## Workflow automation, and why its mistakes differ in kind
-
-The third category never demos well and is usually the first to pay for itself: the admin that never appears on an invoice. What makes a task a candidate is not how tedious it is but how decidable it is. If two competent people would produce the same output from the same inputs, a workflow can do it; where they would disagree, a model in the middle is guessing and you have automated the disagreement. We build these on n8n or Make, and that same test decides where a model belongs and where a plain rule is cheaper — a workflow calling an LLM to do arithmetic is a slower, dearer, less reliable spreadsheet.
-
-The failure mode worth designing for is scale. A person who emails the wrong list makes the mistake once and notices by lunchtime; an automation makes it several thousand times before anyone opens the bounce report. Where the messages are marketing email, PECR decides lawfulness by the legal form of each recipient — not something a workflow can infer from a domain name. That segmentation belongs upstream in the system holding the contact record, and how it gets built is set out on [CRM automation](/services/crm-automation). What belongs here is narrower: a workflow able to send checks the lawful basis on each record as it sends, and parks whatever cannot answer.
-
-## Why there is no per-minute price on this page
-
-The price card carries the starting figure and the scope it buys. What a card cannot carry is the running cost, and voice is where that question actually bites.
-
-We do not publish a per-minute rate. It turns on your telephony provider, your call mix and how long a booking conversation takes against your particular calendar — and a figure invented for a web page would not be harmless, it would be the figure you budgeted against. It gets modelled on your own call data during scoping, next to the cost of the calls currently going unanswered, because that comparison decides whether any of this is worth buying.
-
-## Start with the leak, not the technology
-
-The useful first question is not which of the three you want. It is where the business is losing something you could measure — calls that ring out, enquiries that arrive at 9pm and are cold by morning, an afternoon a week moving the same data between two systems. Name the leak and the right build is usually obvious; start from the technology and you get a demo.
-
-Often the leak closes with no model in it at all — a better booking page, a shorter form, a rule the workflow can follow on its own. Those cost less and break in fewer places, and where that is the true answer it is the one you will get.
-
-WebAsk is fully remote, with no UK office and none planned. The whole of the United Kingdom is in range, and for something delivered over an API and a phone number that keeps a building out of your quote.
-
-[Get in touch](/contact) with what your phones and your admin actually look like. Within three working days you have a written scope; where the honest scope is "do not build this", that is what arrives instead. How a project runs from there is set out in [our process](/process).
-
-If the website is the weaker link, the [free audit](/free-audit) is the cheaper place to begin — that page sets out what it covers and when it lands. Starting figures for this and everything else are on the [pricing](/pricing) page, alongside the rest of the [services](/services).
+[Get in touch](/contact) with what your phones and your admin actually look like. Within three working days you have a written scope; where the honest scope is "do not build this", that is what arrives instead. Or read [how a project runs](/process) first.
