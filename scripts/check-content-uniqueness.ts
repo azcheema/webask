@@ -39,6 +39,19 @@
  * ⚠️ The fork source is absent on CI, so the cross-site half is effectively a
  * LOCAL check and soft-skips loudly there. Read this header before assuming CI
  * covers it. Cross-page runs everywhere.
+ *
+ * Cross-collection: blog posts are ALSO scored against `content/industries`,
+ * because the regulatory material the compliance posts explain already lives
+ * in the industry bodies, and within-collection comparison cannot see a post
+ * that lifts their paragraphs. It uses the CROSS-SITE thresholds (a post must
+ * be its own prose), not the cross-page ones: whole-document Jaccard dilutes a
+ * lifted paragraph, so 150 words pasted into a 1,500-word post score about 5.6%
+ * against a 1,200-word industry body, a fail here and nowhere near 85%. The
+ * worst pair is always printed.
+ *
+ * `--include-drafts` scores WebAsk drafts as well, for authoring runs: without
+ * it a post is first measured on the commit that flips `draft: false`. The fork
+ * side is unchanged either way (its published files are what is live).
  */
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
@@ -57,6 +70,9 @@ const CROSS_PAGE_FAIL = 0.85;
 const CROSS_PAGE_WARN = 0.7;
 
 const GRAM = 5;
+
+/** Authoring runs: score WebAsk `draft: true` files too (see the header). */
+const INCLUDE_DRAFTS = process.argv.slice(2).includes("--include-drafts");
 
 type Collection = {
   /** Directory under `content/`, on both sides. */
@@ -100,7 +116,8 @@ const COLLECTIONS: ReadonlyArray<Collection> = [
  * identical to the fork by design; the index `noindex`s itself while empty, so
  * nothing renders. Drafts are skipped everywhere for the same reason — a draft
  * ships `noindex`. The commit that flips a draft flag is where it enters this
- * gate, and the gate will say so on that commit.
+ * gate, and the gate will say so on that commit. Pass `--include-drafts` to
+ * measure a draft while it is being written.
  */
 const isDraft = (raw: string): boolean => /^---[\s\S]*?^draft:\s*true\s*$/m.test(raw);
 
@@ -146,15 +163,15 @@ const pct = (n: number) => `${(n * 100).toFixed(1)}%`;
 
 type Doc = { readonly slug: string; readonly grams: Set<string>; readonly words: number };
 
-/** Every non-draft `.mdx` in `dir`, as slug → shingles. */
-function load(dir: string): Doc[] {
+/** Every `.mdx` in `dir`, as slug → shingles. Drafts are skipped unless `includeDrafts`. */
+function load(dir: string, includeDrafts = false): Doc[] {
   if (!existsSync(dir)) return [];
   const out: Doc[] = [];
   for (const file of readdirSync(dir)
     .filter((f) => f.endsWith(".mdx"))
     .sort()) {
     const raw = readFileSync(join(dir, file), "utf8");
-    if (isDraft(raw)) continue;
+    if (!includeDrafts && isDraft(raw)) continue;
     const prose = toProse(raw);
     out.push({
       slug: basename(file, ".mdx"),
@@ -168,7 +185,7 @@ function load(dir: string): Doc[] {
 type Outcome = { failed: boolean; warned: boolean };
 
 function checkCollection(collection: Collection, forkPresent: boolean): Outcome {
-  const mine = load(join(WEBASK, collection.dir));
+  const mine = load(join(WEBASK, collection.dir), INCLUDE_DRAFTS);
   const result: Outcome = { failed: false, warned: false };
 
   console.log(
@@ -242,6 +259,48 @@ function checkCollection(collection: Collection, forkPresent: boolean): Outcome 
   return result;
 }
 
+/** Collection pairs scored against each other, beyond each collection's own cross-page pass. */
+const CROSS_COLLECTIONS: ReadonlyArray<readonly [from: string, against: string]> = [
+  ["blog", "industries"],
+];
+
+/**
+ * Score every file in one WebAsk collection against every file in another,
+ * with the cross-site thresholds (see the header), and print the worst pair.
+ */
+function checkAcross(from: string, against: string): Outcome {
+  const result: Outcome = { failed: false, warned: false };
+  const left = load(join(WEBASK, from), INCLUDE_DRAFTS);
+  const right = load(join(WEBASK, against), INCLUDE_DRAFTS);
+  const heading = `${from} × content/${against}`;
+
+  console.log(`\n── content/${heading} ${"─".repeat(Math.max(0, 52 - heading.length))}`);
+  if (left.length === 0 || right.length === 0) {
+    console.log("  nothing to compare.");
+    return result;
+  }
+
+  let worstPair = { a: "—", b: "—", score: 0 };
+  for (const a of left) {
+    for (const b of right) {
+      const score = jaccard(a.grams, b.grams);
+      if (score > worstPair.score) worstPair = { a: a.slug, b: b.slug, score };
+      if (score >= CROSS_SITE_FAIL) {
+        console.log(`  FAIL cross-collection ${a.slug} ↔ ${b.slug}  ${pct(score)}`);
+        result.failed = true;
+      } else if (score >= CROSS_SITE_WARN) {
+        console.log(`  warn cross-collection ${a.slug} ↔ ${b.slug}  ${pct(score)}`);
+        result.warned = true;
+      }
+    }
+  }
+  console.log(
+    `  cross-collection worst: ${worstPair.a} ↔ ${worstPair.b} at ${pct(worstPair.score)} ` +
+      `(fail ≥ ${pct(CROSS_SITE_FAIL)}, warn ≥ ${pct(CROSS_SITE_WARN)})`,
+  );
+  return result;
+}
+
 function main(): void {
   const forkPresent = existsSync(NAXDOR);
   console.log("check:content-uniqueness — 5-gram Jaccard over MDX prose bodies");
@@ -252,13 +311,22 @@ function main(): void {
   }
   console.log(
     `\nBudgets — cross-site: fail ≥ ${pct(CROSS_SITE_FAIL)}, warn ≥ ${pct(CROSS_SITE_WARN)}` +
-      ` · cross-page: fail ≥ ${pct(CROSS_PAGE_FAIL)}, warn ≥ ${pct(CROSS_PAGE_WARN)}`,
+      ` · cross-page: fail ≥ ${pct(CROSS_PAGE_FAIL)}, warn ≥ ${pct(CROSS_PAGE_WARN)}` +
+      ` · cross-collection (blog × industries): the cross-site budget`,
   );
+  if (INCLUDE_DRAFTS) {
+    console.log("\n--include-drafts: WebAsk drafts are scored too (authoring run).");
+  }
 
   let failed = false;
   let warned = false;
   for (const collection of COLLECTIONS) {
     const outcome = checkCollection(collection, forkPresent);
+    failed ||= outcome.failed;
+    warned ||= outcome.warned;
+  }
+  for (const [from, against] of CROSS_COLLECTIONS) {
+    const outcome = checkAcross(from, against);
     failed ||= outcome.failed;
     warned ||= outcome.warned;
   }

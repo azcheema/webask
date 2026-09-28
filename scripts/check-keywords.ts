@@ -16,6 +16,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { z } from "zod";
 
+import { blogTopicSlugs } from "@/data/blog";
 import { LOCATION_SLUGS } from "@/data/locations";
 
 // ── canonical catalogs (mirror components/layout/_nav-data.ts) ────────────────
@@ -173,6 +174,14 @@ function isKnownLocation(slug: string | undefined): boolean {
   return slug !== undefined && KNOWN_LOCATION_SLUGS.has(slug);
 }
 
+/**
+ * Blog topic archives are validated by membership too, for the same reason: the
+ * kebab-case shape check passed `/blog/topic/<anything>`, including a topic
+ * `data/blog.ts` did not define — whose archive is a 404. `/blog/<slug>` stays
+ * shape-only on purpose: rows may target a post still in the research drafts.
+ */
+const KNOWN_BLOG_TOPICS: ReadonlySet<string> = new Set(blogTopicSlugs);
+
 function isValidUrl(url: string): { ok: true } | { ok: false; reason: string } {
   if ((STATIC_PAGES as readonly string[]).includes(url)) return { ok: true };
 
@@ -223,9 +232,9 @@ function isValidUrl(url: string): { ok: true } | { ok: false; reason: string } {
   // Topic archives — `/blog/topic/<topic>`. The compliance cluster's pillar is
   // one of these (docs/08 § 1), so the pattern has to be valid here.
   if (parts[0] === "blog" && parts[1] === "topic" && parts.length === 3) {
-    return KEBAB_SLUG_RE.test(parts[2] ?? "")
+    return KNOWN_BLOG_TOPICS.has(parts[2] ?? "")
       ? { ok: true }
-      : { ok: false, reason: `bad blog topic "${parts[2]}" (expect kebab-case)` };
+      : { ok: false, reason: `unknown blog topic "${parts[2]}" (see data/blog.ts)` };
   }
 
   return { ok: false, reason: "URL does not match any known pattern" };

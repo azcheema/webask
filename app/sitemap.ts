@@ -19,12 +19,21 @@ import { env } from "@/lib/env";
  * below). Topic archives appear only once they have a published post, so the
  * sitemap never points at an empty cluster. This keeps everything in one
  * sitemap for now; a `sitemap-index.xml` split can come later if volume grows.
+ *
+ * `lastmod`: a post carries its own `dateModified` (required frontmatter, never
+ * earlier than `datePublished`), and `/blog` and each topic archive carry the
+ * latest `dateModified` among the published posts they list, since a post being
+ * added or edited is what changes them (an edit to their own intro copy does
+ * not move it). Every other route still takes the build time, which overstates
+ * change on every deploy; it stays until those routes have a real date source.
  */
 
 type Entry = {
   readonly path: string;
   readonly priority: number;
   readonly changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  /** ISO `YYYY-MM-DD` of the last real change. Omitted ⇒ the build time. */
+  readonly lastModified?: string;
 };
 
 const ROUTES: ReadonlyArray<Entry> = [
@@ -82,17 +91,35 @@ async function blogRoutes(): Promise<Entry[]> {
     path: `/blog/${post.slug}`,
     priority: 0.6,
     changeFrequency: "monthly",
+    lastModified: post.frontmatter.dateModified,
   }));
 
-  const publishedTopics = [...new Set(publishedPosts.map((post) => post.frontmatter.topic))];
-  const topicRoutes: Entry[] = publishedTopics.map((topic) => ({
+  // Topic → the latest `dateModified` among its published posts. ISO dates
+  // compare correctly as strings.
+  const topicLastModified = new Map<string, string>();
+  for (const { frontmatter } of publishedPosts) {
+    const previous = topicLastModified.get(frontmatter.topic);
+    if (previous === undefined || frontmatter.dateModified > previous) {
+      topicLastModified.set(frontmatter.topic, frontmatter.dateModified);
+    }
+  }
+  const topicRoutes: Entry[] = [...topicLastModified].map(([topic, lastModified]) => ({
     path: `/blog/topic/${topic}`,
     priority: 0.5,
     changeFrequency: "monthly",
+    lastModified,
   }));
 
+  // `/blog` lists every published post, so it takes the newest of them all.
+  const newest = [...topicLastModified.values()].sort().at(-1);
+
   return [
-    { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
+    {
+      path: "/blog",
+      priority: 0.7,
+      changeFrequency: "weekly",
+      ...(newest === undefined ? {} : { lastModified: newest }),
+    },
     ...postRoutes,
     ...topicRoutes,
   ];
@@ -119,7 +146,7 @@ async function caseStudyRoutes(): Promise<Entry[]> {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const base = env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
-  const lastModified = new Date();
+  const buildTime = new Date();
   const entries: ReadonlyArray<Entry> = [
     ...ROUTES,
     ...LOCATION_ROUTES,
@@ -127,9 +154,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...(await blogRoutes()),
     ...(await caseStudyRoutes()),
   ];
-  return entries.map(({ path, priority, changeFrequency }) => ({
+  return entries.map(({ path, priority, changeFrequency, lastModified }) => ({
     url: path === "/" ? `${base}/` : `${base}${path}`,
-    lastModified,
+    lastModified: lastModified ?? buildTime,
     changeFrequency,
     priority,
   }));

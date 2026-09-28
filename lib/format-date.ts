@@ -14,7 +14,7 @@ const PUBLISHED_DATE_FORMATTER = new Intl.DateTimeFormat("en-GB", {
   timeZone: "UTC",
 });
 
-/** "2026-06-21" → "June 21, 2026". */
+/** "2026-06-21" → "21 June 2026". */
 export function formatPublishedDate(iso: string): string {
   return PUBLISHED_DATE_FORMATTER.format(new Date(`${iso}T00:00:00Z`));
 }

@@ -48,6 +48,7 @@ const MUST_NOT_MATCH: readonly string[] = [
   "/locations",
   "/blog/local-seo-checklist-2026",
   "/blog/topic/seo",
+  "/blog/topic/clinic-compliance",
   "/robots.txt",
   "/favicon.ico",
   "/icon.svg",

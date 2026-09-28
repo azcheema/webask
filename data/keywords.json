@@ -2,7 +2,7 @@
   "$schema": "./keywords.schema.json",
   "meta": {
     "version": "2.0.0",
-    "lastUpdated": "2026-09-26",
+    "lastUpdated": "2026-09-28",
     "msvKdSource": null,
     "note": "UK seed set for WebAsk, derived from docs/02 § 5 and docs/08. msv and kd are NULL throughout and msvKdSource is null: no Ahrefs/Semrush pull has been run, and inventing volumes would fabricate the exact numbers that drive prioritisation. Populate both from a real UK-locale export before using this file to sequence work, then set msvKdSource. Difficulty filter for a near-zero-authority .co.uk is KD <= 35 (docs/02 § 5). Priority order is docs/08 § 8: compliance long-tail first, service heads last.",
     "intentEnum": [
@@ -2203,8 +2203,8 @@
       "intent": "informational-bottom",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/clinic-compliance",
-      "supportingUrls": ["/industries/aesthetic-clinics"],
+      "primaryUrl": "/industries/aesthetic-clinics",
+      "supportingUrls": ["/blog/topic/clinic-compliance"],
       "cluster": "clinic-compliance",
       "vertical": "aesthetic-clinics"
     },
