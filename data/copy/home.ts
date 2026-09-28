@@ -220,7 +220,7 @@ export const home: HomeContent = {
     {
       question: "Why would I pay more than a £950 template",
       answer:
-        "Two reasons, and if neither applies to you then a template is genuinely the right call. The first is performance and ownership: templated builds on shared platforms are slow on mobile, which costs you both rankings and conversions, and you rarely own what you have paid for. The second is that regulated sectors — clinics, dental practices — have structural requirements a template cannot satisfy, and getting those wrong is an advertising ruling rather than a design critique. If you are a straightforward local business with simple needs, we will tell you that on the call.",
+        "Two reasons, and if neither applies to you then a template is genuinely the right call. The first is performance and ownership: templated builds on shared platforms are slow on mobile, which costs you both rankings and conversions, and you rarely own what you have paid for. The second is that regulated sectors — clinics, dental practices — have structural requirements a template may not meet, and getting those wrong can end in an advertising ruling rather than a design critique. If you are a straightforward local business with simple needs, we will tell you that on the call.",
     },
     {
       question: "How quickly can you deliver",
@@ -240,7 +240,7 @@ export const home: HomeContent = {
     {
       question: "Do you understand the advertising rules for clinics",
       answer:
-        "Yes — it is the reason the clinic pages exist. A prescription-only medicine cannot be advertised to the public in the UK, and the ASA treats softer substitutions such as “wrinkle-relaxing treatments” as implied promotion of the same medicine. What the rules do permit is advertising a consultation, and a price list positioned correctly within the site's structure. That is an information-architecture problem as much as a copy problem, which is precisely what we build. We are not solicitors, and genuinely borderline copy goes to CAP's free Copy Advice service.",
+        "Yes — it is the reason the clinic pages exist. A prescription-only medicine cannot be advertised to the public in the UK, and CAP's guidance counts indirect references to it, not only its name, so a softer phrase does not by itself solve the problem. What the rules do permit is advertising a consultation, and the ASA/CAP guidance describes a narrow route by which a price list reached through it “might be acceptable”. That is an information-architecture problem as much as a copy problem, which is precisely what we build. We are not solicitors, and genuinely borderline copy goes to CAP's free Copy Advice service.",
     },
     {
       question: "Can you work with our existing website and CRM",

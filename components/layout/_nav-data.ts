@@ -88,7 +88,7 @@ export const INDUSTRY_NAV: NavSection = {
     {
       label: "Aesthetic Clinics",
       href: "/industries/aesthetic-clinics",
-      description: "Med-spas, injectables, lasers — booking-first websites that fill chairs.",
+      description: "Consultation-first websites for UK aesthetic clinics.",
     },
     {
       label: "Dental Practices",

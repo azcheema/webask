@@ -2,22 +2,23 @@
 slug: dental-practices
 title: "Websites for UK Dental Practices — the CMA Market Study"
 description: "Websites, SEO and recall automation for UK dental practices — built around the GDC standards, CQC registration and the CMA's live private-dentistry market study."
-dateModified: "2026-07-29"
+dateModified: "2026-09-28"
 ---
 
 {/* Body prose only. Catalog data (hero, FAQs, related services, audienceType) lives in data/industries.ts under the dental-practices entry and is read by the page template — do not duplicate those fields here. */}
 
-{/* WRITTEN FRESH for the UK, and deliberately DISTINCT from the aesthetic-clinics page. The two verticals are regulated differently and the pages must not read as clones — aesthetics turns on POM advertising and site architecture; dentistry turns on pricing transparency (a live CMA study), review compliance (GDC + DMCC), and regulated words like "specialist". Every dated claim here is sourced; re-verify before the CMA reports in March 2027. */}
+{/* WRITTEN FRESH for the UK, and deliberately DISTINCT from the aesthetic-clinics page. The two verticals are regulated differently and the pages must not read as clones — aesthetics turns on POM advertising and site architecture; dentistry turns on pricing transparency (a live CMA study), review compliance (the DMCC Act 2024 and Google's policy), and regulated words like "specialist". Every dated claim here is sourced; re-verify before the CMA reports in March 2027, and before its emerging thinking, expected between October and November 2026 (CMA update, 17 July 2026). Corrected 28 September 2026 against primary sources read that day (PLAN C0): the £8.4 billion given with the CMA's own qualifier, valued in 2023 to 2024 and cited from an independent source (CMA press release, 5 March 2026); the pricing section held to docs/03 § B2 (the study is sector-level; the website is where a patient meets the practice's prices), with the single-from-figure line and the prediction about which practices come out well removed; 'specialist' quoted from the GDC's specialist-lists page ('can only use the title', 'Members of the public can find a specialist by searching the GDC register'), its Guidance on advertising ('specialising in') and its Advertising checklist (implantology as an area with no specialist list), replacing 'a standards breach' and 'the lists are public'; the GDC reviews rule removed from the table and the reviews paragraph, since no GDC document read contains it; reviews stated as a DMCC Act banned practice (Sch. 20 para 13, in force 6 April 2025) rather than 'illegal', plus Google's Maps content policy ('should not' offer incentives, docs/research 08 § B5); before-and-after quoted from the ASA's guidance of 5 June 2025, replacing 'representative' attributed to the GDC and 'where practices get into difficulty' (implied track record); the opening's 'the main artefact a regulator … would look at first' replaced, as the study is sector-level. */}
 
-Private dentistry is under active regulatory examination right now, and your website is the
-main artefact a regulator, a competitor or a complainant would look at first.
+Private dentistry is under active regulatory examination right now, and your website is where
+a patient, a competitor or a complainant sees what your practice claims and charges.
 
 That is not a scare tactic. It is a description of what is currently happening.
 
 ## The CMA is examining private dental pricing, and is due to report by March 2027
 
-In **March 2026** the Competition and Markets Authority opened a market study into the
-**£8.4bn** private dentistry sector, against a statutory reporting deadline of **March 2027**.
+In **March 2026** the Competition and Markets Authority opened a market study into private
+dentistry, a market it cited from an independent source as valued at **£8.4 billion** in 2023 to
+2024, against a statutory reporting deadline of **March 2027**.
 Pricing transparency is explicitly in scope, alongside consumer protection more broadly.
 
 The figures the CMA cited on opening, drawn from independent sources rather than from its own
@@ -25,26 +26,25 @@ findings: the price of an initial consultation rose **more than 23% between 2022
 and routine check-ups for existing patients by **more than 14%**. The study has not reported,
 so these are the grounds for looking, not conclusions.
 
-Now consider where a patient actually encounters your pricing. It is your website. A site that
-shows no prices, or shows a single "from" figure that bears no relationship to what anyone
-pays, is not a neutral design choice during a market study into pricing transparency — it is a
-worked example of the thing being studied.
+Now consider where a patient actually encounters your pricing. It is your website. The study is
+sector-level, so it does not follow that any one practice's site is under examination. What does
+follow is that pricing transparency is the question being asked, and your website is the part of
+the answer you control.
 
-The practices that come out of this well will be the ones whose websites already answer the
-question clearly. That is a straightforward build decision, and it is one you can make now
-rather than in 2027.
+Showing prices clearly is a straightforward build decision, and it is one you can make now
+rather than after the final report.
 
 ## Four regulators, one website
 
 Aesthetic clinics deal principally with one problem, applied strictly. Dentistry deals with
 four bodies at once, and they overlap on the same pages.
 
-| Body    | What it reaches on your site                                                                  |
-| ------- | --------------------------------------------------------------------------------------------- |
-| **GDC** | Claim language, genuine and non-incentivised reviews, use of "specialist", consent for images |
-| **CQC** | Registration in England is a legal requirement — and displaying it is a strong trust signal   |
-| **ASA** | All promotional material legal, decent, honest and truthful                                   |
-| **CMA** | Pricing transparency and consumer protection — and, since April 2025, fake reviews            |
+| Body    | What it reaches on your site                                                                |
+| ------- | ------------------------------------------------------------------------------------------- |
+| **GDC** | Claim language, use of "specialist", registration details, consent for images               |
+| **CQC** | Registration in England is a legal requirement — and displaying it is a strong trust signal |
+| **ASA** | All promotional material legal, decent, honest and truthful                                 |
+| **CMA** | Pricing transparency and consumer protection — and, since April 2025, fake reviews          |
 
 Plus UK GDPR for patient data and PECR for recall and marketing messages. A practice site can
 be perfectly in order on two or three of these and quietly wrong on the rest, because the four
@@ -53,23 +53,25 @@ together.
 
 ## Three things worth checking on your own site
 
-**"Specialist", used where it is not supported.** Describing a registrant as a specialist — or
-implying it with phrasing like "our specialists in implants" — when they are not on the GDC
-specialist list for that field is a standards breach. It is also trivially checkable by anyone
-who cares to look, including a complainant, because the lists are public. We check every
+**"Specialist", used where it is not supported.** The GDC says dentists "can only use the title
+'specialist' if they are on that list", and its guidance on advertising says a dentist who is not
+on a specialist list must not describe themselves as "specialising in" a treatment. Some fields
+have no list at all: the GDC's advertising checklist gives implantology as the example, so "our
+implant specialists" cannot be supported. It is checkable by anyone, including a complainant:
+"Members of the public can find a specialist by searching the GDC register." We check every
 instance of the word during a build.
 
-**Incentivised review campaigns.** This one now binds twice. The GDC requires reviews to be
-genuine and not incentivised, so a prize draw or a discount in exchange for a review is a
-standards problem on its own. Separately, since **April 2025** the DMCC Act 2024 makes
-commissioning or publishing fake reviews illegal, with the CMA able to determine a breach and
-fine directly — up to **10% of global annual turnover or £300,000, whichever is higher**. A
-review flow that asks every patient at the right moment, with nothing attached, satisfies both.
+**Incentivised review campaigns.** Since **April 2025** the DMCC Act 2024 has made commissioning
+or publishing fake reviews a banned practice, along with concealing that a review was
+incentivised, and the CMA can determine a breach and fine directly — up to **10% of global
+annual turnover or £300,000, whichever is higher**. Google's Maps content policy goes further:
+businesses "should not" offer incentives in exchange for posting any review. A review flow that
+asks every patient at the right moment, with nothing attached, satisfies both.
 
 **Before-and-after images without marketing consent.** Consent to treatment is not consent to
-publish. The images also need to be representative: showing an exceptional outcome in a way
-that implies a typical one is where practices get into difficulty, under both GDC standards and
-the ASA.
+publish. The ASA's guidance of 5 June 2025 also treats these photos like testimonials: hold
+signed and dated proof that they are genuine and have not been manipulated, and make sure they
+do not exaggerate what the treatment achieves.
 
 ## What we build
 
