@@ -81,7 +81,7 @@ export const about: AboutContent = {
       },
       {
         title: "We tell you the inconvenient things.",
-        body: "That we have no UK office. That your sector has advertising rules your current site probably breaches. That a template would serve you better than we would. Saying those out loud costs us some work and earns the rest of it.",
+        body: "That we have no UK office. That your sector has advertising rules, and what your site shows or leaves out against them. That a template would serve you better than we would. Saying those out loud costs us some work and earns the rest of it.",
       },
     ],
   },
@@ -90,7 +90,7 @@ export const about: AboutContent = {
     h2: "WebAsk is a trading name of Naxdor.",
     paragraphs: [
       "Naxdor is an enskild firma — a Swedish sole proprietorship — and WebAsk is the brand it trades under in the United Kingdom. Same founder, same standards, a UK brand with UK pricing. Naxdor also operates naxdor.com for international clients and naxdor.se in Sweden.",
-      "That means there is no UK company and no Companies House number to look up, which is exactly why we publish the full entity details rather than leaving you to wonder. Plenty of agencies would let you assume a UK limited company sat behind the brand. We would rather you knew.",
+      "That means there is no UK company and no Companies House number to look up, which is exactly why we publish the full entity details rather than leaving you to wonder.",
       "It also means we work remotely across the UK with no office to visit. Our full registered name, address and contact details are on the company information page.",
     ],
     cta: { label: "See full company information", href: "/legal/company-information" },

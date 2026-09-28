@@ -58,7 +58,10 @@ export const freeAudit: FreeAuditContent = {
   // is sales copy and its FAQs ship as FAQPage JSON-LD). Step 1 describes the
   // contact form as it is in lib/contact-schema.ts: there is no audit topic, and
   // budget and timeline are required. No sentence claims a past audit or client,
-  // because there are none yet.
+  // because there are none yet. Founder decisions of 28 September 2026 add three
+  // things: the auditor named (the name as in data/team.ts), WebAsk described as new
+  // with no case studies yet, and a transcript of the recording on request
+  // (recorded in docs/06-build-plan.md, the free-audit verdict note).
   meta: {
     title: "Free Website Audit for UK Businesses",
     description:
@@ -78,7 +81,7 @@ export const freeAudit: FreeAuditContent = {
     items: [
       {
         title: "A narrated recording of your own pages",
-        body: "It runs ten to fifteen minutes. Each finding is shown on your own site. You can also book an optional half-hour call to go through it together.",
+        body: "It runs ten to fifteen minutes. Each finding is shown on your own site. If you would like a transcript, ask for one. You can also book an optional half-hour call to go through it together.",
       },
       {
         title: "Five prioritised findings in writing",
@@ -134,7 +137,7 @@ export const freeAudit: FreeAuditContent = {
     {
       question: "Does the free website audit cost anything? What's the catch?",
       answer:
-        "No. There is no fee, no card details and no contract, and you owe nothing afterwards. It is free because it lets you judge how WebAsk works on your own website before you have spent anything, in the hope that you hire us. One person does each audit. Your details are not shared or sold. Whether you then fix things yourself, use another developer or hire us is your decision.",
+        "No. There is no fee, no card details and no contract, and you owe nothing afterwards. WebAsk is new and has no case studies to show yet, so the audit is free: it lets you judge our work on your own website before you have spent anything, in the hope that you hire us. Ansar Cheema, WebAsk's founder, does every audit personally. Your details are not shared or sold. Whether you then fix things yourself, use another developer or hire us is your decision.",
     },
     {
       question: "What does a free website audit check?",
