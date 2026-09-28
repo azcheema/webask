@@ -150,6 +150,22 @@ const ROUTES: ReadonlyArray<Route> = [
     hasFaq: false,
   },
   {
+    // Clinic-compliance hub — lands with its first post (a draft renders the
+    // hub as noindex; before any post it would 404).
+    path: "/blog/topic/clinic-compliance",
+    types: ["CollectionPage", "BreadcrumbList"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
+    // Flagship clinic-compliance post (draft) — Article + author Person, with
+    // the regulator mentions emitted inline.
+    path: "/blog/can-clinics-advertise-botox-uk",
+    types: ["WebPage", "Article", "BreadcrumbList", "Person"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
     // Entity disclosure — indexable (unlike the three draft legal pages) and a
     // real E-E-A-T surface, so its graph is asserted like any other live page.
     path: "/legal/company-information",
