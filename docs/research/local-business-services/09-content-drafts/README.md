@@ -7,6 +7,12 @@
 > `status: "live"` exists, and every catalogue entry lives in a fenced `ts` block until the
 > brainstorm decides D9–D13 and D4.
 
+> **28 September 2026.** The drafts in this folder predate the founder's decisions of that day
+> (`00` § 6): launch prices, "excl. VAT" in place of "+ VAT where applicable", and usage never
+> included (no allowances; usage billed on top at cost). The six service drafts are superseded by the
+> site copy in `content/services/` and `data/services.ts`. Every other draft here (blog, industries,
+> bundle, deltas) must be brought into line with those decisions before it ships.
+
 ## 1. Files
 
 - `services/<slug>.mdx` + `services/<slug>.catalogue.md` — six service pages (body + catalogue).

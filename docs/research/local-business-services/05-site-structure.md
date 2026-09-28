@@ -179,7 +179,7 @@ Proposals (all in `11` AE.3; validate in the Rich Results Test at implementation
    tier (Answer, Reputation, Follow-Up), each with `url: /services/local-business-plans#<tier>` and
    the monthly `unitText`; the AI module as a fourth `Offer` only if the brainstorm keeps it on the
    page as a priced line. `/pricing` keeps its own graph; the Plans block adds no schema there.
-4. **`usageNote` is never a price node** — minutes and messages are an allowance and a schedule,
+4. **`usageNote` is never a price node** — minutes and messages are a schedule,
    stated in prose (R29, R39), not a `UnitPriceSpecification`.
 5. **`knowsAbout` additions** to the Organisation node (`lib/jsonld.ts` L142–169), one per shipped
    page and never before it: "Google Business Profile" (profile page); "Ofcom" (receptionist and

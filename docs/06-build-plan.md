@@ -388,6 +388,9 @@ one specific dimension) · every claim dated and sourced · reading level ≤ Gr
 later: D2 and D3 are professional advice that should be **commissioned now** so they arrive
 before Phase 1 cutover; D4 is a founder pricing decision needed before `/pricing` publishes.
 
+> **2026-09-28:** the founder adopted D2's interim position and D4's launch prices (research
+> `00` § 6); D3 is the one gate still open.
+
 ---
 
 ## Risks

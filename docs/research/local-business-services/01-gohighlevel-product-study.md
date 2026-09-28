@@ -156,7 +156,8 @@ $0.0075, local number $1.15 per month, mobile number $2.5 per month. The LC Phon
 below Twilio's July long-code list and equal to its short-code figure; the file predates the July page
 by its version string. Which figure a UK send actually debits from the wallet is only visible on a
 wallet transaction line inside the account, which is the one in-account check still asked of the
-founder (§ 10; `00` § 6). The planning proxy's number-rental conflict ($1.15 on Twilio's SMS page
+founder (§ 10; `00` § 6). On 28 September 2026 the founder chose to launch on the public-file rates
+and recheck them against the first client's wallet (`00` § 6). The planning proxy's number-rental conflict ($1.15 on Twilio's SMS page
 against $3.50 on its voice page) is settled by the file: 1.15.
 
 ### 4.2 AI rates and the AI Employee plans (🟡; "AI Product Pricing", modified 22 Sep 2026 [S143]; AI Employee article, modified 14 Sep 2026 [S54]; fixed-rate rebilling, modified 11 Aug 2026 [S55]; AI tools overview, modified 14 Sep 2026 [S144])
@@ -190,6 +191,10 @@ token cost HighLevel charges your agency" — "applies to Conversation AI and Vo
 lands on the sub-account's "next invoice as a line item"; it does not itself state the plan rule, the
 two AI articles do. **Consequence for the receptionist:** on Starter or Unlimited, WebAsk cannot
 charge a client for AI minutes as a pass-through at all; the minutes are a cost inside the plan fee.
+**28 September 2026:** usage is not included (`00` § 6). The platform does not rebill AI minutes to
+a sub-account below the $497 plan, so WebAsk bills them on its own invoice at the published schedule
+rate (`07` § 7, rebilling row); the minutes as a cost inside the plan fee, and the allowance and
+overage design below, are withdrawn.
 The design choice `02` § 3 records is between the $97 AI Employee Unlimited plan per sub-account
 (inbound and outbound minutes unbounded "subject to fair use", so the plan's own cap is the vendor's
 fair-use wording, not a minute count) and pay-per-use at the per-minute formula above (the vendor's
@@ -446,7 +451,8 @@ prices above.
    0.01 / 0.0305 per minute on the two legs; whether the 5% pass-through markup, the "Client Minutes"
    line or any discount touches UK traffic is not stated. Verified only from a wallet transaction line
    in the account after one UK test text and one diverted call — **founder action, before S5 closes**
-   (`00` § 6, revised).
+   (`00` § 6, revised). **28 September 2026:** no longer a launch condition; the founder launches on
+   the public-file rates and the first client's wallet is the check (`00` § 6).
 2. Whether the attachment inside the account is the same file as the public attachment (same article;
    a spot-check of the UK rows).
 3. Which entity invoices WebAsk (LLC or Inc.) — visible on an in-account invoice only.

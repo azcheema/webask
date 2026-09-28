@@ -3,7 +3,7 @@
 > **Status: RESEARCH COMPLETE — closed 25 September 2026 (S9), brainstormed the same day. Nothing in this folder is implemented.** Started 24 September 2026
 > from the founder's decisions of 23 September 2026 (see `00-decisions-and-open-questions.md`).
 > Figures are proposals pending D4 unless marked **finding**. This repository is public: everything
-> here is written for a competitor, HighLevel and a prospective client to read. WebAsk's hourly rate,
+> here is written for a competitor, HighLevel and a prospective client to read. WebAsk's
 > USD cost model and margin bands live only in `private/`, which is git-ignored and never pushed.
 
 ## 1. What this is
@@ -43,6 +43,11 @@ by updating this table and the **Next** line below it; together they are the han
 Status values: 🔲 not started · 🟡 draft · 🟢 done · 🔴 blocked (name the blocker in the cell).
 
 **Next: the build phase, from `11` § 1.** The research is closed and brainstormed; nothing more is written here until the build starts. Before code: merge this branch (the founder's call — the PR is offered, not merged); close the three D4 conditions (`01` § 10.1 wallet-line spot-check, the `[founder]` rate in `private/07` § 6, the accountant's answers to `07` § 6.2 — Q3/D2 ext.); Phase 1 cutover (Q27). Then the AE.9 commits in `11` § 2 — the model change first, with no visible change — one gate run per commit (`11` § 9). The first hosted client waits for D3's UK representative and the solicitor's DPA (D10). Pages and posts ship only after the pre-publication re-reads in `11` § 11 and `10` § 2. If a source changes between now and then, the row in `10` § 2 says who re-checks it. Resume from `00` § 6, then `11`.
+
+> **28 September 2026.** The founder adopted launch prices without waiting for the three D4
+> conditions: the wallet-line check moved to the first client's wallet, implied earnings per hour
+> replaced the `[founder]` rate, and the accountant's answers were not obtained (D2 was adopted
+> without an accountant; `07` § 6.2 stays unanswered; `00` § 6).
 
 ### 2.1 What the planning file already holds for each bundle file
 
