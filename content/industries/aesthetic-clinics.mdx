@@ -2,12 +2,12 @@
 slug: aesthetic-clinics
 title: "Compliant Websites for UK Aesthetic Clinics"
 description: "Websites and automation for UK aesthetic clinics, built around the CAP Code rules that govern what a clinic site may say. Fast, booking-led, and structured to stay inside them."
-dateModified: "2026-07-29"
+dateModified: "2026-09-28"
 ---
 
 {/* Body prose only. Catalog data (hero, FAQs, related services, audienceType) lives in data/industries.ts under the aesthetic-clinics entry and is read by the page template — do not duplicate those fields here. */}
 
-{/* WRITTEN FRESH for the UK — deliberately NOT a British-spelling pass over Naxdor's US med-spa page (docs/06 § Phase 2, "the trap to avoid"). Two reasons: a translated page is near-duplicate content against naxdor.com, and the US page can legally name the prescription-only medicine while this one cannot. Note that this entire page discusses POM advertising rules without naming a single medicine — that is the discipline the CAP Code requires, applied to our own marketing, and it is also the proof of the claim. Keep it that way. */}
+{/* WRITTEN FRESH for the UK — deliberately NOT a British-spelling pass over Naxdor's US med-spa page (docs/06 § Phase 2, "the trap to avoid"). Two reasons: a translated page is near-duplicate content against naxdor.com, and the US page can legally name the prescription-only medicine while this one cannot. Note that this entire page discusses POM advertising rules without naming a single medicine or a euphemism for one — that is WebAsk's own house standard for its sales pages and the client sites it builds, stricter in places than the regulators' guidance (the MHRA Blue Guide Appendix 6, November 2020, says its main focus is website content rather than meta tags; the ASA/CAP FAQ of 23 January 2020 is conditional on one softer phrase), so the page labels it as our choice, not the rule. Keep it that way. Corrected 28 September 2026 against primary sources read that day (PLAN C0; founder decisions F2, F3, F5, F6): the price-list route quoted from the ASA/CAP FAQ of 23 January 2020 (a homepage price or a direct Prices link that mentions the medicine 'is unlikely to be acceptable'; a list clients 'can only get to' after a page promoting a consultation 'might be acceptable') and from CAP Bitesize, undated, read 28 September 2026 ('ideally two clicks from the homepage'; 'purely informational with no promotional content'), replacing 'at least two clicks' and 'primary navigation' as a rule, with the main menu now labelled as our design choice; indirect references per CAP Bitesize and the FAQ's advice against one softer phrase, replacing 'repeatedly' and the euphemism itself; licensing as the proposed scheme, not in force as at 28 September 2026 (s.180 Health and Care Act 2022; consultation response of 7 August 2025, 11,848 responses, 'further work is required…'; HL12386, 8 December 2025), with the red, amber and green categorisation dropped as a 2023 proposal; the under-18s offence per the 2021 Act (2021 c. 19) s.1(1), 'for a cosmetic purpose' on the filler limb only, s.1(4) defences, s.1(6) fine on summary conviction, in force 1 October 2021, linked to legislation.gov.uk and never cited by its short title; removed as implied frequency or track record: 'almost every clinic site breaks', 'repeatedly', 'the one most clinics currently have', 'almost nobody explains properly', 'on most clinic sites they do', 'it is what lets a compliant clinic site still perform', 'your competitors are one complaint away', and the closing jibe at agencies that name the medicine. */}
 
 We checked six UK agencies that sell specifically to aesthetic clinics, in July 2026. On the
 pages we could reach, not one of them mentioned the CAP Code, the ASA or the MHRA anywhere.
@@ -15,7 +15,7 @@ pages we could reach, not one of them mentioned the CAP Code, the ASA or the MHR
 That silence is the reason this page exists — because in this sector the advertising rules
 decide what a treatment page is allowed to say at all.
 
-## The rule almost every clinic site breaks
+## The rule on prescription-only medicines
 
 A prescription-only medicine cannot be advertised to the public in the United Kingdom. Not on
 a treatment page, not in an FAQ, not in a photo caption, and not in a social post linking back
@@ -24,51 +24,55 @@ to any of them. The ASA enforces it, and rulings are published under the clinic'
 
 Two things make this harder than it first sounds.
 
-**Euphemisms count.** Swapping the brand name for a softer phrase does not solve the problem —
-the ASA has repeatedly treated wrinkle-relaxing wording as implied promotion of the same
-medicine, and upheld complaints on exactly that basis. The substitution is the obvious move,
-which is why it is worth knowing that it does not work.
+**Indirect references count.** Swapping the brand name for a softer phrase does not by itself
+solve the problem. CAP's Bitesize guidance tells clinics not to use indirect references to the
+medicine, softer phrases and hashtags included. The substitution is the obvious move, which is why it is worth knowing that
+it may not work.
 
 **What is permitted is the consultation, not the treatment.** You may advertise a consultation
 for the concern a patient wants addressed. That is a genuinely workable commercial position —
-it is simply a different website to the one most clinics currently have.
+it is simply a different website to one built around the treatments themselves.
 
 > **Notice what this page does not do.** We have written several hundred words about the
 > advertising rules for injectable treatments without naming a single medicine. That is not
-> squeamishness — it is the discipline the rules require, applied to our own marketing. An
-> agency that names the medicine while selling you compliance has told you everything you need
-> to know about how carefully it reads.
+> squeamishness — it is our own house standard, applied to our own marketing and to any client
+> site we build. In places it is stricter than the regulators' guidance, by choice.
 
-## This is an architecture problem, not a copywriting one
+## This is an architecture problem, not only a copywriting one
 
-Here is the part almost nobody explains properly, and the reason a rewrite alone will not fix
-your site.
+Here is the reason a rewrite alone may not fix your site.
 
-A price list covering a prescription-only treatment **may** exist. The conditions are
-structural: it needs to sit at least two clicks from the homepage, be reached through
-consultation-led pages, stay purely informational with no promotional framing, and appear in
-neither the homepage nor the primary navigation.
+A price list covering a prescription-only treatment **may** be acceptable, and the guidance
+describes the route in structural terms. The ASA/CAP FAQ of 23 January 2020 says a price on the
+homepage, or a direct link to "Prices" that mentions the medicine, "is unlikely to be
+acceptable", while a price list "might be acceptable" if clients "can only get to the price list
+after going through a page promoting a consultation". CAP's Bitesize guidance describes the same
+journey: the consultation advertised on the homepage, a page about the consultation, and from
+there a further page "ideally two clicks from the homepage". The reference to the medicine must
+be "purely informational with no promotional content".
 
-Read that again as a specification rather than a warning, because that is what it is. It
-describes a navigation hierarchy, an internal linking pattern, a sitemap and a set of page
-templates. It is a build brief.
+Read that as a specification rather than a warning. On our reading it describes a navigation
+hierarchy, an internal linking pattern, a sitemap and a set of page templates. It is a build
+brief.
 
-Which is why changing a few words on your existing site does not get you there. If your
-treatment pages sit in the main menu — and on most clinic sites they do — the structure itself
-is the problem, and no amount of careful phrasing fixes a menu.
+Which is why changing a few words on your existing site may not get you there. If a page about
+the medicine can be reached straight from the main menu, without passing through the
+consultation, the structure itself is the problem, and no amount of careful phrasing fixes a
+menu.
 
 ## Consultation-first architecture
 
-This is the pattern we build, and it is what lets a compliant clinic site still perform:
+This is the pattern we build, designed so that a compliant clinic site can still perform:
 
 - **Concern-led entry pages.** The product name is what the rules put out of reach, whatever
   volume sits behind it. The concern and the consultation are what you are permitted to compete
   on, so they are what the structure has to earn traffic with.
 - **A consultation-first path.** The route to any detailed treatment information runs through
-  consultation content, satisfying the structural condition rather than working around it.
-- **Clean primary navigation.** Nothing that must stay out of the main menu appears in it, and
-  the internal links agree — a page kept out of the menu while every other page links straight
-  to it is not really being reached through the consultation path.
+  consultation content, built to the route the ASA/CAP guidance describes rather than around it.
+- **Clean primary navigation.** Our design choice, not a quoted rule: nothing that names the
+  medicine appears in the main menu, and the internal links agree — a page kept out of the menu
+  while every other page links straight to it is not really being reached through the
+  consultation path.
 - **Enquiry capture that survives the restructure.** Booking, intake, reminders and follow-up
   run through your CRM, so a more careful site does not become a quieter one.
 
@@ -89,14 +93,22 @@ This is the pattern we build, and it is what lets a compliant clinic site still 
   demand, and a review flow through your CRM. It compounds over months — anyone promising the
   top position next month is best avoided.
 
-## The 2026 licensing scheme, stated accurately
+## The proposed licensing scheme, stated accurately
 
-As at **July 2026** the England licensing scheme for non-surgical cosmetic procedures is **not
-yet in force**. The Government published its consultation response in **August 2025** — 11,848
-responses — proposing a **red, amber and green** risk categorisation, and signalled a further
-consultation on the highest-risk procedures in **spring 2026**. Since **October 2021** it has
-been a criminal offence in England to administer cosmetic fillers, or the one injectable
-prescription-only medicine the same Act covers, to anyone under 18 for a cosmetic purpose.
+As at **28 September 2026** the proposed licensing scheme for non-surgical cosmetic procedures in
+England is **not in force**, and we found no licensing regulations made under the power in
+section 180 of the Health and Care Act 2022. The Government's consultation response of
+**7 August 2025**, on 11,848 responses, says "further work is required to determine where
+specific procedures will sit in the proposed tiering system". On **8 December 2025** the Government
+said it was "taking forward work to determine which procedures will be included" and "what
+requirements will have to be met in order to be granted a licence".
+
+What is already in force is the
+[2021 Act (2021 c. 19)](https://www.legislation.gov.uk/ukpga/2021/19/section/1), which covers
+filler injections for a cosmetic purpose and one named prescription-only medicine. Since
+**1 October 2021** it has been an offence to administer either to a person under 18 in England.
+There are defences, including for registered medical practitioners and for regulated health
+professionals acting on a doctor's directions, and the penalty is a fine on summary conviction.
 
 We date these claims because regulatory content that quietly goes stale is worse than none at
 all — it inverts the entire reason you would trust the agency that wrote it.
@@ -108,8 +120,8 @@ read the rules properly and builds sites that respect them. Where copy sits genu
 the line we use CAP's Copy Advice service — free, non-binding, and considerably better than
 guessing on your behalf.
 
-We also will not tell you that a compliant site is a commercial disadvantage. Your competitors
-are one complaint away from a published ruling with their name on it. Being the clinic that
+We also will not tell you that a compliant site is a commercial disadvantage. A clinic in
+breach can be one complaint away from a published ruling with its name on it. Being the clinic that
 built it properly is worth more than the handful of keywords it costs.
 
 ## Where to next

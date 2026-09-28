@@ -105,64 +105,89 @@ obvious assumption:**
 
 **Two live regulatory events, right now:**
 
-1. **The licensing scheme for non-surgical cosmetic procedures is _not yet in force_.**
+1. **The proposed licensing scheme for non-surgical cosmetic procedures is _not in force_.**
    ⚠️ **Corrected 2026-07-28** — this originally read "is operational in 2026", which overstates
-   it. As at July 2026 the scheme has **not commenced**; the August 2025 consultation response
-   _proposed_ the shape below. See [`08-seo-architecture.md`](08-seo-architecture.md) § 4, which is
-   the authority, and [`03-uk-compliance.md`](03-uk-compliance.md) § B1. What **is** in force:
-   administering botulinum toxin or filler for a cosmetic purpose to under-18s in England has been
-   a criminal offence since 1 October 2021.
-   Initiated by the Health and Care Act 2022. Under the proposal local authorities enforce a **two-tier**
-   system: every individual performing listed procedures needs a **personal licence** —
-   practitioners can no longer operate under a general business licence. Procedures are
-   categorised **red / amber / green** by risk (Government consultation response, August
-   2025); **botulinum toxin and dermal fillers sit in amber**, meaning a non-medical
-   practitioner may perform them only under the supervision of a named regulated
-   healthcare professional. Licence conditions include accredited qualifications, valid
-   indemnity insurance, and a DBS check. Administering to under-18s for cosmetic purposes
-   is illegal in England.
+   it. As at July 2026 the scheme has **not commenced**. See
+   [`03-uk-compliance.md`](03-uk-compliance.md) § B1, the authority since 28 September 2026, and
+   [`08-seo-architecture.md`](08-seo-architecture.md) § 4, which summarises it. What **is** in force:
+   administering to a person under 18 in England botulinum toxin, or a filler injection for a
+   cosmetic purpose, has been an offence since 1 October 2021 ("for a cosmetic purpose" attaches
+   to the filler limb only: the 2021 Act, 2021 c. 19, s.1(1)(b); corrected 28 September 2026).
+   ⚠️ **Corrected 28 September 2026.** The proposed shape that followed here ("botulinum toxin
+   and dermal fillers sit in amber", "practitioners can no longer operate under a general
+   business licence", a DBS check as a licence condition) is removed: the amber list is a 2023
+   **proposal** (and its filler entry is narrower, "semi-permanent dermal fillers injected into
+   the face only"), and the DBS and general-licence lines were not found in any official source
+   read. The dated position from primary sources is in
+   [`03-uk-compliance.md`](03-uk-compliance.md) § B1 ("The proposed licensing scheme"): **not in
+   force as at 28 September 2026, and no regulations found** (legislation.gov.uk title
+   searches); the Government said on 23 June 2026 "We are preparing a consultation on the
+   draft legislation".
 
 2. **ASA/CAP: prescription-only medicines cannot be advertised to the public.**
-   Botulinum toxin is a POM. **The word "Botox" cannot appear on a clinic website, in
-   organic social posts, in Google Ads, or on a flyer** — this covers organic content, not
-   just paid. The ASA also treats _implied_ references as breaches (it has ruled the word
-   "relaxing" an implied reference to Botox). Compliant phrasing advertises the
+   Botulinum toxin is a POM. **The word "Botox" may not appear in an ad to the public — in
+   organic social posts, in Google Ads, on a flyer, or on "almost all website content" (CAP Bitesize)** —
+   this covers organic content, not just paid. _(Corrected 28 September 2026: this said it
+   "cannot appear on a clinic website". The ASA's FAQ (23 January 2020) answers "Yes, in
+   very narrow circumstances", and says a price list reached only through a page promoting a
+   consultation "might be acceptable"; see doc 03 § B1-P.)_ The ASA also treats _implied_
+   references as breaches (it has treated the word "relaxing" as an implied reference to
+   Botox; "ruled" corrected to "treated", 28 September 2026). Compliant phrasing advertises the
    **consultation**, not the treatment: _"consultations for lines and wrinkles"_.
    ⚠️ **CORRECTED 2026-07-29.** This sentence used to recommend _"anti-wrinkle injections",
    "anti-wrinkle treatment"_ — contradicting the sentence before it, since the ASA treats
    those as **implied** promotion of the POM. The same correction was made at § 5 and in
    [`08-seo-architecture.md`](08-seo-architecture.md) § 6 on 2026-07-28 but never reached
-   here or doc 03 § B1. **The MHRA issued 47
-   enforcement notices to aesthetic businesses in 2024 alone**, mostly for exactly this.
-   The ASA now runs AI-powered proactive monitoring that finds non-compliant ads without
-   waiting for a complaint. CAP offers a free **Copy Advice** service for pre-publication
-   questions.
+   here or doc 03 § B1. _(Corrected again 28 September 2026: in the ASA's own words
+   "anti-wrinkle injections" is **conditional** — it "might be acceptable" as a collective term
+   where non-POM treatments are also offered, and "we’d advise against" it where only the POM is
+   offered (FAQ, 23 January 2020). It is still not a safe target term, and WebAsk's build
+   standard leaves it out of client sales copy — our choice, not the ASA's rule. Doc 03 § B1.)_
+   ~~**The MHRA issued 47 enforcement notices to aesthetic businesses in 2024 alone**, mostly
+   for exactly this.~~ _(Removed 28 September 2026: no primary source; it appears only on a
+   vendor page that cites none. Doc 03 § B1 "Enforcement".)_ The ASA now runs AI-powered
+   proactive monitoring that finds non-compliant ads without waiting for a complaint
+   _(unsourced as at 28 September 2026)_. CAP offers a free **Copy Advice** service for
+   pre-publication questions (standard 3–5 working days; faster turnarounds paid; re-verified
+   28 September 2026).
 
 ### Dental
 
 Regulated simultaneously by **four** bodies:
 
-- **GDC** — professional conduct. No unsubstantiated clinical claims. Genuine reviews only
-  (no incentives). Registration transparency. Patient consent required for before/after
-  images. Using "specialist" when not on the GDC specialist list is a standards breach.
+_(Corrected 28 September 2026 against primary sources; [`03-uk-compliance.md`](03-uk-compliance.md)
+§ B2 is the authority and has the GDC's own website list.)_
+
+- **GDC** — professional conduct. No unsubstantiated clinical claims. ~~Genuine reviews only
+  (no incentives).~~ _(No GDC source found; suspended.)_ Registration transparency. Patient
+  consent required for before/after images (_Standards_ 4.2.7). "Specialist" only for dentists on
+  a GDC specialist list (doc 03 § B2, _The GDC, in detail_).
 - **CQC** — registration is a legal requirement for practices in England. Displaying CQC
-  registration and inspection results is a trust asset.
+  registration is a trust asset. _(The CQC does not rate primary dental providers, so a
+  primary care dental practice has no rating to display; "and inspection results" removed.)_
 - **ASA** — advertising claims must be legal, decent, honest, truthful.
 - **CMA** — consumer protection and pricing transparency. **The CMA opened a market study
-  into the £8.4bn private dentistry sector in March 2026.**
+  into private dentistry in March 2026** (the market "valued at £8.4 billion in 2023 to 2024",
+  per LaingBuisson as cited by the CMA).
 
-Plus UK GDPR, PECR, and the Consumer Protection from Unfair Trading Regulations.
+Plus UK GDPR, PECR, and the unfair-trading rules of the DMCC Act 2024 Part 4 Chapter 1 (the
+Consumer Protection from Unfair Trading Regulations were revoked from 6 April 2025, s.251(1)).
 
 ### Why this is the wedge
 
-Almost every UK clinic website is quietly non-compliant — most obviously on the POM rule,
-because "Botox" is the term patients search for and clinics feel commercial pressure to
-use it. The result:
+The rules are strict and specific, and the specialist clinic-web agencies checked on
+28 July 2026 mention none of the ASA, the CAP Code, the MHRA, the GDC or the CQC on the pages
+checked ([`08-seo-architecture.md`](08-seo-architecture.md) §§ 0.1 and 3). _(Corrected 28 September 2026: this opened "Almost every UK clinic website is
+quietly non-compliant — most obviously on the POM rule, because "Botox" is the term patients
+search for and clinics feel commercial pressure to use it". No clinic sites were audited, so it
+implied an audit we never ran; it is replaced by the thesis the sources support, which is about
+agency pages.)_ The result:
 
 - **Verifiable expertise.** Knowing this is real E-E-A-T, not claimed E-E-A-T.
 - **Genuine Information Gain.** Content on "how to market aesthetics legally in the UK"
   answers a question the SERP handles badly, and it's a question with real stakes.
-- **A near-unclaimed position.** A handful of specialists touch it (see § 3); nobody owns it.
+- **A near-unclaimed position.** None of the six specialists in doc 08 § 3 mentions the ASA, the
+  CAP Code, the MHRA, the GDC or the CQC on the pages that could be read.
 - **It also solves the duplicate-content problem** with `naxdor.com` — this content simply
   cannot exist on a US site. See [`05-seo-strategy-uk.md`](05-seo-strategy-uk.md).
 
@@ -452,8 +477,17 @@ This is where UK terms diverge most from Naxdor's, because the vocabulary is reg
 > - **Keyword targeting** goes after the _practitioner's_ question ("can i advertise botox on
 >   my website", "asa rules aesthetic clinic advertising"), never patient-facing treatment terms.
 >
-> Full reasoning, the named ASA rulings, and the two-click price-list rule that becomes our
+> Full reasoning, the named ASA rulings, and the price-list route that becomes our
 > flagship deliverable: [`08-seo-architecture.md`](08-seo-architecture.md) §§ 4 and 6.
+>
+> **Corrected again 28 September 2026.** In the ASA's own words "anti-wrinkle injections" is
+> **conditional**, not implied promotion in every case: it "might be acceptable" as a collective
+> term where non-POM treatments such as fillers are also offered, and "we’d advise against" it
+> where only the POM is offered (FAQ, 23 January 2020). It is still not a safe target term, and
+> WebAsk's build standard leaves it out of client sales copy — our choice, not the ASA's rule.
+> The price-list route is stated only in the ASA's words ("ideally two clicks from the homepage",
+> "might be acceptable"), never as "at least two clicks". [`03-uk-compliance.md`](03-uk-compliance.md)
+> § B1 has the quotes; doc 08 § 6 has the A1/A2 title exception.
 
 **Dental practices**
 
@@ -474,13 +508,13 @@ This is where UK terms diverge most from Naxdor's, because the vocabulary is reg
 
 ### Blog clusters
 
-| Cluster                                 | Anchor                          | Seed posts                                                                                                                                                                                                                                                                       |
-| --------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **A — UK clinic compliance** (flagship) | `/industries/aesthetic-clinics` | "Advertising rules for UK aesthetic clinics (2026)" · "What the 2026 licensing scheme means for your clinic website" · "GDC-compliant dental marketing: the practical checklist" · "Why your clinic website probably breaches the CAP Code"                                      |
-| B — UK SEO                              | `/services/seo`                 | "Local SEO checklist for UK businesses (2026)" · "How to rank in the Map Pack without a shopfront" · "Core Web Vitals: a UK implementation guide"                                                                                                                                |
-| C — CRM                                 | `/services/crm-automation`      | "GoHighLevel for UK service businesses: the 2026 buyer's guide" · "GoHighLevel vs HubSpot for UK SMBs" · "Migrating from HubSpot to GoHighLevel: a UK playbook" · "GoHighLevel pricing in GBP: what you actually pay" · "PECR and your CRM: what UK B2B outreach can legally do" |
-| D — Web development                     | `/services/web-development`     | "How much should a UK small business website cost in 2026" · "Custom vs WordPress: real UK performance numbers"                                                                                                                                                                  |
-| E — AI for UK SMBs                      | `/services/ai-integration`      | "AI receptionists and UK law: PECR, Ofcom and consent" · "AI voice agent ROI for UK service businesses"                                                                                                                                                                          |
+| Cluster                                 | Anchor                          | Seed posts                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| --------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **A — UK clinic compliance** (flagship) | `/industries/aesthetic-clinics` | "Advertising rules for UK aesthetic clinics (2026)" · "GDC-compliant dental marketing: the practical checklist". _(28 September 2026: "What the 2026 licensing scheme means for your clinic website" dropped — the scheme is proposed, not in force, and its post is held until the consultation on draft legislation is published; "Why your clinic website probably breaches the CAP Code" dropped — it implies an audit we never ran.)_ |
+| B — UK SEO                              | `/services/seo`                 | "Local SEO checklist for UK businesses (2026)" · "How to rank in the Map Pack without a shopfront" · "Core Web Vitals: a UK implementation guide"                                                                                                                                                                                                                                                                                          |
+| C — CRM                                 | `/services/crm-automation`      | "GoHighLevel for UK service businesses: the 2026 buyer's guide" · "GoHighLevel vs HubSpot for UK SMBs" · "Migrating from HubSpot to GoHighLevel: a UK playbook" · "GoHighLevel pricing in GBP: what you actually pay" · "PECR and your CRM: what UK B2B outreach can legally do"                                                                                                                                                           |
+| D — Web development                     | `/services/web-development`     | "How much should a UK small business website cost in 2026" · "Custom vs WordPress: real UK performance numbers"                                                                                                                                                                                                                                                                                                                            |
+| E — AI for UK SMBs                      | `/services/ai-integration`      | "AI receptionists and UK law: PECR, Ofcom and consent" · "AI voice agent ROI for UK service businesses"                                                                                                                                                                                                                                                                                                                                    |
 
 Cluster A is the differentiated one and should ship first in Phase 3. Cluster C's PECR post
 and Cluster E's Ofcom post are unusual, useful, and cheap for us to write because the
@@ -648,7 +682,10 @@ tiers convert from Naxdor's USD ladder (Bronze / Silver / Gold) to GBP.
 - **Quarterly** — re-run this doc. New entrants, redesigned competitors, changed regulation.
 - **Per blog post** — scan the top 3 UK SERP results for the target keyword; confirm
   Information Gain before writing.
-- **Regulatory watch (new, UK-specific)** — the aesthetics licensing scheme is actively
-  rolling out and the CMA private-dentistry study reports in due course. Both will move.
+- **Regulatory watch (new, UK-specific)** — the proposed aesthetics licensing scheme is not in
+  force as at 28 September 2026, with no regulations found (see
+  [`03-uk-compliance.md`](03-uk-compliance.md) § B1; "actively rolling out" corrected that day),
+  and the CMA private-dentistry study expects to publish its "emerging thinking" "Between
+  October and November" 2026 and its final report by 4 March 2027. Both will move.
   Set a calendar check; stale regulatory content is worse than none.
 - **Per new industry** — deep-dive three UK vertical competitors before the page ships.

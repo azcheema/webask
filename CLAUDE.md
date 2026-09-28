@@ -19,11 +19,12 @@ Home and service pages speak to any UK SMB. The vertical focus surfaces through
 `/industries/*`; the city focus surfaces through `/locations/*` and the programmatic
 expansion order. Neither shapes the home page.
 
-**The flagship differentiator is UK regulatory literacy.** ASA/CAP bans advertising
-prescription-only medicines to the public — "Botox" cannot legally appear on a UK clinic
-website — and the GDC, CQC, CMA and the 2026 licensing scheme all bite. Nearly every UK
-clinic site is quietly non-compliant. Being the agency that knows this is verifiable
-E-E-A-T, genuine Information Gain, and almost unclaimed in the SERP.
+**The flagship differentiator is UK regulatory literacy.** A clinic may not advertise a
+prescription-only medicine such as Botox to the public (CAP Code rule 12.12); the ASA's FAQ
+(23 January 2020) says a price list naming it, reached only through a page promoting a
+consultation, "might be acceptable". The GDC, CQC and CMA also bite; the proposed licensing
+scheme is not in force as at 28 September 2026. Being the agency that knows this is
+verifiable E-E-A-T, genuine Information Gain, and almost unclaimed in the SERP.
 
 ---
 
@@ -114,11 +115,24 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
 - ❌ **Cross-canonical to `naxdor.com`**, or hreflang-pair the two sites. Self-canonical
   everything. Duplicate content is solved with _rewritten UK content_, not markup.
 - ❌ **Name a prescription-only medicine** in clinic-facing _sales_ copy, `<title>` or meta —
-  ours or a client's. Nor a euphemism: the ASA treats "anti-wrinkle injections",
-  "wrinkle-relaxing" and "beautox" as **implied** POM promotion and has upheld complaints on
-  exactly that. Clinics advertise the **consultation** ("consultations for lines and
-  wrinkles"). Our _editorial_ content may name a POM when discussing the regulation of its
-  advertising — that is commentary, not an ad. See [`docs/08-seo-architecture.md`](docs/08-seo-architecture.md) § 6.
+  ours or a client's. Nor an indirect reference: CAP Bitesize names "wrinkle-relaxing",
+  "#brotox" and "#beautox". **"Anti-wrinkle injections" is conditional, not banned**
+  (corrected 28 September 2026): the ASA's FAQ (23 January 2020) says it "might be acceptable"
+  as a collective term where non-POM treatments such as fillers are also offered, and "we’d
+  advise against" it where only the POM is offered; beside a POM price it "will be seen as an
+  ad for that POM" (Enforcement Notice on social media, 9 January 2020); rulings upheld where
+  it referred to the POM in context (LIFT Aesthetics, 17 May 2023; Dr Bunny Aesthetics,
+  24 April 2024).
+  **WebAsk's build standard is stricter — the phrase stays out of client sales copy — and that
+  is our choice, not the ASA's rule.** Clinics advertise the **consultation** ("consultations
+  for lines and wrinkles"). Our _editorial_ content may name a POM when discussing the
+  regulation of its advertising — that is commentary, not an ad. **Title exception (founder,
+  28 September 2026):** posts A1 (flagship) and A2 (price list) in the clinic-compliance
+  cluster may name the medicine in `title`, slug, `description` and `keywords`, only as a
+  question about, or statement of, the advertising rule; never on non-compliance posts'
+  related links; the licence keyword string (`do i need a licence for …`) is never printed.
+  Service pages, industry pages and client sites keep the ban in title and meta.
+  See [`docs/08-seo-architecture.md`](docs/08-seo-architecture.md) § 6.
   **Three things the 2026-07-29 § B4 run added, all learned the hard way.**
   **(a) `data/*.ts` is sales copy, all of it.** The ban was being read as applying to MDX
   bodies. `data/industries.ts` named the medicine in a FAQ that ships as `FAQPage` JSON-LD —
@@ -128,8 +142,11 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
   covers discussing the regulation of its **advertising**. The under-18s offence is the
   trap here. **(c) De-naming can over-broaden the law.** The first fix said "the injectable
   prescription-only treatments" — a category that does not exist in the statute, which told
-  clinics that any injectable POM to a minor is a criminal offence. The 2021 Act covers
-  fillers plus **one** named medicine; keep it singular and Act-bounded (trap 16, in a costume).
+  clinics that any injectable POM to a minor is a criminal offence. The 2021 Act (2021 c. 19)
+  covers filler injections for a cosmetic purpose plus **one** named prescription-only
+  medicine; keep it singular and Act-bounded (trap 16, in a costume). **"For a cosmetic
+  purpose" attaches to the filler limb only** (s.1(1)(b); s.1(3) applies "For the purposes of
+  subsection (1)(b)"), never to the medicine (added 28 September 2026).
 - ❌ Use Radix directly, or `llms.txt`, or AI-specific schema.
 - ❌ Auto-commit. **Always ask first.** Conventional messages, no AI attribution.
 
@@ -251,7 +268,8 @@ white-on-brand). Any translucent-on-brand treatment must be checked with
   offered **"anti-wrinkle injections"** as the ✅ _compliant alternative_ — contradicting the
   row directly beneath it, CLAUDE.md, and doc 08 § 6, which had corrected exactly this on
   2026-07-28 and reached doc 02 § 5 but neither doc 03 § B1 nor doc 02 § 2. On the flagship
-  differentiator, the bundle was advising the euphemism the ASA upholds complaints over.
+  differentiator, the bundle was advising a phrase the ASA has upheld complaints over in context
+  (conditional — see the 28 September 2026 correction above).
   **Docs are not the ground truth by default — the most recent dated correction is.**
 - **`actions/upload-artifact` skips dot-prefixed paths.** `.lighthouseci` needs
   `include-hidden-files: true`; with the default it matches nothing, and

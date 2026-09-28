@@ -20,7 +20,7 @@ So ~70% of the strategy is already written and transfers directly. The genuine w
 the twelve URLs that already exist. See [`00-overview.md`](00-overview.md).
 
 **Second most important context:** the current site is not a neutral starting point. It
-carries fabricated staff and fake testimonials that became **illegal in the UK on
+carries fabricated staff and fake testimonials that became **a banned practice in the UK on
 6 April 2025**. See [`03-uk-compliance.md`](03-uk-compliance.md) § DMCC.
 
 ## How to use this bundle

@@ -91,13 +91,13 @@ becomes genuinely 1:1 equivalent — and even then, the brand-name difference ar
 This is the real work, and it is not optional. Ported pages get **rewritten**, not
 find-and-replaced. Five sources of genuine difference:
 
-| Source              | Why it's genuinely different                                                                                                                         |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **UK regulation**   | ASA/CAP POM ban, the 2026 licensing scheme, GDC/CQC/CMA, UK GDPR/PECR. This content _cannot_ exist on a US site. The single strongest differentiator |
-| **UK pricing**      | GBP anchors, VAT treatment, UK market bands                                                                                                          |
-| **UK cities**       | Manchester, Cheshire, Leeds (later: Liverpool, Birmingham, London boroughs) — no overlap with Austin/Dallas/Miami                                    |
-| **UK CRM reality**  | GHL-led like `naxdor.com`, but UK-specific content: GBP pricing, PECR-compliant automation, UK HubSpot-to-GHL migration (doc 02 § 3)                 |
-| **British English** | Not cosmetic — a language-identification and relevance signal, with genuinely different keyword volumes                                              |
+| Source              | Why it's genuinely different                                                                                                                                                                    |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **UK regulation**   | ASA/CAP POM ban, the proposed licensing scheme (not in force as at 28 September 2026), GDC/CQC/CMA, UK GDPR/PECR. This content _cannot_ exist on a US site. The single strongest differentiator |
+| **UK pricing**      | GBP anchors, VAT treatment, UK market bands                                                                                                                                                     |
+| **UK cities**       | Manchester, Cheshire, Leeds (later: Liverpool, Birmingham, London boroughs) — no overlap with Austin/Dallas/Miami                                                                               |
+| **UK CRM reality**  | GHL-led like `naxdor.com`, but UK-specific content: GBP pricing, PECR-compliant automation, UK HubSpot-to-GHL migration (doc 02 § 3)                                                            |
+| **British English** | Not cosmetic — a language-identification and relevance signal, with genuinely different keyword volumes                                                                                         |
 
 The uniqueness discipline already exists in the codebase: the inherited
 `scripts/check-programmatic-uniqueness.ts` (warn 70%, fail 85%). **Extend the same thinking
@@ -144,9 +144,7 @@ Sitewide `@graph`, emitted in the root layout, referencing one canonical Organiz
   "url": "https://webask.co.uk/",
   "areaServed": { "@type": "Country", "name": "United Kingdom" },
   "founder": { "@id": "https://webask.co.uk/about#<founder>" },
-  "knowsAbout": [
-    /* the 9 service areas + UK regulatory expertise */
-  ],
+  "knowsAbout": [/* the 9 service areas + UK regulatory expertise */],
   "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "sales",

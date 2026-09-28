@@ -15,7 +15,7 @@ import { buildMetadata } from "@/lib/seo";
 const PATH = "/blog";
 const TITLE = "The WebAsk blog";
 const DESCRIPTION =
-  "Practical writing on SEO, CRM automation, AI and web development for UK small businesses — including the advertising and data rules most agencies never mention.";
+  "Practical writing on SEO, CRM automation, AI and web development for UK small businesses — including the advertising and data rules that apply to clinics.";
 const PRIMARY_CTA: CtaLink = { label: "Book a discovery call", href: "/contact" };
 
 export function generateMetadata(): Metadata {

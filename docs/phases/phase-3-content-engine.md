@@ -1,5 +1,11 @@
 # Phase 3 — Content Engine + Proof
 
+> ⚠️ **Superseded for WebAsk (28 September 2026).** This file is inherited from Naxdor and
+> describes Naxdor's Phase 3, not WebAsk's. It lists "Google Business Profile created", which
+> contradicts D1 (fully remote, no UK location — never create one), and "5 launch blog posts" as
+> done, which is Naxdor's history. **Take Phase 3 tasks from
+> [`../06-build-plan.md`](../06-build-plan.md) § Phase 3 only**, and Cluster A's plan from there.
+
 > **Timeline:** Week 6–7
 > **Status:** **Up next** · **Depends on:** Phase 2 live ✓ (closed 2026-06-19)
 > **Outcome:** Case studies + blog + FAQs + topic clusters live. The proof and authority machine is running.
@@ -101,7 +107,7 @@ After Phase 3, Naxdor has a content strategy that grows organic traffic month ov
 - [ ] DesignRush profile created
 - [ ] G2 profile created
 - [ ] GoodFirms profile created
-- [ ] Google Business Profile created (if real or virtual office address available)
+- [ ] ~~Google Business Profile created (if real or virtual office address available)~~ — **not applicable to WebAsk** (D1: fully remote, no UK location; never create one — CLAUDE.md). Marked 28 September 2026
 - [ ] LinkedIn company page populated with services + locations
 - [ ] All `sameAs` URLs added to Organization JSON-LD
 

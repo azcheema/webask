@@ -128,8 +128,8 @@ otherwise read the divergence as drift and try to reconcile it. It is intentiona
 ## CR-6 — Consider back-porting the equal-prominence consent audit ⚪ **Optional**
 
 **Context.** Doc 03 § A4 requires WebAsk's consent banner to present "Accept all" and
-"Reject all" at genuinely equal visual prominence — the ICO's principal enforcement focus
-under PECR, with exposure up to £17.5m or 4% of turnover, whichever is higher.
+"Reject all" at genuinely equal visual prominence, with
+exposure up to £17.5m or 4% of turnover, whichever is higher.
 
 `naxdor.com` markets US-primary but is operated by a **Swedish** entity and is reachable
 from the EU/UK. Its consent gate was built to a US-first brief.

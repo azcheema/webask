@@ -31,6 +31,18 @@
  * the gate: no claim may imply a client, an audit or a track record — there are
  * none — and no prescription-only medicine may be named in this file at all,
  * because every string in it is sales copy, never editorial (docs/08 § 6).
+ *
+ * Corrected 28 September 2026 against primary sources read that day (PLAN C0):
+ * the price-list route quoted from the ASA/CAP FAQ of 23 January 2020 and CAP
+ * Bitesize (undated); before-and-after lines from the ASA's guidance of 5 June
+ * 2025; licensing as the proposed scheme, not in force (s.180 Health and Care
+ * Act 2022; HL12386, 8 December 2025); the under-18s offence per the 2021 Act
+ * (2021 c. 19) s.1(1) and (4), never by its short title; "specialist" quoted
+ * from the GDC's advertising guidance, checklist and specialist-lists page; the
+ * GDC reviews claim and "representative" removed (no GDC source found); reviews
+ * as a DMCC banned practice, plus Google's Maps content policy (research 08
+ * § B5); the CMA figures with their own qualifiers; and every frequency or
+ * track-record clause removed.
  */
 
 import type { CtaLink, FaqItem, Meta } from "@/data/types";
@@ -80,7 +92,7 @@ export const industries: ReadonlyArray<Industry> = [
     hero: {
       h1: "A clinic website that fills the diary without breaking the rules.",
       subhead:
-        "Nearly every UK aesthetic clinic website is quietly non-compliant — and the fix is structural, not a rewrite of a few sentences. We build sites that convert and stay inside the CAP Code.",
+        "A prescription-only medicine may not be advertised to the public, so a clinic website advertises the consultation instead — and getting that right is a matter of site structure as much as wording.",
       primaryCta: { label: "Book a clinic strategy call", href: "/contact" },
     },
     cardSummary:
@@ -93,24 +105,24 @@ export const industries: ReadonlyArray<Industry> = [
           "A custom clinic website starts at £3,500 for the build. Add CRM and booking automation (from £3,500) where enquiries are getting lost between the form and the diary, and a monthly SEO retainer (from £750 a month) where local search is where your patients start — each excl. VAT. We scope the mix on a call: there is no sense selling you a £12,000 site when a focused build plus automation is what fills the diary. Every figure here is an indicative starting point published up front, not a binding offer and not a prompt to request a quote.",
       },
       {
-        question: "Why is my current clinic website probably non-compliant?",
+        question: "Where can a clinic website break the advertising rules?",
         answer:
-          "Because prescription-only medicines cannot be advertised to the public in the UK, and most clinic sites name them — on treatment pages, in price lists, in FAQs and in before-and-after captions. The ASA also treats common euphemisms as implied promotion of the same medicine, so swapping the brand name for a softer phrase does not fix it. What the rules do permit is advertising a consultation. Getting from one to the other is an information-architecture change, not a copy edit, which is why so few sites have made it.",
+          "Anywhere it advertises a prescription-only medicine to the public, which UK rules do not allow: on the homepage, on a treatment page, in an FAQ or in a before-and-after caption. CAP's guidance counts indirect references to the medicine, not only its name, so a softer phrase does not by itself fix it. What the rules do permit is advertising a consultation. A price list is a narrow case: the ASA/CAP FAQ of 23 January 2020 says one “might be acceptable” if clients “can only get to the price list after going through a page promoting a consultation”. That is an information-architecture change as well as a copy edit.",
       },
       {
         question: "Can I still list prices for injectable treatments?",
         answer:
-          "Conditionally, yes — and this is the part almost nobody explains properly. A price list covering a prescription-only treatment may exist where it sits at least two clicks from the homepage, is reached through consultation-led pages, stays purely informational with no promotional framing, and appears in neither the homepage nor the primary navigation. That is a site-structure requirement, and it is exactly what we build: a consultation-first path that satisfies it without burying the page so deep that nobody finds it.",
+          "Conditionally. For a prescription-only treatment, the ASA/CAP FAQ of 23 January 2020 says a price on the homepage, or a direct link to “Prices” that mentions the medicine, “is unlikely to be acceptable”, while a price list “might be acceptable” if clients “can only get to the price list after going through a page promoting a consultation”. CAP's Bitesize guidance puts the page with treatment information “ideally two clicks from the homepage”, and says the reference to the medicine must be “purely informational with no promotional content”. We build that consultation-first route without burying the page so deep that nobody finds it.",
       },
       {
         question: "Are before-and-after photos allowed?",
         answer:
-          "It depends entirely on what the image demonstrates. Where it is evident that a prescription-only treatment was administered, the image can constitute implied advertising of that medicine even with no text alongside it. Photographs of treatments that do not involve a prescription-only medicine are on much safer ground. Separately, patient images need documented consent for marketing use under UK GDPR. We build galleries that are fast and credible, and we flag which images belong where.",
+          "It depends on what the image shows. The ASA's guidance of 5 June 2025 says before-and-after imagery of a prescription-only product, “even in isolation without any accompanying claims, is very likely to be seen as an implied ad” for it. For any before-and-after photo, it asks marketers to hold signed and dated proof that the photos are genuine and have not been manipulated, and says they should not exaggerate the efficacy of the treatment. We build galleries that are fast and credible, and we flag which images belong where.",
       },
       {
-        question: "Do I need a licence under the new cosmetic procedures scheme in 2026?",
+        question: "Do I need a licence under the proposed cosmetic procedures scheme?",
         answer:
-          "As at July 2026 the England licensing scheme for non-surgical cosmetic procedures is not yet in force. The Government published its consultation response in August 2025, proposing a red, amber and green risk categorisation, and signalled a further consultation on the highest-risk procedures in spring 2026. Since October 2021 it has already been a criminal offence in England to administer cosmetic fillers, or the one injectable prescription-only medicine the same 2021 Act covers, to anyone under 18 for a cosmetic purpose. We track this because a clinic site written to the wrong rules ages badly.",
+          "As at 28 September 2026 the proposed licensing scheme for non-surgical cosmetic procedures in England is not in force, and we found no licensing regulations made under the power in the Health and Care Act 2022. On 8 December 2025 the Government said it was “taking forward work to determine which procedures will be included” and “what requirements will have to be met in order to be granted a licence”. What is in force is the 2021 Act (2021 c. 19), which covers filler injections for a cosmetic purpose and one named prescription-only medicine: since 1 October 2021 it has been an offence to administer either to a person under 18 in England, subject to defences, including one for registered medical practitioners. We date this because a clinic site written to the wrong rules ages badly.",
       },
       {
         question: "Are you lawyers?",
@@ -157,17 +169,17 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Why does the CMA market study matter for my website?",
         answer:
-          "Because your website is the main place a patient encounters your pricing, and pricing transparency is explicitly in scope. The CMA opened its study into the £8.4bn private dentistry sector in March 2026 and is due to report by March 2027, with consumer protection in scope alongside pricing. Among the figures it cited on opening, drawn from independent sources rather than its own findings, an initial consultation rose more than 23% between 2022 and 2024. A site that hides prices behind “from” figures or a contact form is describing exactly the behaviour under examination.",
+          "Because your website is where a patient encounters your pricing, and pricing transparency is in the study's scope. The CMA opened its market study into private dentistry in March 2026 and is due to report by March 2027. On opening it cited figures from independent sources rather than findings of its own: a UK private dentistry market valued at £8.4 billion in 2023 to 2024, and an initial consultation up more than 23% between 2022 and 2024. The study is sector-level, and its update of 17 July 2026 set out no findings; the part of the question a practice controls is whether its own prices are easy to find.",
       },
       {
         question: "Can I use the word specialist on my website?",
         answer:
-          "Only if you are on the GDC specialist list for that field. Using “specialist” — or implying specialist status through phrasing like “our specialists in implants” — when the registrant is not listed is a breach of GDC standards. It is also trivially checkable by anyone, including a complainant, because the specialist lists are public. We check every instance of the word during a build and reword the ones that cannot be supported.",
+          "Only if the dentist is on a GDC specialist list for that field. The GDC says dentists “can only use the title ‘specialist’ if they are on that list”, and one who is not must not describe themselves as “specialising in” a treatment, though “special interest in”, “experienced in” or “practice limited to” are allowed. Its advertising checklist gives implantology as an area with no specialist list at all. Anyone can check: “Members of the public can find a specialist by searching the GDC register.” We check every instance of the word during a build and reword the ones that cannot be supported.",
       },
       {
         question: "What are the rules on patient reviews now?",
         answer:
-          "Two regulators bind at once, and they are easy to meet one at a time and miss together. The GDC requires reviews to be genuine and not incentivised, so prize draws and discounts in exchange for reviews are a standards problem. Separately, since April 2025 the DMCC Act 2024 makes commissioning or publishing fake reviews illegal, with the CMA able to fine directly up to 10% of global annual turnover or £300,000, whichever is higher. We build review flows that ask every patient, at the right moment, with no incentive attached — which satisfies both.",
+          "Since April 2025 the DMCC Act 2024 has made commissioning or publishing fake reviews a banned practice, along with concealing that a review was incentivised, and the CMA can determine a breach and fine directly — up to 10% of global annual turnover or £300,000, whichever is higher. Google's Maps content policy goes further: businesses “should not” offer incentives in exchange for posting any review. We build review flows that ask every patient, at the right moment, with no incentive attached — which satisfies both.",
       },
       {
         question: "Should we display our GDC numbers and CQC registration?",
@@ -177,7 +189,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Can we show before-and-after photographs?",
         answer:
-          "Yes, with documented consent for marketing use specifically — consent to treatment is not consent to publish. The images must be representative rather than the single best outcome, and any claim attached to them has to be substantiable under GDC standards and the ASA. Cosmetic dentistry results are legitimate to show; implying a typical result from an exceptional case is where practices get into difficulty.",
+          "Yes, with documented consent for marketing use specifically — consent to treatment is not consent to publish. The ASA's guidance of 5 June 2025 treats before-and-after photos like testimonials: marketers should hold signed and dated proof that they are genuine and have not been manipulated, the photos should not exaggerate the efficacy of the treatment, and there should be evidence for the impression they create. Cosmetic dentistry results are legitimate to show on those terms.",
       },
       {
         question: "Will the site handle recall and reminders?",
@@ -249,7 +261,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Are the review rules different for us?",
         answer:
-          "The DMCC Act 2024 applies to you exactly as it does to any other business: since April 2025 commissioning or publishing fake reviews is illegal, and the CMA can determine a breach and fine directly — up to 10% of global annual turnover or £300,000, whichever is higher. Incentives are the specific risk in this sector: prize draws and discount-for-review offers are common in salon marketing and rarely arrive with a disclosure attached, and it is concealing the incentive that the Act prohibits rather than offering it. We build a review flow that asks every client at the right moment with nothing attached, which sidesteps the question and samples everyone rather than only the people a discount motivated.",
+          "The DMCC Act 2024 applies to you exactly as it does to any other business: since April 2025 commissioning or publishing fake reviews has been a banned practice, and the CMA can determine a breach and fine directly — up to 10% of global annual turnover or £300,000, whichever is higher. On incentives, what the Act prohibits is concealing one rather than offering it, but that is the Act alone: Google's Maps content policy says businesses “should not” offer incentives in exchange for posting any review. We build a review flow that asks every client at the right moment with nothing attached, which sidesteps the question and samples everyone rather than only the people a discount motivated.",
       },
       {
         question: "Are these services only for beauty and wellness clinics?",

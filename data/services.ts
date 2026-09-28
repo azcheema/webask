@@ -889,7 +889,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Is it legal to ask customers for Google reviews in the UK?",
         answer:
-          "Asking every customer, once, for a review and nothing else is how the programme is built, and the CMA's guidance says asking customers generally, without steering what they write, is not prohibited. Since 6 April 2025 it has been illegal to write or commission fake reviews, to hide that a review was incentivised, or to present reviews misleadingly. Google's policy adds that businesses should not selectively ask the happy ones or offer anything for a review. Where a request promotes the business, it is marketing and the consent rules apply.",
+          "Asking every customer, once, for a review and nothing else is how the programme is built, and the CMA's guidance says asking customers generally, without steering what they write, is not prohibited. Since 6 April 2025 it has been a banned practice to write or commission fake reviews, to hide that a review was incentivised, or to present reviews misleadingly. Google's policy adds that businesses should not selectively ask the happy ones or offer anything for a review. Where a request promotes the business, it is marketing and the consent rules apply.",
       },
       {
         question: "Can we ask only the customers we know are happy?",
@@ -899,7 +899,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Can we offer a discount or a prize draw for a review?",
         answer:
-          "No, not on either plan. An incentivised review is not banned under the DMCC Act 2024, but concealing the incentive is. The CMA's guidance says the review must be clearly identifiable as incentivised, usually by a prominent label, as an advert. Google's policy goes further and says not to offer payment, discounts or free goods for any review. Dental practices have a third rule from the General Dental Council: no incentives at all. Offering nothing meets the incentive rule in all three, so we offer nothing.",
+          "No, not on either plan. An incentivised review is not banned under the DMCC Act 2024, but concealing the incentive is. The CMA's guidance says the review must be clearly identifiable as incentivised, usually by a prominent label, as an advert. Google's policy goes further and says not to offer payment, discounts or free goods for any review. Offering nothing meets the incentive rule in both, so we offer nothing.",
       },
       {
         question: "What happens when we get a bad review?",
