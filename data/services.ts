@@ -286,7 +286,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Who sets up payments, delivery and VAT on the shop?",
         answer:
-          "We do, and all three are in the starting scope. Payment gateway, delivery rules and carrier rates, and tax calculation are each tested against real orders before launch. The UK-specific part is the display, not the maths. Prices shown to consumers must include VAT, or say very clearly that they do not, so the tax setting and the price on the page have to match. Platform transaction fees and app subscriptions stay in your name and are named in the proposal.",
+          "We do, and all three are in the starting scope. Payment gateway, delivery rules and carrier rates, and tax calculation are each tested against real orders before launch. The UK-specific part is the display, not the maths. Prices shown to consumers must include VAT, or say very clearly that they do not, so the tax setting and the price on the page have to match. Platform fees, such as transaction fees and app subscriptions, are not included: they stay in your name and are named in the proposal.",
       },
       {
         question: "Do we own the shop, the customer data and the accounts?",
@@ -319,7 +319,7 @@ export const services: ReadonlyArray<Service> = [
       "One workflow built end to end in TypeScript and Next.js, installable to a phone's home screen, checked automatically against WCAG 2.2 AA as it is built",
       "Sign-in with roles enforced server-side",
       "One integration with a system you already use, such as a calendar, a CRM or a payment provider",
-      "Hosting, deployment and error alerting on accounts you own, a runbook, a team walkthrough and thirty days of post-launch support",
+      "Hosting, deployment and error alerting set up on accounts you own, a runbook, a team walkthrough and thirty days of post-launch support",
     ],
     notIncluded: [
       "More workflows, roles or integrations, an append-only audit trail, export and erasure paths, separate spaces for several organisations, real-time features, sensitive data or feature work past the agreed first version — each an add-on, scoped when you need it",
@@ -596,7 +596,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "How much does a GoHighLevel or HubSpot setup cost in the UK?",
         answer:
-          "From £3,500 excl. VAT, as a project rather than a retainer. That buys a working system for one business: forms that record consent, a pipeline with follow-up sequences, a booking calendar with SMS, email and inbound calling, a dashboard, and thirty days of tuning with training. Platform licence fees are separate and passed through at cost. What moves the price hardest is the state of the contacts you already hold; pipeline and sequence count, booking and messaging integrations and white-label sub-accounts move it too, and a migration is an add-on, scoped in writing.",
+          "From £3,500 excl. VAT, as a project rather than a retainer. That buys a working system for one business: forms that record consent, a pipeline with follow-up sequences, a booking calendar with SMS, email and inbound calling, a dashboard, and thirty days of tuning with training. Platform licence fees and whatever the platform charges on usage are separate and passed through at cost. What moves the price hardest is the state of the contacts you already hold; pipeline and sequence count, booking and messaging integrations and white-label sub-accounts move it too, and a migration is an add-on, scoped in writing.",
       },
       {
         question: "Is GoHighLevel or HubSpot better for a UK small business?",
@@ -611,7 +611,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Is the GoHighLevel or HubSpot subscription included in the price?",
         answer:
-          "No. The platform's licence or seat fees are separate and passed through at cost, and the subscription sits in your own account; we configure and automate the platform on top of it. Keeping it in your name is deliberate: you own the system and the data, and you are never locked into us to keep access to your own CRM. GoHighLevel's plans are compared in our buyer's guide on the blog, and the live figures are on the vendor's own plan page.",
+          "No. The platform's licence or seat fees are separate and passed through at cost, and so is whatever it charges on usage, such as texts, calls or AI, depending on what you use; the subscription sits in your own account; we configure and automate the platform on top of it. Keeping it in your name is deliberate: you own the system and the data, and you are never locked into us to keep access to your own CRM. GoHighLevel's plans are compared in our buyer's guide on the blog, and the live figures are on the vendor's own plan page.",
       },
       {
         question: "Can you set up white-label GoHighLevel and snapshots for our agency?",
@@ -642,7 +642,7 @@ export const services: ReadonlyArray<Service> = [
       currency: "GBP",
       cadence: "project",
       usageNote:
-        "Model and telephony usage is passed through at cost, on accounts you own, and modelled from your own numbers during scoping.",
+        "Usage is not included: whatever the platforms charge for, such as model and call usage or workflow runs, is passed through at cost on accounts you own, based on what you use, and modelled from your own numbers during scoping.",
       priceNote:
         "What moves the price: a voice agent, which is the expensive part; then how much material a chatbot answers from and how many systems it writes into.",
     },
@@ -663,7 +663,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "How much does an AI chatbot or voice agent cost in the UK?",
         answer:
-          "From £4,500 excl. VAT for one job built end to end: a chatbot that answers from your approved material, or one n8n or Make workflow, wired into one system you already use. It is a fixed fee against a written scope, agreed before anything starts rather than estimated hourly. A voice agent built to your own systems is an add-on and the expensive part, so it is priced in that written scope. Its call and model usage is passed through at cost, on accounts you own, and modelled from your own call data during scoping rather than quoted per minute.",
+          "From £4,500 excl. VAT for one job built end to end: a chatbot answering from your approved material, or one n8n or Make workflow, wired into one system you use. It is a fixed fee against a written scope, agreed before anything starts. A voice agent built to your own systems is an add-on, priced in that written scope. Whatever the platforms charge for, such as model and call usage or workflow runs, is not included: it is passed through at cost on accounts you own and modelled from your own numbers during scoping.",
       },
       {
         question: "Are AI receptionists legal in the UK?",
@@ -721,7 +721,7 @@ export const services: ReadonlyArray<Service> = [
     ],
     notIncluded: [
       "A faster response time, more improvement hours, proactive performance work or extra properties — the Growth and Priority tiers, or quoted on top of the closest one",
-      "Redesigns, rebuilds and substantial new features (projects under Web Development, Web Applications or E-Commerce), and platform licence fees such as CRM seats or Vercel team plans",
+      "Redesigns, rebuilds and substantial new features (projects under Web Development, Web Applications or E-Commerce), platform licence fees such as CRM seats or Vercel team plans, and whatever the platforms charge on usage, such as texts, calls or AI, billed on top at cost on what you use",
     ],
     primaryCta: { label: "Discuss a care plan", href: "/contact" },
     relatedServiceSlugs: ["web-development", "seo"],
@@ -781,19 +781,18 @@ export const services: ReadonlyArray<Service> = [
       cadence: "monthly",
       setupAmount: 249, // adopted 28 September 2026
       usageNote:
-        "Messages beyond the plan's 100 conversations a month are passed through at cost, on a published GBP schedule reviewed quarterly.",
+        "Usage is not included: whatever the platform charges for, such as texts and replies, the calls on the divert, the number and WhatsApp, is billed on top at cost, based on what you use, on a published GBP schedule reviewed quarterly.",
       priceNote:
-        "What moves the price: a new UK number instead of a divert, web chat and WhatsApp in the inbox, and more conversations a month.",
+        "What moves the price: a new UK number instead of a divert, and web chat and WhatsApp in the inbox.",
     },
     includes: [
       "A divert from the number you already publish — nothing on your van or website changes",
       "One text, sent within seconds of every missed call, written with you and tested from a real phone",
       "One inbox and a phone app for the replies, so whoever is free can answer",
-      "100 conversations a month — a text-back and the replies to it",
       "A one-page monthly report: calls missed, texts sent, replies, bookings",
     ],
     notIncluded: [
-      "A new UK number, web chat and WhatsApp in the same inbox, or more conversations — each is an add-on, priced separately",
+      "A new UK number, or web chat and WhatsApp in the same inbox — each an add-on, priced separately; platform usage is billed at cost on what you use",
       "Answering the call itself (the AI Receptionist) or promotional follow-up to callers (Email & SMS Marketing, which needs a lawful basis first)",
     ],
     primaryCta: { label: "Set up missed-call text-back", href: "/contact" },
@@ -802,7 +801,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does missed-call text-back cost, and what is in the set-up fee?",
         answer:
-          "From £99 a month with a one-off £249 set-up, or £129 a month with web chat and WhatsApp in the same inbox, excl. VAT. Set-up covers the divert, the text written with you, the inbox and app, and a test from a real phone. The monthly fee covers the running of it and 100 conversations a month; texts beyond that are charged at cost, from a published price list in pounds. Your industry does not move the price.",
+          "From £99 a month with a one-off £249 set-up, or £129 a month with web chat and WhatsApp in the same inbox, excl. VAT. Set-up covers the divert, the text written with you, the inbox and app, and a test from a real phone. The monthly fee covers the running of it. Usage is not included: whatever the platform charges for, such as texts, replies, calls on the divert, the number and WhatsApp, is billed on top at cost, based on what you use, from a published price list in pounds. Your industry does not move the price.",
       },
       {
         question: "Can I automatically text back a missed call in the UK?",
@@ -864,7 +863,7 @@ export const services: ReadonlyArray<Service> = [
       unit: "per location",
       setupAmount: 299, // adopted 28 September 2026
       usageNote:
-        "Request texts and emails are metered by the platform and passed through at cost, on a published GBP schedule reviewed quarterly.",
+        "Usage is not included: whatever the platform charges for, such as the texts and emails the requests are sent by and any AI reply drafts, is billed on top at cost, based on what you use. On a plan we host, the rates are on a published GBP schedule reviewed quarterly.",
       priceNote:
         "What moves the price: locations, the platforms watched beyond Google and Facebook, and whether replies are also posted for you.",
     },
@@ -885,7 +884,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does review management cost per month?",
         answer:
-          "From £129 a month per location with a one-off £299 set-up, or £179 a month per location with replies posted for you and the other platforms watched, excl. VAT. Set-up covers connecting your Google and Facebook accounts, writing the requests and their timing, the one-page policy for your team and the approval workflow. The texts and emails the requests ride on are passed through at cost. What does not move the price is how many reviews you want, because that is not a number we sell or promise.",
+          "From £129 a month per location with a one-off £299 set-up, or £179 a month per location with replies posted for you and the other platforms watched, excl. VAT. Set-up covers connecting your accounts, writing the requests and their timing, the team policy and the approval workflow. Whatever the platform charges for, such as the texts and emails the requests are sent by and any AI reply drafts, is not included: it is billed on top at cost, based on what you use. How many reviews you want does not move the fee.",
       },
       {
         question: "Is it legal to ask customers for Google reviews in the UK?",
@@ -918,9 +917,9 @@ export const services: ReadonlyArray<Service> = [
     // Draft: prerenders `noindex`, on no surface (research 11 § 7). Reshaped
     // 27 September 2026 to research 13 § 3; facts unchanged from the
     // S8-verified draft. £199 a month and £499 set-up adopted as launch
-    // prices, 28 September 2026 (research 00 § 6); 300 minutes unchanged.
-    // Not run before adoption: the wallet-line spot-check and the [founder]
-    // rate test — both remain open.
+    // prices, 28 September 2026 (research 00 § 6). Platform usage is billed on
+    // top at cost, not included (founder, 28 September 2026). Still open:
+    // the wallet-line spot-check (research 01 § 10 item 1).
     slug: "ai-receptionist",
     name: "AI Receptionist",
     category: "grow",
@@ -938,19 +937,19 @@ export const services: ReadonlyArray<Service> = [
       cadence: "monthly",
       setupAmount: 499, // adopted 28 September 2026
       usageNote:
-        "Minutes beyond the plan's 300 a month are charged at a published GBP rate, reviewed quarterly.",
+        "Usage is not included: whatever the platform charges for, such as call minutes on both legs, the AI voice and the line the calls divert to, is billed on top at cost, based on what you use, at published GBP rates reviewed quarterly.",
       priceNote:
-        "What moves the price: minutes a month, calendar and CRM wiring, and how many distinct jobs the assistant is scripted to do.",
+        "What moves the price: calendar and CRM wiring, and how many distinct jobs the assistant is scripted to do.",
     },
     includes: [
       "An assistant scripted to a narrow job — answer, book, take a message, transfer — behind a divert from the number you publish",
       "Booking into the calendar you already run, and a summary of every call to your inbox",
       "The automated-assistant disclosure in the first sentence, and a fallback to voicemail or a person if it fails",
       "A test number you ring before go-live, and monthly tuning",
-      "300 minutes a month, and a monthly report: answered, booked, transferred, dropped, minutes used",
+      "A monthly report: answered, booked, transferred, dropped, minutes used",
     ],
     notIncluded: [
-      "More minutes, call recording, a second line, or CRM wiring beyond the calendar — each is an add-on, priced when you need it",
+      "Call recording, a second line, or CRM wiring beyond the calendar — each an add-on, priced when you need it; platform usage is billed at cost on what you use",
       "Outbound calls of any kind, and answers beyond the short list you approved — both are a scoped project under AI Integration",
     ],
     primaryCta: { label: "Set up the receptionist", href: "/contact" },
@@ -959,7 +958,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "How much does an AI receptionist cost in the UK?",
         answer:
-          "From £199 a month with a one-off £499 set-up, excl. VAT. Set-up covers scripting the job, the divert, the calendar wiring, the disclosure line, the fallback path and a test number for you to ring. The monthly fee covers 300 minutes, tuning and the report. Minutes beyond the allowance are charged at a rate published in pounds and reset each quarter against the exchange rate. What moves the price is minutes, wiring and how many distinct jobs it is scripted to do.",
+          "From £199 a month with a one-off £499 set-up, excl. VAT. Set-up covers scripting the job, the divert, the calendar wiring, the disclosure line, the fallback path and a test number. The monthly fee covers tuning and the report. Usage is not included: whatever the platform charges for, such as call minutes, the AI voice and the line the calls divert to, is billed on top at cost, based on what you use, at rates published in pounds and reset quarterly. What moves the plan price is the wiring and how many distinct jobs it is scripted to do.",
       },
       {
         question: "Is an AI answering my business phone legal in the UK?",
@@ -1101,7 +1100,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does a landing page cost?",
         answer:
-          "From £750 for a page in the builder, £1,250 for a coded page and £1,950 for a three-step funnel, excl. VAT. The starting figure covers design and build, the form or calendar wired to your CRM, tracking, a report at thirty days and two revision rounds on copy you supply. What moves it is builder or code, copy written or edited, and one page or a funnel. No figure depends on how the page performs.",
+          "From £750 for a page in the builder, £1,250 for a coded page and £1,950 for a three-step funnel, excl. VAT. The starting figure covers design and build, the form or calendar wired to your CRM, tracking, a report at thirty days and two revision rounds on copy you supply. What moves it is builder or code, copy written or edited, and one page or a funnel. Whatever the platform charges, such as texts or emails, is not included and is billed on top at cost, based on what you use. No figure depends on how the page performs.",
       },
       {
         question: "Builder or code — which will you use for mine?",
@@ -1151,9 +1150,9 @@ export const services: ReadonlyArray<Service> = [
       currency: "GBP",
       cadence: "monthly",
       usageNote:
-        "SMS segments beyond the plan's allowance are passed through at cost, on a published GBP schedule reviewed quarterly.",
+        "Usage is not included: whatever the platform charges for, such as emails, texts and replies, WhatsApp and the sending number, is billed on top at cost, based on what you use. On a plan we host, the rates are on a published GBP schedule reviewed quarterly.",
       priceNote:
-        "What moves the price: campaigns a month, automations built or reviewed, the state of the consent records you hold, and text volume.",
+        "What moves the price: campaigns a month, automations built or reviewed, and the state of the consent records you hold.",
     },
     includes: [
       "A consent audit in month one — every record tagged by who it belongs to and whether you may message them",
@@ -1161,10 +1160,9 @@ export const services: ReadonlyArray<Service> = [
       "One automation built or reviewed each month — welcome, follow-up, rebooking, win-back — with the lawful-basis check in front of it",
       "List hygiene: bounces removed, opt-outs honoured in every tool, sender named in every message",
       "A monthly report of replies, bookings and opt-outs, not open rates, and each campaign reported on two weeks later",
-      "Up to 10,000 emails and 200 SMS segments a month",
     ],
     notIncluded: [
-      "Four campaigns a month with a quarterly landing page, a WhatsApp channel, or more SMS segments — each is an add-on",
+      "Four campaigns a month with a quarterly landing page, or a WhatsApp channel — each an add-on; platform usage is billed at cost on what you use",
       "Bought, rented or scraped lists (never imported), and the CRM build itself — that is CRM Automation, priced as a project",
     ],
     primaryCta: { label: "Get a campaign plan", href: "/contact" },
@@ -1173,7 +1171,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "How much does email and SMS marketing cost, and what is in the first month?",
         answer:
-          "From £395 a month for two campaigns, or £695 for four with a landing page each quarter, excl. VAT, and no set-up fee. The first month is the consent audit: every record tagged by who it belongs to and whether you may message them, with records you may not message parked, and nothing sent until that is done. From month two, two campaigns and one automation a month. SMS segments beyond the allowance are passed through at cost. The size of your list does not move the price.",
+          "From £395 a month for two campaigns, or £695 for four with a landing page each quarter, excl. VAT, and no set-up fee. The first month is the consent audit: every record tagged by who it belongs to and whether you may message them, with records you may not message parked, and nothing sent until that is done. From month two, two campaigns and one automation a month. Usage is billed on top at cost, based on what you use. The size of your list does not move the plan fee, though every send counts as usage.",
       },
       {
         question: "Is email and SMS marketing legal in the UK, and who can we message?",
@@ -1198,7 +1196,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What does a text cost us?",
         answer:
-          "Nothing extra up to the plan's allowance of 200 segments a month, or 500 on the larger plan. Beyond that, each segment is passed through at cost at the pound rate on our published schedule, with nothing else added. Texts are metered by the platform per 160-character segment and billed in US dollars, and the schedule is reset each quarter against the exchange rate and rounded to the penny. Campaign texts are written to fit one segment in the basic character set wherever the message allows, and each names the sender and carries a way to stop.",
+          "Texts and replies are not included in the plan: each is billed on top at cost, based on what you use; on a plan we host, that is the pound rate on our published schedule, with nothing added. The platform meters texts per 160-character segment and prices them in US dollars, and the pound schedule is reset each quarter against the exchange rate and rounded to the penny. Campaign texts are written to fit one segment in the basic character set wherever the message allows, and each names the sender and carries a way to stop.",
       },
     ],
   },
