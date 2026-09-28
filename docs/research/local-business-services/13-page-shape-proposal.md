@@ -227,8 +227,9 @@ contacts and conversations exported on request.
 
 ## 7. VAT, in plain words (D2, without an accountant)
 
-> **Adopted by the founder on 28 September 2026** (`00` § 6). The two free checks remain before
-> cutover.
+> **Adopted by the founder on 28 September 2026** (`00` § 6), on an AI assistant's answer that
+> matches this section; no HMRC or Skatteverket confirmation was obtained. The two checks below are
+> optional.
 
 **The position.** WebAsk sells to businesses. Services from a supplier outside the UK to a UK
 business are taxed where the customer is, under the reverse charge: Naxdor adds no VAT to the

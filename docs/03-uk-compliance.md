@@ -83,7 +83,7 @@ another reason to settle B2B-only positioning explicitly.
 > prices and proposals"); `/pricing` carries the explanation. The status row above stays
 > ⛔ in substance until the two free checks in `00-overview.md` § D2 are done; if either
 > answer differs, change `VAT_NOTE` and `VAT_EXPLAINER` in `lib/pricing.ts` and the FAQ
-> strings that repeat "excl. VAT".
+> strings that repeat "excl. VAT". **Later the same day:** the position was adopted by the founder on 28 September 2026 on an AI assistant's answer that matches the research (no Swedish VAT on a B2B service to a UK business; the customer accounts for UK VAT under the reverse charge); no HMRC or Skatteverket confirmation was obtained.
 
 **Action items**
 

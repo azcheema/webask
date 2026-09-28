@@ -275,6 +275,8 @@ Blocks: `/pricing` final copy.
 > by the businesses-only line in the terms. Before cutover, two free checks: HMRC's VAT
 > helpline and Skatteverket's business line, one question each. The reasoning and sources are
 > in `research/local-business-services/13-page-shape-proposal.md` § 7.
+>
+> **Later on 28 September 2026:** the position was adopted by the founder on 28 September 2026 on an AI assistant's answer that matches the research (no Swedish VAT on a B2B service to a UK business; the customer accounts for UK VAT under the reverse charge); no HMRC or Skatteverket confirmation was obtained. The two free checks are optional, not a cutover gate.
 
 ### D3 — UK GDPR Article 27 representative + ICO fee
 

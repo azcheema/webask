@@ -22,14 +22,15 @@ export const formatGBP = (amount: number): string => `£${gbp.format(amount)}`;
 /**
  * Shown wherever a price is displayed prominently.
  *
- * Decision gate **D2**, interim position adopted by the founder on 28 September
- * 2026 (research `00` § 6; `13-page-shape-proposal.md` § 7): WebAsk supplies
+ * Decision gate **D2**, position adopted by the founder on 28 September 2026
+ * (research `00` § 6; `13-page-shape-proposal.md` § 7): WebAsk supplies
  * businesses only, and a UK business buying services from a supplier outside
  * the UK accounts for any VAT itself under the reverse charge — so no VAT is
  * added to our invoices and every figure is shown excluding VAT. The full
- * sentence lives on `/pricing` (`VAT_EXPLAINER`) and in the terms. Confirm with
- * HMRC and Skatteverket before cutover; if either answer differs, change these
- * two constants and the FAQ answers that repeat "excl. VAT".
+ * sentence lives on `/pricing` (`VAT_EXPLAINER`) and in the terms. The founder
+ * adopted it on an AI assistant's answer that matches the research; no HMRC or
+ * Skatteverket confirmation was obtained. If an official answer ever differs,
+ * change these two constants and the FAQ answers that repeat "excl. VAT".
  */
 export const VAT_NOTE = "excl. VAT";
 
