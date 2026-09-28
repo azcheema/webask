@@ -119,7 +119,7 @@ export const contact: ContactContent = {
     {
       question: "What happens after I submit the form",
       answer:
-        "Your message goes straight to the founder's inbox and a confirmation lands in yours. You will get a real reply within one working day with two or three suggested times. The discovery call is free, runs about thirty minutes, and ends with a clear next step — either a written scope on its way to you, or an honest pointer to someone better suited if that is the right answer.",
+        "Your message goes straight to the founder's inbox and a confirmation lands in yours. You will get a real reply within one working day: if you asked for the free audit, with the date it will arrive; otherwise with two or three suggested times. The discovery call is free, runs about thirty minutes, and ends with a clear next step — either a written scope on its way to you, or an honest pointer to someone better suited if that is the right answer.",
     },
     {
       question: "Where are you based, and does it matter",
@@ -134,7 +134,7 @@ export const contact: ContactContent = {
     {
       question: "What if I'm not sure which service I need",
       answer:
-        "Choose “Not sure / multiple” and describe what you are trying to fix rather than what you think you need to buy. Most engagements combine two or three services anyway, and working out the right mix is what the discovery call is for. If the problem does not map to anything we offer, we will tell you that too.",
+        "Choose “Not sure / multiple” and describe what you are trying to fix rather than what you think you need to buy. Working out which service fits, or which combination, is what the discovery call is for. If the problem does not map to anything we offer, we will tell you that too.",
     },
     {
       question: "I need this kept confidential",
@@ -145,7 +145,7 @@ export const contact: ContactContent = {
   ctaBand: {
     h2: "Prefer a written audit before a call?",
     subhead:
-      "Request a free 30-minute audit of your existing site — a recorded walkthrough plus a one-page summary of what we would change first.",
+      "Request a free audit: five prioritised findings on search, speed and conversion, as a recorded walkthrough and a one-page summary.",
     primaryCta: { label: "Get a free site audit", href: "/free-audit" },
   },
 } as const;

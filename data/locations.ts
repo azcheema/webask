@@ -223,7 +223,7 @@ export const locations: ReadonlyArray<Location> = [
         {
           question: "Can you take on a Manchester project with no office in the city",
           answer:
-            "Yes — and we would rather say plainly that there is no office than imply one. WebAsk is a trading name of Naxdor, operated fully remotely: no Manchester address, no local desk, no UK company. What you get instead is the whole engagement on UK time: calls in your working day, a written scope, and a free audit returned inside three working days. Your Vercel project, domain, analytics, Search Console property and CRM would all sit in accounts you own from day one, wherever we are sitting. Nothing in a Deansgate or Spinningfields postcode changes how a Next.js build is delivered.",
+            "Yes — and we would rather say plainly that there is no office than imply one. WebAsk is a trading name of Naxdor, operated fully remotely: no Manchester address, no local desk, no UK company. What you get instead is the whole engagement on UK time: calls in your working day, a written scope, and a free audit returned inside three working days unless our reply gives a later date. Your Vercel project, domain, analytics, Search Console property and CRM would all sit in accounts you own from day one, wherever we are sitting. Nothing in a Deansgate or Spinningfields postcode changes how a Next.js build is delivered.",
         },
         {
           question: "What does having no Google Business Profile of your own mean for our project",
