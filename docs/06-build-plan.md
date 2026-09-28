@@ -257,7 +257,7 @@ internal-linking mesh.
       stage breakdown that sums to 6–9 (the delivery playbook says **4–8**).
       ⚠️ Verdicts still to ask of the remaining copy modules: `data/copy/process.ts` (64%)
       is duplicate **by decision** (docs/01 "copy verbatim", commit `6306fc1`);
-      `data/copy/free-audit.ts` (43%) had no recorded verdict _(given 2026-07-30: needs a UK rewrite; rewritten 2026-09-28, now 0%)_. `data/copy/legal.ts` (69%)
+      `data/copy/free-audit.ts` (43%) had no recorded verdict _(given 2026-07-30: needs a UK rewrite; rewritten 2026-09-28, now 0%; founder additions the same day: the auditor named, WebAsk described as new with no case studies yet, a transcript of the recording on request)_. `data/copy/legal.ts` (69%)
       still names the entity "Naxdor … enskild firma" and must be rewritten in the same
       pass that D3 unblocks, not after it.
 - [x] 3 industry pages, each run through the **copy-review checklist** (doc 03 § B4) —
