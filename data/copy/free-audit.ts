@@ -61,7 +61,9 @@ export const freeAudit: FreeAuditContent = {
   // because there are none yet. Founder decisions of 28 September 2026 add three
   // things: the auditor named (the name as in data/team.ts), WebAsk described as new
   // with no case studies yet, and a transcript of the recording on request
-  // (recorded in docs/06-build-plan.md, the free-audit verdict note).
+  // (recorded in docs/06-build-plan.md, the free-audit verdict note), then two more:
+  // the reply says so if an audit cannot start straight away, and one follow-up at
+  // most with no mailing list (matching data/copy/legal.ts, the privacy notice).
   meta: {
     title: "Free Website Audit for UK Businesses",
     description:
@@ -137,7 +139,7 @@ export const freeAudit: FreeAuditContent = {
     {
       question: "Does the free website audit cost anything? What's the catch?",
       answer:
-        "No. There is no fee, no card details and no contract, and you owe nothing afterwards. WebAsk is new and has no case studies to show yet, so the audit is free: it lets you judge our work on your own website before you have spent anything, in the hope that you hire us. Ansar Cheema, WebAsk's founder, does every audit personally. Your details are not shared or sold. Whether you then fix things yourself, use another developer or hire us is your decision.",
+        "No. There is no fee, no card details and no contract, and you owe nothing afterwards. WebAsk is new and has no case studies to show yet, so the audit is free: it lets you judge our work on your own website before you have spent anything, in the hope that you hire us. Ansar Cheema, WebAsk's founder, does every audit personally. Your details are not shared or sold, you are not added to a mailing list, and we follow up once at most. Whether you then fix things yourself, use another developer or hire us is your decision.",
     },
     {
       question: "What does a free website audit check?",
@@ -147,7 +149,7 @@ export const freeAudit: FreeAuditContent = {
     {
       question: "How long does a free website audit take?",
       answer:
-        "The recording and one-page summary arrive by email within three working days of your request, unless our reply gives you a later date. A person replies within one working day with the date your audit will arrive. Each audit is done personally, one at a time. The recording runs ten to fifteen minutes, and the call afterwards, if you want one, lasts half an hour.",
+        "The recording and one-page summary arrive by email within three working days of your request, unless our reply gives you a later date. A person replies within one working day with the date your audit will arrive. If your audit cannot start straight away, that reply says so before any work begins. Each audit is done personally, one at a time. The recording runs ten to fifteen minutes, and the call afterwards, if you want one, lasts half an hour.",
     },
     {
       question: "Do you need logins or access to my website?",
