@@ -10,6 +10,10 @@
 > 29 September 2026** for § A6, § B1, § B2 and § B4, from the raw page copies read for the
 > aesthetics post (A3) and the dental post (D1) on 28-29 September 2026; those passages say
 > "added 29 September 2026" or "corrected 29 September 2026", and § Sources lists the pages.
+> **Extended again on 29 September 2026** for § A4, § A5, § A6, § A7, § B1, § B2a and § B4, from
+> the raw page copies read for the clinic checklist post (C1) on 28-29 September 2026; those
+> passages say "added 29 September 2026, from pages read 28-29 September 2026" (or "corrected",
+> "relabelled", "extended" or "clarified"), and § Sources lists the pages.
 >
 > ⚠️ **This is researched guidance, not legal advice.** Three items (D2, D3, and the
 > vertical copy rules) should be confirmed with an accountant / solicitor before launch.
@@ -155,7 +159,11 @@ specific, informed and unambiguous.
 
 **Banner requirements**
 
-- ✅ **Refusing is as easy as accepting.** The ICO's rule sentence: "Our consent mechanism
+- ✅ **Refusing is as easy as accepting.** The ICO's checklist line (_How do we manage consent
+  in practice?_; relabelled 29 September 2026, from pages read 28-29 September 2026: this called
+  it "the ICO's rule sentence"; the rule sentence is the one quoted from _What are the PECR
+  rules?_ below):
+  "Our consent mechanism
   makes it as easy to refuse consent as it is to accept." "Equally prominent options to
   “accept all” or “reject all” non-exempt storage and access technologies" is its
   illustration of good practice. _(Corrected
@@ -182,16 +190,130 @@ specific, informed and unambiguous.
   controller". WebAsk's own site keeps GA4 and Clarity behind consent regardless — our
   choice; neither has been assessed against the exception.
 
+**The ICO's own words for the lines above** (added 29 September 2026, from pages read 28-29
+September 2026). The guidance index,
+https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/,
+reads "Latest updates - last updated 29 April 2026"; its chapter pages carry no date of their own,
+so cite that date for them.
+
+- _What are the PECR rules?_,
+  https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-pecr-rules/,
+  under "For storage and access technologies in PECR, this means that you must:": "ensure consent
+  involves a clear and positive action from a subscriber or user. For example, continuing to use
+  your website does not constitute valid consent, nor does the use of a pre-ticked box or
+  equivalent;" (the source for the two ❌ lines on pre-ticked boxes and continuing to browse); "not
+  use any storage or access technologies for non-exempt purposes before the subscriber or user has
+  given consent;"; and "enable subscribers or users to refuse the use of storage and access
+  technologies for non-exempt purposes as easily as they can accept; and". The test is "as easily";
+  "equally prominent" stays the illustration.
+- _How do we manage consent in practice?_,
+  https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/how-do-we-manage-consent-in-practice/,
+  is the page of the checklist line and the "equally prominent" illustration above.
+- _What are the exceptions?_,
+  https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-exceptions/:
+  - "When assessing whether any of the exceptions apply, you must consider their specific
+    requirements. This is because exceptions are narrow in scope and won’t apply in all cases."
+  - **Embedded content** (a clinic's treatment video, for example). The passage is a row in the
+    table of "non-exhaustive examples of activities that are likely to meet the exception, and
+    those that won’t" under "Likely to meet the strictly necessary exception?", marked "✔" "(in
+    some circumstances)." Under "Hosting embedded content:": "If your service includes content
+    hosted on these platforms (eg if you have posted a video on your organisation’s YouTube
+    channel), you should:", then "configure the embedded content not to set storage and access
+    technologies the instant someone visits the page with it on, including for analytics purposes;
+    and" and "tell the user underneath the embed that if they choose to press ‘play’, storage and
+    access technologies will be used (you should use a ‘privacy mode’ where available). This will
+    not require consent, as the user has been informed and wants to access the content." Then the
+    alternatives: "When considering how to manage your use of embedded videos, you could:", "add a
+    consent request into your existing mechanism; or", "use a ‘just-in-time’ approach to seek
+    consent on particular pages where the videos are included."; and "Alternatively, you could
+    consider using external links instead of embedded videos." The word is "should", not "must".
+    Never write that the ICO requires consent for an embedded video, nor that the first step alone
+    is enough. _(Corrected 29 September 2026, from pages read 28-29 September 2026: the quotation
+    stopped at "; and", dropping the table it sits in, the second step and the alternatives.)_
+  - **The statistical-purposes exception in the ICO's words.** "This exception applies when:", "you
+    are an ISS provider; and", "the sole purpose of the storage and access technology is collecting
+    information for statistical purposes about the use of your service."; "You can share this
+    information with a third party, provided they are only using it to improve your website or
+    service."; "As part of relying on this exception, you must provide the user or subscriber with
+    clear and comprehensive information about the purpose, and a ‘simple and free’ means to
+    object." On objection: "This means that if someone does object, you must stop storing or
+    accessing information on their device." The clinic checklist post (C1) quotes these lines
+    rather than the statute, with Sch. A1 linked as the source.
+- **Sch. A1 para 5(1)(b) has two limbs.** The one quoted above is (i). The other, (ii), covers the
+  website: "to collect information for statistical purposes about how a website by means of which
+  the service is provided is used with a view to making improvements to the website,"
+  (https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1). Either limb applies only if
+  conditions (a) and (c) to (e) are also met.
+
 **Enforcement.** _(Corrected 28 September 2026.)_ The ICO, April 2026: "992 (99%) of the top
 1,000 websites met our compliance checks at the time of their most recent test" — a statement
-about its own checks, not a rule. The line that stood here ("The ICO wrote to **53 of the UK's
+about its own checks, not a rule. It measures cookie banners on the UK's top 1,000 websites, not
+any sector: the same update (_Online tracking strategy update – April 2026_, "Latest updates - 29
+April 2026",
+https://ico.org.uk/about-the-ico/our-information/our-strategies-and-plans/online-tracking-strategy/online-tracking-strategy-update-april-2026/)
+says "We committed to reviewing cookie banners on the top 1,000 websites in the UK.", and the
+ICO's news release of 29 April 2026
+(https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/04/final-storage-and-access-technologies-guidance-published/)
+quotes William Malcolm: "99% of the UK's top 1,000 websites now meet compliance standards for
+cookie banners owing to focused ICO work with industry." Never use the figure for clinic, dental
+or beauty sites. _(Added 29 September 2026, from pages read 28-29 September 2026.)_ The line that
+stood here ("The ICO wrote to **53 of the UK's
 top 100 websites** requiring cookie-banner compliance") carries no date or URL and was not
 re-verified on 28 September 2026: **unsourced**. PECR fines: since **5 February 2026** (Data
-(Use and Access) Act 2025 s.115 and Sch. 13, substituting PECR Sch. 1; SI 2026/82) the higher
+(Use and Access) Act 2025 s.115(8) and Sch. 13, substituting PECR Sch. 1; SI 2026/82;
+legislation.gov.uk's annotation reads "Sch. 1 substituted (5.2.2026) by Data (Use and Access) Act
+2025 (c. 18), s. 142(1), Sch. 13; S.I. 2026/82, reg. 2(z14) (with regs. 8-11)") the higher
 maximum is, "in the case of an undertaking, £17,500,000 or 4% of the undertaking's total annual
 worldwide turnover in the preceding financial year, whichever is higher", and "in any other
-case, £17,500,000" (Data Protection Act 2018 s.157(5)). The ICO's summary: PECR "enforcement
-mechanisms and penalties are the same in most cases" as under UK GDPR. On online advertising
+case, £17,500,000" (Data Protection Act 2018 s.157(5)). _(Clarified 29 September 2026, from pages
+read 28-29 September 2026: the citation said "Data (Use and Access) Act 2025 s.115 and Sch. 13".
+The annotation on PECR Sch. 1, https://www.legislation.gov.uk/uksi/2003/2426/schedule/1 ("up to
+date with all changes known to be in force on or before 28 September 2026"), names "s. 142(1),
+Sch. 13". Of the eight DUAA annotations read, the four that name an amending section give
+s.142(1) after it: "ss. 116(4), 142(1)" (PECR Sch. 1 para 18(b)(ii)), "ss. 100(5), 142(1)" (DPA
+2018 s.157(4), https://www.legislation.gov.uk/ukpga/2018/12/section/157), "ss. 112(2), 142(1)"
+(PECR reg 6) and "ss. 112(3), 142(1)(2)(h)" (PECR reg 6A,
+https://www.legislation.gov.uk/uksi/2003/2426/regulation/6A, "inserted (19.6.2025 for specified
+purposes, 5.2.2026 in so far as not already in force)"); the four that name a Schedule give
+s.142(1) and the Schedule, with no other section named: "s. 142(1), Sch. 13" (PECR Sch. 1), "s.
+142(1), Sch. 12" (PECR Sch. A1, https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1), "s.
+142(1), Sch. 6 para. 16" (DPA 2018 s.157(2)(a)) and "s. 142(1), Sch. 10 para. 18" (DPA 2018
+s.157(4A)). (Corrected 29 September 2026, from pages read 28-29 September 2026: this said s.142(1)
+"sits after the operative provision on every DUAA annotation read", which the four
+Schedule-based annotations contradict.) And GOV.UK, *Data Use and Access Act 2025: plans for commencement*
+("Last updated: 5 February 2026"),
+https://www.gov.uk/guidance/data-use-and-access-act-2025-plans-for-commencement, says "Some of the
+provisions in the Act will come into force automatically by virtue of section 142 of the Act."
+That points to s.142(1) being the commencement provision, not the substituting one; s.142's own
+text was not read. The substituting words are s.115(8), which the 28 September 2026 notes
+(`verified-dental-data.md` § 7.6, git-ignored, no raw copy) quote from
+https://www.legislation.gov.uk/ukpga/2025/18/section/115: "For Schedule 1 substitute the Schedule
+set out in Schedule 13 to this Act.", with "S. 115 in force at 5.2.2026 in so far as not already in
+force by S.I. 2026/82, reg. 2(y) (with regs. 8-11)". Cite s.115(8) and Sch. 13, or the
+annotation's words; never cite s.142 as the provision that substitutes Sch. 1.)_ **What applies that
+maximum to the cookie rule** (added 29 September 2026, from pages read 28-29 September 2026): PECR
+Sch. 1 para 18, "Section 157 has effect as if—", then para 18(b), "(b)in subsection (2)—", with
+"(i)for “Part 3 of this Act” there were substituted “the PEC Regulations”;" and "(ii)in paragraph
+(a), for the words from “section 35” to “or 78” there were substituted “regulation 5, 6, 7, 8, 14,
+19, 20, 21, 21A, 21B, 22, 23 [F2, 24 or 32B(4) or (5)]”;" ("[F2 …]" is legislation.gov.uk's
+amendment marker; its note reads "Words in Sch. 1 para. 18(b)(ii) substituted"). With those
+substitutions, s.157(2)(a) sets "the higher maximum amount" for a failure to comply with
+regulation 6 (storage and access) and regulation 22 (email marketing), among others. The ICO's
+summary (DUAA summary of the changes, _Privacy and electronic communications_, "Latest updates -
+19 June 2025",
+https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/the-data-use-and-access-act-2025-duaa-summary-of-the-changes/privacy-and-electronic-communications/),
+under "Commissioner’s enforcement powers": "It brings the enforcement powers under PECR into
+line with UK GDPR, so that enforcement mechanisms and penalties are the same in most cases."
+Keep "in most cases". _(Extended 29 September 2026, from pages read 28-29 September 2026: this
+quoted only the last clause, undated.)_ On **23 June 2026** the ICO wrote (_One year on: marking
+the 12-month commencement of the Data (Use and Access) Act_,
+https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/06/one-year-on-marking-the-12-month-commencement-of-the-data-use-and-access-act/):
+"The DUAA also gives us the power to issue fines of up to £17.5 million or 4% of global turnover
+under the Privacy and Electronic Communications Regulations (PECR). We are currently developing
+separate guidance to cover these higher fines." Its figure drops "whichever is higher" and "in the
+case of an undertaking", so take the figure from s.157(5), never from this line. The C1 research
+found no such guidance by 29 September 2026 (a search, not an exhaustive check). _(Added 29
+September 2026, from pages read 28-29 September 2026.)_ On online advertising
 the ICO says "nothing has changed at this stage" (18 May 2026).
 
 **Inherited implementation.** Naxdor already ships a consent gate with GA4 and Clarity held
@@ -233,6 +355,20 @@ This governs how WebAsk can prospect. It differs meaningfully from US CAN-SPAM.
 **Soft opt-in** applies only where: details were obtained during a sale or negotiations for
 a sale · you're marketing your own similar products/services · a clear opt-out was given at
 collection **and in every message**. Bought lists and scraped emails never qualify.
+
+**The ICO's wording** (added 29 September 2026, from pages read 28-29 September 2026; the line
+above came from secondary sources). _Electronic mail marketing_ (Guide to PECR),
+https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/,
+which carries the banner "Due to changes made by the Data (Use and Access) Act, this guidance is
+under review and may be subject to change.": "You must not send marketing emails or texts to
+individuals without specific consent. There is a limited exception for your own previous
+customers, often called the ‘soft opt-in’." Its rule text: "The rules on electronic mail marketing
+are in regulation 22. In short, you must not send electronic mail marketing to individuals,
+unless:", "they have specifically consented to electronic mail from you; or", "they are an
+existing customer who bought (or negotiated to buy) a similar product or service from you in the
+past, and you gave them a simple way to opt out both when you first collected their details and in
+every message you have sent." Quote it with "under review". § B4's _Forms on clinic sites_ points
+here for the marketing box on a clinic's enquiry form.
 
 **Practical rule for WebAsk:** UK SMBs skew heavily to sole traders and micro-companies. A
 "we can email any business" assumption is wrong here. Segment the list by legal form before
@@ -316,6 +452,14 @@ source is recorded for this sentence and it was not re-verified. Do not reuse it
   expressed in the review, for example by merely emailing customers generally to ask if they wish
   to provide a review, is not prohibited under the banned practice." Keep the condition ("without
   predetermining …"); never "asking is allowed" on its own. Addendum R13 quotes the same words.
+- **CMA208 §§ 4.3 and 4.5** (same PDF; added 29 September 2026, from pages read 28-29 September
+  2026), under "Suppressing and cherry-picking reviews". § 4.3: "A trader may infringe the law if
+  they suppress genuine negative or positive reviews, selectively promote positive or negative
+  reviews or omit information around how reviews have been written." (its footnote 17 left out).
+  § 4.5: "Cherry picking positive reviews for publication over negative ones might be done either
+  through suppressing negative reviews that have been submitted or by encouraging just those who
+  are satisfied to leave reviews." Keep "may infringe" and "might be done". These are the words
+  behind the § B4 review-flow and review-widget items.
 - **Sch. 20 para 13(5)(i)**, https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/paragraph/13:
   "publishing in a “misleading way” includes (for example)—", then "failing to publish, or removing
   from publication, negative consumer reviews whilst publishing positive ones (or vice versa);" and
@@ -390,11 +534,61 @@ but genuinely useful audit finding.
 ### A7. Accessibility
 
 WCAG 2.2 AA is inherited from Naxdor (Lighthouse a11y = 100 in CI, axe-core, manual keyboard
-pass). In the UK the commercial framing is the **Equality Act 2010** — service providers must
-make reasonable adjustments, and an inaccessible website is a recognised risk area.
+pass). ~~In the UK~~ In Great Britain the commercial framing is the **Equality Act 2010** — service
+providers must make reasonable adjustments. ~~An inaccessible website is a recognised risk
+area.~~ _(Corrected 29 September 2026, from pages read 28-29 September 2026: the Act's service
+provisions extend to England, Wales and Scotland, not Northern Ireland (below), and "a recognised
+risk area" had no source.)_
 
 No change to the technical standard. Change the _pitch_: accessibility is sold to UK clients
 as risk reduction plus reach, not as a nice-to-have.
+
+**The law and the 2026 code, in their words** (added 29 September 2026, from pages read 28-29
+September 2026).
+
+- **The duty.** Equality Act 2010 s.29(7), https://www.legislation.gov.uk/ukpga/2010/15/section/29
+  (legislation.gov.uk: "up to date with all changes known to be in force on or before 28 September
+  2026"): "A duty to make reasonable adjustments applies to—", (a) "a service-provider (and see also
+  section 55(7));". s.20(6), https://www.legislation.gov.uk/ukpga/2010/15/section/20 ("… on or
+  before 25 September 2026"): "Where the first or third requirement relates to the provision of
+  information, the steps which it is reasonable for A to have to take include steps for ensuring
+  that in the circumstances concerned the information is provided in an accessible format." Keep
+  its condition: the second requirement (physical features) is not about information.
+- **Extent.** s.29 carries "E+W+S" in its heading. s.217,
+  https://www.legislation.gov.uk/ukpga/2010/15/section/217: "This Act forms part of the law of
+  England and Wales."; "This Act, apart from section 190 (improvements to let dwelling houses) and
+  Part 15 (family property), forms part of the law of Scotland."; and s.217(3) lists only sections
+  82, 105(3) and (4), and 199 as forming "part of the law of Northern Ireland". So write "the Act's
+  service duties cover England, Wales and Scotland", not "the whole Act". Northern Ireland's own
+  equality law was not researched.
+- **The code.** EHRC, _Statutory Code of Practice: Services, public functions and associations_
+  (ISBN 978-1-5286-6395-3),
+  https://www.equalityhumanrights.com/sites/default/files/2026/EHRC_Code_of_practice_for_services_public_functions_and_associations.pdf
+  (read from the PDF; the EHRC's HTML pages returned HTTP 403). In force **5 August 2026**: the
+  Equality Act 2010 (Code of Practice on Services, Public Functions and Associations)
+  (Commencement) Order 2026 (SI 2026/788), https://www.legislation.gov.uk/uksi/2026/788/made: "The
+  2026 Code of Practice comes into force on 5th August 2026 immediately after the coming into force
+  of the Equality Act 2010 (Code of Practice on Services, Public Functions and Associations)
+  (Revocation) Order 2026", and "This Order extends to England and Wales and Scotland." The code
+  itself says of remote services that "the Act will apply to conduct in Great Britain (section 29,
+  paragraph 10)" (para 11.74).
+  - Para 3.6: "Part 3 of the Act imposes obligations on those concerned with the provision of
+    services to the public, or to a section of the public, whether in the private, public or
+    voluntary sectors. … The obligation also applies to the provision of services on a website
+    (section 29)."
+  - Para 7.22: "In relation to all three areas (services, public functions and associations) the
+    duty is anticipatory (schedule 2 and schedule 15). This means that service providers, those
+    exercising public functions and associations must proactively consider the barriers that
+    disabled people could face and take action to address those barriers."
+  - Para 1.6: "The Code does not impose legal obligations. Nor is it an authoritative statement of
+    the law: only the courts and tribunals can provide such authority. However, the Code can be used
+    in evidence in legal proceedings brought under the Act. Courts and tribunals must consider any
+    part of the Code that appears relevant to any questions arising in such proceedings." Quote the
+    code's "must" (para 7.22) only beside this: the code explains the Act's duty and does not
+    impose one.
+- **WCAG is in neither the code nor the sections read.** A search of the code's full text and of
+  ss.20, 29 and 217 finds no mention of WCAG. WCAG 2.2 AA is WebAsk's build standard, a technical
+  standard: never call it the legal test, or what the Equality Act or the code requires.
 
 ---
 
@@ -700,8 +894,10 @@ September 2026).
   and other non-POM services, such as dermal fillers" and "your experience and qualifications."
 
 **Before-and-after images** (added 28 September 2026). CAP and the ASA regard them "in the same
-way as testimonials", so rules 3.47–3.50 apply, and marketers "should hold signed and dated
-proof that the photos are genuine and have not been manipulated" (CAP's advice, AdviceOnline,
+way as testimonials", and marketers "should therefore ensure that they meet the requirements
+of rules 3.47-3.50 of the CAP Code" _(corrected 29 September 2026, from pages read 28-29 September
+2026: this said "so rules 3.47–3.50 apply", firmer than CAP's "should")_; marketers "should hold
+signed and dated proof that the photos are genuine and have not been manipulated" (CAP's advice, AdviceOnline,
 _Before and after photos_, 5 June 2025; relabelled 29 September 2026, see below), and "The photos should not exaggerate the efficacy of the product and marketers
 need to ensure that they have relevant evidence to substantiate the impression created by the
 images." Rule 3.47: "Marketers must hold documentary evidence that a testimonial or
@@ -1371,6 +1567,24 @@ force**, and s.3 cannot be commenced before 6 September 2027 (s.24(4)). Separate
 licensing order (SSI 2026/87): "a licence is not required in respect of the carrying on of that
 activity before 6 September 2027". **Wales and Northern Ireland: GAP** — not researched.
 
+**The CQC and non-surgical aesthetics (England)** (added 29 September 2026, from pages read 28-29
+September 2026; until now this document covered CQC registration for dental practices only, in
+§ B2). The CQC's _Scope of registration_ page for the regulated activity of _Surgical procedures_
+("Page last updated: 29 January 2025",
+https://www.cqc.org.uk/guidance-regulation/providers/registration/scope-registration/regulated-activities/surgical-procedures),
+under "Cosmetic surgery": the procedures within the activity include those "carried out by a
+healthcare professional for cosmetic purposes, where the procedure involves the use of instruments
+or equipment that are inserted into the body."; then "The regulated activity of Surgical procedures
+does not include the following procedures:", which lists "piercing", "tattooing", "subcutaneous
+injections to enhance appearance" and "removal of hair or minor skin blemishes by application of
+heat using an electric current." The page ends with the CQC's own "Check if you need to register
+for Surgical procedures". **Only this one regulated activity was read**; the others (the same page
+names "Treatment of disease, disorder or injury", for example) were not. So never write "aesthetic
+clinics do not need CQC registration" or "beauty clinics are outside the CQC": write what this page
+says, say that whether a clinic must register depends on what it does, and point to the CQC's
+check. The offence of carrying on a regulated activity unregistered (HSCA 2008 s.10(1)) and the
+CQC's England-only remit are in § B2, _The CQC, in detail_.
+
 **Site-design implications we can actually sell:**
 
 - Treatment pages must be written to describe the concern the patient wants addressed, not
@@ -1655,11 +1869,65 @@ under-claiming one.
 There are **three regimes**, and which one applies turns on what the thing _is_, not on how
 the clinic describes itself.
 
-| What is sold                                                    | Regime                                                                          | The test                                                                                                                                                                                                                                                      |
-| --------------------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Treatments, spaces, experiences**                             | CAP Code general substantiation (rule 3.7)                                      | Hold evidence for any objective claim. Describing what a treatment is and how it feels is safe ground                                                                                                                                                         |
-| **Food and food supplements** (oral)                            | **CAP Code section 15** + the **GB nutrition and health claims (NHC) Register** | Since **1 January 2021** only claims **authorised on the GB NHC Register**, or claims with the same meaning to the consumer, may be used (rule 15.1.1). The advertiser must hold documentary evidence that the product meets the register's conditions of use |
-| **Anything injected or infused** — IV drips, vitamin injections | **Medicines law.** CAP rules 12.1 and 12.11; Human Medicines Regulations 2012   | **Medicinal claims are not permitted unless that specific product is licensed as a medicine for that purpose.** Advertising an unauthorised medicinal product in GB is a **criminal offence** under the HMR 2012                                              |
+| What is sold                                                    | Regime                                                                                                                                                                                   | The test                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Treatments, spaces, experiences**                             | CAP Code general substantiation (rule 3.7)                                                                                                                                               | Hold evidence for any objective claim. Describing what a treatment is and how it feels is safe ground                                                                                                                                                                                                                                                                                                                                                          |
+| **Food and food supplements** (oral)                            | **CAP Code section 15** + the **applicable register** (the GB nutrition and health claims (NHC) Register in Great Britain; the EU Register in Northern Ireland)                          | Only nutrition claims "listed in the applicable register" may be used, and only health claims "listed as authorised in the applicable register", or claims "that would have the same meaning to the consumer" (rule 15.1.1): in Great Britain the GB NHC Register (since **1 January 2021**), in Northern Ireland the EU Register (see below the table). The advertiser must hold documentary evidence that the product meets the register's conditions of use |
+| **Anything injected or infused** — IV drips, vitamin injections | **CAP Code section 12** (rules 12.1 and 12.11); medicines law (Human Medicines Regulations 2012) where the product is a medicinal product, which was not researched: see below the table | **Medicinal claims are not permitted unless that specific product is licensed as a medicine for that purpose.** Advertising an unauthorised medicinal product in GB is a **criminal offence** under the HMR 2012 (regs 279(1) and 303(1)). Whether any given drip or injection is a medicinal product was not researched: see the caveat below the table                                                                                                       |
+
+**Below the table: corrections and dated sources** (added 29 September 2026, from pages read
+28-29 September 2026).
+
+- **The register row (corrected).** It said only claims "authorised on the GB NHC Register".
+  Rule 15.1.1 (CAP Code section 15, https://www.asa.org.uk/type/non_broadcast/code_section/15.html)
+  has two sentences: "Only nutrition claims listed in the applicable register may be used in
+  marketing communications." and "Only health claims listed as authorised in the applicable
+  register, or claims that would have the same meaning to the consumer, may be used in marketing
+  communications." The same-meaning route is in the health-claims sentence only. The section's
+  background: "In these rules, the term “applicable register” is used to refer to the EU Register
+  and / or the GB Register"; the GB Register "replaced the EU Register for health and nutrition
+  claims made in Great Britain from 1 January 2021"; and "Consequently, the EU Register continues
+  to apply to nutrition and health claims made in Northern Ireland." Wherever this section says
+  "GB NHC Register", that is the rule for Great Britain.
+- **The criminal-offence caveat (corrected).** Human Medicines Regulations 2012 reg 279(1),
+  https://www.legislation.gov.uk/uksi/2012/1916/regulation/279 ("up to date with all changes known
+  to be in force on or before 29 September 2026"): "A person may not publish an advertisement in
+  Great Britain for a medicinal product unless one of the following is in force for the product—",
+  then "a UKMA(GB) or UKMA(UK);", "an authorisation by the licensing authority on a temporary basis
+  under regulation 174;", "a COR(GB) or COR(UK); or" and "a THR(GB) or THR(UK)." (reg 279(2) is the
+  Northern Ireland limb). Reg 303(1), in the same Part 14, Chapter 2,
+  https://www.legislation.gov.uk/uksi/2012/1916/regulation/303: "A person is guilty of an offence
+  if that person commits a breach of a provision in this Chapter." Those two lines support the
+  offence **for a medicinal product** only. Whether any IV drip or vitamin injection is a
+  "medicinal product" was not researched: the definition was not read and no MHRA classification
+  was checked. The only line read that applies medicines law to drips is the MHRA's advice as
+  CAP's advice reports it: "The MHRA had advised the ASA that any mention of coronavirus/COVID-19
+  in the promotion of an IV drip product would bring the product under medicines regulations, as
+  would any claim that implied treatment of, or protection from, the virus." So never write that
+  advertising a drip is a criminal offence; the clinic checklist post (C1) leaves the clause out.
+  The row's Regime cell said "**Medicines law.**" with no condition; it was corrected to match
+  (29 September 2026, from pages read 28-29 September 2026).
+- **CAP's advice, dated.** AdviceOnline, _Healthcare: Intravenous Nutritional Therapy_ (6 February
+  2024, https://www.asa.org.uk/advice-online/healthcare-intravenous-nutritional-therapy.html):
+  "This advice is given by the CAP Executive about non-broadcast advertising. It does not
+  constitute legal advice. It does not bind CAP, CAP advisory panels or the Advertising Standards
+  Authority." Then "The ASA has yet to see convincing evidence to support the claimed benefits of
+  specific IVNT’s."; "Any claim of a specific benefit from an IVNT is likely to be problematic
+  unless the supporting evidence is robust (and in line with the expectations stated above). This
+  may include general references to things like “mood”,” energy”, and “immunity”, …" (punctuation
+  as printed); and, on medicinal claims, softer than the table: "Such claims are unlikely to be
+  acceptable unless the IVNT has been licenced as a medicine and the treatment claims in the ad
+  comply with the Summary of Product Characteristics (SPC) that accompany that licence (rules 12.1
+  and 12.11)."
+- **CAP News, dated.** _Advertising Vitamin Drips – Injecting regulatory knowledge with a quick
+  jab_ (22 February 2024,
+  https://www.asa.org.uk/news/advertising-vitamin-drips-injecting-regulatory-knowledge-with-a-quick-jab.html):
+  "Medicinal claims are not permitted for IVNTs unless that specific product has been licensed as
+  a medicine for that purpose." (the table's bold sentence, almost word for word), and "In the same
+  vein, marketers are reminded that prescription-only IV’s or vitamin injections cannot be
+  advertised to the public." So rule 12.12 can reach a beauty or wellness clinic that offers one.
+  Keep each page's own word: "not permitted" (CAP News), "unlikely to be acceptable" and "likely
+  to be problematic" (CAP's advice).
 
 **The IV point is the one that matters commercially**, because `audienceType` for this vertical
 explicitly names "IV therapy and vitamin drip clinics". The ASA has upheld against IV clinics
@@ -1667,18 +1935,29 @@ on exactly this: rulings against **Cosmetic Medical Advice UK**, **The Private H
 Clinic** and **Reviv UK** (all 22 April 2020), over claims that drips could prevent or treat
 COVID-19 when the products were not licensed as medicines for it (CAP rules 12.1 and 12.11).
 The ASA consulted the **MHRA**, whose position was that any mention of that condition brought
-the product within medicines regulation. There is standing ASA guidance,
-_Healthcare: Intravenous Nutritional Therapy_.
+the product within medicines regulation. There is standing ~~ASA guidance~~ CAP advice,
+_Healthcare: Intravenous Nutritional Therapy_ (AdviceOnline, 6 February 2024; relabelled 29
+September 2026, from pages read 28-29 September 2026: it is "given by the CAP Executive", see above).
 
 **The substantiation limb bites separately**, and it is worth keeping both examples because
 they fail on different grounds: **GMG Pharmacy Ltd t/a The IV Clinic** fell on **evidence**
-(rules 3.1, 3.7 and 12.1) rather than on licensing. A claim can therefore be unlawful either
-because the product is not licensed to make it **or** because it is simply not substantiated.
+(rules 3.1, 3.7 and 12.1) rather than on licensing. A claim can therefore ~~be unlawful~~
+breach the CAP Code either because the product is not licensed to make it **or** because it is
+simply not substantiated. _(Corrected 29 September 2026, from pages read 28-29 September 2026: as
+cited above, GMG Pharmacy was decided under CAP rules 3.1, 3.7 and 12.1, and the licensing cases
+under CAP rules 12.1 and 12.11, so "unlawful" was stronger than the rulings.)_
 
 So an IV bar is **closer to the aesthetic-clinic problem than to the salon one** — it is
-selling something whose advertising is governed by medicines law. A wellness page that treats
-"immunity", "energy" and "detox" as marketing words is making medicinal claims for an
-unlicensed product.
+selling something whose advertising is governed by ~~medicines law~~ CAP Code section 12 and,
+where the product is a medicinal product, by medicines law. A wellness page that treats
+"immunity", "energy" and "detox" as marketing words is making ~~medicinal claims for an
+unlicensed product~~ claims of a specific benefit, which CAP's advice says are "likely to be
+problematic unless the supporting evidence is robust"; claims to "treat, alleviate, prevent or
+cure a medical condition" are, in the same advice, "likely to be considered medical claims" on top
+of that. _(Corrected 29 September 2026, from
+pages read 28-29 September 2026: CAP's advice lists "mood", "energy" and "immunity" under claims
+of a specific benefit, not under medicinal claims, and "detox" is not in its list; "governed by
+medicines law" is subject to the caveat above.)_
 
 **Site-design implications:** service pages that sell the experience and the process rather
 than the outcome; no "boosts", "cures", "prevents" or named conditions against an infused
@@ -1690,7 +1969,9 @@ expects.
 **Sources.** Retrieved 2026-07-29. ASA/CAP, _Food: Health claims_ and CAP Code section 15;
 ASA/CAP, _Healthcare: Intravenous Nutritional Therapy_; ASA/CAP, _Advertising Vitamin Drips_;
 ASA Enforcement Notice, _Advertising Claims for IV Drips (Coronavirus/COVID-19)_; ASA ruling,
-_GMG Pharmacy Ltd t/a The IV Clinic_; Human Medicines Regulations 2012.
+_GMG Pharmacy Ltd t/a The IV Clinic_; Human Medicines Regulations 2012. _(Added 29 September
+2026, from pages read 28-29 September 2026: the CAP advice, CAP News item, section 15 and HMR regs 279 and 303
+were read for C1; dated URLs are in the note below the table and in § Sources.)_
 
 ### B3. AI voice agents — the UK legal picture
 
@@ -1741,9 +2022,13 @@ price-list gating, health claims, the review flow and the GDC website list.)_
       clinic name only with evidence that the clinic is owned or operated by someone who holds a
       general medical qualification; no implied regulation that does not exist (CAP's guidance
       paras 14 and 16; Dr Bunny Aesthetics, issue 2; § B1). _(Added 29 September 2026.)_
-- [ ] No medicinal claim for an unlicensed injected or infused product; food and supplement
-      claims only if authorised on the GB NHC Register, or with the same meaning to the
-      consumer (§ B2a)
+- [ ] No medicinal claim for an unlicensed injected or infused product; for food and
+      supplements, nutrition claims only if listed in the applicable register, and health claims
+      only if listed as authorised there or with the same meaning to the consumer (rule 15.1.1;
+      the GB NHC Register in Great Britain, the EU Register in Northern Ireland; § B2a).
+      _(Corrected 29 September 2026, from pages read 28-29 September 2026: it said "authorised on
+      the GB NHC Register" for all claims; rule 15.1.1 names the applicable register and gives the
+      same-meaning route to health claims only.)_
 - [ ] Before/after imagery has documented patient consent (sources and limits: § B1 _Consent to
       use patient images_; GDC _Standards_ 4.2.7 for dentists), and signed and dated proof that the
       photos are genuine (CAP's advice, 5 June 2025); none of a POM treatment; a filler result is
@@ -1761,7 +2046,11 @@ price-list gating, health claims, the review flow and the GDC website list.)_
 - [ ] Dental: the GDC website list (§ B2) — each named professional's qualification, its
       country and GDC number; the practice's name and geographic address, email and telephone;
       the GDC's contact details or a link; the complaints procedure; the date last updated
-- [ ] Registrations displayed accurately (GDC number, CQC registration). _("Licence status"
+- [ ] Registrations displayed accurately (GDC number; CQC registration, where registered; a CQC
+      rating only where one has been given). _(Corrected 29 September 2026, from pages read 28-29
+      September 2026: "CQC registration" read as if every clinic holds one. Whether a clinic must
+      register depends on what it does (§ B1, *The CQC and non-surgical aesthetics*), and the CQC
+      does not rate primary dental providers (§ B2).)_ _("Licence status"
       removed 28 September 2026: no licensing scheme is in force.)_ A CQC 'Regulated by' graphic,
       if used, is optional and must click through to the CQC's homepage (§ B2; added 29 September 2026)
 - [ ] Pricing presented transparently (dental: GDC _Standards_ 2.4.2; the CMA study)
@@ -1773,11 +2062,41 @@ price-list gating, health claims, the review flow and the GDC website list.)_
       under-18s" (CAP Code 12.25; CAP's guidance para 2; § B1). _(Extended 29 September 2026.)_
 - [ ] Cookies: nothing non-exempt before consent; refusing as easy as accepting; the
       statistical-purposes exception used only on its conditions (§ A4)
+- [ ] Forms: where a form collects health details, a lawful basis under Article 6 and a condition
+      under Article 9; privacy information at the time of collection; marketing emails and texts
+      only with specific consent or within the soft opt-in (_Forms on clinic sites_, below; § A5).
+      _(Added 29 September 2026, from pages read 28-29 September 2026.)_
 - [ ] Where a question is about an actual advert and is genuinely uncertain → **CAP Copy
       Advice** (standard 3–5 working days, free; faster turnarounds paid). It advises on
       "prospective non-broadcast ads" against the CAP Code and gives no legal advice; the Code
       excludes editorial content, and whether Copy Advice would review an editorial summary of
       the rules is not recorded
+
+**Forms on clinic sites** (added 29 September 2026, from pages read 28-29 September 2026). All
+three ICO pages below carry the banner "Due to changes made by the Data (Use and Access) Act, this
+guidance is under review and may be subject to change."; quote them with "under review".
+
+- **Health details are special category data.** ICO, _What is special category data?_ ("Latest
+  update - 9 April 2024"; URL in § B1, _Consent to use patient images_): "The UK GDPR singles out
+  some types of personal data as likely to be more sensitive, and gives them extra protection:",
+  a list that includes "data concerning health;". That a booking or enquiry form which asks about
+  health collects it is our application, not an ICO line.
+- **Article 6 plus Article 9.** ICO, _What are the rules on special category data?_,
+  https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/what-are-the-rules-on-special-category-data/:
+  "If you are processing special category data this means you must still identify a lawful basis
+  for your processing, in exactly the same way as for any other personal data. In other words, you
+  must identify both a lawful basis under Article 6 and a condition for processing special category
+  data under Article 9." Which Article 9 condition a clinic should use was not researched: never
+  name one.
+- **Privacy information at collection.** ICO, _Right to be informed_,
+  https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-be-informed/:
+  "You must provide privacy information to individuals at the time you collect their personal data
+  from them."
+- **Marketing sign-ups.** The ICO's email and text rule and its "limited exception for your own
+  previous customers" are quoted in § A5.
+- **Not covered by these pages:** whether before-and-after photos are special category data
+  (§ B1: never write that they are), and whether a review request counts as marketing (addendum
+  R09, not re-read).
 
 **Pre-publication review route (F4, founder, 28 September 2026).** Every rule sentence carries a
 dated primary quote or link, plus a second-reader verify pass. CAP Copy Advice gets only the
@@ -1871,6 +2190,19 @@ context comes from `verified-licensing.md` §§ 6.1-6.2 (read 28 September 2026)
 - **CQC and the law** — _About us_, https://www.cqc.org.uk/about-us · _Regulated by CQC graphics_ (25 November 2025), https://www.cqc.org.uk/cqc-ratings-and-promotional-graphics/promotional-graphics-providers/regulated-CQC · Regulation 20A and SI 2018/54 reg. 2, re-read · CQC (Registration) Regulations 2009 reg. 19, https://www.legislation.gov.uk/uksi/2009/3112/regulation/19
 - **CMA** — update PDF (17 July 2026), https://assets.publishing.service.gov.uk/media/6a59e2a924d4d0ad06d9465f/_Private_dental_services_market_study_update__.pdf · _Choosing and paying for dental care_ (5 March 2026), https://www.gov.uk/guidance/choosing-and-paying-for-dental-care · case page and press release, re-read
 - **Licensing re-check** — GOV.UK content and search APIs, legislation.gov.uk title searches, and Parliament written questions tabled from 20 June 2026 (`a3/research.md` § 10)
+
+**Read on 29 September 2026, for the clinic checklist post (C1)** (added 29 September 2026, from
+pages read 28-29 September 2026). Raw copies in `.playwright-mcp/compliance/c1/raw/`, mapped in
+`c1/research.md`, `c1/PROVENANCE.md` and `c1/DOCS-GAPS.md` (all git-ignored); C1 also re-used the
+`a1/raw/`, `a3/raw/` and `d1/raw/` copies (CMA208, the ICO's _What is special category data?_,
+CAP's advice on before-and-after photos).
+
+- **Equality** — Equality Act 2010 s.20, https://www.legislation.gov.uk/ukpga/2010/15/section/20, s.29, https://www.legislation.gov.uk/ukpga/2010/15/section/29, and s.217, https://www.legislation.gov.uk/ukpga/2010/15/section/217 · SI 2026/788 (made 14 July 2026, in force 5 August 2026), https://www.legislation.gov.uk/uksi/2026/788/made · EHRC, _Statutory Code of Practice: Services, public functions and associations_ (PDF), https://www.equalityhumanrights.com/sites/default/files/2026/EHRC_Code_of_practice_for_services_public_functions_and_associations.pdf
+- **PECR and the ICO** — PECR Sch. A1 and Sch. 1, re-read · GOV.UK, _Data Use and Access Act 2025: plans for commencement_ ("Last updated: 5 February 2026"), https://www.gov.uk/guidance/data-use-and-access-act-2025-plans-for-commencement · DPA 2018 s.157, re-read ("up to date with all changes known to be in force on or before 29 September 2026") · ICO chapters of the storage and access guidance (index last updated 29 April 2026): _What are the PECR rules?_, https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-pecr-rules/ · _What are the exceptions?_, https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-exceptions/ · _How do we manage consent in practice?_, https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/how-do-we-manage-consent-in-practice/ · ICO news (29 April 2026), https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/04/final-storage-and-access-technologies-guidance-published/ · online tracking strategy update (29 April 2026) and DUAA summary (PECR) ("Latest updates - 19 June 2025"), re-read · ICO blog (23 June 2026), https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/06/one-year-on-marking-the-12-month-commencement-of-the-data-use-and-access-act/ · ICO, each "under review": _What are the rules on special category data?_, https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/what-are-the-rules-on-special-category-data/ · _Right to be informed_, https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-be-informed/ · _Electronic mail marketing_, https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/
+- **ASA/CAP** — AdviceOnline, _Healthcare: Intravenous Nutritional Therapy_ (6 February 2024; "given by the CAP Executive", does not bind the ASA), https://www.asa.org.uk/advice-online/healthcare-intravenous-nutritional-therapy.html · CAP News, _Advertising Vitamin Drips – Injecting regulatory knowledge with a quick jab_ (22 February 2024), https://www.asa.org.uk/news/advertising-vitamin-drips-injecting-regulatory-knowledge-with-a-quick-jab.html · CAP Code section 15, https://www.asa.org.uk/type/non_broadcast/code_section/15.html
+- **Medicines law** — Human Medicines Regulations 2012 reg. 279, https://www.legislation.gov.uk/uksi/2012/1916/regulation/279, and reg. 303, https://www.legislation.gov.uk/uksi/2012/1916/regulation/303
+- **CQC** — _Surgical procedures_ scope page (29 January 2025), https://www.cqc.org.uk/guidance-regulation/providers/registration/scope-registration/regulated-activities/surgical-procedures
+- **Not researched for C1** (so nothing above rests on them): equality law in Northern Ireland; CQC regulated activities other than surgical procedures; whether any drip or vitamin injection is a medicinal product; the text of DUAA s.142 (read only through GOV.UK's commencement page, below). The ICO's guidance on the higher PECR fines was searched for, not researched in depth: "currently developing" on 23 June 2026, and not found by a non-exhaustive search on 29 September 2026 (§ A4).
 
 **Not verified on 28 September 2026** (so nothing above rests on them): the House of Commons
 Library briefing CBP-10331 (HTTP 403); the RCS England open letter of 6 August 2026; the
