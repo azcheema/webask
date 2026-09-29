@@ -6,7 +6,10 @@
 >
 > **Research date: 2026-07-27.** Sources cited inline. **Re-checked against primary sources
 > on 28 September 2026** for parts of § A4 and § A6, and for § B1, § B2 and § B4; those passages
-> carry dated corrections, and § Sources lists every page read that day.
+> carry dated corrections, and § Sources lists every page read that day. **Re-checked again on
+> 29 September 2026** for § A6, § B1, § B2 and § B4, from the raw page copies read for the
+> aesthetics post (A3) and the dental post (D1) on 28-29 September 2026; those passages say
+> "added 29 September 2026" or "corrected 29 September 2026", and § Sources lists the pages.
 >
 > ⚠️ **This is researched guidance, not legal advice.** Three items (D2, D3, and the
 > vertical copy rules) should be confirmed with an accountant / solicitor before launch.
@@ -260,15 +263,94 @@ _(Corrected 28 September 2026: this sentence said "illegal", which is not the Ac
 it says unfair commercial practices "are prohibited" (s.225(1)) — and para 13 bans
 **concealing** an incentive, not incentives as such.)_
 
-| Penalty    | Amount                                                                                   |
-| ---------- | ---------------------------------------------------------------------------------------- |
-| Business   | Up to **10% of global annual turnover** or **£300,000**, whichever is higher             |
-| Individual | Up to **£150,000** — _not re-read on 28 September 2026; confirm before any copy uses it_ |
+| Penalty                                                          | Amount                                                                                                                                                                                                                   |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Business (a monetary penalty in a CMA final infringement notice) | "a fixed amount not exceeding £300,000 or, if higher, 10% of the total value of the turnover (if any) of the respondent" (s.182(6)); "turnover" includes "turnover both in and outside the United Kingdom" (s.204(1)(a)) |
+| Individual                                                       | ~~Up to **£150,000**~~ **Unsupported: do not use** (see the correction below)                                                                                                                                            |
+
+_(Corrected 29 September 2026, from the Act read 29 September 2026: s.182,
+https://www.legislation.gov.uk/ukpga/2024/13/section/182; s.204,
+https://www.legislation.gov.uk/ukpga/2024/13/section/204; s.190,
+https://www.legislation.gov.uk/ukpga/2024/13/section/190; legislation.gov.uk: "up to date with
+all changes known to be in force on or before 28 September 2026" for s.182 and s.204. The business
+row said "Up to **10% of global annual turnover** or **£300,000**, whichever is higher". s.182(6)
+reads, in full: "The amount of a monetary penalty imposed under subsection (4)(b) must be a fixed
+amount not exceeding £300,000 or, if higher, 10% of the total value of the turnover (if any) of
+the respondent." "Global" is consistent with s.204(1)(a). "Annual" is in neither section:
+s.204(2) lets the Secretary of State "make provision for determining the turnover of a person",
+including "the date or dates by reference to which a person’s turnover or daily turnover is to be
+determined" (s.204(3)(b)), and no such regulations were read. "Whichever is higher" stays a fair
+paraphrase of the Act's "if higher"; keep one of the two in every use. The individual row said
+"Up to **£150,000**" and was marked unconfirmed on 28 September 2026. No source read supports
+it. The only £150,000 found in the Act is s.190(3)(a), the ceiling for a penalty under "a final
+breach of undertakings enforcement notice" (s.190(1)): "in the case of a fixed amount, £150,000
+or, if higher, 5% of the total value of the turnover (if any) of the respondent;". That is not a
+fine on individuals. Queued, outside this doc-03 edit: addendum R16 and § B5 (each now carries a
+pointer here), and the live copy that prints "10% of global annual turnover". On 29 September
+2026 `grep -rn "global annual turnover" content data` found it in
+`content/industries/beauty-wellness-clinics.mdx`, `content/locations/leeds.mdx`,
+`content/locations/manchester.mdx`, `content/services/seo.mdx`,
+`content/blog/local-seo-checklist-2026.mdx`, `content/blog/what-is-gohighlevel-2026-buyers-guide.mdx`
+and two `data/industries.ts` FAQ answers. (Added 29 September 2026:) that grep reads one line at a
+time, so it misses the phrase where it wraps across two lines, as it does in
+`content/industries/dental-practices.mdx` and `docs/00-overview.md`; search across line breaks
+instead, for example `grep -rlzP "global\s+annual\s+turnover" content data docs`. Corrected the
+same day to "10% of global turnover": `content/industries/dental-practices.mdx`,
+`content/industries/beauty-wellness-clinics.mdx`, `content/locations/leeds.mdx` and the two
+`data/industries.ts` FAQ answers. Still queued: `content/locations/manchester.mdx`,
+`content/services/seo.mdx` (body and provenance comment), the two blog posts above,
+`docs/00-overview.md` and the drafts in `research/local-business-services/09-content-drafts/`.
+Other copy passes were editing those files the same day, so re-run the search before fixing.)_
 
 The CMA can determine a breach and impose fines **without recourse to the courts**. Its
 opening enforcement posture was supportive, but in **March 2026 it opened investigations
 into five named businesses** over review handling. _(Unsourced as at 28 September 2026: no
 source is recorded for this sentence and it was not re-verified. Do not reuse it until it is.)_
+
+**Asking for reviews: the lines the clinic posts quote** (added 29 September 2026, from pages read
+29 September 2026).
+
+- **CMA208 § 3.6** (_Fake reviews_, 4 April 2025,
+  https://assets.publishing.service.gov.uk/media/67eeb64fe9c76fa33048c790/CMA208_-_Fake_reviews_guidance.pdf,
+  re-read from a fresh download): "Doing so without predetermining the contents or sentiment
+  expressed in the review, for example by merely emailing customers generally to ask if they wish
+  to provide a review, is not prohibited under the banned practice." Keep the condition ("without
+  predetermining …"); never "asking is allowed" on its own. Addendum R13 quotes the same words.
+- **Sch. 20 para 13(5)(i)**, https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/paragraph/13:
+  "publishing in a “misleading way” includes (for example)—", then "failing to publish, or removing
+  from publication, negative consumer reviews whilst publishing positive ones (or vice versa);" and
+  "giving greater prominence to positive consumer reviews over negative ones (or vice versa);".
+- **CAP Code rules 3.44–3.46** (section 3, https://www.asa.org.uk/type/non_broadcast/code_section/03.html),
+  under the note "The below rules relate to marketing materials under the remit of the CAP Code (see
+  the Scope of the Code). Marketers are advised to seek legal advice on other obligations in relation
+  to the prohibition on fake consumer reviews.": 3.44 "Marketing communications must not contain
+  fake consumer reviews."; 3.45 "Marketing communications must make clear where consumer reviews
+  have been incentivised.*"; 3.46 "Marketers must not publish consumer reviews, or consumer review
+  information, in a misleading way in marketing communications." The asterisk: "Where a rule does
+  reflect a prohibited practice, either in part or in its entirety, it is marked with an asterisk."
+- **Google's Maps user-contributed content policy**,
+  https://support.google.com/contributionpolicy/answer/7400114?hl=en-GB (a platform policy, not law).
+  Under "Rating manipulation": "We do not allow merchants to:", then "Offer incentives – such as
+  payment, discounts, free of cost goods and/or services – in exchange for posting any review or
+  revision or removal of a negative review." and "Discourage or prohibit negative reviews, or
+  selectively solicit positive reviews from customers". The on-premises line keeps "should not":
+  "When soliciting reviews, merchants should not require or pressure users to leave ratings or write
+  reviews while on the premises, nor should they request that specific content be included." Then
+  "We do allow merchants to:" and "Solicit or encourage the posting of content that does represent a
+  genuine experience, without offering incentives to do so or attempting to influence the rating or
+  the contents of the review." The en copy prints "free goods and/or services -" where en-GB prints
+  "free of cost goods and/or services –". Write "Google's policy says it does not allow merchants
+  to …" for the incentive and selective-solicitation lines and "should not" for the on-premises
+  line, each dated "read 29 September 2026", and never present the policy as law.
+  **Wording note (added 29 September 2026):** the wording recorded for the merchant list changed
+  from "should not" to "We do not allow merchants to:" between 25 and 29 September 2026.
+  `research/local-business-services/10-sources.md` S38 carries the 24-25 September readings
+  ("Merchants should not:"), the second taken with a fetch tool on the URL without `hl=en-GB`; on
+  29 September 2026 the raw en-GB and en copies both read "We do not allow merchants to:". The
+  addendum's gap-register row 3, § B5 and R22 were corrected to that wording on 29 September 2026
+  and keep the old reading only in their correction notes; S38 now carries a dated re-read note.
+  Whether Google edited the page in that window or the 25 September fetch-tool reading was a
+  paraphrase is not established. Quote the 29 September text with its date.
 
 **Current exposure on `webask.co.uk` (audited 2026-07-27):**
 
@@ -355,7 +437,7 @@ the weaker word and is kept.)_
 | The brand name of a botulinum toxin product anywhere the public can see it — website, Instagram, Google Ads, flyers. _(28 September 2026: the narrow website routes, a gated treatment-options page and a gated price list, are in § B1-P)_                                                                                     | Advertise the **consultation**: _"consultations for lines and wrinkles"_                                              |
 | Implied references — for a clinic that offers the POM, alone or alongside other treatments, "the word “relaxing” is likely to be understood as an implied reference to Botox" (FAQ, CAP News, 23 January 2020; the non-POM case is in the box below)                                                                            | Describe the **concern the patient wants addressed**, not the product and not its effect                              |
 | **Indirect references** — "wrinkle-relaxing", "#brotox", "#beautox" (CAP Bitesize, which states no treatment-list condition; the FAQ's non-POM case for "wrinkle relaxing injections" is in the box below); "Beautytox", "Beautox" (classed as **direct** references by the Enforcement Notice on social media, 9 January 2020) | Not alternatives. **"Anti-wrinkle injections" is conditional**, not in this row — see the 28 September 2026 box below |
-| Before/after imagery used to promote the POM ("very likely to be seen as an implied ad", AdviceOnline, 5 June 2025)                                                                                                                                                                                                             | Educational content about consultations, qualifications, safety standards, duty of care, patient experience           |
+| Before/after imagery used to promote the POM ("very likely to be seen as an implied ad", CAP's advice, 5 June 2025)                                                                                                                                                                                                             | Educational content about consultations, qualifications, safety standards, duty of care, patient experience           |
 
 > ### ⚠️ CORRECTED 2026-07-29 — this table used to recommend the euphemism it now forbids
 >
@@ -588,10 +670,39 @@ apply to other injectable cosmetic treatments that are not ‘prescription-only 
 as dermal fillers (Restylane etc.)." The Enforcement Notice: "Non-POMs, such as dermal fillers,
 may be advertised provided there is no implication that a POM is also available."
 
+**Fillers: CAP's advice, the Notice and Bitesize** (added 29 September 2026, from pages read 28-29
+September 2026).
+
+- **CAP's advice, _Beauty and Cosmetics: Treatments using fillers_ (6 August 2025)**,
+  https://www.asa.org.uk/advice-online/beauty-and-cosmetics-treatments-using-fillers.html. Its note:
+  "Note: This advice is given by the CAP Executive about non-broadcast advertising. It does not
+  constitute legal advice. It does not bind CAP, CAP advisory panels or the Advertising Standards
+  Authority." On status it hedges where the FAQ does not: "Dermal fillers are unlikely to be
+  prescription-only (POMs)." Quote each page's own word; never "fillers are never POMs". Claims:
+  "Marketers may refer to fillers as being capable of temporarily reducing the appearance of fine
+  lines and wrinkles but should not suggest either that treatment can cure or rejuvenate skin (rule
+  12.7) or that lines and wrinkles will be permanently eliminated. Unqualified claims, such as
+  “wrinkle reduction”, are unlikely to be acceptable." Naming: "If Botox is the only injectable they
+  offer, marketers should not advertise “fillers” because that would be an indirect promotion of a
+  prescription-only medicine." The sentence after it names three filler brands: do not copy them.
+  **Do not quote the page's age sentence**, which says "there is no legal requirement to be over 18
+  years of age to be given them": in England, administering a filler for a cosmetic purpose to
+  someone under 18 has been an offence since 1 October 2021, with defences (the 2021 Act (2021
+  c. 19) s.1(1)(b); "What IS in force" below). Use only that paragraph's social-responsibility
+  point, or leave it out.
+- **The Enforcement Notice** (9 January 2020, its landing-page date; social media; PDF
+  re-downloaded 29 September 2026,
+  https://www.asa.org.uk/static/a8fa05da-b3ee-4528-82095e7bba2a3e5c/Enforcement-Notice-Advertising-Botox-and-other-botulinum-toxin-injecti.pdf),
+  under "What if I administer POMs and non-POMs?": "Be specific and use terms such as "dermal
+  fillers" or "cosmetic fillers" to be expressly clear that you are only advertising your non-POM
+  "filler"."
+- **CAP Bitesize** (undated): "Do promote your business", then "You can promote:", "your clinic
+  and other non-POM services, such as dermal fillers" and "your experience and qualifications."
+
 **Before-and-after images** (added 28 September 2026). CAP and the ASA regard them "in the same
 way as testimonials", so rules 3.47–3.50 apply, and marketers "should hold signed and dated
-proof that the photos are genuine and have not been manipulated" (AdviceOnline, _Before and
-after photos_, 5 June 2025), and "The photos should not exaggerate the efficacy of the product and marketers
+proof that the photos are genuine and have not been manipulated" (CAP's advice, AdviceOnline,
+_Before and after photos_, 5 June 2025; relabelled 29 September 2026, see below), and "The photos should not exaggerate the efficacy of the product and marketers
 need to ensure that they have relevant evidence to substantiate the impression created by the
 images." Rule 3.47: "Marketers must hold documentary evidence that a testimonial or
 endorsement used in a marketing communication is genuine … and hold contact details for the
@@ -601,8 +712,91 @@ without any accompanying claims, is very likely to be seen as an implied ad for 
 prescription-only product". Bitesize: "Don’t share before-and-after photos of Botox".
 AdviceOnline on botulinum toxin products (29 October 2025): marketers "should, therefore, avoid
 featuring any before and after images in their marketing communications". Patient consent for
-images: the GDC for dentists (§ B2); for aesthetic practitioners, **GAP** — GMC and NMC guidance
-not yet read.
+images: see _Consent to use patient images_ below, which replaces (29 September 2026) the line
+"for aesthetic practitioners, **GAP** — GMC and NMC guidance not yet read".
+
+_(Relabelled 29 September 2026, from the page re-read 29 September 2026,
+https://www.asa.org.uk/advice-online/before-and-after-photos.html: its status note, not captured on
+28 September 2026, reads "Note: This advice is given by the CAP Executive about non-broadcast
+advertising. It does not constitute legal advice. It does not bind CAP, CAP advisory panels or the
+Advertising Standards Authority." So the 5 June 2025 page is CAP's advice, given by the CAP
+Executive. Never "the ASA's guidance of 5 June 2025". Its sentence "CAP and the ASA regard the use
+of ‘before and after’ photos in the same way as testimonials" can still be quoted as it stands.)_
+
+**More on before-and-after images** (added 29 September 2026, from pages read 28-29 September 2026).
+
+- **The FAQ (CAP News, 23 January 2020), "CAN I USE ‘BEFORE AND AFTER’ IMAGES?"**, all four
+  paragraphs: "If you only offer prescription-only treatments or the image shows the ‘before and
+  after’ of a client who has received Botox, then it’s unlikely, as it will be seen as an ad for the
+  prescription-only treatment." / "If you offer both prescription-only treatments like Botox and
+  also non-prescription only treatments like fillers, you are able to include images if they show
+  someone who has received a non-prescription only treatment – however, make sure you’re explicit
+  the photos relate to the non-prescription only treatment." / "It’s unlikely to be acceptable to
+  show a ‘before and after’ image of a client who has received Botox and falsely claim that they
+  received a non-prescription only treatment because this is likely to be seen as materially
+  misleading." / "You should also make sure you have signed and dated proof that the photos are
+  genuine, and representative of what can be achieved as detailed in our guidance."
+- **The tension, left unresolved.** CAP's advice on botulinum toxin products (29 October 2025),
+  under "Don’t use before and after photographs": "The use of before and after photographs is
+  likely to be interpreted by the ASA as an efficacy claim, which is not permitted. Marketers should,
+  therefore, avoid featuring any before and after images in their marketing communications." It sits
+  in advice about the medicine and does not say whether it reaches filler images; the FAQ allows
+  labelled filler images for a clinic that offers both. Quote each from its own page and do not
+  resolve the tension in CAP's voice. A stricter WebAsk build standard for such a clinic's gallery
+  would be a founder decision, labelled as ours; none has been taken.
+- **CAP/BCAP guidance** (_Guidance on the marketing of surgical and non-surgical cosmetic
+  procedures_; status and URLs under "Further lines the aesthetics post (A3) quotes" below). Para
+  31: "Disclaimers used by advertisers do not excuse misleading impressions of advertisements. Text
+  which states that a photograph has been enhanced in post-production could be problematic if the
+  photograph has been digitally re-touched in an area which relates specifically to the performance
+  of the product, or an area in which the treatment has been carried out, irrespective of the
+  inclusion of a disclaimer." Keep "could be problematic". Para 32: "Marketers must hold documentary
+  evidence that the before and after photographs used in their marketing communications are genuine
+  and hold signed and dated proof from the subject shown."
+- **CAP Bitesize** (undated): "Adding a caption or disclaimer like “filter used” or “digitally
+  enhanced” probably won’t be enough to fix a misleading impression." Keep "probably".
+- **Glow Up LLC t/a Maxxing** (ASA ruling, 2 September 2026; an app, not a clinic): "As we had not
+  seen any evidence to substantiate that the before-and-after footage and photos were genuine,
+  including that they used the same models, or were representative of typical results, we concluded
+  that the ads were misleading."
+
+**Consent to use patient images** (added 29 September 2026, from pages read 29 September 2026;
+replaces the GAP line above). Still a partial gap: what was found, and what was not.
+
+- **Every advertiser (CAP).** Rule 6.1 (section 6,
+  https://www.asa.org.uk/type/non_broadcast/code_section/06.html): "Marketers must not unfairly
+  portray or refer to anyone in an adverse or offensive way unless that person has given the
+  marketer written permission to allow it. Marketers are urged to obtain written permission
+  before:", the first case being "referring to or portraying a member of the public or his or her
+  identifiable possessions; the use of a crowd scene or a general public location may be acceptable
+  without permission". Keep "urged". Rule 3.50 (no testimonial "without permission") reaches
+  before-and-after photos through CAP's advice of 5 June 2025, which treats them "in the same way as
+  testimonials". The CAP/BCAP guidance's para 32 asks for "signed and dated proof from the subject
+  shown", framed as proof that the photos are genuine.
+- **Doctors (GMC).** _Making and using visual and audio recordings of patients_,
+  https://www.gmc-uk.org/professional-standards/the-professional-standards/making-and-using-visual-and-audio-recordings-of-patients:
+  "This guidance came into effect 9 May 2011." Para 37, in the section "Recordings for use in
+  widely accessible public media - television radio internet print": "You must get the patient’s
+  consent, which should usually be in writing, to make a recording that will be used in widely
+  accessible public media, whether or not you consider the patient will be identifiable from the
+  recording, other than for the recordings listed in paragraph 10." Read through Wayback Machine
+  snapshots (8 December 2024 to 5 March 2026; para 37 from the 12 January 2025 snapshot), because
+  the live site blocked scripted reads. Five pages of the guidance were read and none mentions
+  marketing or advertising, so applying para 37 to a clinic's website gallery is **our reading**.
+- **Nurses, midwives and nursing associates (NMC).** Social media guidance ("Last updated:
+  02/07/2025"),
+  https://www.nmc.org.uk/standards/guidance/social-media-guidance/read-social-media-guidance-online/:
+  registrants "may put their registration at risk, and students may jeopardise their ability to join
+  our register, if they act in any way that is unprofessional or unlawful on social media including
+  (but not limited to):", among them "posting pictures of patients and people receiving care without
+  their consent". No NMC guidance specific to images in aesthetic marketing was found.
+- **Dentists (GDC):** _Standards_ 4.2.7 and the _Focus on Standards_ FAQ (§ B2).
+- **Not found or not researched.** The ICO's _What is special category data?_ ("Latest update - 9
+  April 2024"), https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/what-is-special-category-data/,
+  says nothing on before-and-after or aesthetic images: never write that such photos are special
+  category data. Nothing read sets a consent duty for a practitioner on no professional register
+  beyond the CAP rules. Not researched: the GPhC, CAP Code section 10, and any JCCP or Save Face
+  standard.
 
 **Rulings map** (added 28 September 2026). Each point is what the ruling itself, or the AdviceOnline
 page that cites it, cites it for (CAP's page of 29 October 2025 or, for the last row, _Before and
@@ -611,7 +805,9 @@ said "the ASA's AdviceOnline page"; the 29 October 2025 page says its advice "is
 Executive" and does not bind the ASA. The 5 June 2025 page's own status note was not captured on 28
 September 2026, so it is cited as "AdviceOnline", not as the ASA's or CAP's; the two AdviceOnline
 pages whose note was captured, 29 October 2025 and 17 February 2022, both say their advice "is given
-by the CAP Executive".)_
+by the CAP Executive".)_ _(Superseded 29 September 2026: the 5 June 2025 page's note was captured on
+29 September 2026 and reads "Note: This advice is given by the CAP Executive about non-broadcast
+advertising." Cite it as CAP's advice; see "Before-and-after images" above.)_
 
 | Ruling                                              | Date                               | Cited for                                                                                                                                                                                                                 |
 | --------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -857,6 +1053,89 @@ the qualifiers, and keep each line with its own page.
   2026", read 29 September 2026). CAP Code Scope II m is as quoted in § B1-P (read 28 September
   2026).
 
+**Further lines the aesthetics post (A3) quotes** (added 29 September 2026, from pages read 28-29
+September 2026). Each is verbatim from the raw page copies; keep the qualifiers, and keep each line
+with its own page. Every AdviceOnline page below carries the CAP Executive note quoted under
+"Fillers" above, so each is "CAP's advice".
+
+- **CAP/BCAP guidance, _Guidance on the marketing of surgical and non-surgical cosmetic
+  procedures_**: landing page dated 12 December 2023,
+  https://www.asa.org.uk/resource/cosmetic-interventions.html; the PDF it links,
+  https://www.asa.org.uk/static/2d213b66-cbf9-4a08-98a343cfe4cfce6c/Cosmetic-interventions-AG-Final.pdf,
+  prints "Revised: November 2021". Its foreword: "Advertising Guidance reflects CAP's and/or BCAP's
+  intended effect of the Codes but neither constitutes new rules nor binds the ASA Councils in the
+  event of a complaint about an advertisement that follows it." So write "CAP's guidance says",
+  never "the rules require". Para 2: "For non-broadcast advertising (including press, print,
+  posters, marketers' own websites, online media, social media, influencer marketing), ads cannot be
+  placed in media that are aimed under-18s, and in media in which 25% or more of the audience profile
+  is under-18s." Keep "audience profile". Para 14: "Marketers should hold proof of practitioners'
+  qualifications from a reputable, independent source before making claims that relate to those
+  qualifications." Keep the condition. Para 16: "Marketers should not misleadingly claim or imply
+  that a practitioner is a medical professional or regulated by a professional body if that is not
+  the case. They should take care not to claim or imply that such practitioners have professional
+  systems of complaint or redress if they do not." Para 40: "Marketers should avoid irresponsibly
+  describing cosmetic interventions as "safe" or "easy", because it is likely that all such
+  interventions will carry some level of risk to the patient." Keep "irresponsibly": the paragraph
+  does not bar the words. Para 67: "Countdown clocks and claims such as "Hurry, offer must end
+  Friday" should not be used." Paras 31 and 32 are under "More on before-and-after images" above.
+  The guidance cites the testimonial rules by their numbers before April 2025 (3.45-3.47); cite the
+  Code's current 3.47-3.50.
+- **CAP Code rules** (section 1, https://www.asa.org.uk/type/non_broadcast/code_section/01.html, and
+  section 3 read 29 September 2026; section 12 read 28 September 2026). 1.3: "Marketing
+  communications must be prepared with a sense of responsibility to consumers and to society." 3.7:
+  "Before distributing or submitting a marketing communication for publication, marketers must hold
+  documentary evidence to prove claims that consumers are likely to regard as objective and that are
+  capable of objective substantiation. The ASA may regard claims as misleading in the absence of
+  adequate substantiation." It covers objective claims, not every claim. 3.48: "Testimonials must
+  relate to the advertised product." 3.51: "Marketers must not refer in a marketing communication to
+  advice received from CAP or imply endorsement by the ASA or CAP." (so no "approved by the ASA";
+  see also F4 in § B4). 3.52, first sentence: "Marketing communications must not display a trust
+  mark, quality mark or equivalent without the necessary authorisation." 12.3: "Marketers offering
+  individual treatments, especially those that are physically invasive, may be asked by the media
+  and the ASA to provide full details together with information about those who supervise and
+  administer them. Practitioners must have relevant and recognised qualifications. Marketers should
+  encourage consumers to take independent medical advice before committing themselves to significant
+  treatments, including those that are physically invasive." 12.9: "Marketers must not encourage
+  consumers to use a product to excess and must hold proof before suggesting their product or therapy
+  is guaranteed to work, absolutely safe or without side-effects (subject to rule 12.19)." It
+  requires proof; it does not bar the words. 12.25: "Marketing communications for cosmetic
+  interventions must not be directed at those aged below 18 years through the selection of media or
+  context in which they appear." Rule 6.1 is under _Consent to use patient images_ above; rules
+  3.44-3.46 are in § A6.
+- **Rule 12.25 in force 25 May 2022.** CAP News, _New targeting rules for cosmetic interventions
+  advertising come into force today_ (25 May 2022),
+  https://www.asa.org.uk/news/new-targeting-rules-for-cosmetic-interventions-advertising-come-into-force-today.html:
+  "In November 2021, the Committee of Advertising Practice (CAP) and Broadcast Committee of
+  Advertising Practice (BCAP) announced new targeting restrictions that prohibit cosmetic
+  interventions advertising from being directed at under-18s." and "Following a 6-month grace
+  period, the new rules come into force today:". November 2021 is the announcement; use 25 May 2022
+  for "in force". It is an advertising rule, separate from the 2021 Act's administering offence below;
+  only the Act passage falls under F6.
+- **CAP's advice, _Health: Celebrities and health professionals_ (24 March 2026)**,
+  https://www.asa.org.uk/advice-online/health-celebrities-and-health-professionals.html: "It is worth
+  noting that an individual health professional does not have to be named in order for the ASA to
+  consider that an ad includes the problematic endorsement of a health professional." The page names
+  people and a manufacturer; copy names none of them.
+- **CAP's advice, _Cosmetic Interventions: Non-surgical procedures_ (1 July 2025)**,
+  https://www.asa.org.uk/advice-online/cosmetic-interventions-non-surgical-procedures.html:
+  "Marketers are reminded that, whilst promotions on non-surgical procedures are not prohibited, the
+  promotion must be responsible and never should pressure those seeing the ad into booking, even if
+  the procedure is minimally or non-invasive – all procedures carry an element of risk." Keep "not
+  prohibited" with its condition.
+- **The FAQ (CAP News, 23 January 2020) on price promotions**, "CAN I ADVERTISE A PRICE PROMOTION FOR
+  BOTOX (SUCH AS ‘20% OFF’ OR ‘BUY TWO AREAS GET ONE FREE’)?": "No, this is likely to breach the
+  Code. As you can’t advertise ‘prescription-only’ treatments like Botox to the public at all and this
+  would be a very direct advertisement for Botox, even if you didn’t mention it specifically – this
+  wouldn’t be acceptable." Keep "likely to".
+- **Dr Bunny Aesthetics (ASA ruling, 24 April 2024), issue 2 ("Upheld"), the clinic's name:** "We
+  considered that, within the context of an ad for an aesthetics clinic, consumers would interpret
+  the clinic name “Dr Bunny Aesthetics” to mean that the clinic was owned and operated by someone who
+  held a general medical qualification." and "We did not receive any evidence to substantiate that
+  the clinic was owned or operated by someone who held a general medical qualification and therefore
+  concluded the ad was misleading." The rules breached were 3.1, 3.7 and 3.9; rule 3.9's heading
+  "Qualification" means qualifying statements ("Marketing communications must not mislead by
+  omitting significant limitations and qualifications."), not professional qualifications.
+
 **Who raised the issues** (added 29 September 2026, from the rulings read 28 September 2026).
 Dr Bunny Aesthetics: "The Joint Council for Cosmetic Practitioners (JCCP) challenged whether: …".
 Valterous: "The ASA received complaints from the Joint Council for Cosmetic Practitioners (JCP)
@@ -904,7 +1183,8 @@ that might break the rules." Its scope: the ruling was about "Two paid-for Meta 
 an AI-powered app to maximise physical attractiveness (looksmaxxing)" — an app, not a clinic — and
 "forms part of a wider piece of ongoing work on the advertising of AI products across a number of
 sectors". The weight-loss news page below calls the same system "AI-driven". No page read says
-the system is run on botulinum-toxin ads or on clinic websites. Keep "online ads" and "might break
+the system is run on botulinum-toxin ads or on clinic websites; the liquid BBL report below
+(added 29 September 2026) applies it to paid Meta ads for one filler procedure. Keep "online ads" and "might break
 the rules"; never write "it finds non-compliant ads" or "your ads will be found". _(Not yet
 carried over: doc 02 § 2 (Aesthetics) still says "The ASA now runs AI-powered proactive
 monitoring that finds non-compliant ads without waiting for a complaint". Its correction is a
@@ -944,6 +1224,33 @@ differently: quote one per sentence and name it.
   'weight-loss injection', 'pen' and 'GLP-1')" (the PDF text prints each opening quote mark as a
   backtick). "Jab" is not among these examples.
 
+**The liquid BBL report (12 March 2026)** (added 29 September 2026, from the page and PDF read 29
+September 2026). CAP Enforcement Report, _Non-surgical liquid Brazilian Butt Lifts (BBLs)_,
+resource page dated 12 March 2026,
+https://www.asa.org.uk/resource/enforcement-report-non-surgical-liquid-bbls.html, and its PDF
+("March 2026"),
+https://www.asa.org.uk/static/b8f80962-3987-479a-b45c47849214ed44/6a225691-0ed6-49eb-b315c9a749b58337/CAP-Enforcement-Report-Non-surgical-liquid-BBLs.pdf.
+It covers **paid ads on Meta** for one filler procedure: not websites, and not the POM.
+
+- **The resource page:** "This Enforcement Report examines irresponsible claims in paid ads for
+  non-surgical liquid BBL procedures captured using our AI-based Active Ad Monitoring system."; "We
+  captured 928 unique paid ads for non-surgical liquid BBLs on Meta between April and December
+  2025."; and "As of December 2025, only 11.5% of ads assessed complied with the CAP Code’s social
+  responsibility rules." Keep "unique paid ads", "on Meta", "As of December 2025" and "ads
+  assessed". Its "Common issues included" is CAP's frequency word: quote it attributed, never in
+  WebAsk's voice.
+- **The PDF:** "A non-surgical liquid BBL is a procedure which involves the injection of dermal
+  filler into the bottom to enhance volume and shape." Under "Among the ads that broke the rules,
+  the main issues involved:" its examples include "0% infection rate", "safe" and "transform your
+  body effortlessly". The PDF dates the start differently from the page ("When monitoring began in
+  March 2025, the proportion of compliant ads was 5.0%."; the page: "Between April and December
+  2025, we monitored"). Quote one document per sentence and name it.
+- **Do not repeat** the PDF's forecast that "government measures to be implemented in 2026 will
+  allow only suitably qualified, Care Quality Commission-registered healthcare professionals to
+  administer high-risk procedures such as non-surgical liquid BBLs". It was CAP's expectation in
+  March 2026; as at 29 September 2026 we found no published consultation on the draft legislation
+  (next section).
+
 **The proposed licensing scheme (England).**
 
 > ### ⚠️ CORRECTED 2026-07-28 — "operational in 2026" overstated the position
@@ -958,7 +1265,7 @@ differently: quote one per sentence and name it.
 > consultation, and "for a cosmetic purpose" attaches to fillers only. Write the scheme as
 > proposed, with the date attached — stale regulatory content is worse than none.)_
 
-**Status as at 28 September 2026: not in force, and we found no regulations made** (legislation.gov.uk title searches). Every line below is
+**Status as at 28 September 2026: not in force, and we found no regulations made** (legislation.gov.uk title searches; re-checked 29 September 2026, unchanged). Every line below is
 dated; read on 28 September 2026 unless stated.
 
 - **The power.** Health and Care Act 2022 s.180: the Secretary of State "may … make
@@ -998,7 +1305,21 @@ dated; read on 28 September 2026 unless stated.
   Equalities Committee): "we plan to consult on draft regulations in June" and "we are committed
   to implementing licensing in the current parliament". 23 June 2026 (10828, the latest answer
   found): "We are preparing a consultation on the draft legislation which would bring these
-  proposals into effect."
+  proposals into effect." _(Context added 29 September 2026, from `verified-licensing.md` §§ 6.1-6.2,
+  the written answers and the Committee's publication as read 28 September 2026: both the 3 June
+  "draft regulations" and the 23 June "draft legislation" concern the restrictions on the
+  highest-risk procedures, not the licensing scheme. The letter: "This is why we have taken the
+  decision to first of all focus on introducing legal safeguards for the cosmetic procedures posing
+  the highest risks and I can confirm that we plan to consult on draft regulations in June." Answer
+  10828 (and 9782 of 19 June 2026, the same text without the BBL sentence) opens "The Government has
+  prioritised work on restrictions on the performance of the highest risk procedures and has been
+  working with a group of expert stakeholders in recent months to develop detailed proposals on
+  which procedures should be subject to the restrictions, and which regulated healthcare
+  professionals should be permitted to perform them.", and 10828 adds "This will include the liquid
+  Brazilian butt lift and other high-risk cosmetic procedures which have the potential to cause
+  serious harm if improperly performed." So "these proposals" are the high-risk restrictions: never
+  cite either line as a timetable for licensing regulations. The licensing line is the letter's
+  separate "we are committed to implementing licensing in the current parliament".)_
 - **What we found on 28 September 2026.** No DHSC cosmetic-procedures consultation on GOV.UK
   after the 7 August 2025 outcome; no licensing SI or draft SI on legislation.gov.uk (title
   searches, which can miss an unexpected title); no later written answer on licensing. The
@@ -1007,6 +1328,14 @@ dated; read on 28 September 2026 unless stated.
   of its consultation" — implying the consultation was unpublished, though the report does not
   say so in terms. Write "we found no published consultation on the draft legislation", never
   "the Government missed its June deadline".
+- **Re-checked 29 September 2026** (added 29 September 2026; `a3/research.md` § 10, with the GOV.UK
+  API copies in `a3/raw/govuk_*.json`): nothing new. The GOV.UK consultation page's last public
+  change is still "Added the government's response to the consultation." (7 August 2025); the
+  newest DHSC consultations are dated 14 September 2026 (school food standards) and 7 September 2026
+  (tobacco and vapes), with no cosmetic-procedures consultation; GOV.UK searches for "cosmetic"
+  since 1 June 2026 and for "high-risk cosmetic procedures" found nothing on the scheme or the
+  high-risk restrictions; the legislation.gov.uk title searches give the same results as on 28
+  September; and no written answer on either after 23 June 2026 (10828) was found.
 - **Removed as unsourced (28 September 2026).** The July text said "a general business licence
   would no longer be sufficient" and gave "DBS check" as a licence condition. Neither is in any
   official source read: the 2025 response mentions "Disclosure and Barring Service checks" once,
@@ -1063,7 +1392,7 @@ Four regulators at once:
 | **GDC** | Professional conduct. No unsubstantiated clinical claims. A website list, prices, "specialist" and image consent — see _The GDC, in detail_ below. ~~**Genuine reviews only, no incentives.**~~ **Suspended, unsourced (28 September 2026):** no GDC text read contains it. Registration transparency. Patient consent for before/after images (_Standards_ 4.2.7, not the advertising guidance). "Specialist" only for dentists on a GDC specialist list (see _The GDC, in detail_) |
 | **CQC** | Registration is a legal requirement in England (HSCA 2008 s.10(1)). ~~Displaying registration and inspection results builds trust~~ The CQC does not rate primary dental providers, so a primary care dental practice has no rating to display — see _The CQC, in detail_ below (corrected 28 September 2026)                                                                                                                                                                        |
 | **ASA** | All promotional material legal, decent, honest, truthful                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| **CMA** | Consumer protection and pricing transparency. **Opened a market study into private dentistry on 5 March 2026**; the CMA gives the market as "valued at £8.4 billion in 2023 to 2024", citing LaingBuisson (attribution added 28 September 2026)                                                                                                                                                                                                                                      |
+| **CMA** | Consumer protection and, since April 2025, fake reviews (§ A6). **Opened a market study into private dentistry on 5 March 2026**, which covers prices and choice (see _The CMA market study, in detail_); the CMA gives the market as "valued at £8.4 billion in 2023 to 2024", citing LaingBuisson (attribution added 28 September 2026). _(Corrected 29 September 2026: this began "Consumer protection and pricing transparency", words no CMA text read uses.)_                  |
 
 Plus UK GDPR (patient data), PECR (recall/marketing communications), and the unfair-trading
 rules of the DMCC Act 2024 Part 4 Chapter 1. _(Corrected 28 September 2026: this named the
@@ -1081,12 +1410,49 @@ DMCC Act s.251(1), with a saving for Part 4A.)_
   details of the dental service, including e-mail address and telephone number"; "the GDC’s
   address and other contact details, or a link to the GDC website"; "details of the practice’s
   complaints procedure and information about who patients may contact if they are not satisfied
-  with the response"; and "the date the website was last updated". Also: "You must update the
+  with the response (namely the relevant NHS (or equivalent) body for NHS treatment and the Dental
+  Complaints Service for private treatment)" (the item in full, restored 29 September 2026); and
+  "the date the website was last updated". Also: "You must update the
   information showing on your website regularly, so that it accurately reflects the personnel at
   the practice and the service offered", and "you do not display information comparing the
   skills or qualifications of any dental professional providing any service with the skills and
   qualifications of other dental professionals". The page says nothing on reviews,
   testimonials, patient images, the CQC or the ASA.
+- **The rest of the advertising guidance** (added 29 September 2026, from the page re-read 29
+  September 2026, text unchanged from 28 September). The professional list's lead-in, verbatim: "In
+  line with European guidance*, if you are mentioned on a website as a dental professional providing
+  dental care you must ensure the following is displayed:". The opening lines: "All information or
+  publicity material regarding dental services should be legal, decent, honest and truthful.", and
+  "Advertising that is false, misleading, or has the potential to mislead, is unprofessional, may lead
+  to a fitness to practise investigation and can be a criminal offence." Keep "can be". Under
+  "Advertising services": "Whenever you, your practice, or any place where you work as a registrant,
+  produce any information containing your name, you are responsible for checking that it is
+  correct.", and "You must make clear in advertisements and other practice publicity whether the
+  practice is NHS (or equivalent health service), mixed or wholly private." The _Advertising
+  checklist_ puts the same point among its general questions: "Have you made clear whether the
+  practice is NHS (or equivalent), mixed or wholly private?" That a practice website is "practice
+  publicity" is **our reading**. Under "Marketing websites": "If you promote your services on
+  marketing or social networking websites (e.g. Instagram, TikTok, LinkedIn, Groupon, X), you must
+  make clear that the treatment advertised may not be appropriate for every patient and that it is
+  conditional on a satisfactory assessment being carried out." It names third-party sites; that it
+  does not reach the practice's own site is **our reading**. Under "Honorary degrees and
+  memberships": "You must not list memberships or fellowships of professional associations,
+  societies or honorary degrees in an abbreviated form because it may mislead patients."
+- **Edited since 2013 without a new date** (added 29 September 2026). The 2013 PDF,
+  https://standards.gdc-uk.org/pdf/Guidance%20on%20advertising%20%28Sept%202013%29.pdf, printed
+  "Effective from 30 September 2013", gives the marketing-sites examples as "(e.g. Groupon, Living
+  Social and Facebook)"; the page read 29 September 2026 gives "(e.g. Instagram, TikTok, LinkedIn,
+  Groupon, X)" and still shows only "Effective from 30 September 2013". Cite the page as "effective
+  from 30 September 2013" with the date it was read, never as a 2013 text.
+- **No certification scheme found** (added 29 September 2026). A site-restricted search of
+  gdc-uk.org on 29 September 2026 found no GDC scheme that approves or certifies websites
+  (`d1/research.md` § 1.2; no raw file). "Not found" is not "does not exist": write "we found no
+  GDC scheme", dated.
+- **The Dental Complaints Service and the register** (added 29 September 2026). The DCS,
+  https://dcs.gdc-uk.org/, in its own words: "We provide a free and impartial service across the UK
+  about private dental care." and "The DCS operates independently. It is funded by the General
+  Dental Council (GDC). The GDC is the UK regulator of dental professionals." The GDC register
+  search: https://olr.gdc-uk.org/searchregister (HTTP 200 on 29 September 2026).
 - **"Specialist".** "If you are a dentist and are on a GDC specialist list, you can use the title
   ‘Specialist’ or describe yourself as a ‘specialist in….’"; "If you are not on a specialist
   list, you must not describe yourself as ‘specialising in…’ a particular form of treatment, but
@@ -1096,22 +1462,62 @@ DMCC Act s.251(1), with a saving for Part 4A.)_
   GDC's _Advertising checklist_: avoid "specialist" for "dentists who work in an area where there
   is no specialist list (e.g. implantology)". Public access, in the GDC's words: "Patients can
   check whether you are registered and whether you are on a specialist list"; "Members of the
-  public can find a specialist by searching the GDC register."
+  public can find a specialist by searching the GDC register." _(Added 29 September 2026, same
+  advertising page:)_ "If you are a dentist and you are not on a GDC specialist list, you must not use
+  titles which may imply specialist status such as Orthodontist, Periodontist, Endodontist etc." And
+  for dental care professionals: "There are no specialist lists for dental care professionals. If you
+  are a dental care professional, you must ensure that you do not mislead patients by using titles
+  which could imply specialist status, such as ‘Smile specialist’ or ‘Denture specialist’."
 - **Prices** (_Standards for the Dental Team_, effective 30 September 2013): 2.4.2 "You must give
   clear information on prices in your practice literature and on your websites - patients should
   not have to ask for this information"; 2.4.1 allows, for items that vary in cost, "a ‘from –- to’
-  price range".
+  price range". _(Added 29 September 2026, from Principle 2 re-read 29 September 2026:)_ 2.4 is the
+  standard, "You must give patients clear information about costs", and 2.4.1 and 2.4.2 sit under its
+  "Guidance". 2.4.1 is about the list in the practice: "You must make sure that a simple price list
+  is clearly displayed in your reception or waiting area. This should include a list of basic items
+  including a consultation, a single-surface filling, an extraction, radiographs (bitewing or
+  pan-oral) and treatment provided by the hygienist. For items which may vary in cost, a ‘from –- to’
+  price range can be shown." Showing ranges on the website is **our reading** of 2.4.1 and 2.4.2
+  together. The CMA's patient guide, _Choosing and paying for dental care_ ("Published 5 March
+  2026"), https://www.gov.uk/guidance/choosing-and-paying-for-dental-care: "Dentists should give
+  clear information on their prices on their websites, in leaflets you pick up from their practice
+  and in their reception area." That it restates 2.4.2 is **our reading**; it is not a CMA rule.
 - **Patient images** — in the _Standards_, not the advertising guidance: 4.2.7 (for photographs,
   "obtain and record the patients' consent to their use") and 4.2.9 ("You must not make any
   recordings or images without the patient's permission"). The _Focus on Standards_ FAQ on
   before-and-after images: "Yes, you would need the patient’s consent both to the taking of the
   photographs and to their use in promoting your practice." The social-media guidance (effective
-  27 June 2016) requires "explicit consent".
+  27 June 2016) requires "explicit consent". _(Added 29 September 2026, from Principle 4 re-read 29
+  September 2026, https://standards.gdc-uk.org/pages/principle4/principle4:)_ 4.2 is the standard,
+  "You must protect the confidentiality of patients’ information and only use it for the purpose for
+  which it was given", with 4.2.1-4.2.9 under "Guidance". 4.2.7 opens "If other people ask you to
+  provide information about patients (for example, for teaching or research), or if you want to use
+  patient information such as photographs for any reason, you must:", and its list ends "explain to
+  the patients that they can withdraw their permission at any time." 4.2.3: "You must not post any
+  information or comments about patients on social networking or blogging sites." Applying 4.2.3 to
+  replies to online reviews is **our reading**.
 - **Reviews and incentives: no GDC source found** in the advertising guidance, the _Standards_,
   the social-media guidance, the checklist or _Focus on Standards_ (other GDC guidance titles not
   opened). The review rules come from the DMCC Act 2024 (§ A6). No GDC text read uses
   "representative" for results either; the nearest is "avoid statements or claims intended or
   likely to create an unjustified expectation about the results you can achieve".
+- **The ASA and CAP, for dental** (added 29 September 2026, from pages read 28-29 September 2026).
+  CAP Code rule 1.1 (section 1, read 29 September 2026): "Marketing communications should be legal,
+  decent, honest and truthful" (the page prints a stray second full stop; quote the phrase). The Code
+  covers a practice's own site: Scope I h, "Advertisements and other marketing communications by or
+  from companies, organisations or sole traders on their own websites, or in other non-paid-for space
+  online under their control, that are directly connected with the supply or transfer of goods,
+  services, opportunities and gifts, …" (read 28 September 2026). CAP's advice on before-and-after
+  photos (5 June 2025) is CAP's, given by the CAP Executive (§ B1). **The Dental Suite** (ASA ruling,
+  13 December 2017, https://www.asa.org.uk/rulings/the-dental-suite-a17-390603.html): "Not Upheld";
+  "Regional press"; "Number of complaints: 1". A press ad, not a website. The evidence: "Dental
+  Suite provided the patient’s consent form, X-ray images of the patient’s jaw and his signed
+  statement alongside the images of his teeth …", and "Dental Suite also provided 12 other before and
+  after photos of the same day treatment". The finding: "We considered that those 12, other before
+  and after photos indicated that the photo in the ad was generally representative of what could be
+  achieved with the treatment." Keep "indicated" and "generally representative". The ruling cites
+  Edition 12 rule numbers; do not print them as current. Rules 3.44-3.46 (reviews) are in § A6 and
+  rule 3.52 (trust marks) in § B1.
 - **Stale risk.** The GDC consulted from 2 June to 31 August 2026 on replacing the _Standards_
   with a "Framework for Professionalism", and is "recommending the outcome to Council later this
   year". Cite _Standards_ paragraph numbers "as at" the check date.
@@ -1120,13 +1526,44 @@ DMCC Act s.251(1), with a saving for Part 4A.)_
 activity without being registered under this Chapter in respect of the carrying on of that
 activity is guilty of an offence" (HSCA 2008 s.10(1)). Regulation 20A's website duty "applies
 where, and to the extent that, a service provider has received a rating". Primary care dental
-services are excluded from rating (SI 2018/54 reg. 2, unless the provider is an independent
-hospital or an NHS trust), and the CQC says "we don't give ratings to primary dental providers"
+services are excluded from rating (SI 2018/54 reg. 2: "except when carried on by a registered
+service provider which is an independent hospital, a NHS Trust or a NHS Foundation Trust"; the NHS
+Foundation Trust was missing here until 29 September 2026), and the CQC says "we don't give ratings to primary dental providers"
 (page updated 22 December 2025). Registered providers "may use 'Regulated by' graphics".
 **Our reading, labelled as ours:** a primary care dental practice has no rating, so Reg 20A
 gives its website nothing to display; showing registration is a trust signal, not a Reg 20A
-duty. No other CQC regulation was checked for website duties, so never write "no CQC website
-duty at all".
+duty. Only Reg 20A and, from 29 September 2026, Reg 19 of the 2009 Registration Regulations (below)
+were checked for website duties, so never write "no CQC website duty at all".
+
+_Added 29 September 2026, from pages read 29 September 2026._ The CQC's remit is England: "CQC is
+the independent regulator of health and adult social care in England."
+(https://www.cqc.org.uk/about-us). The CMA's update of 17 July 2026 lists the other nations'
+inspectorates: "the Care Quality Commission in England, Healthcare Inspectorate Wales, Healthcare
+Improvement Scotland, and the Regulation and Quality Improvement Authority in Northern Ireland"; the
+update's appendix table of regulators ends "The above table is not exhaustive.". What Reg 20A(2)
+requires, where it applies (https://www.legislation.gov.uk/uksi/2014/2936/regulation/20A): "There must be shown on every
+website maintained by or on behalf of any service provider—" (a) "the Commission’s website
+address," (b) "the place on the Commission’s website where the most recent assessment of the service
+provider’s overall performance and of its performance in relation to particular premises or
+activities may be accessed, and" (c) "the most recent rating by the Commission of the service
+provider’s overall performance and of its performance in relation to particular premises or
+activities, in a way which makes it clear to which activities or premises a particular rating
+relates." The 'Regulated by' graphics (_Regulated by CQC graphics_, "Page last updated: 25 November
+2025",
+https://www.cqc.org.uk/cqc-ratings-and-promotional-graphics/promotional-graphics-providers/regulated-CQC):
+"They are an optional additional product and are not mandatory."; "These graphics are particularly
+useful for providers that have either not yet been inspected and rated, or providers that do not
+receive a rating (for example, primary care dental providers)."; and "Whatever digital platform you
+use, people need to be able to click on the ‘Regulated by’ graphic to link to CQC’s homepage
+(www.cqc.org.uk)." Regulation 19 of the Care Quality Commission (Registration) Regulations 2009 (SI
+2009/3112), https://www.legislation.gov.uk/uksi/2009/3112/regulation/19: "Where a service user will
+be responsible for paying the costs of their care or treatment (either in full or partially), the
+registered person must provide a statement to the service user, or to a person acting on the service
+user’s behalf—", "specifying the terms and conditions in respect of the services to be provided to
+the service user, including as to the amount and method of payment of fees;", and the statement
+must be "in writing; and" "as far as reasonably practicable, provided prior to the commencement of
+the services to which the statement relates." It is a statutory instrument, not a CQC rule; that it
+is a statement to each patient and not a website duty is **our reading**.
 
 **The CMA market study, in detail** (added 2026-07-29 — `/industries/dental-practices` was
 already publishing all three of these figures, in body copy, in an H2 and in `FAQPage`
@@ -1142,7 +1579,11 @@ JSON-LD, and **none of them traced to any line in this bundle**):
   (to ~£55). These are **CMA-cited figures drawn from independent sources**, not CMA findings —
   the study has not reported, and copy must not present them as its conclusions. _(28 September
   2026: the press release gives the source as MyTribeInsurance, and its words are "rose by over
-  23% to £80" and "by over 14% to £55".)_
+  23% to £80" and "by over 14% to £55".)_ _(Added 29 September 2026: the press release's sentence,
+  verbatim: "Independent sources suggest average prices in the UK have increased significantly –
+  between 2022 and 2024, initial consultations rose by over 23% to £80, and routine check-ups for
+  existing patients by over 14% to £55." Keep "Independent sources suggest" and "for existing
+  patients".)_
 - **Update of 17 July 2026** (added 28 September 2026): "This document does not set out any
   findings or conclusions from our work to date." The CMA expects to publish its "emerging
   thinking" "Between October and November" 2026, and its final report "by the statutory deadline
@@ -1150,14 +1591,45 @@ JSON-LD, and **none of them traced to any line in this bundle**):
   ("We have not sought to quantify the views and experiences described by respondents"),
   including "the importance of visibility of pricing information within the dental practice, or
   on the practice website". Re-check the case page before any dental copy publishes after
-  1 October 2026
+  1 October 2026. _(Added 29 September 2026:)_ the update also says of that summary: "Responses, and
+  our summary of the subject matter they contained, may not be representative of consumer or
+  professional views generally, or in each of the nations of the UK." The case page shows "Last
+  updated" 17 July 2026, with the note "Further stakeholder input requested, responses to statement
+  of scope and market study update published."; a GOV.UK search on 29 September 2026 found nothing
+  newer
 - Scope: whether patients can make informed choices, and whether providers engage in
-  misleading or unfair conduct. **Pricing transparency is explicitly in scope**
+  misleading or unfair conduct. **Pricing transparency is explicitly in scope** _(Flagged 29
+  September 2026: these words are not verbatim in any primary text read, and the text layer of the
+  statement of scope PDF cannot be quoted (`d1/research.md` § 8). Do not quote them. Quotable
+  instead, from the press release: "from finding a dentist and understanding prices to knowing where
+  to go if something goes wrong" and "Business tactics and behaviour: Whether dentists engage in any
+  practices that may be unfair, misleading or anti‑competitive that could harm consumers or limit
+  their choice."; from the update: "How consumers access, assess and act on information to make
+  informed choices".)_ _(Added 29 September 2026, the lines the dental and Leeds pages quote, each
+  under the press release's own framing, "The CMA has published the proposed scope of the study and
+  is inviting views. Areas under consideration include:" (`d1/raw/cma_press.txt`:140), so write
+  them as the scope proposed on opening, never as settled scope: "Consumer choice and experience:
+  How people search for dental care, compare providers, and understand the information they receive
+  from dental professionals – including how experiences may vary for different consumer groups, such
+  as vulnerable individuals." (:144); "Treatment prices: How prices for private dental services have
+  changed compared with inflation." (:146); and, outside that list, "this study is not a criticism
+  of clinicians or the care they provide, but an examination of how the market is working for
+  consumers." (:164). Keep "from dental professionals" whenever the first is quoted. The update of
+  17 July 2026 "confirms the scope of the study" (`d1/raw/cma_update.txt`:18) in five themes
+  (:21-25), in its own words, not the press release's: under "Consumer journey and choice", "How
+  consumers access, assess and act on information to make informed choices" (:368); under "Market
+  outcomes", "How prices have changed compared to inflation and the relative profitability of
+  service providers and of the different services they provide" (:663). Write "covers" only of the
+  update's themes; the press release's lines are what the CMA proposed on opening.)_
 
 ⚠️ The study is **sector-level**. It does not follow that any individual practice's website
 "is evidence in" it — that overclaim shipped in the dental page's H1 and was corrected in the
-same pass. What is defensible: the website is where a patient encounters the practice's
-pricing, and pricing transparency is what is being examined.
+same pass. What is defensible: the website is where a patient meets the practice's prices, and how
+people "compare providers, and understand the information they receive from dental professionals"
+was among the areas the CMA proposed on opening (press release, 5 March 2026); its update of
+17 July 2026 confirmed a "Consumer journey and choice" theme and, under "Market outcomes", "How
+prices have changed compared to inflation". _(Corrected 29 September 2026: this said "pricing
+transparency is what is being examined", words no CMA text read uses.)_
 
 **Sources.** Retrieved 2026-07-29. GOV.UK, _CMA launches review of private dentistry_;
 CMS Law-Now and Pinsent Masons (Out-Law) briefings, March 2026; CMA calls for views
@@ -1265,11 +1737,20 @@ price-list gating, health claims, the review flow and the GDC website list.)_
       homepage and no direct "Prices" link that shows it; the further page "ideally two clicks
       from the homepage"; no product claims and no price promotion
 - [ ] Claims are substantiated and attributable; no unverifiable superlatives
+- [ ] Practitioner claims: proof of qualifications "from a reputable, independent source"; a "Dr"
+      clinic name only with evidence that the clinic is owned or operated by someone who holds a
+      general medical qualification; no implied regulation that does not exist (CAP's guidance
+      paras 14 and 16; Dr Bunny Aesthetics, issue 2; § B1). _(Added 29 September 2026.)_
 - [ ] No medicinal claim for an unlicensed injected or infused product; food and supplement
       claims only if authorised on the GB NHC Register, or with the same meaning to the
       consumer (§ B2a)
-- [ ] Before/after imagery has documented patient consent, and signed and dated proof that the
-      photos are genuine (AdviceOnline, 5 June 2025); none of a POM treatment
+- [ ] Before/after imagery has documented patient consent (sources and limits: § B1 _Consent to
+      use patient images_; GDC _Standards_ 4.2.7 for dentists), and signed and dated proof that the
+      photos are genuine (CAP's advice, 5 June 2025); none of a POM treatment; a filler result is
+      labelled as one (the FAQ); no filter or retouching on the treated area, WebAsk's standard,
+      following Bitesize's "rule of thumb: don’t enhance or retouch any areas of the photo related
+      to the treatment" (CAP's guidance para 31 says such retouching "could be problematic",
+      "irrespective of the inclusion of a disclaimer"). _(Extended 29 September 2026.)_
 - [ ] Reviews/testimonials are real, named, consented, and non-incentivised (or the
       incentive is disclosed)
 - [ ] Review flow asks every customer, with no screening step and no incentive (CMA208 §§ 3.6,
@@ -1281,9 +1762,15 @@ price-list gating, health claims, the review flow and the GDC website list.)_
       country and GDC number; the practice's name and geographic address, email and telephone;
       the GDC's contact details or a link; the complaints procedure; the date last updated
 - [ ] Registrations displayed accurately (GDC number, CQC registration). _("Licence status"
-      removed 28 September 2026: no licensing scheme is in force.)_
+      removed 28 September 2026: no licensing scheme is in force.)_ A CQC 'Regulated by' graphic,
+      if used, is optional and must click through to the CQC's homepage (§ B2; added 29 September 2026)
 - [ ] Pricing presented transparently (dental: GDC _Standards_ 2.4.2; the CMA study)
-- [ ] Age eligibility stated where the treatment is age-restricted
+- [ ] Dental: NHS, mixed or wholly private made clear (GDC advertising guidance, "advertisements
+      and other practice publicity"; the website as publicity is our reading); no memberships,
+      fellowships or honorary degrees in abbreviated form (§ B2). _(Added 29 September 2026.)_
+- [ ] Age eligibility stated where the treatment is age-restricted; cosmetic-intervention ads not
+      directed at under-18s, and not placed where "25% or more of the audience profile is
+      under-18s" (CAP Code 12.25; CAP's guidance para 2; § B1). _(Extended 29 September 2026.)_
 - [ ] Cookies: nothing non-exempt before consent; refusing as easy as accepting; the
       statistical-purposes exception used only on its conditions (§ A4)
 - [ ] Where a question is about an actual advert and is genuinely uncertain → **CAP Copy
@@ -1368,9 +1855,29 @@ text.
 - **CAP** — AdviceOnline, _Weight control: Prescription-only medicines_ (29 May 2026; "given by the CAP Executive", does not bind the ASA), https://www.asa.org.uk/advice-online/weight-control-prescription-only-medicines.html · Enforcement Notice, _Advertising of prescription-only medicines used for weight management_ (23 September 2025; "published jointly with" the MHRA and the GPhC; not used by A2), https://www.asa.org.uk/resource/enforcement-notice-advertising-of-prescription-only-medicines-used-for-weight-management.html · CAP News, "A basic guide to prescription-only medicines" (7 July 2016; not used by A2), https://www.asa.org.uk/news/a-basic-guide-to-prescription-only-medicines.html
 - **The MHRA and medicines law** — Blue Guide Appendix 6 (November 2020), re-downloaded from the URL above, and the Blue Guide page that links it (last updated 28 March 2025), https://www.gov.uk/government/publications/blue-guide-advertising-and-promoting-medicines · Human Medicines Regulations 2012 reg. 7, re-read (legislation.gov.uk: "up to date with all changes known to be in force on or before 26 September 2026"), https://www.legislation.gov.uk/uksi/2012/1916/regulation/7
 
+**Read on 29 September 2026, for the aesthetics post (A3) and the dental post (D1)** (added 29
+September 2026). Raw copies in `.playwright-mcp/compliance/a3/raw/` and `d1/raw/`, mapped in
+`a3/research.md`, `d1/research.md`, `a3/PROVENANCE.md` and `d1/PROVENANCE.md` (all git-ignored).
+A3 also re-used the `a1/raw/` copies read 28 September 2026 (the FAQ, Bitesize, CAP's advice of 29
+October 2025, CAP Code section 12 and Scope, Dr Bunny Aesthetics, Glow Up LLC). The licensing
+context comes from `verified-licensing.md` §§ 6.1-6.2 (read 28 September 2026).
+
+- **CAP** — AdviceOnline (each "given by the CAP Executive", does not bind the ASA): _Before and after photos_ (5 June 2025), https://www.asa.org.uk/advice-online/before-and-after-photos.html · _Beauty and Cosmetics: Treatments using fillers_ (6 August 2025), https://www.asa.org.uk/advice-online/beauty-and-cosmetics-treatments-using-fillers.html · _Cosmetic Interventions: Non-surgical procedures_ (1 July 2025), https://www.asa.org.uk/advice-online/cosmetic-interventions-non-surgical-procedures.html · _Health: Celebrities and health professionals_ (24 March 2026), https://www.asa.org.uk/advice-online/health-celebrities-and-health-professionals.html · CAP/BCAP Advertising Guidance, _Guidance on the marketing of surgical and non-surgical cosmetic procedures_ (landing page 12 December 2023; PDF "Revised: November 2021"), https://www.asa.org.uk/resource/cosmetic-interventions.html · CAP News, _New targeting rules for cosmetic interventions advertising come into force today_ (25 May 2022), https://www.asa.org.uk/news/new-targeting-rules-for-cosmetic-interventions-advertising-come-into-force-today.html · CAP Enforcement Report, _Non-surgical liquid Brazilian Butt Lifts (BBLs)_ (12 March 2026), https://www.asa.org.uk/resource/enforcement-report-non-surgical-liquid-bbls.html, and its PDF (March 2026) · Enforcement Notice PDF (landing page 9 January 2020), re-downloaded, https://www.asa.org.uk/static/a8fa05da-b3ee-4528-82095e7bba2a3e5c/Enforcement-Notice-Advertising-Botox-and-other-botulinum-toxin-injecti.pdf · CAP Code sections 1, 3 and 6, https://www.asa.org.uk/type/non_broadcast/code_section/01.html, https://www.asa.org.uk/type/non_broadcast/code_section/03.html, https://www.asa.org.uk/type/non_broadcast/code_section/06.html
+- **ASA ruling** — The Dental Suite (13 December 2017), https://www.asa.org.uk/rulings/the-dental-suite-a17-390603.html
+- **DMCC Act 2024 and CMA208** — s.182, https://www.legislation.gov.uk/ukpga/2024/13/section/182 · s.190, https://www.legislation.gov.uk/ukpga/2024/13/section/190 · s.204, https://www.legislation.gov.uk/ukpga/2024/13/section/204 · Sch. 20 para 13, re-read · CMA208 (4 April 2025), https://assets.publishing.service.gov.uk/media/67eeb64fe9c76fa33048c790/CMA208_-_Fake_reviews_guidance.pdf, re-read from a fresh download
+- **Google** — Maps user-contributed content policy, https://support.google.com/contributionpolicy/answer/7400114?hl=en-GB (en-GB and en copies)
+- **GMC, NMC and the ICO** — GMC, _Making and using visual and audio recordings of patients_, https://www.gmc-uk.org/professional-standards/the-professional-standards/making-and-using-visual-and-audio-recordings-of-patients (Wayback Machine snapshots, 8 December 2024 to 5 March 2026) · NMC social media guidance (last updated 2 July 2025), https://www.nmc.org.uk/standards/guidance/social-media-guidance/read-social-media-guidance-online/ · ICO, _What is special category data?_ (latest update 9 April 2024), https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/what-is-special-category-data/
+- **GDC** — _Guidance on advertising_ (re-read) and its 2013 PDF, https://standards.gdc-uk.org/pdf/Guidance%20on%20advertising%20%28Sept%202013%29.pdf · _Standards for the Dental Team_ Principle 4, https://standards.gdc-uk.org/pages/principle4/principle4 · Dental Complaints Service, https://dcs.gdc-uk.org/ · register search, https://olr.gdc-uk.org/searchregister
+- **CQC and the law** — _About us_, https://www.cqc.org.uk/about-us · _Regulated by CQC graphics_ (25 November 2025), https://www.cqc.org.uk/cqc-ratings-and-promotional-graphics/promotional-graphics-providers/regulated-CQC · Regulation 20A and SI 2018/54 reg. 2, re-read · CQC (Registration) Regulations 2009 reg. 19, https://www.legislation.gov.uk/uksi/2009/3112/regulation/19
+- **CMA** — update PDF (17 July 2026), https://assets.publishing.service.gov.uk/media/6a59e2a924d4d0ad06d9465f/_Private_dental_services_market_study_update__.pdf · _Choosing and paying for dental care_ (5 March 2026), https://www.gov.uk/guidance/choosing-and-paying-for-dental-care · case page and press release, re-read
+- **Licensing re-check** — GOV.UK content and search APIs, legislation.gov.uk title searches, and Parliament written questions tabled from 20 June 2026 (`a3/research.md` § 10)
+
 **Not verified on 28 September 2026** (so nothing above rests on them): the House of Commons
 Library briefing CBP-10331 (HTTP 403); the RCS England open letter of 6 August 2026; the
 Committee's original report HC 869; the Welsh and Northern Irish positions; the MHRA page of 15
 July 2026; the ASA news pages on AI monitoring seen in search results (§ B1's monitoring line
 now rests on the Glow Up LLC ruling and the weight-loss pages instead); CMA208 and the £150,000
 individual fine (not re-read); SI 2026/82 regs 8–11; GMC and NMC guidance on patient images.
+_(29 September 2026: CMA208 was re-read, and the £150,000 individual figure is now marked
+unsupported (§ A6); GMC and NMC guidance on patient images was read in part (§ B1, *Consent to use
+patient images*).)_

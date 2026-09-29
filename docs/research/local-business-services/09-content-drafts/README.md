@@ -13,6 +13,16 @@
 > site copy in `content/services/` and `data/services.ts`. Every other draft here (blog, industries,
 > bundle, deltas) must be brought into line with those decisions before it ships.
 
+> **29 September 2026.** Google's Maps content policy, read raw that day, lists the incentive and
+> selective-solicitation lines under "We do not allow merchants to:" (doc 03 § A6). The "should
+> not" for those lines in `blog/google-reviews-dmcc-act-uk.mdx`:54,
+> `industries/garages-mot-centres.mdx`:44, `industries/trades-home-services.mdx`:52 and
+> `industries/trades-home-services.catalogue.md`:67 (and in the superseded
+> `services/review-management.mdx`:30 and `services/review-management.catalogue.md`:78) must be
+> brought to that wording before any of them ships. The on-premises line keeps "should not". The
+> same day, doc 03 § A6 found "annual" in neither s.182(6) nor s.204(1)(a) of the DMCC Act; drafts
+> that print "10% of global annual turnover" go on its queue.
+
 ## 1. Files
 
 - `services/<slug>.mdx` + `services/<slug>.catalogue.md` — six service pages (body + catalogue).
