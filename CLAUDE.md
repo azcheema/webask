@@ -20,7 +20,7 @@ Home and service pages speak to any UK SMB. The vertical focus surfaces through
 expansion order. Neither shapes the home page.
 
 **The flagship differentiator is UK regulatory literacy.** A clinic may not advertise a
-prescription-only medicine such as Botox to the public (CAP Code rule 12.12); the ASA's FAQ
+prescription-only medicine such as Botox to the public (CAP Code rule 12.12); CAP's FAQ
 (23 January 2020) says a price list naming it, reached only through a page promoting a
 consultation, "might be acceptable". The GDC, CQC and CMA also bite; the proposed licensing
 scheme is not in force as at 28 September 2026. Being the agency that knows this is
@@ -117,14 +117,14 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
 - ❌ **Name a prescription-only medicine** in clinic-facing _sales_ copy, `<title>` or meta —
   ours or a client's. Nor an indirect reference: CAP Bitesize names "wrinkle-relaxing",
   "#brotox" and "#beautox". **"Anti-wrinkle injections" is conditional, not banned**
-  (corrected 28 September 2026): the ASA's FAQ (23 January 2020) says it "might be acceptable"
+  (corrected 28 September 2026): CAP's FAQ (23 January 2020) says it "might be acceptable"
   as a collective term where non-POM treatments such as fillers are also offered, and "we’d
   advise against" it where only the POM is offered; beside a POM price it "will be seen as an
   ad for that POM" (Enforcement Notice on social media, 9 January 2020); rulings upheld where
   it referred to the POM in context (LIFT Aesthetics, 17 May 2023; Dr Bunny Aesthetics,
   24 April 2024).
   **WebAsk's build standard is stricter — the phrase stays out of client sales copy — and that
-  is our choice, not the ASA's rule.** Clinics advertise the **consultation** ("consultations
+  is our choice, not CAP's or the ASA's rule.** Clinics advertise the **consultation** ("consultations
   for lines and wrinkles"). Our _editorial_ content may name a POM when discussing the
   regulation of its advertising — that is commentary, not an ad. **Title exception (founder,
   28 September 2026):** posts A1 (flagship) and A2 (price list) in the clinic-compliance

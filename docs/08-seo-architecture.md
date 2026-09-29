@@ -9,8 +9,11 @@
 >
 > Researched and authored 2026-07-28. Live SERP + competitor evidence, not desk assumption.
 > **Corrected 28 September 2026** against primary sources (§§ 0.2, 0.3, 4, 6 and 7): the
-> price-list route in the ASA's words, "anti-wrinkle injections" as conditional, the A1/A2
+> price-list route in CAP's words, "anti-wrinkle injections" as conditional, the A1/A2
 > title exception, the rulings remapped, licensing re-dated, and the review route.
+> **Relabelled 29 September 2026** (founder, confirming F3's corrected wording): the FAQ (CAP
+> News, 23 January 2020), CAP Bitesize and AdviceOnline are credited to CAP, not the ASA;
+> rulings stay the ASA's (doc 03 § B1-P).
 
 ---
 
@@ -27,38 +30,38 @@ and [Aesthetic Web](https://aestheticweb.co.uk/aesthetic-clinic-website-design/)
 fact any practitioner already half-knows, and it is negative. The real wedge is one layer
 deeper and is _shaped like our product_:
 
-> **The ASA describes a route for a price list that names a POM: advertise the consultation
+> **CAP's guidance describes a route for a price list that names a POM: advertise the consultation
 > on the homepage; from there, a page about the consultation; from that, a further page
 > "ideally two clicks from the homepage" (CAP Bitesize, undated). If clients "can only get to
 > the price list after going through a page promoting a consultation", then "this might be
 > acceptable"; a price on the homepage, or "a direct link to “Prices” which mentions Botox", is
-> "unlikely to be acceptable" (ASA FAQ, 23 January 2020).**
+> "unlikely to be acceptable" (FAQ, CAP News, 23 January 2020).**
 >
 > _(Corrected 28 September 2026. This quote box said "CAP permits a POM price list — but only
-> if … at least two clicks from the homepage … and out of the primary navigation". No ASA page
+> if … at least two clicks from the homepage … and out of the primary navigation". No CAP or ASA page
 > says "at least two clicks" or "primary navigation", and "permits" hardened the FAQ's "might
 > be acceptable". Keeping the POM out of the primary navigation is **WebAsk's design choice**;
 > doc 03 § B1-P has the full wording and the MHRA line that is nearest to it.)_
 
 That is not only a copywriting rule. **It is a route through the site's structure**, and it
 is the single most defensible thing WebAsk can say: _we offer "a structure built to the route
-the ASA describes for gated price lists", designed not to gut the site's rankings._ Never "the
+CAP's guidance describes for gated price lists", designed not to gut the site's rankings._ Never "the
 structure CAP requires". _(28 September 2026: "Nobody in the vertical is making that
 argument" is removed; § 3 checked six named agencies, not the vertical.)_
 
 **3. Doc 02 § 5's recommended terminology is unsafe and is corrected below** (§ 6). It
 advises targeting **"anti-wrinkle injections"** as the safe alternative to the brand name.
-The ASA treats wrinkle-relaxing euphemisms as _implied_ promotion of the POM and has upheld
+CAP's guidance treats wrinkle-relaxing euphemisms as _implied_ promotion of the POM, and the ASA has upheld
 complaints on exactly that basis. Shipping that advice would have made us wrong about the
 one thing our authority rests on. _(Corrected 28 September 2026: "wrinkle-relaxing" is right —
-the ASA's FAQ says "we’d advise against it" — but "has upheld complaints on exactly that basis"
+CAP's FAQ says "we’d advise against it" — but "has upheld complaints on exactly that basis"
 is unsourced: the nearest ruling, Skinboost (22 February 2012; doc 03 § B1), read "Line
 Relaxing" in a price list "in conjunction with other references to Botox and its effects".
-"Anti-wrinkle injections" is conditional in the
-ASA's own words: it "might be acceptable" as a collective term where non-POM treatments such
+"Anti-wrinkle injections" is conditional in
+CAP's own words: it "might be acceptable" as a collective term where non-POM treatments such
 as fillers are also offered, and "we’d advise against" it where only the POM is offered (FAQ,
 23 January 2020). It is still not a safe **target** term, and WebAsk's build standard leaves it
-out of client sales copy — our choice, not the ASA's rule. § 6 has the detail.)_
+out of client sales copy — our choice, not CAP's or the ASA's rule. § 6 has the detail.)_
 
 ---
 
@@ -218,8 +221,8 @@ the full rulings map.)_
   Botulinum toxin (Botox, Vistabel, Dysport, Azzalure, Bocouture) is a POM in the UK. The same
   prohibition is in medicines law: "A person may not publish an advertisement that is likely to
   lead to the use of a prescription only medicine" (Human Medicines Regulations 2012 reg. 284(1)).
-- **Indirect references count.** The ASA treats "wrinkle-relaxing treatments", "#brotox" and
-  "#beautox" as implied promotion of the POM. _(Remapped 28 September 2026: the rulings this
+- **Indirect references count.** CAP Bitesize counts "wrinkle-relaxing treatments", "#brotox" and
+  "#beautox" as indirect references to the POM. _(Remapped 28 September 2026: the rulings this
   bullet named are cited by the ASA for different points.)_ Indirect references: **Skinboost
   (22 February 2012)**, "Line Relaxing" in a price list with other references; **LIFT
   Aesthetics (17 May 2023)** and **Dr Bunny Aesthetics (24 April 2024)**, "anti-wrinkle" wording
@@ -234,16 +237,16 @@ the full rulings map.)_
 - **CAP rule 12.18** — no celebrity or health-professional endorsement of a POM.
 - **What IS permitted:** advertising a **consultation** — e.g. _"a consultation for the
   treatment of lines and wrinkles"_. The POM must not be named in the initial ad.
-- **The price-list route, in the ASA's words** (corrected 28 September 2026; this bullet said a
+- **The price-list route, in CAP's words** (corrected 28 September 2026; this bullet said a
   POM may appear in a price list "**only** where it sits at least two clicks from the homepage …
   and appears in neither the homepage nor the primary navigation"). Consultation first; no POM
   price on the homepage and no "direct link to “Prices” which mentions Botox"; the further page
   "ideally two clicks from the homepage" (CAP Bitesize); if clients "can only get to the price
   list after going through a page promoting a consultation", then "this might be acceptable"
-  (FAQ, 23 January 2020). "Out of the primary navigation" is **WebAsk's design choice**, not ASA
-  wording.
+  (FAQ, 23 January 2020). "Out of the primary navigation" is **WebAsk's design choice**, not CAP
+  or ASA wording.
 
-> **⚠️ Verify before publishing.** These are our summaries of ASA/CAP guidance as at
+> **⚠️ Verify before publishing.** These are our summaries of CAP guidance and ASA rulings as at
 > 28 September 2026, not legal advice. _(Corrected 28 September 2026: this box said "Every claim
 > in Silo 4 goes through [CAP Copy Advice] before it publishes". Copy Advice advises on
 > "prospective non-broadcast ads" against the CAP Code, and the Code excludes editorial content;
@@ -265,10 +268,10 @@ Homepage  →  /treatments/lines-and-wrinkles   (consultation, no POM named)
 
 with the POM absent from the primary nav, absent from the homepage, and absent from every
 meta title and description. Sitemap and internal linking are built to match. _(28 September
-2026: "absent from the homepage" is the ASA's; the primary-nav and meta rules are **WebAsk's
+2026: "absent from the homepage" is CAP's; the primary-nav and meta rules are **WebAsk's
 design choices** — the MHRA says its "main focus is the content of the website, rather than the
 competitive tools", so our meta rule is stricter than its stated focus. Sell the pattern as "a
-structure built to the route the ASA describes for gated price lists".)_
+structure built to the route CAP's guidance describes for gated price lists".)_
 
 ### The proposed licensing scheme — state it accurately, and date it
 
@@ -333,8 +336,8 @@ Doc 02 § 5 says:
 > name — both because the ASA prohibits it and because our own pages would breach the rule by
 > carrying it."_
 
-**The second half is right. The first half is not.** The ASA treats wrinkle-relaxing
-euphemisms as _implied_ promotion of the POM and has upheld complaints on that basis, so
+**The second half is right. The first half is not.** CAP's guidance treats wrinkle-relaxing
+euphemisms as _implied_ promotion of the POM, and the ASA has upheld complaints on that basis, so
 recommending "anti-wrinkle injections" as the safe target term would have handed clinics
 advice that gets them ruled against.
 
@@ -342,20 +345,20 @@ advice that gets them ruled against.
 > about "wrinkle-relaxing" ("we’d advise against it", FAQ), though "has upheld complaints on that
 > basis" is unsourced (the nearest ruling, Skinboost, 22 February 2012, read "Line Relaxing" in a
 > price list "in conjunction with other references to Botox and its effects"; doc 03 § B1). It is
-> too strong about "anti-wrinkle injections". The ASA's FAQ (23 January 2020) says the phrase "might be acceptable" as a
+> too strong about "anti-wrinkle injections". CAP's FAQ (23 January 2020) says the phrase "might be acceptable" as a
 > collective term where non-POM treatments such as fillers are also offered (and "recommend[s]"
 > it as a collective term over "anti-wrinkle injections and fillers"), and "we’d advise against"
 > it where only the POM is offered; beside a POM price it "will be seen as an ad for that POM"
 > (Enforcement Notice on social media, 9 January 2020); and rulings upheld where it referred to the POM in
 > context — **LIFT Aesthetics (17 May 2023)** and **Dr Bunny Aesthetics (24 April 2024)**. It
 > is still not a safe _target_ term, because the conditions depend on the clinic. Editorial copy
-> reports the conditional position in the ASA's words; answering "No" overstates the source.
-> The table below separates the ASA's position from WebAsk's stricter build standard, and adds
+> reports the conditional position in CAP's words; answering "No" overstates the source.
+> The table below separates CAP's position from WebAsk's stricter build standard, and adds
 > the dated title exception for posts A1 and A2.
 
 | Context                                                                | Guidance                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **A clinic's own public pages**                                        | Advertise the **consultation**, not the treatment: _"consultations for lines and wrinkles"_. Do not name the POM (the gated routes in doc 03 § B1-P are the narrow exceptions). Do not use the indirect references "wrinkle-relaxing", "beautox", "brotox". **WebAsk's build standard also leaves out "anti-wrinkle injections"** — our choice, stricter than the ASA's conditional position, and never presented as the ASA's rule (28 September 2026).                      |
+| **A clinic's own public pages**                                        | Advertise the **consultation**, not the treatment: _"consultations for lines and wrinkles"_. Do not name the POM (the gated routes in doc 03 § B1-P are the narrow exceptions). Do not use the indirect references "wrinkle-relaxing", "beautox", "brotox". **WebAsk's build standard also leaves out "anti-wrinkle injections"** — our choice, stricter than CAP's conditional position, and never presented as CAP's or the ASA's rule (28 September 2026).                 |
 | **WebAsk's editorial content**                                         | We may name POMs **when discussing the regulation of their advertising**. Writing "clinics may not advertise Botox" is commentary on the rule, not an ad for the medicine. This distinction is what lets Silo 4 exist at all — but keep it in editorial context, never in a service page's sales copy, title or meta description. A passage about **administering** is not the carve-out (CLAUDE.md (b)).                                                                     |
 | **Titles and meta — the A1/A2 exception** (founder, 28 September 2026) | Posts **A1** (flagship) and **A2** (price list) in the clinic-compliance cluster may name the medicine in `title`, slug, `description` and `keywords`, **only** as a question about, or a statement of, the advertising rule. Never on non-compliance posts' related links. The licence keyword string (`do i need a licence for …`) is never printed in any field. Every other post, and **service pages, industry pages and client sites**, keep the ban in title and meta. |
 | **Keyword targeting**                                                  | Target the _practitioner's_ question — "can I advertise botox on my website", "asa rules aesthetic clinic advertising" — which is informational and ours to answer. Do **not** target patient-facing treatment terms.                                                                                                                                                                                                                                                         |
@@ -389,7 +392,7 @@ _(One-line answers rewritten 28 September 2026 from the primary sources in doc 0
 said "No.", "Nobody explains this" and "as at July 2026".)_
 
 - Can I advertise Botox on my clinic website? _(Not to the public — CAP rule 12.12 and HMR 2012
-  reg. 284(1). Asked "Can I refer to Botox on my website?", the ASA's FAQ (23 January 2020)
+  reg. 284(1). Asked "Can I refer to Botox on my website?", CAP's FAQ (23 January 2020)
   answers "Yes, in very narrow circumstances", and: "It will always depend on the execution but
   provided you properly emphasise the consultation, make incidental, balanced and factual
   references to Botox as a possible treatment option and it is clear that the consultation may
@@ -400,7 +403,7 @@ said "No.", "Nobody explains this" and "as at July 2026".)_
   list after going through a page promoting a consultation", then "this might be acceptable";
   Bitesize puts the further page "ideally two clicks from the homepage". Post A2.)_
 - Are "anti-wrinkle injections" and "wrinkle-relaxing" safe alternatives? _("Wrinkle-relaxing":
-  the ASA advises against it. "Anti-wrinkle injections": conditional in the ASA's words (FAQ,
+  CAP's FAQ advises against it. "Anti-wrinkle injections": conditional in CAP's words (FAQ,
   23 January 2020); WebAsk's build standard leaves it out.)_
 - Do I need a licence to offer aesthetic treatments in 2026? _(The proposed licensing scheme is
   not in force as at 28 September 2026 and we found no regulations made. Post L1 is held until the
@@ -409,8 +412,11 @@ said "No.", "Nobody explains this" and "as at July 2026".)_
 - Does my clinic website need a cookie banner, and what makes it compliant? _(ICO: make it "as
   easy to refuse consent as it is to accept"; nothing non-exempt before consent.)_
 - Are before-and-after photos allowed? _(For a POM: "very likely to be seen as an implied ad" —
-  ASA, 5 June 2025. Otherwise rules 3.47–3.50 apply, with "signed and dated proof that the photos
-  are genuine".)_
+  CAP's advice, 5 June 2025. Otherwise marketers "should therefore ensure that they meet the
+  requirements of rules 3.47-3.50 of the CAP Code" and "should hold signed and dated proof that the
+  photos are genuine" (same page). WebAsk's build standard leaves before-and-after galleries out
+  of client sites for a clinic that offers the POM — our choice, not CAP's rule (founder,
+  29 September 2026; doc 03 § B1).)_
 
 ### Local questions (Silo 3)
 
@@ -491,9 +497,9 @@ Two clusters are WebAsk's own with no Naxdor equivalent: **`clinic-compliance`**
 
 ## Sources
 
-- [ASA — Beauty and Cosmetics: Botulinum toxin (Botox) products](https://www.asa.org.uk/advice-online/beauty-and-cosmetics-botulinum-toxin-products.html)
+- [CAP (AdviceOnline) — Beauty and Cosmetics: Botulinum toxin (Botox) products](https://www.asa.org.uk/advice-online/beauty-and-cosmetics-botulinum-toxin-products.html)
 - [CAP Bitesize — Botox and non-surgical cosmetic interventions](https://www.asa.org.uk/advice-and-resources/cap-bitesize/rules-for-advertising-botox.html) (the page's title; "rules-for-advertising-botox" is only its URL slug — corrected 28 September 2026)
-- [ASA/CAP — Botox - Frequently Asked Questions (FAQs)](https://www.asa.org.uk/news/botox-frequently-asked-questions-faqs.html) (23 January 2020; read 28 September 2026)
+- [CAP News — Botox - Frequently Asked Questions (FAQs)](https://www.asa.org.uk/news/botox-frequently-asked-questions-faqs.html) (23 January 2020; read 28 September 2026)
 - [ASA/CAP — Prescription-Only Medicines: key advice resources](https://www.asa.org.uk/advice-and-resources/resource-library/prescription-only-medicines-key-advice-resources.html)
 - [House of Commons Library — The regulation of non-surgical cosmetic procedures in England](https://commonslibrary.parliament.uk/research-briefings/cbp-10331/) (not re-opened on 28 September 2026: HTTP 403; nothing in § 4 now rests on it)
 - Every primary source re-read on 28 September 2026 is listed, with its URL and page date, in [`03-uk-compliance.md`](03-uk-compliance.md) § Sources

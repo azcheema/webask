@@ -647,7 +647,7 @@ the weaker word and is kept.)_
 > the whole position on "anti-wrinkle injections": the FAQ's words (CAP News) are conditional — see
 > the next box. The price-list paragraph that stood here, which said "**only** where it sits at least
 > two clicks from the homepage … and appears in neither the homepage nor the primary
-> navigation", is replaced by § B1-P: no ASA page says "at least two clicks" or "primary
+> navigation", is replaced by § B1-P: no CAP or ASA page says "at least two clicks" or "primary
 > navigation".)_
 
 > ### ⚠️ CORRECTED 28 September 2026 — "anti-wrinkle injections" in CAP's and the ASA's own words
@@ -728,8 +728,8 @@ the weaker word and is kept.)_
 > 2026):** client sales copy leaves "anti-wrinkle injections" out altogether, because the FAQ's
 > and the Enforcement Notice's conditions turn on the clinic's full treatment list and on what
 > sits next to the phrase. Copy must never present this standard as CAP's or the ASA's position.
-> _(Wording relabelled 29 September 2026; F2's substance is unchanged; flagged for the founder,
-> who confirms the new wording or re-words it.)_
+> _(Wording relabelled 29 September 2026; F2's substance is unchanged; confirmed by the founder,
+> 29 September 2026.)_
 
 **B1-P. The price-list route, in CAP's words.** _(Added 28 September 2026. Replaces
 "only … at least two clicks … primary navigation" in the 2026-07-29 box above and in doc 08
@@ -771,7 +771,7 @@ visible in a marketing communication". The FAQ treats the website case separatel
 your website, it depends"), so neither exclusion should be summarised as making a website price
 list permissible.
 
-**WebAsk's reading and design choices — labelled as ours, never as ASA wording:** the POM stays out
+**WebAsk's reading and design choices — labelled as ours, never as CAP or ASA wording:** the POM stays out
 of the primary navigation and out of every meta title and description (six more readings, added 29
 September 2026, follow this paragraph). The nearest primary line on
 navigation is the MHRA's, about the home page: "Links and navigation aids may be given for
@@ -788,15 +788,34 @@ customer views", so our meta rule is stricter than its stated focus. This is the
 architecture" deliverable: describe it as "a structure built to the route CAP's guidance describes
 for gated price lists", never as "the structure CAP requires". The rule that the route is stated
 only in CAP's own words is the founder's F3 (28 September 2026). _(F3 attribution corrected 29
-September 2026 and flagged for the founder: F3 worded the deliverable "a structure built to the
-route the ASA describes for gated price lists" and the rule "the ASA's words", but the route's three
-sources in this section are CAP's: the CAP News FAQ, CAP Bitesize, and AdviceOnline, which "is given
-by the CAP Executive" and "does not bind … the Advertising Standards Authority". F3's substance is
-unchanged. The founder confirms the new wording or re-words it. Queued follow-ups, outside this
-doc-03-only edit (line numbers as at 29 September 2026): **(a) F3's wording, pending the
-founder:** doc 08 lines 12, 30, 44-45, 237, 268, 271; doc 02 line 488;
-`docs/strategy/content-guidelines.md` line 91. **(b) The FAQ as CAP News, not pending:** doc 08
-lines 54, 57-58, 61, 345, 352, 353, 358, 392, 403; doc 02 lines 131, 141, 145, 483, 487.)_
+September 2026 and confirmed by the founder, 29 September 2026: F3 worded the deliverable "a
+structure built to the route the ASA describes for gated price lists" and the rule "the ASA's
+words", but the route's three sources in this section are CAP's: the CAP News FAQ, CAP Bitesize,
+and AdviceOnline, which "is given by the CAP Executive" and "does not bind … the Advertising
+Standards Authority". F3's substance is unchanged. The queued follow-ups were applied on 29
+September 2026 (line numbers as queued): **(a) F3's wording:** doc 08 lines 12, 30, 44-45, 237,
+268, 271; doc 02 line 488; `docs/strategy/content-guidelines.md` line 91. **(b) The FAQ as CAP
+News:** doc 08 lines 54, 57-58, 61, 345, 352, 353, 358, 392, 403; doc 02 lines 131, 141, 145,
+483 and 487. A grep of CLAUDE.md and docs/ in the same pass relabelled these: CLAUDE.md (three attributions); in doc
+08, "ASA FAQ" and "No ASA page" in § 0.2, the "implied promotion" sentences in §§ 0.3 and 6, the § 4
+indirect-references bullet (now "CAP Bitesize counts … as indirect references to the POM"), "not
+ASA wording" and "ASA/CAP guidance" in § 4, "ASA, 5 June 2025" in § 7 and two Sources labels; in
+doc 02, § 2's "relaxing" sentence and § 5's 2026-07-28 box; doc 06's Phase 2 note; and, in this
+doc, "no ASA page" in the 2026-07-29 box and "never as ASA wording" above. In content/ and data/
+the same pass relabelled the aesthetic-clinics page body (two lines) and the two aesthetic
+price-list answers in `data/industries.ts`. It was not complete: a second grep (fixer round 1, 29
+September 2026, over CLAUDE.md, content/, data/ and docs/, searching for "ASA/CAP" only) found four live strings still crediting
+the FAQ or the price-list route to "ASA/CAP" and relabelled them: the home-page FAQ answer in
+`data/copy/home.ts`, the What keeps you safe lines in `content/services/ui-ux-design.mdx` and
+`content/services/web-development.mdx`, and the price-list paragraph in
+`content/locations/cheshire.mdx`; plus three Sources labels in this doc (the 2026-07-27 POM-ban
+entry and two primary-source groups). That grep could not see a credit to the ASA alone: fixer
+round 2 (29 September 2026) relabelled the A1 post's H2 over the FAQ's conditions, "What the ASA
+says about 'anti-wrinkle injections'", to "What CAP and the ASA say …", and its meta description
+to match. Left as they are: "ASA/CAP" naming the ban or the two
+bodies together (the § B1 heading, doc 02 § 2's heading, docs/00, doc 05, the content guidelines,
+a `data/team.ts` comment), dated history notes inside MDX comments, the research bundle, § B2a's
+Sources line of 29 July 2026 and doc 08's resource-library link.)_
 
 **WebAsk's readings from the price-list post (A2) — labelled as ours, never as CAP's, the ASA's or
 the MHRA's** (added 29 September 2026, from pages read 28-29 September 2026). They extend the
@@ -932,14 +951,30 @@ of ‘before and after’ photos in the same way as testimonials" can still be q
   received a non-prescription only treatment because this is likely to be seen as materially
   misleading." / "You should also make sure you have signed and dated proof that the photos are
   genuine, and representative of what can be achieved as detailed in our guidance."
-- **The tension, left unresolved.** CAP's advice on botulinum toxin products (29 October 2025),
+- **The tension, and WebAsk's build standard.** CAP's advice on botulinum toxin products (29 October 2025),
   under "Don’t use before and after photographs": "The use of before and after photographs is
   likely to be interpreted by the ASA as an efficacy claim, which is not permitted. Marketers should,
   therefore, avoid featuring any before and after images in their marketing communications." It sits
   in advice about the medicine and does not say whether it reaches filler images; the FAQ allows
   labelled filler images for a clinic that offers both. Quote each from its own page and do not
-  resolve the tension in CAP's voice. A stricter WebAsk build standard for such a clinic's gallery
-  would be a founder decision, labelled as ours; none has been taken.
+  resolve the tension in CAP's voice.
+  **WebAsk's build standard — our choice, not CAP's or the ASA's rule (founder decision, 29
+  September 2026):** WebAsk follows the stricter advice. For a clinic that offers the POM, WebAsk's build
+  standard leaves before-and-after galleries out of client sites. The two lines it weighs, each from
+  its own page: CAP's advice of 29 October 2025, "Marketers should, therefore, avoid featuring any
+  before and after images in their marketing communications"; and the FAQ (CAP News, 23 January
+  2020), "you are able to include images if they show someone who has received a non-prescription
+  only treatment – however, make sure you’re explicit the photos relate to the non-prescription only
+  treatment". For a clinic that offers both, the standard is stricter than the FAQ, so copy labels
+  it as ours and never writes that CAP bars filler images for such a clinic. For a filler-only clinic
+  (one that does not offer the POM), before-and-after images follow CAP's rules (3.47-3.50) and the
+  evidence lines in CAP's advice of 5 June 2025 quoted at the top of this item: "signed and dated
+  proof that the photos are genuine and have not been manipulated" and "relevant evidence to
+  substantiate the impression created by the images". _(Replaces, 29 September 2026: "A stricter
+  WebAsk build standard for such a clinic's gallery would be a founder decision, labelled as ours;
+  none has been taken.")_ _(Open, 29 September 2026: whether "galleries" also covers a single
+  before-and-after image on such a clinic's pages is queued for the founder; until it is answered,
+  a § B4 run flags one rather than passing it.)_
 - **CAP/BCAP guidance** (_Guidance on the marketing of surgical and non-surgical cosmetic
   procedures_; status and URLs under "Further lines the aesthetics post (A3) quotes" below). Para
   31: "Disclaimers used by advertisers do not excuse misleading impressions of advertisements. Text
@@ -1596,6 +1631,9 @@ CQC's England-only remit are in § B2, _The CQC, in detail_.
 - Age-gating and eligibility copy on booking flows
 - Review/testimonial handling that satisfies both the CAP Code and the DMCC Act
 - Third-party register links (JCCP, Save Face) as trust signals
+- No before-and-after gallery on the site of a clinic that offers the POM: WebAsk's build
+  standard, our choice, not CAP's or the ASA's rule (founder, 29 September 2026; _Before-and-after
+  images_ above). A filler-only clinic's images follow CAP's rules and its advice of 5 June 2025.
 
 ### B2. Dental
 
@@ -2031,11 +2069,16 @@ price-list gating, health claims, the review flow and the GDC website list.)_
       same-meaning route to health claims only.)_
 - [ ] Before/after imagery has documented patient consent (sources and limits: § B1 _Consent to
       use patient images_; GDC _Standards_ 4.2.7 for dentists), and signed and dated proof that the
-      photos are genuine (CAP's advice, 5 June 2025); none of a POM treatment; a filler result is
-      labelled as one (the FAQ); no filter or retouching on the treated area, WebAsk's standard,
+      photos are genuine (CAP's advice, 5 June 2025); none of a POM treatment; for a clinic that
+      offers the POM, no before-and-after gallery (WebAsk's build standard, our choice, not CAP's
+      or the ASA's rule; founder, 29 September 2026; § B1 _Before-and-after images_; a single
+      image on such a clinic's pages is an open question there, so flag it rather than pass it);
+      a filler-only clinic's labelled results follow CAP's rules and the 5 June 2025 evidence
+      lines; a filler result is labelled as one (the FAQ); no filter or retouching on the treated area, WebAsk's standard,
       following Bitesize's "rule of thumb: don’t enhance or retouch any areas of the photo related
       to the treatment" (CAP's guidance para 31 says such retouching "could be problematic",
-      "irrespective of the inclusion of a disclaimer"). _(Extended 29 September 2026.)_
+      "irrespective of the inclusion of a disclaimer"). _(Extended 29 September 2026, and again the
+      same day for the founder's before-and-after build standard.)_
 - [ ] Reviews/testimonials are real, named, consented, and non-incentivised (or the
       incentive is disclosed)
 - [ ] Review flow asks every customer, with no screening step and no incentive (CMA208 §§ 3.6,
@@ -2137,7 +2180,7 @@ Retrieved 2026-07-27.
 - **PECR cookies** — ICO cookie-banner project correspondence; CookieYes; Pandectes, _UK Cookie Compliance_
 - **PECR email / corporate subscribers** — Data Protection Network, _UK email marketing rules_; salespeople.co.uk, _Cold email under PECR regulation 22_
 - **DMCC fake reviews** — CMA guidance **CMA208**, _Fake reviews_; CMS Law; Lewis Silkin; Ashurst
-- **ASA / CAP POM ban** — ASA/CAP, _Beauty and Cosmetics: Botulinum toxin products_; JCCP, _New ASA Guidance_; Harley Academy
+- **ASA / CAP POM ban** — CAP (AdviceOnline), _Beauty and Cosmetics: Botulinum toxin products_; JCCP, _New ASA Guidance_; Harley Academy
 - **Aesthetics licensing scheme** — Browne Jacobson, _Understanding the new regulations for non-surgical cosmetic procedures_; Government consultation response, August 2025
 - **Dental regulation** — Denmarketing, _Dental Marketing Compliance UK: GDC and ASA Rules (2026)_; Whitehat SEO, _Dental Marketing Compliance UK_
 - **AI voice / Ofcom** — VoiceVox, _Ofcom Compliance for AI Voice Agents_; Neural Voice, _AI Cold Calling in the UK_; Callin.io, _AI Voice Agents in the UK: Privacy Compliance_
@@ -2152,7 +2195,7 @@ page copies in `.playwright-mcp/compliance/a1/raw/`, mapped in
 and Copy Advice lines, which come from the 28 September 2026 extracts in
 `.playwright-mcp/compliance/verified-asa.md` §§ 4, 10 and 11 (all git-ignored).
 
-- **ASA/CAP** — FAQ, _Botox - Frequently Asked Questions (FAQs)_ (23 January 2020), https://www.asa.org.uk/news/botox-frequently-asked-questions-faqs.html · CAP Bitesize, _Botox and non-surgical cosmetic interventions_ (undated), https://www.asa.org.uk/advice-and-resources/cap-bitesize/rules-for-advertising-botox.html · AdviceOnline, _Beauty and Cosmetics: Botulinum toxin (Botox) products_ (29 October 2025; "given by the CAP Executive", does not bind the ASA), https://www.asa.org.uk/advice-online/beauty-and-cosmetics-botulinum-toxin-products.html · AdviceOnline, _Healthcare: Prescription-only Medicines (websites)_ (17 February 2022), https://www.asa.org.uk/advice-online/health-prescription-only-medicines-websites.html · Enforcement Notice, _Advertising Botox and other botulinum toxin injections on social media_ (9 January 2020), https://www.asa.org.uk/resource/enforcement-notice-botox-social-media.html · Enforcement Notice, _Botox and other botulinum toxin products_ (1 March 2019), https://www.asa.org.uk/resource/enforcement-notice-botox.html · _A fine line - the dos and don’ts of advertising Botox_ (17 October 2019), https://www.asa.org.uk/news/a-fine-line-the-dos-and-don-ts-of-advertising-botox.html · AdviceOnline, _Before and after photos_ (5 June 2025), https://www.asa.org.uk/advice-online/before-and-after-photos.html · CAP Code section 12, https://www.asa.org.uk/type/non_broadcast/code_section/12.html, section 3, https://www.asa.org.uk/type/non_broadcast/code_section/03.html, and Scope, https://www.asa.org.uk/type/non_broadcast/code_folder/scope-of-the-code.html · Copy Advice (undated), https://www.asa.org.uk/advice-and-resources/copy-advice.html · CAP News, _Enforcement Update – Ads for Botox on social media_ (9 January 2020), https://www.asa.org.uk/news/enforcement-update-ads-for-botox-on-social-media.html · CAP News, _We're using new technology to enforce Botox ad ban_ (9 January 2020), https://www.asa.org.uk/news/we-re-using-new-technology-to-enforce-botox-ad-ban.html · ASA and CAP News, _Protecting people from harmful ads for weight-loss medicines: new research and Enforcement Report_ (2 April 2026), https://www.asa.org.uk/news/protecting-people-from-harmful-ads-for-weight-loss-medicines-new-research-and-enforcement-report.html · _Enforcement Report: Weight-loss prescription-only medicines_ (2 April 2026), https://www.asa.org.uk/resource/enforcement-report-weight-loss-prescription-only-medicines.html, and its PDF (April 2026), https://www.asa.org.uk/static/882edc0a-0f95-44bf-be56959750d1a606/CAP-Enforcement-Report-Weight-loss-POMs.pdf
+- **CAP** — FAQ (CAP News), _Botox - Frequently Asked Questions (FAQs)_ (23 January 2020), https://www.asa.org.uk/news/botox-frequently-asked-questions-faqs.html · CAP Bitesize, _Botox and non-surgical cosmetic interventions_ (undated), https://www.asa.org.uk/advice-and-resources/cap-bitesize/rules-for-advertising-botox.html · AdviceOnline, _Beauty and Cosmetics: Botulinum toxin (Botox) products_ (29 October 2025; "given by the CAP Executive", does not bind the ASA), https://www.asa.org.uk/advice-online/beauty-and-cosmetics-botulinum-toxin-products.html · AdviceOnline, _Healthcare: Prescription-only Medicines (websites)_ (17 February 2022), https://www.asa.org.uk/advice-online/health-prescription-only-medicines-websites.html · Enforcement Notice, _Advertising Botox and other botulinum toxin injections on social media_ (9 January 2020), https://www.asa.org.uk/resource/enforcement-notice-botox-social-media.html · Enforcement Notice, _Botox and other botulinum toxin products_ (1 March 2019), https://www.asa.org.uk/resource/enforcement-notice-botox.html · _A fine line - the dos and don’ts of advertising Botox_ (17 October 2019), https://www.asa.org.uk/news/a-fine-line-the-dos-and-don-ts-of-advertising-botox.html · AdviceOnline, _Before and after photos_ (5 June 2025), https://www.asa.org.uk/advice-online/before-and-after-photos.html · CAP Code section 12, https://www.asa.org.uk/type/non_broadcast/code_section/12.html, section 3, https://www.asa.org.uk/type/non_broadcast/code_section/03.html, and Scope, https://www.asa.org.uk/type/non_broadcast/code_folder/scope-of-the-code.html · Copy Advice (undated), https://www.asa.org.uk/advice-and-resources/copy-advice.html · CAP News, _Enforcement Update – Ads for Botox on social media_ (9 January 2020), https://www.asa.org.uk/news/enforcement-update-ads-for-botox-on-social-media.html · CAP News, _We're using new technology to enforce Botox ad ban_ (9 January 2020), https://www.asa.org.uk/news/we-re-using-new-technology-to-enforce-botox-ad-ban.html · ASA and CAP News, _Protecting people from harmful ads for weight-loss medicines: new research and Enforcement Report_ (2 April 2026), https://www.asa.org.uk/news/protecting-people-from-harmful-ads-for-weight-loss-medicines-new-research-and-enforcement-report.html · _Enforcement Report: Weight-loss prescription-only medicines_ (2 April 2026), https://www.asa.org.uk/resource/enforcement-report-weight-loss-prescription-only-medicines.html, and its PDF (April 2026), https://www.asa.org.uk/static/882edc0a-0f95-44bf-be56959750d1a606/CAP-Enforcement-Report-Weight-loss-POMs.pdf
 - **ASA rulings** — Skinboost (22 February 2012), https://www.asa.org.uk/rulings/Skinboost-A11-175201.html · Dr Bunny Aesthetics (24 April 2024), https://www.asa.org.uk/rulings/dr-bunny-aesthetics-a23-1218983-dr-bunny-aesthetics.html · Valterous Ltd (18 December 2024), https://www.asa.org.uk/rulings/valterous-ltd-g24-1253503-valterous-ltd.html · LIFT Aesthetics (17 May 2023), https://www.asa.org.uk/rulings/lift-aesthetics-a22-1158433-lift-aesthetics.html · Glow Up LLC t/a Maxxing (2 September 2026), https://www.asa.org.uk/rulings/glow-up-llc.html
 - **Medicines law and the MHRA** — Human Medicines Regulations 2012 reg. 284, https://www.legislation.gov.uk/uksi/2012/1916/regulation/284, and reg. 7, https://www.legislation.gov.uk/uksi/2012/1916/regulation/7 · MHRA Blue Guide Appendix 6 (November 2020), https://assets.publishing.service.gov.uk/media/6012d8c9d3bf7f05c2040b4e/Appendix_6.pdf · MHRA Annual Report and Accounts 2024 to 2025, https://assets.publishing.service.gov.uk/media/687fae8177a3acd9f4d0e24e/MHRA_Annual_Report_2024_25.pdf · MHRA advertising investigations (2024), https://www.gov.uk/government/collections/advertising-investigations-by-mhra
 - **Licensing (England)** — Health and Care Act 2022 s.180, https://www.legislation.gov.uk/ukpga/2022/31/section/180, and Sch. 19, https://www.legislation.gov.uk/ukpga/2022/31/schedule/19 · DHSC consultation (2 September 2023) and response (7 August 2025), https://www.gov.uk/government/consultations/licensing-of-non-surgical-cosmetic-procedures · DHSC press release (6 August 2025), https://www.gov.uk/government/news/crackdown-on-unsafe-cosmetic-procedures-to-protect-the-public · written answers HL12386 (8 December 2025), 103132 and 103133 (12 January 2026), 109351 (5 February 2026), 111514 (13 February 2026), 10828 (23 June 2026), via https://questions-statements-api.parliament.uk/api/writtenquestions/questions/ · the minister's letter to the Women and Equalities Committee (3 June 2026) and the Committee's report HC 307 (11 September 2026), via https://committees-api.parliament.uk/
@@ -2199,7 +2242,7 @@ CAP's advice on before-and-after photos).
 
 - **Equality** — Equality Act 2010 s.20, https://www.legislation.gov.uk/ukpga/2010/15/section/20, s.29, https://www.legislation.gov.uk/ukpga/2010/15/section/29, and s.217, https://www.legislation.gov.uk/ukpga/2010/15/section/217 · SI 2026/788 (made 14 July 2026, in force 5 August 2026), https://www.legislation.gov.uk/uksi/2026/788/made · EHRC, _Statutory Code of Practice: Services, public functions and associations_ (PDF), https://www.equalityhumanrights.com/sites/default/files/2026/EHRC_Code_of_practice_for_services_public_functions_and_associations.pdf
 - **PECR and the ICO** — PECR Sch. A1 and Sch. 1, re-read · GOV.UK, _Data Use and Access Act 2025: plans for commencement_ ("Last updated: 5 February 2026"), https://www.gov.uk/guidance/data-use-and-access-act-2025-plans-for-commencement · DPA 2018 s.157, re-read ("up to date with all changes known to be in force on or before 29 September 2026") · ICO chapters of the storage and access guidance (index last updated 29 April 2026): _What are the PECR rules?_, https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-pecr-rules/ · _What are the exceptions?_, https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/what-are-the-exceptions/ · _How do we manage consent in practice?_, https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/how-do-we-manage-consent-in-practice/ · ICO news (29 April 2026), https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/04/final-storage-and-access-technologies-guidance-published/ · online tracking strategy update (29 April 2026) and DUAA summary (PECR) ("Latest updates - 19 June 2025"), re-read · ICO blog (23 June 2026), https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/06/one-year-on-marking-the-12-month-commencement-of-the-data-use-and-access-act/ · ICO, each "under review": _What are the rules on special category data?_, https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/special-category-data/what-are-the-rules-on-special-category-data/ · _Right to be informed_, https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-be-informed/ · _Electronic mail marketing_, https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/
-- **ASA/CAP** — AdviceOnline, _Healthcare: Intravenous Nutritional Therapy_ (6 February 2024; "given by the CAP Executive", does not bind the ASA), https://www.asa.org.uk/advice-online/healthcare-intravenous-nutritional-therapy.html · CAP News, _Advertising Vitamin Drips – Injecting regulatory knowledge with a quick jab_ (22 February 2024), https://www.asa.org.uk/news/advertising-vitamin-drips-injecting-regulatory-knowledge-with-a-quick-jab.html · CAP Code section 15, https://www.asa.org.uk/type/non_broadcast/code_section/15.html
+- **CAP** — AdviceOnline, _Healthcare: Intravenous Nutritional Therapy_ (6 February 2024; "given by the CAP Executive", does not bind the ASA), https://www.asa.org.uk/advice-online/healthcare-intravenous-nutritional-therapy.html · CAP News, _Advertising Vitamin Drips – Injecting regulatory knowledge with a quick jab_ (22 February 2024), https://www.asa.org.uk/news/advertising-vitamin-drips-injecting-regulatory-knowledge-with-a-quick-jab.html · CAP Code section 15, https://www.asa.org.uk/type/non_broadcast/code_section/15.html
 - **Medicines law** — Human Medicines Regulations 2012 reg. 279, https://www.legislation.gov.uk/uksi/2012/1916/regulation/279, and reg. 303, https://www.legislation.gov.uk/uksi/2012/1916/regulation/303
 - **CQC** — _Surgical procedures_ scope page (29 January 2025), https://www.cqc.org.uk/guidance-regulation/providers/registration/scope-registration/regulated-activities/surgical-procedures
 - **Not researched for C1** (so nothing above rests on them): equality law in Northern Ireland; CQC regulated activities other than surgical procedures; whether any drip or vitamin injection is a medicinal product; the text of DUAA s.142 (read only through GOV.UK's commencement page, below). The ICO's guidance on the higher PECR fines was searched for, not researched in depth: "currently developing" on 23 June 2026, and not found by a non-exhaustive search on 29 September 2026 (§ A4).

@@ -128,21 +128,26 @@ obvious assumption:**
    Botulinum toxin is a POM. **The word "Botox" may not appear in an ad to the public — in
    organic social posts, in Google Ads, on a flyer, or on "almost all website content" (CAP Bitesize)** —
    this covers organic content, not just paid. _(Corrected 28 September 2026: this said it
-   "cannot appear on a clinic website". The ASA's FAQ (23 January 2020) answers "Yes, in
+   "cannot appear on a clinic website". CAP's FAQ (23 January 2020) answers "Yes, in
    very narrow circumstances", and says a price list reached only through a page promoting a
-   consultation "might be acceptable"; see doc 03 § B1-P.)_ The ASA also treats _implied_
-   references as breaches (it has treated the word "relaxing" as an implied reference to
-   Botox; "ruled" corrected to "treated", 28 September 2026). Compliant phrasing advertises the
+   consultation "might be acceptable"; see doc 03 § B1-P.)_ CAP's guidance also advises against
+   _indirect_ references (Bitesize: "Don’t mention Botox or use indirect references to it in your
+   ads"; for a clinic that offers the POM, its FAQ says "the word “relaxing” is likely to be
+   understood as an implied reference to Botox"; "ruled" corrected to "treated", 28 September
+   2026; "The ASA" relabelled CAP's guidance and the FAQ quoted, 29 September 2026, and "treats
+   _implied_ references as breaches" put in the sources' own modality the same day). Compliant phrasing advertises the
    **consultation**, not the treatment: _"consultations for lines and wrinkles"_.
    ⚠️ **CORRECTED 2026-07-29.** This sentence used to recommend _"anti-wrinkle injections",
    "anti-wrinkle treatment"_ — contradicting the sentence before it, since the ASA treats
    those as **implied** promotion of the POM. The same correction was made at § 5 and in
    [`08-seo-architecture.md`](08-seo-architecture.md) § 6 on 2026-07-28 but never reached
-   here or doc 03 § B1. _(Corrected again 28 September 2026: in the ASA's own words
+   here or doc 03 § B1. _(Corrected again 28 September 2026: in CAP's own words
    "anti-wrinkle injections" is **conditional** — it "might be acceptable" as a collective term
    where non-POM treatments are also offered, and "we’d advise against" it where only the POM is
    offered (FAQ, 23 January 2020). It is still not a safe target term, and WebAsk's build
-   standard leaves it out of client sales copy — our choice, not the ASA's rule. Doc 03 § B1.)_
+   standard leaves it out of client sales copy — our choice, not CAP's or the ASA's rule. Doc 03 § B1.
+   Relabelled 29 September 2026 (founder): the FAQ, CAP Bitesize and AdviceOnline are CAP's
+   guidance, not the ASA's; rulings stay the ASA's.)_
    ~~**The MHRA issued 47 enforcement notices to aesthetic businesses in 2024 alone**, mostly
    for exactly this.~~ _(Removed 28 September 2026: no primary source; it appears only on a
    vendor page that cites none. Doc 03 § B1 "Enforcement".)_ The ASA now runs AI-powered
@@ -463,9 +468,9 @@ This is where UK terms diverge most from Naxdor's, because the vocabulary is reg
 > ### ⚠️ CORRECTED 2026-07-28 — the original guidance here was unsafe
 >
 > This note originally read: _"target **'anti-wrinkle injections'**, never the POM brand name."_
-> The second half is right; **the first half is not.** The ASA treats wrinkle-relaxing
-> euphemisms — "wrinkle-relaxing treatments", "beautox", "brotox" — as **implied promotion of
-> the POM**, and has upheld complaints on exactly that basis. Recommending "anti-wrinkle
+> The second half is right; **the first half is not.** CAP Bitesize counts wrinkle-relaxing
+> euphemisms — "wrinkle-relaxing treatments", "#brotox", "#beautox" — as **indirect references**
+> to the POM, and says not to use them. Recommending "anti-wrinkle
 > injections" as the safe term would have handed clinics advice that gets them ruled against,
 > on the one subject our authority depends on.
 >
@@ -482,14 +487,19 @@ This is where UK terms diverge most from Naxdor's, because the vocabulary is reg
 > Full reasoning, the named ASA rulings, and the price-list route that becomes our
 > flagship deliverable: [`08-seo-architecture.md`](08-seo-architecture.md) §§ 4 and 6.
 >
-> **Corrected again 28 September 2026.** In the ASA's own words "anti-wrinkle injections" is
+> **Corrected again 28 September 2026.** In CAP's own words "anti-wrinkle injections" is
 > **conditional**, not implied promotion in every case: it "might be acceptable" as a collective
 > term where non-POM treatments such as fillers are also offered, and "we’d advise against" it
 > where only the POM is offered (FAQ, 23 January 2020). It is still not a safe target term, and
-> WebAsk's build standard leaves it out of client sales copy — our choice, not the ASA's rule.
-> The price-list route is stated only in the ASA's words ("ideally two clicks from the homepage",
+> WebAsk's build standard leaves it out of client sales copy — our choice, not CAP's or the ASA's rule.
+> The price-list route is stated only in CAP's words ("ideally two clicks from the homepage",
 > "might be acceptable"), never as "at least two clicks". [`03-uk-compliance.md`](03-uk-compliance.md)
-> § B1 has the quotes; doc 08 § 6 has the A1/A2 title exception.
+> § B1 has the quotes; doc 08 § 6 has the A1/A2 title exception. _(Relabelled 29 September 2026
+> (founder): the FAQ, CAP Bitesize and AdviceOnline are CAP's guidance, not the ASA's; rulings
+> stay the ASA's. The opening's "implied promotion of the POM" and "has upheld complaints on
+> exactly that basis" were replaced the same day with Bitesize's own words: the second is
+> unsourced, and the nearest ruling, Skinboost (22 February 2012), read "Line Relaxing" in
+> context; doc 08 § 0.3.)_
 
 **Dental practices**
 
