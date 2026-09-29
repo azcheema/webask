@@ -277,7 +277,7 @@ internal-linking mesh.
       `data/copy/home.ts` (still named the POM), the **PECR qualifier in six service MDX
       files**, and **doc 03 § B1 + doc 02 § 2**, which still recommended "anti-wrinkle
       injections" as the ✅ compliant alternative — the exact euphemism the ASA rules against
-      _(corrected 28 September 2026: in the ASA's own words the phrase is conditional — "might
+      _(corrected 28 September 2026: in CAP's own words the phrase is conditional — "might
       be acceptable" as a collective term where non-POM treatments are also offered, "we’d
       advise against" it where only the POM is offered; WebAsk's build standard leaves it out
       of client copy by choice. Doc 03 § B1)_
@@ -364,6 +364,13 @@ Blog cluster A (compliance) first · case studies when real work exists · FAQ c
 Every post passes the Information Gain test (measurably better than the top 3 UK results in
 one specific dimension) · every claim dated and sourced · reading level ≤ Grade 8 ·
 **every clinic-related post through the compliance checklist**.
+
+**The "top 3 UK results" test at launch (founder decision, 29 September 2026).** Agents cannot
+see UK Google results, so for launch the test is accepted as an approximation from US-indexed
+and DuckDuckGo proxy results, because the posts make no claims about what other pages say (except
+A1's one sentence that some web pages give a figure for MHRA enforcement notices, which rests on
+two vendor pages found in its research). Re-check it
+with Search Console data after launch.
 
 ---
 

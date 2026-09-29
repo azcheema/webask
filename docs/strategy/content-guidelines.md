@@ -88,13 +88,14 @@ Examples:
 - _Web Development service_: "Custom websites for UK small businesses, built for local search and for visitors on a phone. See what the starting price includes, or request a quote."
 - _CRM service_: "GoHighLevel setup, automation and HubSpot migration for UK small businesses. See what the starting price includes and what each add-on does. Book a call."
 - _Service × Location (Manchester CRM)_: "GoHighLevel implementation for Manchester businesses. Funnels, automation and migrations, delivered remotely from a published starting price. Get a quote."
-- _Industry page (aesthetic clinic web design)_: "Aesthetic clinic websites built around the consultation, to the route the ASA describes for price lists. See how the structure works and what it costs."
+- _Industry page (aesthetic clinic web design)_: "Aesthetic clinic websites built around the consultation, to the route CAP's guidance describes for price lists. See how the structure works and what it costs."
 
 > _(Examples replaced 28 September 2026. The old ones carried "We've built funnels that 3×
 > enquiry volume for clinics and dental practices" (a result we do not have), "built by senior
 > engineers" (a team we do not have), "See our work" (no portfolio yet), "load in under 1.5s"
 > (a performance claim CLAUDE.md bans) and "Fast, compliant … against the CAP Code" (a
-> compliance promise). They were never templates to copy.)_
+> compliance promise). They were never templates to copy. 29 September 2026: the industry
+> example credited the price-list route to the ASA; its sources are CAP's guidance (founder).)_
 
 Anti-patterns:
 
