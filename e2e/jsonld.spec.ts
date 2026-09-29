@@ -173,6 +173,20 @@ const ROUTES: ReadonlyArray<Route> = [
     hasFaq: false,
   },
   {
+    // Clinic-compliance post (draft).
+    path: "/blog/what-aesthetic-clinics-can-say-in-adverts-uk",
+    types: ["WebPage", "Article", "BreadcrumbList", "Person"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
+    // Clinic-compliance post (draft).
+    path: "/blog/gdc-compliant-dental-website",
+    types: ["WebPage", "Article", "BreadcrumbList", "Person"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
     // Entity disclosure — indexable (unlike the three draft legal pages) and a
     // real E-E-A-T surface, so its graph is asserted like any other live page.
     path: "/legal/company-information",

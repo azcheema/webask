@@ -51,6 +51,8 @@ const MUST_NOT_MATCH: readonly string[] = [
   "/blog/topic/clinic-compliance",
   "/blog/can-clinics-advertise-botox-uk",
   "/blog/botox-price-list-clinic-website-rules",
+  "/blog/what-aesthetic-clinics-can-say-in-adverts-uk",
+  "/blog/gdc-compliant-dental-website",
   "/robots.txt",
   "/favicon.ico",
   "/icon.svg",
