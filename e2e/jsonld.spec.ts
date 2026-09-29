@@ -1,5 +1,8 @@
 import { expect, test, type Page } from "@playwright/test";
 
+import { getRegulator } from "@/data/regulators";
+import { listPostSummaries } from "@/lib/blog";
+
 /*
  * Structured-data validation — the automated half of phase-1-mvp.md
  * "Validate every page's JSON-LD" (the Rich Results Test API ping stays a manual
@@ -143,6 +146,50 @@ const ROUTES: ReadonlyArray<Route> = [
     // Topic archive — CollectionPage frame, same shape as the index.
     path: "/blog/topic/seo",
     types: ["CollectionPage", "BreadcrumbList"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
+    // Clinic-compliance hub — lands with its first post (a draft renders the
+    // hub as noindex; before any post it would 404).
+    path: "/blog/topic/clinic-compliance",
+    types: ["CollectionPage", "BreadcrumbList"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
+    // Flagship clinic-compliance post (draft) — Article + author Person, with
+    // the regulator mentions emitted inline.
+    path: "/blog/can-clinics-advertise-botox-uk",
+    types: ["WebPage", "Article", "BreadcrumbList", "Person"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
+    // Clinic-compliance post (draft).
+    path: "/blog/botox-price-list-clinic-website-rules",
+    types: ["WebPage", "Article", "BreadcrumbList", "Person"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
+    // Clinic-compliance post (draft).
+    path: "/blog/what-aesthetic-clinics-can-say-in-adverts-uk",
+    types: ["WebPage", "Article", "BreadcrumbList", "Person"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
+    // Clinic-compliance post (draft).
+    path: "/blog/gdc-compliant-dental-website",
+    types: ["WebPage", "Article", "BreadcrumbList", "Person"],
+    hasBreadcrumbs: true,
+    hasFaq: false,
+  },
+  {
+    // Clinic-compliance post (draft).
+    path: "/blog/clinic-website-compliance-checklist-uk",
+    types: ["WebPage", "Article", "BreadcrumbList", "Person"],
     hasBreadcrumbs: true,
     hasFaq: false,
   },
@@ -374,6 +421,93 @@ test("location hubs express reach via areaServed only, in the UK shape", async (
       expect(parent?.["name"]).toBe(within);
       expect((parent["containedInPlace"] as Record<string, unknown>)?.["@type"]).toBe("Country");
     }
+  }
+});
+
+/*
+ * Every PUBLISHED post, derived from `content/blog` rather than a hand-kept list,
+ * so a new post is covered the moment it flips `draft: false`. The ROUTES entry
+ * above checks one post's graph shape; this checks what each post claims:
+ *
+ *   - `Article.author` points at `/about#<authorSlug>`, and a `Person` node with
+ *     that exact @id is on the same page (a byline a crawler can resolve);
+ *   - `datePublished` and `dateModified` are ISO dates, modified ≥ published,
+ *     and both equal the frontmatter (`articleNode` falls back to
+ *     `datePublished` when no `dateModified` is passed, which would silently
+ *     disagree with the byline's "Updated" line);
+ *   - `headline` is the frontmatter `title`;
+ *   - `mentions` carries exactly the frontmatter's regulators, in order, each an
+ *     inline typed node with a name and an https URL and NO `@id` (an @id would
+ *     have to resolve under rule 4); no frontmatter `mentions` ⇒ no property.
+ *
+ * Drafts are left out: they render `noindex` and are not yet a claim to anyone.
+ */
+test("every published post's Article names a resolvable author and valid dates", async ({
+  page,
+}) => {
+  const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+  const published = (await listPostSummaries()).filter((post) => !post.frontmatter.draft);
+  expect(published.length, "content/blog should hold at least one published post").toBeGreaterThan(
+    0,
+  );
+
+  for (const { slug, frontmatter } of published) {
+    await test.step(`/blog/${slug}`, async () => {
+      await page.goto(`/blog/${slug}`);
+      const nodes = await readGraphNodes(page);
+
+      const articles = findByType(nodes, "Article");
+      expect(articles.length, `/blog/${slug} must emit exactly one Article`).toBe(1);
+      const article = articles[0]!;
+
+      const authorId = String((article["author"] as JsonLdNode | undefined)?.["@id"] ?? "");
+      expect(
+        authorId.endsWith(`/about#${frontmatter.authorSlug}`),
+        `/blog/${slug} Article.author @id "${authorId}" should end /about#${frontmatter.authorSlug}`,
+      ).toBe(true);
+      expect(
+        findByType(nodes, "Person").some((node) => node["@id"] === authorId),
+        `/blog/${slug} must define a Person node with @id ${authorId}`,
+      ).toBe(true);
+
+      const datePublished = String(article["datePublished"] ?? "");
+      const dateModified = String(article["dateModified"] ?? "");
+      expect(datePublished, `/blog/${slug} datePublished`).toMatch(ISO_DATE);
+      expect(dateModified, `/blog/${slug} dateModified`).toMatch(ISO_DATE);
+      expect(
+        dateModified >= datePublished,
+        `/blog/${slug} dateModified ${dateModified} must not precede datePublished ${datePublished}`,
+      ).toBe(true);
+      expect(datePublished, `/blog/${slug} datePublished vs frontmatter`).toBe(
+        frontmatter.datePublished,
+      );
+      expect(dateModified, `/blog/${slug} dateModified vs frontmatter`).toBe(
+        frontmatter.dateModified,
+      );
+
+      expect(article["headline"], `/blog/${slug} headline vs frontmatter title`).toBe(
+        frontmatter.title,
+      );
+
+      const expected = (frontmatter.mentions ?? []).map((value) => getRegulator(value)!);
+      if (expected.length === 0) {
+        expect(article["mentions"], `/blog/${slug} has no frontmatter mentions`).toBeUndefined();
+      } else {
+        const mentions = article["mentions"] as JsonLdNode[] | undefined;
+        expect(Array.isArray(mentions), `/blog/${slug} Article.mentions is an array`).toBe(true);
+        expect(
+          mentions!.map((node) => [node["@type"], node["name"], node["url"]]),
+          `/blog/${slug} Article.mentions vs frontmatter`,
+        ).toEqual(expected.map((entry) => [entry.type, entry.name, entry.url]));
+        for (const node of mentions!) {
+          expect(
+            node,
+            `/blog/${slug} mention "${String(node["name"])}" must be inline`,
+          ).not.toHaveProperty("@id");
+          expect(String(node["url"]), `/blog/${slug} mention url`).toMatch(/^https:\/\//);
+        }
+      }
+    });
   }
 });
 

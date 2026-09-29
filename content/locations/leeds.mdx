@@ -2,10 +2,10 @@
 slug: leeds
 title: "Web Design Agency for Leeds — Regulated Sectors"
 description: "Web design, SEO and automation for Leeds and West Yorkshire firms in regulated sectors — dentistry, finance, law and healthcare. Remote, on UK time."
-dateModified: "2026-09-28"
+dateModified: "2026-09-29"
 ---
 
-{/* Body prose only. Structured fields for this hub — meta, hero, cardSummary and the FAQs that also feed FAQPage JSON-LD — live in data/locations.ts under the leeds entry, alongside the population basis, districts, sector mix and nearby places; the template renders the nine-service grid, the nearby-areas line and the FAQ accordion, so none of that is repeated here. The distinct argument this hub carries, and which the Manchester and Cheshire hubs deliberately do not, is that West Yorkshire's SMB economy skews to regulated professions — dentistry, financial and legal services, healthcare — where the website is not marketing collateral but a published statement that a regulator, a competitor or a complainant can read without telling you. Dentistry belongs to /industries/dental-practices and regulatory decay belongs to /services/maintenance-support: this page states the local hook and hands off, rather than restating either argument. Keep this comment on a single line: a blank line inside an MDX expression terminates it and breaks the build a commit later. Corrected 28 September 2026: removed the ASA AI-monitoring claim (unsourced, doc 03 § B1), the £150,000 individual figure (not re-read, doc 03 § A6) and the line that published prices are now read by more than patients (the CMA study is sector-level, doc 03 § B2); the £8.4 billion figure now carries the CMA's attribution and years (doc 03 § B2); "illegal" became "a banned practice" (doc 03 § A6). */}
+{/* Body prose only. Structured fields for this hub — meta, hero, cardSummary and the FAQs that also feed FAQPage JSON-LD — live in data/locations.ts under the leeds entry, alongside the population basis, districts, sector mix and nearby places; the template renders the nine-service grid, the nearby-areas line and the FAQ accordion, so none of that is repeated here. The distinct argument this hub carries, and which the Manchester and Cheshire hubs deliberately do not, is that West Yorkshire's SMB economy skews to regulated professions — dentistry, financial and legal services, healthcare — where the website is not marketing collateral but a published statement that a regulator, a competitor or a complainant can read without telling you. Dentistry belongs to /industries/dental-practices and regulatory decay belongs to /services/maintenance-support: this page states the local hook and hands off, rather than restating either argument. Keep this comment on a single line: a blank line inside an MDX expression terminates it and breaks the build a commit later. Corrected 28 September 2026: removed the ASA AI-monitoring claim (unsourced, doc 03 § B1), the £150,000 individual figure (not re-read, doc 03 § A6) and the line that published prices are now read by more than patients (the CMA study is sector-level, doc 03 § B2); the £8.4 billion figure now carries the CMA's attribution and years (doc 03 § B2); "illegal" became "a banned practice" (doc 03 § A6). Corrected 29 September 2026: "The CMA's remit here is consumer protection and pricing transparency" and "As at 29 July 2026 the study has not reported" replaced with the scope words of the CMA press release of 5 March 2026 ("compare providers, and understand the information they receive from dental professionals") and the update of 17 July 2026 ("does not set out any findings or conclusions"; final report "by the statutory deadline of 4 March 2027"), read that day, with the press release's framing kept ("The CMA has published the proposed scope of the study … Areas under consideration include:"), so the scope is given as proposed on opening; and 'annual' removed from the DMCC penalty line ('10% of global turnover'), since neither s.182(6) nor s.204(1)(a) contains it (docs/03 § A6). */}
 
 ## Leeds sells advice, and advice is regulated
 
@@ -39,9 +39,11 @@ None of that makes a good website impossible. It makes it a build with a specifi
 
 Dentistry is the clearest case here, because the scrutiny is already dated. The Competition and
 Markets Authority opened a market study into UK private dentistry, a market it cited from an
-independent source as valued at **£8.4 billion** in 2023 to 2024, in **March 2026**. The CMA's
-remit here is consumer protection and pricing transparency. As at **29 July 2026** the study has
-not reported, and we will not guess at what it will say.
+independent source as valued at **£8.4 billion** in 2023 to 2024, in **March 2026**. The scope it
+proposed on opening included how people "compare providers, and understand the information they
+receive from dental professionals". The study is sector-level, its update of **17 July 2026** set
+out no findings, and its final report is due by **4 March 2027**. We will not guess at what it will
+say.
 
 How a practice site holds up under that, and the other three regulators with an opinion about the
 same pages, is set out on [websites for UK dental practices](/industries/dental-practices).
@@ -64,7 +66,7 @@ One rule reaches everybody with a testimonials page, whatever the profession. Si
 2025** the DMCC Act 2024 has made writing, commissioning or publishing fake consumer reviews
 a banned practice in the UK, along with concealing that a review was incentivised — cash, a
 discount, a freebie, an event invite and a financial interest all count. The CMA can determine a
-breach and fine directly: up to **10% of global annual turnover or £300,000, whichever is
+breach and fine directly: up to **10% of global turnover or £300,000, whichever is
 higher**. It lands on the website first, because that is where reviews are displayed.
 
 ## A regulatory statement has a shelf life
@@ -92,8 +94,8 @@ sits close to a line, CAP runs a free Copy Advice service for pre-publication qu
 not solicitors; anything with real regulatory consequence should go past someone who is.
 
 **The engineering floor.** This site is gated in continuous integration on a perfect Lighthouse
-accessibility score (WCAG 2.2 AA, which in the UK reads onto the Equality Act 2010 duty to make
-reasonable adjustments), a perfect best-practices score, a search score of at least 95, cumulative
+accessibility score (WCAG 2.2 AA, a technical standard rather than the legal test, which in Great
+Britain is the Equality Act 2010 duty to make reasonable adjustments), a perfect best-practices score, a search score of at least 95, cumulative
 layout shift of no more than 0.05, total blocking time, and stylesheet, script and total
 page-weight budgets. Those are hard failures, not warnings, and the configuration is a file in
 the repository, not a claim on a page.

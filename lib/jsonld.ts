@@ -16,6 +16,7 @@ import type {
   WithContext,
 } from "schema-dts";
 
+import type { Regulator } from "@/data/regulators";
 import type { BundleTier, PriceCadence } from "@/data/services";
 import { site } from "@/data/site";
 import { team } from "@/data/team";
@@ -578,7 +579,38 @@ export type ArticleOptions = {
   image?: string;
   wordCount?: number;
   keywords?: string[];
+  /** Regulators, codes and Acts the article discusses (`data/regulators.ts`). */
+  mentions?: ReadonlyArray<Regulator>;
 };
+
+/**
+ * An inline node for a regulator, code or Act an article discusses, for
+ * `Article.mentions` (docs/08 § 5). Deliberately WITHOUT an `@id`: it is a
+ * description of an external body, not a node this site defines, so it must not
+ * enter rule 4's reference resolution in `e2e/jsonld.spec.ts`.
+ */
+export function mentionNode(entry: Regulator): Thing {
+  switch (entry.type) {
+    case "CreativeWork":
+      return {
+        "@type": "CreativeWork",
+        name: entry.name,
+        alternateName: entry.alternateName,
+        url: entry.url,
+      };
+    case "Legislation":
+      return {
+        "@type": "Legislation",
+        name: entry.name,
+        legislationIdentifier: entry.legislationIdentifier,
+        url: entry.url,
+      };
+    case "GovernmentOrganization":
+      return { "@type": "GovernmentOrganization", name: entry.name, url: entry.url };
+    case "Organization":
+      return { "@type": "Organization", name: entry.name, url: entry.url };
+  }
+}
 
 export function articleNode({
   path,
@@ -589,6 +621,7 @@ export function articleNode({
   image,
   wordCount,
   keywords,
+  mentions,
 }: ArticleOptions): Article {
   const url = abs(path);
   return {
@@ -603,6 +636,7 @@ export function articleNode({
     ...(image ? { image: abs(image) } : {}),
     ...(wordCount !== undefined ? { wordCount } : {}),
     ...(keywords ? { keywords } : {}),
+    ...(mentions && mentions.length > 0 ? { mentions: mentions.map(mentionNode) } : {}),
   };
 }
 

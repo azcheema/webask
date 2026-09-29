@@ -842,7 +842,13 @@ export const services: ReadonlyArray<Service> = [
     // 07 puts the widget in the starting tier, research 13 § 4.1 lists it
     // as an add-on; this entry follows 13.
     // Legality FAQ restated as the design, with the PECR line (research 08
-    // § A5a; R09), on 28 September 2026.
+    // § A5a; R09), on 28 September 2026. Google's wording brought to its Maps
+    // content policy as read on 29 September 2026 ("We do not allow merchants
+    // to:" offer incentives "in exchange for posting any review", or
+    // "selectively solicit positive reviews"), replacing the older "should
+    // not" and "says not to" (research S38 recorded "should not" on 25
+    // September 2026 with a fetch tool; whether that was the page's wording
+    // then is not established, docs/03 § A6).
     slug: "review-management",
     name: "Review Management",
     category: "grow",
@@ -889,17 +895,17 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Is it legal to ask customers for Google reviews in the UK?",
         answer:
-          "Asking every customer, once, for a review and nothing else is how the programme is built, and the CMA's guidance says asking customers generally, without steering what they write, is not prohibited. Since 6 April 2025 it has been a banned practice to write or commission fake reviews, to hide that a review was incentivised, or to present reviews misleadingly. Google's policy adds that businesses should not selectively ask the happy ones or offer anything for a review. Where a request promotes the business, it is marketing and the consent rules apply.",
+          "Asking every customer, once, for a review and nothing else is how the programme is built, and the CMA's guidance says asking customers generally, without steering what they write, is not prohibited. Since 6 April 2025 it has been a banned practice to write or commission fake reviews, to hide that a review was incentivised, or to present reviews misleadingly. Google's Maps content policy does not allow businesses to selectively solicit positive reviews, or to offer incentives in exchange for posting any review. Where a request promotes the business, it is marketing and the consent rules apply.",
       },
       {
         question: "Can we ask only the customers we know are happy?",
         answer:
-          "No, and the programme is built so that you cannot. The CMA's guidance calls encouraging just the satisfied customers to leave reviews a form of cherry-picking, and Google's policy says not to selectively solicit positive reviews. A step that asks people to rate you privately first and sends the public link only to the happy ones is that shortcut built into software, so we do not run it. Every customer gets the same request. The rating you earn that way is the only one you can defend.",
+          "No, and the programme is built so that you cannot. The CMA's guidance calls encouraging just the satisfied customers to leave reviews a form of cherry-picking, and Google's Maps content policy does not allow businesses to selectively solicit positive reviews. A step that asks people to rate you privately first and sends the public link only to the happy ones is that shortcut built into software, so we do not run it. Every customer gets the same request. The rating you earn that way is the only one you can defend.",
       },
       {
         question: "Can we offer a discount or a prize draw for a review?",
         answer:
-          "No, not on either plan. An incentivised review is not banned under the DMCC Act 2024, but concealing the incentive is. The CMA's guidance says the review must be clearly identifiable as incentivised, usually by a prominent label, as an advert. Google's policy goes further and says not to offer payment, discounts or free goods for any review. Offering nothing meets the incentive rule in both, so we offer nothing.",
+          "No, not on either plan. An incentivised review is not banned under the DMCC Act 2024, but concealing the incentive is. The CMA's guidance says the review must be clearly identifiable as incentivised, usually by a prominent label, as an advert. Google's Maps content policy goes further: it does not allow businesses to offer payment, discounts or free goods or services in exchange for posting any review. Offering nothing meets the incentive rule in both, so we offer nothing.",
       },
       {
         question: "What happens when we get a bad review?",

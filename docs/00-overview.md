@@ -136,7 +136,7 @@ knausgaard mustache blog fashion axe selfies salvia…"), plus testimonials attr
 
 Since **6 April 2025**, the Digital Markets, Competition and Consumers Act 2024 makes
 writing, commissioning or publishing fake consumer reviews **a banned practice in the UK**, with
-the CMA able to determine a breach and fine directly — up to **10% of global annual
+the CMA able to determine a breach and fine directly — up to **10% of global
 turnover or £300,000**, whichever is higher (CMA guidance CMA208).
 
 This is a live legal exposure, not a tidy-up task. **It gets removed at cutover, in

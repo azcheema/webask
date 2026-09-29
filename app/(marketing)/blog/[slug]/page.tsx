@@ -11,9 +11,9 @@ import { CrossLinkGrid, CtaBand } from "@/components/marketing";
 import { AuthorByline } from "@/components/marketing/author-byline";
 import { TableOfContents } from "@/components/marketing/table-of-contents";
 import { blogMdxComponents } from "@/components/mdx/blog-mdx-components";
-import { getBlogTopic } from "@/data/blog";
+import { getBlogTopic, type BlogTopicCta } from "@/data/blog";
+import { getRegulator, type Regulator } from "@/data/regulators";
 import { getTeamMemberBySlug } from "@/data/team";
-import type { CtaLink } from "@/data/types";
 import { getPost, getPostSlugs, listPublishedPostSummaries } from "@/lib/blog";
 import {
   articleNode,
@@ -32,7 +32,12 @@ export const dynamicParams = false;
 
 type RouteParams = { slug: string };
 
-const PRIMARY_CTA: CtaLink = { label: "Book a discovery call", href: "/contact" };
+// The closing band for a topic that sets none of its own (`BlogTopic.cta`).
+const DEFAULT_CTA: BlogTopicCta = {
+  title: "Ready to put this into practice?",
+  body: "Book a 30-minute discovery call — we'll map the highest-leverage moves for your business and send a written scope within three working days.",
+  cta: { label: "Book a discovery call", href: "/contact" },
+};
 
 // Shiki highlighting via rehype-pretty-code. A single dark theme with its own
 // background (`keepBackground`) reads cleanly in both light and dark mode — the
@@ -79,6 +84,11 @@ export default async function BlogPostPage({ params }: { params: Promise<RoutePa
   const allSummaries = await listPublishedPostSummaries();
   const current = allSummaries.find((entry) => entry.slug === slug);
   const relatedLinks = current ? getRelatedLinks(current, allSummaries) : [];
+  const closing = topic?.cta ?? DEFAULT_CTA;
+  // Validated against the registry by the frontmatter schema, so none is dropped.
+  const mentions = (frontmatter.mentions ?? [])
+    .map(getRegulator)
+    .filter((entry): entry is Regulator => entry !== undefined);
 
   const breadcrumbs: ReadonlyArray<BreadcrumbsItem> = [
     { label: "Home", href: "/" },
@@ -102,11 +112,12 @@ export default async function BlogPostPage({ params }: { params: Promise<RoutePa
         path,
         headline: frontmatter.title,
         datePublished: frontmatter.datePublished,
+        dateModified: frontmatter.dateModified,
         authorId: personId(frontmatter.authorSlug),
         wordCount,
-        ...(frontmatter.dateModified ? { dateModified: frontmatter.dateModified } : {}),
         ...(frontmatter.heroImage ? { image: frontmatter.heroImage } : {}),
         ...(frontmatter.keywords ? { keywords: frontmatter.keywords } : {}),
+        ...(mentions.length > 0 ? { mentions } : {}),
       }),
       breadcrumbsNode(path, [
         { name: "Home", path: "/" },
@@ -159,6 +170,7 @@ export default async function BlogPostPage({ params }: { params: Promise<RoutePa
               <AuthorByline
                 author={author}
                 datePublished={frontmatter.datePublished}
+                dateModified={frontmatter.dateModified}
                 readingTime={post.readingTime}
               />
             ) : null}
@@ -196,12 +208,7 @@ export default async function BlogPostPage({ params }: { params: Promise<RoutePa
 
       <CrossLinkGrid eyebrow="Keep reading" title="Related reading" links={relatedLinks} />
 
-      <CtaBand
-        tone="brand"
-        title="Ready to put this into practice?"
-        body="Book a 30-minute discovery call — we'll map the highest-leverage moves for your business and send a written scope within three working days."
-        cta={PRIMARY_CTA}
-      />
+      <CtaBand tone="brand" title={closing.title} body={closing.body} cta={closing.cta} />
     </>
   );
 }

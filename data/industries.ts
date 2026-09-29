@@ -5,7 +5,7 @@
  * ⚠️ THE THREE PAGES MUST NOT READ AS CLONES. Each vertical is regulated
  * differently, and that difference IS the content:
  *   - aesthetic clinics — POM advertising, solved by site ARCHITECTURE
- *   - dental practices  — pricing transparency (live CMA study), reviews, "specialist"
+ *   - dental practices  — prices and patient choice (live CMA study), reviews, "specialist"
  *   - beauty & wellness — health-CLAIM substantiation, and retention economics
  * Writing one and find-replacing the vertical name would produce near-duplicate
  * content and, worse, advice that is wrong for two of the three.
@@ -43,6 +43,22 @@
  * as a DMCC banned practice, plus Google's Maps content policy (research 08
  * § B5); the CMA figures with their own qualifiers; and every frequency or
  * track-record clause removed.
+ *
+ * Corrected 29 September 2026 against primary sources read that day: the
+ * before-and-after lines relabelled CAP's advice of 5 June 2025 (the page is
+ * "given by the CAP Executive" and "does not bind … the Advertising Standards
+ * Authority"); Google's Maps content policy quoted as it now reads ("We do not
+ * allow merchants to: Offer incentives … in exchange for posting any review"),
+ * replacing the older "should not"; the dental hero, card summary and CMA FAQ
+ * held to the scope the CMA press release of 5 March 2026 proposed on opening
+ * (how people "compare providers, and understand the information they receive
+ * from dental professionals") and its update of 17 July 2026 (no findings;
+ * final report by 4 March 2027), in place of
+ * "pricing transparency is explicitly in scope", which no CMA text read
+ * contains; "we check … during a build", "we build review flows" and "we
+ * build galleries" restated as WebAsk's build standard; and "annual" removed
+ * from the DMCC penalty line in both FAQ answers, since neither s.182(6) nor
+ * s.204(1)(a) contains it (docs/03 § A6).
  */
 
 import type { CtaLink, FaqItem, Meta } from "@/data/types";
@@ -117,7 +133,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Are before-and-after photos allowed?",
         answer:
-          "It depends on what the image shows. The ASA's guidance of 5 June 2025 says before-and-after imagery of a prescription-only product, “even in isolation without any accompanying claims, is very likely to be seen as an implied ad” for it. For any before-and-after photo, it asks marketers to hold signed and dated proof that the photos are genuine and have not been manipulated, and says they should not exaggerate the efficacy of the treatment. We build galleries that are fast and credible, and we flag which images belong where.",
+          "It depends on what the image shows. CAP's advice of 5 June 2025 says before-and-after imagery of a prescription-only product, “even in isolation without any accompanying claims, is very likely to be seen as an implied ad” for it. For any before-and-after photo, it asks marketers to hold signed and dated proof that the photos are genuine and have not been manipulated, and says they should not exaggerate the efficacy of the treatment. Our build standard is a fast, credible gallery with each image flagged for where it may appear.",
       },
       {
         question: "Do I need a licence under the proposed cosmetic procedures scheme?",
@@ -152,13 +168,13 @@ export const industries: ReadonlyArray<Industry> = [
         "Websites, SEO and recall automation for UK dental practices — built around the GDC standards, CQC registration and the CMA's live private-dentistry market study.",
     },
     hero: {
-      h1: "The CMA is examining private dental pricing. Your website is where patients meet yours.",
+      h1: "The CMA is studying private dentistry, prices included. Your website is where patients meet yours.",
       subhead:
-        "The CMA's market study into private dentistry is due to report by March 2027 — a statutory 12-month deadline — and pricing transparency is explicitly in scope. We build practice websites that answer that scrutiny rather than invite it.",
+        "The CMA's market study of private dentistry is due to report by 4 March 2027. The scope it proposed on opening included how people “compare providers, and understand the information they receive from dental professionals”. The study is sector-level; its 17 July 2026 update set out no findings. Our build standard puts your prices where patients can find them.",
       primaryCta: { label: "Book a practice strategy call", href: "/contact" },
     },
     cardSummary:
-      "New-patient websites, local SEO and recall automation for UK practices — built around GDC standards, CQC registration and the CMA pricing review.",
+      "New-patient websites, local SEO and recall automation for UK practices — built around GDC standards, CQC registration and the CMA's review of private dentistry.",
     relatedServiceSlugs: ["web-development", "seo", "crm-automation", "ai-integration"],
     faqs: [
       {
@@ -169,17 +185,17 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Why does the CMA market study matter for my website?",
         answer:
-          "Because your website is where a patient encounters your pricing, and pricing transparency is in the study's scope. The CMA opened its market study into private dentistry in March 2026 and is due to report by March 2027. On opening it cited figures from independent sources rather than findings of its own: a UK private dentistry market valued at £8.4 billion in 2023 to 2024, and an initial consultation up more than 23% between 2022 and 2024. The study is sector-level, and its update of 17 July 2026 set out no findings; the part of the question a practice controls is whether its own prices are easy to find.",
+          "Because your website is where a patient meets your prices, and the scope the study proposed on opening included how people “compare providers, and understand the information they receive from dental professionals”. The CMA opened it in March 2026, and its final report is due by 4 March 2027. On opening it cited figures from independent sources rather than findings of its own: a UK private dentistry market valued at £8.4 billion in 2023 to 2024, and an initial consultation up more than 23% between 2022 and 2024. The study is sector-level, and its update of 17 July 2026 set out no findings; the part a practice controls is whether its own prices are easy to find.",
       },
       {
         question: "Can I use the word specialist on my website?",
         answer:
-          "Only if the dentist is on a GDC specialist list for that field. The GDC says dentists “can only use the title ‘specialist’ if they are on that list”, and one who is not must not describe themselves as “specialising in” a treatment, though “special interest in”, “experienced in” or “practice limited to” are allowed. Its advertising checklist gives implantology as an area with no specialist list at all. Anyone can check: “Members of the public can find a specialist by searching the GDC register.” We check every instance of the word during a build and reword the ones that cannot be supported.",
+          "Only if the dentist is on a GDC specialist list for that field. The GDC says dentists “can only use the title ‘specialist’ if they are on that list”, and one who is not must not describe themselves as “specialising in” a treatment, though “special interest in”, “experienced in” or “practice limited to” are allowed. Its advertising checklist gives implantology as an area with no specialist list at all. Anyone can check: “Members of the public can find a specialist by searching the GDC register.” Our build standard checks every instance of the word and rewords any that cannot be supported.",
       },
       {
         question: "What are the rules on patient reviews now?",
         answer:
-          "Since April 2025 the DMCC Act 2024 has made commissioning or publishing fake reviews a banned practice, along with concealing that a review was incentivised, and the CMA can determine a breach and fine directly — up to 10% of global annual turnover or £300,000, whichever is higher. Google's Maps content policy goes further: businesses “should not” offer incentives in exchange for posting any review. We build review flows that ask every patient, at the right moment, with no incentive attached — which satisfies both.",
+          "Since April 2025 the DMCC Act 2024 has made commissioning or publishing fake reviews a banned practice, along with concealing that a review was incentivised, and the CMA can determine a breach and fine directly — up to 10% of global turnover or £300,000, whichever is higher. Google's Maps content policy goes further: it does not allow businesses to offer incentives in exchange for posting any review. Our build standard is a review flow that asks every patient, at the right moment, with no incentive attached — which satisfies both.",
       },
       {
         question: "Should we display our GDC numbers and CQC registration?",
@@ -189,7 +205,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Can we show before-and-after photographs?",
         answer:
-          "Yes, with documented consent for marketing use specifically — consent to treatment is not consent to publish. The ASA's guidance of 5 June 2025 treats before-and-after photos like testimonials: marketers should hold signed and dated proof that they are genuine and have not been manipulated, the photos should not exaggerate the efficacy of the treatment, and there should be evidence for the impression they create. Cosmetic dentistry results are legitimate to show on those terms.",
+          "Yes, with documented consent for marketing use specifically — consent to treatment is not consent to publish. CAP's advice of 5 June 2025 says CAP and the ASA treat before-and-after photos like testimonials: marketers should hold signed and dated proof that they are genuine and have not been manipulated, the photos should not exaggerate the efficacy of the treatment, and there should be evidence for the impression they create. Cosmetic dentistry results are legitimate to show on those terms.",
       },
       {
         question: "Will the site handle recall and reminders?",
@@ -256,12 +272,12 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "What can we actually claim about our treatments?",
         answer:
-          "Narrower than it looks, and which rule applies turns on what the thing is rather than on what you call your business. Any objective claim needs evidence behind it. For a food or supplement, only claims authorised on the GB nutrition and health claims register — in force since January 2021 — or claims that mean the same thing to a consumer, may be used; that is CAP Code section 15. Anything injected or infused is different again and stricter: a medicinal claim is not permitted unless that specific product is licensed as a medicine for that purpose, and the ASA has upheld complaints against IV clinics on exactly that point. Describing what a treatment is and how it feels is safe ground; asserting what it cures, prevents or boosts usually is not. We write service pages that sell the experience without making claims you would struggle to defend.",
+          "Narrower than it looks, and which rule applies turns on what the thing is rather than on what you call your business. Any objective claim needs evidence behind it. For a food or supplement, only claims authorised on the GB nutrition and health claims register — in force since January 2021 — or claims that mean the same thing to a consumer, may be used; that is CAP Code section 15. Anything injected or infused is different again and stricter: a medicinal claim is not permitted unless that specific product is licensed as a medicine for that purpose, and the ASA has upheld complaints against IV clinics on exactly that point. Describing what a treatment is and how it feels is safe ground; asserting what it cures, prevents or boosts usually is not. Our build standard is service pages that sell the experience without making claims you would struggle to defend.",
       },
       {
         question: "Are the review rules different for us?",
         answer:
-          "The DMCC Act 2024 applies to you exactly as it does to any other business: since April 2025 commissioning or publishing fake reviews has been a banned practice, and the CMA can determine a breach and fine directly — up to 10% of global annual turnover or £300,000, whichever is higher. On incentives, what the Act prohibits is concealing one rather than offering it, but that is the Act alone: Google's Maps content policy says businesses “should not” offer incentives in exchange for posting any review. We build a review flow that asks every client at the right moment with nothing attached, which sidesteps the question and samples everyone rather than only the people a discount motivated.",
+          "The DMCC Act 2024 applies to you exactly as it does to any other business: since April 2025 commissioning or publishing fake reviews has been a banned practice, and the CMA can determine a breach and fine directly — up to 10% of global turnover or £300,000, whichever is higher. On incentives, what the Act prohibits is concealing one rather than offering it, but that is the Act alone: Google's Maps content policy does not allow businesses to offer incentives in exchange for posting any review. Our build standard is a review flow that asks every client at the right moment with nothing attached, which sidesteps the question and samples everyone rather than only the people a discount motivated.",
       },
       {
         question: "Are these services only for beauty and wellness clinics?",

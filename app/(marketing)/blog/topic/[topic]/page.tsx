@@ -6,8 +6,7 @@ import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { CtaBand, PageHero } from "@/components/marketing";
 import { BlogCard } from "@/components/marketing/blog-card";
-import { getBlogTopic } from "@/data/blog";
-import type { CtaLink } from "@/data/types";
+import { getBlogTopic, type BlogTopic, type BlogTopicCta } from "@/data/blog";
 import { listPostSummaries, listPublishedPostSummariesByTopic } from "@/lib/blog";
 import { breadcrumbsNode, buildGraph, collectionPageNode, renderJsonLd } from "@/lib/jsonld";
 import { buildMetadata } from "@/lib/seo";
@@ -17,7 +16,17 @@ export const dynamicParams = false;
 
 type RouteParams = { topic: string };
 
-const PRIMARY_CTA: CtaLink = { label: "Book a discovery call", href: "/contact" };
+// The closing band for a topic that sets none of its own (`BlogTopic.cta`).
+const DEFAULT_CTA: BlogTopicCta = {
+  title: "Ready to turn reading into results?",
+  body: "Book a 30-minute discovery call and we'll map the highest-leverage moves for your business.",
+  cta: { label: "Book a discovery call", href: "/contact" },
+};
+
+/** The archive's H1 and `<title>`: the topic's own, or "`{label}` articles". */
+function archiveTitle(topic: BlogTopic): string {
+  return topic.title ?? `${topic.label} articles`;
+}
 
 export async function generateStaticParams(): Promise<RouteParams[]> {
   // Build an archive for every topic that has any post (drafts included) so a
@@ -43,7 +52,7 @@ export async function generateMetadata({
   const published = await listPublishedPostSummariesByTopic(slug);
 
   return buildMetadata({
-    title: `${topic.label} articles`,
+    title: archiveTitle(topic),
     description: topic.description,
     path: `/blog/topic/${slug}`,
     eyebrow: "Blog",
@@ -58,7 +67,8 @@ export default async function BlogTopicPage({ params }: { params: Promise<RouteP
 
   const posts = await listPublishedPostSummariesByTopic(slug);
   const path = `/blog/topic/${slug}`;
-  const title = `${topic.label} articles`;
+  const title = archiveTitle(topic);
+  const closing = topic.cta ?? DEFAULT_CTA;
 
   const breadcrumbs: ReadonlyArray<BreadcrumbsItem> = [
     { label: "Home", href: "/" },
@@ -80,7 +90,11 @@ export default async function BlogTopicPage({ params }: { params: Promise<RouteP
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd }} />
-      <PageHero breadcrumbs={breadcrumbs} title={title} subhead={topic.description} />
+      <PageHero
+        breadcrumbs={breadcrumbs}
+        title={title}
+        subhead={topic.intro ?? topic.description}
+      />
 
       <Section padding="lg">
         <Container size="lg">
@@ -94,12 +108,7 @@ export default async function BlogTopicPage({ params }: { params: Promise<RouteP
         </Container>
       </Section>
 
-      <CtaBand
-        tone="brand"
-        title="Ready to turn reading into results?"
-        body="Book a 30-minute discovery call and we'll map the highest-leverage moves for your business."
-        cta={PRIMARY_CTA}
-      />
+      <CtaBand tone="brand" title={closing.title} body={closing.body} cta={closing.cta} />
     </>
   );
 }

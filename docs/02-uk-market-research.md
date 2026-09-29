@@ -166,9 +166,11 @@ _(Corrected 28 September 2026 against primary sources; [`03-uk-compliance.md`](0
   registration is a trust asset. _(The CQC does not rate primary dental providers, so a
   primary care dental practice has no rating to display; "and inspection results" removed.)_
 - **ASA** — advertising claims must be legal, decent, honest, truthful.
-- **CMA** — consumer protection and pricing transparency. **The CMA opened a market study
-  into private dentistry in March 2026** (the market "valued at £8.4 billion in 2023 to 2024",
-  per LaingBuisson as cited by the CMA).
+- **CMA** — consumer protection and, since April 2025, fake reviews; its market study covers
+  prices and choice. **The CMA opened a market study into private dentistry in March 2026** (the
+  market "valued at £8.4 billion in 2023 to 2024", per LaingBuisson as cited by the CMA).
+  _(Corrected 29 September 2026: this began "consumer protection and pricing transparency", words
+  no CMA text read uses; doc 03 § B2.)_
 
 Plus UK GDPR, PECR, and the unfair-trading rules of the DMCC Act 2024 Part 4 Chapter 1 (the
 Consumer Protection from Unfair Trading Regulations were revoked from 6 April 2025, s.251(1)).

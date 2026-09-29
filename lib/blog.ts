@@ -2,6 +2,9 @@ import readingTime from "reading-time";
 import { z } from "zod";
 
 import { blogTopicSlugs } from "@/data/blog";
+import { INDUSTRY_SLUGS } from "@/data/industries";
+import { REGULATOR_SLUGS } from "@/data/regulators";
+import { team } from "@/data/team";
 import { getMdx, listMdx, type LoadedMdx } from "@/lib/mdx";
 
 /*
@@ -20,35 +23,94 @@ const BLOG_COLLECTION = "blog";
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
+/** Every author a byline can resolve — `data/team.ts` is the only source. */
+const AUTHOR_SLUGS: ReadonlyArray<string> = team.map((member) => member.slug);
+
 /**
  * Frontmatter contract for `content/blog/<slug>.mdx`. Bad frontmatter fails the
  * build, not production (validated in `lib/mdx`).
  */
-export const blogFrontmatterSchema = z.object({
-  title: z.string().min(1),
-  description: z.string().min(1),
-  /** ISO date (YYYY-MM-DD) the post was first published. */
-  datePublished: z.string().regex(ISO_DATE, "Expected YYYY-MM-DD"),
-  /** ISO date of the last meaningful edit. Falls back to `datePublished`. */
-  dateModified: z.string().regex(ISO_DATE, "Expected YYYY-MM-DD").optional(),
-  /** Author slug — must resolve in `data/team.ts`. */
-  authorSlug: z.string().min(1),
-  /** Cluster slug — must be one of `data/blog.ts` `blogTopics`. */
-  topic: z.string().refine((value) => blogTopicSlugs.includes(value), {
-    message: `Unknown topic — must be one of: ${blogTopicSlugs.join(", ")}`,
-  }),
-  /** Optional hero/OG image path relative to /public. Omit to auto-generate an OG card. */
-  heroImage: z.string().optional(),
-  /** Target keywords — surfaced in `Article` JSON-LD. */
-  keywords: z.array(z.string()).optional(),
-  /**
-   * Review gate. `true` ⇒ the post renders `noindex` and stays out of the
-   * sitemap (mirrors the programmatic `indexable` staging norm) but still builds
-   * and lists, so it can be previewed at its real URL before publishing. Flip to
-   * `false` after human review to make it indexable.
-   */
-  draft: z.boolean().default(false),
-});
+export const blogFrontmatterSchema = z
+  .object({
+    title: z.string().min(1),
+    description: z.string().min(1),
+    /** ISO date (YYYY-MM-DD) the post was first published. */
+    datePublished: z.string().regex(ISO_DATE, "Expected YYYY-MM-DD"),
+    /**
+     * ISO date of the last meaningful edit — required, and never earlier than
+     * `datePublished` (checked below). Equal to `datePublished` on first
+     * publish; it drives `Article.dateModified`, the byline's "Updated" line and
+     * the sitemap `lastmod`, so it moves on every substantive edit.
+     */
+    dateModified: z
+      .string({
+        error: (issue) =>
+          issue.input === undefined
+            ? "dateModified is required: set it equal to datePublished on first publish"
+            : 'dateModified must be a quoted "YYYY-MM-DD" string',
+      })
+      .regex(ISO_DATE, "Expected YYYY-MM-DD"),
+    /**
+     * Author slug — must resolve in `data/team.ts`. A typo would otherwise drop
+     * the byline and the `Person` node and leave `Article.author` dangling.
+     */
+    authorSlug: z.string().refine((value) => AUTHOR_SLUGS.includes(value), {
+      message: `Unknown author — must be one of: ${AUTHOR_SLUGS.join(", ")}`,
+    }),
+    /** Cluster slug — must be one of `data/blog.ts` `blogTopics`. */
+    topic: z.string().refine((value) => blogTopicSlugs.includes(value), {
+      message: `Unknown topic — must be one of: ${blogTopicSlugs.join(", ")}`,
+    }),
+    /**
+     * The `/industries/<slug>` page this post serves, if any. Adds that page's
+     * card to "Related reading" — the Compliance → Industry link docs/08 § 1
+     * requires, since compliance posts have no anchor service.
+     */
+    industrySlug: z
+      .string()
+      .refine((value) => INDUSTRY_SLUGS.includes(value), {
+        message: `Unknown industry — must be one of: ${INDUSTRY_SLUGS.join(", ")}`,
+      })
+      .optional(),
+    /**
+     * Regulators, codes and Acts the post discusses, from the closed registry in
+     * `data/regulators.ts`. Emitted as inline `Article.mentions` nodes
+     * (docs/08 § 5).
+     */
+    mentions: z
+      .array(
+        z.string().refine((value) => REGULATOR_SLUGS.includes(value), {
+          message: `Unknown regulator — must be one of: ${REGULATOR_SLUGS.join(", ")}`,
+        }),
+      )
+      .refine((values) => new Set(values).size === values.length, {
+        message: "mentions lists a regulator twice",
+      })
+      .optional(),
+    /** Optional hero/OG image path relative to /public. Omit to auto-generate an OG card. */
+    heroImage: z.string().optional(),
+    /** Target keywords — surfaced in `Article` JSON-LD. */
+    keywords: z.array(z.string()).optional(),
+    /**
+     * Review gate. `true` ⇒ the post renders `noindex` and stays out of the
+     * sitemap (mirrors the programmatic `indexable` staging norm) but still builds
+     * and lists, so it can be previewed at its real URL before publishing. Flip to
+     * `false` after human review to make it indexable.
+     */
+    draft: z.boolean().default(false),
+  })
+  // ISO dates compare correctly as strings. zod 4 still runs this refine when a
+  // date has failed its regex, so skip it then: the regex error is the real one.
+  .refine(
+    (fm) =>
+      !ISO_DATE.test(fm.datePublished) ||
+      !ISO_DATE.test(fm.dateModified) ||
+      fm.dateModified >= fm.datePublished,
+    {
+      message: "dateModified must not be earlier than datePublished",
+      path: ["dateModified"],
+    },
+  );
 
 export type BlogFrontmatter = z.infer<typeof blogFrontmatterSchema>;
 
