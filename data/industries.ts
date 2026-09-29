@@ -59,6 +59,17 @@
  * build galleries" restated as WebAsk's build standard; and "annual" removed
  * from the DMCC penalty line in both FAQ answers, since neither s.182(6) nor
  * s.204(1)(a) contains it (docs/03 § A6).
+ *
+ * Also 29 September 2026, on the founder's decisions of that day: the FAQ
+ * credited to CAP ("CAP's FAQ", not "the ASA/CAP FAQ") in the two aesthetic
+ * price-list answers, since the FAQ is CAP News and CAP's guidance, not the
+ * ASA's; and the aesthetic before-and-after answer's closing line, "Our
+ * build standard is a fast, credible gallery with each image flagged for
+ * where it may appear", replaced by WebAsk's build standard (docs/03 § B1,
+ * Before-and-after images): no before-and-after gallery for a clinic that
+ * offers a prescription-only medicine, labelled our choice, not CAP's rule.
+ * The "Are you lawyers?" answer's "we use CAP's Copy Advice service" is
+ * restated as WebAsk's standard, for advertising copy only (F4, docs/03 § B4).
  */
 
 import type { CtaLink, FaqItem, Meta } from "@/data/types";
@@ -123,17 +134,17 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Where can a clinic website break the advertising rules?",
         answer:
-          "Anywhere it advertises a prescription-only medicine to the public, which UK rules do not allow: on the homepage, on a treatment page, in an FAQ or in a before-and-after caption. CAP's guidance counts indirect references to the medicine, not only its name, so a softer phrase does not by itself fix it. What the rules do permit is advertising a consultation. A price list is a narrow case: the ASA/CAP FAQ of 23 January 2020 says one “might be acceptable” if clients “can only get to the price list after going through a page promoting a consultation”. That is an information-architecture change as well as a copy edit.",
+          "Anywhere it advertises a prescription-only medicine to the public, which UK rules do not allow: on the homepage, on a treatment page, in an FAQ or in a before-and-after caption. CAP's guidance counts indirect references to the medicine, not only its name, so a softer phrase does not by itself fix it. What the rules do permit is advertising a consultation. A price list is a narrow case: CAP's FAQ of 23 January 2020 says one “might be acceptable” if clients “can only get to the price list after going through a page promoting a consultation”. That is an information-architecture change as well as a copy edit.",
       },
       {
         question: "Can I still list prices for injectable treatments?",
         answer:
-          "Conditionally. For a prescription-only treatment, the ASA/CAP FAQ of 23 January 2020 says a price on the homepage, or a direct link to “Prices” that mentions the medicine, “is unlikely to be acceptable”, while a price list “might be acceptable” if clients “can only get to the price list after going through a page promoting a consultation”. CAP's Bitesize guidance puts the page with treatment information “ideally two clicks from the homepage”, and says the reference to the medicine must be “purely informational with no promotional content”. We build that consultation-first route without burying the page so deep that nobody finds it.",
+          "Conditionally. For a prescription-only treatment, CAP's FAQ of 23 January 2020 says a price on the homepage, or a direct link to “Prices” that mentions the medicine, “is unlikely to be acceptable”, while a price list “might be acceptable” if clients “can only get to the price list after going through a page promoting a consultation”. CAP's Bitesize guidance puts the page with treatment information “ideally two clicks from the homepage”, and says the reference to the medicine must be “purely informational with no promotional content”. We build that consultation-first route without burying the page so deep that nobody finds it.",
       },
       {
         question: "Are before-and-after photos allowed?",
         answer:
-          "It depends on what the image shows. CAP's advice of 5 June 2025 says before-and-after imagery of a prescription-only product, “even in isolation without any accompanying claims, is very likely to be seen as an implied ad” for it. For any before-and-after photo, it asks marketers to hold signed and dated proof that the photos are genuine and have not been manipulated, and says they should not exaggerate the efficacy of the treatment. Our build standard is a fast, credible gallery with each image flagged for where it may appear.",
+          "It depends on what the image shows. CAP's advice of 5 June 2025 says before-and-after imagery of a prescription-only product, “even in isolation without any accompanying claims, is very likely to be seen as an implied ad” for it. For any before-and-after photo, it asks marketers to hold signed and dated proof that the photos are genuine and have not been manipulated, and says they should not exaggerate the efficacy of the treatment. For a clinic that offers a prescription-only medicine, our build standard leaves before-and-after galleries off the site. That is our choice, not CAP's rule.",
       },
       {
         question: "Do I need a licence under the proposed cosmetic procedures scheme?",
@@ -143,7 +154,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Are you lawyers?",
         answer:
-          "No, and we will not pretend otherwise. We are a web and automation studio that has read the rules properly and builds sites that respect them — which is not professional advice and is no substitute for it. Where copy sits genuinely close to the line we use CAP's Copy Advice service, which is free and non-binding, rather than guessing on your behalf. Anything with real legal consequence should go past a solicitor.",
+          "No, and we will not pretend otherwise. We are a web and automation studio that has read the rules properly and builds sites that respect them — which is not professional advice and is no substitute for it. Where advertising copy sits genuinely close to the line, our standard is to put it to CAP's Copy Advice service, which is free and non-binding, rather than guessing on your behalf. Anything with real legal consequence should go past a solicitor.",
       },
       {
         question: "Will the site be fast on a phone?",
