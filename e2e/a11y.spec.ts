@@ -53,6 +53,7 @@ const ROUTES = [
   // heading order, link names) live in each MDX body, so each post is listed.
   "/blog/topic/clinic-compliance",
   "/blog/can-clinics-advertise-botox-uk",
+  "/blog/botox-price-list-clinic-website-rules",
   "/pricing",
   "/process",
   "/about",

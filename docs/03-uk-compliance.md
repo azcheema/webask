@@ -496,7 +496,8 @@ your website, it depends"), so neither exclusion should be summarised as making 
 list permissible.
 
 **WebAsk's reading and design choices — labelled as ours, never as ASA wording:** the POM stays out
-of the primary navigation and out of every meta title and description. The nearest primary line on
+of the primary navigation and out of every meta title and description (six more readings, added 29
+September 2026, follow this paragraph). The nearest primary line on
 navigation is the MHRA's, about the home page: "Links and navigation aids may be given for
 particular conditions and diseases but not to specific POMs" (Blue Guide Appendix 6, November 2020).
 The sentence before it in the same paragraph (added 29 September 2026, from the Appendix 6 extract
@@ -520,6 +521,67 @@ doc-03-only edit (line numbers as at 29 September 2026): **(a) F3's wording, pen
 founder:** doc 08 lines 12, 30, 44-45, 237, 268, 271; doc 02 line 488;
 `docs/strategy/content-guidelines.md` line 91. **(b) The FAQ as CAP News, not pending:** doc 08
 lines 54, 57-58, 61, 345, 352, 353, 358, 392, 403; doc 02 lines 131, 141, 145, 483, 487.)_
+
+**WebAsk's readings from the price-list post (A2) — labelled as ours, never as CAP's, the ASA's or
+the MHRA's** (added 29 September 2026, from pages read 28-29 September 2026). They extend the
+navigation and meta readings above. No page read states any of them; each names its nearest primary
+lines, quoted in full in § B1-P above or under "Further lines the price-list post (A2) quotes" below.
+Copy must label each one "our reading" and state it conditionally ("we would keep"), because there
+is no build to describe. As at 29 September 2026 the A2 draft does not do this everywhere: its Ads
+and Booking passages state the reading plainly ("Our reading: do not point a paid ad …"; "Our
+reading: the booking button books the consultation …"), and route-table rows 5 and 9 carry the "Our
+reading" label without a conditional. Queued for the post.
+
+- **Menus.** No menu item names the POM (the navigation reading above), and no "Prices" item goes
+  straight to a price list that names it: we read such a link as the kind the FAQ calls "unlikely
+  to be acceptable" ("include a direct link to “Prices” which mentions Botox"). No page read
+  mentions menus.
+- **Where the list sits.** The price list sits no nearer the homepage than the treatment-options
+  page. No page read sets a click count for the price list: Bitesize's "ideally two clicks from the
+  homepage" is said of the treatment-options page, and its price-list sentence says "only after the
+  user has clicked through the consultation pages". The MHRA says a factual price list "may be
+  provided on pages other than the home page". Never "at least two clicks".
+- **Footers.** A site-wide footer is small print on every page, so the POM, and any direct link to
+  the price list, stay out of it. Bitesize's "No mention in hover text, small print or testimonials"
+  is not limited to the homepage. CAP's advice that small print "should not refer to POMs or
+  directly link consumers to a page where they are referenced" is about "the bottom of a homepage",
+  and reaches the footer because the same footer shows on the homepage. The MHRA's line on the same
+  point is also about the home page: "Hover text and any small print at the bottom of the home page
+  should also not refer to specific POMs" (Blue Guide Appendix 6, November 2020; added 29 September
+  2026, from pages read 28-29 September 2026).
+- **Paid ads and sponsored results.** No paid ad or sponsored search result points at the price list
+  or at a page that names the POM. Nearest lines: CAP's advice, "No reference to a POM should be
+  made in a sponsored ad" (29 October 2025); CAP's weight-control advice, which keeps "a proactively
+  linked landing page" out of its "small exemption" (29 May 2026); and Juniper, where the ASA
+  "understood that landing pages from paid-for ads on social media were akin to a homepage, for the
+  purposes of the MHRA’s Blue Guide" (8 April 2026). The last two are about weight-loss medicines.
+  Also nearest (added 29 September 2026, from pages read 28-29 September 2026): the MHRA's, under
+  "Sponsored links": "The text may promote the service provided but should not mention specific
+  prescription only medicines." (Blue Guide Appendix 6, November 2020); and the Enforcement Notice on
+  POMs used for weight management (23 September 2025; "published jointly with" the MHRA and the
+  GPhC; weight-loss only), under its heading "Do not direct consumers from an ad seemingly for
+  non-POM products or services directly to another ad promoting a POM": "For example, paid-for ads
+  on social media or sponsored searches should not contain links to a landing page that promotes a
+  named POM." Both are quoted under "Further lines" below.
+- **Booking buttons.** The booking button books the consultation, and no row of the price list books
+  the POM. No guidance page read on botulinum toxin deals with booking buttons. Nearest lines: the
+  MHRA's icons lines (Appendix 6) and Lloyds Pharmacy (4 March 2015, other medicines), where a page
+  "presented the POMs as a choice for the consumer to select prior to GP consultation". Also nearest
+  (added 29 September 2026, from pages read 28-29 September 2026; all three quoted under "Further
+  lines" below): two ASA rulings on this medicine that touch booking — Dr Bunny Aesthetics (24 April
+  2024), a Fresha booking-platform listing that also named the toxin, where the ASA "understood that
+  consumers could book and pay for the treatment from the ad directly, without receiving a
+  consultation prior to undergoing the treatment", and Glowery Ltd t/a Glowday (12 April 2023), "an
+  aesthetic treatment comparison site", not a clinic — and CAP News, "A basic guide to
+  prescription-only medicines" (7 July 2016; about POMs in general): "POMs should not be presented
+  as a choice for the consumer to select prior to a consultation, rather than the potential outcome
+  of a consultation." A2 leaves both rulings out: A1 covers Dr Bunny, and Glowery was a comparison
+  site.
+- **Gates.** A gate carries consultation content: a page with nothing about the consultation on it
+  may not be what Bitesize means by "the consultation pages". From Juniper (8 April 2026), where the
+  ASA called a page that "simply asked consumers to select" "a filtering page", and the page it led
+  to "a landing page akin to a homepage". That ruling was about a paid social media ad and
+  weight-loss medicines, and does not count clicks.
 
 **Fillers are outside the POM rule** (added 28 September 2026). The FAQ: "This rule does not
 apply to other injectable cosmetic treatments that are not ‘prescription-only medicines’, such
@@ -551,21 +613,29 @@ September 2026, so it is cited as "AdviceOnline", not as the ASA's or CAP's; the
 pages whose note was captured, 29 October 2025 and 17 February 2022, both say their advice "is given
 by the CAP Executive".)_
 
-| Ruling                                              | Date                               | Cited for                                                                                                                                                            |
-| --------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Skinboost                                           | 22 February 2012                   | "Line Relaxing" in a price list, "in conjunction with other references to Botox and its effects", read as a reference to Botox                                       |
-| Anesis Spa                                          | 11 July 2012                       | Claims that "went beyond balanced and factual references" (the AdviceOnline page prints "rule 12.2", a typo for 12.12 — do not copy it)                              |
-| HB Health of Knightsbridge                          | 15 January 2014                    | Botox information that "could be navigated to directly, without consumers also viewing information about the consultation process"                                   |
-| Venus Beauty Lounge                                 | 5 August 2015                      | A POM "cannot be advertised to the public (rule 12.12)"                                                                                                              |
-| Beauty Boutique Aesthetics; Faces by AKJ Aesthetics | 25 September 2019                  | "any reference to Botox on their social media pages, including hashtags, is likely to be seen as an implied ad for a POM"                                            |
-| LIFT Aesthetics                                     | 17 May 2023                        | "doing anti-wrinkle" and "anti-wrinkle injections" as indirect references, in influencer ads that also named "Allergan" (rules 12.12 and 12.18 among those breached) |
-| Menar Jimmy Georgiou                                | 21 June 2023                       | A POM "cannot be advertised to the public (rule 12.12)"                                                                                                              |
-| Dr Bunny Aesthetics                                 | 24 April 2024                      | "anti-wrinkle" treatment as an indirect reference, on a Fresha listing that also named the toxin and could be booked without a consultation                          |
-| Valterous Ltd t/a Therapie Clinic                   | 18 December 2024                   | "COSMETIC INJECTIONS 3 AREAS FROM £179", set apart from fillers and applying only to anti-wrinkle treatments, as an indirect ad for a POM                            |
-| The Dental Suite; EF Medispa                        | 13 December 2017; 20 February 2013 | Before-and-after photos: signed and dated proof they are genuine (AdviceOnline, 5 June 2025)                                                                         |
+| Ruling                                              | Date                               | Cited for                                                                                                                                                                                                                 |
+| --------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Skinboost                                           | 22 February 2012                   | "Line Relaxing" in a price list, "in conjunction with other references to Botox and its effects", read as a reference to Botox                                                                                            |
+| Anesis Spa                                          | 11 July 2012                       | Claims that "went beyond balanced and factual references" (the AdviceOnline page prints "rule 12.2", a typo for 12.12 — do not copy it)                                                                                   |
+| HB Health of Knightsbridge                          | 15 January 2014                    | Botox information that "could be navigated to directly, without consumers also viewing information about the consultation process" (CAP's AdviceOnline summary of 29 October 2025; the ruling itself prints "consumer’s") |
+| Dermaskin Clinics                                   | 15 January 2014                    | The ruling's own navigated-to-directly sentence (after "Furthermore,"), printed with "consumers"; HB Health's version prints "consumer’s"                                                                                 |
+| Lloyds Pharmacy Ltd                                 | 4 March 2015                       | A page that "presented the POMs as a choice for the consumer to select prior to GP consultation" (other medicines)                                                                                                        |
+| Venus Beauty Lounge                                 | 5 August 2015                      | A POM "cannot be advertised to the public (rule 12.12)"                                                                                                                                                                   |
+| Beauty Boutique Aesthetics; Faces by AKJ Aesthetics | 25 September 2019                  | "any reference to Botox on their social media pages, including hashtags, is likely to be seen as an implied ad for a POM"                                                                                                 |
+| LIFT Aesthetics                                     | 17 May 2023                        | "doing anti-wrinkle" and "anti-wrinkle injections" as indirect references, in influencer ads that also named "Allergan" (rules 12.12 and 12.18 among those breached)                                                      |
+| Menar Jimmy Georgiou                                | 21 June 2023                       | A POM "cannot be advertised to the public (rule 12.12)"                                                                                                                                                                   |
+| Dr Bunny Aesthetics                                 | 24 April 2024                      | "anti-wrinkle" treatment as an indirect reference, on a Fresha listing that also named the toxin and could be booked without a consultation                                                                               |
+| Valterous Ltd t/a Therapie Clinic                   | 18 December 2024                   | "COSMETIC INJECTIONS 3 AREAS FROM £179", set apart from fillers and applying only to anti-wrinkle treatments, as an indirect ad for a POM                                                                                 |
+| Juniper Technologies UK Ltd t/a Juniper             | 8 April 2026                       | "a filtering page"; the ASA "understood that landing pages from paid-for ads on social media were akin to a homepage, for the purposes of the MHRA’s Blue Guide" (weight-loss POMs)                                       |
+| The Dental Suite; EF Medispa                        | 13 December 2017; 20 February 2013 | Before-and-after photos: signed and dated proof they are genuine (AdviceOnline, 5 June 2025)                                                                                                                              |
 
-Not re-read on 28 September 2026, so no point is recorded for them: **Dermaskin Clinics (15
+Not re-read on 28 September 2026, so no point was recorded for them then: **Dermaskin Clinics (15
 January 2014)** and **Glowery Ltd (12 April 2023)**, listed in doc 08 § 4 since 28 July 2026.
+_(Added 29 September 2026, from pages read 28-29 September 2026: Dermaskin Clinics, Lloyds Pharmacy
+and Juniper were read from the raw rulings on 29 September 2026 and have rows above; their lines
+are under "Further lines the price-list post (A2) quotes" below. No point is recorded for
+Glowery: it was read 29 September 2026 (a2/raw/glowery.txt) and is not used by A2; its booking
+line is under "Further lines" below.)_
 The ASA's rulings search ranks by relevance, so "no ruling after 18 December 2024" is not
 established. "A fine line" (CAP News, 17 October 2019) also prints "(Rule 12.2)" for 12.12.
 
@@ -602,6 +672,190 @@ established. "A fine line" (CAP News, 17 October 2019) also prints "(Rule 12.2)"
   Notice's does not: "Be aware the ASA considers that a reference to “anti-wrinkle injections”
   alongside a price that relates to a POM, will be seen as an ad for that POM." Quote the page you
   cite.
+
+**Further lines the price-list post (A2) quotes** (added 29 September 2026, from pages read 28-29
+September 2026). Each is verbatim from the raw page copies. The FAQ, Bitesize, CAP's advice of 29
+October 2025, Skinboost, Dr Bunny Aesthetics and the Code's Scope were read 28 September 2026 (the
+first three were re-fetched on 29 September 2026 with the same text); the rest were read 29
+September 2026. The
+rulings are the ASA's; the FAQ, Bitesize and AdviceOnline are CAP's; Appendix 6 is the MHRA's. Keep
+the qualifiers, and keep each line with its own page.
+
+- **HB Health of Knightsbridge (ASA ruling, 15 January 2014, "Upheld"),**
+  https://www.asa.org.uk/rulings/HB-Health-of-Knightsbridge-A13-237714.html. The website was
+  "promoting a health and beauty clinic"; a treatment list on its home page "included the text"
+  naming the POM, "which linked to another page which explained how Botox was commonly used as a
+  beauty treatment". Then: "We noted HB Health of Knightsbridge had made changes to the website to
+  remove references to “botox”. However, we considered that the removal of the word itself from the
+  home page alone did not itself resolve the issue because visitors who clicked on the replacement
+  text hyperlink (wrinkle softening treatment) were then connected directly to content about
+  Botox." Quote the replacement label only as the ASA's record, never as wording to use. On the
+  medicines-law exclusion: "However, we further understood that certain types of content that could
+  be characterised as reference material or announcements of factual and informative nature were
+  not covered under the scope of HMR’s definition of advertising and, as a result, could not be
+  considered advertisements for the purposes of rule 12.12. We therefore assessed the claims on the
+  website to establish whether they were of that nature and would be considered as advertising for
+  the purposes of rule 12.12." Of some claims it considered: "We considered that these types of
+  claim were factual, as opposed to promotional, and that they sufficiently reflected the SPC. We
+  therefore considered that they were likely to be acceptable because they did not constitute the
+  advertising of a POM under 12.12." Keep the SPC condition wherever this is used. But: "Because
+  some of the direct and implied references to Botox within the website constituted a promotion of
+  a POM to the general public, we therefore concluded that the Code had been breached." The route
+  line: "Because Botox references needed to be presented within the context of a consultation, we
+  considered that website ads should not provide separate information on Botox which could be
+  navigated to directly, without consumer’s also viewing information about the consultation
+  process." (the ruling's apostrophe; do not copy it). It is a 2014 ruling under "CAP Code (Edition
+  12)": say 2014.
+- **Dermaskin Clinics (ASA ruling, 15 January 2014, "Upheld"),**
+  https://www.asa.org.uk/rulings/Dermaskin-Clinics-A13-237709.html: "Furthermore, because Botox
+  references needed to be presented within the context of a consultation, we considered that
+  website ads should not provide separate information on Botox which could be navigated to
+  directly, without consumers also viewing information about the consultation process." The post
+  quotes this wording and credits both rulings. Do not quote Dermaskin's ad description: it lists
+  five brand names.
+- **Skinboost (ASA ruling, 22 February 2012), the price-list condition** — the first sentence of the
+  paragraph whose "Line Relaxing" sentence is quoted above: "We considered that a factual list of
+  prices was acceptable under the Code, provided the list did not include product claims or
+  actively encourage viewers to choose a product based on the price." It says "actively encourage";
+  CAP's advice of 29 October 2025 says "encourage". Quote each page's own word.
+- **Lloyds Pharmacy Ltd (ASA ruling, 4 March 2015, "Upheld in part"),**
+  https://www.asa.org.uk/rulings/lloyds-pharmacy-ltd-a14-271213.html. Issue 2, an online doctor
+  service for other medicines, not botulinum toxin; name none of them: "We considered that the web
+  page therefore presented the POMs as a choice for the consumer to select prior to GP consultation,
+  as opposed to the potential outcome of that consultation and subsequently advertised POMs to the
+  public."
+- **Juniper Technologies UK Ltd t/a Juniper (ASA ruling, 8 April 2026; issue 2 "Upheld"),**
+  https://www.asa.org.uk/rulings/juniper-technologies-uk-ltd-a25-1319597-juniper-technologies-uk-ltd.html.
+  "A paid-for Facebook ad" for "an online pharmacy"; weight-loss medicines, not botulinum toxin;
+  name none of them. "We understood that landing pages from paid-for ads on social media were akin
+  to a homepage, for the purposes of the MHRA’s Blue Guide." And: "We considered that a page which
+  simply asked consumers to select whether they were new to weight-loss medication, or already used
+  it, was not a landing page. Instead, we considered it was a filtering page that directed consumers
+  to a landing page akin to a homepage, based on their current usage of weight-loss medication." The
+  ASA "understood that Chapter seven of the MHRA’s The Blue Guide stated" that a home page should
+  name no POMs, and: "It said that links and navigation aids may be given for particular conditions
+  and diseases, but not be specific to POMs." Chapter seven was not read: write that the ASA cited
+  the same point, never the same line, as Appendix 6. Keep "understood" and "for the purposes of the
+  MHRA’s Blue Guide".
+- **CAP's advice on weight control** (AdviceOnline, _Weight control: Prescription-only medicines_,
+  29 May 2026; "given by the CAP Executive" and does not bind the ASA),
+  https://www.asa.org.uk/advice-online/weight-control-prescription-only-medicines.html: "There is a
+  small exemption to the inner pages of a clinic or pharmacy’s own website (but not the homepage or
+  a proactively linked landing page)". It is about weight-loss medicines; "small exemption" is
+  CAP's phrase.
+- **Enforcement Notice, _Advertising of prescription-only medicines used for weight management_ (23
+  September 2025; read 29 September 2026; added 29 September 2026, from pages read 28-29 September
+  2026),**
+  https://www.asa.org.uk/resource/enforcement-notice-advertising-of-prescription-only-medicines-used-for-weight-management.html.
+  The landing page: "This Enforcement Notice is published jointly with the Medicines & Healthcare
+  products Regulatory Agency (MHRA) and the General Pharmaceutical Council (GPhC)." In the notice
+  itself, under the heading "Do not direct consumers from an ad seemingly for non-POM products or
+  services directly to another ad promoting a POM": "Ads that refer to general weight-loss products
+  or services should not direct consumers to other ads promoting POMs. For example, paid-for ads on
+  social media or sponsored searches should not contain links to a landing page that promotes a
+  named POM." It is about weight-loss medicines: its Scope section says it "applies to ads for POMs
+  used for weight management". The example sits under the "Do not direct consumers …" heading, in the
+  notice’s Guidance section, not under Scope. The notice's "What happens
+  next?" section says "In particular, remove the following from your ads:", and item 4 is "Links to
+  landing pages that promote POMs", with no "seemingly for non-POM" qualifier. A2 does not quote it.
+- **Dr Bunny Aesthetics (ASA ruling, 24 April 2024; read 28 September 2026; added 29 September 2026,
+  from pages read 28-29 September 2026),**
+  https://www.asa.org.uk/rulings/dr-bunny-aesthetics-a23-1218983-dr-bunny-aesthetics.html. "The ad
+  was a listing for an aesthetics clinic “Dr Bunny Aesthetics” on the booking platform Fresha", and
+  it named the toxin. On booking: "Furthermore, we understood that consumers could book and pay for
+  the treatment from the ad directly, without receiving a consultation prior to undergoing the
+  treatment." Keep "understood". A2 does not quote it; A1 covers it.
+- **Glowery Ltd t/a Glowday (ASA ruling, 12 April 2023, "Upheld" on both issues; read 29 September
+  2026; added 29 September 2026, from pages read 28-29 September 2026),**
+  https://www.asa.org.uk/rulings/glowery-ltd-a22-1169867-glowery-ltd.html. "A website for Glowday,
+  www.Glowday.com, an aesthetic treatment comparison site", not a clinic; the page that led to the
+  booking pages was titled "Best Botox in London". On booking: "We acknowledged that no payment
+  was taken at the time of a booking, and the full treatment process included the consultation that
+  could result in a change to consumer’s booked treatment, but that was not sufficient to prevent an
+  ad from promoting a POM." (the ruling's apostrophe; do not copy it). The booking pages' price lists
+  were one element among several: never present it as a price-list ruling. A2 does not quote it.
+- **CAP News, "A basic guide to prescription-only medicines" (7 July 2016; read 29 September 2026;
+  added 29 September 2026, from pages read 28-29 September 2026),**
+  https://www.asa.org.uk/news/a-basic-guide-to-prescription-only-medicines.html. About POMs in
+  general, and old (some of its links point to the retired cap.org.uk site): "POMs should not be
+  presented as a choice for the consumer to select prior to a consultation, rather than the
+  potential outcome of a consultation." It links the Lloyds Pharmacy ruling. A2 does not quote it.
+- **MHRA Blue Guide Appendix 6 (November 2020; the MHRA's, not CAP's or the ASA's)**,
+  https://assets.publishing.service.gov.uk/media/6012d8c9d3bf7f05c2040b4e/Appendix_6.pdf,
+  re-downloaded 29 September 2026 and still the Appendix 6 linked from
+  https://www.gov.uk/government/publications/blue-guide-advertising-and-promoting-medicines ("Last
+  updated 28 March 2025"). Under "Prices": "A factual list of prices for available treatments and/or
+  pack sizes may be provided on pages other than the home page. The price list should not include
+  product claims or actively encourage viewers to choose a product based on the price." And: "The
+  information associated with price lists should make it clear that the viewer’s preferred option
+  will not be prescribed if it is not suitable." Under "Icons": "It is permissible to use icons to
+  encourage people to undertake a medical consultation. Icons or other features encouraging the
+  purchase of POMs for example, “Buy Now”, “Buy XXX”, “Add to Basket”, etc. should not be used on
+  websites offering POM treatments." The home-page, navigation and meta-tag lines quoted in WebAsk's
+  reading paragraph above are in the same re-downloaded copy, the meta-tag line under the heading
+  "Competitive Tools (Meta-tags/ Meta-descriptions/ Meta-Keywords)". Also in it (added 29 September
+  2026, from pages read 28-29 September 2026): the sentence after the navigation line, "Hover text
+  and any small print at the bottom of the home page should also not refer to specific POMs. This
+  provision is designed to ensure that casual browsers are not presented with advertising for
+  specific POMs." It is about the home page. Under "Sponsored links": "The text may promote the
+  service provided but should not mention specific prescription only medicines."
+- **The FAQ (CAP News, 23 January 2020)**,
+  https://www.asa.org.uk/news/botox-frequently-asked-questions-faqs.html. Its answer on websites,
+  directly above the price-list answer (the post reads that answer's "(as above)" as pointing back
+  to it): "For example, you could include references to a “wrinkle treatment consultation” or
+  similar on your homepage and, when clicked, the copy should emphasise that you offer a
+  consultation with a variety of treatment options (assuming that’s true, of course)." Then: "It
+  will always depend on the execution but provided you properly emphasise the consultation, make
+  incidental, balanced and factual references to Botox as a possible treatment option and it is
+  clear that the consultation may or may not lead to the provision of Botox, the ASA might consider
+  it acceptable." (the FAQ's words about the ASA; the FAQ is still CAP News). Then: "You could also
+  go one step further and require a click through to the treatment options, where you make only
+  balanced and factual references to Botox, or a price list with an incidental reference to Botox
+  alongside its price." And: "Take care not to give the Botox references any prominence and keep all
+  information factual rather than promotional". The paragraph before the website price-list answer,
+  which we read as covering price lists off the website (the FAQ then turns to "If it’s on your
+  website"), says: "Provided it’s genuinely only a ‘price list’ with no other information or
+  promotional content (which might make it an advertising leaflet instead) and it isn’t posted on
+  your social media, mailed to prospective customers or placed in any paid-for advertising space,
+  it’s potentially OK to refer to Botox (and it’s unlikely that the material would fall within the
+  scope of the Code that the ASA enforces)." Never apply "potentially OK" to a website. Its close:
+  "If you have a query that we haven’t covered, please do feel free to contact the Copy Advice team
+  for further guidance."
+- **CAP Bitesize (undated)**,
+  https://www.asa.org.uk/advice-and-resources/cap-bitesize/rules-for-advertising-botox.html. It
+  carries no publication date. Dates in its text include "On 25 May 2022 the rules for advertising
+  non-surgical cosmetic interventions changed" and "In 2021, the ASA ruled", about the rules and
+  rulings it describes. A disclaimer placed after video 4 and before the Botox video (5) says: "In
+  April 2025, CAP and BCAP introduced amendments to the rules to reflect new UK consumer law", and
+  "These videos reflect the ASA approach pre-UCPs and there are some areas where formal ASA
+  precedent still needs to be established, but the content remains broadly relevant." Whether the
+  disclaimer covers the Botox video is not stated; do not use it to date the Botox guidance. On
+  websites: "You can mention Botox on your website, but only in very limited, specific
+  circumstances. The principle is: a consumer casually browsing your site should not be able to find
+  any reference to Botox easily." Then "That means:", followed by three list items: "No mention on
+  your homepage", "No mention in hover text, small print or testimonials" and "No mention in your
+  price list (unless suitably gated)". No page read defines "suitably gated". It introduces the
+  route with "Here’s a safer approach:" — "safer", never "safe". On help: "If you have a question or
+  you’re unsure about your ad or website, get in touch. You can contact our Copy Advice service and
+  they’ll be happy to help." Its "essential for compliance" sentence and its "patient information
+  leaflet" line are already quoted in § B1-P.
+- **CAP's advice (AdviceOnline, 29 October 2025)**,
+  https://www.asa.org.uk/advice-online/beauty-and-cosmetics-botulinum-toxin-products.html. The
+  price-list sentence, complete: "Marketers’ websites may include a price list with a range of
+  treatments available, including Botox, but the price list should not include product claims or
+  encourage viewers to choose a product based on the price." Homepage small print, the sentence
+  after the one in § B1-P: "In addition to this, any small print at the bottom of a homepage should
+  not refer to POMs or directly link consumers to a page where they are referenced." It is about the
+  homepage. The consultation claim: "The claim “a consultation for the treatment of lines and
+  wrinkles”, for example, is likely to be considered acceptable, but it remains that the name of the
+  POM should not be referenced in the initial ad." Keep "likely to be".
+- **The two exclusions in § B1-P, re-read.** HMR reg. 7(3) opens "But references in these
+  Regulations to an “advertisement” do not include any of the following—"; its limb (b) is
+  "reference material and announcements of a factual and informative nature, including—", item
+  (iv) is "price lists,", and the list ends "provided that no product claim is made; or"
+  (legislation.gov.uk, "up to date with all changes known to be in force on or before 26 September
+  2026", read 29 September 2026). CAP Code Scope II m is as quoted in § B1-P (read 28 September
+  2026).
 
 **Who raised the issues** (added 29 September 2026, from the rulings read 28 September 2026).
 Dr Bunny Aesthetics: "The Joint Council for Cosmetic Practitioners (JCCP) challenged whether: …".
@@ -1103,6 +1357,16 @@ and Copy Advice lines, which come from the 28 September 2026 extracts in
 - **CMA dental study** — case page (last updated 17 July 2026), https://www.gov.uk/cma-cases/private-dental-services-market-study · press release (5 March 2026), https://www.gov.uk/government/news/cma-launches-review-of-private-dentistry
 - **DMCC Act 2024** — Sch. 20 para 13, https://www.legislation.gov.uk/ukpga/2024/13/schedule/20/paragraph/13 · s.225, https://www.legislation.gov.uk/ukpga/2024/13/section/225 · s.251, https://www.legislation.gov.uk/ukpga/2024/13/section/251
 - **PECR and the ICO** — PECR reg. 6, https://www.legislation.gov.uk/uksi/2003/2426/regulation/6, Sch. A1, https://www.legislation.gov.uk/uksi/2003/2426/schedule/A1, and Sch. 1, https://www.legislation.gov.uk/uksi/2003/2426/schedule/1 · DUAA 2025 s.115, https://www.legislation.gov.uk/ukpga/2025/18/section/115 · DPA 2018 s.157, https://www.legislation.gov.uk/ukpga/2018/12/section/157 · ICO storage and access guidance (last updated 29 April 2026), https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-the-use-of-storage-and-access-technologies/ · ICO online tracking strategy update (April 2026), https://ico.org.uk/about-the-ico/our-information/our-strategies-and-plans/online-tracking-strategy/online-tracking-strategy-update-april-2026/ · ICO blog (18 May 2026), https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/05/our-advice-to-government-on-potential-changes-to-online-advertising-rules/ · ICO DUAA summary (PECR), https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/the-data-use-and-access-act-2025-duaa-summary-of-the-changes/privacy-and-electronic-communications/
+
+**Read on 29 September 2026, for the price-list post (A2)** (added 29 September 2026, from pages
+read 28-29 September 2026). Raw copies in `.playwright-mcp/compliance/a2/raw/`, mapped in
+`.playwright-mcp/compliance/a2/research.md` and `a2/PROVENANCE.md` (all git-ignored). The FAQ,
+Bitesize and AdviceOnline (29 October 2025) pages above were re-fetched the same day with the same
+text.
+
+- **ASA rulings** — HB Health of Knightsbridge (15 January 2014), https://www.asa.org.uk/rulings/HB-Health-of-Knightsbridge-A13-237714.html · Dermaskin Clinics (15 January 2014), https://www.asa.org.uk/rulings/Dermaskin-Clinics-A13-237709.html · Lloyds Pharmacy Ltd (4 March 2015), https://www.asa.org.uk/rulings/lloyds-pharmacy-ltd-a14-271213.html · Juniper Technologies UK Ltd t/a Juniper (8 April 2026), https://www.asa.org.uk/rulings/juniper-technologies-uk-ltd-a25-1319597-juniper-technologies-uk-ltd.html · Glowery Ltd t/a Glowday (12 April 2023; not used by A2), https://www.asa.org.uk/rulings/glowery-ltd-a22-1169867-glowery-ltd.html
+- **CAP** — AdviceOnline, _Weight control: Prescription-only medicines_ (29 May 2026; "given by the CAP Executive", does not bind the ASA), https://www.asa.org.uk/advice-online/weight-control-prescription-only-medicines.html · Enforcement Notice, _Advertising of prescription-only medicines used for weight management_ (23 September 2025; "published jointly with" the MHRA and the GPhC; not used by A2), https://www.asa.org.uk/resource/enforcement-notice-advertising-of-prescription-only-medicines-used-for-weight-management.html · CAP News, "A basic guide to prescription-only medicines" (7 July 2016; not used by A2), https://www.asa.org.uk/news/a-basic-guide-to-prescription-only-medicines.html
+- **The MHRA and medicines law** — Blue Guide Appendix 6 (November 2020), re-downloaded from the URL above, and the Blue Guide page that links it (last updated 28 March 2025), https://www.gov.uk/government/publications/blue-guide-advertising-and-promoting-medicines · Human Medicines Regulations 2012 reg. 7, re-read (legislation.gov.uk: "up to date with all changes known to be in force on or before 26 September 2026"), https://www.legislation.gov.uk/uksi/2012/1916/regulation/7
 
 **Not verified on 28 September 2026** (so nothing above rests on them): the House of Commons
 Library briefing CBP-10331 (HTTP 403); the RCS England open letter of 6 August 2026; the
