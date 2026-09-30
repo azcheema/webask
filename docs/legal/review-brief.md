@@ -56,7 +56,7 @@ is live and states facts only.
 | Free audit                              | The web address of the business's site. Ansar Cheema reviews its public pages and records a narrated walkthrough on Loom, with a one-page summary. One follow-up at most; no mailing list. A "rules check" for clinics reports what a site shows or leaves out and gives no legal verdict. | Loom (Atlassian).                                                                        |
 | Discovery calls                         | Contact details and any notes.                                                                                                                                                                                                                                                             | By phone, WhatsApp or video. **The video service is not named** (open item 5).           |
 | Browsing                                | Request logs; cookieless traffic and speed measurement for every visitor.                                                                                                                                                                                                                  | Vercel (hosting).                                                                        |
-| Browsing, after consent                 | Google Analytics 4 and Microsoft Clarity, loaded only after the visitor accepts on an equal-choice banner.                                                                                                                                                                                 | Google (processor); Microsoft (independent controller, see open item 10).                |
+| Browsing, after consent                 | Google Analytics 4, loaded only after the visitor accepts on an equal-choice banner. Microsoft Clarity was dropped before launch (open item 10).                                                                                                                                           | Google (processor).                                                                      |
 | Browser storage                         | Two local-storage entries, written only when the visitor acts: the chosen colour theme, and the cookie choice.                                                                                                                                                                             | Stays in the browser.                                                                    |
 | Client records (once there are clients) | Contact, billing, correspondence and project files.                                                                                                                                                                                                                                        | The business, its mailbox and its accounting records.                                    |
 
@@ -67,12 +67,12 @@ There is no CRM and no mailing list.
 All four are rendered from one source file, `data/copy/legal.ts`, and appear at
 these paths on the site:
 
-| Page                | Path                         | Status | What it covers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| ------------------- | ---------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Privacy Notice      | `/legal/privacy`             | Draft  | The controller; which laws apply; the Article 27 position; data given, collected and received from other sources; each purpose with its lawful basis and the legitimate interest relied on; the right to object, in its own section; marketing; processors, independent controllers and other recipients; international transfers, provider by provider; retention per category; rights and how to use them; complaints to the business, the ICO and IMY; whether data must be provided; automated decisions; data handled for clients as processor; security; children; changes. |
-| Cookie Policy       | `/legal/cookies`             | Draft  | The two local-storage entries; the Google Analytics and Clarity cookies as Google and Microsoft list them; why consent is asked despite the statistical-purposes exception; Vercel's cookieless measurement; how to change a choice, and one stated limitation.                                                                                                                                                                                                                                                                                                                   |
-| Website Terms       | `/legal/terms`               | Draft  | Who we are; use of the site; services, prices, VAT and usage; guides are not advice; the free audit; intellectual property; acceptable use; links; the site provided as it is; liability; indemnity; personal data; severability; governing law; changes.                                                                                                                                                                                                                                                                                                                         |
-| Company Information | `/legal/company-information` | Live   | The trading name and legal entity; the Swedish registered address; no UK office; contact details; the relationship with Naxdor; a complaints route.                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Page                | Path                         | Status | What it covers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------- | ---------------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Privacy Notice      | `/legal/privacy`             | Draft  | The controller; which laws apply; the Article 27 position; data given, collected and received from other sources; each purpose with its lawful basis and the legitimate interest relied on; the right to object, in its own section; marketing; processors and other recipients; international transfers, provider by provider; retention per category; rights and how to use them; complaints to the business, the ICO and IMY; whether data must be provided; automated decisions; data handled for clients as processor; security; children; changes. |
+| Cookie Policy       | `/legal/cookies`             | Draft  | The two local-storage entries; the Google Analytics cookies as Google lists them; why consent is asked despite the statistical-purposes exception; Vercel's cookieless measurement; how to change a choice, and one stated limitation.                                                                                                                                                                                                                                                                                                                   |
+| Website Terms       | `/legal/terms`               | Draft  | Who we are; use of the site; services, prices, VAT and usage; guides are not advice; the free audit; intellectual property; acceptable use; links; the site provided as it is; liability; indemnity; personal data; severability; governing law; changes.                                                                                                                                                                                                                                                                                                |
+| Company Information | `/legal/company-information` | Live   | The trading name and legal entity; the Swedish registered address; no UK office; contact details; the relationship with Naxdor; a complaints route.                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 The drafts contain four bracketed placeholders for facts the founder has not yet
 supplied. They are meant to be visible, so that a draft cannot pass for a
@@ -81,8 +81,9 @@ finished page.
 ## 4. Open questions
 
 Items 1 to 10 are facts the founder must supply, with points where your view is
-needed. Items 11 to 16 are questions for you. Item 17 is a note for the founder.
-Each says where the draft stands now.
+needed; the founder resolved items 9 and 10 on 1 October 2026, and they are kept
+here for the record. Items 11 to 16 are questions for you. Item 17 is a note for
+the founder. Each says where the draft stands now.
 
 ### Founder facts, with points for you
 
@@ -146,7 +147,7 @@ used, and the entry will be changed to match.
   claim is ten years (preskriptionslag 1981:130, 2 §);
 - Google Analytics user-level data: **placeholder** for the account setting (2
   or 14 months);
-- Vercel logs, Vercel measurement and Clarity: the providers' own stated periods.
+- Vercel logs and Vercel measurement: the provider's own stated periods.
 
 _We need:_ your view on the client-records period, and on whether "12 months
 after our last exchange" is defensible. A related Swedish point for the founder
@@ -154,31 +155,20 @@ and an accountant: chapter 7, section 2 also requires accounting records to be
 kept in Sweden, and section 3 a allows storage in another EU country on notice
 to Skatteverket. That bears on which email and accounting tools are used.
 
-**9. Vercel plan.** Vercel's data processing addendum applies to its Pro and
-Enterprise plans only, and its Hobby plan is for non-commercial, personal use.
-The draft's one-day log retention is the Pro figure. The founder must confirm
-that the production site runs on Pro.
+**9. Vercel plan — resolved.** Vercel's data processing addendum applies to its
+Pro and Enterprise plans only, and its Hobby plan is for non-commercial, personal
+use. The draft's one-day log retention is the Pro figure. The founder confirmed on
+1 October 2026 that the site will launch on the Pro plan. Nothing is needed from
+you.
 
-**10. Microsoft Clarity.** Four points:
-
-- (a) Clarity's terms make Microsoft and the website owner **independent
-  controllers**, say Microsoft may use the data to "create user profiles for
-  purposes that include advertising", and require the privacy notice to
-  disclose that Microsoft collects or receives personal data to provide
-  Microsoft Advertising. The draft does this. _We need:_ your view on whether
-  keeping Clarity is wise for a business that sells regulatory literacy to
-  clinics.
-- (b) The terms require a **link** to the Microsoft Privacy Statement. The page
-  renderer prints plain text, so the draft gives the address as text.
-- (c) The terms say that, for individuals in the EU, the site owner must
-  "retain records of consent". The site keeps the visitor's choice only in the
-  visitor's browser.
-- (d) Microsoft says Clarity sets no cookies for UK visitors until the website
-  sends it a consent signal. The site loads Clarity only after consent but does
-  not send that signal, so Clarity may run without cookies. The Cookie Policy
-  therefore says Clarity "can" set the cookies it lists. A code change would
-  send the signal on acceptance and clear Clarity's cookies on withdrawal; the
-  withdrawal paragraph of the Cookie Policy would then change.
+**10. Microsoft Clarity — resolved.** The founder dropped Clarity before launch
+on 1 October 2026. Its loader and every Clarity passage in the Privacy Notice and
+the Cookie Policy have been removed, so the four points this item raised no
+longer arise: Microsoft acting as an independent controller that may use the data
+for advertising, the link its terms require to the Microsoft Privacy Statement,
+the records of consent its terms ask for, and the consent signal the site did not
+send. Google Analytics 4 is now the only tool that loads after consent. Nothing
+is needed from you.
 
 ### Questions for you
 
@@ -233,10 +223,11 @@ covers this in one short section and says the client's notice applies. _We
 need:_ your advice on terms of business and a data processing agreement before
 the first engagement.
 
-**17. Loose ends outside these pages.** The contact page still says an
-in-person meeting can be arranged, the same unconfirmed promise removed from the
-Company Information page. An unused site-wide string still says "business day"
-where the pages now say "working day". These are for the founder, not you.
+**17. Loose ends outside these pages.** An unused site-wide string still says
+"business day" where the pages now say "working day". This is for the founder,
+not you. The in-person meeting promise noted here earlier has been removed from
+the contact page and the home page (founder, 1 October 2026): the business is
+fully remote and does not offer in-person meetings.
 
 ## 5. Primary sources relied on
 
@@ -313,8 +304,7 @@ date, it is given in brackets.
 - Data Privacy Framework List, searched for each provider:
   <https://www.dataprivacyframework.gov/list>. Vercel Inc., Google LLC and
   Atlassian, Inc. were "Active" for the EU–US DPF and the UK Extension; Resend
-  and Microsoft Corporation were "Active - Re-certification under Review";
-  WhatsApp LLC was listed for the EU–US and Swiss–US frameworks, without the UK
+  was "Active - Re-certification under Review"; WhatsApp LLC was listed for the EU–US and Swiss–US frameworks, without the UK
   Extension.
 - Resend, Data Processing Addendum (2025-12-31): <https://resend.com/legal/dpa>
 - Vercel, Data Processing Addendum (last updated 17 March 2026, effective 31
@@ -337,16 +327,6 @@ date, it is given in brackets.
   <https://support.google.com/analytics/answer/11397207>; EU, Switzerland or
   UK-focused data and privacy <https://support.google.com/analytics/answer/12017362>;
   data retention <https://support.google.com/analytics/answer/7667196> (undated)
-- Microsoft Clarity Terms of Use (undated; read in a browser):
-  <https://clarity.microsoft.com/terms>
-- Microsoft Learn, Clarity cookies, consent mode, consent API v2 and masking
-  (each updated 5 December 2025):
-  <https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-cookies>,
-  <https://learn.microsoft.com/en-us/clarity/setup-and-installation/consent-mode>,
-  <https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-consent-api-v2>,
-  <https://learn.microsoft.com/en-us/clarity/setup-and-installation/clarity-masking>
-- Microsoft Learn, Clarity FAQ (updated 21 September 2026):
-  <https://learn.microsoft.com/en-us/clarity/faq>
 - Atlassian privacy policy and data processing addendum (both effective 17
   August 2026): <https://www.atlassian.com/legal/privacy-policy>,
   <https://www.atlassian.com/legal/data-processing-addendum>
@@ -356,8 +336,8 @@ date, it is given in brackets.
   <https://www.whatsapp.com/legal/privacy-policy-eea>
 
 **How the sources were read.** The legislation, EUR-Lex, riksdagen.se, the ICO
-pages on exceptions and governance, S.I. 2026/1015 and the Clarity terms were
-checked against the raw page text. The provider pages (Vercel, Resend,
+pages on exceptions and governance, and S.I. 2026/1015 were checked against the
+raw page text. The provider pages (Vercel, Resend,
 Atlassian, Google Help, WhatsApp) and some ICO and IMY pages were read through a
 tool that summarises a page, so their quotations should be confirmed against the
 pages before you rely on them.

@@ -61,8 +61,8 @@
  *     Data Privacy Framework List, searched 1 October 2026: Vercel Inc.,
  *     Google LLC and Atlassian, Inc. (whose privacy policy, effective 17 August
  *     2026, names Loom, Inc. among its participating subsidiaries) "Active" for
- *     the EU–US DPF and the UK Extension; Resend and Microsoft Corporation
- *     "Active - Re-certification under Review" for both.
+ *     the EU–US DPF and the UK Extension; Resend "Active - Re-certification
+ *     under Review" for both.
  *   - Processors and their terms: Resend DPA (2025-12-31; processor; UK SCCs
  *     with the UK Addendum; DPF + UK Extension); Vercel DPA (last updated 17
  *     March 2026; processor for Pro and Enterprise plans only; SCCs + UK IDTA);
@@ -70,25 +70,16 @@
  *     processor"; Google Analytics listed at business.safety.google/adsservices,
  *     page dated 23 October 2025); Atlassian DPA (effective 17 August 2026;
  *     processor; SCCs, DPF, UK Addendum).
- *   - Independent controllers: Microsoft Clarity Terms of Use § 4.4 ("You and
- *     Microsoft are independent Controllers"; Microsoft may "create user profiles
- *     for purposes that include advertising"; the privacy notice must disclose
- *     Microsoft Advertising and link to the Microsoft Privacy Statement).
- *     WhatsApp: its own terms (Business App terms effective 23 September 2026,
- *     open item 7).
+ *   - Others who receive data: WhatsApp, under its own terms (Business App
+ *     terms effective 23 September 2026, open item 7).
  *   - Google disclosures: Google Analytics Terms of Service § 7 (last modified 11
  *     January 2024) asks for the "How Google uses information from sites or apps
  *     that use our services" link; "[GA4] Cookie usage on websites" (`_ga`,
  *     `_ga_<container-id>`, 2 years each); "EU, Switzerland, or UK-focused data
  *     and privacy" (IP addresses not logged or stored); "Data retention" (2 or
  *     14 months for standard properties).
- *   - Clarity facts: Microsoft Learn "Clarity Cookies" (updated 5 December 2025;
- *     names, purposes and first/third-party, no lifetimes), "Masking content"
- *     (input boxes masked in all modes), "Consent Mode" and "Consent API v2"
- *     (consent mode on by default for UK visitors; no cookies until a consent
- *     signal), FAQ (updated 21 September 2026: recordings 30 days, favourites
- *     and a random sample up to 9 months, heatmaps up to 9 months, per-user
- *     deletion only by deleting the project).
+ *   - Microsoft Clarity: dropped before launch (founder, 1 October 2026; open
+ *     item 10). No Clarity fact grounds this copy any longer.
  *   - Vercel facts: "Privacy and Compliance" for Web Analytics (updated 26 June
  *     2026: anonymous data points, a hash of the request, visitor session
  *     discarded after 24 hours); Speed Insights privacy page (18 March 2026);
@@ -97,10 +88,9 @@
  *   - PECR: the statistical-purposes exception since 5 February 2026 (docs/03
  *     § A4). ICO, "What are the exceptions?" (guidance last updated 29 April
  *     2026): "not a broad exception that covers all types of analytics
- *     technologies or ways you can use them"; consent is needed for "logs or
- *     recordings of individual visitors"; "your third party provider must be a
- *     processor, not a joint controller". The cookie policy states only that we
- *     do not rely on the exception.
+ *     technologies or ways you can use them"; "your third party provider must be
+ *     a processor, not a joint controller". The cookie policy states only that
+ *     we do not rely on the exception.
  *   - Retention: 12 months for an enquiry that does not lead to work (founder,
  *     1 October 2026). Accounting records: Bokföringslagen (1999:1078) 7 kap.
  *     2 § (riksdagen.se, t.o.m. SFS 2024:342): kept "fram till och med det
@@ -116,9 +106,9 @@
  *   - Browser storage: `theme` (next-themes, written only by `setTheme`, i.e.
  *     the theme switch) and `webask:analytics-consent` (`ANALYTICS_CONSENT_KEY`
  *     in `lib/analytics.ts`, written only on Accept/Reject). Neither is a
- *     cookie. GA4 and Clarity load only after consent
- *     (`components/analytics/analytics-scripts.tsx`); withdrawing stops them
- *     loading but does not delete their cookies (that file's header).
+ *     cookie. GA4 loads only after consent
+ *     (`components/analytics/analytics-scripts.tsx`); withdrawing stops it
+ *     loading but does not delete its cookies (that file's header).
  *   - Terms: prices "excl. VAT" and the reverse-charge sentence follow
  *     `VAT_EXPLAINER` in `lib/pricing.ts` (D2). Usage billed on top at cost
  *     (founder, 28 September 2026). The not-advice wording follows the
@@ -152,18 +142,16 @@
  *      setting — placeholder `TBC_GA_RETENTION`; (d) Bokföringslagen 7 kap. 2 §
  *      also says accounting records are kept in Sweden, and 3 a § allows
  *      another EU country on notice to Skatteverket, which bears on tool choice.
- *   9. Vercel plan: its DPA covers Pro and Enterprise only, Hobby is for
- *      non-commercial use, and the one-day log figure is Pro's. Confirm Pro.
- *  10. Microsoft Clarity: (a) Microsoft is an independent controller that may
- *      use the data for advertising — the notice discloses this, as the terms
- *      require; decide whether to keep Clarity; (b) the terms require a link to
- *      the Microsoft Privacy Statement, but this renderer prints plain text;
- *      (c) the terms ask for records of consent for EU individuals, and the site
- *      keeps consent only in the visitor's browser; (d) Microsoft says Clarity
- *      sets no cookies for UK visitors until the site sends a consent signal,
- *      and `analytics-scripts.tsx` sends none. Sending `consentv2` on Accept and
- *      `clarity('consent', false)` on Reject would also let the site erase
- *      Clarity's cookies; then revise the cookie policy's withdrawal paragraph.
+ *   9. Vercel plan: RESOLVED — Pro plan, founder 1 October 2026. (Its DPA
+ *      covers Pro and Enterprise only, Hobby is for non-commercial use, and the
+ *      one-day log figure is Pro's.)
+ *  10. Microsoft Clarity: RESOLVED — Clarity dropped, founder 1 October 2026,
+ *      before launch. Its loader, its env variable and every Clarity passage in
+ *      the privacy notice and cookie policy were removed, so the four points
+ *      raised here (Microsoft as an independent controller that may use the
+ *      data for advertising, the required link to the Microsoft Privacy
+ *      Statement, records of consent, and the missing consent signal) no longer
+ *      arise. GA4 is the only tool that loads after consent.
  *  11. Vercel Web Analytics and Speed Insights run without consent. Confirm the
  *      PECR position; if an exception is needed, it requires a simple, free way
  *      to object, which the site does not offer.
@@ -179,11 +167,11 @@
  *  16. Client terms of business, and a data processing agreement for hosted
  *      plans (WebAsk would be the client's processor). Needed before the first
  *      engagement; not part of these pages.
- *  17. Outside this file, not changed here: the contact FAQ in
- *      `data/copy/contact.ts` still says an in-person meeting can be arranged
- *      (the promise removed from company information), and
- *      `site.responsePromise` in `data/site.ts` says "business day" (it appears
- *      not to be rendered).
+ *  17. Outside this file, not changed here: `site.responsePromise` in
+ *      `data/site.ts` says "business day" (it appears not to be rendered). The
+ *      in-person meeting promise in the contact FAQ (`data/copy/contact.ts`) is
+ *      RESOLVED — removed, founder 1 October 2026: the business does not offer
+ *      in-person meetings (D1).
  */
 
 import { site } from "@/data/site";
@@ -297,7 +285,7 @@ export const privacy: LegalDocument = {
       body: [
         "Our hosting provider, Vercel, records technical details of requests to the site, such as the page requested, the time and the browser used, and processes the IP address each request comes from. These records keep the site running and secure.",
         "Vercel also gives us measurements of traffic and page speed. Vercel says its Web Analytics does not use cookies, that its data points are anonymous and not tied to an individual or an IP address, and that it identifies visitors by a hash created from the request and discards the visitor session after 24 hours. Vercel says Speed Insights data points are anonymous too.",
-        "If you accept analytics cookies, Google Analytics 4 and Microsoft Clarity also collect how you use the site: the pages you view, how you arrived, your device and browser, your approximate location, and how you scroll, move and click. Clarity can also record your visit as a replay. Microsoft says Clarity masks the content of input boxes in every masking mode, and Google says Google Analytics does not log or store IP addresses from UK users. Neither tool loads until you accept. The Cookie Policy lists the cookies involved.",
+        "If you accept analytics cookies, Google Analytics 4 also collects how you use the site: the pages you view, how you arrived, your device and browser, your approximate location, how far you scroll, and some of the links and buttons you click. Google says Google Analytics does not log or store IP addresses from UK users. Google Analytics does not load until you accept. The Cookie Policy lists the cookies involved.",
         "The contact form has a hidden anti-spam field. If it is filled in, which only automated software does, the submission is discarded and nothing is stored or sent.",
       ],
     },
@@ -321,7 +309,7 @@ export const privacy: LegalDocument = {
         "Doing the work and managing the relationship with a client. Basis: performance of a contract, where the contract is with you; otherwise legitimate interests, in working with the people a client business asks us to deal with.",
         "Invoicing and keeping accounting records. Basis: a legal obligation under Swedish bookkeeping law, for the EU GDPR. The UK GDPR recognises only obligations under UK law for that basis, so for the UK GDPR we rely on legitimate interests, in complying with the law that governs the business.",
         "Running, securing and improving the website, including request logs and Vercel's traffic and speed measurement. Basis: legitimate interests, in keeping the site working and secure and understanding which pages are used.",
-        "Google Analytics 4 and Microsoft Clarity. Basis: consent, which you give through the cookie banner and can withdraw at any time. PECR also requires consent for these cookies.",
+        "Google Analytics 4. Basis: consent, which you give through the cookie banner and can withdraw at any time. PECR also requires consent for its cookies.",
         "Dealing with your requests to use your rights, and with complaints. Basis: legal obligation, because data protection law requires it.",
         "Establishing, exercising or defending legal claims. Basis: legitimate interests, in protecting the business if a dispute arises.",
       ],
@@ -358,7 +346,6 @@ export const privacy: LegalDocument = {
     {
       heading: "Others who receive data",
       body: [
-        "Microsoft Clarity works differently. Under Microsoft's Clarity terms, Microsoft and we are independent controllers: Microsoft decides for itself how it uses the data Clarity collects. Microsoft collects or receives personal data from this site through Clarity, including to provide Microsoft Advertising. Its terms say it may use that data to provide Clarity, to improve its products and services, and to create user profiles for purposes that include advertising. Clarity loads only if you accept analytics cookies. Microsoft's use is covered by the Microsoft Privacy Statement at microsoft.com/privacy/privacystatement.",
         "If you message or call us on WhatsApp, WhatsApp handles your number and messages as well. Its own terms and privacy policy apply to your use of WhatsApp.",
         "When you open a Loom link, Atlassian's privacy policy, which covers Loom, applies to your visit to Loom's website.",
         "We may also share personal data with a professional adviser, such as a lawyer or accountant, if we need advice, and with authorities, such as the Swedish Tax Agency (Skatteverket), where the law requires us to.",
@@ -368,8 +355,8 @@ export const privacy: LegalDocument = {
       heading: "International transfers",
       body: [
         "The business is in Sweden. UK law treats transfers of personal data to countries in the European Economic Area, including Sweden, as approved (Data Protection Act 2018, Schedule 21), so no further safeguard is needed for your data to reach us.",
-        "Resend, Vercel, Google and Loom are based in the United States. Microsoft says EU customers of Clarity contract with Microsoft Ireland Operations Limited, which has standard contractual clauses with Microsoft Corporation in the United States for transfers between them.",
-        "On 1 October 2026, Resend, Vercel, Google, Microsoft and Atlassian, which owns Loom, were each listed on the US Data Privacy Framework List as taking part in the EU–US Data Privacy Framework and its UK Extension. UK law treats transfers to US organisations on that list as adequate, under the Data Protection (Adequacy) (United States of America) Regulations 2023, and the European Commission has recognised the same framework as adequate for the EU GDPR.",
+        "Resend, Vercel, Google and Loom are based in the United States.",
+        "On 1 October 2026, Resend, Vercel, Google and Atlassian, which owns Loom, were each listed on the US Data Privacy Framework List as taking part in the EU–US Data Privacy Framework and its UK Extension. UK law treats transfers to US organisations on that list as adequate, under the Data Protection (Adequacy) (United States of America) Regulations 2023, and the European Commission has recognised the same framework as adequate for the EU GDPR.",
         "The data processing terms of Resend, Vercel and Atlassian also include standard contractual clauses with the UK's addendum to them, and Google's include standard contractual clauses as a fallback. You can ask us for a copy of the safeguard that applies to a provider.",
         `${TBC_EMAIL_PROVIDER} and ${TBC_VIDEO_SERVICE}: where each stores data, and the safeguard for any transfer, will be added here.`,
       ],
@@ -384,7 +371,6 @@ export const privacy: LegalDocument = {
         "Request logs: Vercel stores the site's runtime logs for one day on its Pro plan.",
         "Vercel's traffic and speed measurement: Vercel says the Web Analytics visitor session is discarded after 24 hours, and the data is used for aggregated statistics only.",
         `Google Analytics: user-level and event-level data for ${TBC_GA_RETENTION}, the retention period set in our account. That setting does not affect aggregated reports.`,
-        "Microsoft Clarity: Microsoft says recordings are kept for 30 days, except favourites and a random sample kept for up to 9 months, and heatmaps are available for up to 9 months. Microsoft also says one visitor's data can be deleted only by deleting the whole project.",
         "The theme and consent entries in your browser: until you clear your browser's data for this site.",
       ],
     },
@@ -426,7 +412,7 @@ export const privacy: LegalDocument = {
     {
       heading: "No automated decisions",
       body: [
-        "We do not make decisions about you based solely on automated processing, and we do not profile you. Microsoft's own use of Clarity data is described above.",
+        "We do not make decisions about you based solely on automated processing, and we do not profile you.",
       ],
     },
     {
@@ -603,7 +589,7 @@ export const cookies: LegalDocument = {
   meta: {
     title: "Cookie Policy",
     description:
-      "Every cookie and similar technology webask.co.uk uses: what each is for, who sets it, how long it lasts where the provider says, and how to change your choice.",
+      "Every cookie and similar technology webask.co.uk uses: what each is for, who sets it, how long it lasts, and how to change your choice.",
   },
   title: "Cookie Policy",
   subhead:
@@ -614,7 +600,7 @@ export const cookies: LegalDocument = {
   draft: true,
   intro: [
     "This policy lists what webask.co.uk stores on your device, and why. Read it with our Privacy Notice, which explains how we handle personal data.",
-    "In short: the site sets no cookies of its own. It keeps two entries in your browser's local storage, and only after you act. Google Analytics and Microsoft Clarity load only if you accept analytics cookies, and only then can they set cookies.",
+    "In short: the site sets no cookies of its own. It keeps two entries in your browser's local storage, and only after you act. Google Analytics loads only if you accept analytics cookies, and only then can it set cookies.",
   ],
   sections: [
     {
@@ -644,26 +630,10 @@ export const cookies: LegalDocument = {
       ],
     },
     {
-      heading: "Microsoft Clarity — only after you accept",
-      body: [
-        "If you accept analytics cookies, Microsoft Clarity loads. If you reject them, or have not yet chosen, it does not load. Microsoft decides for itself how it uses what Clarity collects, including for advertising; our Privacy Notice explains this.",
-        "Microsoft lists the cookies below as the ones Clarity sets. The first two are set on this site's domain; the rest are third-party cookies, set by Microsoft. Microsoft's list does not say how long each lasts, so we do not print lifetimes. Once you accept, Clarity can set:",
-      ],
-      list: [
-        "_clck: keeps the Clarity user ID and preferences for this site",
-        "_clsk: connects the pages you view into a single session recording",
-        "CLID: identifies the first time Clarity saw your browser on any site that uses Clarity",
-        "ANONCHK: shows whether Microsoft's MUID is passed to ANID, an advertising cookie. Microsoft says Clarity does not use ANID, so this is always 0",
-        "MR: shows whether to refresh the MUID",
-        "MUID: identifies unique web browsers visiting Microsoft sites. Microsoft uses it for advertising, site analytics and other operational purposes",
-        "SM: used to synchronise the MUID across Microsoft domains",
-      ],
-    },
-    {
       heading: "Why we ask for consent",
       body: [
-        "Since 5 February 2026, PECR has included an exception that allows some analytics without consent, for statistical purposes. The ICO, the UK regulator, says it is “not a broad exception that covers all types of analytics technologies or ways you can use them”. It says consent is needed for recordings of individual visitors, which Clarity makes, and that a third-party analytics provider must be a processor, not a joint controller, for the exception to apply.",
-        "We do not rely on that exception for Google Analytics or Clarity. We ask for your consent before either loads.",
+        "Since 5 February 2026, PECR has included an exception that allows some analytics without consent, for statistical purposes. The ICO, the UK regulator, says it is “not a broad exception that covers all types of analytics technologies or ways you can use them”. It also says that a third-party analytics provider must be a processor, not a joint controller, for the exception to apply.",
+        "We do not rely on that exception for Google Analytics. We ask for your consent before it loads.",
       ],
     },
     {
@@ -675,8 +645,8 @@ export const cookies: LegalDocument = {
     {
       heading: "Changing your choice",
       body: [
-        "You can change your answer at any time with the “Cookie settings” link in the footer of every page. If you reject analytics cookies after accepting them, neither tool loads from then on.",
-        "One limitation: rejecting does not delete cookies that Google or Microsoft have already set. They expire on their own schedule, or you can delete them now in your browser's settings, which also let you block cookies altogether. Clearing this site's data in your browser also removes the theme and consent entries, so the banner will ask again.",
+        "You can change your answer at any time with the “Cookie settings” link in the footer of every page. If you reject analytics cookies after accepting them, Google Analytics does not load from then on.",
+        "One limitation: rejecting does not delete cookies that Google has already set. They expire on their own schedule, or you can delete them now in your browser's settings, which also let you block cookies altogether. Clearing this site's data in your browser also removes the theme and consent entries, so the banner will ask again.",
       ],
     },
     {
