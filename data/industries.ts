@@ -67,9 +67,23 @@
  * build standard is a fast, credible gallery with each image flagged for
  * where it may appear", replaced by WebAsk's build standard (docs/03 § B1,
  * Before-and-after images): no before-and-after gallery for a clinic that
- * offers a prescription-only medicine, labelled our choice, not CAP's rule.
+ * offers a prescription-only medicine, labelled our choice, not CAP's rule
+ * (superseded 1 October 2026 — see below).
  * The "Are you lawyers?" answer's "we use CAP's Copy Advice service" is
  * restated as WebAsk's standard, for advertising copy only (F4, docs/03 § B4).
+ *
+ * 1 October 2026, on the founder's decision of that day: the aesthetic
+ * before-and-after answer rewritten to WebAsk's new build standard, which
+ * follows CAP's advice on prescription-only medicines (redated 30 September
+ * 2026: before and after images "may be acceptable if they are clearly
+ * attributed to the non-POM product"). For a clinic that offers a
+ * prescription-only medicine: photos only of treatments that are not
+ * prescription-only, each clearly labelled, with signed and dated proof that
+ * it is genuine, never of the medicine. Labelled our standard, not a guarantee
+ * of compliance. It supersedes the 29 September no-gallery line above
+ * (docs/03 § B1, Before-and-after images). To stay under 100 words the answer
+ * drops the 5 June 2025 "not been manipulated" and efficacy lines (the dental
+ * answer still carries them) and shortens that page's quotation.
  */
 
 import type { CtaLink, FaqItem, Meta } from "@/data/types";
@@ -144,7 +158,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Are before-and-after photos allowed?",
         answer:
-          "It depends on what the image shows. CAP's advice of 5 June 2025 says before-and-after imagery of a prescription-only product, “even in isolation without any accompanying claims, is very likely to be seen as an implied ad” for it. For any before-and-after photo, it asks marketers to hold signed and dated proof that the photos are genuine and have not been manipulated, and says they should not exaggerate the efficacy of the treatment. For a clinic that offers a prescription-only medicine, our build standard leaves before-and-after galleries off the site. That is our choice, not CAP's rule.",
+          "It depends on what the image shows. CAP's advice of 5 June 2025 says before-and-after imagery of a prescription-only product “is very likely to be seen as an implied ad”. CAP's advice on prescription-only medicines, redated 30 September 2026, says where a clinic also promotes other treatments, such images “may be acceptable if they are clearly attributed to the non-POM product”. Our build standard follows that: photos only of treatments that are not prescription-only, never of one that is, each clearly labelled, with signed and dated proof that it is genuine. That is our standard, not a guarantee of compliance.",
       },
       {
         question: "Do I need a licence under the proposed cosmetic procedures scheme?",
