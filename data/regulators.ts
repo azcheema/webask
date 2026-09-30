@@ -82,7 +82,7 @@ export const regulators: ReadonlyArray<Regulator> = [
   {
     slug: "ico",
     type: "GovernmentOrganization",
-    name: "Information Commissioner's Office",
+    name: "Information Commission",
     url: "https://ico.org.uk/",
   },
   {

@@ -20,6 +20,14 @@
 
 ---
 
+> **1 October 2026 — the regulator's legal name.** On 30 September 2026 S.I. 2026/1015 brought into
+> force s.118 ("abolition of the office of Information Commissioner") and s.119 ("transfer of
+> functions to the Information Commission") of the Data (Use and Access) Act 2025
+> (https://www.legislation.gov.uk/uksi/2026/1015/made). The ICO says: "As the Information
+> Commission's Office, we will continue to be known as the ICO" (ico.org.uk news, 15 September
+> 2026). "ICO" in this file and on the site stays correct; where the full legal name is printed,
+> use "the Information Commission".
+
 ## Part A — What WebAsk itself must comply with
 
 ### A1. Trading disclosures — with no UK company
@@ -958,6 +966,16 @@ of ‘before and after’ photos in the same way as testimonials" can still be q
   in advice about the medicine and does not say whether it reaches filler images; the FAQ allows
   labelled filler images for a clinic that offers both. Quote each from its own page and do not
   resolve the tension in CAP's voice.
+  _(Added 1 October 2026, from the page read that day: CAP's general AdviceOnline page
+  "Healthcare: Prescription-only medicine" (https://www.asa.org.uk/advice-online/healthcare-prescription-only-medicine.html),
+  redated 30 September 2026, carries the same "avoid" line and then says: "If the marketer also
+  promotes non-POM treatments alongside their POM counterparts, the use of before and after images
+  may be acceptable if they are clearly attributed to the non-POM product." CAP's newest-dated page
+  therefore takes the FAQ's side. The same page adds, in general terms: "Even if a digital ad does
+  not include content which promotes a POM to the public, if that ad links directly to website
+  content which does, it still might be considered to breach the Code." WebAsk's stricter gallery
+  standard below is unaffected, because it is labelled as our choice; the founder is asked whether
+  to keep it.)_
   **WebAsk's build standard — our choice, not CAP's or the ASA's rule (founder decision, 29
   September 2026):** WebAsk follows the stricter advice. For a clinic that offers the POM, WebAsk's build
   standard leaves before-and-after galleries out of client sites. The two lines it weighs, each from
