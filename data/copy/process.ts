@@ -124,7 +124,7 @@ export const process: ProcessContent = {
       name: "Grow",
       tagline: "Measure, tune, and keep the asset earning.",
       shortDescription:
-        "Post-launch is when most agencies disappear. We monitor performance, SEO rankings, and lead flow — then iterate on what the data shows.",
+        "Launch is not the end of the work. We monitor performance, search rankings and lead flow, then iterate on what the data shows.",
       longDescription:
         "Launch is a milestone, not a finish line. For 30 days post-launch we're on hand for tweaks, training, and the small things that surface only in real traffic. Beyond that, optional retainers — Maintenance for the asset, SEO for the rankings, CRM for the funnel — keep the work compounding. Quarterly we run a health review: Core Web Vitals, search rankings, lead-flow metrics, conversion rate. We bring the numbers, you bring the questions. The point is to keep the thing we built earning — not to bill you for re-doing it in a year.",
       artefacts: [
