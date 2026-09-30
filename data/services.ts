@@ -336,7 +336,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Should we build custom software or buy off the shelf?",
         answer:
-          "Buy, if a product fits your process and its documentation answers four questions. Can you set the retention period? Can you export the audit trail? Is there a published accessibility conformance statement, and what is its date? Who is named as the contact if the Information Commissioner's Office (ICO) writes about the data it holds? A product that answers all four has saved you the cost of a build. Build when it cannot, and the gap matters for the data you hold. Either way the obligation does not move: whoever decides to collect the data still answers for it.",
+          "Buy, if a product fits your process and its documentation answers four questions. Can you set the retention period? Can you export the audit trail? Is there a published accessibility conformance statement, and what is its date? Who is named as the contact if the Information Commission (the ICO) writes about the data it holds? A product that answers all four has saved you the cost of a build. Build when it cannot, and the gap matters for the data you hold. Either way the obligation does not move: whoever decides to collect the data still answers for it.",
       },
       {
         question: "How do I know we need an application rather than a better website?",

@@ -140,7 +140,7 @@ export const home: HomeContent = {
       eyebrow: "SEO & performance",
       h2: "A beautiful site nobody finds is an expensive brochure.",
       problem:
-        "Most agencies launch and move on. Six months later you are invisible in Google, your Core Web Vitals are red, and the only people visiting are the ones you sent yourself.",
+        "Launch is not the finish line. A site nobody looks after can be invisible in Google six months later, with red Core Web Vitals and only the visitors you sent yourself.",
       solution:
         "We engineer for search from day one — technical foundations, structured data on every page, and content mapped to what UK buyers actually type. Then we report on enquiries, not on impressions you cannot bank.",
       cta: { label: "See SEO", href: "/services/seo" },
