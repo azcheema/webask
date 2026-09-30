@@ -225,12 +225,12 @@ export const home: HomeContent = {
     {
       question: "How quickly can you deliver",
       answer:
-        "A standard six-to-ten page marketing site launches in four to six weeks from kickoff. CRM implementations land in two to four weeks. AI integrations vary with scope, but a voice agent is typically live in three to five weeks. The single biggest cause of delay is content — copy, photography and sign-off — so we agree who is producing what during the Discover stage and commit to dates in writing.",
+        "A standard six-to-ten page marketing site launches in four to six weeks from kickoff. CRM implementations land in two to four weeks. AI integrations vary with scope, but a voice agent build is planned at three to five weeks. The single biggest cause of delay is content — copy, photography and sign-off — so we agree who is producing what during the Discover stage and commit to dates in writing.",
     },
     {
       question: "Do you have a UK office",
       answer:
-        "No, and we would rather say so plainly than imply otherwise. WebAsk works entirely remotely across the UK, on UK time. That is why our pricing does not carry the cost of city-centre office space, and it is why we do not run a Google Business Profile — Google requires a genuine staffed location, and we do not have one. If you want to meet, we will arrange a call or travel to you. Full entity and contact details are on our company information page.",
+        "No, and we would rather say so plainly than imply otherwise. WebAsk works entirely remotely across the UK, on UK time. That is why our pricing does not carry the cost of city-centre office space, and it is why we do not run a Google Business Profile — Google requires a genuine staffed location, and we do not have one. If you want to talk, we will arrange a call. Full entity and contact details are on our company information page.",
     },
     {
       question: "Do you only work with clinics",

@@ -124,7 +124,7 @@ export const contact: ContactContent = {
     {
       question: "Where are you based, and does it matter",
       answer:
-        "WebAsk works entirely remotely across the UK, on UK time. There is no office to visit, and we would rather tell you that than imply a local presence we do not have. In practice it changes nothing about the work: calls happen on video, the code lives in your repository, and you are not paying for city-centre floor space in your invoice. If meeting in person genuinely matters for your project, say so and we will arrange it.",
+        "WebAsk works entirely remotely across the UK, on UK time. There is no office to visit, and we would rather tell you that than imply a local presence we do not have. In practice it changes nothing about the work: calls happen on video, the code lives in your repository, and you are not paying for city-centre floor space in your invoice.",
     },
     {
       question: "Can I phone instead of using the form",
