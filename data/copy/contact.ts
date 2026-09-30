@@ -139,7 +139,7 @@ export const contact: ContactContent = {
     {
       question: "I need this kept confidential",
       answer:
-        "We will sign a mutual NDA on request before any scoping conversation — just say so in your message. Your enquiry stays in our inbox and CRM and goes nowhere else: no partners, no referral networks, no lead-resale lists. If you would rather not put details in a web form at all, email us and we will take it from there.",
+        "We will sign a mutual NDA on request before any scoping conversation — just say so in your message. Your enquiry stays in our inbox and goes nowhere else: no partners, no referral networks, no lead-resale lists. If you would rather not put details in a web form at all, email us and we will take it from there.",
     },
   ],
   ctaBand: {
