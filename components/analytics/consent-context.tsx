@@ -21,7 +21,7 @@ type ConsentContextValue = {
   readonly consent: ConsentState;
   /** False during SSR + the first hydration render, true afterwards. Gates the banner so a decided visitor never sees a flash. */
   readonly mounted: boolean;
-  /** True when at least one cookie-based tool (GA4 / Clarity) is configured. */
+  /** True when the one cookie-based tool, GA4, is configured. */
   readonly hasAnalytics: boolean;
   /** True when the visitor reopened the banner via "Cookie settings" after already deciding. */
   readonly isSettingsOpen: boolean;

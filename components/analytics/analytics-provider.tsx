@@ -11,7 +11,6 @@ import { ClickTracker, PageviewTracker } from "./trackers";
 type AnalyticsProviderProps = {
   readonly children: React.ReactNode;
   readonly gaId: string | undefined;
-  readonly clarityId: string | undefined;
   /**
    * True only when running on Vercel. The Vercel components fetch their
    * `script.js` under `/_vercel/`, which exists only on the Vercel edge — under
@@ -28,17 +27,19 @@ type AnalyticsProviderProps = {
  *
  * - **Always on, cookieless** (no consent needed): Vercel Analytics + Speed
  *   Insights. They render nothing off-Vercel / in dev.
- * - **Consent-gated**: GA4 + Clarity (`AnalyticsScripts`), plus the event
- *   trackers, which no-op until consent is granted.
+ * - **Consent-gated**: GA4 (`AnalyticsScripts`), plus the event trackers,
+ *   which no-op until consent is granted. GA4 is the only cookie tool; the
+ *   fork's Microsoft Clarity loader was dropped before launch (founder,
+ *   1 October 2026) — do not re-add it from the fork.
  * - The `ConsentProvider` wraps `children` too, so the footer "Cookie settings"
  *   control can reach `useConsent`.
  *
  * IDs are read server-side (`lib/env.ts`) and passed in as plain props, keeping
  * zod out of the client bundle. `hasAnalytics` decides whether the banner is
- * ever shown — no cookie tool configured means nothing to consent to.
+ * ever shown — no GA4 ID configured means nothing to consent to.
  */
-export function AnalyticsProvider({ children, gaId, clarityId, isVercel }: AnalyticsProviderProps) {
-  const hasAnalytics = Boolean(gaId || clarityId);
+export function AnalyticsProvider({ children, gaId, isVercel }: AnalyticsProviderProps) {
+  const hasAnalytics = Boolean(gaId);
 
   return (
     <ConsentProvider hasAnalytics={hasAnalytics}>
@@ -49,7 +50,7 @@ export function AnalyticsProvider({ children, gaId, clarityId, isVercel }: Analy
           <SpeedInsights />
         </>
       ) : null}
-      <AnalyticsScripts gaId={gaId} clarityId={clarityId} />
+      <AnalyticsScripts gaId={gaId} />
       <PageviewTracker />
       <ClickTracker />
       <ConsentBanner />

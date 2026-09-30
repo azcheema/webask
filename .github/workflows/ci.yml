@@ -22,8 +22,8 @@ jobs:
       # Fake GA4 ID so the build renders the consent banner (NEXT_PUBLIC_* is
       # inlined at build time). Lets Playwright + axe exercise the banner and
       # keeps Lighthouse validating its a11y/perf. No real property — and the
-      # GA/Clarity scripts only load *after* consent, which CI never grants, so
-      # no external requests fire. Production uses Vercel's real env value.
+      # GA scripts only load *after* consent, which CI never grants, so no
+      # external requests fire. Production uses Vercel's real env value.
       NEXT_PUBLIC_GA_ID: "G-TEST0000000"
     steps:
       - name: Checkout
