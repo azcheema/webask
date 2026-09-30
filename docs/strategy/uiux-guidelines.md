@@ -248,4 +248,6 @@ Tracked from day one (see `measurement.md`):
 | Case study         | "Book a call" click                             |
 | Contact            | Form submission                                 |
 
-Heatmaps via Microsoft Clarity (free) to validate scroll/click patterns once we have traffic.
+~~Heatmaps via Microsoft Clarity (free) to validate scroll/click patterns once we have traffic.~~
+_Clarity was dropped before launch (founder, 1 October 2026). The analytics that stay are GA4,
+after consent, and Vercel's cookieless measurement._

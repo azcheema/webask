@@ -112,7 +112,7 @@ these to `error` once a further JS cut adds reliable margin.
 
 - **Default to RSC.** Reach for `'use client'` only when the component touches state, browser APIs, or event handlers that can't be Server Actions.
 - **Code-split aggressively.** Route-level splits via App Router; dynamic `import()` for anything below-the-fold-or-interactive (e.g. dialogs, command palette).
-- **No analytics/SDK on first paint.** Defer GA4, Microsoft Clarity, anything else until idle.
+- **No analytics/SDK on first paint.** Defer GA4, and anything else, until idle.
 - **No client-side polyfills** — target evergreen browsers (last 2 Chrome/Edge/Safari/Firefox + iOS Safari ≥ 16).
 
 ### CSS discipline
@@ -125,13 +125,13 @@ these to `error` once a further JS cut adds reliable margin.
 
 Audit + score every third-party tag:
 
-| Tool                             | When to load                           | Method                              |
-| -------------------------------- | -------------------------------------- | ----------------------------------- |
-| Vercel Analytics                 | Always                                 | Built-in, ~0KB                      |
-| GA4                              | After interaction or idle              | `next/script` strategy="lazyOnload" |
-| Microsoft Clarity                | After idle                             | `next/script` strategy="lazyOnload" |
-| Cal.com embed _(Phase 4)_        | On user interaction only               | Defer until "Book a call" clicked   |
-| HubSpot/GHL tracking _(Phase 4)_ | Server-side via webhook where possible | Avoid client tracking pixels        |
+| Tool                             | When to load                                | Method                                                                                                                     |
+| -------------------------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Vercel Analytics                 | Always                                      | Built-in, ~0KB                                                                                                             |
+| GA4                              | After consent, once the page is interactive | `next/script` strategy="afterInteractive" (corrected 1 October 2026 to match `components/analytics/analytics-scripts.tsx`) |
+| ~~Microsoft Clarity~~            | Not loaded — dropped before launch          | Founder, 1 October 2026                                                                                                    |
+| Cal.com embed _(Phase 4)_        | On user interaction only                    | Defer until "Book a call" clicked                                                                                          |
+| HubSpot/GHL tracking _(Phase 4)_ | Server-side via webhook where possible      | Avoid client tracking pixels                                                                                               |
 
 No script gets shipped without an explicit budget impact estimate.
 

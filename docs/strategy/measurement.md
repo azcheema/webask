@@ -37,13 +37,14 @@ Each layer has owners + targets set per phase.
 | **Google Search Console**                  | Search impressions, clicks, queries, CWV from CrUX, coverage errors | Free               | Phase 1     |
 | **Bing Webmaster Tools**                   | Bing equivalent of GSC                                              | Free               | Phase 1     |
 | **Google Analytics 4**                     | Behavior, conversions, attribution                                  | Free               | Phase 1     |
-| **Microsoft Clarity**                      | Free heatmaps + session recordings                                  | Free               | Phase 1     |
 | **Plausible or PostHog** (optional, later) | Privacy-first alternative if we move off GA4                        | $9–$50/mo          | Phase 4+    |
 | **Ahrefs or Semrush**                      | Keyword rank tracking, backlink monitoring                          | $100–$200/mo       | Phase 2     |
 
 We do **not** install:
 
-- Hotjar (overlap with Clarity, paid)
+- Microsoft Clarity — **dropped before launch (founder, 1 October 2026)**; see
+  [§ Microsoft Clarity — dropped](#microsoft-clarity--dropped)
+- Hotjar (heatmaps and session recordings, paid)
 - Mixpanel/Amplitude (overkill for marketing site)
 - Multiple competing analytics tools
 
@@ -100,13 +101,15 @@ GA4 conversions:
 - `call_booked` → conversion (Phase 4)
 - `newsletter_signup` → micro-conversion
 
-### Microsoft Clarity
+### Microsoft Clarity — dropped
 
-Drop-in script, `strategy="lazyOnload"`. Goals:
-
-- Heatmaps of home, top service pages
-- Session recordings of users who DON'T submit the form (where did they drop off?)
-- Rage-click detection (sign of UI confusion)
+> **Dropped before launch (founder, 1 October 2026).** It was planned for Phase 1 as a
+> drop-in `strategy="lazyOnload"` script, held behind consent, for heatmaps of the home and
+> top service pages, session recordings of visitors who did not submit the form, and
+> rage-click detection. The loader, `NEXT_PUBLIC_CLARITY_ID` and every Clarity passage in
+> the Privacy Notice and Cookie Policy were removed. What stays: GA4 after consent, and
+> Vercel's cookieless measurement. The points Clarity raised for the legal pages are
+> recorded as resolved in `docs/legal/review-brief.md`, open item 10.
 
 ### Google Search Console
 
@@ -125,7 +128,7 @@ Mirror of GSC setup; smaller traffic but easy to maintain.
 
 ## Privacy & consent
 
-- **No cookies set before consent** for non-essential analytics (GA4, Clarity).
+- **No cookies set before consent** for non-essential analytics (GA4).
 - **Cookie banner** added in Phase 1 — minimal, accessible, respects opt-out.
 - **Vercel Analytics is cookieless** by default — runs without consent.
 - **CCPA + GDPR compliance** — explicit "Do Not Sell" link in footer; data export request mechanism by Phase 3.
