@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import { useEffect, useRef } from "react";
 
 import { useConsent } from "./consent-context";
 
@@ -14,15 +15,32 @@ type AnalyticsScriptsProps = {
  * Nothing renders until the visitor has *granted* consent (and we've mounted,
  * so server output is deterministic). GA4 also requires its ID to be
  * configured — an absent ID (local dev, preview before the property exists)
- * keeps it dormant, exactly like the Resend gate. When consent is later
- * withdrawn the `<Script>`s unmount and `lib/analytics` stops sending events;
- * already-set GA cookies persist to their natural expiry (a documented MVP
- * limitation — full cookie deletion is a Phase 4 follow-up).
+ * keeps it dormant, exactly like the Resend gate.
+ *
+ * Withdrawal: unmounting the `<Script>`s does NOT stop a gtag.js that has
+ * already run — its own listeners (enhanced measurement, history-change page
+ * views) keep sending until the next full page load. So when consent turns
+ * `denied` after this page started the tag, in this tab or another (the
+ * `storage` event reaches the same store), the page reloads; after the reload
+ * consent is `denied` and the tag never loads. Keyed on "this page started the
+ * tag", not on `window.gtag`, so a `gtag` defined by anything else can never
+ * cause a reload loop. Already-set GA cookies persist to their natural expiry
+ * (a documented MVP limitation — full cookie deletion is a Phase 4 follow-up).
  */
 export function AnalyticsScripts({ gaId }: AnalyticsScriptsProps) {
   const { consent, mounted } = useConsent();
+  const tagStarted = useRef(false);
+  const tagActive = mounted && consent === "granted" && Boolean(gaId);
 
-  if (!mounted || consent !== "granted" || !gaId) return null;
+  useEffect(() => {
+    if (tagActive) {
+      tagStarted.current = true;
+    } else if (tagStarted.current && consent === "denied") {
+      window.location.reload();
+    }
+  }, [tagActive, consent]);
+
+  if (!tagActive || !gaId) return null;
 
   return (
     <>
