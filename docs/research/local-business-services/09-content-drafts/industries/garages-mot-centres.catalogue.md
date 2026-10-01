@@ -1,7 +1,8 @@
 # 09 — `garages-mot-centres` industry entry draft
 
 > Pasteable for `data/industries.ts` after the brainstorm and after its doc 03 Part B section exists.
-> Every `£` figure is `[D4]`. Planning notes and the pass-1 self-check are in `../self-checks.md`.
+> Every `£` figure is `[D4]`. (1 October 2026: adopted as launch prices on 28 September 2026, `00` § 6; every
+> figure shows "excl. VAT".) Planning notes and the pass-1 self-check are in `../self-checks.md`.
 
 ## 1. `data/industries.ts` entry
 
@@ -39,7 +40,7 @@
     {
       question: "How much does a garage website cost?",
       answer:
-        "A custom site starts at £3,500 for the build, and for a garage the build shows prices the way the Motor Ombudsman's Code expects of accredited garages — inclusive of VAT and any disposal charge, estimates and quotations labelled as which — and the way consumer law expects of everyone: stated clearly, with the VAT position beside each figure. Missed-call text-back, MOT and service reminders, the review programme and profile management are monthly plans with their own starting figures on the pricing page, and the AI receptionist is its own plan, for the hours nobody can pick up. Every figure is + VAT where applicable. If the site you have is fine and the problem is the phone or the reminders, the plans work without a new site, and we will say so on the first call.",
+        "A custom site starts at £3,500 for the build, and for a garage the build shows prices the way the Motor Ombudsman's Code expects of accredited garages — inclusive of VAT and any disposal charge, estimates and quotations labelled as which — and the way consumer law expects of everyone: stated clearly, with the VAT position beside each figure. Missed-call text-back, the review programme and profile management are monthly plans with their own starting figures on the pricing page, and the AI receptionist is its own plan, for the hours nobody can pick up. Every figure is excl. VAT. If the site you have is fine and the problem is the phone or the reminders, the plans work without a new site, and we will say so on the first call.",
     },
     {
       question: "Is an automatic MOT reminder text allowed?",
@@ -69,7 +70,7 @@
     {
       question: "How do we get more reviews without breaking the rules?",
       answer:
-        "Ask after the customer has driven away, ask everyone, and offer nothing. Google's policy is explicit that businesses should not pressure people to review while on the premises, and a request at the counter is hard to keep on the right side of that line; the CMA's guidance treats asking only the happy customers as cherry-picking, with direct fines available since 6 April 2025. So the request goes out by text once the invoice is paid, to every customer, with no discount and no rate-us-first step; a reply to each review is drafted for your approval; and the rating on the site is the one Google shows. The review management page carries the rules with their sources; the garage-specific point is the counter.",
+        "Ask after the customer has driven away, ask everyone, and offer nothing. Google's policy is explicit that businesses should not pressure people to review while on the premises, and a request at the counter is hard to keep on the right side of that line; the CMA's guidance treats asking only the happy customers as cherry-picking, with direct fines available since 6 April 2025. So the request goes out by text once the invoice is paid, to every customer, with no discount and no rate-us-first step; a reply to each review is drafted for your approval; and a site widget, if you add one, shows the rating Google shows. The review management page carries the rules; the garage-specific point is the counter.",
     },
     {
       question: "Are you automotive compliance consultants?",
