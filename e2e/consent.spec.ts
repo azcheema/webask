@@ -48,6 +48,34 @@ test.describe("cookie consent", () => {
     await expect(banner).toBeHidden();
   });
 
+  // gtag.js cannot be unloaded from a running page, so withdrawing consent must
+  // reload it away — otherwise its own listeners keep measuring in this tab.
+  test("withdrawing consent reloads away a GA4 tag already running", async ({ page }) => {
+    await page.goto("/");
+    test.skip(!(await bannerShown(page)), "no NEXT_PUBLIC_GA_ID at build — banner not rendered");
+
+    const banner = page.getByRole("region", { name: /cookie consent/i });
+    await banner.getByRole("button", { name: /accept analytics/i }).click();
+    await expect
+      .poll(() => page.evaluate(() => typeof (window as { gtag?: unknown }).gtag))
+      .toBe("function");
+
+    // A marker that only survives if the page is NOT reloaded.
+    await page.evaluate(() => {
+      (window as { beforeWithdrawal?: boolean }).beforeWithdrawal = true;
+    });
+
+    await page.getByRole("button", { name: /cookie settings/i }).click();
+    await Promise.all([
+      page.waitForEvent("load"),
+      banner.getByRole("button", { name: /^reject analytics$/i }).click(),
+    ]);
+
+    expect(await page.evaluate(() => "beforeWithdrawal" in window)).toBe(false);
+    expect(await page.evaluate(() => typeof (window as { gtag?: unknown }).gtag)).toBe("undefined");
+    expect(await page.evaluate((k) => localStorage.getItem(k), CONSENT_KEY)).toBe("denied");
+  });
+
   test("footer Cookie settings reopens the banner after a decision", async ({ page }) => {
     await page.goto("/");
     test.skip(!(await bannerShown(page)), "no NEXT_PUBLIC_GA_ID at build — banner not rendered");
