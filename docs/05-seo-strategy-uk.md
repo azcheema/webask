@@ -185,24 +185,75 @@ a node on **another host**, so it must be whitelisted or the check will fail. Fl
 
 ### Why there's no profile, and why that's the correct call
 
-Google requires a **real location with staff present during stated business hours**.
-Virtual offices, mailbox services, coworking without permanent staffing, a friend's address
-or a PO Box are policy violations — risking suspension and permanent loss of the listing.
+Google requires that **a business make in-person contact with customers during its stated
+hours**, at its own location or by travelling to them. WebAsk does neither: it works remotely and
+meets nobody in person, and Google lists "online-only businesses" among its examples of
+businesses that are not eligible. A virtual office, a remote mailbox or PO box, coworking that is
+not signed, staffed and open to customers, or a friend's address is not an eligible location.
 There is no UK location, so **there is no eligible profile to create.**
 
-Creating one anyway against a borrowed or nominal address is the single fastest way to lose
-local visibility permanently. This is the same honesty override already locked on
-`naxdor.com` (2026-06): express reach through `areaServed`, never through a fabricated
-address.
+Creating one anyway against a borrowed or nominal address is the fastest way to have it
+suspended or disabled: Google says a profile set at a PO Box "will have their profile suspended",
+and if "your business doesn't exist in the location that you claim, Google will disable your
+profile".
+
+> **Corrected 1 October 2026** against Google's pages read that day (post B2,
+> `content/blog/map-pack-without-a-shopfront.mdx`). The test was written here as "a real location
+> with staff present during stated business hours", which is narrower than Google's words and
+> leaves out businesses that travel; "permanent loss of the listing" and "lose local visibility
+> permanently" are in no Google page read; the map block's "three-result" count is in none either,
+> and Google says reviews "can help" local ranking, not that they are "a top local ranking
+> factor". The same wording was corrected on the Manchester hub, in three `data/locations.ts` FAQ
+> answers and in the local SEO checklist post. This is the same honesty override already locked on
+> `naxdor.com` (2026-06): express reach through `areaServed`, never through a fabricated
+> address.
+
+### Google's rules for businesses without premises (read 1 October 2026)
+
+Read on the en-GB help pages for post B2. Google's help pages carry no dates and change without a
+change log, so re-read each before a post that quotes it is published or updated.
+
+- **Eligibility** (support.google.com/business/answer/13763036?hl=en-GB): "To qualify for a Business
+  Profile, a business must make in-person contact with customers during its stated hours." Examples
+  of businesses that "aren’t eligible" include "Brands, organisations, artists and other online-only
+  businesses", "Lead generation agents or companies", "An ongoing service, class or meeting at a
+  location that you don't own or have the authority to represent" and "Any business whose address
+  is listed as a PO box or mailbox in a remote location". Minimum-age products and services, "like
+  alcohol, cannabis or weapons, aren’t permitted as service-area businesses without a shop front".
+- **Guidelines** (answer/3038177?hl=en-GB): a business that travels to customers is "allowed one
+  service-area Business Profile"; "If you’re a service-area business, you should hide your business
+  address from customers"; "Create your Business Profile for your actual, real-world location"; a
+  virtual office "isn't eligible for a Business Profile"; co-working only where the office "maintains
+  clear signage, receives customers at the location during opening hours, and is staffed during
+  opening hours by your business staff"; "Do not create more than one page for each location of
+  your business, either in a single account or multiple accounts."
+- **Service areas** (answer/9157481?hl=en-GB): "You can set up to 20 service areas"; "You can’t set
+  your service area as a radius distance around your business"; the boundaries "shouldn’t be more
+  than about two hours of driving time from where your business is based" (the guidelines add "For
+  some businesses, larger service areas may be appropriate"). With no service area entered, "a
+  local area is chosen for you" (answer/2853879).
+- **Policies overview** (answer/13762416?hl=en-GB): "Merchants that set their business address at a
+  PO Box will have their profile suspended"; "If we determine that your business doesn't exist in
+  the location that you claim, Google will disable your profile."
+- **Ranking** (answer/7091?hl=en-GB): local results are explained under Relevance, Distance and
+  Prominence; "There's no way to request or pay for a better local ranking on Google"; "More reviews
+  and positive ratings can help your business’s local ranking." No page read gives a count of map
+  results or says where distance is measured from when an address is hidden.
+- **Verification** (answer/7107242, answer/14271705): methods "are automatically determined by Google
+  and can’t be changed"; video verification works for service-area businesses; an online-only
+  business is "not eligible for a Business Profile and can’t be verified".
+- **Structured data** (developers.google.com, LocalBusiness and Organization, both "Last updated
+  2026-09-08 UTC"): LocalBusiness requires `address` and `name` for the rich result; `areaServed`
+  appears on neither page; Organization has "no required properties".
 
 ### What this costs us — stated plainly
 
-| Lost                     | Impact                                                                                                                                          |
-| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Map Pack eligibility** | The three-result map block above the blue links is unreachable. For "web design agency Manchester" we can rank organically but never in the map |
-| **Google Maps listing**  | No pin, no Maps presence                                                                                                                        |
-| **Google reviews**       | The single strongest local trust signal for an SMB choosing an agency, and a top local ranking factor — unavailable on Google                   |
-| **Knowledge panel**      | No branded panel from a verified profile                                                                                                        |
+| Lost                     | Impact                                                                                                                                              |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Map Pack eligibility** | The map block of local results above the blue links is unreachable. For "web design agency Manchester" we can rank organically but never in the map |
+| **Google Maps listing**  | No pin, no Maps presence                                                                                                                            |
+| **Google reviews**       | Unavailable on Google; Google says more reviews and positive ratings "can help your business’s local ranking" (answer/7091)                         |
+| **Knowledge panel**      | No branded panel from a verified profile                                                                                                            |
 
 This is a real cost and should not be minimised. It means **local search is an organic-only
 game**, which raises the bar on the location pages and makes the vertical wedge more

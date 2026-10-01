@@ -228,7 +228,7 @@ export const locations: ReadonlyArray<Location> = [
         {
           question: "What does having no Google Business Profile of your own mean for our project",
           answer:
-            "It is our constraint rather than yours, and it is worth stating rather than minimising. Google requires a real location staffed during stated hours, so with no UK address there is no eligible profile for us to create and no map presence to go with it — no pin, no Google reviews, no knowledge panel. Our own strategy uses this city as the worked example: for a term like web design agency Manchester the blue links are open to us and the map is not. Your site is a separate property with its own eligibility. If you have premises in Greater Manchester the profile is free, it sits above the blue links, and it is worth sorting before any retainer starts.",
+            "It is our constraint rather than yours, and it is worth stating rather than minimising. Google requires a business to make in-person contact with customers during its stated hours, and we meet nobody in person, so there is no eligible profile for us to create and no map presence to go with it — no pin, no Google reviews, no knowledge panel. Our own strategy uses this city as the worked example: for a term like web design agency Manchester the blue links are open to us and the map is not. Your site is a separate property with its own eligibility. If you have premises in Greater Manchester the profile is free, it sits above the blue links, and it is worth sorting before any retainer starts.",
         },
         {
           question: "Which parts of Greater Manchester would get their own page",
@@ -314,7 +314,7 @@ export const locations: ReadonlyArray<Location> = [
           question:
             "Can you help a Cheshire business rank locally without a Google Business Profile",
           answer:
-            "Two questions sit inside that one. If you have staffed premises — a clinic in Knutsford, an office in Chester — you almost certainly qualify for a Google Business Profile, it costs nothing, and it belongs ahead of any retainer. We do not qualify, and will not pretend otherwise: Google requires a real location staffed during stated hours, and there is no UK address here to make eligible, so no map pin, no Google reviews and no knowledge panel. That is a real cost and worth naming rather than burying. It also means local search on our side is organic or nothing — county and town pages with genuine substance, topical depth, and only the listings whose eligibility rules we can honestly meet. Our SEO service page sets out how that is built.",
+            "Two questions sit inside that one. If you have staffed premises — a clinic in Knutsford, an office in Chester — you almost certainly qualify for a Google Business Profile, it costs nothing, and it belongs ahead of any retainer. We do not qualify, and will not pretend otherwise: Google requires a business to make in-person contact with customers during its stated hours, and we work remotely and meet nobody in person, so no map pin, no Google reviews and no knowledge panel. That is a real cost and worth naming rather than burying. It also means local search on our side is organic or nothing — county and town pages with genuine substance, topical depth, and only the listings whose eligibility rules we can honestly meet. Our SEO service page sets out how that is built.",
         },
         {
           question:
@@ -385,7 +385,7 @@ export const locations: ReadonlyArray<Location> = [
         {
           question: "Can you help us rank in Leeds without a Google Business Profile",
           answer:
-            "Two different answers sit inside that question. Ours: no profile, and none coming — Google requires a real location staffed during stated hours, and there is no UK address here to make eligible, so local search for us is organic or nothing, with no Map Pack, no Maps pin and no Google reviews. Yours is likely the opposite. A CQC-registered practice or a high-street firm has exactly the staffed address Google asks for, the profile costs nothing, and it is normally the number-one local citation, so claim and complete it before you spend anything on a retainer. One caution: the reviews on that profile answer, since 6 April 2025, to the DMCC Act, which makes an undisclosed incentivised review a banned practice in its own right.",
+            "Two different answers sit inside that question. Ours: no profile, and none coming — Google requires a business to make in-person contact with customers during its stated hours, and we work remotely and meet nobody in person, so local search for us is organic or nothing, with no Map Pack, no Maps pin and no Google reviews. Yours is likely the opposite. A CQC-registered practice or a high-street firm has exactly the staffed address Google asks for, the profile costs nothing, and it is normally the number-one local citation, so claim and complete it before you spend anything on a retainer. One caution: the reviews on that profile answer, since 6 April 2025, to the DMCC Act, which makes an undisclosed incentivised review a banned practice in its own right.",
         },
         {
           question: "We are a regulated practice — do you give compliance advice",
