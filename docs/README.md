@@ -27,17 +27,18 @@ carries fabricated staff and fake testimonials that became **a banned practice i
 
 Read in order. Each doc is self-contained but they build on each other.
 
-| #   | Doc                                                                | What it answers                                                                 |
-| --- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
-| —   | [`00-overview.md`](00-overview.md)                                 | What WebAsk is, why, and what's still undecided. **Read first.**                |
-| 01  | [`01-inherited-from-naxdor.md`](01-inherited-from-naxdor.md)       | What transfers from `d:\naxdor` verbatim, what needs editing, what gets binned  |
-| 02  | [`02-uk-market-research.md`](02-uk-market-research.md)             | UK market size, competitors, keywords, verticals, GBP pricing                   |
-| 03  | [`03-uk-compliance.md`](03-uk-compliance.md)                       | UK legal/regulatory — the biggest delta. Blocks several pages                   |
-| 04  | [`04-information-architecture.md`](04-information-architecture.md) | Current sitemap → target sitemap, and the full 301 map                          |
-| 05  | [`05-seo-strategy-uk.md`](05-seo-strategy-uk.md)                   | How the three sites relate, GBP, citations, indexation                          |
-| 06  | [`06-build-plan.md`](06-build-plan.md)                             | Phased build plan, acceptance gates, sizing                                     |
-| 07  | [`07-naxdor-change-requests.md`](07-naxdor-change-requests.md)     | Changes wanted in `d:\naxdor` — **logged, not applied**                         |
-| 08  | [`08-seo-architecture.md`](08-seo-architecture.md)                 | Silos, entity model, live competitor gap, and the compliance-architecture wedge |
+| #   | Doc                                                                | What it answers                                                                    |
+| --- | ------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| —   | [`00-overview.md`](00-overview.md)                                 | What WebAsk is, why, and what's still undecided. **Read first.**                   |
+| 01  | [`01-inherited-from-naxdor.md`](01-inherited-from-naxdor.md)       | What transfers from `d:\naxdor` verbatim, what needs editing, what gets binned     |
+| 02  | [`02-uk-market-research.md`](02-uk-market-research.md)             | UK market size, competitors, keywords, verticals, GBP pricing                      |
+| 03  | [`03-uk-compliance.md`](03-uk-compliance.md)                       | UK legal/regulatory — the biggest delta. Blocks several pages                      |
+| 04  | [`04-information-architecture.md`](04-information-architecture.md) | Current sitemap → target sitemap, and the full 301 map                             |
+| 05  | [`05-seo-strategy-uk.md`](05-seo-strategy-uk.md)                   | How the three sites relate, GBP, citations, indexation                             |
+| 06  | [`06-build-plan.md`](06-build-plan.md)                             | Phased build plan, acceptance gates, sizing                                        |
+| 07  | [`07-naxdor-change-requests.md`](07-naxdor-change-requests.md)     | Changes wanted in `d:\naxdor` — **logged, not applied**                            |
+| 08  | [`08-seo-architecture.md`](08-seo-architecture.md)                 | Silos, entity model, live competitor gap, and the compliance-architecture wedge    |
+| —   | [`launch-checklist.md`](launch-checklist.md)                       | Founder's step-by-step for Vercel, Resend, GA4, the DNS cutover and Search Console |
 
 When the repo is scaffolded (Phase 0), `docs/strategy/*` and `docs/phases/*` get copied
 across from `d:\naxdor` per doc 01, and this bundle sits alongside them as the UK layer.

@@ -78,6 +78,7 @@ Nothing public yet.
       `priceCurrency: GBP`, and `State` → `AdministrativeArea` (England has no `State`)
 - [x] **Whitelist the cross-domain `parentOrganization` `@id`** in `e2e/jsonld.spec.ts`
 - [ ] New Vercel project · new Resend domain + SPF/DKIM/DMARC · GitHub Actions CI
+      _(the founder's steps for all of it, in order: [`launch-checklist.md`](launch-checklist.md))_
 - [x] `data/locations.ts` reshaped for the UK (Manchester · Cheshire · Leeds; county not
       state, `Europe/London`). Hub copy deferred to Phase 2 via an optional `copy` block, so
       an unauthored hub is unrenderable by construction
@@ -170,7 +171,9 @@ Home · `/services` index · 2 flagship service pages (recommend **web-developme
       `process.env.VERCEL` _(Microsoft Clarity dropped before launch — founder,
       1 October 2026)_
 - [ ] GSC + Bing Webmaster properties, DNS-verified, sitemap submitted
-- [ ] **Cutover**: DNS to Vercel
+- [ ] **Cutover**: DNS to Vercel _(DNS is on Cloudflare, the old site and the domain's
+      email on SiteGround, the registration at Namecheap — order and rollback in
+      [`launch-checklist.md`](launch-checklist.md) § E)_
 
 ### Acceptance
 
