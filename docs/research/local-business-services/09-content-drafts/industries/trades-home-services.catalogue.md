@@ -1,7 +1,8 @@
 # 09 — `trades-home-services` industry entry draft
 
 > Pasteable for `data/industries.ts` after the brainstorm and after its doc 03 Part B section exists.
-> Every `£` figure is `[D4]`. Planning notes and the pass-1 self-check are in `../self-checks.md`.
+> Every `£` figure is `[D4]`. (1 October 2026: adopted as launch prices on 28 September 2026, `00` § 6; every
+> figure shows "excl. VAT".) Planning notes and the pass-1 self-check are in `../self-checks.md`.
 
 ## 1. `data/industries.ts` entry
 
@@ -39,17 +40,17 @@
     {
       question: "How much does a website for a trade business cost?",
       answer:
-        "A custom site starts at £3,500 for the build, and for a trade that build includes the pages and lines the law expects: the company or trading details every site must carry, the register and scheme numbers shown in the form each scheme allows, a quote flow that gives the cancellation information the Consumer Contracts Regulations require, and prices that say whether they include VAT. If the site you have is fine and the problem is the phone, you do not need a site: missed-call text-back, the review programme and profile management are monthly plans with their own starting figures on the pricing page, and a landing page for one campaign is priced as a page. Every figure is + VAT where applicable, and we scope the smallest combination that fixes the problem you rang about.",
+        "A custom site starts at £3,500 for the build, and for a trade that build can include the pages and lines the law expects: the company or trading details every site must carry, the register and scheme numbers shown in the form each scheme allows, a quote flow that gives the cancellation information the Consumer Contracts Regulations require, and prices that say whether they include VAT. If the site you have is fine and the problem is the phone, you do not need a site: missed-call text-back, the review programme and profile management are monthly plans with their own starting figures on the pricing page, and a landing page for one campaign is priced as a page. Every figure is excl. VAT, and we scope the smallest combination that fixes the problem you rang about.",
     },
     {
       question: "Do we need a new phone number for the missed-call text-back?",
       answer:
-        "No. Keep the number on the van. Unanswered calls are diverted to a line the platform watches, the text goes out from a number tied to your business, and nothing printed anywhere has to change — or change back if you stop. A second line is possible: a UK number registered to your business on the platform's regulatory record, or a UK mobile or freephone number for a business with no UK registration. Either way it is yours, not ours. The missed-call text-back page sets out the registration record in full; for a trade the short version is that the divert wins, because the van already carries the number customers trust.",
+        "No. Keep the number on the van. Unanswered calls are diverted to a line the platform watches, the text goes out from a number tied to your business, and nothing printed anywhere has to change — or change back if you stop. A second line is possible: a UK number registered to your business on the platform's regulatory record, or a UK mobile or freephone number for a business with no UK registration. Either way it is yours, not ours. The missed-call text-back page sets out the registration record; for a trade the short version is that the divert wins, because the van already carries the number customers trust.",
     },
     {
       question: "Is texting people back after a missed call legal?",
       answer:
-        "Yes, as long as the text stays what it claims to be. The rule that matters is about content, not technology: a message that tells someone you missed their call and how to reach you is customer service, and a discount or an offer makes it marketing to a number you hold no consent for — which is why the one we send for a trade also carries no book-today push and no review link. It says who missed the call, how to reply, how to book and how to stop, and nothing else, and the caller's number is used to reply to that call and for nothing more. The missed-call text-back page prints the message and the regulator's test in full.",
+        "Yes, as long as the text stays what it claims to be. The rule that matters is about content, not technology: a message that tells someone you missed their call and how to reach you is customer service, and a discount or an offer makes it marketing to a number you hold no consent for — which is why the one we send for a trade also carries no book-today push and no review link. It says who missed the call, how to reply, how to book and how to stop, and nothing else, and the caller's number is used to reply to that call and for nothing more. The missed-call text-back page prints the message word for word.",
     },
     {
       question: "A customer accepted my quote by text or at the door — can they cancel?",
@@ -64,7 +65,7 @@
     {
       question: "How do we get more Google reviews without breaking the rules?",
       answer:
-        "By asking every customer after every job, and offering nothing for it. The tempting shortcut for a trade — sending the review link only to the jobs that went well — is the one the regulator's guidance describes as cherry-picking and Google's policy says merchants should not do, and since 6 April 2025 the CMA has been able to fine directly for the practices the Act bans. So the request goes out by text or email once the job is done, to everyone, with no discount attached; a reply to each review is drafted for your approval; and your rating appears on the site as Google shows it, low scores included. The review management page carries the rules with their sources; the trade-specific point is timing — an hour after a call-out, a day after a bigger job.",
+        "By asking every customer after every job, and offering nothing for it. The tempting shortcut for a trade — sending the review link only to the jobs that went well — is the one the regulator's guidance describes as cherry-picking and Google's Maps content policy does not allow, and since 6 April 2025 the CMA has been able to fine directly for the practices the Act bans. So the request goes out by text or email once the job is done, to everyone, with no discount attached; a reply to each review is drafted for your approval; and a site widget, if you add one, shows your rating as Google shows it, low scores included. The review management page carries the rules; the trade-specific point is timing — an hour after a call-out, a day after a bigger job.",
     },
     {
       question: "Do we need a directory listing, a website, or both?",

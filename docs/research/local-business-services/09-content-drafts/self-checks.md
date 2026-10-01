@@ -12,6 +12,12 @@
 > what the author flagged; where they say "S7 verifies" or "prices are not printed", the S7 and S8
 > log entries in `README.md` §§ 3.2–3.3 supersede them.
 
+> **1 October 2026.** These notes predate the decisions of 28 September 2026 (`00` § 6) and are kept as
+> written. Where they say "+ VAT where applicable", "Starting at £X", an included allowance, or "when
+> D4 lands", read "excl. VAT", "From £X", usage not included (billed on top at cost), and D4 adopted
+> as launch prices. The six service drafts they describe are superseded by the site copy in
+> `content/services/` and `data/services.ts`.
+
 ## Catalogue FAQ answers (App. Z — applies to every `*.catalogue.md`)
 
 Constraints applied: plain text only (these strings feed `FAQPage` JSON-LD and can surface in a SERP

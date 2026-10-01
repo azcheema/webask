@@ -1,7 +1,8 @@
 # 09 — `veterinary-practices` industry entry draft
 
 > Pasteable for `data/industries.ts` after the brainstorm and after its doc 03 Part B section exists.
-> Every `£` figure is `[D4]`. Planning notes and the pass-1 self-check are in `../self-checks.md`.
+> Every `£` figure is `[D4]`. (1 October 2026: adopted as launch prices on 28 September 2026, `00` § 6; every
+> figure shows "excl. VAT".) Planning notes and the pass-1 self-check are in `../self-checks.md`.
 
 ## 1. `data/industries.ts` entry
 
@@ -39,7 +40,7 @@
     {
       question: "How much does a veterinary practice website cost?",
       answer:
-        "For a practice the build starts at £3,500 and carries the pages the Order requires: the price list one click from the homepage, practice information, the ownership statement, the end-of-life options page and the prescription literature. Booking confirmations that carry the consultation price and the price-list link from the first message are CRM automation, from £2,500; local SEO is from £750 a month where new-client search is where you compete. Each figure is + VAT where applicable. The monthly plans for the phone, reviews and your Google profile have their own starting figures on the pricing page, and the combination is scoped on a call — a single-site practice and a fifteen-site group sit on different dates and need different things.",
+        "For a practice the build starts at £3,500 for five pages, with further pages quoted before work starts, and carries the pages the Order requires: the price list one click from the homepage, practice information, the ownership statement, the end-of-life options page and the prescription literature. Booking confirmations that carry the consultation price and the price-list link from the first message are CRM automation, from £3,500; local SEO is from £750 a month where new-client search is where you compete. Each figure is excl. VAT. The monthly plans for the phone, reviews and your Google profile have their own starting figures on the pricing page, and the combination is scoped on a call — a single-site practice and a fifteen-site group sit on different dates and need different things.",
     },
     {
       question: "What does the CMA's Order require on our website, and by when?",

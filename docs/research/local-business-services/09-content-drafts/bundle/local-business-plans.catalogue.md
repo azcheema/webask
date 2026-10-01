@@ -4,6 +4,12 @@
 > merged. Title and meta counts are checked by `private/tools/counts.mjs` in S7; the planning notes and
 > pass-1 self-check for the MDX half are in `../self-checks.md`.
 
+> **1 October 2026.** Brought into line with the decisions of 28 September 2026 (`00` § 6): the
+> figures were adopted as launch prices (the tiers unchanged; the AI module, £149 + £499 set-up, now
+> sits £50 a month below the standalone receptionist's £199 and at the same set-up, `07` § 4), so the
+> `[D4]` tags below now read "adopted"; usage is not included in any plan, so every allowance string is
+> replaced by the live usage wording; every figure shows "excl. VAT".
+
 ## 1. Service object (App. I.7)
 
 ### I.7 `local-business-plans` (the bundle)
@@ -21,11 +27,12 @@
   whoItsFor:
     "UK local businesses that want the phone, the follow-up and the reviews handled without running a platform themselves — and who want to know exactly what leaves with them if they go.",
   pricing: {
-    startingAmount: 199 /* [D4] — the Answer tier; working set, 25 September 2026 */,
+    startingAmount: 199 /* the Answer tier; adopted as the launch price, 28 September 2026 (research 00 § 6) */,
     currency: "GBP",
     cadence: "monthly",
-    setupAmount: 249 /* [D4] — the Answer module; Reputation and Follow-Up carry £647 across their modules */,
-    usageNote: "Messages and minutes beyond each plan's allowance are passed through at cost on a published GBP schedule.",
+    setupAmount: 249 /* adopted 28 September 2026 — the Answer module; Reputation and Follow-Up carry £647 across their modules */,
+    usageNote:
+      "Usage is not included: whatever the platform charges for, such as texts and replies, calls, AI minutes and WhatsApp, is billed on top at cost, based on what you use, on a published GBP schedule reviewed quarterly.",
     priceNote:
       "What moves the price: the tier, a new UK number versus a divert, the AI Receptionist module, and usage.",
   },
@@ -47,7 +54,7 @@
     "Hosted or my own account — which should I choose?",
     "Where is my data, and who is responsible for it?",
     "What happens if I leave — what do I keep?",
-    "What do messages and minutes cost beyond the allowance?",
+    "What do messages and minutes cost?",
     "Can I start with Answer and add modules later?",
     "Is there a minimum term?",
     "We are a clinic — is a hosted plan right for us?", // answer: patient data stays in your own account (M1)
@@ -64,7 +71,7 @@ faqs: [
   {
     question: "What do the plans cost, and what is the set-up fee?",
     answer:
-      "Each plan has a monthly fee and a set-up fee per module: Answer from £199 a month with a £249 set-up, Reputation from £399 with £647 across its modules, Follow-Up from £749 with the same £647, and the AI module £149 a month with a £499 set-up, + VAT where applicable. Answer covers the hosted sub-account, the number or divert, missed-call text-back, the inbox, the booking calendar and the report; Reputation adds the review programme and Google Business Profile upkeep; Follow-Up adds campaigns, an automation a month and a landing page a quarter. The AI Receptionist module can be added to any plan. Usage beyond each plan's allowance is passed through at cost on a published schedule. What moves the price: the tier, a new number instead of a divert, the AI module, and what you use.",
+      "Each plan has a monthly fee and a set-up fee per module: Answer from £199 a month with a £249 set-up, Reputation from £399 with £647 across its modules, Follow-Up from £749 with the same £647, and the AI module £149 a month with a £499 set-up, excl. VAT. Answer covers the hosted sub-account, the number or divert, missed-call text-back, the inbox, the booking calendar and the report; Reputation adds the review programme and Google Business Profile upkeep; Follow-Up adds campaigns, an automation a month and a landing page a quarter. The AI Receptionist module can be added to any plan. Usage is not included: it is billed on top at cost, on a published schedule. What moves the price: the tier, a new number instead of a divert, the AI module, and what you use.",
   },
   {
     question: "Hosted or my own account — which should I choose?",
@@ -82,10 +89,10 @@ faqs: [
       "Two things: an export, and the option to take the sub-account with you. The export gives you your contacts, their conversations and the forms they filled, in files that open without the platform. The transfer moves the sub-account to an agency account of your own or to another agency: contacts with their history, calendars, users, websites, funnels and API keys come across; every automation arrives set to draft for you to switch on; connected accounts such as Google, Facebook and payments are reconnected on your side; any add-on subscription is cancelled first and set up again by you; and a phone number moves where both sides use the platform's own telephony. The checklist for all of that is written at set-up, not at the exit.",
   },
   {
-    question: "What do messages and minutes cost beyond the allowance?",
+    question: "What do messages and minutes cost?",
     answer:
-      "At cost, on a schedule you can read before you send anything. The platform bills texts, calls, AI minutes and WhatsApp messages in US dollars; we publish a schedule in pounds, reset it each quarter against the exchange rate, and charge usage beyond your plan's allowance at the rates on it, with nothing added. Inside the allowance there is nothing to pay. The plan fee is fixed in pounds for twelve months, so the exchange rate reaches you only through the usage line, and the monthly report shows the allowance being used up before the schedule applies — no surprise on the invoice.",
-  }, // Q4/Q5 decided 25 September 2026 (00 § 6); figures still [D4]
+      "At cost, on a schedule you can read before you send anything. Usage is not included in any plan. The platform bills texts, calls, AI minutes and WhatsApp messages in US dollars; we publish a schedule in pounds, reset it each quarter against the exchange rate, and charge what you use at the rates on it, with nothing added. The plan fee is fixed in pounds for twelve months, so the exchange rate reaches you only through the usage line.",
+  }, // Q4/Q5 decided 25 September 2026 (00 § 6); usage not included and figures adopted 28 September 2026
   {
     question: "Can I start with Answer and add modules later?",
     answer:
@@ -95,11 +102,11 @@ faqs: [
     question: "Is there a minimum term?",
     answer:
       "No. Set-up is paid on signature, the plan monthly in advance and usage in arrears, and thirty days' notice ends it. The plan fee is fixed in pounds for twelve months, which protects you from the exchange rate rather than binding you to the term. We ask for the first month to be a proper set-up, with the divert tested from a real phone and the templates approved, because a plan cancelled before it has run has taught nobody anything, but nothing in the terms requires you to stay. If you leave, the exit works as described on this page, with the export and the transfer checklist.",
-  }, // Q4/Q5 decided 25 September 2026 (00 § 6); figures still [D4]
+  }, // Q4/Q5 decided 25 September 2026 (00 § 6); figures adopted 28 September 2026
   {
     question: "We are a clinic — is a hosted plan right for us?",
     answer:
-      "For the phone, the reviews and the profile, possibly; for patient data, no. If your customers are patients, the records you hold are health data, and a hosted sub-account on a US-hosted platform is the wrong place for them. Clinics and dental practices get the same automations built in an account they own, with the consent design and the advertising rules those pages set out, including the rule that no message names, or hints at, a prescription-only medicine. The plans on this page are for businesses whose contact records are names, numbers and jobs. Talk to us about which parts of a plan can run for a practice without touching patient records, and which cannot.",
+      "For the phone, the reviews and the profile, possibly; for patient data, no. If your customers are patients, the records you hold are health data, and a hosted sub-account on a US-hosted platform is the wrong place for them. Clinics and dental practices get the same automations built in an account they own, with the advertising rules those pages set out, including the rule that no message names, or hints at, a prescription-only medicine. The plans on this page are for businesses whose contact records are names, numbers and jobs. Talk to us about which parts of a plan can run for a practice without touching patient records, and which cannot.",
   }, // Q10 decided 25 September 2026 (00 § 6, D9 and D10)
 ],
 ```
@@ -119,10 +126,14 @@ statute sourcing in S8. `FAQPage` constraint: every answer stands alone without 
 
 ## 3. `BundleTier` type and the `tiers` array (App. AB.1)
 
-> **28 September 2026 — usage is not included (founder).** Everything the platform meters — texts, calls, AI minutes, WhatsApp messages, email sends, number rental and add-ons — is billed on top at cost, based on what the client uses; on a plan WebAsk hosts, that is the published pound schedule. The included allowances in this file (100 conversations, 300 minutes, 10,000 emails and 200 or 500 segments) are withdrawn; the service pages no longer promise any. Recorded in `00` § 6. Each tier's `usageNote` below needs the same change when the bundle is built.
+> **28 September 2026 — usage is not included (founder).** Everything the platform meters — texts, calls, AI minutes, WhatsApp messages, email sends, number rental and add-ons — is billed on top at cost, based on what the client uses; on a plan WebAsk hosts, that is the published pound schedule. The included allowances in this file (100 conversations, 300 minutes, 10,000 emails and 200 or 500 segments) are withdrawn; the service pages no longer promise any. Recorded in `00` § 6. Each tier's `usageNote` below needs the same change when the bundle is built. (1 October 2026: done — each `usageNote` below now says usage is not included.)
 
 Everything here waits for the § 4.7 type extension (`tiers`, `setupAmount`, `usageNote`, `status`)
-and for D4; every figure is a `[D4]` placeholder. The FAQ strings feed `FAQPage` JSON-LD on `/pricing`
+and for D4; every figure is a `[D4]` placeholder. (1 October 2026: the type extension is in
+`data/services.ts` — `BundleTier`, `tiers`, `setupAmount`, `usageNote`, `status` — and D4 was adopted
+on 28 September 2026, so the figures are launch prices; the entry itself is not yet added. The bundle's own FAQ strings in § 2 feed `FAQPage` JSON-LD on the
+service page, from `service.faqs` in `app/(marketing)/services/[service]/page.tsx`; the `/pricing`
+markup reads `data/copy/pricing.ts`, which is where the `deltas.md` § 4 FAQs go.) The FAQ strings feed `FAQPage` JSON-LD on `/pricing`
 (`app/(marketing)/pricing/page.tsx` L40-44), so they are plain text with no links. Terms that depend
 on Q4/Q5 are marked. The pricing page's `PricingTable` (L69) will show the bundle as one row at the
 Answer tier's starting figure once the entry exists; tier detail lives on the bundle page and in the
@@ -137,10 +148,10 @@ export type BundleTier = {
   readonly name: string;
   /** 12–20 words; the card's one line. */
   readonly summary: string;
-  /** Monthly starting figure and the set-up component for this tier. Both [D4]. */
+  /** Monthly starting figure and the set-up component for this tier. Both adopted 28 September 2026. */
   readonly pricing: {
-    readonly startingAmount: number; // [D4]
-    readonly setupAmount: number; // [D4] — set-up is charged per module added, not per tier
+    readonly startingAmount: number;
+    readonly setupAmount: number; // set-up is charged per module added, not per tier
     readonly currency: "GBP";
     readonly cadence: "monthly";
     readonly usageNote: string;
@@ -158,12 +169,12 @@ tiers: [
     name: "Answer",
     summary: "The phone handled: every missed call texted back, one inbox, a booking calendar, run for you.",
     pricing: {
-      startingAmount: 199, // [D4] — working set, 25 September 2026
-      setupAmount: 249, // [D4] — set-up for the hosted sub-account, number or divert, and templates
+      startingAmount: 199, // adopted as the launch price, 28 September 2026 (research 00 § 6)
+      setupAmount: 249, // adopted 28 September 2026 — set-up for the hosted sub-account, number or divert, and templates
       currency: "GBP",
       cadence: "monthly",
       usageNote:
-        "Includes 100 conversations a month; messages beyond it are passed through at cost on a published GBP schedule, reset each quarter against the exchange rate.",
+        "Usage is not included: whatever the platform charges for, such as texts and replies, the calls on the divert, the number and WhatsApp, is billed on top at cost, based on what you use, on a published GBP schedule reset each quarter against the exchange rate.",
     },
     includes: [
       "A hosted sub-account with a UK number registered to your business, or a divert from the number you publish",
@@ -183,12 +194,12 @@ tiers: [
     name: "Reputation",
     summary: "Everything in Answer, plus the review programme and your Google profile kept up, month to month.",
     pricing: {
-      startingAmount: 399, // [D4]
-      setupAmount: 647, // [D4] — Answer's £249 plus the review-programme and profile modules at £199 each
+      startingAmount: 399, // adopted 28 September 2026
+      setupAmount: 647, // adopted 28 September 2026 — Answer's £249 plus the review-programme and profile modules at £199 each
       currency: "GBP",
       cadence: "monthly",
       usageNote:
-        "Review requests by text and email are passed through at cost on the same published GBP schedule as the plan's other usage.",
+        "Usage is not included: the texts and emails the review requests are sent by are billed on top at cost, based on what you use, on the same published GBP schedule as the plan's other usage.",
     },
     includes: [
       "Everything in Answer",
@@ -207,12 +218,12 @@ tiers: [
     name: "Follow-Up",
     summary: "Everything in Reputation, plus campaigns written and sent monthly to the people you may lawfully message.",
     pricing: {
-      startingAmount: 749, // [D4]
-      setupAmount: 647, // [D4] — adds no set-up module of its own (the consent audit is the first month's work, as on the email-sms-marketing entry), so the tier's set-up figure is Reputation's
+      startingAmount: 749, // adopted 28 September 2026
+      setupAmount: 647, // adopted 28 September 2026 — adds no set-up module of its own (the consent audit is the first month's work, as on the email-sms-marketing entry), so the tier's set-up figure is Reputation's
       currency: "GBP",
       cadence: "monthly",
       usageNote:
-        "Includes up to 10,000 emails and 200 text segments a month; campaign texts beyond that and WhatsApp messages are metered by the platform in US dollars and passed through at cost at the rates on the published GBP schedule, reset each quarter against the exchange rate.",
+        "Usage is not included: whatever the platform charges for, such as emails, texts and replies, WhatsApp and the sending number, is metered by the platform in US dollars and billed on top at cost, based on what you use, at the rates on the published GBP schedule, reset each quarter against the exchange rate.",
     },
     includes: [
       "Everything in Reputation",
@@ -231,9 +242,10 @@ tiers: [
     ],
   },
 ],
-// The AI Receptionist is a module on any tier, not a tier: £149 a month plus a £499 set-up inside a plan [D4]
-// (07 § 4 — below the standalone £179 / £599 because the divert, the number and the inbox are already in the plan),
-// 300 minutes a month, minutes beyond at the schedule rate. Where the module figure lives in the type is a build
+// The AI Receptionist is a module on any tier, not a tier: £149 a month plus a £499 set-up inside a plan, adopted
+// 28 September 2026 (07 § 4 — £50 a month below the standalone receptionist's £199 because the divert, the number
+// and the inbox are already in the plan, and at the same £499 set-up); usage not included, minutes billed at the
+// schedule rate. Where the module figure lives in the type is a build
 // question (11 AE.1: a `modules?` field on this entry, or a tier-less line in the Plans block); the bundle page and
 // the Plans block say "add the AI Receptionist to any plan".
 ```

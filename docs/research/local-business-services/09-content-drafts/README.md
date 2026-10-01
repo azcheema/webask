@@ -11,7 +11,8 @@
 > (`00` § 6): launch prices, "excl. VAT" in place of "+ VAT where applicable", and usage never
 > included (no allowances; usage billed on top at cost). The six service drafts are superseded by the
 > site copy in `content/services/` and `data/services.ts`. Every other draft here (blog, industries,
-> bundle, deltas) must be brought into line with those decisions before it ships.
+> bundle, deltas) must be brought into line with those decisions before it ships. (1 October 2026:
+> done; see § 3.7.)
 
 > **29 September 2026.** Google's Maps content policy, read raw that day, lists the incentive and
 > selective-solicitation lines under "We do not allow merchants to:" (doc 03 § A6). The "should
@@ -21,7 +22,8 @@
 > `services/review-management.mdx`:30 and `services/review-management.catalogue.md`:78) must be
 > brought to that wording before any of them ships. The on-premises line keeps "should not". The
 > same day, doc 03 § A6 found "annual" in neither s.182(6) nor s.204(1)(a) of the DMCC Act; drafts
-> that print "10% of global annual turnover" go on its queue.
+> that print "10% of global annual turnover" go on its queue. (1 October 2026: done in the four drafts
+> named and in the DMCC post's penalty line; the two superseded service drafts are left as they are.)
 
 ## 1. Files
 
@@ -256,6 +258,70 @@ trades FAQ 4 was trimmed from 162 to under 150 words without losing a fact. `cou
 `cites.mjs` 131 cited · 0 unresolved · 0 placeholders · prettier exit 0. No similarity run: no
 sentence was added that any other draft shares.
 
+### 3.7 Run of 1 October 2026 (the decisions of 28 September 2026 carried into the drafts)
+
+Scope: the sixteen posts with `calendar.md` and `outlines.md`, the three industry pages and catalogues,
+the bundle page and catalogue, `deltas.md` and `index-and-nav.md`, plus dated notes here and in
+`self-checks.md`. The six service drafts are superseded by the site copy and were not touched.
+
+**Decisions applied.** "+ VAT where applicable" → "excl. VAT" (the three industry catalogues, the
+bundle page and catalogue, the funnel post twice). CRM automation £2,500 → £3,500 (vets catalogue).
+Usage not included: the bundle's allowances (100 conversations, 10,000 emails and 200 segments, 300
+minutes) are replaced by the live `usageNote` wording in the entry, the three tiers, the pricing FAQ
+and the usage FAQ (now "What do messages and minutes cost?"), and in the body's usage section; the
+receptionist comparison post no longer describes an allowance of minutes. The `[D4]` tags read
+"adopted 28 September 2026"; the AI module comment records £50 a month below the standalone £199 at
+the same £499 set-up (`07` § 4). From 29 September–1 October: Google's Maps policy "does not allow"
+for incentives and selective solicitation (the DMCC post, the garages and trades pages, the trades
+catalogue), the DMCC post's penalty without "annual" and without the unsupported £150,000 figure for
+individuals, and "the Information Commission (the ICO)" in two posts.
+
+**Cross-reference check.** A second reader checked every sentence that says what another WebAsk page
+prints, says or includes against `main` (the nine reshaped pages, the six draft service pages,
+`data/copy/free-audit.ts`). About 60 held; the rest were cut, or reworded in the live page's own words:
+
+- **The free audit** was promised for work it does not do. It reads public pages only, and its
+  rules check covers clinics only. Ten sentences or clauses were cut and one call to action narrowed
+  to "search, speed and conversion".
+- **The review widget** was shown as part of the programme; it is an add-on (five places).
+- **The coded landing page** was described with a "speed floor" and as sitting beside "a site we
+  built", which implies a client. Three places now use the landing-pages FAQ wording.
+- **Page contents the reshape removed** were still described: the CRM legal-form table, the
+  receptionist page on clinics, the text-back page's regulator test, the review page's sources, the
+  dental page's recall position and two sets of report fields.
+- **Starting scopes and add-ons**, now as the catalogue states them: the profile suspension work and
+  the funnel's payment step are add-ons; the web-development figure buys five pages; the trades build
+  "can include" the quote flow; a bespoke voice agent is an add-on to the £4,500 floor; the
+  receptionist's usage lists all three metered lines; the garages catalogue no longer names an MOT
+  reminder plan, which does not exist.
+- **The GDC "no incentives" rule**, suspended as unsourced in doc 03 on 28 September, was removed
+  from the DMCC post (its paragraph, heading and TL;DR line).
+- **The GoHighLevel cost post** said WebAsk's pound figures are budgeted at the top of an FX band.
+  That contradicts `07` § 2.1 (the spot rate on the review day, at cost), so the claim was cut.
+
+**`deltas.md` and `index-and-nav.md`.** Every Current cell was re-read against `main` (`e13d4b6`); each
+file's dated note gives the counts. Of 67 rows: 23 unchanged, 18 moved line only, 18 re-anchored,
+5 gone in the reshape and 3 already applied by `0916085`; four rows were added. The row checker
+reports 57 OK and 0 stale.
+
+Checks: `counts.mjs` 0 problems (bundle, industries, blog) · `cites.mjs` 131 cited · 0 unresolved ·
+prettier clean.
+
+**Open for the founder before these drafts ship:**
+
+1. The bundle page and its FAQs predate the problem-first shape and the 60–100-word FAQ rule set
+   for monthly-plan pages on 27 September. Should the bundle be reshaped first?
+2. The AI module now carries the same £499 set-up as the standalone receptionist, although the
+   divert, the number and the inbox are already built in the plan.
+3. The trades and garages drafts treat MOT and annual service reminders as service messages. The live
+   Email & SMS page lists "A trade's annual reminders" as a marketing scene. One position is needed.
+4. The `deltas.md` judgement calls: two FAQ pointers moved into MDX bodies to respect the 100-word
+   cap; new wording for the home AI teaser and the CRM `notIncluded[1]`; whether "clinics and
+   practices belong" on the bespoke build should read "practices holding patient records".
+
+"Shown on the pricing page" in the industry and bundle text becomes true only when those services
+are live. The publishing order (`11` § 2: services before the bundle and the industries) makes it true.
+
 ## 4. Guardrails every draft obeys (planning § 6)
 
 - No client, case study, ranking, audit history or team may be implied — including impersonal forms
@@ -263,7 +329,15 @@ sentence was added that any other draft shares.
   labour-linear services carry client caps and response windows instead of implied capacity.
 - Every figure → `[Sxx]` with date; modality matches the source; bands stay bands; legal qualifiers
   kept ("whichever is higher"); vendor prices attributed inline as USD list prices that change.
-- British English; dates "23 September 2026"; £; "+ VAT where applicable" exactly.
+- British English; dates "23 September 2026"; £; "excl. VAT" exactly (from 28 September 2026; it
+  replaced "+ VAT where applicable").
+- Usage is never included (28 September 2026): no allowances; whatever the platform charges for is
+  billed on top at cost, based on what the client uses, in the words of the live `usageNote` strings in
+  `data/services.ts`, with the example list kept open ("such as").
+- Google's Maps content policy: "does not allow" for incentives and selective solicitation, "should not"
+  for on-premises pressure (doc 03 § A6, read 29 September 2026). DMCC: "10% of global turnover or
+  £300,000, whichever is higher", with no "annual" and no £150,000 figure for individuals. The
+  regulator's full name is "the Information Commission (the ICO)" from 30 September 2026.
 - No prescription-only-medicine names or euphemisms anywhere in draft sales copy or catalogue FAQs.
 - No UK-presence claims; "local" describes the client, never WebAsk; `areaServed` only in any JSON-LD.
 - Ownership stays the default promise; hosting is the labelled exception with a written, verified exit.
@@ -271,7 +345,7 @@ sentence was added that any other draft shares.
   a way to stop). Never promise "5-star reviews"; never a two-step review flow; never an incentive.
 - One `primaryUrl` per term; `msv`/`kd` null; near-me terms evidence-only.
 - Competitor claims bounded by what was checked; never disparage; affiliate status disclosed.
-- Titles ≤ 51 chars for catalogue meta titles and ≤ 60 for blog titles; metas 140–160; FAQs pricing-first, 80–150 words; MDX comments on one line.
+- Titles ≤ 51 chars for catalogue meta titles and ≤ 60 for blog titles; metas 140–160; FAQs pricing-first, 80–150 words (monthly-plan pages, from 27 September 2026: 60–100 words, `docs/strategy/content-guidelines.md`); MDX comments on one line.
 - Paid media / social management / client portal stay out of scope unless the brainstorm rules otherwise.
 - **The repo is public.** Write every sentence as if the named competitor, HighLevel and a prospective
   client will read it: bounded claims, no blunt remarks, and nothing about WebAsk's rate, costs or
