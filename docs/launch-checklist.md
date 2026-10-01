@@ -8,8 +8,8 @@
 > Claude, so [`06-build-plan.md`](06-build-plan.md) § Phase 1 and CLAUDE.md follow.
 >
 > Provider steps were checked against each provider's own documentation on 1 October 2026
-> (sources at the end). Dashboards move; if a menu path has changed, the setting name has
-> not.
+> (sources at the end). Dashboards move: if a menu path has changed, search the dashboard
+> for the setting's name.
 
 ---
 
@@ -146,8 +146,9 @@ Steps A to D change nothing visitors see. The public switch is step E2.
       with `hello@` and `dmarc@` (step C3) as aliases. Then, in one sitting:
   - **MX.** If the mail is leaving SiteGround, **delete the three
     `mailspamprotection.com` MX records** and add the provider's. Adding without deleting
-    leaves SiteGround in the delivery list, and mail it accepts bounces once step G
-    cancels it. Keeping SiteGround for email: leave the MX records alone.
+    leaves SiteGround in the delivery list: some mail lands there instead of the new
+    mailbox, and once step G cancels SiteGround, mail sent its way can bounce. Keeping
+    SiteGround for email: leave the MX records alone.
   - **DKIM.** Add the provider's DKIM record or records (some providers give one TXT,
     others two CNAMEs). Cloudflare's form defaults a new CNAME to Proxied: set it to
     **DNS only**, or DKIM fails.
@@ -155,16 +156,17 @@ Steps A to D change nothing visitors see. The public switch is step E2.
     can have only one `v=spf1` record. If the mail leaves SiteGround, drop its include.
     Either way, drop the `+a`: it authorises whatever the website's A record points at to
     send mail as webask.co.uk, and after step E that is Vercel.
-    Done when a test email from your personal account to `info@` and to `hello@` both
-    arrive, and your reply from `info@` arrives back.
+
+  Done when a test email from your personal account to `info@` and to `hello@` both
+  arrive, and your reply from `info@` arrives back.
 
 - [ ] **C2. Resend domain.** Add `webask.co.uk`.
   - **Region: Ireland (`eu-west-1`)**, the closest to UK recipients. Resend says the region
     "controls where your emails are routed and sent from. It does not control where customer
     data is stored": "All account data, including email metadata, logs, and API records, is
     stored in the United States regardless of the sending region you select." So the
-    privacy notice's "Resend (United States)" stays accurate. Changing region later means deleting and re-adding the
-    domain with new DNS records.
+    privacy notice's "Resend (United States)" stays accurate. Changing region later means
+    deleting and re-adding the domain with new DNS records.
   - **Records.** Resend shows the exact values. Its "Sign in to Cloudflare" button can add
     them for you:
 
@@ -241,12 +243,12 @@ and Production has been redeployed.
       task). Open a private window, then DevTools **before** loading the page: Network tab
       with "Preserve log" ticked, and Application → Cookies.
 
-  | Action                                                            | Expected                                                                                                                                                                                                                                                                                       |
-  | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-  | Load the home page, choose nothing                                | Banner shows. **No request to `googletagmanager.com` or `google-analytics.com`. No `_ga` cookie.** Same-site requests from Vercel Web Analytics and Speed Insights are expected: cookieless, and described in the cookie policy                                                                |
-  | Click **Reject analytics**, reload, visit two more pages          | Still nothing from Google. Local storage `webask:analytics-consent` = `denied`                                                                                                                                                                                                                 |
-  | Clear site data, reload, click **Accept analytics**               | `gtag/js` loads from `googletagmanager.com`, collection requests go to `google-analytics.com`, cookies `_ga` and `_ga_<ID>` appear. GA4 → Reports → Realtime shows you                                                                                                                         |
-  | Footer **Cookie settings** → Reject, then click to two more pages | **The page reloads**, and from then on nothing from Google. gtag.js cannot be unloaded from a running page, so withdrawing consent reloads it away (CONSENT_FIX_PR). Cookies already set stay until they expire — a known limitation, recorded in `components/analytics/analytics-scripts.tsx` |
+  | Action                                                            | Expected                                                                                                                                                                                                                                                                                                                |
+  | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+  | Load the home page, choose nothing                                | Banner shows. **No request to `googletagmanager.com` or `google-analytics.com`. No `_ga` cookie.** Same-site requests from Vercel Web Analytics and Speed Insights are expected: cookieless, and described in the cookie policy                                                                                         |
+  | Click **Reject analytics**, reload, visit two more pages          | Still nothing from Google. Local storage `webask:analytics-consent` = `denied`                                                                                                                                                                                                                                          |
+  | Clear site data, reload, click **Accept analytics**               | `gtag/js` loads from `googletagmanager.com`, collection requests go to `google-analytics.com`, cookies `_ga` and `_ga_<ID>` appear. GA4 → Reports → Realtime shows you                                                                                                                                                  |
+  | Footer **Cookie settings** → Reject, then click to two more pages | **The page reloads**, and from then on nothing from Google. gtag.js cannot be unloaded from a running page, so withdrawing consent reloads it away (PR #50; until it merges, this row fails). Cookies already set stay until they expire — a known limitation, recorded in `components/analytics/analytics-scripts.tsx` |
 
   If you are signed in to Vercel, a `_vercel_jwt` cookie can appear. That is Vercel's
   sign-in for protected URLs, not the site. Note the date and URL of the pass for Claude.
