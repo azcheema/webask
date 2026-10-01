@@ -17,12 +17,44 @@ Verified on 4 representative URLs every PR via Lighthouse CI:
 
 | Metric        | "Good" (Google) | Naxdor budget | Why we beat Google's bar                   |
 | ------------- | --------------- | ------------- | ------------------------------------------ |
-| **LCP**       | ≤ 2.5s          | **≤ 2.0s**    | 1s mobile delay ≈ −20% conversion          |
+| **LCP**       | ≤ 2.5s          | **≤ 2.0s**    | Headroom under Google's line ²             |
 | **INP**       | ≤ 200ms         | **≤ 200ms**   | New CWV replacing FID; match Google's good |
 | **CLS**       | ≤ 0.1           | **≤ 0.05**    | Half of Google's bar — strong margin       |
 | **TBT** (lab) | < 200ms         | **≤ 200ms** ¹ | Correlates loosely with INP                |
 
 ¹ Per-URL in CI: lean pages hold **≤ 200ms**; `/contact` (ships the form's JS) is **≤ 300ms** — see the TBT note below.
+
+² _Corrected 1 October 2026._ This cell read "1s mobile delay ≈ −20% conversion", inherited from the
+fork with no source in `docs/`. Do not quote any conversion, bounce or revenue figure for speed in
+copy unless a primary source is read and dated. Note also that LCP ≤ 2.0s is a **target** that CI
+only warns on; INP is not audited in CI at all (`.lighthouserc.cjs`).
+
+### Google's definitions, read 1 October 2026 (post B3)
+
+Read for `content/blog/core-web-vitals-guide-uk.mdx`; raw copies in the git-ignored
+`.playwright-mcp/seo/b3/raw/`. Re-read before quoting any of these in new copy.
+
+- **Bands** (PageSpeed Insights "About", developers.google.com/speed/docs/insights/v5/about, last
+  updated 2024-10-21; Search Console's report help draws the same lines): LCP good to 2,500 ms,
+  poor over 4,000 ms; INP good to 200 ms, poor over 500 ms; CLS good to 0.1, poor over 0.25.
+  Judged at the 75th percentile, mobile and desktop separately (web.dev/articles/vitals).
+- **INP replaced FID** "on March 12, 2024" (Search Central blog, "Introducing INP to Core Web
+  Vitals"). "Stable Core Web Vitals metrics won't change more than once per year." (web.dev/articles/vitals)
+- **Search** (developers.google.com/search/docs/appearance/page-experience, last updated
+  2026-09-22): "Core Web Vitals are used by our ranking systems." Good results "doesn't guarantee
+  that your pages will rank at the top of Google Search results"; "There is no single signal."
+  Never write "ranking factor", "boost" or "tie-breaker" in Google's name.
+- **Field versus lab**: field data "is what Google uses to determine whether a site meets the
+  recommended Core Web Vitals thresholds" (web.dev, Getting started with measuring Web Vitals);
+  INP "can't be measured in lab environments"; Total Blocking Time is "not a substitute for INP in
+  and of itself" (web.dev/articles/tbt). PageSpeed Insights' field data covers the previous 28 days
+  and its lab run "will report running in one of: North America, Europe, or Asia".
+- **No data and no country**: CrUX needs a public, indexable page and a minimum number of visitors —
+  "An exact number is not disclosed", and "you cannot manually submit pages or origins for
+  inclusion" (developer.chrome.com/docs/crux/methodology). PageSpeed Insights has "No country
+  dimensions" (CrUX tools page); a UK-only view exists only in the monthly CrUX BigQuery country
+  tables, origin-level, "with the standard eligibility requirements applied at a country level".
+  CrUX counts Chrome on desktop and Android only; "Chrome on iOS" is a named exception.
 
 ### Lighthouse mobile scores
 
@@ -189,8 +221,10 @@ Every component PR ticks:
 
 ### Lab data (CI on every PR)
 
-- Lighthouse CI against representative URLs.
-- Budget enforcement; build fails if exceeded.
+- Lighthouse CI against representative URLs (mobile lab run on a local server).
+- Hard `error` gates fail the job: accessibility, best practices, SEO, CLS, TBT and the size
+  budgets. LCP and the performance score only `warn`; INP is not audited (`.lighthouserc.cjs`).
+  _(Corrected 1 October 2026; this line read "Budget enforcement; build fails if exceeded.")_
 
 ### Field data (real users)
 
