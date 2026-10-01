@@ -414,9 +414,14 @@ said "No.", "Nobody explains this" and "as at July 2026".)_
 - Are before-and-after photos allowed? _(For a POM: "very likely to be seen as an implied ad" —
   CAP's advice, 5 June 2025. Otherwise marketers "should therefore ensure that they meet the
   requirements of rules 3.47-3.50 of the CAP Code" and "should hold signed and dated proof that the
-  photos are genuine" (same page). WebAsk's build standard leaves before-and-after galleries out
-  of client sites for a clinic that offers the POM — our choice, not CAP's rule (founder,
-  29 September 2026; doc 03 § B1).)_
+  photos are genuine" (same page). For a clinic that also promotes non-POM treatments, CAP's
+  advice on prescription-only medicines (redated 30 September 2026) says such images "may be
+  acceptable if they are clearly attributed to the non-POM product". WebAsk's build standard
+  follows it: for a clinic that offers the POM, photos only of treatments that are not
+  prescription-only, each clearly labelled, with signed and dated proof, never of the POM — our
+  standard, following CAP's advice, not a guarantee of compliance (founder, 1 October 2026,
+  superseding the 29 September 2026 line that left galleries off such a clinic's site; doc 03
+  § B1).)_
 
 ### Local questions (Silo 3)
 

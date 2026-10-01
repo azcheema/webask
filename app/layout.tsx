@@ -63,11 +63,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: sitewideJsonLd }}
         />
         <ThemeProvider>
-          <AnalyticsProvider
-            gaId={env.NEXT_PUBLIC_GA_ID}
-            clarityId={env.NEXT_PUBLIC_CLARITY_ID}
-            isVercel={process.env.VERCEL === "1"}
-          >
+          <AnalyticsProvider gaId={env.NEXT_PUBLIC_GA_ID} isVercel={process.env.VERCEL === "1"}>
             <a
               href="#main"
               className="bg-brand-500 text-fg-on-brand focus-visible:ring-ring sr-only z-50 rounded-md px-3 py-2 text-sm font-medium focus-visible:not-sr-only focus-visible:fixed focus-visible:top-3 focus-visible:left-3 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"

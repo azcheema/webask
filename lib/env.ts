@@ -27,21 +27,12 @@ const envSchema = z.object({
     .string()
     .regex(/^G-[A-Z0-9]{6,}$/, 'GA4 Measurement ID must look like "G-XXXXXXXXXX"')
     .optional(),
-  /**
-   * Microsoft Clarity project ID (the short alphanumeric token in the install
-   * snippet). Public by design; OPTIONAL + dormant, same gate as GA4.
-   */
-  NEXT_PUBLIC_CLARITY_ID: z
-    .string()
-    .regex(/^[a-z0-9]{8,}$/i, "Clarity project ID must be an alphanumeric token")
-    .optional(),
 });
 
 const parsed = envSchema.safeParse({
   NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
   NODE_ENV: process.env.NODE_ENV,
   NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
-  NEXT_PUBLIC_CLARITY_ID: process.env.NEXT_PUBLIC_CLARITY_ID,
 });
 
 if (!parsed.success) {

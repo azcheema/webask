@@ -126,7 +126,8 @@ representative**.
   without one.
 
 A contact form on `webask.co.uk` collecting UK enquirers' names, emails and phone numbers,
-plus GA4/Clarity analytics on UK visitors, is squarely within scope.
+plus GA4 analytics on UK visitors, is squarely within scope. _(This line said "GA4/Clarity"
+until Microsoft Clarity was dropped before launch — founder, 1 October 2026.)_
 
 > ✅ **D1 RESOLVED 2026-07-27 — fully remote, no UK location.** This makes the Article 27
 > answer sharper, not softer: with **no UK establishment at all**, WebAsk sits squarely
@@ -195,8 +196,9 @@ specific, informed and unambiguous.
   types of analytics technologies or ways you can use them"; it "does not allow you to monitor
   or track individual visitors to your service"; it "does not apply to purposes related to
   online advertising"; and "your third party provider must be a processor, not a joint
-  controller". WebAsk's own site keeps GA4 and Clarity behind consent regardless — our
-  choice; neither has been assessed against the exception.
+  controller". WebAsk's own site keeps GA4 behind consent regardless — our choice; it has not
+  been assessed against the exception. _(Microsoft Clarity, also held behind consent, was
+  dropped before launch — founder, 1 October 2026.)_
 
 **The ICO's own words for the lines above** (added 29 September 2026, from pages read 28-29
 September 2026). The guidance index,
@@ -325,8 +327,9 @@ September 2026, from pages read 28-29 September 2026.)_ On online advertising
 the ICO says "nothing has changed at this stage" (18 May 2026).
 
 **Inherited implementation.** Naxdor already ships a consent gate with GA4 and Clarity held
-behind it, and Vercel Analytics is cookieless so it runs without consent. That architecture
-satisfies this shape — but **verify the reject button has genuinely equal prominence** during
+behind it, and Vercel Analytics is cookieless so it runs without consent. **WebAsk dropped
+the Clarity loader before launch (founder, 1 October 2026)**, so on our site GA4 is the only
+tool behind the gate. That architecture satisfies this shape — but **verify the reject button has genuinely equal prominence** during
 the fork, since the US-oriented original may not have been built to the ICO's standard.
 
 **Action items**
@@ -336,14 +339,14 @@ the fork, since the US-oriented original may not have been built to the ICO's st
       an outline; both are now the same outline variant, size and weight, labelled "Reject
       analytics" / "Accept analytics" (`components/analytics/consent-banner.tsx`)
 - [ ] Confirm no non-exempt cookie fires pre-consent (network tab, not code review) —
-      the loaders mount only on `consent === "granted"` by code, but the browser check needs
-      real `NEXT_PUBLIC_GA_ID` / `NEXT_PUBLIC_CLARITY_ID` values set; do it on the first
-      preview deployment that has them
+      the loader mounts only on `consent === "granted"` by code, but the browser check needs
+      a real `NEXT_PUBLIC_GA_ID` value set; do it on the first preview deployment that has
+      it (`NEXT_PUBLIC_CLARITY_ID` was removed with Clarity, 1 October 2026)
 - [x] Cookie policy page enumerates each cookie, purpose, duration and provider — drafted
       2026-09-25 (`data/copy/legal.ts`): `_ga` and `_ga_<container-id>` at 2 years from
-      Google's cookie-usage page; Clarity's seven cookies by name and purpose from
-      Microsoft's list, which prints no lifetimes, so the policy points to that list rather
-      than inventing durations; the two local-storage entries (theme, consent) named
+      Google's cookie-usage page; the two local-storage entries (theme, consent) named.
+      Clarity's seven cookies were listed by name and purpose from Microsoft's list, which
+      prints no lifetimes, until **Clarity was dropped before launch (founder, 1 October 2026)** and its section removed
 - [x] Consent is re-obtainable — a persistent "cookie settings" link in the footer
       (`CookieSettingsButton`, inherited; verified 2026-09-25)
 
@@ -975,7 +978,21 @@ of ‘before and after’ photos in the same way as testimonials" can still be q
   not include content which promotes a POM to the public, if that ad links directly to website
   content which does, it still might be considered to breach the Code." WebAsk's stricter gallery
   standard below is unaffected, because it is labelled as our choice; the founder is asked whether
-  to keep it.)_
+  to keep it.)_ _(**Answered 1 October 2026: the founder replaced it** with the standard that
+  follows, which supersedes the 29 September 2026 standard.)_
+  **WebAsk's build standard — from 1 October 2026 (founder decision, superseding 29 September
+  2026):** WebAsk's build standard follows CAP's general advice on prescription-only medicines
+  (redated 30 September 2026, quoted above: before and after images "may be acceptable if they are
+  clearly attributed to the non-POM product"). For a clinic that offers the POM: before-and-after
+  photos **only of treatments that are not prescription-only**, each **clearly labelled with the
+  treatment shown**, with **signed and dated proof that the photos are genuine**; **never of the
+  POM**. Copy labels it as **our standard, following CAP's advice** — never as CAP's or the ASA's
+  rule, and never as a guarantee of compliance. Keep CAP's "may be acceptable" as it stands; never
+  write that CAP allows or permits such images. The FAQ (CAP News, 23 January 2020) and CAP's advice
+  on botulinum toxin products (29 October 2025) are still quoted each from its own page. For a
+  filler-only clinic (one that does not offer the POM), nothing changes: see the last sentences of
+  the superseded standard below.
+  **Superseded 1 October 2026 — kept for the record.**
   **WebAsk's build standard — our choice, not CAP's or the ASA's rule (founder decision, 29
   September 2026):** WebAsk follows the stricter advice. For a clinic that offers the POM, WebAsk's build
   standard leaves before-and-after galleries out of client sites. The two lines it weighs, each from
@@ -992,7 +1009,8 @@ of ‘before and after’ photos in the same way as testimonials" can still be q
   WebAsk build standard for such a clinic's gallery would be a founder decision, labelled as ours;
   none has been taken.")_ _(Open, 29 September 2026: whether "galleries" also covers a single
   before-and-after image on such a clinic's pages is queued for the founder; until it is answered,
-  a § B4 run flags one rather than passing it.)_
+  a § B4 run flags one rather than passing it.)_ _(Overtaken 1 October 2026: the new standard is
+  written per photo, not per gallery, so a § B4 run checks each image against it, single or not.)_
 - **CAP/BCAP guidance** (_Guidance on the marketing of surgical and non-surgical cosmetic
   procedures_; status and URLs under "Further lines the aesthetics post (A3) quotes" below). Para
   31: "Disclaimers used by advertisers do not excuse misleading impressions of advertisements. Text
@@ -1649,9 +1667,13 @@ CQC's England-only remit are in § B2, _The CQC, in detail_.
 - Age-gating and eligibility copy on booking flows
 - Review/testimonial handling that satisfies both the CAP Code and the DMCC Act
 - Third-party register links (JCCP, Save Face) as trust signals
-- No before-and-after gallery on the site of a clinic that offers the POM: WebAsk's build
-  standard, our choice, not CAP's or the ASA's rule (founder, 29 September 2026; _Before-and-after
-  images_ above). A filler-only clinic's images follow CAP's rules and its advice of 5 June 2025.
+- For a clinic that offers the POM, before-and-after photos only of treatments that are not
+  prescription-only, each clearly labelled with the treatment shown, with signed and dated proof
+  that the photos are genuine, never of the POM: WebAsk's build standard, following CAP's advice
+  on prescription-only medicines (redated 30 September 2026), and not a guarantee of compliance
+  (founder, 1 October 2026, superseding the 29 September 2026 line "No before-and-after gallery on
+  the site of a clinic that offers the POM"; _Before-and-after images_ above). A filler-only
+  clinic's images follow CAP's rules and its advice of 5 June 2025.
 
 ### B2. Dental
 
@@ -2088,15 +2110,17 @@ price-list gating, health claims, the review flow and the GDC website list.)_
 - [ ] Before/after imagery has documented patient consent (sources and limits: § B1 _Consent to
       use patient images_; GDC _Standards_ 4.2.7 for dentists), and signed and dated proof that the
       photos are genuine (CAP's advice, 5 June 2025); none of a POM treatment; for a clinic that
-      offers the POM, no before-and-after gallery (WebAsk's build standard, our choice, not CAP's
-      or the ASA's rule; founder, 29 September 2026; § B1 _Before-and-after images_; a single
-      image on such a clinic's pages is an open question there, so flag it rather than pass it);
-      a filler-only clinic's labelled results follow CAP's rules and the 5 June 2025 evidence
-      lines; a filler result is labelled as one (the FAQ); no filter or retouching on the treated area, WebAsk's standard,
+      offers the POM, only photos of treatments that are not prescription-only, each clearly
+      labelled with the treatment shown (WebAsk's build standard, following CAP's advice on
+      prescription-only medicines, redated 30 September 2026; our standard, not a guarantee of
+      compliance; founder, 1 October 2026, superseding the 29 September 2026 "no before-and-after
+      gallery" line; § B1 _Before-and-after images_); a filler-only clinic's labelled results
+      follow CAP's rules and the 5 June 2025 evidence lines; a filler result is labelled as one (the FAQ); no filter or retouching on the treated area, WebAsk's standard,
       following Bitesize's "rule of thumb: don’t enhance or retouch any areas of the photo related
       to the treatment" (CAP's guidance para 31 says such retouching "could be problematic",
       "irrespective of the inclusion of a disclaimer"). _(Extended 29 September 2026, and again the
-      same day for the founder's before-and-after build standard.)_
+      same day for the founder's before-and-after build standard; revised 1 October 2026 for the
+      founder's replacement standard.)_
 - [ ] Reviews/testimonials are real, named, consented, and non-incentivised (or the
       incentive is disclosed)
 - [ ] Review flow asks every customer, with no screening step and no incentive (CMA208 §§ 3.6,
@@ -2242,7 +2266,7 @@ A3 also re-used the `a1/raw/` copies read 28 September 2026 (the FAQ, Bitesize, 
 October 2025, CAP Code section 12 and Scope, Dr Bunny Aesthetics, Glow Up LLC). The licensing
 context comes from `verified-licensing.md` §§ 6.1-6.2 (read 28 September 2026).
 
-- **CAP** — AdviceOnline (each "given by the CAP Executive", does not bind the ASA): _Before and after photos_ (5 June 2025), https://www.asa.org.uk/advice-online/before-and-after-photos.html · _Beauty and Cosmetics: Treatments using fillers_ (6 August 2025), https://www.asa.org.uk/advice-online/beauty-and-cosmetics-treatments-using-fillers.html · _Cosmetic Interventions: Non-surgical procedures_ (1 July 2025), https://www.asa.org.uk/advice-online/cosmetic-interventions-non-surgical-procedures.html · _Health: Celebrities and health professionals_ (24 March 2026), https://www.asa.org.uk/advice-online/health-celebrities-and-health-professionals.html · CAP/BCAP Advertising Guidance, _Guidance on the marketing of surgical and non-surgical cosmetic procedures_ (landing page 12 December 2023; PDF "Revised: November 2021"), https://www.asa.org.uk/resource/cosmetic-interventions.html · CAP News, _New targeting rules for cosmetic interventions advertising come into force today_ (25 May 2022), https://www.asa.org.uk/news/new-targeting-rules-for-cosmetic-interventions-advertising-come-into-force-today.html · CAP Enforcement Report, _Non-surgical liquid Brazilian Butt Lifts (BBLs)_ (12 March 2026), https://www.asa.org.uk/resource/enforcement-report-non-surgical-liquid-bbls.html, and its PDF (March 2026) · Enforcement Notice PDF (landing page 9 January 2020), re-downloaded, https://www.asa.org.uk/static/a8fa05da-b3ee-4528-82095e7bba2a3e5c/Enforcement-Notice-Advertising-Botox-and-other-botulinum-toxin-injecti.pdf · CAP Code sections 1, 3 and 6, https://www.asa.org.uk/type/non_broadcast/code_section/01.html, https://www.asa.org.uk/type/non_broadcast/code_section/03.html, https://www.asa.org.uk/type/non_broadcast/code_section/06.html
+- **CAP** — AdviceOnline (each "given by the CAP Executive", does not bind the ASA): _Before and after photos_ (5 June 2025), https://www.asa.org.uk/advice-online/before-and-after-photos.html · _Healthcare: Prescription-only medicine_ (redated 30 September 2026; read 1 October 2026; the basis of the before-and-after build standard of 1 October 2026, § B1), https://www.asa.org.uk/advice-online/healthcare-prescription-only-medicine.html · _Beauty and Cosmetics: Treatments using fillers_ (6 August 2025), https://www.asa.org.uk/advice-online/beauty-and-cosmetics-treatments-using-fillers.html · _Cosmetic Interventions: Non-surgical procedures_ (1 July 2025), https://www.asa.org.uk/advice-online/cosmetic-interventions-non-surgical-procedures.html · _Health: Celebrities and health professionals_ (24 March 2026), https://www.asa.org.uk/advice-online/health-celebrities-and-health-professionals.html · CAP/BCAP Advertising Guidance, _Guidance on the marketing of surgical and non-surgical cosmetic procedures_ (landing page 12 December 2023; PDF "Revised: November 2021"), https://www.asa.org.uk/resource/cosmetic-interventions.html · CAP News, _New targeting rules for cosmetic interventions advertising come into force today_ (25 May 2022), https://www.asa.org.uk/news/new-targeting-rules-for-cosmetic-interventions-advertising-come-into-force-today.html · CAP Enforcement Report, _Non-surgical liquid Brazilian Butt Lifts (BBLs)_ (12 March 2026), https://www.asa.org.uk/resource/enforcement-report-non-surgical-liquid-bbls.html, and its PDF (March 2026) · Enforcement Notice PDF (landing page 9 January 2020), re-downloaded, https://www.asa.org.uk/static/a8fa05da-b3ee-4528-82095e7bba2a3e5c/Enforcement-Notice-Advertising-Botox-and-other-botulinum-toxin-injecti.pdf · CAP Code sections 1, 3 and 6, https://www.asa.org.uk/type/non_broadcast/code_section/01.html, https://www.asa.org.uk/type/non_broadcast/code_section/03.html, https://www.asa.org.uk/type/non_broadcast/code_section/06.html
 - **ASA ruling** — The Dental Suite (13 December 2017), https://www.asa.org.uk/rulings/the-dental-suite-a17-390603.html
 - **DMCC Act 2024 and CMA208** — s.182, https://www.legislation.gov.uk/ukpga/2024/13/section/182 · s.190, https://www.legislation.gov.uk/ukpga/2024/13/section/190 · s.204, https://www.legislation.gov.uk/ukpga/2024/13/section/204 · Sch. 20 para 13, re-read · CMA208 (4 April 2025), https://assets.publishing.service.gov.uk/media/67eeb64fe9c76fa33048c790/CMA208_-_Fake_reviews_guidance.pdf, re-read from a fresh download
 - **Google** — Maps user-contributed content policy, https://support.google.com/contributionpolicy/answer/7400114?hl=en-GB (en-GB and en copies)

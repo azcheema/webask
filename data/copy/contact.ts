@@ -124,7 +124,7 @@ export const contact: ContactContent = {
     {
       question: "Where are you based, and does it matter",
       answer:
-        "WebAsk works entirely remotely across the UK, on UK time. There is no office to visit, and we would rather tell you that than imply a local presence we do not have. In practice it changes nothing about the work: calls happen on video, the code lives in your repository, and you are not paying for city-centre floor space in your invoice. If meeting in person genuinely matters for your project, say so and we will arrange it.",
+        "WebAsk works entirely remotely across the UK, on UK time. There is no office to visit, and we would rather tell you that than imply a local presence we do not have. In practice it changes nothing about the work: calls happen on video, the code lives in your repository, and you are not paying for city-centre floor space in your invoice.",
     },
     {
       question: "Can I phone instead of using the form",
@@ -139,7 +139,7 @@ export const contact: ContactContent = {
     {
       question: "I need this kept confidential",
       answer:
-        "We will sign a mutual NDA on request before any scoping conversation — just say so in your message. Your enquiry stays in our inbox and CRM and goes nowhere else: no partners, no referral networks, no lead-resale lists. If you would rather not put details in a web form at all, email us and we will take it from there.",
+        "We will sign a mutual NDA on request before any scoping conversation — just say so in your message. Your enquiry stays in our inbox and goes nowhere else: no partners, no referral networks, no lead-resale lists. If you would rather not put details in a web form at all, email us and we will take it from there.",
     },
   ],
   ctaBand: {

@@ -160,13 +160,15 @@ Home · `/services` index · 2 flagship service pages (recommend **web-developme
       verify in the network tab that nothing non-exempt fires pre-consent (doc 03 § A4;
       "non-exempt" is the ICO's term)
       _(prominence failed and fixed 2026-09-25; the network-tab check waits for a preview
-      deployment with real GA4/Clarity IDs)_
+      deployment with a real GA4 ID — Clarity was dropped before launch, founder,
+      1 October 2026)_
 - [ ] **Pre-cutover crawl** of the live WordPress site → the redirect bible
 - [ ] **Full 301 map** including the trailing-slash sweep and catch-all families (doc 04 § 5)
 - [ ] `/sample-page/` → **410**
 - [ ] `robots.txt`, `sitemap.xml`
-- [ ] GA4 + Clarity behind consent; Vercel Analytics/Speed Insights gated on
-      `process.env.VERCEL`
+- [ ] GA4 behind consent; Vercel Analytics/Speed Insights gated on
+      `process.env.VERCEL` _(Microsoft Clarity dropped before launch — founder,
+      1 October 2026)_
 - [ ] GSC + Bing Webmaster properties, DNS-verified, sitemap submitted
 - [ ] **Cutover**: DNS to Vercel
 
