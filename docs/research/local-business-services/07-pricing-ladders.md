@@ -203,7 +203,7 @@ because the work is per profile. The listings add-on exists only where a platfor
 | Answer     | hosted sub-account; UK number or divert; text-back; inbox (web chat; WhatsApp at cost); calendar + reminders; app; report | a website; ads; social posting | £199 per month [D4]                           | monthly | £249 [D4] (the Answer module)                                                  |
 | Reputation | Answer + review programme + Google Business Profile upkeep                                                                | as above                       | £399 per month [D4]                           | monthly | £647 [D4] (Answer £249 + reviews module £199 + profile module £199)            |
 | Follow-Up  | Reputation + two campaigns a month + one automation + quarterly reactivation + a landing page a quarter                   | as above                       | £749 per month [D4]                           | monthly | £647 [D4] (no module of its own — the consent audit is the first month's work) |
-| AI module  | AI Receptionist on any tier (300 minutes)                                                                                 | —                              | £149 per month + minutes on the schedule [D4] | monthly | £499 [D4]                                                                      |
+| AI module  | AI Receptionist on any tier (300 minutes)                                                                                 | —                              | £149 per month + minutes on the schedule [D4] | monthly | £399 (1 October 2026; was £499 [D4])                                           |
 
 _Where it sits, and the arithmetic the page can show:_ each tier costs no more than its parts bought
 separately — Answer (£199) is Text-Back + Chat (£129) with the booking calendar, reminders and the
@@ -221,6 +221,11 @@ the divert, the number and the inbox are already in the plan.
 > £399, so the tier still costs less than its parts; Follow-Up's comparison (Reputation plus Email &
 > SMS Monthly, £794) is unchanged. The AI module (£149 + £499 set-up) now sits £50 below the
 > standalone receptionist's £199 and at the same set-up.
+
+> **1 October 2026 — AI module set-up lowered to £399 (founder).** Inside a plan the divert, the
+> number and the inbox are already built, so the module's set-up follows the other modules (reviews
+> £199 against £299 alone, profile £199 against £249): £399 against the standalone £499. The £149 a
+> month is unchanged (`00` § 6).
 
 **Payment terms line for `/pricing` (Q4 confirms):** set-up on signature; plan monthly in advance;
 usage in arrears; no minimum term; 30 days' notice; exit as R33. Against the market: the UK

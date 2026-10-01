@@ -17,12 +17,12 @@
   meta: {
     title: "Websites and Reminders for UK Garages & MOT Centres", // 51 characters
     description:
-      "Missed-call text-back, MOT and service reminders, reviews and websites for UK garages — reminders that stay service messages, prices shown as the Code says.", // 156 characters
+      "Missed-call text-back, MOT and service reminders, reviews and websites for UK garages — reminders only to those who may receive them, prices as the Code says.", // 158 characters
   },
   hero: {
     h1: "The car is on the ramp. The phone is ringing. Neither can wait.",
     subhead:
-      "Missed-call text-back from a number registered to your business, MOT and service reminders that stay service messages, reviews asked of everyone, and a website that shows prices the way the Motor Ombudsman's Code expects — remotely, for garages anywhere in the UK.",
+      "Missed-call text-back from a number registered to your business, MOT and service reminders sent only to customers who may receive them, reviews asked of everyone, and a website that shows prices the way the Motor Ombudsman's Code expects — remotely, for garages anywhere in the UK.",
     primaryCta: { label: "Book a call about your phone", href: "/contact" },
   },
   cardSummary:
@@ -45,7 +45,7 @@
     {
       question: "Is an automatic MOT reminder text allowed?",
       answer:
-        "Yes, while it stays a service message. The ICO lists reminding people about appointments among service messages, and its test is about content: a reminder that says the MOT is due on a date and how to book is a service message; add a discount and it becomes marketing to a number you may hold no consent for. Two things follow. Drivers of cars, vans and motorcycles can sign up on GOV.UK for a free reminder by text or email a month before the MOT is due, so yours has to offer what GOV.UK's does not, a way to book with you and the price. And the reminder goes only to your own customers, from a number registered to your business, with a way to stop, and never as the first message a number receives from you.",
+        "Yes, to the right customers. A reminder about a booking already made is a service message: the ICO lists reminding people about appointments among them. A reminder that the MOT is due invites a new booking, so we build it as marketing: it goes only to customers who asked for reminders, or who can be reached under the soft opt-in, meaning details from a sale or negotiations for one, your own similar services only, and a simple means of refusing at collection and in every message since. Drivers of cars, vans and motorcycles can also sign up on GOV.UK for a free reminder a month before the MOT is due, so yours has to offer what GOV.UK's does not: a way to book with you, and the price. It comes from a number registered to your business and carries a way to stop.",
     },
     {
       question: "Can the text-back and reminders come from our existing number?",
@@ -75,7 +75,7 @@
     {
       question: "Are you automotive compliance consultants?",
       answer:
-        "No. We build garage websites, reminders and phone systems, and we have read the Code, the testing guide, the Consumer Rights Act and the marketing rules closely enough to build to them — which is a specialisation, not a qualification, and not advice. The Motor Ombudsman, Trading Standards and a solicitor are where anything with real regulatory consequence belongs. Everything here is built for UK small businesses in general; garages are where the reminder is the textbook service message, the phone problem is constant, and a price shown badly online costs the same trust as one shown badly on the invoice.",
+        "No. We build garage websites, reminders and phone systems, and we have read the Code, the testing guide, the Consumer Rights Act and the marketing rules closely enough to build to them — which is a specialisation, not a qualification, and not advice. The Motor Ombudsman, Trading Standards and a solicitor are where anything with real regulatory consequence belongs. Everything here is built for UK small businesses in general; garages are where the reminder sits on the line between service and marketing, the phone problem is constant, and a price shown badly online costs the same trust as one shown badly on the invoice.",
     },
   ],
 },
