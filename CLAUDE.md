@@ -42,6 +42,7 @@ verifiable E-E-A-T, genuine Information Gain, and almost unclaimed in the SERP.
 | **Phased build plan**                         | [`docs/06-build-plan.md`](docs/06-build-plan.md)                             |
 | **Changes wanted in `d:\naxdor`**             | [`docs/07-naxdor-change-requests.md`](docs/07-naxdor-change-requests.md)     |
 | **Silos, entities, competitor gap**           | [`docs/08-seo-architecture.md`](docs/08-seo-architecture.md)                 |
+| **Launch / DNS cutover steps**                | [`docs/launch-checklist.md`](docs/launch-checklist.md)                       |
 | **Fork source**                               | `d:\naxdor` — **read-only. Do not modify it.**                               |
 
 The docs are the source of truth. If a doc is wrong, fix the doc.

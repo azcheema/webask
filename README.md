@@ -1,12 +1,12 @@
-# Naxdor
+# WebAsk
 
-Marketing website for **Naxdor** — an international digital services firm targeting SMBs (US-primary, English-only at launch) with a vertical focus on aesthetic clinics, dental practices, and beauty/wellness clinics.
+Marketing website for **WebAsk** — the UK trading name of Naxdor — for UK small businesses, with a vertical focus on aesthetic clinics, dental practices, and beauty/wellness clinics. British English (`en-GB`), prices in GBP.
 
-Service-led, not industry-led: home and service pages speak to any SMB; the vertical focus surfaces through `/industries/*` pages and industry-aware programmatic city pages.
+National and service-led: home and service pages speak to any UK small business; the vertical focus surfaces through `/industries/*`, the city focus through `/locations/*`.
 
 ## Status
 
-Phase 0 (Foundations) — see `docs/phases/phase-0-foundations.md`. Active feature in `docs/context/current-feature.md`.
+Phase 1 (Credible MVP + Cutover) — see `docs/06-build-plan.md`. The site is not live yet; the launch steps are in [`docs/launch-checklist.md`](docs/launch-checklist.md).
 
 ## Stack
 
@@ -54,32 +54,42 @@ Plus Playwright smoke + Lighthouse budgets (`docs/strategy/performance-accessibi
 
 ## Deployment
 
-Hosted on **Vercel**. Project name: `naxdor`. GitHub integration wired via `vercel git connect` to `azcheema/naxdor`:
+Hosted on **Vercel** (Pro), deploying from GitHub `azcheema/webask`:
 
-- Push to `main` → **production** deploy (`https://naxdor.com` once DNS attached; `naxdor.vercel.app` until then).
+- Push to `main` → **production** deploy (`https://webask.co.uk` once DNS is pointed; the project's `*.vercel.app` address until then).
 - Push to any other branch with an open PR → **preview** deploy on a `*.vercel.app` URL.
+
+**Not set up yet.** The project, the Resend domain, GA4, the DNS cutover and Search Console are the founder's steps in [`docs/launch-checklist.md`](docs/launch-checklist.md), in order.
 
 ### Environment variables
 
-Managed in the Vercel project (`vercel env ls`). Source of truth — _not_ in this repo. `.env.example` documents the shape; copy it to `.env.local` for local dev.
+Managed in the Vercel project. Source of truth — _not_ in this repo. `.env.example` documents the shape; copy it to `.env.local` for local dev.
 
-| Var                    | Production                 | Preview                    | Development                       |
-| ---------------------- | -------------------------- | -------------------------- | --------------------------------- |
-| `NEXT_PUBLIC_SITE_URL` | `https://naxdor.com`       | `https://naxdor.com`       | `http://localhost:3000`           |
-| `RESEND_API_KEY`       | `re_…` (secret)            | `re_…` (secret)            | _optional — unset → form no-ops_  |
-| `CONTACT_FROM_EMAIL`   | `Naxdor <info@naxdor.com>` | `Naxdor <info@naxdor.com>` | _optional — code default applies_ |
-| `CONTACT_NOTIFY_EMAIL` | `contact@naxdor.com`       | `contact@naxdor.com`       | _optional — code default applies_ |
+| Var                            | Production                    | Preview                | Development                       |
+| ------------------------------ | ----------------------------- | ---------------------- | --------------------------------- |
+| `ENABLE_EXPERIMENTAL_COREPACK` | `1`                           | `1`                    | _not needed_                      |
+| `NEXT_PUBLIC_SITE_URL`         | `https://webask.co.uk`        | `https://webask.co.uk` | `http://localhost:3000`           |
+| `NEXT_PUBLIC_GA_ID`            | `G-…`                         | _unset_                | _unset — banner off_              |
+| `RESEND_API_KEY`               | `re_…` (secret)               | _unset — form no-ops_  | _optional — unset → form no-ops_  |
+| `CONTACT_FROM_EMAIL`           | `WebAsk <hello@webask.co.uk>` | _unset_                | _optional — code default applies_ |
+| `CONTACT_NOTIFY_EMAIL`         | `info@webask.co.uk`           | _unset_                | _optional — code default applies_ |
 
-Preview is intentionally set to the apex domain so canonical URLs, OG `og:url`, and JSON-LD `@id` values stay stable across preview and production. The page is still **served** on `*.vercel.app`; only the metadata anchors at the apex. Vercel automatically adds `X-Robots-Tag: noindex` to preview origins, so this doesn't risk indexation.
+Preview is intentionally set to the apex domain so canonical URLs, OG `og:url`, and JSON-LD `@id` values stay stable across preview and production. The page is still **served** on `*.vercel.app`; only the metadata anchors at the apex. Vercel adds `X-Robots-Tag: noindex` to preview deployments, so this doesn't risk indexation.
+
+`NEXT_PUBLIC_*` values are inlined at build time: changing one needs a redeploy.
 
 ### Email (contact form)
 
-The contact form **sends** via [Resend](https://resend.com) (Server Action `app/(marketing)/contact/actions.ts`, validated in `lib/env.server.ts`) and **receives** at a SiteGround mailbox. The two halves are independent — Resend never gives you an inbox.
+The contact form **sends** via [Resend](https://resend.com) (Server Action `app/(marketing)/contact/actions.ts`, validated in `lib/env.server.ts`) and **receives** at the business mailbox. The two halves are independent — Resend never gives you an inbox.
 
-- **Sending:** Resend signs as the verified `naxdor.com` domain. `CONTACT_FROM_EMAIL` is a **send-only** `info@` address (no mailbox needed), kept **distinct from** `CONTACT_NOTIFY_EMAIL` because a `from == to` self-send gets greylisted by inbound spam filters. The autoresponder sets `Reply-To: contact@naxdor.com`, so prospect replies reach the monitored inbox regardless of the `From`.
-- **Receiving:** `contact@naxdor.com` is a real mailbox **on SiteGround** — the domain's **MX records point to SiteGround** (added in Vercel DNS), not Resend. An optional `info@ → contact@` SiteGround forwarder catches stray direct-to-`info@` mail.
+- **Sending:** Resend signs as the verified `webask.co.uk` domain; its records live on `send.` and `resend._domainkey.`, so they never collide with the mailbox's root MX and SPF. `CONTACT_FROM_EMAIL` is kept **distinct from** `CONTACT_NOTIFY_EMAIL`, because a `from == to` self-send can be greylisted by inbound spam filters. The notification's Reply-To is the enquirer; the autoresponder's Reply-To is `CONTACT_NOTIFY_EMAIL`, so prospect replies reach the monitored inbox whatever the `From` is.
+- **Receiving:** `info@webask.co.uk` is the published address and the real mailbox. The provider is not chosen yet (launch checklist A1); until it is, the domain's MX records still point at SiteGround.
 - **Gating:** with no `RESEND_API_KEY` the Server Action logs and returns success (no send) — local dev and preview builds stay green; live sending lights up once the key + verified domain are in the environment.
-- **Domain:** apex `naxdor.com` serves directly; `www` issues a permanent (308) redirect to apex, matching the apex canonical/sitemap/`@id`s.
+- **Domain:** apex `webask.co.uk` serves directly; `www` issues a permanent (308) redirect to apex, matching the apex canonical/sitemap/`@id`s.
+
+### Running the e2e specs against a deployment
+
+`PLAYWRIGHT_BASE_URL` points Playwright at a deployed site instead of starting `next start`; `VERCEL_AUTOMATION_BYPASS_SECRET` gets it past Deployment Protection. This is how `e2e/redirects.spec.ts` is run on Vercel before and after the DNS cutover (launch checklist D1 and E4) — Vercel executes redirects at its edge, so a local pass is not proof.
 
 ### Local Vercel CLI
 
