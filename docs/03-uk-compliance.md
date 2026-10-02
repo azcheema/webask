@@ -35,11 +35,21 @@
 **Locked context:** WebAsk is a **trading name of Naxdor, a Swedish enskild firma**. There
 is no UK limited company.
 
-| Regime                                              | Applies?                | Requirement                                                                                                            |
-| --------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Companies (Trading Disclosures) Regulations 2008    | ❌ No UK company exists | Would require registered name, company number, place of registration, registered office                                |
-| Electronic Commerce (EC Directive) Regulations 2002 | ✅ Yes                  | Service provider's **name**, **geographic address**, and **email** must be easily, directly and permanently accessible |
-| Provision of Services Regulations 2009              | ✅ Yes                  | Same core details, plus trade-register details where the provider is registered in one                                 |
+| Regime                                                                                          | Applies?                | Requirement                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Company, LLP and Business (Names and Trading Disclosures) Regulations 2015 (SI 2015/17), Part 6 | ❌ No UK company exists | Would require registered name, registered number, part of the UK registered in, registered office (regs 24–25)                                                                                                                                                                                                                                                                  |
+| Electronic Commerce (EC Directive) Regulations 2002                                             | ✅ Yes                  | Service provider's **name**, **geographic address** and **email** must be easily, directly and permanently accessible (reg 6(1)(a)–(c)); also, where they apply, trade register and number, supervisory authority, professional body and rules, and the **VAT number** (reg 6(1)(d)–(g)); prices clear and unambiguous, saying whether tax and delivery are included (reg 6(2)) |
+| Provision of Services Regulations 2009                                                          | ✅ Yes                  | Same core details, plus trade-register details where the provider is registered in one                                                                                                                                                                                                                                                                                          |
+
+> **3 October 2026 — corrected against legislation.gov.uk** (read 2 October 2026 for the post
+> `content/blog/uk-website-legal-requirements.mdx`). The first row named the Companies (Trading
+> Disclosures) Regulations 2008, which SI 2015/17 Sch. 6 para 1(d) revoked; the company and LLP website
+> rules are SI 2015/17 Part 6 (reg 24(2): "Every company shall disclose its registered name on its
+> websites"; reg 25; reg 20 "can be read with the naked eye"; reg 28 the offence), applied to LLPs by
+> SI 2009/1804 reg 14. Sole traders and partnerships trading under a business name have their own
+> disclosure duties in the Companies Act 2006 ss.1200–1204, which do not mention websites. The E-Commerce
+> row now carries reg 6(1)(d)–(g) and 6(2). Whether WebAsk's own footer needs a VAT number under
+> reg 6(1)(g) is with the legal reviewer (`docs/legal/review-brief.md`).
 
 **What this means in practice:**
 
