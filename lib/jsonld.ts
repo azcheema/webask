@@ -284,7 +284,7 @@ export type ServiceOptions = {
   startingPrice: number;
   /** Drives the offer's unit text ("per project" vs "per month"). */
   cadence: PriceCadence;
-  /** One-off set-up component of a monthly plan — emitted as a second Offer. [D4] */
+  /** One-off set-up component of a monthly plan — emitted as a second Offer. D4 adopted 28 September 2026. */
   setupPrice?: number | undefined;
   /** Set when the page also emits a `bundleCatalogNode` for this slug. */
   hasOfferCatalog?: boolean;

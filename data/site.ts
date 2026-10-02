@@ -125,7 +125,7 @@ export const site: Site = {
   },
   foundingYear: 2026,
   foundingDate: "May 2026",
-  responsePromise: "We reply to every enquiry within one business day.",
+  responsePromise: "We reply to every enquiry within one working day.",
   hours: "Mon–Fri · 9:00 am – 5:30 pm (UK time)",
   // Company/brand profiles — feed Organization `sameAs` (lib/jsonld.ts).
   // EMPTY BY DESIGN: WebAsk has no live profiles yet, and the inherited rule is

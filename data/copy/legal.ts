@@ -167,8 +167,9 @@
  *  16. Client terms of business, and a data processing agreement for hosted
  *      plans (WebAsk would be the client's processor). Needed before the first
  *      engagement; not part of these pages.
- *  17. Outside this file, not changed here: `site.responsePromise` in
- *      `data/site.ts` says "business day" (it appears not to be rendered). The
+ *  17. Outside this file: `site.responsePromise` in `data/site.ts` said
+ *      "business day" (it appears not to be rendered) — RESOLVED 3 October
+ *      2026, now "working day" as in `data/copy/contact.ts`. The
  *      in-person meeting promise in the contact FAQ (`data/copy/contact.ts`) is
  *      RESOLVED — removed, founder 1 October 2026: the business does not offer
  *      in-person meetings (D1).
