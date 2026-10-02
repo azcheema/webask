@@ -112,7 +112,7 @@ The docs are the source of truth. If a doc is wrong, fix the doc.
   date; a `warn`-level Lighthouse budget described as "enforced in CI"; two docs disagreeing
   on a price band and the draft quietly taking the lower. Grep cannot see any of these.
 - ❌ **Create a Google Business Profile.** No UK location = no eligible profile. Doing it
-  anyway risks permanent loss of local visibility.
+  anyway gets a profile suspended or disabled under Google's own policies (docs/05 § 4).
 - ❌ **Cross-canonical to `naxdor.com`**, or hreflang-pair the two sites. Self-canonical
   everything. Duplicate content is solved with _rewritten UK content_, not markup.
 - ❌ **Name a prescription-only medicine** in clinic-facing _sales_ copy, `<title>` or meta —

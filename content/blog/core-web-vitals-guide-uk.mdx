@@ -1,0 +1,148 @@
+---
+title: "What Are Core Web Vitals? A Guide for UK Businesses"
+description: "Core Web Vitals in plain English for UK sites: Google's thresholds, how Search uses them, where to find your numbers, what No Data means, and how to fix each."
+datePublished: "2026-10-01"
+dateModified: "2026-10-01"
+authorSlug: ansar-cheema
+topic: seo
+keywords:
+  - core web vitals guide uk
+  - what are core web vitals
+  - core web vitals thresholds
+  - pagespeed insights no data
+  - interaction to next paint
+  - field data vs lab data
+draft: true
+---
+
+{/* B3, drafted 1 October 2026 by the writer pass from .playwright-mcp/seo/b3/PLAN.md and research.md; every Google quote was copied from the raw page copies in .playwright-mcp/seo/b3/raw, all read 1 October 2026, and a sentence-by-sentence map is in b3/PROVENANCE.md. PRIMARY SOURCES (page date as the page prints it; every page read 1 October 2026): Search Central, Understanding page experience in Google Search results, https://developers.google.com/search/docs/appearance/page-experience?hl=en, last updated 2026-09-22; Search Central blog, Introducing INP to Core Web Vitals, https://developers.google.com/search/blog/2023/05/introducing-inp, posted 10 May 2023, with updates of 31 January 2024 and 12 March 2024; web.dev, Web Vitals, https://web.dev/articles/vitals, last updated 31 October 2024; web.dev, Interaction to Next Paint, https://web.dev/articles/inp, last updated 2 September 2025; web.dev, Largest Contentful Paint, https://web.dev/articles/lcp, last updated 4 September 2025; web.dev, Cumulative Layout Shift, https://web.dev/articles/cls, last updated 2023-04-12; web.dev, Getting started with measuring Web Vitals, https://web.dev/articles/vitals-measurement-getting-started, last updated 2025-09-09; web.dev, Why lab and field data can be different, https://web.dev/articles/lab-and-field-data-differences, last updated 2022-07-18, quoted only for the lab-test list and the line on which data to prioritise, because the page still mentions FID; web.dev, Total Blocking Time, https://web.dev/articles/tbt, header last updated 15 October 2025 and footer 2024-11-04 (the page disagrees with itself; the header date is cited); web.dev, Optimize LCP, https://web.dev/articles/optimize-lcp, last updated 31 March 2025; web.dev, Optimize INP, https://web.dev/articles/optimize-inp, last updated 2 September 2025; web.dev, The most effective ways to improve Core Web Vitals, https://web.dev/articles/top-cwv, last updated 2024-10-31; web.dev, Optimize CLS, https://web.dev/articles/optimize-cls, last updated 7 February 2025; web.dev, Best practices for cookie notices, https://web.dev/articles/cookie-notice-best-practices, last updated 2024-06-13; About PageSpeed Insights, https://developers.google.com/speed/docs/insights/v5/about?hl=en, last updated 2024-10-21; Chrome for Developers, How to view Chrome UX Report data on PageSpeed Insights, https://developer.chrome.com/docs/crux/guides/pagespeed-insights, last updated 2024-04-09; CrUX methodology, https://developer.chrome.com/docs/crux/methodology, last updated 2024-06-20; CrUX tools, https://developer.chrome.com/docs/crux/methodology/tools, last updated 9 September 2025; CrUX dimensions, https://developer.chrome.com/docs/crux/methodology/dimensions, last updated 2025-02-11; CrUX on BigQuery, https://developer.chrome.com/docs/crux/bigquery, last updated 2025-02-11; Chrome DevTools, Performance panel, https://developer.chrome.com/docs/devtools/performance/overview, last updated 2024-09-17; Search Console Help, Core Web Vitals report, https://support.google.com/webmasters/answer/9205520?hl=en-GB, no date printed. REPO: .lighthouserc.cjs, header and SHARED assertions (hard error on accessibility, best practices, SEO, CLS, total blocking time and the stylesheet, script and total size budgets; warn only on the performance score and LCP; INP not audited; a mobile lab run on a local server), the basis of the one sentence on this site's own build, which gives no figure and makes no claim beyond that split; content/blog/local-seo-checklist-2026.mdx section 7, The technical floor, linked and not restated; content/blog/custom-website-vs-wordpress-2026.mdx, linked for the repair-or-replace question and not restated; data/copy/free-audit.ts, FAQ What does a free website audit check? (the speed wording, verbatim) and Do you need logins or access to my website? (public pages, no logins); data/keywords.json, rows core web vitals guide uk and what are core web vitals (no volumes, so no volume claim); content/services/seo.mdx, not contradicted and not described. MODALITY: are used by our ranking systems, the next sentence We recommend site owners achieve good Core Web Vitals for success with Search, doesn't guarantee, can contribute, There is no single signal (with its following sentence on a variety of signals) and may not be the best use of your time are quoted as Google words them, with nothing stronger (no ranking factor, signal weight, tie-breaker, boost or promise) and nothing weaker; field data as what Google uses to judge the thresholds is attributed to web.dev, placed under the field and lab heading rather than the ranking one, and not extended to ranking, and no page read says Search ignores lab scores; Google's hedges As a general rule, At this time and the if before a single action are kept; thresholds are given in the inclusive form (or less) used by web.dev, PageSpeed Insights and Search Console, and Search Central's less-than wording on its Core Web Vitals page (last updated 2025-12-10) is not used in the post's voice; Google's most common and very common stay inside attributed quotes; every lab figure is labelled as one test on one device. DEDUCTIONS, framed as such: iPhones and iPads are absent from CrUX because the supported-platform list names only desktop Chrome and Chrome on Android; No Data on a public, indexable page is about visitor numbers. DELIBERATELY ABSENT: any number about this site's speed, including the checklist's built-to figures; the Leeds hub (not linked, per PLAN.md); the unpublished Map Pack draft; UK device, browser and network shares; web.dev's web-wide percentages and its 90 per cent figure; bounce, conversion and revenue claims; the emulated phone; Lighthouse audit and insight names (Lighthouse 13 moved some); PSI's auto-generated page summary; the Chrome pages' page experience ranking factor wording; whether Search uses the mobile or the desktop numbers; collecting your own field data and any consent question it raises; any legal statement on cookies (the one cookie sentence is web.dev's layout-shift point); vendor names other than Google's own tools; links to /pricing, /locations/leeds and /services/maintenance-support. STALE RISK: every Google page above; re-read before draft is set to false and move the Checked line to that date. The Google facts used here are recorded in docs/strategy/performance-accessibility.md (Google's definitions, read 1 October 2026). */}
+
+Put your home page into [PageSpeed Insights](https://pagespeed.web.dev/), Google's page speed tool, and two things come back: a coloured score out of 100, and either measurements led by the three Core Web Vitals or the words "No Data". They come from different places, and they can disagree.
+
+So what are Core Web Vitals, and how do you find and fix your own? This guide for UK site owners answers in Google's own words wherever it can.
+
+Checked against Google's published documentation on 1 October 2026. Each Google page quoted was read that day; where a date is given beside a page, it is Google's own. Google can change these thresholds and its tools, so check the date on any guide you follow.
+
+<Callout variant="note" title="TL;DR">
+  Core Web Vitals are three measures of how a page loads, responds and holds still. Good is LCP 2.5
+  seconds or less, INP 200 milliseconds or less and CLS 0.1 or less. Google says they "are used by
+  our ranking systems" but that good results do not guarantee a top place. Your real numbers come
+  from Chrome visits worldwide over 28 days; a small site may have none, and Google's fixes apply
+  either way.
+</Callout>
+
+## What are Core Web Vitals?
+
+Google's [Web Vitals page](https://web.dev/articles/vitals) (updated 31 October 2024) names the three, and Google's page on each adds the detail:
+
+- **Largest Contentful Paint (LCP)** is loading: how long the largest image, text block or video on screen takes to appear.
+- **Interaction to Next Paint (INP)** is responsiveness. It times every click, tap and key press in a visit and reports the slowest, "ignoring outliers". Scrolling and hovering do not count.
+- **Cumulative Layout Shift (CLS)** is visual stability: how much the content in view moves without warning. It has no unit.
+
+The bands are from the PageSpeed Insights [About page](https://developers.google.com/speed/docs/insights/v5/about?hl=en) (updated 21 October 2024). Search Console's [report help](https://support.google.com/webmasters/answer/9205520?hl=en-GB) (undated) draws the same lines.
+
+| Metric | Good                     | Needs improvement         | Poor                  |
+| ------ | ------------------------ | ------------------------- | --------------------- |
+| LCP    | 2.5 seconds or less      | over 2.5 s, up to 4 s     | over 4 seconds        |
+| INP    | 200 milliseconds or less | over 200 ms, up to 500 ms | over 500 milliseconds |
+| CLS    | 0.1 or less              | over 0.1, up to 0.25      | over 0.25             |
+
+Each is judged at the 75th percentile, for mobile and desktop separately: a page meets the line when at least three visits in four are good. PageSpeed Insights passes a page when all three are good, or on LCP and CLS alone if INP data is too thin. If LCP or CLS is short of data, it cannot assess the page.
+
+Older advice may mention First Input Delay (FID). Google's [Search Central blog](https://developers.google.com/search/blog/2023/05/introducing-inp) records that INP replaced it on 12 March 2024.
+
+## Do Core Web Vitals affect your Google ranking?
+
+Google's [page experience](https://developers.google.com/search/docs/appearance/page-experience?hl=en) page (updated 22 September 2026) answers: "Core Web Vitals are used by our ranking systems." Its next sentence: "We recommend site owners achieve good Core Web Vitals for success with Search and to ensure a great user experience generally." It then sets limits:
+
+- Getting good results in Search Console's report or third-party tools "doesn't guarantee that your pages will rank at the top of Google Search results". And "trying to get a perfect score just for SEO reasons may not be the best use of your time."
+- "Google Search always seeks to show the most relevant content, even if the page experience is sub-par. But for many queries, there is lots of helpful content available. Having a great page experience can contribute to success in Search, in such cases."
+- On page experience as a whole, "There is no single signal. Our core ranking systems look at a variety of signals that align with overall page experience."
+
+Fix them for the people using your pages, and expect no more from search than Google's sentences allow.
+
+## Field data and lab data: why your two numbers differ
+
+PageSpeed Insights has two sections. "Discover what your real users are experiencing" is field data from the Chrome UX Report (CrUX): real Chrome visits over "the previous 28-day collection period", updated daily. "Diagnose performance issues" is a lab test run by Lighthouse, and the score out of 100 belongs to it.
+
+A lab test, in web.dev's words, is "A single device…", "connected to a single network…", "run from a single geographic location." PageSpeed Insights runs it in a Google data centre and "will report running in one of: North America, Europe, or Asia", so a test of a UK site may not run from the UK. The score can also vary between runs.
+
+Three gaps, in Google's words:
+
+- PageSpeed Insights: "having good lab data does not necessarily mean real-user experiences will also be good."
+- INP "can't be measured in lab environments because it requires user interactions with the page". Its lab stand-in, Total Blocking Time, is "not a substitute for INP in and of itself."
+- Lab CLS "can be artificially lower", because a test that only loads the page misses later shifts.
+
+Google's [measurement guide](https://web.dev/articles/vitals-measurement-getting-started) (updated 9 September 2025) says field data "is what Google uses to determine whether a site meets the recommended Core Web Vitals thresholds." With both, web.dev's [lab and field guide](https://web.dev/articles/lab-and-field-data-differences) (updated 18 July 2022) says that, as a general rule, "field data is what you should use to prioritize your efforts." A lab figure is one test on one device, not what your customers experienced.
+
+How this site's own build treats these metrics, and why only some of its lab budgets can fail a build, is in section 7, "The technical floor", of [our local SEO checklist](/blog/local-seo-checklist-2026).
+
+## Where to find your site's Core Web Vitals
+
+1. **PageSpeed Insights, one page.** Enter the address and read mobile first. Data for "This URL" is that page's own 28 days.
+2. **PageSpeed Insights, whole site.** If the page lacks data but the site has some, PageSpeed Insights "always shows the origin data": every page of the site combined. web.dev warns: "Make sure your CrUX data is for your page, not the full origin, before you act on it."
+3. **"No Data".** Neither the page nor the site is in the Chrome UX Report (see below). The lab section still gives "an approximation of the page's performance."
+4. **Search Console.** On a verified site, the Core Web Vitals report splits mobile and desktop, groups similar pages and keeps three months of history.
+5. **Your own machine.** The Performance panel in Chrome DevTools shows your local LCP and CLS when you open it, and INP once you click, tap or type. That is your page "using your network connection and device", not your customers'. web.dev recommends this panel if you want a single action to start with.
+
+### When PageSpeed Insights says No Data
+
+Chrome's [CrUX methodology](https://developer.chrome.com/docs/crux/methodology) (updated 20 June 2024) sets two tests for a page or a whole site. It must be publicly discoverable: status 200 after any redirects, and no `noindex`. And it must be sufficiently popular, with a minimum number of visitors: "An exact number is not disclosed". At this time there is no way to apply: "you cannot manually submit pages or origins for inclusion." PageSpeed Insights adds that a page may lack data if it "has been recently published or has too few samples from real users."
+
+So if your pages are public and indexable, "No Data" is about visitor numbers, not a fault on the page.
+
+### When Search Console shows no data
+
+Search Console's help says "Only indexed URLs can appear in this report." A group of similar pages without enough data "for both LCP and CLS" is left out. Search Console then creates "a higher-level origin group"; if that is short too, it is not shown either. "No data available" means either "your property is new in Search Console" or there is "not enough data available in the CrUX report" for that device type.
+
+## Whose visits the field data counts
+
+The field data is a sample, not a count of your UK customers.
+
+- **It is worldwide.** Search Console's help says "data is combined for all requests from all locations", and Chrome's [tools comparison](https://developer.chrome.com/docs/crux/methodology/tools) (updated 9 September 2025) lists PageSpeed Insights with "No country dimensions".
+- **A UK-only view is monthly and site-wide.** The Chrome UX Report's dataset in Google's BigQuery has a table for each country, with "the standard eligibility requirements applied at a country level". So a small site can be in the worldwide data and missing from the UK table. It has no page-level data, and needs "a Google Cloud account and basic knowledge of SQL", plus a credit card.
+- **It is Chrome only.** Visits count from Chrome on desktop and Android, for users who share usage statistics and sync their history without a sync passphrase. "Chrome on iOS" and "Other Chromium browsers" are named exceptions. iPhones and iPads are not on the supported list, so their visits are missing whatever the browser.
+
+## How to fix each Core Web Vital
+
+Each fix below is from Google's guides on web.dev; hand the table to whoever maintains your site.
+
+| Metric | What you notice                                  | Cause named in Google's guides                                                                         | First fix                                                                                               | Who                   |
+| ------ | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | --------------------- |
+| LCP    | The main image arrives last                      | It is lazy-loaded, added by JavaScript, hidden behind `data-src`, or set as a CSS background           | Put it in the page's HTML as an `img` with a `src`; remove `loading="lazy"`; add `fetchpriority="high"` | Developer             |
+| LCP    | A blank screen, then everything at once          | Stylesheets or synchronous scripts in the `head` that hold up drawing; a testing script hiding content | Load scripts with `async` or `defer`; inline a stylesheet only if it is small                           | Developer             |
+| LCP    | A long wait before anything appears              | Redirects, such as from adverts or short links; a server far from your visitors                        | Point links straight at the final address; serve from a content delivery network                        | You and developer     |
+| INP    | A tap or click takes a moment to show anything   | Long tasks: work that runs over 50 milliseconds                                                        | Remove unused scripts and old tag-manager tags; break up long tasks                                     | You (tags), developer |
+| CLS    | Text jumps as images load                        | Images without dimensions                                                                              | `width` and `height` attributes, or CSS `aspect-ratio`                                                  | Developer             |
+| CLS    | Content jumps when a banner, embed or ad appears | Content injected with no space reserved; notices at the top of the screen                              | Reserve the space, or overlay it as a sticky footer or modal                                            | Developer             |
+| CLS    | Text reflows when the font arrives               | Web fonts                                                                                              | `font-display: optional`, a close fallback font, and key fonts loaded early                             | Developer             |
+
+### Largest Contentful Paint: get the main element loading first
+
+web.dev's [LCP guide](https://web.dev/articles/optimize-lcp) (updated 31 March 2025) splits LCP into four waits, from the server's first byte to the moment the main element is drawn. "It's rare that a quick fix to a single part of a page will result in a meaningful improvement to LCP." In its own example, the image stays hidden until JavaScript finishes, so a smaller file "wouldn't actually improve LCP".
+
+The guide is firm on one point: "Never lazy-load your LCP image". It suggests `fetchpriority="high"` on that image, and on one or two images at most.
+
+```html
+<img src="/images/hero.webp" width="1200" height="675" alt="Team at work" fetchpriority="high" />
+```
+
+### Interaction to Next Paint: keep the main thread free
+
+INP adds up three waits: before a tap is handled, while its code runs, and before the screen updates. web.dev's [INP guide](https://web.dev/articles/optimize-inp) (updated 2 September 2025) says "Yield to the main thread often". Its [top fixes page](https://web.dev/articles/top-cwv) (updated 31 October 2024) says "Avoid unnecessary JavaScript", including old tag-manager tags with unused code. With no field data, web.dev suggests "interacting with the page during load—when the main thread is often busiest". Do it with the DevTools Performance panel open.
+
+### Cumulative Layout Shift: reserve the space
+
+web.dev's [CLS guide](https://web.dev/articles/optimize-cls) (updated 7 February 2025) says to reserve space for anything that loads late, and keep it: "Removing the space set aside for elements can cause just as much CLS as inserting content." Animate with `transform`, not `top` or `left`. web.dev's [cookie notice guide](https://web.dev/articles/cookie-notice-best-practices) (updated 13 June 2024) calls cookie consent notices "a very common source of layout shifts", and suggests reserving their space or showing them as an overlay.
+
+Lab tools may miss shifts after the load, so scroll the page with the DevTools Performance panel open; its Layout shifts tab lists each one.
+
+## How to check a fix has worked
+
+Re-test in the lab the same day. Field data moves slowly, because it covers a rolling 28 days. In Search Console, "Start Tracking" begins "a 28-day monitoring session", and it "does not trigger re-indexing or any other active behavior from Google." A status can also move when you have changed nothing on the site: Search Console's help says a borderline site can tip when "some site-wide event pushed your pages over the edge".
+
+## Where to start
+
+1. **Find your numbers first.** Run PageSpeed Insights on your home page and your main enquiry page, mobile first, and note whether it shows the page, the whole site or "No Data". Add Search Console's report if you have it.
+2. **Then fix.** With field data, Search Console's help says to fix everything labelled Poor first. Without it, work down the table and check each change in the lab. Whether to repair or replace the site is a separate question, weighed in [custom website vs WordPress](/blog/custom-website-vs-wordpress-2026).
+3. **Get a second look.** The speed check in our [free audit](/free-audit) is "a lab test of how fast the main content loads and whether the layout jumps; how quickly a page responds to a tap or click can only be measured on real visits." It reads public pages only, with no logins. If search is the goal, see the [SEO service](/services/seo); if the fixes need a developer, see [web development](/services/web-development). Or [get in touch](/contact).
