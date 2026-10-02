@@ -53,7 +53,7 @@ export type ServicePricing = {
    * work is per profile or per site. Rendered as "per month per location".
    */
   readonly unit?: string;
-  /** One-off set-up component of a monthly plan. Rendered as "· £X set-up". [D4] */
+  /** One-off set-up component of a monthly plan. Rendered as "· £X set-up". D4 adopted 28 September 2026. */
   readonly setupAmount?: number;
   /**
    * Shown under the price where metered usage (messages, minutes) is passed
@@ -74,7 +74,7 @@ export type BundleTier = {
   readonly name: string;
   /** 12–20 words; the card's one line. */
   readonly summary: string;
-  /** Monthly starting figure and the set-up component for this tier. Both [D4]. */
+  /** Monthly starting figure and the set-up component for this tier. Both D4, adopted 28 September 2026. */
   readonly pricing: {
     readonly startingAmount: number;
     /** Set-up is charged per module added, not per tier. */

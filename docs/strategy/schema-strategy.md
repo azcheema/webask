@@ -349,9 +349,7 @@ export const ORG_ID = "https://webask.co.uk/#organization";
 export const SITE_ID = "https://webask.co.uk/#website";
 
 export function organizationNode(): Organization {
-  return {
-    /* full Organization node */
-  };
+  return {/* full Organization node */};
 }
 
 export function websiteNode(): WebSite {
