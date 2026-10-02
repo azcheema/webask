@@ -169,6 +169,15 @@ apply. Figures retained for reference in case the position changes.
 - [ ] Confirm ICO fee does **not** apply absent UK establishment (expected: not required)
 - [ ] `/legal/privacy` cannot go final until the above resolve
 
+> **3 October 2026 — the controller-complaints duty** (read 2 October 2026 for `content/blog/uk-website-legal-requirements.mdx`; raw copies in the git-ignored `.playwright-mcp/web/d1/raw/`). UK GDPR Art. 13(2)(ca), inserted 19 June
+> 2026, adds "the right to make a complaint to the controller under section 164A" to the privacy
+> information. DPA 2018 s.164A: "A controller must facilitate the making of complaints under this
+> section by taking steps such as providing a complaint form which can be completed electronically and
+> by other means", and must acknowledge a complaint "within the period of 30 days". The ICO: "How you do
+> this is up to you"; "You must tell people they can complain to you, as well as to us". Its Right to be
+> informed page is under review, its checklist does not yet carry the controller-complaint line, and its
+> update is due "Spring 2027".
+
 ---
 
 ### A4. PECR — cookies and consent
@@ -359,6 +368,17 @@ the fork, since the US-oriented original may not have been built to the ICO's st
       prints no lifetimes, until **Clarity was dropped before launch (founder, 1 October 2026)** and its section removed
 - [x] Consent is re-obtainable — a persistent "cookie settings" link in the footer
       (`CookieSettingsButton`, inherited; verified 2026-09-25)
+
+> **3 October 2026 — more of Schedule A1** (read 2 October 2026 for `content/blog/uk-website-legal-requirements.mdx`; raw copies in the git-ignored `.playwright-mcp/web/d1/raw/`). Para 4: no consent for storage "strictly necessary
+> for the provision of an information society service requested by the subscriber or user" (its examples
+> include "maintaining a record of selections made on a website"). Para 6, which the ICO calls the
+> "appearance" exception, adapts how the site looks or works to the user's preferences on the same
+> conditions as para 5: "clear and comprehensive information" and "a simple means of objecting, free of
+> charge". The ICO: toggles for those two exceptions may be "on by default, with the ability for users to
+> change them to off at any time"; external font libraries "may collect information about your users,
+> such as their IP address. Where this occurs, you must explain this", and "You could consider
+> self-hosting fonts"; banners "might seem to be the easiest option" but "you should consider their
+> implementation carefully"; after a refusal, six months is its "general guideline" before asking again.
 
 ---
 
@@ -590,9 +610,27 @@ since that date is the DMCC Act 2024 Part 4 Chapter 1.)_
 inherited theme-demo testimonials. "Your website may be breaking the law" is an uncomfortable
 but genuinely useful audit finding.
 
+> **3 October 2026 — reviews and testimonials, more detail** (read 2 October 2026 for `content/blog/uk-website-legal-requirements.mdx`; raw copies in the git-ignored `.playwright-mcp/web/d1/raw/`). DMCC Act s.237(8)(b) keeps the
+> Schedule 20 para 13 review practices out of the criminal offence; enforcement is the CMA's direct penalty
+> (s.182; the figure stays "10% of global turnover or £300,000, whichever is higher"). CMA208 calls the
+> duty to take reasonable and proportionate steps "non-delegable", and the CMA's short guide says "You
+> should have a published policy that clearly prohibits fake reviews". The CAP Code's testimonial rules
+> (3.47, 3.50) reach business-to-business marketing too: it covers marketing "on their own websites", and
+> its consumer is anyone likely to see it, "whether in the course of business or not".
+
 ---
 
 ### A7. Accessibility
+
+> **3 October 2026 — Northern Ireland and the EHRC code** (read 2 October 2026 for `content/blog/uk-website-legal-requirements.mdx`; raw copies in the git-ignored `.playwright-mcp/web/d1/raw/`). The Equality Act's service duties and
+> the EHRC code cover Great Britain only. In Northern Ireland the Disability Discrimination Act 1995
+> applies (s.19 "now extends to N.I. only"; "it is irrelevant whether a service is provided on payment or
+> without payment"; s.21's test is a practice that makes it "impossible or unreasonably difficult for
+> disabled persons to make use of a service"); the Equality Commission for Northern Ireland says the
+> protections "apply whether you buy products or services online or in person". The EHRC's statutory
+> code came into force on 5 August 2026 (SI 2026/788): "The obligation also applies to the provision of
+> services on a website"; its website example "will be indirect disability discrimination unless the
+> provider can justify it".
 
 WCAG 2.2 AA is inherited from Naxdor (Lighthouse a11y = 100 in CI, axe-core, manual keyboard
 pass). ~~In the UK~~ In Great Britain the commercial framing is the **Equality Act 2010** — service
