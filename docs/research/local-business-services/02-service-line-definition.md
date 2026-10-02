@@ -350,6 +350,12 @@ conditions § 7.4 lists; "§ 10 row 11" is the planning register's row, now `08`
 
 ## 5. Boundaries against the existing nine, and the "nine" copy (App. I.8–I.9)
 
+> **2 October 2026 — this section is the 25 September copy and is stale.** The nine live service pages
+> were rewritten on 28 September 2026 (PR #40), so most "Current" cells below no longer match the site.
+> The maintained copy is `09-content-drafts/deltas.md` (every row re-read against `main` on 1 October
+> 2026, the founder's wording approvals recorded on 2 October). Build the launch commit from that file,
+> not from this section; the tables below are kept as the record of 25 September.
+
 ### I.8 Exact boundary rewrites (current → replacement; verbatim current text read 2026-09-24, re-verified line by line 2026-09-25)
 
 Plain-text fields (`data/*.ts`) take no markdown links because they feed `FAQPage` JSON-LD; MDX
