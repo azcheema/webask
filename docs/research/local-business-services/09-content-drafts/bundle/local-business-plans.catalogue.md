@@ -5,8 +5,9 @@
 > pass-1 self-check for the MDX half are in `../self-checks.md`.
 
 > **1 October 2026.** Brought into line with the decisions of 28 September 2026 (`00` § 6): the
-> figures were adopted as launch prices (the tiers unchanged; the AI module, £149 + £499 set-up, now
-> sits £50 a month below the standalone receptionist's £199 and at the same set-up, `07` § 4), so the
+> figures were adopted as launch prices (the tiers unchanged; the AI module, £149 a month, sits £50
+> below the standalone receptionist's £199, `07` § 4; on 1 October 2026 the founder lowered its set-up from
+> £499, the standalone figure, to £399), so the
 > `[D4]` tags below now read "adopted"; usage is not included in any plan, so every allowance string is
 > replaced by the live usage wording; every figure shows "excl. VAT".
 
@@ -71,7 +72,7 @@ faqs: [
   {
     question: "What do the plans cost, and what is the set-up fee?",
     answer:
-      "Each plan has a monthly fee and a set-up fee per module: Answer from £199 a month with a £249 set-up, Reputation from £399 with £647 across its modules, Follow-Up from £749 with the same £647, and the AI module £149 a month with a £499 set-up, excl. VAT. Answer covers the hosted sub-account, the number or divert, missed-call text-back, the inbox, the booking calendar and the report; Reputation adds the review programme and Google Business Profile upkeep; Follow-Up adds campaigns, an automation a month and a landing page a quarter. The AI Receptionist module can be added to any plan. Usage is not included: it is billed on top at cost, on a published schedule. What moves the price: the tier, a new number instead of a divert, the AI module, and what you use.",
+      "Each plan has a monthly fee and a set-up fee per module: Answer from £199 a month with a £249 set-up, Reputation from £399 with £647 across its modules, Follow-Up from £749 with the same £647, and the AI module £149 a month with a £399 set-up, excl. VAT. Answer covers the hosted sub-account, the number or divert, missed-call text-back, the inbox, the booking calendar and the report; Reputation adds the review programme and Google Business Profile upkeep; Follow-Up adds campaigns, an automation a month and a landing page a quarter. The AI Receptionist module can be added to any plan. Usage is not included: it is billed on top at cost, on a published schedule. What moves the price: the tier, a new number instead of a divert, the AI module, and what you use.",
   },
   {
     question: "Hosted or my own account — which should I choose?",
@@ -242,9 +243,9 @@ tiers: [
     ],
   },
 ],
-// The AI Receptionist is a module on any tier, not a tier: £149 a month plus a £499 set-up inside a plan, adopted
-// 28 September 2026 (07 § 4 — £50 a month below the standalone receptionist's £199 because the divert, the number
-// and the inbox are already in the plan, and at the same £499 set-up); usage not included, minutes billed at the
+// The AI Receptionist is a module on any tier, not a tier: £149 a month plus a £399 set-up inside a plan (07 § 4 —
+// £50 a month below the standalone receptionist's £199 because the divert, the number and the inbox are already in
+// the plan; the set-up lowered from £499 to £399 by the founder on 1 October 2026, 00 § 6); usage not included, minutes billed at the
 // schedule rate. Where the module figure lives in the type is a build
 // question (11 AE.1: a `modules?` field on this entry, or a tier-less line in the Plans block); the bundle page and
 // the Plans block say "add the AI Receptionist to any plan".
