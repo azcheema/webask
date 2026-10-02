@@ -50,6 +50,7 @@ const MUST_NOT_MATCH: readonly string[] = [
   "/blog/topic/seo",
   "/blog/map-pack-without-a-shopfront",
   "/blog/core-web-vitals-guide-uk",
+  "/blog/pecr-b2b-outreach-rules-uk",
   "/blog/topic/clinic-compliance",
   "/blog/can-clinics-advertise-botox-uk",
   "/blog/botox-price-list-clinic-website-rules",

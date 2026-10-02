@@ -1184,7 +1184,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Is email and SMS marketing legal in the UK, and who can we message?",
         answer:
-          "Yes, to those the rules allow, which turns on who the recipient is, not what the address looks like. A limited company, an LLP or a public body can be emailed or texted without prior consent. A sole trader, an unincorporated partnership or anyone on a personal address or number needs consent, unless you meet every condition of the soft opt-in, which our CRM page sets out. A text counts as electronic mail under the same rules, and the month-one audit tags every record before anything is sent.",
+          "Yes, to those the rules allow, which turns on who the recipient is, not what the address looks like. A limited company, an LLP, a Scottish partnership or some government bodies can be emailed or texted without prior consent. A sole trader, any other partnership or anyone on a personal address or number needs consent, unless you meet every condition of the soft opt-in, which our CRM page sets out. A text counts as electronic mail under the same rules, and the month-one audit tags every record before anything is sent.",
       },
       {
         question: "Our list is old — can you reactivate it?",
