@@ -51,6 +51,7 @@ const MUST_NOT_MATCH: readonly string[] = [
   "/blog/map-pack-without-a-shopfront",
   "/blog/core-web-vitals-guide-uk",
   "/blog/pecr-b2b-outreach-rules-uk",
+  "/blog/migrating-hubspot-to-gohighlevel-uk",
   "/blog/topic/clinic-compliance",
   "/blog/can-clinics-advertise-botox-uk",
   "/blog/botox-price-list-clinic-website-rules",
