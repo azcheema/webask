@@ -63,11 +63,11 @@ export const TIMELINE_OPTIONS: ReadonlyArray<SelectOption> = [
  * with an "Other" escape hatch keeps the form light at launch.
  */
 export const COUNTRY_OPTIONS: ReadonlyArray<SelectOption> = [
+  { value: "GB", label: "United Kingdom" },
+  { value: "IE", label: "Ireland" },
   { value: "US", label: "United States" },
   { value: "CA", label: "Canada" },
-  { value: "GB", label: "United Kingdom" },
   { value: "AU", label: "Australia" },
-  { value: "IE", label: "Ireland" },
   { value: "NZ", label: "New Zealand" },
   { value: "AE", label: "United Arab Emirates" },
   { value: "SG", label: "Singapore" },

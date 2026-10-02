@@ -42,8 +42,14 @@ import type { CtaLink, FaqItem, HeroHeadlineSegment, Meta, Stat } from "@/data/t
  * data/services.ts and render through `PricingAnchor`, so there is one source
  * of truth and the copy cannot drift from it.
  *
- * Those figures are now the research-derived GBP anchors from docs/02 § 7.
- * ⚠️ D4 still asks the founder to confirm them before publish.
+ * Those figures are the launch prices adopted on 28 September 2026 (research 00 § 6).
+ *
+ * 2 October 2026 (founder: fix the live home page claims): "Most sit silent", "five seconds or
+ * more", "most visitors have gone", "sub-two-second loads", "Every minute … costs you conversion",
+ * "Most small businesses run …" and "Usually, yes" were removed or reworded — none was evidenced, and
+ * "sub-two-second" claimed more than the warn-only LCP budget. The web-development line now uses the
+ * catalogue's own "measured against a two-second budget". The website-cost FAQ quotes both freelance
+ * bands, as /pricing does, instead of silently taking the lower floor (docs/02 § 7 vs docs/08 § 7).
  */
 
 export type HomeProblemSolution = {
@@ -129,11 +135,11 @@ export const home: HomeContent = {
   sections: [
     {
       eyebrow: "Web development",
-      h2: "Your website is your hardest-working salesperson. Most sit silent.",
+      h2: "Your website is your hardest-working salesperson. It should not sit silent.",
       problem:
-        "Templated sites on ageing platforms take five seconds or more to load, rank for nothing, and look a few years behind the business they represent. On a phone, on mobile data, most visitors have gone before the first sentence renders.",
+        "A templated site on an ageing platform can be slow to load, hard for search engines to read, and a few years behind the business it represents. On a phone, on mobile data, a visitor may be gone before the first sentence appears.",
       solution:
-        "We build sites engineered for sub-two-second loads, structured for search from the first commit, and designed mobile-first because that is where your customers are. Next.js and Vercel, owned end to end — and you own the code.",
+        "We build sites measured against a two-second mobile loading budget as they are built, structured for search from the first commit, and designed mobile-first because that is where your customers are. Next.js and Vercel, owned end to end — and you own the code.",
       cta: { label: "See web development", href: "/services/web-development" },
     },
     {
@@ -149,7 +155,7 @@ export const home: HomeContent = {
       eyebrow: "CRM automation",
       h2: "Enquiries die in inboxes. Yours should be answered before you see them.",
       problem:
-        "Every minute an enquiry waits costs you conversion. Most small businesses run a website that captures leads and a CRM that ignores them, held together by a Zapier subscription and optimism.",
+        "A website captures the leads and a CRM ignores them, held together by a Zapier subscription and optimism — and an enquiry that waits is one somebody else can answer first.",
       solution:
         "We implement and automate GoHighLevel end to end, and HubSpot where it is the better fit — including migrations between them. Capture, instant reply, SMS follow-up, calendar booking and reporting, wired so prospects book themselves while you work.",
       cta: { label: "See CRM automation", href: "/services/crm-automation" },
@@ -215,7 +221,7 @@ export const home: HomeContent = {
       // the most-searched intent and the one AI Overviews quote.
       question: "What should a UK small business budget for a website",
       answer:
-        "Most UK small businesses spend between £1,500 and £5,000 on a website. A DIY builder runs roughly £240–£360 a year once you add a domain and business email; a freelancer typically charges £800–£3,000; and UK agencies generally sit between £2,500 and £10,000, with London often higher for the same specification. Budget another 15–20% of the build cost each year for hosting, updates and security. We publish our own starting prices rather than hiding them behind a call, so you can rule us in or out in about a minute. (Market figures: UK web design cost surveys, 2026.)",
+        "Most UK small businesses spend between £1,500 and £5,000 on a website. A DIY builder runs roughly £240–£360 a year; a freelance build is put at £800–£3,000 in one 2026 market summary and £1,500–£3,000 in another; and UK agencies quote £2,500–£10,000 for a standard small-business site, with London dearer for the same specification. Budget another 15–20% of the build cost each year for hosting, updates and security. We publish our own starting prices rather than hiding them behind a call, so you can rule us in or out in about a minute. (Market figures: UK web design cost surveys, 2026.)",
     },
     {
       question: "Why would I pay more than a £950 template",
@@ -245,7 +251,7 @@ export const home: HomeContent = {
     {
       question: "Can you work with our existing website and CRM",
       answer:
-        "Usually, yes. We migrate and automate GoHighLevel and HubSpot, connect WordPress, Shopify and Wix sites to the tools around them, and rebuild from scratch only where keeping the current setup costs more than replacing it. An engagement can start as a fix rather than a rebuild. The first call establishes what stays, what goes, and what is simply not worth touching yet.",
+        "Yes, where it is worth keeping. We migrate and automate GoHighLevel and HubSpot, connect WordPress, Shopify and Wix sites to the tools around them, and rebuild from scratch only where keeping the current setup costs more than replacing it. An engagement can start as a fix rather than a rebuild. The first call establishes what stays, what goes, and what is simply not worth touching yet.",
     },
     {
       question: "Where in the UK do you work",
