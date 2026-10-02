@@ -811,7 +811,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Do I need a new phone number?",
         answer:
-          "No. The recommended set-up is a divert. Unanswered calls forward to a line we set up, and the text goes out from a number tied to your business, so nothing on your van, website or Google profile changes. If you would rather have a second line, it is an add-on: a UK local number is registered to your business on the platform's record, with your business name, registration and a UK business address. A business not registered in the UK gets a UK mobile or freephone number instead. Either way the number belongs to your business, not to us.",
+          "No. The recommended set-up is a divert. Unanswered calls forward to a line we set up, and the text goes out from a number tied to your business, so nothing on your van, website or Google profile changes. If you would rather have a second line, it is an add-on: a UK local number is registered to your business on the platform's record, with your business name, registration and a UK business address. A business not registered in the UK gets a UK mobile or freephone number instead. Either way the number is registered to your business, not to us.",
       },
       {
         question: "Who replies when a caller texts back?",

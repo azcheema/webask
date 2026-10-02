@@ -15,6 +15,16 @@
 
 ### I.7 `local-business-plans` (the bundle)
 
+> **2 October 2026 — reshaped to the problem-first shape** (founder, 1 October 2026; `00` § 6; `13` § 3;
+> `docs/strategy/content-guidelines.md`), then checked by four second readers and corrected the same
+> day. The starting figure buys the Answer plan only, listed in `includes`; as in `07` § 4 and the
+> tiers array, Answer carries a UK number or a divert and WhatsApp in the inbox at cost, so neither is
+> an add-on here. The plans above Answer and the AI module are named in `notIncluded`. Six FAQs,
+> pricing first, at 60–100 words: the pricing, number and leaving questions answer `03` § 9's bundle
+> PAA list; the hosted-or-own, data and clinic questions carry R30–R32 and Q10. The usage-mechanics
+> FAQ goes to `/pricing` (`deltas.md` § 4); the start-with-Answer and minimum-term answers move into
+> the body and the pricing answer. The earlier version is in git history (`1c499e5`).
+
 ```ts
 {
   slug: "local-business-plans",
@@ -22,42 +32,40 @@
   category: "automate",
   status: "draft",
   summary:
-    "The front desk, the follow-up and the reviews, run for you in a hosted GoHighLevel sub-account — three plans, month to month, with a written exit.",
+    "The phone, the reviews and the follow-up, run for you each month in a hosted account — three plans, no minimum term, with the exit written down.",
   heroSubhead:
-    "Missed calls, follow-up and reviews run for you in a hosted sub-account — month to month, with the exit written down.",
+    "Missed calls get no reply, reviews go unasked, past customers hear nothing. Three monthly plans handle all three for you, starting with the phone, with no platform to learn.",
   whoItsFor:
-    "UK local businesses that want the phone, the follow-up and the reviews handled without running a platform themselves — and who want to know exactly what leaves with them if they go.",
+    "trades, garages, salons and other local businesses whose customer records are names, numbers and jobs.",
   pricing: {
     startingAmount: 199 /* the Answer tier; adopted as the launch price, 28 September 2026 (research 00 § 6) */,
     currency: "GBP",
     cadence: "monthly",
     setupAmount: 249 /* adopted 28 September 2026 — the Answer module; Reputation and Follow-Up carry £647 across their modules */,
     usageNote:
-      "Usage is not included: whatever the platform charges for, such as texts and replies, calls, AI minutes and WhatsApp, is billed on top at cost, based on what you use, on a published GBP schedule reviewed quarterly.",
-    priceNote:
-      "What moves the price: the tier, a new UK number versus a divert, the AI Receptionist module, and usage.",
+      "Usage is not included: whatever the platform charges for, such as texts and replies, calls, the number, AI minutes and WhatsApp, is billed on top at cost, based on what you use, on a published GBP schedule reviewed quarterly.",
+    priceNote: "What moves the price: the plan, and the AI Receptionist module.",
   },
   includes: [
-    "Answer — hosted sub-account, UK number or divert, missed-call text-back, one inbox (web chat; WhatsApp at cost), booking calendar and reminders, the app, a monthly report",
-    "Reputation — everything in Answer, plus the review programme and Google Business Profile upkeep",
-    "Follow-Up — everything in Reputation, plus two campaigns a month, one automation, a quarterly reactivation and a landing page a quarter",
-    "AI Receptionist as an optional module on any plan, plus minutes",
+    "A hosted account, with a UK number registered to your business or a divert from the one you already publish",
+    "A text within seconds of every missed call, written with you, with no offer in it",
+    "One inbox and a phone app for replies and website chat, with WhatsApp at cost for customers who opt in",
+    "A booking calendar with confirmations and reminders of each booking",
+    "A monthly report: calls missed, texts sent, replies, bookings",
   ],
   notIncluded: [
-    "A website — bring yours, or see Web Development",
-    "Paid ads and social posting — the tools sit in the account; we run no ad campaigns and write no social posts",
+    "The review programme and your Google profile (Reputation) and campaigns to the people you may lawfully message (Follow-Up) — the plans above Answer; the AI Receptionist, added to any plan; platform usage, billed at cost on what you use",
+    "A website, paid ads or social posting — not in any plan",
   ],
   primaryCta: { label: "Choose a plan", href: "/contact" },
   relatedServiceSlugs: ["crm-automation", "web-development"],
-  // tiers: [{ name, summary, includes[] } × 3] — § 4.7 type extension
+  // tiers: § 3 below
   faqs: [
-    "What do the plans cost, and what is the set-up fee?",
+    "How much does a monthly marketing package cost?",
     "Hosted or my own account — which should I choose?",
     "Where is my data, and who is responsible for it?",
     "What happens if I leave — what do I keep?",
-    "What do messages and minutes cost?",
-    "Can I start with Answer and add modules later?",
-    "Is there a minimum term?",
+    "Can I keep my number, and whose is it?",
     "We are a clinic — is a hosted plan right for us?", // answer: patient data stays in your own account (M1)
   ],
 }
@@ -65,54 +73,44 @@
 
 ## 2. FAQ answers (App. Z.7)
 
-### Z.7 `local-business-plans` (R30–R35, R39; Q4/Q5/Q10 flagged)
+### Z.7 `local-business-plans` (R30–R35, R39; Q4/Q5/Q10 decided 25 September 2026)
 
 ```ts
 faqs: [
   {
-    question: "What do the plans cost, and what is the set-up fee?",
+    question: "How much does a monthly marketing package cost?",
     answer:
-      "Each plan has a monthly fee and a set-up fee per module: Answer from £199 a month with a £249 set-up, Reputation from £399 with £647 across its modules, Follow-Up from £749 with the same £647, and the AI module £149 a month with a £399 set-up, excl. VAT. Answer covers the hosted sub-account, the number or divert, missed-call text-back, the inbox, the booking calendar and the report; Reputation adds the review programme and Google Business Profile upkeep; Follow-Up adds campaigns, an automation a month and a landing page a quarter. The AI Receptionist module can be added to any plan. Usage is not included: it is billed on top at cost, on a published schedule. What moves the price: the tier, a new number instead of a divert, the AI module, and what you use.",
-  },
+      "From £199 a month on Answer, £399 on Reputation and £749 on Follow-Up. Set-up is paid on signature, per module: £249 for Answer, and £647 in all for Reputation or Follow-Up. The AI Receptionist adds £149 a month and £399 set-up to any plan. Every figure here excludes VAT. Usage is not included: whatever the platform charges for, such as texts, calls, AI minutes and WhatsApp, is billed on top at cost, based on what you use. The plan fee is fixed in pounds for twelve months, with no minimum term.",
+  }, // figures adopted 28 September 2026; AI module set-up £399 from 1 October 2026 (00 § 6); Q4/Q5
   {
     question: "Hosted or my own account — which should I choose?",
     answer:
-      "Own it if you can. Everything else we build lives in an account you own, and the CRM page is where that is done. Choose a hosted plan when you want the phone, the follow-up and the reviews run for you with no platform to learn and no subscription to manage, and when you are comfortable with the trade that involves: your data sits in a sub-account under our licence, processed for you under a written contract, with the exit written down. Choose your own account when the system is core to how you sell, when your team will live in it daily, or when your records are patients' records, which never go into a hosted plan.",
+      "Choose a hosted plan when you want the phone, the reviews and the follow-up run for you, with no platform to learn, and you accept the trade: your data sits in a sub-account under our licence, processed for you under a written contract, with the exit written down. Choose your own account when your team will live in it daily, or when your records are patients' records. Everything else we build lives in an account you own, and CRM automation is the service that sets one up.",
   },
   {
     question: "Where is my data, and who is responsible for it?",
     answer:
-      "You are the controller of your customers' data; we are your processor under a written contract, as UK GDPR Article 28 requires, and HighLevel, Inc. processes it for us as our sub-processor. The platform runs in the United States: the transfer relies on HighLevel's certification, as at 24 September 2026, under the UK Extension to the EU-US Data Privacy Framework, with the UK Addendum to the standard contractual clauses behind it — terms in HighLevel's own data processing agreement that our contract with you passes on, including thirty days' notice of any new sub-processor and a right to object. We will not tell you the data stays in the UK, because it does not.",
+      "The platform runs in the United States, so the data does not stay in the UK. You are the controller of your customers' data; we are your processor under a written contract, as UK GDPR Article 28 requires, and HighLevel, Inc. is our sub-processor. The transfer relies on HighLevel's certification, as at 24 September 2026, under the UK Extension to the EU-US Data Privacy Framework, with the UK Addendum to the standard contractual clauses behind it. Our contract passes on HighLevel's thirty days' notice of any new sub-processor, and a right to object.",
   },
   {
     question: "What happens if I leave — what do I keep?",
     answer:
-      "Two things: an export, and the option to take the sub-account with you. The export gives you your contacts, their conversations and the forms they filled, in files that open without the platform. The transfer moves the sub-account to an agency account of your own or to another agency: contacts with their history, calendars, users, websites, funnels and API keys come across; every automation arrives set to draft for you to switch on; connected accounts such as Google, Facebook and payments are reconnected on your side; any add-on subscription is cancelled first and set up again by you; and a phone number moves where both sides use the platform's own telephony. The checklist for all of that is written at set-up, not at the exit.",
+      "An export of your contacts, their conversations and the forms they filled, and the option to move the sub-account to an agency account of your own or to another agency. Contacts and their history, calendars, users, websites and funnels come across; automations arrive as drafts; connected accounts such as Google, Facebook and payments are reconnected on your side; add-on subscriptions end with the plan; a number moves where both sides use the platform's own phone service. A domain we assigned does not move. The checklist is written at set-up.",
+  }, // Q6 decided 25 September 2026: the assigned-domain sentence
+  {
+    question: "Can I keep my number, and whose is it?",
+    answer:
+      "Yes. The recommended set-up is a divert from the number you already publish, so nothing on your van, website or Google profile changes, and switching the divert off puts everything back. If you would rather have a new line, a UK local number is registered to your business on the platform's record, or a UK mobile or freephone number for a business with no UK registration; its rental is billed at cost as usage. Either way the number is registered to your business, not to us.",
   },
-  {
-    question: "What do messages and minutes cost?",
-    answer:
-      "At cost, on a schedule you can read before you send anything. Usage is not included in any plan. The platform bills texts, calls, AI minutes and WhatsApp messages in US dollars; we publish a schedule in pounds, reset it each quarter against the exchange rate, and charge what you use at the rates on it, with nothing added. The plan fee is fixed in pounds for twelve months, so the exchange rate reaches you only through the usage line.",
-  }, // Q4/Q5 decided 25 September 2026 (00 § 6); usage not included and figures adopted 28 September 2026
-  {
-    question: "Can I start with Answer and add modules later?",
-    answer:
-      "Yes, and that is the order we recommend. Answer is the cheapest plan to run and the easiest to leave, and its report tells you whether the others are worth adding: if the text-back is producing replies and bookings, the review programme and the profile upkeep in Reputation are the next step; if the list is growing, the campaigns in Follow-Up are. The AI Receptionist module can be added to any plan when the missed-call count in the report says the phone needs answering rather than texting. Moving up is a change to the plan and a set-up fee for the new module, not a new contract.",
-  },
-  {
-    question: "Is there a minimum term?",
-    answer:
-      "No. Set-up is paid on signature, the plan monthly in advance and usage in arrears, and thirty days' notice ends it. The plan fee is fixed in pounds for twelve months, which protects you from the exchange rate rather than binding you to the term. We ask for the first month to be a proper set-up, with the divert tested from a real phone and the templates approved, because a plan cancelled before it has run has taught nobody anything, but nothing in the terms requires you to stay. If you leave, the exit works as described on this page, with the export and the transfer checklist.",
-  }, // Q4/Q5 decided 25 September 2026 (00 § 6); figures adopted 28 September 2026
   {
     question: "We are a clinic — is a hosted plan right for us?",
     answer:
-      "For the phone, the reviews and the profile, possibly; for patient data, no. If your customers are patients, the records you hold are health data, and a hosted sub-account on a US-hosted platform is the wrong place for them. Clinics and dental practices get the same automations built in an account they own, with the advertising rules those pages set out, including the rule that no message names, or hints at, a prescription-only medicine. The plans on this page are for businesses whose contact records are names, numbers and jobs. Talk to us about which parts of a plan can run for a practice without touching patient records, and which cannot.",
+      "For the phone, the reviews and the profile, possibly; for patient data, no. If your customers are patients, the records you hold are health data, and a hosted account on a US-hosted platform is the wrong place for them. Clinics and dental practices get the same automations built in an account they own, with the advertising rules set out on our industry pages. The plans on this page are for businesses whose contact records are names, numbers and jobs. Talk to us about which parts can run without touching patient records.",
   }, // Q10 decided 25 September 2026 (00 § 6, D9 and D10)
 ],
 ```
 
-**Pass 1 self-check (planning session; pass 2 and `counts.mjs` in S7/S8).** Every answer is plain
+**Pass 1 self-check (planning session; pass 2 and `counts.mjs` in S7/S8).** _(Written before the reshape of 2 October 2026: the bundle now carries six FAQs at 60–100 words, pricing first, checked by `counts.mjs`; the rest of this paragraph is the record of pass 1.)_ Every answer is plain
 text with no markdown, no links and no double quotes inside the string (apostrophes only). Pricing
 first in all seven sets; each figure typed once in the entry and once in the pricing answer (all [D4]); each pricing answer names what the fee covers and what
 moves it. Word counts by eye sit between about 95 and 135 — S7 verifies 80–150 by script. No

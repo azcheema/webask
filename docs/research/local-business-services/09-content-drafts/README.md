@@ -320,7 +320,7 @@ prettier clean.
    practices belong" on the bespoke build should read "practices holding patient records".
 
 **Answered by the founder on 1 October 2026 (`00` § 6):** (1) yes, reshape the bundle before it
-ships — not done yet; (2) the module set-up inside a plan is £399 — applied in the bundle drafts and
+ships — done on 2 October 2026 (see the bundle files' dated notes); (2) the module set-up inside a plan is £399 — applied in the bundle drafts and
 `07` § 4; (3) a reminder about a booking already made stays a service message, and an MOT, service or
 safety-check reminder that invites a new booking is built as marketing, sent only with consent or the
 soft opt-in — applied to the garages page and catalogue, the trades page and the appointment-reminder
