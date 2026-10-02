@@ -1,0 +1,177 @@
+---
+title: "PECR B2B Rules: Email, Text and Calls to UK Firms"
+description: "Under PECR you may email a limited company without consent; a sole trader needs consent or the soft opt-in. B2B email, text and call rules, and the CRM checks."
+datePublished: "2026-10-02"
+dateModified: "2026-10-02"
+authorSlug: ansar-cheema
+topic: crm
+keywords:
+  - pecr b2b email marketing rules uk
+  - can i cold email businesses uk
+  - pecr sole traders
+  - corporate subscriber pecr
+  - b2b cold calling tps ctps
+  - crm consent fields
+draft: true
+---
+
+{/* C1 (cluster C, topic crm), drafted 2 October 2026 by the writer pass and revised the same day by fixer rounds 1 and 2, from .playwright-mcp/crm/c1/PLAN.md and research.md; every quote was copied from the raw page copies in .playwright-mcp/crm/c1/raw, all read 2 October 2026, and a sentence-by-sentence map is in c1/PROVENANCE.md. PRIMARY, each read 2 October 2026: ICO, Business-to-business marketing (under review) https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/; ICO, Guide to PECR (under review): Electronic mail marketing https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/ and Telephone marketing https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/telephone-marketing/; ICO, Guidance on direct marketing using electronic mail (updated 28 April 2026, no banner): key concepts, how do we comply, what else https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-electronic-mail/; ICO, Direct marketing guidance (no banner): identify, collect, respect https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/direct-marketing-guidance/; ICO, Guidance on direct marketing using live calls (under review): how do we comply https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/how-do-we-comply-with-the-rules-on-live-marketing-calls/; ICO, legitimate interests guide (updated 23 March 2026) https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/legitimate-interests/; ICO, plans for new and updated guidance, PECR https://ico.org.uk/about-the-ico/what-we-do/our-plans-for-new-and-updated-guidance/direct-marketing-and-privacy-and-electronic-communications/; ICO, DUAA summary of the changes: privacy and electronic communications (no banner) https://ico.org.uk/about-the-ico/what-we-do/legislation-we-cover/data-use-and-access-act-2025/the-data-use-and-access-act-2025-duaa-summary-of-the-changes/privacy-and-electronic-communications/; ICO, One year on blog (23 June 2026) https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/06/one-year-on-marking-the-12-month-commencement-of-the-data-use-and-access-act/; PECR (S.I. 2003/2426) regs 2, 19, 21, 21A, 22, 23, 24, 26 and Sch. 1 para 18 https://www.legislation.gov.uk/uksi/2003/2426; Data Protection Act 2018 s.157(5) https://www.legislation.gov.uk/ukpga/2018/12/section/157; Data (Use and Access) Act 2025 s.114 and s.115(8) with Sch. 13 https://www.legislation.gov.uk/ukpga/2025/18/section/115; S.I. 2026/82 reg 11(2) https://www.legislation.gov.uk/uksi/2026/82/made; UK GDPR Arts 6(11) and 21 https://www.legislation.gov.uk/eur/2016/679/article/21; DBT, Business population estimates 2025 (published 2 October 2025) https://www.gov.uk/government/statistics/business-population-estimates-2025 and the 2026 release announcement (next edition 5 November 2026, provisional; not printed) https://www.gov.uk/government/statistics/announcements/business-population-estimates-2026. DOCS: docs/03-uk-compliance.md naming note (1 October 2026), section A4 (the PECR fines paragraph and its citation trap) and section A5 (email and outreach, including its practical rule on freemail, used here as our build standard); content/services/crm-automation.mdx, opening section, How it works step 4 and What keeps you safe (Sequences check before they send; No bought lists); data/services.ts crm-automation includes. WebAsk standards stated as ours, not law: webmail handled as an individual subscriber, the CRM fields and sequence checks, the 28-day re-screen, the right-to-object line in a first message, no bought lists. The facts this post uses that docs/03 section A5 does not yet carry are listed in c1/PROVENANCE.md and must land in docs/03 before commit. Deliberately absent: any client, campaign, audit or result; any vendor other than GoHighLevel and HubSpot; any webmail provider, list seller or networking site by name; PECR reg 21B, regs 20 and 25, reg 23(c) and (d), UK GDPR Arts 13 and 14 and DUAA s.142 (not read); a count of lawful bases (the ICO's pages disagree); the TPS site's own wording (not readable on 2 October 2026); the ICO blog's fine figure (it drops the qualifier); the database-reactivation and appointment-reminder drafts (unpublished). */}
+
+Picture two plumbing firms on one street. One is a limited company. The other is a sole trader. Under the Privacy and Electronic Communications Regulations 2003 (PECR), you may send a cold sales email to the company's general inbox. It must say who you are and how to stop. You may not send it to the sole trader, who has never dealt with you, without their consent.
+
+So, can you cold email businesses in the UK? Some of them. This guide sets out PECR's B2B rules for marketing email, texts and calls, and a CRM set-up that checks them.
+
+Checked against the published guidance of the Information Commission (the ICO) and the regulations on 2 October 2026. WebAsk is a web and CRM agency, not a law firm. This summarises published guidance; it is not legal advice.
+
+<Callout variant="note" title="TL;DR">
+  Under PECR you may email or text a limited company, LLP or Scottish partnership without consent,
+  but every message must name you and give a way to stop. If you hold a contact's name, or the
+  address identifies them, UK GDPR applies too, including telling them, at the latest in your first
+  message, that they can object. Sole traders and ordinary partnerships in England, Wales and
+  Northern Ireland need consent before a cold email or text, and live sales calls to any business
+  need checking against the TPS and the CTPS.
+</Callout>
+
+## Who counts as a business under PECR
+
+PECR's rules turn on who the subscriber is. The ICO's [email guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-electronic-mail/key-concepts-for-direct-marketing-using-electronic-mail/) says that is "the person or organisation named on the bill" for the line or connection.
+
+- **Corporate subscribers:** companies, LLPs, Scottish partnerships, corporation soles and "some government bodies". Also any other "legal person distinct from its members".
+- **Individual subscribers:** sole traders, and "other unincorporated bodies of individuals". Also "certain types of partnerships (eg non-limited liability partnerships or other types of English, Welsh and Northern Irish partnerships)".
+
+Both lists come from the ICO's [B2B guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/business-to-business-marketing/) (under review); the corporate one follows [PECR regulation 2](https://www.legislation.gov.uk/uksi/2003/2426/regulation/2).
+
+The Department for Business and Trade says "Sole proprietorships are the most common legal form". At the start of 2025 there were an estimated 3.2 million, or 57% of 5.7 million UK private sector businesses ([Business population estimates 2025](https://www.gov.uk/government/statistics/business-population-estimates-2025/business-population-estimates-for-the-uk-and-regions-2025-statistical-release), published 2 October 2025, "official statistics in development"). Sole traders are individual subscribers; DBT's other categories are not PECR's.
+
+### Whose address it is decides
+
+A named work address at a corporate body, such as `firstname.lastname@org.co.uk`, is the employer's line. So it "would constitute a corporate subscriber" (ICO, under review). It is personal data too. But in an example in the same guidance, a delegate who "chose to use their personal email address instead of their work one" is an individual subscriber.
+
+When you cannot tell, the ICO says you "should treat the details as belonging to an individual subscriber" (under review). Our build standard goes further. A free webmail address would be handled as an individual subscriber, whoever uses it. That is our precaution, not a rule the ICO states.
+
+## The rules by recipient, on one page
+
+Wherever you hold a person's name, UK GDPR applies as well.
+
+| Recipient                                                                                                                               | Marketing email or text                                                                                                                         | Live sales call                                                                                                                                                                             | Recorded-message call                                          |
+| --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| Limited company or PLC, LLP, Scottish partnership, some government bodies, or another corporate body, at a role address such as `info@` | No consent needed under PECR. Name yourself and give a valid opt-out address (reg 23). The ICO says you should honour an opt-out (under review) | Allowed unless the number is on the TPS or CTPS, or they told you not to call (reg 21). Show your number (reg 21(A1)); give your name, and an address or freephone number if asked (reg 24) | Only with consent that covers recorded calls from you (reg 19) |
+| The same, at a named work address or a named person's line                                                                              | As above, plus UK GDPR: a lawful basis, privacy information, and the right to object flagged in your first message                              | As above, plus UK GDPR                                                                                                                                                                      | As above                                                       |
+| Sole trader                                                                                                                             | Consent, or the soft opt-in (reg 22). A cold prospect cannot meet the soft opt-in                                                               | Same as the first row                                                                                                                                                                       | Consent only                                                   |
+| Partnership in England, Wales or Northern Ireland that is not an LLP                                                                    | As for a sole trader                                                                                                                            | Same as the first row                                                                                                                                                                       | Consent only                                                   |
+| Anyone at their own personal address                                                                                                    | As for a sole trader                                                                                                                            | Same as the first row                                                                                                                                                                       | Consent only                                                   |
+| Legal form unknown                                                                                                                      | Treat as an individual subscriber, as the ICO advises (under review)                                                                            | Same as the first row                                                                                                                                                                       | Consent only                                                   |
+
+| Where the contact came from                                                | What PECR and the ICO say                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| They asked you for that message                                            | Solicited: no consent or soft opt-in needed. You still name yourself and give a valid opt-out address                                                                                                                              |
+| They bought from you, or asked for a quote or for details of what you sell | Can support the soft opt-in for an individual subscriber, if you offered a simple way to refuse when you took the details                                                                                                          |
+| A bought or rented list                                                    | Individual subscribers: only with consent that named you and covered that channel, never the soft opt-in. Corporate subscribers: no PECR consent needed, but UK GDPR applies to named people. Calls: ask when it was last screened |
+| A website, Companies House or a directory                                  | Publicly available is not consent. Individual subscribers still need consent or the soft opt-in. A listed number does not override a TPS or CTPS registration (under review)                                                       |
+| A professional networking site                                             | Messaging someone who uses it in their "personal, albeit professional, capacity" "is not considered B2B marketing"; you "must comply with the UK GDPR", and with PECR for electronic marketing (ICO, under review)                 |
+
+## Email and text: what regulation 22 allows
+
+[Regulation 22](https://www.legislation.gov.uk/uksi/2003/2426/regulation/22) is PECR's consent rule for electronic mail. It covers unsolicited messages "to individual subscribers". The ICO's [detailed guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-electronic-mail/how-do-we-comply-with-the-pecr-electronic-mail-marketing-rules/) says: "You can send unsolicited electronic mail marketing to corporate subscribers without consent or a soft opt-in." Electronic mail includes texts, voicemails and direct messages on social media.
+
+For an individual subscriber, the ICO says you must "give your name in the consent request". You "should ask for consent for each type separately". Is there a text or email version of the TPS? "No. There is no equivalent email or text preference service," says the Guide to PECR (under review).
+
+### Why the soft opt-in cannot reach a prospect
+
+The soft opt-in in regulation 22(3) lets you email or text an individual subscriber without consent. All three conditions must be met:
+
+1. You got their details "in the course of the sale or negotiations for the sale" of a product or service to them.
+2. The marketing is about your "similar products and services only".
+3. They were offered "a simple means of refusing" when you took the details, and in every message since.
+
+The ICO's Guide says the soft opt-in "does not apply to prospective customers or new contacts (eg from bought-in lists)" (under review).
+
+So you may not cold email a sole trader to ask for consent either. The ICO lists "contacting people to ask them for consent to direct marketing" as a direct marketing purpose ([direct marketing guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/direct-marketing-guidance/identify-direct-marketing/)).
+
+### What every marketing message must carry
+
+[Regulation 23](https://www.legislation.gov.uk/uksi/2003/2426/regulation/23) covers every marketing email or text, to companies too. You must not disguise or conceal who it is from. You must give "a valid address" where the recipient can ask you to stop.
+
+### When a company asks you to stop
+
+"PECR does not say that you must comply with a corporate subscriber’s opt-out in the context of electronic mail," says the ICO's B2B guidance (under review). Then: "you should comply with a corporate subscriber’s opt-out request." If the address names a person, UK GDPR gives them an "absolute" right to object (ICO).
+
+## Sales calls: the TPS, the CTPS and 28 days
+
+The Guide to PECR says you can "make live calls to any business number that is not registered on the TPS or the CTPS, but only if they haven’t objected to your calls in the past and you are not marketing claims management services" (under review).
+
+[Regulation 21](https://www.legislation.gov.uk/uksi/2003/2426/regulation/21) bars an unsolicited sales call to a subscriber who has told you not to call. It also bars calls to a number on the register kept under regulation 26. Claims management calls need consent (reg 21A); pension calls have strict rules (ICO, under review). Neither is covered here.
+
+The ICO calls that register the Telephone Preference Service (TPS) and Corporate TPS (CTPS). Sole traders register on the TPS, and companies on the CTPS. So for B2B calls, you "will therefore need to screen against both" ([Guide to PECR](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/telephone-marketing/), under review).
+
+**The 28 days.** Regulation 21(3) is a grace period. Calling a number listed "for less than 28 days" does not breach the register rule. If someone else screened a list "more than 28 days ago, then you may inadvertently call numbers where the registration has become active", warns the ICO ([live calls guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/how-do-we-comply-with-the-rules-on-live-marketing-calls/), under review).
+
+**Overriding a listing.** You may call a listed number only if that subscriber has told you they do not object (reg 21(4)). A failure to object "is not enough" (ICO, under review).
+
+### Recorded-message calls need consent, companies included
+
+[Regulation 19](https://www.legislation.gov.uk/uksi/2003/2426/regulation/19) bars recorded marketing calls by an automated calling system, unless the subscriber has told you they consent. Your number must be shown too. The regulation says "subscriber", so companies are covered. Consent for live calls "is not enough – it must specifically cover automated calls" (Guide to PECR, under review).
+
+## UK GDPR applies to named contacts
+
+You are handling personal data if you hold a contact's name. The same goes if the address "identifies an individual", such as `initials.lastname@company.com`. Email `info@company.com` with no name on file, and the ICO says UK GDPR does not apply (B2B guidance, under review).
+
+Where PECR does not require consent, the ICO says "in many cases it is likely that legitimate interests will be the appropriate lawful basis" (under review). You need to apply the legitimate interests three-part test: purpose, necessity and balancing. Its [legitimate interests guide](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/legitimate-interests/) says that basis can apply to direct marketing "only where" PECR does not require consent. UK GDPR [Article 6(11)(a)](https://www.legislation.gov.uk/eur/2016/679/article/6), in force in full since 5 February 2026, gives direct marketing as an example of processing that "may be" necessary for a legitimate interest.
+
+Details from another source, such as a list, need privacy information "within a reasonable period and at the latest within a month", unless an exception applies. If you message the person sooner, it is due by that first message ([direct marketing guidance](https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/direct-marketing-guidance/collect-information-and-generate-leads/)).
+
+[Article 21](https://www.legislation.gov.uk/eur/2016/679/article/21) lets a person object to direct marketing "at any time". Their data then "shall no longer be processed for such purposes". The ICO says: "You must tell people about this right ‘at the latest’ at the time of your first communication with them." Article 21(4) adds that it must be presented "clearly and separately". Our build standard is a right-to-object line of its own in that first message.
+
+## Bought, rented and scraped lists
+
+For individual subscribers, email and text need consent that named you and covered that method. If not, "it is not valid" (ICO). And "There is no such thing as a third-party marketing list that is compliant with the soft opt-in". For corporate subscribers, PECR needs no consent, but UK GDPR covers every named person. Either way, "It is not enough to simply accept a third party’s assurances" (ICO).
+
+Scraped details are no better. "Just because someone’s contact details are publicly available, it doesn’t mean they’ve consented to your direct marketing," says the ICO.
+
+Our standard is stricter than PECR. We do not buy, rent or supply lists, and we will not import one you were sold.
+
+## Setting up the CRM so each send is checked
+
+Our build standard turns the tables above into fields and checks in GoHighLevel or HubSpot. That is our design, not the law.
+
+| Field                                                                                                                         | What it decides                                                                            |
+| ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Legal form: limited company, LLP, Scottish partnership, government body, sole trader, other partnership, unknown              | Subscriber type                                                                            |
+| Subscriber type, worked out from legal form and address (an unknown form, a personal address or webmail counts as individual) | Whether email or text needs consent or the soft opt-in                                     |
+| Address type: role, named work, personal                                                                                      | Personal means individual; named means the UK GDPR steps                                   |
+| Source and date                                                                                                               | Whether the soft opt-in can apply; the privacy-information deadline                        |
+| Consent for each channel, with the wording, date and method                                                                   | The consent check (the ICO: you "should keep a record of the consent (eg who, when, how)") |
+| Soft opt-in record: what was bought or asked about, when, and the refusal offered                                             | The soft opt-in check. Whether a product is "similar" is a person's decision, recorded     |
+| Opt-outs by channel, and objections to all direct marketing                                                                   | The suppression list, kept rather than deleted (ICO)                                       |
+| TPS and CTPS: date last screened, and result                                                                                  | The call check                                                                             |
+| Lawful basis for named people                                                                                                 | UK GDPR                                                                                    |
+| Privacy information: when it was sent                                                                                         | The first message to a contact from another source                                         |
+
+The checks each sequence runs:
+
+1. **At entry.** No legal form means the individual path. No basis to contact means a manual review queue, not a send.
+2. **Before every email or text.** Check suppression and subscriber type; for an individual subscriber, also consent for that channel or a complete soft opt-in record.
+3. **Before every call.** Check suppression, and a TPS and CTPS screen in the last 28 days or a regulation 21(4) notice on file. The 28-day limit is our standard, not the ICO's.
+4. **Recorded-message calls.** Only with recorded-call consent on file.
+5. **Every template.** Your name and an opt-out in every message; a separate right-to-object line in the first message to a named person.
+6. **Any opt-out** stops the sequence and goes on the suppression list.
+
+Whichever platform sends, you stay responsible. The ICO says "using a webmail service or bulk-email platform does not normally make that service responsible". The platform choice is in [our GoHighLevel buyer's guide](/blog/what-is-gohighlevel-2026-buyers-guide), and the CRM build in [CRM and automation](/services/crm-automation). The fields start on your website's enquiry form, which [web development](/services/web-development) covers.
+
+## What changed in 2026, and what is under review
+
+The Data (Use and Access) Act 2025 changed PECR from 5 February 2026:
+
+- Attempted calls count as calls, "rather than just calls that are actually connected" (reg 2(1); ICO).
+- Charities gained their own soft opt-in (reg 22(3A)). The products and services one in reg 22(3) keeps its wording.
+- A higher maximum penalty applies to breaches on or after that date ([SI 2026/82](https://www.legislation.gov.uk/uksi/2026/82/made), reg 11(2)). The maximum penalty for breaking regulations including 19, 21, 22, 23 and 24 is the "higher maximum amount" ([PECR Schedule 1](https://www.legislation.gov.uk/uksi/2003/2426/schedule/1), para 18). For an undertaking, that is "£17,500,000 or 4% of the undertaking's total annual worldwide turnover in the preceding financial year, whichever is higher". In any other case, it is £17,500,000 ([Data Protection Act 2018, s.157(5)](https://www.legislation.gov.uk/ukpga/2018/12/section/157)).
+
+On 23 June 2026 the ICO said it was "currently developing separate guidance" on these fines; we found none by 2 October 2026.
+
+The ICO's Guide to PECR, B2B guidance and live-calls guidance are each marked "under review and may be subject to change". Its [plans](https://ico.org.uk/about-the-ico/what-we-do/our-plans-for-new-and-updated-guidance/direct-marketing-and-privacy-and-electronic-communications/) list a "PECR advice for small organisations update", due in "Autumn 2026".
+
+## Where to start
+
+1. **Sort your contacts by legal form**, and treat unknown as individual.
+2. **Add the fields, then the checks.** Our [CRM and automation](/services/crm-automation) service is built on GoHighLevel first and HubSpot where it fits.
+3. **Talk it through.** [Get in touch](/contact) with what you run now and the outreach you plan.

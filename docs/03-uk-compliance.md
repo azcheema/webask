@@ -356,12 +356,14 @@ the fork, since the US-oriented original may not have been built to the ICO's st
 
 This governs how WebAsk can prospect. It differs meaningfully from US CAN-SPAM.
 
-| Recipient                                                    | Prior consent needed?                                                      |
-| ------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| **Corporate subscriber** — limited company, LLP, public body | ❌ **No.** PECR's email consent rules don't apply to corporate subscribers |
-| **Sole trader**                                              | ✅ **Yes.** Treated as an individual                                       |
-| **Unincorporated partnership**                               | ✅ **Yes.** Treated as an individual                                       |
-| **Any freemail address** (`gmail.com` etc.)                  | ✅ **Yes**, regardless of who uses it for work                             |
+| Recipient                                                                                                       | Prior consent needed?                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Corporate subscriber** — limited company, LLP, Scottish partnership, corporation sole, some government bodies | ❌ **No.** PECR's email consent rules don't apply to corporate subscribers (each message must still name you and give a valid opt-out address, reg 23) |
+| **Sole trader**                                                                                                 | ✅ **Yes** (or the soft opt-in). Treated as an individual                                                                                              |
+| **Partnership in England, Wales or Northern Ireland that is not an LLP**                                        | ✅ **Yes.** Treated as an individual                                                                                                                   |
+| **Anyone using a personal address** (e.g. a delegate who gives their own rather than their work address)        | ✅ **Yes.** An individual subscriber                                                                                                                   |
+| **Legal form unknown**                                                                                          | ✅ **Treat as individual** — the ICO: "you should treat the details as belonging to an individual subscriber"                                          |
+| **Any freemail address** (`gmail.com` etc.)                                                                     | ✅ **WebAsk's rule of thumb**, not the ICO's: treated as individual whoever uses it                                                                    |
 
 **Soft opt-in** applies only where: details were obtained during a sale or negotiations for
 a sale · you're marketing your own similar products/services · a clear opt-out was given at
@@ -381,9 +383,47 @@ past, and you gave them a simple way to opt out both when you first collected th
 every message you have sent." Quote it with "under review". § B4's _Forms on clinic sites_ points
 here for the marketing box on a clinic's enquiry form.
 
-**Practical rule for WebAsk:** UK SMBs skew heavily to sole traders and micro-companies. A
+**Practical rule for WebAsk:** sole proprietorships are the most common legal form of UK business —
+3.2 million, 57% of 5.7 million private-sector businesses at the start of 2025 (DBT, Business
+population estimates 2025, published 2 October 2025, official statistics in development). A
 "we can email any business" assumption is wrong here. Segment the list by legal form before
 any outreach, and treat freemail addresses as individuals no matter what the domain suggests.
+
+> **2 October 2026 — corrected and extended from primary sources read that day** (for the post
+> `content/blog/pecr-b2b-outreach-rules-uk.mdx`; raw copies in the git-ignored
+> `.playwright-mcp/crm/c1/raw/`). The table above said "public body" and "unincorporated partnership"
+> and gave the freemail row as a rule; the ICO's business-to-business guidance (marked "under review
+> and may be subject to change") lists corporate subscribers as companies, LLPs, Scottish partnerships,
+> corporation soles, "some government bodies" and any other "legal person distinct from its members"
+> (PECR reg 2(1) makes "a partnership in Scotland" corporate), and individual subscribers as sole
+> traders, "other unincorporated bodies of individuals" and "certain types of partnerships (eg
+> non-limited liability partnerships or other types of English, Welsh and Northern Irish
+> partnerships)". A named work address at a corporate body "would constitute a corporate subscriber";
+> a delegate who "chose to use their personal email address instead of their work one" is an
+> individual subscriber. The same wording was corrected on the CRM page, the email-and-SMS FAQ, the
+> GoHighLevel guide and the Cheshire hub. Other facts the post relies on, each verbatim from the ICO
+> or legislation.gov.uk:
+>
+> - "You can send unsolicited electronic mail marketing to corporate subscribers without consent or a
+>   soft opt-in." The soft opt-in "does not apply to prospective customers or new contacts (eg from
+>   bought-in lists)"; "There is no such thing as a third-party marketing list that is compliant with
+>   the soft opt-in." Asking for consent is itself direct marketing ("contacting people to ask them
+>   for consent to direct marketing"). "There is no equivalent email or text preference service."
+> - Companies' opt-outs: "PECR does not say that you must comply with a corporate subscriber’s opt-out
+>   in the context of electronic mail", but "you should comply with a corporate subscriber’s opt-out
+>   request".
+> - Calls: you can make live calls to a business number "that is not registered on the TPS or the
+>   CTPS, but only if they haven’t objected to your calls in the past"; B2B callers "will therefore
+>   need to screen against both"; reg 21(3) gives 28 days' grace on a new registration; automated
+>   calls need consent that "must specifically cover automated calls" (reg 19, companies included).
+> - UK GDPR for named contacts: legitimate interests is "in many cases ... likely" the basis where
+>   PECR needs no consent, and applies to direct marketing "only where" PECR does not require consent;
+>   the right to object must be flagged "at the latest" at the first communication (Art. 21(4)).
+> - From 5 February 2026 (Data (Use and Access) Act 2025; SI 2026/82): attempted calls count as
+>   calls; charities have their own soft opt-in (reg 22(3A)); for breaches on or after that date the
+>   maximum PECR penalty for an undertaking is "£17,500,000 or 4% of the undertaking's total annual
+>   worldwide turnover in the preceding financial year, whichever is higher" (DPA 2018 s.157(5), via
+>   PECR Schedule 1 para 18).
 
 > This also becomes blog content — "PECR and your CRM: what UK B2B outreach can legally do"
 > (doc 02, Cluster C). We have to know it anyway; publishing it is free Information Gain.
