@@ -53,8 +53,8 @@ cluster now port across rather than needing replacement — a real saving in Pha
 
 That single fact drives more of this plan than anything else:
 
-- **No Companies House number exists.** The site must never display one. The Companies
-  (Trading Disclosures) Regulations 2008 don't apply — but the Electronic Commerce
+- **No Companies House number exists.** The site must never display one. The company
+  trading-disclosure rules (SI 2015/17 Part 6, which replaced the 2008 Regulations) don't apply — but the Electronic Commerce
   (EC Directive) Regulations 2002 and the Provision of Services Regulations 2009 still
   require the **real service provider's name, geographic address and email** to be
   findable on the site.

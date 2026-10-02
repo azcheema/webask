@@ -53,6 +53,7 @@ const ROUTES = [
   "/blog/core-web-vitals-guide-uk",
   "/blog/pecr-b2b-outreach-rules-uk",
   "/blog/migrating-hubspot-to-gohighlevel-uk",
+  "/blog/uk-website-legal-requirements",
   // The clinic-compliance hub and its posts: the body-level rules (tables,
   // heading order, link names) live in each MDX body, so each post is listed.
   "/blog/topic/clinic-compliance",
