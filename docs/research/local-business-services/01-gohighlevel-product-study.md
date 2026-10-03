@@ -241,6 +241,29 @@ fixed in GBP for twelve months; usage passed through at the rates on a published
 when the schedule is reviewed) and `private/07` § 2 shows the margin at both ends of a dated Bank of
 England range. No `= £` appears anywhere in this folder.
 
+### 4.7 Voice AI behaviour, re-read 3 October 2026 (post `/blog/what-is-an-ai-receptionist`)
+
+Read from HighLevel's help centre for the AI receptionist explainer (raw copies in
+`.playwright-mcp/ai/e2/raw/`, git-ignored; every URL is in the post's provenance comment).
+
+- **Transfer to a person is cold on the documented path.** "Call Transfer: Send the caller to a human
+  phone number." (articles/155000004107.) The context-preserving handoff, Agent Transfer, goes to
+  another AI agent: "Agent Transfer is different from Call Transfer because it hands the call to
+  another Voice AI agent instead of sending it to a person" (articles/155000007796). Warm transfer to a
+  person appears only as a user request on HighLevel's ideas board. **Consequence:** the live AI
+  integration FAQ's "with the conversation so far attached" is not documented for a voice transfer on
+  this platform — flagged to the founder, not changed.
+- **Not a guarantee of answering.** "Assigning a number does not guarantee that the agent will answer
+  every call" (articles/155000004107). "Voice AI only works on accounts using LC Phone or Twilio
+  numbers" (articles/155000003911).
+- **Knowledge and guessing.** The knowledge base is searched when a trigger matches; the guidance says
+  "Tell the agent not to guess when required information is unavailable" (articles/155000004107).
+- **Speech-to-speech mode** can "hear audio and respond with audio" (the AI Products Pricing article,
+  155000006652, modified 28 September 2026).
+- **Transcripts:** "Transcripts may be incomplete if audio quality was poor, the call ended early, or
+  processing was interrupted." (articles/155000007687.) The AI Disclosure setting is documented for
+  outbound calls only.
+
 ## 5. Where the data sits: hosting, the DPA, sub-processors, the DPF and the UK representative
 
 - **Hosting (🟡 security overview, modified 16 Jun 2026 [S43]).** "Our product infrastructure

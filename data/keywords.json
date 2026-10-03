@@ -3311,8 +3311,8 @@
       "intent": "informational-top",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/ai",
-      "supportingUrls": [],
+      "primaryUrl": "/blog/what-is-an-ai-receptionist",
+      "supportingUrls": ["/services/ai-integration"],
       "cluster": "ai-voice-agents",
       "vertical": null
     },
