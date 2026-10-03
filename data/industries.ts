@@ -173,7 +173,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Will the site be fast on a phone?",
         answer:
-          "Yes, and it matters more here than in most sectors, because this is a sector people browse on a phone and the pages are image-led — which is an awkward combination, since images are what make pages slow. Total page weight, layout shift and main-thread blocking are hard budgets in continuous integration — a build that regresses one of them fails and does not ship. Load time itself is written against a two-second target and settled on field data after launch, because a throttled build server reports a slower number than the phone in your patient's hand. A slow gallery does not merely irritate people — it ranks worse, and it quietly hands the booking to whichever clinic loaded first.",
+          "It is built to be. This is a sector people browse on a phone, and the pages are image-led; images can make pages slow. Total page weight, layout shift and main-thread blocking are hard budgets in continuous integration — a build that regresses one of them fails and does not ship. Load time itself is written against a two-second target and settled on field data after launch, because a throttled build server without a CDN is not the phone in your patient's hand.",
       },
       {
         question: "Are these services only for aesthetic clinics?",
@@ -282,7 +282,7 @@ export const industries: ReadonlyArray<Industry> = [
       {
         question: "Will the site be fast and look good on a phone?",
         answer:
-          "Yes — and it matters here, because this is a sector people browse on a phone while the brand itself is image-led, which is an awkward combination: images are what make pages slow. We build image-rich pages against a two-second load target, with page weight, layout shift and blocking time enforced as build-failing budgets so a gallery cannot get heavier release by release. Your space and services should look as good on a small screen as they do in person, and still load before someone gives up. We don't trade speed for polish; both are engineering.",
+          "That is the aim, and it matters here, because this is a sector people browse on a phone while the brand itself is image-led, which is an awkward combination: images can make pages slow. We build image-rich pages against a two-second load target, with page weight, layout shift and blocking time enforced as build-failing budgets so a gallery cannot get heavier release by release. Your space and services should look as good on a small screen as they do in person, and still load before someone gives up. We don't trade speed for polish; both are engineering.",
       },
       {
         question: "Can you help us show up in local searches?",
