@@ -162,7 +162,7 @@ export const home: HomeContent = {
     },
     {
       eyebrow: "AI integration",
-      h2: "Your week should not be forty percent admin.",
+      h2: "Your week should not go on admin.",
       problem:
         "Returning missed calls. Answering the same five questions. Re-typing details between systems that will not talk to each other. Routine work eats the days you should spend growing the business.",
       solution:

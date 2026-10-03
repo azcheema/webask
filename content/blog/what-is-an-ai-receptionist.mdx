@@ -1,0 +1,166 @@
+---
+title: "What Is an AI Receptionist? How a Call Works"
+description: "What an AI receptionist is, how a call flows through one step by step, what it should not be trusted with, and the questions to ask before you choose one."
+datePublished: "2026-10-03"
+dateModified: "2026-10-03"
+authorSlug: ansar-cheema
+topic: ai
+keywords:
+  - what is an ai receptionist
+  - how does an ai receptionist work
+  - ai receptionist meaning
+  - what can an ai receptionist do
+draft: false
+---
+
+{/* E2 (cluster E, topic ai), drafted 3 October 2026 by the writer pass from .playwright-mcp/ai/e2/PLAN.md and research.md, revised the same day by fixer round 1 (adjudications in e2/PROVENANCE.md section 14); every quote was copied from the raw copies in .playwright-mcp/ai/e2/raw, all read 3 October 2026, and a sentence-by-sentence map is in e2/PROVENANCE.md. UK OFFICIAL, each read 3 October 2026: CMA, Complying with consumer law when using AI agents (guidance, published 9 March 2026) https://www.gov.uk/government/publications/complying-with-consumer-law-when-using-ai-agents/complying-with-consumer-law-when-using-ai-agents; CMA, Agentic AI and consumers (research and analysis, published 9 March 2026) https://www.gov.uk/government/publications/agentic-ai-and-consumers/agentic-ai-and-consumers; DSIT and GDS, Artificial Intelligence Playbook for the UK Government (published 10 February 2025, written for government and the public sector) https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html; ICO, monitoring workers, specific methods (under review) https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/employment/monitoring-workers/specific-data-protection-considerations-for-different-ways-or-methods-of-monitoring-workers/ for the recording clause; ASA, scope of the CAP Code, exclusion (i), live oral communications including telephone calls https://www.asa.org.uk/type/non_broadcast/code_folder/scope-of-the-code.html, which is why the marketing-copy line is stated as a WebAsk standard and not as a CAP rule. PLATFORM DOCUMENTATION, each read 3 October 2026, described generically and named nowhere in the text: GoHighLevel help centre, the platform WebAsk works in (How to Create Voice AI Agents, modified 1 October 2026, https://help.gohighlevel.com/support/solutions/articles/155000004107; Overview of Voice AI Agents, 17 September 2026, https://help.gohighlevel.com/support/solutions/articles/155000003911; Voice AI inbound call flow, 29 June 2026, https://help.gohighlevel.com/support/solutions/articles/155000003431; Inbound Calls, IVR, AI, Routing and Call Flow, 3 September 2026, https://help.gohighlevel.com/support/solutions/articles/155000007498; Working Hours, 25 August 2026, https://help.gohighlevel.com/support/solutions/articles/155000004139; Knowledge Base Integration, 4 June 2025, https://help.gohighlevel.com/support/solutions/articles/155000005266; Appointment Booking, 10 September 2026, https://help.gohighlevel.com/support/solutions/articles/155000005293; During-Call and Post-Call Actions, 17 September 2026, https://help.gohighlevel.com/support/solutions/articles/155000005267; Agent Transfer, 24 June 2026, https://help.gohighlevel.com/support/solutions/articles/155000007796; Voice AI Agent Logs, 24 June 2026, https://help.gohighlevel.com/support/solutions/articles/155000007687; Call Logs, 12 June 2026, https://help.gohighlevel.com/support/solutions/articles/155000005900; Edit a Voice, 10 June 2026, https://help.gohighlevel.com/support/solutions/articles/155000005874; AI Products Pricing, 28 September 2026, https://help.gohighlevel.com/support/solutions/articles/155000006652, its Why use Speech-to-Speech Voice AI section only, for the speech-to-speech mode in step 3, no price, rate or likeness claim carried); Vapi docs: introduction https://docs.vapi.ai/quickstart/introduction, speech configuration https://docs.vapi.ai/customization/speech-configuration, custom keywords https://docs.vapi.ai/customization/custom-keywords, transcriber fallback plan https://docs.vapi.ai/customization/transcriber-fallback-plan (whose navigation also lists a realtime speech-to-speech option) and assistant-based warm transfer https://docs.vapi.ai/calls/assistant-based-warm-transfer; Twilio Conversation Relay onboarding https://www.twilio.com/docs/voice/conversationrelay/onboarding; Amazon Lex V2, what is Amazon Lex https://docs.aws.amazon.com/lexv2/latest/dg/what-is.html; Microsoft Azure Speech overview https://learn.microsoft.com/en-us/azure/ai-services/speech-service/overview; Retell introduction https://docs.retellai.com/general/introduction; BT Business, using call diversion https://business.bt.com/help/article/using-call-diversion-to-forward-calls/. DOCS: content/blog/ai-receptionist-law-uk.mdx (opening, the answering-calls section, How WebAsk builds a voice agent, Where to start); content/blog/ai-voice-agents-roi-service-businesses.mdx (First reject the receptionist comparison, the cost-side stat grid, Where the sum says no); content/services/ai-integration.mdx (opening, How it works, What the starting price buys, the decision table, What keeps you safe) and the data/services.ts ai-integration FAQs on handover and retraining; content/services/ai-receptionist.mdx and its data/services.ts entry, read so as not to contradict them, neither linked nor named; research 01 section 5 (sub-processors); research 02 section 3.3; research 08 section J.3, rules R23 to R29, with the 3 October 2026 note; docs/03 section B3 as rewritten 3 October 2026. WebAsk standards stated as ours, not as law or results: inbound by default; the automated-assistant disclosure in the first sentence; an opening line that offers a person and discloses any recording; a transfer during opening hours and a callback request outside them; treatment questions declined and handed to a person; answers treated as our own marketing copy. Deliberately absent: any price or usage rate; any product, vendor or answering-service comparison; any vendor name in the text; any statistic, answer rate or percentage; likeness-to-a-person, availability and missed-call promises; any client, deployment, call data or result; the ROI sums, and the law beyond one paragraph; the GoHighLevel ideas-board requests (user-written, not documentation); voice cloning; the Playbook's speech-to-speech translation; the CMA fine figure. Cut for length after drafting, to meet the 1,800-word ceiling: the CMA's do-not-overstate line, the CMA research's traditional-automation clause, the choice of who speaks first, the summary saved to the contact record, the ICO recording quote (the law post carries it), the no-statute-requires-disclosure sentence in the law paragraph (step 2 carries the CMA line), and a full eleven-question checklist (the eight step questions stay in the steps). STALE RISK: the platform articles change often, the transfer and fallback behaviour in step 7 and the speech-to-speech mode in step 3 especially, and one platform labels its warm transfer experimental; the CMA guidance and research may be revised; the ICO guidance is under review; the AI Playbook may be superseded; at publish, move the what is an ai receptionist row in data/keywords.json from /blog/topic/ai to this post. */}
+
+What is an AI receptionist? It is software that answers your business phone and talks with callers in a synthetic voice. It can be set up to do a narrow job: answering from information you have approved, booking, taking details, or putting the caller through to a person.
+
+Say you are halfway through a haircut and the phone rings, with nobody else free. On a divert, an AI receptionist can be set up to answer instead. It says it is an automated assistant, offers a time from your diary, and books it.
+
+<Callout variant="note" title="TL;DR">
+  An AI receptionist listens to the caller, works out a reply from instructions and material you
+  have approved, and speaks it in a synthetic voice. It can be set up to book, take details and hand
+  over to a person, but it can mishear, and a language model can make up answers. So ask what it may
+  say, who it hands over to, and what happens when a step fails.
+</Callout>
+
+Written on 3 October 2026 from UK government guidance and platform documentation. It describes how these products are documented to work, not a record of results.
+
+## What is an AI receptionist?
+
+We found no official UK definition. One platform's documentation describes its version as "an automated voice assistant that communicates with callers using the instructions, business information, and actions you configure". Our AI integration page calls it a voice agent.
+
+The nearest official framing is in the Competition and Markets Authority's (CMA) [research on AI agents](https://www.gov.uk/government/publications/agentic-ai-and-consumers/agentic-ai-and-consumers) (9 March 2026). It notes that "Definitions vary", but says AI agents "sense (perceive their environment), decide and act", unlike "today’s chatbots, which primarily generate responses". An AI receptionist that books a slot can be acting in that sense, not just replying.
+
+It is not a phone menu, where callers "navigate a menu using keypad selections", or voicemail. Nor is it a person: the government's [AI Playbook](https://www.gov.uk/government/publications/ai-playbook-for-the-uk-government/artificial-intelligence-playbook-for-the-uk-government-html), written for the public sector, lists a "lack of critical thinking, personal experience and judgement" among generative AI's limits.
+
+## How a call flows through an AI receptionist, step by step
+
+One call, from ring to summary, as the platforms document it.
+
+### 1. The caller rings the number you already publish
+
+Your line diverts the call to a number the assistant answers on, so your published number can stay the same. A divert can cover all calls, calls not answered in a set time, or calls while the line is engaged. One platform also lets the assistant step in only when nobody answers, and work all hours or to a set schedule.
+
+**What can go wrong.** If your own voicemail picks up first, the assistant never gets the call. Hours, routing and timeout settings also decide whether it answers. Your phone provider may charge for the diverted part of each call.
+
+**Ask:** Which calls does it get, and what if my voicemail answers first?
+
+### 2. It answers with the words you gave it
+
+The greeting is a setting you write.
+
+**What can go wrong.** Whether it says it is automated depends on how it is set up. The CMA's [guidance on AI agents](https://www.gov.uk/government/publications/complying-with-consumer-law-when-using-ai-agents/complying-with-consumer-law-when-using-ai-agents) says "if the fact they are dealing with AI rather than a person might affect people’s decisions then you should tell them". Our build standard: it says it is an automated assistant in its first sentence, and its opening line offers a person and says if the call is recorded.
+
+**Ask:** Can I hear and approve the exact opening line?
+
+### 3. Speech recognition turns the caller's words into text
+
+Depending on the product, one model may do steps 3 to 5: one platform's speech-to-speech mode can "hear audio and respond with audio". The assistant also has to judge when the caller has finished, and what to do if they talk over it.
+
+**What can go wrong.** One speech provider says its base model "might not be sufficient if the audio contains ambient noise or includes industry and domain-specific jargon". Some platforms offer settings for specialist terms and names; one also has a setting for the pauses while a caller reads out a number. If the speech service fails with no fallback set up, one platform says "your call will end with an error".
+
+**Ask:** Does it turn speech into text first, or work speech to speech? How does it handle names and numbers, and does it read them back?
+
+### 4. It works out what to say
+
+Some products follow a conversation flow you design. Others have a large language model (LLM) work out each reply from your instructions and a knowledge base: your hours, services, published prices and policies. GOV.UK Chat, a government pilot chat tool, works this way; its team preferred it to fine-tuning (further training) a model "because GOV.UK content is updated regularly". So a changed price is an edit, not a retraining.
+
+**What can go wrong.** The Playbook warns that these models can create content that "appears plausible but may actually be factually incorrect". On one platform, the knowledge base is searched only when the caller's words match a trigger you set. Its advice: "Tell the agent not to guess when required information is unavailable."
+
+**Ask:** Does it follow a flow or write each reply? Where do its answers come from, and what if the answer is not there?
+
+### 5. A synthetic voice speaks the reply
+
+Text-to-speech turns the reply into audio, in a voice you choose from the product's catalogue.
+
+**What can go wrong.** Numbers and abbreviations may not sound right. One platform advises "writing out numbers as words or spelling out abbreviations". If the voice is convincing, the step 2 disclosure matters more.
+
+**Ask:** Can I hear it say my prices, dates and street names?
+
+### 6. It books, saves or sends
+
+On one platform, it can be set up to book into a connected calendar, following that calendar's rules on "availability, buffers, minimum notice, and conflict settings". It can also save details, send a text or start a follow-up.
+
+**What can go wrong.** An action can fire at the wrong moment or write to the wrong place. One platform's launch checklist asks you to confirm that "Each action runs only under its intended conditions".
+
+**Ask:** What can it change, and can I see a test booking land?
+
+### 7. It hands the caller to a person
+
+A transfer sends the caller to a person's phone number. Our build standard is a transfer during opening hours and a callback request outside them.
+
+**What can go wrong.** Does the person hear a summary before the caller is put through? One platform offers that in a transfer mode it labels experimental. If the person is busy or unreachable, on that platform "the fallback plan determines what the customer hears and whether the call ends"; elsewhere, it depends on the product. One platform's browser test skips transfers, so test them from a real phone.
+
+**Ask:** Whose phone does it ring, and what happens if nobody answers?
+
+### 8. A summary arrives after the call
+
+The call log can hold a summary, a transcript and, if calls are recorded, a recording.
+
+**What can go wrong.** One platform warns: "Transcripts may be incomplete if audio quality was poor, the call ended early, or processing was interrupted." The summary is written by the AI, so check the transcript or recording before relying on a detail. Depending on the product, the caller's voice and the summary may pass to other AI companies. The CMA's advice: "Make sure there is a human in the loop".
+
+**Ask:** Who reads the calls, how long is it all kept, and which companies process the audio?
+
+## What an AI receptionist can be set up to do
+
+The documentation we read describes products that can be set up to:
+
+- answer questions from approved information
+- book into a connected calendar
+- save caller details to a customer record
+- send a text during the call
+- put the caller through to a person
+- start a follow-up after the call
+- work all hours, set hours, or only when nobody answers
+
+Some products can also make calls out, a different job with different rules. Our build standard is inbound by default.
+
+Our [AI integration](/services/ai-integration) service offers a voice agent as an add-on, "on a divert from the number you already publish", answering "from copy you have approved".
+
+## What not to trust it with
+
+**Anything it has not been given.** The AI Playbook, written for the public sector, is blunt: "Fundamentally, generative AI models cannot be trusted to produce factual content."
+
+**Professional advice.** "LLMs are not domain experts. They are not a substitute for professional advice," the Playbook adds. In a clinic or practice, our standard is that it declines treatment questions and hands them to a person.
+
+**Upset callers, complaints and emergencies.** One platform's guidance is to transfer to a person when a sensitive issue needs human judgement. The Playbook says AI "should not be used on its own in high-risk areas", such as those that could harm someone's health or safety.
+
+The CMA's guidance sums it up: "you are responsible for what an AI agent does in the same way you are responsible for what an employee does", even if someone else provides it. Our standard follows: "Treat an answer your assistant gives a member of the public as your own marketing copy."
+
+## Where it fits, and where a cheaper fix is better
+
+| Your calls                                                 | Fit                                                   | Why                                                |
+| ---------------------------------------------------------- | ----------------------------------------------------- | -------------------------------------------------- |
+| Questions with a settled answer: hours, parking, prices    | Good fit                                              | It can be set up to answer from approved material  |
+| Bookings into a calendar with clear rules                  | Good fit                                              | Booking can follow the calendar's own rules        |
+| Calls that ring out after hours or when every line is busy | Good fit, with a person or a callback to hand over to | The caller has somewhere to go when it cannot help |
+| Answers nobody has written down and approved               | Not yet                                               | It needs approved information first                |
+| Treatment, clinical or legal questions                     | Poor fit: hand to a person                            | It is not a substitute for professional advice     |
+| Upset callers, complaints and emergencies                  | Poor fit: hand to a person                            | These need human judgement                         |
+| A handful of missed calls a month                          | Poor fit: try a cheaper fix first                     | The build can take years to pay back               |
+| Calls answered, but bookings still do not happen           | Poor fit: fix the booking process                     | The leak is after the call, not in it              |
+
+Compare it with the fixes that have no model in them: a divert of unanswered calls to a mobile someone carries, a simple phone menu, a booking link on your website and listings, an automatic text after a missed call, or an out-of-hours greeting that tells callers what to do next. Our AI integration page asks: "Does the plain fix cost less and break in fewer places?" Even the government's AI Playbook asks its readers to be open to the conclusion that "sometimes, AI is not the best solution for your problem".
+
+## Questions to ask before you choose one
+
+Take the eight step questions above to any demo, and add three more:
+
+1. Can I test every path, including the transfer, from a real phone before it goes live?
+2. How fast is a wrong answer fixed?
+3. Can it make calls out, and can that be switched off?
+
+## The law and the money, briefly
+
+Answering the calls your customers make is the clean case: no UK law we read stops an AI from doing it. The rules turn on what else it does: taking caller details, recording (callers must be told the call is recorded, and why), keeping transcripts, hearing health details and ringing people. On the cautious reading, marketing calls by an AI voice need prior consent that specifically covers automated calls. See our guide to [whether AI receptionists are legal in the UK](/blog/ai-receptionist-law-uk). This is a pointer, not legal advice.
+
+The costs are a one-off build, usage that depends on your own calls, and the ongoing work of reviewing what it says. Our guide on [how to work out whether a voice agent pays for itself](/blog/ai-voice-agents-roi-service-businesses) does the sums.
+
+## Where to start
+
+1. **Find where calls are lost.** Note the hours, days and kinds of call. Then work out [whether a voice agent pays for itself](/blog/ai-voice-agents-roi-service-businesses).
+2. **Write down what it may say.** List the answers you would approve, when a person takes over, and the subjects it must never attempt. Then read [what the law asks of an AI receptionist](/blog/ai-receptionist-law-uk).
+3. **Talk it through.** Our [AI integration](/services/ai-integration) service can add "an inbound voice agent built to your own systems and answer sets". [Get in touch](/contact).
