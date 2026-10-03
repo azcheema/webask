@@ -112,7 +112,7 @@ export const home: HomeContent = {
   meta: {
     title: "WebAsk — Websites, SEO & Automation for UK Businesses",
     description:
-      "Fast, well-built websites, SEO and automation for UK small businesses. Published starting prices, no quote wall, and a free site audit. Book a call.",
+      "Well-built websites, SEO and automation for UK small businesses. Published starting prices, no quote wall, and a free site audit. Book a call.",
   },
   hero: {
     eyebrowPhrases: [

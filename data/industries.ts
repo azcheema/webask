@@ -128,7 +128,7 @@ export const industries: ReadonlyArray<Industry> = [
     meta: {
       title: "Compliant Websites for UK Aesthetic Clinics",
       description:
-        "Websites and automation for UK aesthetic clinics, built around the CAP Code rules that govern what a clinic site may say. Fast, booking-led, and structured to stay inside them.",
+        "Websites and automation for UK aesthetic clinics, built around the CAP Code rules on what a clinic site may say: booking-led and structured to stay inside them.",
     },
     hero: {
       h1: "A clinic website that fills the diary without breaking the rules.",
