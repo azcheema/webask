@@ -3261,8 +3261,8 @@
       "intent": "commercial-investigation",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/web-development",
-      "supportingUrls": [],
+      "primaryUrl": "/blog/nextjs-vs-wordpress-performance",
+      "supportingUrls": ["/services/web-development"],
       "cluster": "web-development",
       "vertical": null
     },
