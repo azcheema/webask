@@ -172,7 +172,7 @@ export const home: HomeContent = {
   ],
   proof: {
     eyebrow: "What good actually looks like",
-    h2: "Numbers you can check on this page, right now.",
+    h2: "The standards we set ourselves.",
     stats: [
       {
         value: "< 2.0s",
