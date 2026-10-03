@@ -466,7 +466,7 @@ Each page carries a **distinct** UK argument that cannot exist on a US site:
 | ------------- | ---------------------------------------------------------------------------- |
 | `seo`         | Ranking locally with **no Google Business Profile — including ours**         |
 | `crm`         | **PECR by recipient legal form** — sole traders/freemail need consent        |
-| `ai`          | Voice classification "unsettled, with a lean"; inbound-first; Ofcom GC6/CLI  |
+| `ai`          | Voice classification unsettled, lean to reg 19; inbound-first; Ofcom C6/CLI  |
 | `ui-ux`       | Consent-banner equal prominence as a **design** decision; consultation-first |
 | `ecommerce`   | DMCC on product reviews; PECR soft opt-in on abandoned-cart mail             |
 | `web-dev`     | Real UK cost bands; regulation that prices the _architecture_                |

@@ -223,9 +223,11 @@ internal-linking mesh.
       skew heavily to the first group. It also **declines to quote GHL adoption figures**, and
       says why (doc 02 § 3 — undisclosed methodology, white-labelling biases any website scan)
 - [x] `/services/ai-integration` — **voice agents positioned inbound-led** with the UK legal
-      picture stated honestly (doc 03 § B3): PECR's live-vs-automated split described as a grey
-      zone the regulator has **not** resolved, plus Ofcom persistent-misuse, CLI authenticity and
-      the 2025 GC6 revision. It also refuses to print a per-minute voice figure, on the grounds
+      picture stated honestly (doc 03 § B3): how PECR treats an AI voice described as a grey zone
+      the regulator has **not** resolved, plus Ofcom persistent misuse and caller ID. _(Corrected
+      3 October 2026: there was no "2025 GC6 revision" — C6 changed with effect from 15 May 2023
+      and the CLI guidance applies from 29 January 2025; the full legal picture now lives in
+      `/blog/ai-receptionist-law-uk`, doc 03 § B3 rewritten.)_ It also refuses to print a per-minute voice figure, on the grounds
       that an invented number is worse than none
 - [x] **FAQ ordering fixed across all nine services** (2026-07-28). Doc 08 § 7's inherited
       rule — the first FAQ on any service / industry / location page is **always** the
