@@ -2491,7 +2491,7 @@
       "intent": "informational-bottom",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/clinic-compliance",
+      "primaryUrl": "/blog/uk-website-legal-requirements",
       "supportingUrls": [],
       "cluster": "uk-compliance",
       "vertical": null
@@ -3181,8 +3181,8 @@
       "intent": "informational-top",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/crm",
-      "supportingUrls": [],
+      "primaryUrl": "/blog/what-is-gohighlevel-2026-buyers-guide",
+      "supportingUrls": ["/services/crm-automation"],
       "cluster": "gohighlevel",
       "vertical": null
     },
@@ -3191,8 +3191,8 @@
       "intent": "commercial-investigation",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/crm",
-      "supportingUrls": [],
+      "primaryUrl": "/blog/what-is-gohighlevel-2026-buyers-guide",
+      "supportingUrls": ["/services/crm-automation"],
       "cluster": "gohighlevel",
       "vertical": null
     },
@@ -3281,8 +3281,8 @@
       "intent": "informational-bottom",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/ai",
-      "supportingUrls": [],
+      "primaryUrl": "/blog/ai-voice-agents-roi-service-businesses",
+      "supportingUrls": ["/services/ai-integration"],
       "cluster": "ai-voice-agents",
       "vertical": null
     },
