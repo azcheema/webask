@@ -666,9 +666,17 @@ export const services: ReadonlyArray<Service> = [
           "From £4,500 excl. VAT for one job built end to end: a chatbot answering from your approved material, or one n8n or Make workflow, wired into one system you use. It is a fixed fee against a written scope, agreed before anything starts. A voice agent built to your own systems is an add-on, priced in that written scope. Whatever the platforms charge for, such as model and call usage or workflow runs, is not included: it is passed through at cost on accounts you own and modelled from your own numbers during scoping.",
       },
       {
-        question: "Are AI receptionists legal in the UK?",
+        // Corrected 3 October 2026 against the primary sources read for
+        // /blog/ai-receptionist-law-uk: PECR reg 19(2)(a) says "consents", not
+        // "explicit consent", and the ICO says that consent "must specifically
+        // cover automated calls"; the "informal ICO guidance … more like a live
+        // call" line had no ICO source, and the ICO's published informal advice
+        // put an AI-made greeting under reg 19. The question no longer repeats
+        // "are ai receptionists legal uk", which the post now owns (founder,
+        // 3 October 2026).
+        question: "Can an AI voice agent answer our phones legally in the UK?",
         answer:
-          "An AI receptionist answering inbound calls is the far cleaner UK legal case: the caller rang you and nothing is marketed, while automated outbound marketing calls need the subscriber's prior explicit consent under PECR. Classification is not formally resolved; informal ICO guidance suggests an AI capable of genuine two-way conversation, with a human handoff available, may be treated more like a live call — an indication, not a ruling. It is built for the safer reading: it identifies itself, offers a person or a callback, and discloses any recording up front. None of this is legal advice.",
+          "Answering the calls your customers make is the clean case: the caller rang you and nothing is marketed. Automated marketing calls are different: they need the subscriber's prior consent, and the ICO says it must specifically cover automated calls. Whether a conversational AI voice counts as a live call is not settled; the ICO's informal advice, which it says is not legally binding, put even a short AI-made greeting in a marketing call under the automated-call rule. It is built for the safer reading: it identifies itself, offers a person or a callback, and discloses any recording up front. None of this is legal advice.",
       },
       {
         question: "Can we test it before customers use it?",
@@ -991,7 +999,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Can it call customers back or chase quotes?",
         answer:
-          "No, and it never will on this plan. An outbound marketing call from an automated calling system needs the subscriber's prior explicit consent. A live one needs a Telephone Preference Service check instead, and whether an AI voice counts as recorded or live has not been settled. The plan has no outbound feature you could switch on by mistake; a caller can leave details for you to ring back. If outbound calling is genuinely the job, it is a separately scoped project under AI Integration, built on a record of each person's consent.",
+          "No, and it never will on this plan. An outbound marketing call from an automated calling system needs the subscriber's prior consent, specifically to automated calls. A live one needs a Telephone Preference Service check instead, and whether an AI voice counts as recorded or live has not been settled. The plan has no outbound feature you could switch on by mistake; a caller can leave details for you to ring back. If outbound calling is genuinely the job, it is a separately scoped project under AI Integration, built on a record of each person's consent.",
       },
     ],
   },

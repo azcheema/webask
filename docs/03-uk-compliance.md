@@ -2144,22 +2144,107 @@ were read for C1; dated URLs are in the note below the table and in § Sources.)
 Relevant because AI voice agents are one of the nine services, and because clinics are the
 obvious buyer.
 
-UK AI calling sits under **PECR** (ICO), **UK GDPR**, and **Ofcom's** nuisance-call rules.
+UK AI calling sits under **PECR** (ICO), **UK GDPR**, and **Ofcom's** persistent-misuse
+powers and caller ID conditions.
 
-- **Classification is unsettled.** PECR splits calls into "live" (human or human-equivalent)
-  and "automated" (recorded/pre-recorded). AI voice agents sit in a **grey zone the regulator
-  has not formally resolved**. Informal ICO guidance suggests an AI capable of genuine
-  two-way conversation with human handoff available may be treated more like a live call.
-- **Outbound marketing calls using automated calling systems require the subscriber's prior
-  explicit consent** under PECR.
-- **Call recording**: callers must be informed up front. RIPA permits recording without
-  consent in some circumstances, but UK GDPR transparency means the caller should be told;
-  the ICO's position is that informing callers supports the fairness principle even where
-  consent isn't strictly required. Silence is not consent.
-- **Ofcom persistent-misuse rules** apply to outbound calling: abandoned-call rate caps,
-  permitted calling hours, abandoned-call message requirements. Ofcom also enforces **CLI
-  authenticity** and number allocation; the 2025 revision to **GC6** hardened this, with
-  carrier-level filtering for non-compliance.
+> **Rewritten 3 October 2026 from primary sources** (read that day for
+> `/blog/ai-receptionist-law-uk`; raw copies in `.playwright-mcp/ai/e1/raw/`, sentence map in
+> `e1/PROVENANCE.md`). The previous text was written from three vendor blogs (§ Sources) and
+> failed the primary check on ten points: PECR does **not** split calls into "live" and
+> "automated"; the "informal ICO guidance … may be treated more like a live call" line had **no
+> ICO source** and the ICO's published informal advice points the other way; reg 19 says
+> "consents", not "explicit consent" (the Art. 9 term); "RIPA permits recording" is stale law;
+> "the ICO's position … fairness principle" was found on no ICO page; "silence is not consent"
+> is the ICO's line on marketing consent, not on recording; Ofcom prescribes **no calling
+> hours** and **no abandoned-call rate cap**; and there was **no "2025 revision to GC6"** —
+> C6 changed with effect from 15 May 2023 and binds providers, while the CLI guidance applies
+> from 29 January 2025. The same lines were corrected on the live AI integration FAQ, the
+> ROI post and the service-page comment the same day.
+
+- **What PECR says.** Two general rules for marketing calls (regs 21A and 21B add more). Reg 19:
+  "A person shall neither transmit, nor instigate the transmission of, communications
+  comprising recorded matter for direct marketing purposes by means of an automated calling
+  [or communication] system" without consent. An automated calling system is one "capable of"
+  both "(a) automatically initiating a sequence of calls to more than one destination in
+  accordance with instructions stored in that system; and (b) transmitting sounds which are not
+  live speech". Reg 21 covers "making calls (whether solicited or unsolicited)" for direct
+  marketing (TPS/CTPS, objections — § A5). Both apply only "for direct marketing purposes", so
+  an inbound call where nothing is marketed is outside their wording. legislation.gov.uk, read
+  3 October 2026.
+- **"Live" is the ICO's word, not PECR's.** "PECR do not use the terminology of ‘live’ calls."
+  "A live call is therefore a telephone call where a live person is speaking to the person they
+  are calling." (ICO live-calls guidance, index under review; this page updated 20 August 2025.)
+- **The ICO's only published word on AI speech.** Innovation advice, previously asked
+  questions (page under review, last updated 16 December 2025; PECR section added 11 April
+  2024): asked whether "an artificial intelligence produced greeting in a call handler’s voice"
+  could be used in a marketing call outside reg 19, the ICO said the system "would fall under
+  this definition"; "This means that no part of a direct marketing call can include recorded
+  material without consent from the individual receiving the call", and without "specific
+  consent" it "would not comply with Regulation 19". The service calls its answers "informal
+  advice … It is not legally binding." **No ICO guidance, notice or decision read addresses a
+  fully conversational AI voice.** The status is **unsettled, and the only lean on record is
+  towards reg 19** — never "decided", never "treated more like a live call".
+- **Enforcement.** 25 September 2025: fines of £300,000 and £250,000 on two energy companies
+  (notices dated 28 August 2025) for avatar calls playing "scripted lines recorded by voice
+  actors", found under reg 19 — recorded human voices, not AI. Penalty notice dated 28 May 2026
+  (£240,000; ICO news 8 July 2026): a test recording in evidence "featured an AI generated
+  voice", but the breaches found were regs 21 and 24 and the notice does **not** classify that
+  voice. Never write that the ICO dealt with AI-voiced calls under either regulation.
+- **Consent for automated calls.** Reg 19(2)(a): the subscriber "has previously notified the
+  caller that for the time being he consents". ICO (Guide to PECR, under review): "General
+  consent for marketing, or even consent for live calls, is not enough – it must specifically
+  cover automated calls." Reg 19(2)(b): the caller does not prevent presentation of the calling
+  line, or presents one "on which he can be contacted". Reg 24: the name, and an address or a
+  free-of-charge number. Companies are covered ("subscriber"). Penalty for breaches from 5
+  February 2026: § A5 (£17.5m or 4%, whichever is higher, for an undertaking).
+- **Solicited and administrative calls.** A live marketing call is solicited if someone
+  "specifically asks you to call them with marketing information", and then "most of the PECR
+  rules don’t apply"; a call "purely for administrative purposes" is not direct marketing (ICO,
+  under review). Nothing read covers an AI voice ringing back with marketing.
+- **Recording.** ICO, monitoring workers (under review): "You must tell these people that you
+  are recording the call and why. A recorded message is good practice." The rest of the
+  privacy information can follow by email or a link. UK GDPR Art. 13: "at the time when
+  personal data are obtained", including the retention period or, "if that is not possible",
+  the criteria. RIPA Part 1 Chapter 1 is omitted; business interception now rests on IPA 2016
+  s.46 and S.I. 2018/356, reg 4(1)(c): "the system controller has made all reasonable efforts
+  to inform every person who may use the telecommunication system that communications
+  transmitted by means of that system may be intercepted". Whether a business recording its
+  own calls is "interception" (IPA s.4) was left open. Recording need not rest on consent: the
+  ICO's transcripts answer says "Consent is not the only lawful basis that may be available".
+- **Transcripts and the platform.** Art. 5(1)(e) "for no longer than is necessary"; the ICO
+  (informal): "privacy notices should be updated"; the transcription provider's "client is
+  likely to still be the controller", but the provider "would be the controller for any
+  information they receive to help train their AI model". Art. 28 contract with the platform.
+- **Health details (clinics).** The ICO counts "appointment details, reminders and invoices
+  which tell you something about the health of the individual"; you "must identify both a
+  lawful basis under Article 6 and a condition for processing special category data under
+  Article 9" (under review). "Explicit consent" if consent is the basis — but not the only
+  basis.
+- **Saying it is an AI.** No UK statute read requires it. The CMA, _Complying with consumer law
+  when using AI agents_ (9 March 2026): "if the fact they are dealing with AI rather than a
+  person might affect people’s decisions then you should tell them." Our first-sentence
+  disclosure is a build standard, never "the law requires an AI to identify itself".
+- **Ofcom.** Communications Act 2003 s.128(5) misuse test ("is to cause another person
+  unnecessarily to suffer annoyance, inconvenience or anxiety"); s.130 penalty "not exceeding
+  £2,000,000". Statement of policy on persistent misuse, 20 December 2016, applying from 1 March
+  2017: "Calling parties should not make silent or abandoned calls" (A1.13); the abandoned-call
+  message should name the party on whose behalf the call was made, give a basic-rate number to
+  decline further calls and carry no marketing (A2.17); Ofcom is "likely to regard misuse at
+  unsociable hours as more harmful and liable to action" but does "not prescribe those hours"
+  (A2.11); on abandoned calls it "may take action in any case where a calling organisation makes
+  them", the rate being a prioritisation factor, not a cap (A3.1). **Caller ID:** General
+  Condition C6 binds "Regulated Providers"; C6.6 (with effect from 15 May 2023) has them, where
+  technically feasible, take all reasonable steps to identify and block calls whose CLI is
+  invalid, not unique or not dialable. The CLI guidance (published 29 July 2024, applies from
+  29 January 2025) expects providers to block calls from abroad showing a UK number "except in
+  a limited number of legitimate use cases". The caller's own duty is PECR's (reg 19(2)(b),
+  reg 21(A1)). **Nothing in these Ofcom texts is AI-specific**; Ofcom's AI material read is
+  about scams (26 March 2024). ofcom.org.uk returned HTTP 403 on 3 October 2026, so every Ofcom
+  text was read from Internet Archive captures (December 2023 to September 2026); the C6
+  versions of November 2025 and April 2026 were not read.
+- **Stale risk.** The ICO's PECR guidance is under review after the Data (Use and Access) Act
+  2025, with a "PECR advice for small organisations update" due "Autumn 2026"; the innovation
+  answer may be revised. Re-check `/blog/ai-receptionist-law-uk` when either changes.
 
 **How this shapes the service page.** Position AI voice agents primarily as **inbound**
 (reception, booking, out-of-hours capture) where the legal picture is far cleaner, and treat
@@ -2313,7 +2398,7 @@ Retrieved 2026-07-27.
 - **ASA / CAP POM ban** — CAP (AdviceOnline), _Beauty and Cosmetics: Botulinum toxin products_; JCCP, _New ASA Guidance_; Harley Academy
 - **Aesthetics licensing scheme** — Browne Jacobson, _Understanding the new regulations for non-surgical cosmetic procedures_; Government consultation response, August 2025
 - **Dental regulation** — Denmarketing, _Dental Marketing Compliance UK: GDC and ASA Rules (2026)_; Whitehat SEO, _Dental Marketing Compliance UK_
-- **AI voice / Ofcom** — VoiceVox, _Ofcom Compliance for AI Voice Agents_; Neural Voice, _AI Cold Calling in the UK_; Callin.io, _AI Voice Agents in the UK: Privacy Compliance_
+- **AI voice / Ofcom** — VoiceVox, _Ofcom Compliance for AI Voice Agents_; Neural Voice, _AI Cold Calling in the UK_; Callin.io, _AI Voice Agents in the UK: Privacy Compliance_ — **superseded 3 October 2026**: § B3 was rewritten from primary sources (PECR regs 2, 19, 21, 24; ICO live-calls, telephone-marketing, monitoring, special-category and innovation-advice pages; the ICO penalty notices of 28 August 2025 and 28 May 2026; IPA 2016 s.46 and S.I. 2018/356; Communications Act 2003 ss.128 and 130; Ofcom's 2016 persistent-misuse statement, Condition C6 and the 2024 CLI guidance; the CMA's AI agents guidance of 9 March 2026). URLs are in the provenance comment of `content/blog/ai-receptionist-law-uk.mdx`.
 
 ### Primary sources read on 28 September 2026
 

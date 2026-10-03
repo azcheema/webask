@@ -1360,11 +1360,11 @@
     },
     {
       "term": "are ai receptionists legal uk",
-      "intent": "commercial-investigation",
+      "intent": "informational-bottom",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/services/ai-integration",
-      "supportingUrls": ["/pricing"],
+      "primaryUrl": "/blog/ai-receptionist-law-uk",
+      "supportingUrls": ["/services/ai-integration"],
       "cluster": "ai-automation",
       "vertical": null
     },
@@ -3291,7 +3291,7 @@
       "intent": "informational-bottom",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/ai",
+      "primaryUrl": "/blog/ai-receptionist-law-uk",
       "supportingUrls": [],
       "cluster": "ai-voice-agents",
       "vertical": null
@@ -3301,7 +3301,7 @@
       "intent": "informational-bottom",
       "msv": null,
       "kd": null,
-      "primaryUrl": "/blog/topic/ai",
+      "primaryUrl": "/blog/ai-receptionist-law-uk",
       "supportingUrls": [],
       "cluster": "ai-voice-agents",
       "vertical": null

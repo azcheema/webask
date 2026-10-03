@@ -3,7 +3,7 @@ slug: ai-voice-agents-roi-service-businesses
 title: "AI Voice Agents: The ROI Maths for UK Service Businesses"
 description: "How to work out whether an AI voice agent pays for itself in a UK service business — the leakage formula, the cost lines a demo leaves out, and why inbound and outbound are two different sums."
 datePublished: "2026-07-01"
-dateModified: "2026-09-28"
+dateModified: "2026-10-03"
 authorSlug: ansar-cheema
 topic: ai
 keywords:
@@ -16,7 +16,7 @@ keywords:
 draft: false
 ---
 
-{/* Complements /services/ai-integration instead of restating it: the service page owns the UK legal picture (PECR live-vs-automated grey zone, Ofcom persistent misuse, CLI authenticity and the 2025 GC6 revision — docs/03 § B3); this post owns the arithmetic, with compliance treated as a cost line. Sourced figures only: PECR exposure £17.5m or 4% of global turnover, whichever is higher (docs/03 § A4, § B3 — the qualifier is statutory and must not be dropped); the outbound consent rule and the Ofcom/GC6 points (docs/03 § B3); the £4,500 starting figure (docs/02 § pricing anchors, data/services.ts). Deliberately absent: any per-minute voice rate, any UK receptionist salary, any missed-call benchmark, any build-effort estimate — nothing in docs/ supports them and the service page already refuses the first. The worked example uses round placeholders on purpose, so it cannot be mistaken for a benchmark. */}
+{/* Complements /services/ai-integration instead of restating it: the UK legal picture lives in /blog/ai-receptionist-law-uk (from 3 October 2026; before that the service page, from docs/03 § B3); this post owns the arithmetic, with compliance treated as a cost line. Sourced figures only: the PECR maximum for an undertaking, £17.5m or 4% of total annual worldwide turnover in the preceding financial year, whichever is higher, for breaches from 5 February 2026 (DPA 2018 s.157(5) via PECR Sch. 1; S.I. 2026/82 — the qualifier is statutory and must not be dropped); the outbound consent rule and the Ofcom points (docs/03 § B3 as corrected 3 October 2026). CORRECTED 3 October 2026 against the primary sources read for /blog/ai-receptionist-law-uk: PECR does not divide calls into live and automated (the ICO: "PECR do not use the terminology of ‘live’ calls"); the "informal ICO guidance" lean had no ICO source, and the ICO's informal advice put an AI-made greeting under reg 19; reg 19 consent is "consents", not "explicit consent"; the ICO says "You must tell these people that you are recording the call and why", and "silence is not consent" is its line on marketing consent, not recording; Ofcom's 2016 statement of policy prescribes no calling hours and no abandoned-call rate cap; Condition C6 binds providers and changed with effect from 15 May 2023, and the CLI guidance applies from 29 January 2025 — there was no "2025 revision to General Condition 6". the £4,500 starting figure (docs/02 § pricing anchors, data/services.ts). Deliberately absent: any per-minute voice rate, any UK receptionist salary, any missed-call benchmark, any build-effort estimate — nothing in docs/ supports them and the service page already refuses the first. The worked example uses round placeholders on purpose, so it cannot be mistaken for a benchmark. */}
 
 Voice agents are sold on a sound: a phone ringing out in an empty reception at half past six. Effective pitch, poor basis for a purchase. Whether one earns its keep in a UK service business is arithmetic — and that arithmetic has a line no demo shows you, because here the way a call is placed is regulated separately from what the call says.
 
@@ -69,22 +69,22 @@ If your own three numbers round to noise, stop: nothing below rescues a small le
 
 The build is the line with a real number attached: our [AI integration work](/services/ai-integration) starts at **£4,500 excl. VAT**, and a scope tells you what that buys before you commit.
 
-The third line is the UK-specific one. AI calling here sits under **PECR** and **UK GDPR** at the ICO, and under **Ofcom's** rules about how a calling operation behaves. PECR was drafted long before any of this existed: it divides calls into _live_ ones and _automated_ ones, and an agent holding a genuine two-way conversation is not cleanly either. The regulator has not formally resolved that, and the full picture — including which way informal ICO guidance leans — is set out on the [AI integration service page](/services/ai-integration).
+The third line is the UK-specific one. AI calling here sits under **PECR** and **UK GDPR** at the ICO, and under **Ofcom's** rules about how a calling operation behaves. PECR was drafted long before any of this existed. It has one rule for automated calling systems, which send "sounds which are not live speech", and another for other marketing calls, and which one covers an agent holding a genuine two-way conversation has not been formally resolved. The ICO's informal advice, which it says is not legally binding, put even a short AI-made greeting in a marketing call under the automated-call rule. Our guide to [whether AI receptionists are legal in the UK](/blog/ai-receptionist-law-uk) sets out the rules in full.
 
-For an inbound agent, the resulting cost is real but bounded. Callers must be told up front that the call is recorded; silence is not consent. You need a retention decision on those recordings rather than a default, and a handover to a person that genuinely works. That is a policy decision, a scoped piece of build and a line in your privacy notice: worth costing, not worth fearing.
+For an inbound agent, the resulting cost is real but bounded. Callers must be told that the call is recorded, and why. You need a retention decision on those recordings rather than a default, and a handover to a person that genuinely works. That is a policy decision, a scoped piece of build and a line in your privacy notice: worth costing, not worth fearing.
 
 ### Outbound changes the sum, not just a setting
 
 Point the same product at a list and the economics change shape.
 
-Outbound marketing calls made with automated calling systems need the subscriber's **prior explicit consent** under PECR — evidenced, not assumed, and not satisfied by the fact that the number belongs to a business. Ofcom's persistent-misuse rules then govern the operation itself: abandoned-call rate caps, permitted calling hours, and requirements about what an abandoned-call message has to say. On top of that sit CLI authenticity and number allocation, both hardened by the **2025 revision to General Condition 6**, with carrier-level filtering where they are not met — so non-compliant traffic stops connecting, which hurts commercially long before anyone writes to you. PECR exposure runs to **£17.5m or 4% of global turnover, whichever is higher**.
+Outbound marketing calls made with automated calling systems need the subscriber's **prior consent** under PECR — consent that, in the ICO's words, "must specifically cover automated calls", evidenced rather than assumed, and not satisfied by the fact that the number belongs to a business. Ofcom's persistent-misuse policy then applies to the operation itself: calling parties should not make silent or abandoned calls, an abandoned-call message should say on whose behalf the call was made and give a basic-rate number to decline further calls, and Ofcom is likely to regard misuse at unsociable hours as more harmful. On top of that sits caller ID. Ofcom's General Condition C6 requires phone providers, where technically feasible, to take all reasonable steps to identify and block calls whose number is invalid, not dialable or does not uniquely identify the caller, and its caller ID guidance, applying from 29 January 2025, expects them to block calls from abroad showing a UK number outside limited legitimate cases — so non-compliant traffic stops connecting, which hurts commercially long before anyone writes to you. For breaches from 5 February 2026, the maximum PECR penalty for an undertaking is **£17.5m or 4% of its total annual worldwide turnover in the preceding financial year, whichever is higher**.
 
 Cost those properly — consent capture, dialler configuration, the price of being wrong — and outbound is not the same purchase with a different toggle. That is precisely why inbound comes first: it is the case where the compliance line is small enough not to swing the answer.
 
 <Comparison>
 <ComparisonColumn title="Inbound — the compliance line is a policy" tone="positive">
 
-- The caller rang you, so nothing is being marketed at them and consent does not arise
+- The caller rang you, so nothing is being marketed at them and PECR's marketing-call consent does not arise
 - Recording disclosure, a retention period and a working human handover
 - The value sits in calls that already exist and already go unanswered
 - Nothing in the build is waiting on an unresolved legal question
@@ -92,9 +92,9 @@ Cost those properly — consent capture, dialler configuration, the price of bei
 </ComparisonColumn>
 <ComparisonColumn title="Outbound — the compliance line is the project" tone="neutral">
 
-- Prior explicit consent per subscriber, recorded before the first call is placed
-- Ofcom rules on abandoned calls, permitted hours and the abandoned-call message
-- Authentic CLI and correctly allocated numbers, or carriers filter the traffic
+- Prior consent per subscriber, specifically to automated calls, recorded before the first call is placed
+- Ofcom's policy on silent and abandoned calls and the abandoned-call message
+- A valid, dialable number shown, or providers block the call
 - Two regulators can reach the same campaign for different reasons
 
 </ComparisonColumn>
