@@ -30,7 +30,7 @@
 - `services/<slug>.mdx` + `services/<slug>.catalogue.md` — six service pages (body + catalogue).
 - `bundle/local-business-plans.mdx` + `.catalogue.md` — the bundle page, its FAQs and the `tiers` data.
 - `industries/<slug>.mdx` + `.catalogue.md` — three wave-1 industry pages, each gated on its doc 03 section.
-- `blog/calendar.md`, `blog/outlines.md`, `blog/<slug>.mdx` — sixteen posts, all `draft: true` (#13–#16 drafted in S7, 25 September 2026; #17 is an outline only).
+- `blog/calendar.md`, `blog/outlines.md`, `blog/<slug>.mdx` — sixteen posts, all `draft: true` (#2 published on 3 October 2026 and removed from here; see `blog/calendar.md`) (#13–#16 drafted in S7, 25 September 2026; #17 is an outline only).
 - `index-and-nav.md`, `deltas.md` — exact current strings and their proposed replacements.
 - `self-checks.md` — the planning notes and pass-1 self-check carried with every draft; S8's work list.
 - `../13-page-shape-proposal.md` (27 September 2026) — the founder's brief to lead with the problem
