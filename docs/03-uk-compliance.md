@@ -411,7 +411,8 @@ unless:", "they have specifically consented to electronic mail from you; or", "t
 existing customer who bought (or negotiated to buy) a similar product or service from you in the
 past, and you gave them a simple way to opt out both when you first collected their details and in
 every message you have sent." Quote it with "under review". § B4's _Forms on clinic sites_ points
-here for the marketing box on a clinic's enquiry form.
+here for the marketing box on a clinic's enquiry form. _(Re-read 3 October 2026 for
+`content/blog/google-reviews-dmcc-act-uk.mdx`: quote and banner unchanged.)_
 
 **Practical rule for WebAsk:** sole proprietorships are the most common legal form of UK business —
 3.2 million, 57% of 5.7 million private-sector businesses at the start of 2025 (DBT, Business
@@ -473,8 +474,9 @@ any outreach, and treat freemail addresses as individuals no matter what the dom
 Since **6 April 2025** the Digital Markets, Competition and Consumers Act 2024 lists among the
 "commercial practices which are in all circumstances considered unfair" (s.225(4)(c);
 Sch. 20 para 13; SI 2025/272) submitting or commissioning "a fake consumer review" or "a
-consumer review that conceals the fact it has been incentivised" (an incentive includes cash,
-discount, freebie, event invite, or a financial interest), and publishing reviews "in a
+consumer review that conceals the fact it has been incentivised" (~~an incentive includes cash,
+discount, freebie, event invite, or a financial interest~~ — see the 3 October 2026 correction at
+the end of this section), and publishing reviews "in a
 misleading way" — aggregate scores are in scope. CMA208 calls these a "banned practice".
 _(Corrected 28 September 2026: this sentence said "illegal", which is not the Act's word —
 it says unfair commercial practices "are prohibited" (s.225(1)) — and para 13 bans
@@ -519,10 +521,19 @@ same day to "10% of global turnover": `content/industries/dental-practices.mdx`,
 `docs/00-overview.md` and the drafts in `research/local-business-services/09-content-drafts/`.
 Other copy passes were editing those files the same day, so re-run the search before fixing.)_
 
-The CMA can determine a breach and impose fines **without recourse to the courts**. Its
-opening enforcement posture was supportive, but in **March 2026 it opened investigations
-into five named businesses** over review handling. _(Unsourced as at 28 September 2026: no
-source is recorded for this sentence and it was not re-verified. Do not reuse it until it is.)_
+The CMA's new powers "enable the CMA to decide whether consumer laws have been broken, without
+having to go through the courts" (press release, 27 March 2026). After the guidance it "allowed for
+a 3-month adjustment period", during which it would "not yet prioritise enforcement action" (case
+page, 25 July 2025 update). On **26 March 2026** it opened investigations into 5 businesses "that
+it suspects may have infringed consumer law" over online reviews; "it has not reached any
+conclusions about whether consumer law has been broken", and on 28 September 2026 each of the five
+case pages read "Investigation ongoing (next case update Winter 2026 to 2027)". The published post
+does not name the five. _(Corrected 3 October 2026, from pages read that day: this said "without
+recourse to the courts", which no source carries, and the investigations sentence had been marked
+unsourced on 28 September 2026. Sources:
+https://www.gov.uk/government/news/fake-and-misleading-reviews-5-businesses-under-cma-investigation;
+https://www.gov.uk/cma-cases/online-consumer-reviews and the five case pages it lists. A GOV.UK
+search of CMA cases and news on 3 October 2026 found no fine for reviews under the Act.)_
 
 **Asking for reviews: the lines the clinic posts quote** (added 29 September 2026, from pages read
 29 September 2026).
@@ -575,7 +586,8 @@ source is recorded for this sentence and it was not re-verified. Do not reuse it
   addendum's gap-register row 3, § B5 and R22 were corrected to that wording on 29 September 2026
   and keep the old reading only in their correction notes; S38 now carries a dated re-read note.
   Whether Google edited the page in that window or the 25 September fetch-tool reading was a
-  paraphrase is not established. Quote the 29 September text with its date.
+  paraphrase is not established. Quote the 29 September text with its date. _(Re-read 3 October
+  2026, en-GB: unchanged.)_
 
 **Current exposure on `webask.co.uk` (audited 2026-07-27):**
 
@@ -617,6 +629,57 @@ but genuinely useful audit finding.
 > should have a published policy that clearly prohibits fake reviews". The CAP Code's testimonial rules
 > (3.47, 3.50) reach business-to-business marketing too: it covers marketing "on their own websites", and
 > its consumer is anyone likely to see it, "whether in the course of business or not".
+
+> **3 October 2026 — asking for reviews: incentives, prize draws, Google and the ICO** (read 3 October
+> 2026 for `content/blog/google-reviews-dmcc-act-uk.mdx`; raw copies and line numbers in the git-ignored
+> `.playwright-mcp/seo/reviews-dmcc/raw/` and its `PROVENANCE.md` § 3).
+>
+> - **Incentives (corrects the bracket above).** Para 13(5)(g): "commissioning" "includes incentivising by
+>   any means". CMA208 § 2.10 lists money, commissions, discounts or vouchers, leases or loans free of
+>   charge or on more favourable terms, freebies, free stays, invitations to events, and "a trader
+>   requesting a member of staff to write a review". "A financial interest" is not on that list: it is in
+>   § 4.6, as information whose omission "may be misleading". Footnote 8: offering "the chance to earn a
+>   reward which does not guarantee a direct benefit for the reviewer" (a prize-draw entry) "is unlikely
+>   to amount to commissioning in the context of the banned practice". Live copy that listed "a financial
+>   interest" or called an undisclosed prize draw the exposure was corrected the same day (beauty and
+>   wellness page, Leeds and Manchester hubs, the local SEO checklist).
+> - **Para 13 has four limbs:** (1) submitting or commissioning a fake or concealed-incentive review;
+>   (2) publishing "in a misleading way"; (3) publishing without "reasonable and proportionate steps";
+>   (4) "Offering services to traders" for (1) or (2). Publishing "includes disseminating, or otherwise
+>   making available, by any means" (13(5)(h)).
+> - **Process:** investigation, provisional then final infringement notice (ss.180-182); the final notice
+>   must state "a right to appeal" (s.182(7)(d)).
+> - **CMA208**, the lines the post quotes: § 3.4, where a platform does not allow incentivised reviews,
+>   "submitting an incentivised review is likely to be misleading"; § 3.5, "the review must be clearly
+>   identifiable as incentivised" and "Usually, it will be necessary for the reviewer at least to label
+>   the review prominently as incentivised, namely, as an advert."; § 3.7, "Traders are free to do this
+>   but to comply with the law they must: (a) tell consumers that the review has been incentivised, and
+>   (b) the review must still reflect the reviewer's genuine experience."; § 4.4, traders "should not"
+>   interfere, including "by arbitrarily stopping and starting review invitations"; commissioning example
+>   4, a refund or gift card to change a review "(so that it is no longer reflective of their genuine
+>   experience)" (keep the bracket); § 3.3, those who submit or commission banned reviews "will be in
+>   breach of the banned practice", naming "marketing companies, individuals acting on behalf of
+>   traders"; § 8.32(b), a "second-party publisher" "should review the first-party publisher's policies
+>   and arrangements for tackling banned content to satisfy themselves, on reasonable grounds, that those
+>   arrangements meet the duty", and if it cannot, "this may require the second-party publisher to take
+>   more significant steps themselves".
+> - **CMA, _Reviews: guidance for businesses and agencies_** (updated 28 August 2025): "if you are
+>   working with a third party – such as a PR, marketing or search engine optimisation (SEO) agency – make sure they also follow these rules".
+> - **Google** (en-GB, a platform policy, not law): "Rating manipulation includes incentivised or biased
+>   reviews, which are not allowed and will be removed from Maps."; the on-premises line's "This
+>   includes:" list names "Merchants requesting that staff solicit a certain number of reviews". Business
+>   Profile Help suggests the review link "on your receipts", "in thank you emails" and "Print and display
+>   the QR code in your store"; for fake engagement Google "might place restrictions on their Business
+>   Profile", with "a warning to let consumers know that fake reviews were removed", and "Businesses have
+>   the ability to appeal our decision."
+> - **Google's undertakings to the CMA** (press notice 24 January 2025): "prominent ‘warning’ alerts",
+>   "review function deactivated", repeat offenders "will have all their reviews deleted for 6 months or
+>   more"; given "without admission of liability or wrongdoing". Not the Act.
+> - **The ICO** has said nothing on review requests in any page read 3 October 2026. Its test: "If your
+>   service message has elements that are direct marketing, even if that is not the main purpose of your
+>   message, then it will count as direct marketing." PECR reg 2: "electronic mail" includes text
+>   messages; reg 22 applies to "individual subscribers". Never state what the ICO would decide about a
+>   review request.
 
 ---
 
