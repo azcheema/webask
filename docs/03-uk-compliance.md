@@ -681,6 +681,49 @@ but genuinely useful audit finding.
 >   messages; reg 22 applies to "individual subscribers". Never state what the ICO would decide about a
 >   review request.
 
+> **3 October 2026 — removing a Google review: Google's routes and UK defamation law** (read 3 October 2026
+> for `content/blog/google-review-removal-uk-rules.mdx`; Google pages at `hl=en-GB`; raw copies and line
+> numbers in the git-ignored `.playwright-mcp/seo/review-removal/raw/` and its `PROVENANCE.md` § 5).
+>
+> - **Policy route.** Google's reporting page: "You can report any review, but only those that violate Google
+>   policies are eligible for removal."; "Do not report a review just because you disagree with it or dislike it.
+>   Google doesn’t get involved in conflict between businesses and customers."; "Review evaluation typically
+>   takes several days." Reviews Management Tool statuses, quoted with their en dash: "Decision pending",
+>   "Report reviewed – no policy violation", "Escalated – check your email for updates". Appeal: "If a flagged
+>   review doesn’t qualify for removal, submit a one-time appeal."; "You can select up to 10 reviews."; a review
+>   that survives "will remain live" and still shows "Escalated – check your email for updates". Never present
+>   "Escalated" as progress towards removal.
+> - **Not policy-only.** Google "may remove content or edits for non-policy violating reasons", including "The
+>   content violates applicable law."; its Legal removals page: "users can report content that they believe is
+>   in violation of local law". The legal route's Maps branch offers "Defamation: Report content that defames you
+>   or your business/organisation (typically a false statement damaging reputation)", "Personal data / privacy"
+>   and "Court order". "You may report the same content through both legal and content/product policy reporting
+>   paths, but you must file each report separately." A policy report "does not serve as legal notice". Legal
+>   removals are "Typically" limited to "the country/region where it is deemed to be illegal"; policy removals
+>   "typically" global. Whether the privacy option covers UK law is not established (its end point was not read).
+>   "We reserve the right to either reinstate or take down content, irrespective of whether your report was
+>   accepted or not accepted."
+> - **Extortion.** Google's extortion page: "Do not engage with or pay the malicious individuals. This can
+>   encourage further attempts and doesn’t guarantee the removal of reviews."; report through the "merchant
+>   extortion report form".
+> - **Defamation, by nation** (statute text only; a solicitor's matter, never advice). England and Wales:
+>   Defamation Act 2013 ("This Act extends to England and Wales only", s.17(2)); s.1 serious harm and, for "a body
+>   that trades for profit", "serious financial loss"; s.5 is a defence for "the operator of a website", with the
+>   Defamation (Operators of Websites) Regulations 2013 (SI 2013/3028) setting the notice-of-complaint steps — a
+>   defence, not a takedown right; s.10 bars claims against a non-author, editor or publisher unless "not
+>   reasonably practicable" otherwise; s.13: after judgment for the claimant the court "may order" the operator "to
+>   remove the statement". Scotland: Defamation and Malicious Publication (Scotland) Act 2021, ss.1, 3 and 30 in
+>   force 8 August 2022 — the same serious-harm and serious-financial-loss tests; s.3 no right against anyone not
+>   "the author, editor or publisher"; s.30, in defamation proceedings the court "may order" an operator to remove
+>   the statement or add "a prominent notice". Northern Ireland: Defamation Act (Northern Ireland) 2022, in
+>   operation 7 June 2022; its sections include no serious-harm or website-operator provision, and no source read
+>   says what threshold applies there — do not write "no serious-harm test" as the NI position; Defamation Act
+>   1996 s.1 (extends to England and Wales and Northern Ireland, s.18) is a defence for one who was not the
+>   "author, editor or publisher". No source read says whether Google is an "operator" or a publisher.
+> - **CMA208 § 4.4(a)(i)**: "suppressing genuine negative reviews is problematic"; traders "should not" interfere
+>   with reviewers leaving negative reviews "in the first place", including "through threats of harm or legal
+>   action".
+
 ---
 
 ### A7. Accessibility
