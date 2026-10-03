@@ -231,7 +231,7 @@ export const home: HomeContent = {
     {
       question: "How quickly can you deliver",
       answer:
-        "A standard six-to-ten page marketing site launches in four to six weeks from kickoff. CRM implementations land in two to four weeks. AI integrations vary with scope, but a voice agent build is planned at three to five weeks. The single biggest cause of delay is content — copy, photography and sign-off — so we agree who is producing what during the Discover stage and commit to dates in writing.",
+        "A standard six-to-ten page marketing site launches in four to six weeks from kickoff. CRM implementations land in two to four weeks. AI integrations vary with scope, so the date goes into the written scope. The single biggest cause of delay is content — copy, photography and sign-off — so we agree who is producing what during the Discover stage and commit to dates in writing.",
     },
     {
       question: "Do you have a UK office",
