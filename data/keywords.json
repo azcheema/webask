@@ -2487,6 +2487,56 @@
       "vertical": null
     },
     {
+      "term": "how do i contact google to take down a review",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-review-removal-uk-rules",
+      "supportingUrls": ["/services/seo"],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "remove google review uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-review-removal-uk-rules",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "report a google review",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-review-removal-uk-rules",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "google review removal policy",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-review-removal-uk-rules",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
+      "term": "fake google review removal uk",
+      "intent": "informational-bottom",
+      "msv": null,
+      "kd": null,
+      "primaryUrl": "/blog/google-review-removal-uk-rules",
+      "supportingUrls": [],
+      "cluster": "reviews",
+      "vertical": null
+    },
+    {
       "term": "are fake testimonials illegal uk",
       "intent": "informational-bottom",
       "msv": null,

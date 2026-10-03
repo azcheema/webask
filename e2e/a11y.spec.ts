@@ -58,6 +58,7 @@ const ROUTES = [
   "/blog/nextjs-vs-wordpress-performance",
   "/blog/what-is-an-ai-receptionist",
   "/blog/google-reviews-dmcc-act-uk",
+  "/blog/google-review-removal-uk-rules",
   // The clinic-compliance hub and its posts: the body-level rules (tables,
   // heading order, link names) live in each MDX body, so each post is listed.
   "/blog/topic/clinic-compliance",
