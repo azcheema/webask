@@ -366,8 +366,11 @@ The platform migration work is in [`04-information-architecture.md`](04-informat
 - [ ] Resubmit the sitemap index in GSC + Bing Webmaster Tools
 - [ ] Watch GSC Coverage **daily for the first week** for unexpected 404s
 - [ ] Script a check that all 13 legacy URLs resolve 200 or 410 as intended
-- [ ] Expect a **2–4 week** ranking wobble, then stabilisation — usually higher, on improved
-      Core Web Vitals
+- [ ] Expect a **2–4 week** ranking wobble, then stabilisation; check Core Web Vitals in the
+      field once CrUX has 28 days of data. _(3 October 2026: "usually higher, on improved Core Web
+      Vitals" removed — UK field data for August 2026 gives no basis for assuming a Next.js rebuild
+      beats the WordPress site it replaces (Next.js 49%, WordPress 66% good on phones;
+      `/blog/nextjs-vs-wordpress-performance`), and Google says page experience is not a single signal.)_
 - [ ] Keep the redirects for **≥ 12 months**
 
 ---
