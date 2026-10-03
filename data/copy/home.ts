@@ -229,9 +229,9 @@ export const home: HomeContent = {
         "Two reasons, and if neither applies to you then a template is genuinely the right call. The first is ownership: a site we build launches into accounts you own, so you keep what you have paid for. The second is that regulated sectors — clinics, dental practices — have structural requirements a template may not meet, and getting those wrong can end in an advertising ruling rather than a design critique. If you are a straightforward local business with simple needs, we will tell you that on the call.",
     },
     {
-      question: "How quickly can you deliver",
+      question: "How quickly can you deliver?",
       answer:
-        "A standard six-to-ten page marketing site launches in four to six weeks from kickoff. CRM implementations land in two to four weeks. AI integrations vary with scope, so the date goes into the written scope. The single biggest cause of delay is content — copy, photography and sign-off — so we agree who is producing what during the Discover stage and commit to dates in writing.",
+        "We plan four to eight weeks for a site of five to ten pages, with the date written into the scope. A focused CRM build is scoped at two to four weeks, and a migration at three to six. AI integrations vary with scope, so the date goes into the written scope. Each stage assumes the copy, photographs and approvals it needs are ready; where they are not, the schedule waits on those, so we agree who is producing what during the Discover stage and commit to dates in writing.",
     },
     {
       question: "Do you have a UK office",
