@@ -2,7 +2,7 @@
 slug: aesthetic-clinics
 title: "Compliant Websites for UK Aesthetic Clinics"
 description: "Websites and automation for UK aesthetic clinics, built around the CAP Code rules that govern what a clinic site may say. Fast, booking-led, and structured to stay inside them."
-dateModified: "2026-10-01"
+dateModified: "2026-10-03"
 ---
 
 {/* Body prose only. Catalog data (hero, FAQs, related services, audienceType) lives in data/industries.ts under the aesthetic-clinics entry and is read by the page template — do not duplicate those fields here. */}
@@ -78,11 +78,11 @@ This is the pattern we build, designed so that a compliant clinic site can still
 
 ## What we build
 
-- **The website.** Fast, mobile-first, on Next.js. Layout shift, main-thread blocking and total
+- **The website.** Mobile-first, built in Next.js, to a speed budget. Layout shift, main-thread blocking and total
   page weight are hard gates in continuous integration — a commit that regresses one of them
   fails — while load time is written against a two-second target and judged on field data, since
   a throttled build server is not the phone your patient is holding. That distinction matters
-  disproportionately here, because clinic traffic is mobile and image-heavy.
+  here, because clinic pages are image-led.
 - **Booking and CRM automation.** Enquiry to booked, confirmed and reminded appointment without
   your front desk retyping anything. We lead with GoHighLevel, and use HubSpot where it is the
   better fit.

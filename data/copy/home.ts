@@ -226,7 +226,7 @@ export const home: HomeContent = {
     {
       question: "Why would I pay more than a £950 template",
       answer:
-        "Two reasons, and if neither applies to you then a template is genuinely the right call. The first is performance and ownership: templated builds on shared platforms are slow on mobile, which costs you both rankings and conversions, and you rarely own what you have paid for. The second is that regulated sectors — clinics, dental practices — have structural requirements a template may not meet, and getting those wrong can end in an advertising ruling rather than a design critique. If you are a straightforward local business with simple needs, we will tell you that on the call.",
+        "Two reasons, and if neither applies to you then a template is genuinely the right call. The first is ownership: a site we build launches into accounts you own, so you keep what you have paid for. The second is that regulated sectors — clinics, dental practices — have structural requirements a template may not meet, and getting those wrong can end in an advertising ruling rather than a design critique. If you are a straightforward local business with simple needs, we will tell you that on the call.",
     },
     {
       question: "How quickly can you deliver",

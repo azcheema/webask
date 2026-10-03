@@ -1,6 +1,8 @@
 # Performance & Accessibility
 
-> Core Web Vitals budget and WCAG 2.2 AA compliance — enforced in CI, not aspirational.
+> Core Web Vitals budget and WCAG 2.2 AA — what CI enforces, and what it only warns on (LCP and the
+> performance score warn; INP is not audited). _(Tagline corrected 3 October 2026; it said "enforced in CI,
+> not aspirational", which its own Lighthouse note below contradicts.)_
 
 ---
 
@@ -15,7 +17,7 @@ Verified on 4 representative URLs every PR via Lighthouse CI:
 
 ### Core Web Vitals targets
 
-| Metric        | "Good" (Google) | Naxdor budget | Why we beat Google's bar                   |
+| Metric        | "Good" (Google) | Naxdor budget | Why the budget sits under Google's bar     |
 | ------------- | --------------- | ------------- | ------------------------------------------ |
 | **LCP**       | ≤ 2.5s          | **≤ 2.0s**    | Headroom under Google's line ²             |
 | **INP**       | ≤ 200ms         | **≤ 200ms**   | New CWV replacing FID; match Google's good |
@@ -55,6 +57,47 @@ Read for `content/blog/core-web-vitals-guide-uk.mdx`; raw copies in the git-igno
   dimensions" (CrUX tools page); a UK-only view exists only in the monthly CrUX BigQuery country
   tables, origin-level, "with the standard eligibility requirements applied at a country level".
   CrUX counts Chrome on desktop and Android only; "Chrome on iOS" is a named exception.
+
+### UK field data by platform, read 3 October 2026 (post D2)
+
+Source: the HTTP Archive Core Web Vitals technology report API (`https://cdn.httparchive.org/v1/cwv`,
+geo "United Kingdom of Great Britain and Northern Ireland", rank ALL), CrUX August 2026 — the latest
+month on 3 October 2026 (published 8 September 2026; September due 13 October 2026). Raw responses and
+the compute script: `.playwright-mcp/web/d2/` (git-ignored). Published in
+`/blog/nextjs-vs-wordpress-performance`.
+
+| Phones, UK, Aug 2026 | Sites   | Good CWV | Good LCP | Good INP | Good CLS |
+| -------------------- | ------- | -------- | -------- | -------- | -------- |
+| Wix                  | 13,241  | 91.0%    | 94.3%    | 97.0%    | 98.2%    |
+| Squarespace          | 8,486   | 85.1%    | 90.6%    | 98.5%    | 93.4%    |
+| Shopify              | 39,341  | 84.3%    | 93.1%    | 91.9%    | 94.7%    |
+| Webflow              | 4,078   | 78.9%    | 85.9%    | 91.8%    | 94.1%    |
+| All sites            | 426,634 | 67.4%    | 78.8%    | 86.7%    | 87.5%    |
+| WordPress            | 121,260 | 65.8%    | 74.0%    | 93.1%    | 90.8%    |
+| Next.js              | 25,299  | 49.0%    | 72.4%    | 66.8%    | 79.1%    |
+
+- **The stack this site is built on had the lowest pass rate of the six.** The gap to WordPress is
+  mostly INP (26 points on phones), then CLS; LCP is within 2 points. Desktop: Next.js 64.2%,
+  WordPress 66.9%. Worldwide phones: Next.js 35.1%, WordPress 48.7%, all 53.0%. Top 10k UK: Next.js
+  42.3% (781), WordPress 70.6% (670). Twelve months: Next.js 40.0% → 49.0%, WordPress 62.1% → 65.8%,
+  on changing sets of sites.
+- **How the report counts.** A site is good on a metric when at least 75% of its visits are good
+  (pipeline: `SAFE_DIVIDE(good, good + needs_improvement + poor) >= 0.75`); "if an origin is missing
+  INP data, it's assessed based on the performance of the remaining metrics". Country is "inferred
+  from users' IP addresses"; "mobile" is phones only. Technologies are detected by Wappalyzer "on the
+  home page and one interior page". HTTP Archive: "correlation does not equal causation".
+- **Google on platforms:** "Google does not have any preference as to what architecture or technology
+  is used to build a site." (web.dev SPA FAQ, updated 11 August 2026.) Hydration "can have a
+  significant negative impact on TBT and INP, even if it improves FCP" (Rendering on the Web, updated
+  5 January 2026). Next.js: "add 'use client' to specific interactive components instead of marking
+  large parts of your UI as Client Components" (docs, updated 25 August 2026) — the dated source for
+  § JavaScript discipline below.
+- **Copy consequence.** Never pair "fast" with Next.js or set it against templates or WordPress as a
+  platform property; the two-second budget concerns loading (LCP), the metric where the platforms are
+  closest, and does not cover INP. Corrected the same day: the home FAQ ("templated builds on shared
+  platforms are slow on mobile"), the aesthetic and beauty FAQs, the aesthetic and dental "Fast, …
+  on Next.js" lines, the local SEO checklist § 7, the Cheshire and Leeds hubs, and docs/05's
+  "usually higher, on improved Core Web Vitals".
 
 ### Lighthouse mobile scores
 

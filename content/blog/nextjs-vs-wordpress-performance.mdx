@@ -1,0 +1,162 @@
+---
+title: "Next.js vs WordPress Performance: The UK Data"
+description: "UK Chrome visits, August 2026: 49% of Next.js sites and 66% of WordPress sites had good Core Web Vitals on mobile. Where the gap is, and what it means."
+datePublished: "2026-10-03"
+dateModified: "2026-10-03"
+authorSlug: ansar-cheema
+topic: web-development
+keywords:
+  - nextjs vs wordpress performance
+  - is next.js faster than wordpress
+  - wordpress core web vitals
+  - next.js core web vitals
+draft: false
+---
+
+{/* D2 (cluster D, topic web-development), drafted 3 October 2026 by the writer pass (revised the same day by fixer rounds 1 and 2; the pre-fix copies are d2/nextjs-vs-wordpress-performance.mdx.pre1 and .pre2) from .playwright-mcp/web/d2/PLAN.md, research.md and data.md; every figure was recomputed from the raw API responses in .playwright-mcp/web/d2/raw by d2/compute.mjs, every quote was copied from the raw page copies there, all read 3 October 2026, and a sentence-by-sentence map is in d2/PROVENANCE.md. DATA: HTTP Archive technology report API, fetched 3 October 2026: https://cdn.httparchive.org/v1/cwv with start=2026-08-01 and end=2026-08-01, geo United Kingdom of Great Britain and Northern Ireland, rank ALL, technology WordPress, Next.js, Wix, Squarespace, Shopify and Webflow (the platform rows of the first table and the linked request), and a separate request with technology ALL and React (the all-sites row; React not used); technology WordPress, Next.js and ALL with start=2025-08-01 and end=2026-08-01 for the thirteen-month trend; rank Top 100k and Top 10k; geo ALL for the worldwide line; start=latest returned 2026-08-01 and start=2026-09-01 returned an empty array; https://cdn.httparchive.org/v1/page-weight (UK, rank ALL, 2026-08, lab medians); https://cdn.httparchive.org/v1/technologies (descriptions); full request URLs in d2/data.md. PIPELINE, read 3 October 2026: HTTPArchive/dataform definitions/output/reports/tech_crux.js (IS_GOOD at 0.75; good_cwv as good INP or no INP, and good CLS, and good LCP; denominator origins with any LCP and any CLS; geo from CrUX country_summary; phone and desktop only) and tech_report_core_web_vitals.js (field mapping). PRIMARY (page date as printed; all read 3 October 2026): HTTP Archive tech report landing, https://httparchive.org/reports/techreport/landing, and tech page, https://httparchive.org/reports/techreport/tech (both undated; the tech page's own LCP threshold text is wrong and is not used); HTTP Archive docs, pages table and technology struct (undated); HTTP Archive FAQ (undated; US test agents only); CrUX methodology (2024-06-20), dimensions (2025-02-11), tools (2025-09-09), metrics (2026-09-15), release notes (2026-09-08; August 2026 published 8 September 2026); web.dev Web Vitals (2024-10-31), INP (2025-09-02), LCP (2025-09-04), CLS (2023-04-12), TTFB (header 18 November 2025), How SPA architectures affect Core Web Vitals (2026-08-11), Rendering on the Web (2026-01-05), The most effective ways to improve Core Web Vitals (2024-10-31), Script evaluation and long tasks (2023-05-09); Next.js docs, Server and Client Components and Linking and Navigating (both last updated 25 August 2026). REPO: content/blog/core-web-vitals-guide-uk.mdx (linked for what the metrics are, whose visits count and where to find your own numbers; not restated, not contradicted); content/blog/custom-website-vs-wordpress-2026.mdx sections So what actually decides it (its three questions, named only), Is the constraint structural or cosmetic (the speed-scores line, verbatim; its sums not redone) and Where this leaves you (structure set by rules rather than taste, its words); content/services/web-development.mdx sections How it works (Next.js and Tailwind; the two-second budget, verbatim, described as about loading only) and What the starting price buys (named only); data/copy/free-audit.ts hero and FAQ What does a free website audit check? (verbatim); .lighthouserc.cjs header (no CI claim made); docs/02 section 5 Blog clusters (cluster D seed); CLAUDE.md implied-proof and performance-claims rules. MODALITY: both explanations of the INP gap are attributed and framed as may, never as cause; Google's no-preference line quoted; HTTP Archive's caution quoted; every trend line framed as a changing set of sites; no Google quote carrying often or usually. DELIBERATELY ABSENT: any causal claim; JavaScript size as an explanation; conversion, revenue, bounce and ranking figures; any WebAsk result, client, audit or track record; vendor names beyond the dataset's labels; CrUX release-note percentages beside HTTP Archive's; CrUX release-note commentary (the June 2026 seasonal note and the August 2026 INP note are both about the worldwide data; neither is quoted, rather than quote one without the other); any comparison of Next.js sites on FCP or TTFB except against WordPress sites (on phones they trail all sites and the four hosted platforms on both); the Top 1M band (identical to ALL for the UK); any claim that the rank bands are a UK ranking; React; links to /pricing, /legal, other services and drafts. STALE RISK: CrUX September 2026 data is due 13 October 2026; before draft is set to false, re-pull with start=latest, rerun compute.mjs and move every figure and the read date; the pipeline can rewrite a month; if CrUX adopts the soft-navigation APIs, the How a visit is counted paragraph needs rewriting; data/keywords.json must move nextjs vs wordpress performance from /blog/topic/web-development to this post at publish. */}
+
+Is Next.js faster than WordPress for real visitors? Next.js sites were not, by Google's Core Web Vitals. Loading was close; the widest gap was in how quickly pages responded to a tap or click. On UK phones, a smaller share of Next.js sites passed than WordPress sites, and hosted platforms such as Wix had higher pass rates than both. The data shows which sites passed, not why.
+
+In August 2026, 25,299 websites using Next.js had enough Chrome visits from the UK to be assessed for Core Web Vitals on phones. Just under half, 49%, had good Core Web Vitals, Google's three measures of loading, responsiveness and visual stability. Of 121,260 WordPress sites, 66% did.
+
+Figures from the HTTP Archive Core Web Vitals technology report for visitors in the UK, August 2026 data, read on 3 October 2026.
+
+WebAsk builds websites on Next.js, so we are not neutral; the numbers below are public and you can check them. We are new, and have no field data of our own to set beside them.
+
+<Callout variant="note" title="TL;DR">
+  On UK phones in August 2026, 49% of Next.js sites had good Core Web Vitals, against 66% of
+  WordPress sites and 67% of all sites in the UK data. Sites on four hosted platforms did better, at
+  79% to 91%. Against WordPress, the gap is mostly in responsiveness (INP), then layout stability
+  (CLS); loading is close, and Next.js sites led on server response. The data cannot say why, and
+  none of the fixes on Google's own shortlist names a platform.
+</Callout>
+
+## Next.js vs WordPress performance: the UK numbers
+
+On phones, the four hosted platforms led, from 79% for Webflow to 91% for Wix. WordPress sites, at 66%, sat just under the 67% for all sites in the UK data, and Next.js sites were lowest, at 49%. On desktop the two are closer: 64% against 67%.
+
+Each figure below is the share of sites whose Chrome visits from the UK met [Google's "good" line](https://web.dev/articles/vitals) on the Core Web Vitals: LCP 2.5 seconds or less, INP 200 milliseconds or less and CLS 0.1 or less. A site meets a line when at least three in four of its visits do, which is Google's 75th-percentile test. It passes when it meets all three, or LCP and CLS alone if it has too few taps and clicks for an INP figure. What the three measure is in [our Core Web Vitals guide](/blog/core-web-vitals-guide-uk).
+
+| Platform (HTTP Archive label) | Sites measured | Good Core Web Vitals | Good LCP | Good INP | Good CLS |
+| ----------------------------- | -------------- | -------------------- | -------- | -------- | -------- |
+| Wix                           | 13,241         | 91.0%                | 94.3%    | 97.0%    | 98.2%    |
+| Squarespace                   | 8,486          | 85.1%                | 90.6%    | 98.5%    | 93.4%    |
+| Shopify                       | 39,341         | 84.3%                | 93.1%    | 91.9%    | 94.7%    |
+| Webflow                       | 4,078          | 78.9%                | 85.9%    | 91.8%    | 94.1%    |
+| All sites in the UK data      | 426,634        | 67.4%                | 78.8%    | 86.7%    | 87.5%    |
+| WordPress                     | 121,260        | 65.8%                | 74.0%    | 93.1%    | 90.8%    |
+| Next.js                       | 25,299         | 49.0%                | 72.4%    | 66.8%    | 79.1%    |
+
+Chrome visits from the UK on phones, August 2026, all popularity bands. "Sites measured" counts the sites assessed for good Core Web Vitals. Each measure has its own count, and INP's is the smallest.
+
+Worldwide, on phones, Next.js sites still trail and each figure is lower than in the UK: 35% of Next.js sites, 49% of WordPress sites and 53% of all sites passed.
+
+## Where the gap is: responsiveness, then stability
+
+On phones, the widest gap is in responsiveness (INP), how quickly a page answers a tap or click: 67% of Next.js sites were good, against 93% of WordPress sites, a gap of 26 points. Layout stability (CLS) is next, at 79% against 91%, a gap of 12. Loading (LCP) is close: 72% against 74%.
+
+| Measure                                      | Next.js, phones | WordPress, phones | Next.js against WordPress, phones | Next.js, desktop | WordPress, desktop |
+| -------------------------------------------- | --------------- | ----------------- | --------------------------------- | ---------------- | ------------------ |
+| Good Core Web Vitals                         | 49.0%           | 65.8%             | 16.9 points behind                | 64.2%            | 66.9%              |
+| LCP (loading)                                | 72.4%           | 74.0%             | 1.6 behind                        | 81.4%            | 79.8%              |
+| INP (responsiveness)                         | 66.8%           | 93.1%             | 26.3 behind                       | 91.4%            | 98.6%              |
+| CLS (layout stability)                       | 79.1%           | 90.8%             | 11.7 behind                       | 79.7%            | 82.7%              |
+| FCP (first content; not a Core Web Vital)    | 71.5%           | 64.1%             | 7.4 ahead                         | 85.4%            | 73.8%              |
+| TTFB (server response; not a Core Web Vital) | 61.1%           | 40.4%             | 20.7 ahead                        | 72.5%            | 44.5%              |
+
+Two measures point the other way. Next.js sites were ahead on the first content appearing (FCP), 71% against 64%, and on the server's first response (TTFB), 61% against 40%. Neither is a Core Web Vital: Google's [TTFB guide](https://web.dev/articles/ttfb) (updated 18 November 2025) says TTFB "isn't a Core Web Vitals metric".
+
+On desktop, the responsiveness gap is much smaller: 91% against 99%.
+
+## Is the gap closing? A year of UK data
+
+Over the year, the Next.js pass rate on phones rose from 40% to 49%. WordPress went from 62% to 66%, after a high of 67% in March 2026. All sites in the UK data went from 64% to 67%. The gap between Next.js and WordPress narrowed from 22 points to 17, and good INP among Next.js sites rose from 59% to 67%.
+
+This does not show the same sites getting faster: Next.js sites in the data grew from 19,322 to 25,299 and WordPress sites fell from 137,175 to 121,260, so each month measures a different set.
+
+Good Core Web Vitals on phones, Chrome visits from the UK, all popularity bands:
+
+| Month    | Next.js              | WordPress             | All sites in the UK data |
+| -------- | -------------------- | --------------------- | ------------------------ |
+| Aug 2025 | 40.0% (19,322 sites) | 62.1% (137,175 sites) | 63.6%                    |
+| Sep 2025 | 40.8%                | 62.7%                 | 63.9%                    |
+| Oct 2025 | 43.0%                | 64.4%                 | 65.2%                    |
+| Nov 2025 | 44.6%                | 65.1%                 | 66.4%                    |
+| Dec 2025 | 45.0%                | 64.9%                 | 66.5%                    |
+| Jan 2026 | 47.5%                | 67.2%                 | 68.1%                    |
+| Feb 2026 | 47.0%                | 66.8%                 | 68.2%                    |
+| Mar 2026 | 47.7%                | 67.4%                 | 68.4%                    |
+| Apr 2026 | 48.4%                | 67.2%                 | 68.6%                    |
+| May 2026 | 48.2%                | 66.9%                 | 68.2%                    |
+| Jun 2026 | 48.2%                | 66.6%                 | 67.6%                    |
+| Jul 2026 | 48.9%                | 66.5%                 | 67.8%                    |
+| Aug 2026 | 49.0% (25,299 sites) | 65.8% (121,260 sites) | 67.4%                    |
+
+## Does it hold for the busiest sites?
+
+HTTP Archive also splits the data by CrUX's popularity bands, which rank sites by their number of visits.
+
+Among busier sites, the gap is wider, not narrower. In the Top 100k band, 45% of Next.js sites passed, against 70% of WordPress sites. In the Top 10k band it was 42% against 71%, from under 800 sites on each side. So the gap is not just a feature of less-visited sites.
+
+| Band (phones, August 2026) | Next.js           | WordPress         | All sites in the band |
+| -------------------------- | ----------------- | ----------------- | --------------------- |
+| Top 10k                    | 42.3% (781 sites) | 70.6% (670 sites) | 61.9% (8,139 sites)   |
+| Top 100k                   | 44.9% (4,723)     | 70.1% (14,866)    | 67.8% (80,880)        |
+| All bands                  | 49.0% (25,299)    | 65.8% (121,260)   | 67.4% (426,634)       |
+
+## The limits of this data
+
+- **Whether the platform causes the result.** HTTP Archive's [note of caution](https://httparchive.org/reports/techreport/landing) says "correlation does not equal causation." Technologies "may be used on simpler or more complex sites, or in popular third-party components that may be more or less performant."
+- **What the sites are for.** The data records nothing about each site's purpose, size, budget or who built it, so like is not compared with like: Shopify, in HTTP Archive's words, "allows anyone to set up an online store".
+- **Whether page weight explains it.** HTTP Archive's lab tests, run from the US on an emulated phone rather than on real visits, found more JavaScript on the median Next.js page (1,213 KB) than on the median WordPress page (784 KB). But Wix pages (1,727 KB) and Shopify pages (2,423 KB) carried more still, with higher pass rates. Size alone does not line up with the results.
+- **How "good Core Web Vitals" is counted.** The no-INP rule above, from HTTP Archive's [technology page](https://httparchive.org/reports/techreport/tech), applied on phones to about 25% of WordPress sites and 31% of Wix sites, against about 16% of Next.js sites. But WordPress and the hosted platforms also led Next.js on LCP, INP and CLS taken one at a time.
+- **Whose visits.** Chrome visits from the UK, with the country "inferred from users' IP addresses" ([CrUX](https://developer.chrome.com/docs/crux/methodology/dimensions)). That says nothing about where a site is hosted or who owns it. Only some Chrome users are counted, as our guide explains.
+- **Which sites.** Only sites with enough Chrome visits from the UK are included; of the minimum, Google says "An exact number is not disclosed". A small business site may not be here at all. Each figure covers a whole site, not one page.
+
+## Why Next.js sites may lag on responsiveness
+
+Google's [FAQ on single-page apps](https://web.dev/articles/vitals-spa-faq) (updated 11 August 2026) says "Google does not have any preference as to what architecture or technology is used to build a site."
+
+Two documented trade-offs may play a part. Neither has been shown to explain these figures.
+
+**Hydration.** [Next.js's documentation](https://nextjs.org/docs/app/getting-started/server-and-client-components) says a first visit shows "a fast non-interactive preview" in HTML, and then "JavaScript is used to hydrate Client Components and make the application interactive." Google's guide [Rendering on the Web](https://web.dev/articles/rendering-on-the-web) (updated 5 January 2026) names Next.js as one way to render pages on the server. It warns that server rendering followed by hydration "can have a significant negative impact" on responsiveness, "even if it improves FCP". Such pages "can appear to be loaded and interactive, but can't actually respond to input" until their scripts have run.
+
+**How a visit is counted.** Next.js's `Link` component changes pages "Instead of reloading the page" ([Next.js docs](https://nextjs.org/docs/app/getting-started/linking-and-navigating)). On sites that move between pages like this, CrUX's [methodology](https://developer.chrome.com/docs/crux/methodology) says "the entire experience is attributed to the initial page view." Google's FAQ adds that "metrics that accumulate over time can be harsher on SPAs than MPAs": single-page apps against multi-page sites. Chrome has new ways to measure these page changes, but "has not yet published timeframes" for adding them to CrUX. So some of the INP and CLS gap may come from how visits are counted. None of these sources says how much.
+
+This data cannot separate these, or rule out something else mattering more, such as the scripts each site adds or the kinds of sites on each platform.
+
+## What affects speed on either platform
+
+Ask these of whoever builds or looks after a site. Each comes from Google's or Next.js's own guidance.
+
+- **How much JavaScript has to run before a tap is answered?** Google's [shortlist of fixes](https://web.dev/articles/top-cwv) (updated 31 October 2024) says "Avoid unnecessary JavaScript". [Another of its guides](https://web.dev/articles/script-evaluation-and-long-tasks) explains: "Interactions that take place during load can be delayed because the page is busy evaluating scripts."
+- **On Next.js, how much of each page is interactive code?** Next.js's docs say to "add 'use client' to specific interactive components instead of marking large parts of your UI as Client Components."
+- **Is the main image in the page's HTML, and loaded first?** "Ensure the LCP resource is discoverable from the HTML source and prioritized".
+- **Is space kept for anything that loads late?** "Set explicit sizes on any content loaded from the page".
+
+Our guide covers the fixes.
+
+## Which platform should a UK small business choose?
+
+Speed alone does not settle it. On these averages:
+
+- **On a hosted platform?** These averages give no speed reason to leave it.
+- **On WordPress?** WordPress sites passed at about the rate for all sites in the UK data, 66% against 67%. Nothing here suggests a Next.js rebuild would be faster. Measure your own site first.
+- **Choosing Next.js?** Ask whoever builds it, us included, how responsiveness on a phone will be kept good, and how it will be checked once the site is live. Google says the best way to measure INP is "by gathering metrics from actual users in the field."
+
+Our own standard, in our service page's words: "Loading on a phone is measured against a two-second budget: what we build to, not a promise about every phone on every signal." That budget is about loading, where the two platforms are closest in this data. It does not measure responsiveness.
+
+The questions that do settle it are about upkeep, who edits the site, and whether its structure is set by rules rather than taste. [Custom website vs WordPress](/blog/custom-website-vs-wordpress-2026) weighs them, and says the case for a custom build "has nothing to do with speed scores". Nothing in these figures argues otherwise.
+
+## How these figures were measured
+
+- **Source.** HTTP Archive's Core Web Vitals technology report, read through its public API: [the request behind the platform rows of the first table](https://cdn.httparchive.org/v1/cwv?start=2026-08-01&end=2026-08-01&geo=United%20Kingdom%20of%20Great%20Britain%20and%20Northern%20Ireland&technology=WordPress%2CNext.js%2CWix%2CSquarespace%2CShopify%2CWebflow&rank=ALL). It joins Chrome's field data, CrUX, to HTTP Archive's monthly crawl.
+- **Month.** CrUX August 2026, which covers the last 28 days of August and was published on 8 September 2026. On 3 October 2026 it was the latest month in the report. CrUX's September data is due on 13 October 2026.
+- **Devices.** "Phones" is CrUX's phone data; tablets are left out.
+- **Platforms.** HTTP Archive detects technologies automatically on each site's home page and one other page. A site can carry more than one label.
+
+## Where to start
+
+1. **Read your own numbers first.** [Our Core Web Vitals guide](/blog/core-web-vitals-guide-uk) shows where to find them, and what "No Data" means.
+2. **Ask the questions above** of whoever builds or looks after your site, on any platform. If you want a new site, our [web development](/services/web-development) page sets out how we build in Next.js and Tailwind, and what the starting price buys.
+3. **Get a second look.** Our [free audit](/free-audit) gives "five prioritised findings on search, speed and conversion". Its speed check is "a lab test of how fast the main content loads and whether the layout jumps; how quickly a page responds to a tap or click can only be measured on real visits." Or [get in touch](/contact).
