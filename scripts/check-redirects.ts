@@ -56,6 +56,7 @@ const MUST_NOT_MATCH: readonly string[] = [
   "/blog/ai-receptionist-law-uk",
   "/blog/nextjs-vs-wordpress-performance",
   "/blog/what-is-an-ai-receptionist",
+  "/blog/google-reviews-dmcc-act-uk",
   "/blog/topic/clinic-compliance",
   "/blog/can-clinics-advertise-botox-uk",
   "/blog/botox-price-list-clinic-website-rules",

@@ -908,12 +908,12 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "Can we ask only the customers we know are happy?",
         answer:
-          "No, and the programme is built so that you cannot. The CMA's guidance calls encouraging just the satisfied customers to leave reviews a form of cherry-picking, and Google's Maps content policy does not allow businesses to selectively solicit positive reviews. A step that asks people to rate you privately first and sends the public link only to the happy ones is that shortcut built into software, so we do not run it. Every customer gets the same request. The rating you earn that way is the only one you can defend.",
+          "No, and the programme is built so that you cannot. The CMA's guidance says cherry-picking might be done by encouraging just the satisfied customers to leave reviews, and Google's Maps content policy does not allow businesses to selectively solicit positive reviews. A step that asks people to rate you privately first and sends the public link only to the happy ones is that shortcut built into software, so we do not run it. Every customer gets the same request. The rating you earn that way is the only one you can defend.",
       },
       {
         question: "Can we offer a discount or a prize draw for a review?",
         answer:
-          "No, not on either plan. An incentivised review is not banned under the DMCC Act 2024, but concealing the incentive is. The CMA's guidance says the review must be clearly identifiable as incentivised, usually by a prominent label, as an advert. Google's Maps content policy goes further: it does not allow businesses to offer payment, discounts or free goods or services in exchange for posting any review. Offering nothing meets the incentive rule in both, so we offer nothing.",
+          "No, not on either plan. An incentivised review is not banned under the DMCC Act 2024, but concealing the incentive is. The CMA's guidance says the review must be clearly identifiable as incentivised, usually by a prominent label, as an advert, and that entry into a prize draw “is unlikely to amount to commissioning”. Google's Maps content policy goes further: it does not allow businesses to offer payment, discounts or free goods or services in exchange for posting any review. Offering nothing meets the incentive rule in both, so we offer nothing.",
       },
       {
         question: "What happens when we get a bad review?",
