@@ -686,7 +686,7 @@ export const services: ReadonlyArray<Service> = [
       {
         question: "What happens when it does not know the answer?",
         answer:
-          "It says so and hands over. Out-of-scope questions route to a person with the conversation so far attached, so nobody has to start again; with the voice-agent add-on, that is a transfer during opening hours and a callback request outside them. The subjects it must never attempt are agreed in discovery and written into the build rather than left to the model's judgement. That matters most in regulated work such as clinics and dental practices, where a helpful improvised answer is the expensive kind of wrong.",
+          "It says so and hands over. In a chat, out-of-scope questions route to a person with the conversation so far attached, so nobody has to start again; with the voice-agent add-on, it is a transfer during opening hours and a callback request outside them, with the call summary saved afterwards. The subjects it must never attempt are agreed in discovery and written into the build rather than left to the model's judgement. That matters most in regulated work such as clinics and dental practices, where a helpful improvised answer is the expensive kind of wrong.",
       },
       {
         question: "Do we need a custom GPT or a model trained on our own data?",
